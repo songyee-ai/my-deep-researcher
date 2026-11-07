@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-11-06",
+  "source": "https://openrouter.ai/api/v1/models",
+  "model": {
+    "id": "nvidia/nemotron-3.5-lightning:free",
+    "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+    "context_length": 1000000,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "top_provider": {
+      "context_length": 1000000,
+      "max_completion_tokens": 65536,
+      "is_moderated": false
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "hugging_face_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
+  }
+}

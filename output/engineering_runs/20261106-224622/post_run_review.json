@@ -1,0 +1,22 @@
+{
+  "scope": "ASSISTANT_DIRECT_SOURCE_REVIEW_NOT_A_JUDGE_MODEL",
+  "mechanical_status": "all_alarms_zero",
+  "content_status": "partial_review_insufficiency_unresolved",
+  "main_claims_reviewed": [
+    "MESSENGER 태양광 최대11배와 고도200km 재복사열4배의 비교 대상을 구분함",
+    "차양370°C/뒤쪽기체약20°C, 패널약150°C를 원문 설계·운용 조건으로 서술함",
+    "차양/단열재/방열기/단방향히트파이프와 타원궤도 저고도25분을 연결하되 최대개별관측시간으로 바꾸지 않음",
+    "Venus Express의 Mars 대비 가열4배, MLI23층, GaAs120°C 내성과 알루미늄띠 면적절반의 기준을 구분함",
+    "차가운 면의 태양 회피와 통신 안테나 지향 제약을 관측 각도/시간의 직접 수치 근거로 확대하지 않음"
+  ],
+  "remaining_issues": [
+    "두 절 모두 재조사 뒤에도 부족=true. 필요한 자료를 해소했다는 주장은 불가",
+    "원래 질문에 명시되지 않은 최대 연속 관측시간·허용각도 같은 정량값의 부재를 부족 근거로 삼은 점이 과도한 부족 신고인지 제출자가 검토해야 함",
+    "금성 첫 사실표의 relation 한 행에 중국어가 섞였지만 최종 원고는 한국어임. 중간표 언어 검사가 자동 강제되었다고 주장하지 않음",
+    "최종 원고의 D1/D2 표현은 연구원 내부 출처ID라 제출용 편집 시 문서명/용도를 명확히 할 필요가 있음"
+  ],
+  "human_review": "pending",
+  "formal_comparison": "not_started",
+  "service_context_condition": false,
+  "context_evidence": "output\\codex_context_checks\\20261106-224230-024675"
+}

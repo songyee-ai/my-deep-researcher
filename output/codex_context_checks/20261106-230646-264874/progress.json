@@ -1,0 +1,154 @@
+{
+  "scope": "FULL_PUBLIC_CORPUS_CLI_INPUT_FIT_NOT_SCIENTIFIC_EXPERIMENT",
+  "model_requested": "gpt-6.1-sol",
+  "checked_at": "2026-11-06T14:06:46.264874+00:00",
+  "corpus_path": "data\\planetary_exploration\\versions\\engineering-v2\\corpus.json",
+  "corpus_sha256": "2ea7efae3e5707711f992e3d1efcfd91c1a367dc9f52478340186a164c281fc7",
+  "documents": 97,
+  "body_chars": 3060757,
+  "payload_sha256": "3354a3ebb28f2c585b63a9eff59ac0b27c180b399c5c94e62fa6d0dd49d963c6",
+  "payload_chars": 3066865,
+  "cli_default_context": 500000,
+  "exact_body_token_count": null,
+  "native_context_condition": "not_established",
+  "status": "pending",
+  "input_mode": "multiple_turns_same_session",
+  "chunks": 5,
+  "turns": [
+    {
+      "chunk": 1,
+      "documents": 82,
+      "reply": {
+        "received": true
+      },
+      "transport": {
+        "exit_code": 0,
+        "seconds": 5.469,
+        "model_requested": "gpt-6.1-sol",
+        "authentication": "ChatGPT login",
+        "usage": [
+          {
+            "input_tokens": 149156,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 15,
+            "reasoning_output_tokens": 0
+          }
+        ],
+        "session_id": "[redacted-session]",
+        "resumed_session_id": null,
+        "session_persisted": true,
+        "unexpected_tool_items": [],
+        "billing_note": "ChatGPT subscription usage; not an OpenRouter free request."
+      }
+    },
+    {
+      "chunk": 2,
+      "documents": 4,
+      "reply": {
+        "received": true
+      },
+      "transport": {
+        "exit_code": 0,
+        "seconds": 5.454,
+        "model_requested": "gpt-6.1-sol",
+        "authentication": "ChatGPT login",
+        "usage": [
+          {
+            "input_tokens": 420434,
+            "cached_input_tokens": 148992,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 30,
+            "reasoning_output_tokens": 0
+          }
+        ],
+        "session_id": "[redacted-session]",
+        "resumed_session_id": "[redacted-session]",
+        "session_persisted": true,
+        "unexpected_tool_items": [],
+        "billing_note": "ChatGPT subscription usage; not an OpenRouter free request."
+      }
+    },
+    {
+      "chunk": 3,
+      "documents": 5,
+      "reply": {
+        "received": true
+      },
+      "transport": {
+        "exit_code": 0,
+        "seconds": 6.687,
+        "model_requested": "gpt-6.1-sol",
+        "authentication": "ChatGPT login",
+        "usage": [
+          {
+            "input_tokens": 858428,
+            "cached_input_tokens": 420096,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 45,
+            "reasoning_output_tokens": 0
+          }
+        ],
+        "session_id": "[redacted-session]",
+        "resumed_session_id": "[redacted-session]",
+        "session_persisted": true,
+        "unexpected_tool_items": [],
+        "billing_note": "ChatGPT subscription usage; not an OpenRouter free request."
+      }
+    },
+    {
+      "chunk": 4,
+      "documents": 3,
+      "reply": {
+        "received": true
+      },
+      "transport": {
+        "exit_code": 0,
+        "seconds": 7.14,
+        "model_requested": "gpt-6.1-sol",
+        "authentication": "ChatGPT login",
+        "usage": [
+          {
+            "input_tokens": 1438746,
+            "cached_input_tokens": 857856,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 60,
+            "reasoning_output_tokens": 0
+          }
+        ],
+        "session_id": "[redacted-session]",
+        "resumed_session_id": "[redacted-session]",
+        "session_persisted": true,
+        "unexpected_tool_items": [],
+        "billing_note": "ChatGPT subscription usage; not an OpenRouter free request."
+      }
+    },
+    {
+      "chunk": 5,
+      "documents": 3,
+      "reply": {
+        "received": true
+      },
+      "transport": {
+        "exit_code": 0,
+        "seconds": 24.438,
+        "model_requested": "gpt-6.1-sol",
+        "authentication": "ChatGPT login",
+        "usage": [
+          {
+            "input_tokens": 1685531,
+            "cached_input_tokens": 869248,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 75,
+            "reasoning_output_tokens": 0
+          }
+        ],
+        "session_id": "[redacted-session]",
+        "resumed_session_id": "[redacted-session]",
+        "session_persisted": true,
+        "unexpected_tool_items": [],
+        "billing_note": "ChatGPT subscription usage; not an OpenRouter free request."
+      }
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+This is a supplied-text extraction task, not a coding task. Use only the source in this prompt. Do not invoke tools, read files, browse, edit, or delegate. Return exactly one JSON object matching the output schema.
+
+제공된 원문만 읽고 질문에 필요한 사실을 최대 8행의 표로 추출하라. 아직 원고를 쓰지 마라. subject는 사실의 주체, relation은 관계/특성, comparison_target은 비교 대상, value는 수치 표현, unit은 단위, basis는 비율의 기준/분모/설계목표·실제결과 구분이다. 원문에 없는 값은 추정하지 말고 빈 문자열로 둔다. 숫자가 없는 사실도 기록할 수 있다. 주체·비교대상·수치·단위는 원문 영어 표현을 그대로 쓰고 relation/basis/reason은 한국어로 쓴다. 각 행은 하나의 사실과 하나의 연속된 수치 표현만 담아라. 떨어진 두 수치를 세미콜론 등으로 합치지 말고 별도 행으로 분리하라. 선택 줄에 주체 이름이 없다면 이름이 나오는 앞뒤 문맥까지 포함하라. relation과 basis에 다른 언어 설명을 섞지 마라. subject에는 문서 제목의 임무명을 반복하기보다 선택 줄에 실제 쓰인 명사구나 대명사를 그대로 적어도 된다. 문서명은 별도로 보존된다. 수치와 그 수치의 주체를 포함하는 시작/끝 줄을 선택하라. 다른 장비의 정보로 질문 대상의 성과를 대신하지 마라. 필요한 사실이 빠지면 insufficient=true로 누락된 항목을 reason에 명시하라. 반드시 지정된 JSON Schema 객체 하나만 반환하라.
+맡은 절과 다른 연구원의 구역이 지정돼 있으면 부족 신고는 자기 절의 지시 범위로 판단하라. 다른 연구원이 맡은 자료가 자기 입력에 없다는 사실만으로 자기 절을 부족하다고 신고하지 마라.
+
+질문: 질문: 수성과 금성 탐사에서 강한 열 환경에 대응하는 설계는 어떻게 달랐으며, 그 차이가 관측에 주는 제약은 무엇인가?
+맡은 절: 전체 질문 조사
+역할: 자료 조사원 — 할당된 내용 구역을 근거 자료로 조사한다
+지시: 수성과 금성 탐사에서 강한 열 환경에 대응하는 설계는 어떻게 달랐으며, 그 차이가 관측에 주는 제약은 무엇인가? — 질문 전체를 맡아 내용별 소제목을 포함한 장문 보고서를 작성한다.
+다른 연구원의 구역(중복 집필 금지): []
+문서: 금성 | Venus Express operations
+L1: Editor's note:
+L2: This page is no longer being updated, but will be preserved as a record.
+L3: Click here for the latest information on Venus Express
+L4: .
+L5: Venus Express was ESA's first spacecraft to voyage to our nearest planet; it was built around the design of Mars Express, making it quicker and cheaper to develop. It studied the planet's complex dynamics and chemistry, and the interactions between the atmosphere and the surface, which provided clues about the surface’s characteristics.
+L6: It also studied the interactions between the atmosphere and the interplanetary environment (solar wind) to better understand the evolution of the planet. Venus Express also observed the Venusian atmosphere and clouds in unprecedented detail and accuracy.
+L7: The mission
+L8: The Venus Express Mission Operations Centre (MOC) was located at ESOC, Darmstadt, Germany.
+L9: ROLE
+L10: Study Venus' atmosphere and clouds
+L11: LAUNCH DATE
+L12: 9 Nov 2005
+L13: LAUNCHER/LOCATION
+L14: Soyuz-Fregat/Baikonur, Kazakhstan
+L15: LAUNCH MASS
+L16: 1270 kg
+L17: PERIAPSIS/APOAPSIS
+L18: 250 km/66 000 km
+L19: ORBIT
+L20: 24 hr elliptical, quasi-polar orbit
+L21: NOMINAL
+L22: MISSION
+L23: ca. 500 Earth days; extended until fuel exhausted 16 Dec 2014
+L24: + ESA's first Venus mission conducted the most comprehensive study ever of the Venusian atmosphere +
+L25: The Flight Control Team
+L26: The Venus Express Flight Control Team (FCT) consisted of the Spacecraft Operations Manager (SOM) and a team of engineers, analysts and spacecraft controllers, all of whom worked at ESOC.
+L27: The FCT was supported by numerous ESOC specialists in the areas of flight dynamics, software support and ground stations, among others.
+L28: Soyuz-Fregat carrying Venus Express lifts off
+L29: Mission operations overview
+L30: Venus Express was launched on 9 November 2005, at 3:33 UT by a Soyuz-Fregat rocket from the Baikonur Cosmodrome in Kazakhstan. The three-stage Soyuz launcher lifted the Fregat autonomous fourth stage mated together with Venus Express into a sub-orbital trajectory.
+L31: After separation from the Soyuz third stage, a Fregat main engine burn (at an altitude of about 200 kilometres) for around 20 seconds placed the Fregat-Venus Express composite into an almost circular parking orbit. After a coast phase of about 70 minutes in the low Earth orbit, a second Fregat engine burn, lasting 16 minutes, moved the combined craft from the parking orbit onto an escape trajectory, after which the Fregat stage and Venus Express separated.
+L32: Cruise orbit
+L33: After launch and separation from the last of the four launcher stages, Venus Express spent 153 days in an interplanetary transfer orbit.
+L34: After the spacecraft acquired Sun pointing and deployed its solar arrays, some two hours after launch, spacecraft commissioning started, followed by payload health checks. No routine science operations were planned during the cruise phase.
+L35: During the cruise to Venus, the spacecraft was contacted daily for health checks and navigation using the High Gain Antenna. The spacecraft was put on an arrival trajectory to Venus with mid-course navigation and a final course adjustment was performed on 29 March 2006 to fine-tune the arrival hyperbola for Venus Orbit Insertion (VOI).
+L36: Venus Express orbit insertion
+L37: Venus Orbit Insertion
+L38: The orbit insertion manoeuvre took place on 11 April 2006. To enable capture of the spacecraft, it was first slewed such that the main engine was aligned in the direction of travel. The main engine burn lasted around 50 minutes and decelerated the spacecraft by approximately 1251 metres/s (~ 4500 km/h).
+L39: The spacecraft initially entered a highly elliptical polar orbit with a pericentre of 400 km, an apocentre of 350 000 km and a period of 9 days. To achieve final operational orbit, a series of correction manoeuvres was performed.
+L40: Operational orbit
+L41: The selected operational orbit is inertially fixed, so that coverage of all longitudes can be accomplished in one Venus sidereal day (243 Earth days). The nominal mission orbital lifetime was two Venus sidereal days (roughly 500 Earth days). Following a series of mission extensions, Venus Express operations continued around the planet, increasing our knowledge about its atmosphere like what happened with the water or the discovery of nitric oxide (see in depth link upright).
+L42: The team conducted ESA's first aerobraking operations in 2014.
+L43: In late 2014, Venus Express exhausted its fuel supply and was declared complete on 16 December of that year.
+L44: Operation phases
+L45: There were two different phases for Venus Express in its operational orbit: the Earth Pointing phase and the Observation phase.
+L46: Earth Pointing phase
+L47: This phase was dedicated to communication with Earth; one of the two High Gain Antennas is oriented toward Earth to allow the uplink of commands and the dump of the stored data during the observation phase. The antenna is selected according to the relative position of the sun, the earth and the spacecraft since so that the spacecraft's cold faces remain always protected from illumination by the Sun.
+L48: Further, the main High Gain Antenna, HGA1, is used during three fourths of the mission, when the spacecraft is the most distant from Earth. In the middle of this period, Venus is in superior conjunction. The second High Gain Antenna, HGA2, is used during the remaining one fourth of the mission, when Venus is closer to Earth. In the middle of this period, Venus is in inferior conjunction. The rotation angle around the Earth direction is optimised in order to avoid any having Sunlight fall on the side wall radiators. High-rate communications are performed eight hours per day in X-band in order to transmit to Earth all science data stored in the Solid State Mass Memory.
+L49: Observation phase
+L50: There were several different modes of observation, depending on the payload configuration and spacecraft orientation. These include:
+L51: Nadir pointing - preferably during pericentre pass, but possible on any portion of the orbit; VIRTIS, PFS, SPICAV and VMC may operate in this mode
+L52: Limb observation - VIRTIS, PFS, SPICAV and VMC may operate in this mode
+L53: Star occultation (SPICAV)
+L54: Star occultation (SPICAV/SOIR)
+L55: Radio science (VeRa)
+L56: Cebreros during commissioning
+L57: The ground stations - Cebreros, New Norcia
+L58: Immediately after launch, the antenna dishes at Villafranca, Spain (15m), New Norcia, Australia, (35m) and Kourou, French Guiana, (15m) were used for communication and orbit determination.
+L59: Communications with Venus Express, once it arrived in orbit around Venus, were provided by the 35m antenna dish located at the ESA ground station at Cebreros near Madrid, Spain. The 35m antenna in New Norcia was used to support the Venus Radio Science Experiment (VeRa).
+L60: All data collected during observations were transmitted to Earth for about eight hours a day (one orbit around Venus is one day, or 24 hours, long). Eight hours of transmission corresponded to the downlink of between 100 and 800 megabytes of data, depending on the actual distance between Earth and Venus.
+L61: This mission uses SCOS-2000
+L62: Ground segment & mission control system
+L63: The Venus Express Mission was controlled by the Venus Express Mission Operations Centre (MOC) at ESOC, in conjunction with ESA's DSA-2 deep-space ground station. The baseline operations philosophy was to acquire scientific data primarily during the 95-minute pericentre planetary passes, store the data on-board and downlink it during a single eight-hour pass each day.
+L64: Venus Express Mission Operations Centre (MOC)
+L65: Throughout all mission phases, the MOC was the primary interface with the spacecraft through the ground stations. It was responsible for monitoring and control of the complete mission. During critical mission phases (which included launch, Venus orbit injection and aerobraking) it also received tracking, telemetry and command support from the ESA ground station located in New Norcia, which is normally used for data takings in support of the Radio Science investigations.
+L66: For the complete mission duration (from launch to the end of mission, when ground contact to the spacecraft/payload is terminated), ESOC provided facilities and services to the scientific community for planning and execution of scientific data acquisition. This included generating and providing complete raw-data sets and necessary auxiliary data to the principal investigators.
+L67: Venus Express Science Operations Centre (VSOC)
+L68: Throughout the mission, the VSOC provided the Venus Express Principal Investigators with the complete sets of raw data acquired from their instruments, and with any other necessary spacecraft data, for further processing and analysis.
+L69: The VSOC is located at ESA's ESAC facility in Spain and is responsible for:
+L70: Collecting, coordinating and planning all observations requests from the Principal Investigators
+L71: Generating and cross checking the instruments command files that are passed to ESOC to be uploaded to the spacecraft
+L72: Managing the Planetary Science Archive, where scientific data are made available to the wide scientific community once the 6-month proprietary period by the principal investigators is concluded
+L73: Cutaway diagram showing size and location of instruments
+L74: The platform and payload
+L75: The platform
+L76: The Venus Express spacecraft was a virtual twin of Mars Express. The spacecraft body itself, termed a 'bus', is a honeycomb aluminium box about 1.7 m wide, 1.4m height. With its solar arrays extended, it measures about 8 m across. The scientific instruments are mounted in the bus; only minor changes from Mars Express were required to accommodate the revised instrument payload, which is concentrated on three sides of the spacecraft. However, the environment of Venus is very different from that of Mars, notably, it is much hotter. This required some design changes to make Venus Express more suited to operating around Venus.
+L77: The Payload
+L78: The Venus Express payload comprised a combination of spectrometers, spectral-imagers and imagers covering a wavelength range from ultraviolet to thermal infrared, a plasma analyser and a magnetometer. This set of instruments is able to study the atmosphere, plasma environment and surface of Venus in great detail. The instruments were provided by collaborative efforts between scientific institutes in ESA member states and Russia. Principal investigators in different European countries lead the nationally funded collaborations.
+L79: Instrument
+L80: Name
+L81: ASPERA
+L82: Analyser of Space Plasma and Energetic Atoms
+L83: MAG
+L84: Venus Express Magnetometer
+L85: PFS
+L86: Planetary Fourier Spectrometer
+L87: SPICAV/SOIR
+L88: Ultraviolet and Infrared Atmospheric Spectrometer
+L89: VeRa
+L90: Venus Radio Science Experiment
+L91: VIRTIS
+L92: Ultraviolet/visible/near-infrared Mapping Spectrometer
+L93: VMC
+L94: Venus Monitoring Camera

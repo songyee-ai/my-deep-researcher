@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf6ff">
+  <title>문라이트 리서치 · 작은 행성들의 연구실</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E🌙%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/" aria-label="문라이트 리서치 홈"><span class="brand-icon">☾</span><span><b>문라이트 리서치</b><small>MOONLIGHT RESEARCH CLUB</small></span></a>
+  <div class="top-caption"><span class="little-star">✦</span> 작은 행성들의 반짝이는 협업</div>
+  <div class="header-actions"><button id="library-open" class="library-open">탐사 자료실</button><span class="local-pill"><i></i> LOCAL STUDIO</span><button id="settings-open" class="icon-button" title="연구 설정" aria-label="연구 설정">⚙</button></div>
+</header>
+<main>
+  <section class="question-bar" aria-label="연구 실행">
+    <span class="question-symbol">✧</span><label class="sr-only" for="question">연구 질문</label><input id="question" maxlength="2000" placeholder="오늘은 무엇이 궁금한가요?">
+    <label class="sr-only" for="mode">실행 모드</label><select id="mode"><option value="planetary">♃ 행성 탐사 · 무료 Gemma 진단</option></select>
+    <button class="primary" id="run">연구 시작 <span>↗</span></button><button class="stop hidden" id="stop">중지</button>
+  </section>
+  <div class="mode-note" id="mode-note">행성 탐사 공식 자료 · 무료 Gemma 기능 진단 · 질문과 관련 원문을 OpenRouter로 전송합니다.</div>
+  <div class="workspace">
+    <aside class="panel log-panel">
+      <div class="panel-heading"><div><span class="eyebrow">RESEARCH DIARY</span><h2>달빛 연구 일지 <span>✧</span></h2></div><span class="count" id="event-count">0</span></div>
+      <div class="log-status"><span class="status-dot" id="status-dot"></span><span id="status-text">새로운 연구를 기다려요</span></div>
+      <div class="logs" id="logs" aria-live="polite"><div class="empty-diary"><span>☾</span><p>궁금한 질문 하나가<br>작은 여행의 시작이에요.</p><small>연구 시작을 눌러 보세요</small></div></div>
+      <div class="team-key"><span><i style="--c:#d4b4ef"></i> 기획</span><span><i style="--c:#8bcbdc"></i> 조사</span><span><i style="--c:#eeb2cf"></i> 편집</span></div>
+    </aside>
+    <section class="stage" aria-label="3D 연구 공간">
+      <div class="stage-heading"><span class="eyebrow">A LITTLE UNIVERSE OF IDEAS</span><h1>달빛 아래, 함께 찾는 답</h1><p>별빛을 모아 변신하고, 하나의 답을 완성해요.</p></div>
+      <div class="stage-badge"><span class="twinkle">✦</span> <span id="stage-state">연구 준비 완료</span></div>
+      <div class="team-summary" id="team-summary">준비된 리서처 4명 · 1인 최대 3문서</div>
+      <canvas id="universe" aria-label="세일러문 테마 3D 행성 연구원. 아래 캐릭터 선택 버튼으로도 상세 내용을 볼 수 있어요."></canvas>
+      <div id="labels" class="labels"></div>
+      <div id="scene-error" class="scene-error hidden">3D 화면을 열지 못했어요. 브라우저의 하드웨어 가속을 확인해 주세요. 아래 연구원 선택과 기록 재생은 계속 사용할 수 있어요.</div>
+      <div class="scene-tools"><button id="reset-camera" title="시점 초기화">⌖ 시점 초기화</button><span>드래그하여 회전 · 스크롤하여 확대</span></div>
+      <div class="agent-picker" id="agent-picker" aria-label="연구원 선택"></div>
+      <div class="transport">
+        <div class="transport-top"><span class="record-dot"></span><label class="sr-only" for="history">실행 기록 선택</label><select id="history"><option value="">이번 연구의 발자취</option></select><span id="mode-badge">READY</span><button id="export" class="text-button" disabled title="전체 실행 기록 JSON 내려받기">기록 ↓</button></div>
+        <div class="play-controls">
+          <button id="first" aria-label="처음으로" title="처음으로"><svg class="transport-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 5v14M18 5l-9 7 9 7V5Z"/></svg></button>
+          <button id="prev" aria-label="이전 단계" title="이전 단계"><svg class="transport-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m15 5-9 7 9 7"/></svg></button>
+          <button id="play" class="play" aria-label="재생" title="재생"><svg class="transport-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path id="play-icon-path" d="m8 5 10 7-10 7V5Z"/></svg></button>
+          <button id="next" aria-label="다음 단계" title="다음 단계"><svg class="transport-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 9 7-9 7"/></svg></button>
+          <button id="last" aria-label="끝으로" title="끝으로"><svg class="transport-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 5v14M6 5l9 7-9 7V5Z"/></svg></button>
+          <span id="play-label">시간을 따라 연구를 살펴보세요</span><label class="sr-only" for="speed">재생 속도</label><select id="speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select>
+        </div>
+        <label class="sr-only" for="timeline">재생할 이벤트</label><input id="timeline" type="range" min="0" max="0" value="0"><div class="timeline-caption"><span id="progress">0 / 0 단계</span><span id="elapsed">00:00</span></div>
+      </div>
+    </section>
+    <aside class="panel detail-panel">
+      <div class="panel-heading"><div><span class="eyebrow">INSIDE THE MAGIC</span><h2>연구원의 작은 노트</h2></div><span class="note-icon">♡</span></div>
+      <div class="agent-profile"><div class="avatar" id="agent-avatar">☾</div><div><h3 id="agent-name">달의 코디네이터</h3><p id="agent-role">질문을 목차로 나누는 기획자</p></div><span class="mini-badge" id="agent-status">대기 중</span></div>
+      <div class="detail-tabs" role="tablist"><button role="tab" aria-selected="true" data-tab="activity" class="active">활동</button><button role="tab" aria-selected="false" data-tab="prompt">프롬프트</button><button role="tab" aria-selected="false" data-tab="response">응답</button></div>
+      <div id="detail" class="detail-body"></div>
+      <div class="report-card"><div><span>✧</span><div><strong>우리의 연구 보고서</strong><small id="report-status">이야기가 모이면 여기에 도착해요</small></div></div><button id="report-open" disabled>열기 ↗</button></div>
+    </aside>
+  </div>
+  <footer><span>☾ <b>문라이트 리서치</b> <span class="footer-desc"> · 행성 탐사 딥리서처</span></span><div class="metrics"><span>모델 호출 <b id="metric-calls">0</b></span><span>입력 / 출력 글자 <b id="metric-chars">0 / 0</b></span><span>API 비용 <b id="metric-cost">발생 없음</b></span></div></footer>
+</main>
+<div class="toast hidden" id="toast" role="alert"></div>
+<dialog id="settings"><form method="dialog"><div class="dialog-title"><div><span class="eyebrow">MAKE IT YOURS</span><h2>작은 연구실 설정</h2></div><button class="icon-button" aria-label="닫기">×</button></div><p class="subtle">인원·예산을 바꾸면 새 연구 준비 화면에 반영돼요. 실제 파견 인원은 질문의 목차에 따라 줄어들 수 있어요.<span id="settings-note"></span></p><label class="field">최대 행성 연구원 수 <select id="sections"><option>1</option><option>2</option><option>3</option><option selected>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select></label><label class="field">한 명이 읽을 최대 문서 수 <select id="budget"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5</option></select></label><label class="field">행성 탐사 재조사 상한 <select id="rounds"><option>0</option><option selected>1</option><option>2</option><option>3</option></select></label><label class="check"><input type="checkbox" id="roles" checked> 연구원마다 역할 나누기</label><label class="check"><input type="checkbox" id="seeds" checked> 서로 다른 시작 문서 배정</label><label class="check"><input type="checkbox" id="zones" checked> 다른 연구원의 시작 문서 피하기</label><div class="api-note"><strong>무료 실제 호출 · OpenRouter</strong><p>프로젝트 폴더의 .env에서 무료 API 키를 읽습니다. 키는 화면이나 실행 기록에 표시하지 않아요. 무료 모델만 사용하며 무료 할당량 제한이 적용됩니다. 새 질문과 관련 문서가 OpenRouter로 전송됩니다.</p><span id="key-state"></span></div><button class="primary wide">설정 완료 ✦</button></form></dialog>
+<dialog id="report-modal"><div class="dialog-title"><div><span class="eyebrow">OUR SHARED DISCOVERY</span><h2>달빛 연구 보고서</h2></div><button class="icon-button" id="report-close" aria-label="닫기">×</button></div><div class="report-meta" id="report-meta"></div><pre id="report-content"></pre><button id="report-download" class="primary">보고서 내려받기 ↓</button></dialog>
+<script type="module" src="/app.js"></script>
+<dialog id="library-modal" aria-labelledby="library-title"><div class="dialog-title"><div><span class="eyebrow">PLANETARY FIELD NOTES</span><h2 id="library-title">행성 탐사 자료실</h2></div><button class="icon-button" id="library-close" aria-label="자료실 닫기">×</button></div><p id="library-summary" class="library-meta"></p><div class="library-tabs" role="tablist" aria-label="자료실 보기"><button data-library-tab="documents" role="tab" aria-selected="true" class="active">공식 원문</button><button data-library-tab="questions" role="tab" aria-selected="false">연구 질문</button><button data-library-tab="runs" role="tab" aria-selected="false">실행과 실패 추적</button><button data-library-tab="comparisons" role="tab" aria-selected="false">비교 실행 결과</button></div><div id="library-content" aria-live="polite"></div></dialog>
+<script type="module" src="/library.js"></script>
+</body></html>

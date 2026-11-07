@@ -1,0 +1,68 @@
+{
+  "type": "object",
+  "properties": {
+    "facts": {
+      "type": "array",
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "properties": {
+          "subject": {
+            "type": "string",
+            "minLength": 1
+          },
+          "relation": {
+            "type": "string",
+            "minLength": 1
+          },
+          "comparison_target": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "basis": {
+            "type": "string",
+            "minLength": 1
+          },
+          "start_line": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 2202
+          },
+          "end_line": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 2202
+          }
+        },
+        "required": [
+          "subject",
+          "relation",
+          "comparison_target",
+          "value",
+          "unit",
+          "basis",
+          "start_line",
+          "end_line"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "insufficient": {
+      "type": "boolean"
+    },
+    "reason": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "facts",
+    "insufficient",
+    "reason"
+  ],
+  "additionalProperties": false
+}

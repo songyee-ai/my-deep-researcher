@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-11-06",
+  "source": "https://openrouter.ai/api/v1/models",
+  "note": "Candidates only; no API call or configuration change, availability and report quality unverified. Token counts must be recalculated with the selected model tokenizer.",
+  "candidates": [
+    {
+      "id": "liquid/lfm-2.5-2.6b:free",
+      "name": "LiquidAI: LFM2.5-2.6B (free)",
+      "context_length": 65536,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "hugging_face_id": "LiquidAI/LFM2.5-2.6B"
+    }
+  ]
+}

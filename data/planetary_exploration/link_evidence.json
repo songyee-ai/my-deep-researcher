@@ -1,0 +1,604 @@
+[
+  {
+    "source": "수성 | BepiColombo",
+    "target": "수성 | Mariner 10",
+    "anchor_label": "Mariner 10",
+    "observed_href": "https://science.nasa.gov/mission/mariner-10",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "수성 | BepiColombo",
+    "target": "수성 | MESSENGER",
+    "anchor_label": "MESSENGER",
+    "observed_href": "https://science.nasa.gov/mission/messenger",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "수성 | What is BepiColombo?",
+    "target": "수성 | Mercury Planetary Orbiter",
+    "anchor_label": "Mercury Planetary Orbiter",
+    "observed_href": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/mercury-planetary-orbiter",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "수성 | What is BepiColombo?",
+    "target": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+    "anchor_label": "Mercury Magnetospheric Orbiter",
+    "observed_href": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/mercury-magnetospheric-orbiter-mio",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "수성 | What is BepiColombo?",
+    "target": "수성 | Mercury Transfer Module",
+    "anchor_label": "Mercury Transfer Module",
+    "observed_href": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/mercury-transfer-module",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | Mars 2020: Perseverance Rover",
+    "target": "화성 | Mars Rock Samples",
+    "anchor_label": "Mars Rock Samples",
+    "observed_href": "https://science.nasa.gov/mission/mars-2020-perseverance/mars-rock-samples",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | Mars 2020: Perseverance Rover",
+    "target": "화성 | Science",
+    "anchor_label": "Science",
+    "observed_href": "https://science.nasa.gov/mission/mars-2020-perseverance/science",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | Mars 2020: Perseverance Rover",
+    "target": "화성 | Mars Science Laboratory: Curiosity Rover",
+    "anchor_label": "Curiosity rover",
+    "observed_href": "https://science.nasa.gov/mission/msl-curiosity",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | Mars 2020: Perseverance Rover",
+    "target": "화성 | Science Objectives",
+    "anchor_label": "",
+    "observed_href": "https://science.nasa.gov/mission/mars-2020-perseverance/science-objectives",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | Mars 2020: Perseverance Rover",
+    "target": "화성 | Ingenuity Mars Helicopter",
+    "anchor_label": "Learn More About Ingenuity about Mars Ingenuity Helicopter",
+    "observed_href": "https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity-mars-helicopter",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "목성 | Juno",
+    "target": "목성 | NASA’s Juno Measures Thickness of Europa’s Ice Shell",
+    "anchor_label": "Read More About Juno’s Europa Ice Measurements about NASA’s Juno Measures Thickness of Europa’s Ice Shell",
+    "observed_href": "https://www.nasa.gov/missions/juno/nasas-juno-measures-thickness-of-europas-ice-shell",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "목성 | Juno",
+    "target": "목성 | Jupiter Exploration",
+    "anchor_label": "More About Jupiter Exploration",
+    "observed_href": "https://science.nasa.gov/jupiter/exploration",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "수성 | Mercury Planetary Orbiter",
+    "target": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+    "anchor_label": "Mio",
+    "observed_href": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/mercury-magnetospheric-orbiter-mio",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+    "target": "수성 | Mercury Planetary Orbiter",
+    "anchor_label": "MPO",
+    "observed_href": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/mercury-planetary-orbiter",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "수성 | Mercury Transfer Module",
+    "target": "수성 | Mercury Planetary Orbiter",
+    "anchor_label": "Mercury Planetary Orbiter",
+    "observed_href": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/mercury-planetary-orbiter",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "수성 | Mercury Transfer Module",
+    "target": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+    "anchor_label": "Mercury Magnetospheric Orbiter",
+    "observed_href": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/mercury-magnetospheric-orbiter-mio",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "수성 | Mercury Transfer Module",
+    "target": "수성 | Journey to Mercury",
+    "anchor_label": "here",
+    "observed_href": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/journey-to-mercury",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "수성 | BepiColombo factsheet",
+    "target": "수성 | Mercury Planetary Orbiter",
+    "anchor_label": "MPO instruments",
+    "observed_href": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/mercury-planetary-orbiter",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "수성 | BepiColombo factsheet",
+    "target": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+    "anchor_label": "Mio instruments",
+    "observed_href": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/mercury-magnetospheric-orbiter-mio",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+    "target": "수성 | Mercury Planetary Orbiter",
+    "anchor_label": "Mercury Planetary Orbiter",
+    "observed_href": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/mercury-planetary-orbiter",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+    "target": "수성 | What is BepiColombo?",
+    "anchor_label": "the two orbiters comprising the BepiColmbo mission",
+    "observed_href": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/what-is-bepicolombo",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "금성 | Venus Express science highlights",
+    "target": "금성 | Venus Express orbiter instruments",
+    "anchor_label": "state-of-the-art instruments",
+    "observed_href": "https://www.esa.int/articles/about-us/directorates/science/venus-express/venus-express-orbiter-instruments",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "금성 | Venus's surface",
+    "target": "금성 | Venus Express science highlights",
+    "anchor_label": "confirmed",
+    "observed_href": "https://www.esa.int/articles/about-us/directorates/science/venus-express/venus-express-science-highlights",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | Mars Rock Samples",
+    "target": "화성 | Mars 2020: Perseverance Rover",
+    "anchor_label": "Learn About the Mars 2020 Mission about Mars Rock Samples",
+    "observed_href": "https://science.nasa.gov/mission/mars-2020-perseverance",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | Mars Rock Samples",
+    "target": "화성 | Rover Components",
+    "anchor_label": "witness tubes",
+    "observed_href": "https://science.nasa.gov/mission/mars-2020-perseverance/rover-components",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | Science",
+    "target": "화성 | Science Objectives",
+    "anchor_label": "Learn More",
+    "observed_href": "https://science.nasa.gov/mission/mars-2020-perseverance/science-objectives",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | Science",
+    "target": "화성 | Science Highlights",
+    "anchor_label": "Learn More about Science Highlights",
+    "observed_href": "https://science.nasa.gov/mission/mars-2020-perseverance/science-highlights",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | Science",
+    "target": "화성 | Science Instruments",
+    "anchor_label": "Learn More",
+    "observed_href": "https://science.nasa.gov/mission/mars-2020-perseverance/science-instruments",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "금성 | Venus Facts",
+    "target": "금성 | Magellan",
+    "anchor_label": "Magellan",
+    "observed_href": "https://science.nasa.gov/mission/magellan",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "금성 | Venus Exploration",
+    "target": "수성 | Mariner 10",
+    "anchor_label": "Read More",
+    "observed_href": "https://science.nasa.gov/mission/mariner-10",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "금성 | Venus Exploration",
+    "target": "금성 | Pioneer Venus 1",
+    "anchor_label": "Read More",
+    "observed_href": "https://science.nasa.gov/mission/pioneer-venus-1",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "금성 | Venus Exploration",
+    "target": "금성 | Magellan",
+    "anchor_label": "Read More",
+    "observed_href": "https://science.nasa.gov/mission/magellan",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "금성 | Venus Exploration",
+    "target": "금성 | DAVINCI",
+    "anchor_label": "Read More",
+    "observed_href": "https://science.nasa.gov/mission/davinci",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "금성 | Venus Exploration",
+    "target": "금성 | VERITAS",
+    "anchor_label": "Read More",
+    "observed_href": "https://science.nasa.gov/mission/veritas",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "금성 | Venus Exploration",
+    "target": "금성 | Pioneer Venus 2",
+    "anchor_label": "Pioneer Venus 2",
+    "observed_href": "https://science.nasa.gov/mission/pioneer-venus-2",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "금성 | Venus Exploration",
+    "target": "목성 | Galileo",
+    "anchor_label": "Galileo",
+    "observed_href": "https://science.nasa.gov/mission/galileo",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "금성 | Venus Exploration",
+    "target": "수성 | BepiColombo",
+    "anchor_label": "BepiColombo",
+    "observed_href": "https://science.nasa.gov/mission/bepicolombo",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "목성 | Jupiter Facts",
+    "target": "목성 | Europa Clipper",
+    "anchor_label": "NASA's Europa Clipper",
+    "observed_href": "https://science.nasa.gov/mission/europa-clipper",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "목성 | Jupiter Exploration",
+    "target": "목성 | Pioneer 10",
+    "anchor_label": "Explore",
+    "observed_href": "https://science.nasa.gov/mission/pioneer-10",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "목성 | Jupiter Exploration",
+    "target": "목성 | Pioneer 11",
+    "anchor_label": "Explore",
+    "observed_href": "https://science.nasa.gov/mission/pioneer-11",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "목성 | Jupiter Exploration",
+    "target": "목성 | Galileo",
+    "anchor_label": "Explore",
+    "observed_href": "https://science.nasa.gov/mission/galileo",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "목성 | Jupiter Exploration",
+    "target": "목성 | Juno",
+    "anchor_label": "Explore",
+    "observed_href": "https://science.nasa.gov/mission/juno",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "목성 | NASA’s Juno Measures Thickness of Europa’s Ice Shell",
+    "target": "목성 | Europa Clipper Mission Science",
+    "anchor_label": "science targets",
+    "observed_href": "https://science.nasa.gov/mission/europa-clipper/mission-science",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "목성 | NASA’s Juno Measures Thickness of Europa’s Ice Shell",
+    "target": "목성 | Juno",
+    "anchor_label": "Juno",
+    "observed_href": "https://science.nasa.gov/mission/juno",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "목성 | NASA’s Juno Takes Temperature of Jupiter’s Fiery Moon Io",
+    "target": "목성 | Juno",
+    "anchor_label": "https://science.nasa.gov/mission/juno",
+    "observed_href": "https://science.nasa.gov/mission/juno",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | Mars Reconnaissance Orbiter",
+    "target": "화성 | Science [extra-063]",
+    "anchor_label": "Science",
+    "observed_href": "https://science.nasa.gov/mission/mars-reconnaissance-orbiter/science",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | Mars Reconnaissance Orbiter",
+    "target": "화성 | Mars Science Laboratory: Curiosity Rover",
+    "anchor_label": "Mars Science Laboratory",
+    "observed_href": "https://science.nasa.gov/mission/msl-curiosity",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | InSight Lander",
+    "target": "화성 | NASA Marsquake Data Reveals Lumpy Nature of Red Planet’s Interior",
+    "anchor_label": "Read the Story",
+    "observed_href": "https://www.nasa.gov/missions/insight/nasa-marsquake-data-reveals-lumpy-nature-of-red-planets-interior",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | InSight Lander",
+    "target": "화성 | InSight Spacecraft",
+    "anchor_label": "Learn More About the Spacecraft",
+    "observed_href": "https://science.nasa.gov/mission/insight/spacecraft",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | InSight Lander",
+    "target": "화성 | Science [extra-066]",
+    "anchor_label": "Explore",
+    "observed_href": "https://science.nasa.gov/mission/insight/science",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "금성 | DAVINCI",
+    "target": "금성 | VERITAS",
+    "anchor_label": "VERITAS",
+    "observed_href": "https://science.nasa.gov/mission/veritas",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "금성 | VERITAS",
+    "target": "금성 | DAVINCI",
+    "anchor_label": "NASA's DAVINCI Will Study Venus With Flybys and Probe",
+    "observed_href": "https://science.nasa.gov/mission/davinci",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "금성 | VERITAS",
+    "target": "금성 | Venus Facts",
+    "anchor_label": "",
+    "observed_href": "https://science.nasa.gov/venus/facts",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "목성 | Europa Clipper",
+    "target": "목성 | Europa Clipper Mission Overview",
+    "anchor_label": "Mission to Jupiter's Icy Moon",
+    "observed_href": "https://science.nasa.gov/mission/europa-clipper/mission-overview",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "목성 | Europa Clipper",
+    "target": "목성 | Europa Clipper Mission Science",
+    "anchor_label": "Learn More About the Science Goals",
+    "observed_href": "https://science.nasa.gov/mission/europa-clipper/mission-science",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "목성 | Europa Clipper",
+    "target": "목성 | Meet Europa Clipper",
+    "anchor_label": "Learn More About Europa Clipper",
+    "observed_href": "https://science.nasa.gov/mission/europa-clipper/spacecraft-meet-europa-clipper",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | Mars Science Laboratory: Curiosity Rover",
+    "target": "화성 | Science [extra-059]",
+    "anchor_label": "Science",
+    "observed_href": "https://science.nasa.gov/mission/msl-curiosity/science",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | Mars Science Laboratory: Curiosity Rover",
+    "target": "화성 | Science Instruments [extra-058]",
+    "anchor_label": "Science Instruments",
+    "observed_href": "https://science.nasa.gov/mission/msl-curiosity/science-instruments",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | Science [extra-059]",
+    "target": "화성 | Science Highlights [extra-080]",
+    "anchor_label": "Science Highlights",
+    "observed_href": "https://science.nasa.gov/mission/msl-curiosity/science-highlights",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | Science [extra-059]",
+    "target": "화성 | Science Instruments [extra-058]",
+    "anchor_label": "Learn More about Science Instruments",
+    "observed_href": "https://science.nasa.gov/mission/msl-curiosity/science-instruments",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | Science [extra-063]",
+    "target": "화성 | Science Highlights [extra-065]",
+    "anchor_label": "Learn More about Science Highlights",
+    "observed_href": "https://science.nasa.gov/mission/mars-reconnaissance-orbiter/science-highlights",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | Science [extra-063]",
+    "target": "화성 | Science Instruments [extra-064]",
+    "anchor_label": "Learn More about Science Instruments",
+    "observed_href": "https://science.nasa.gov/mission/mars-reconnaissance-orbiter/science-instruments",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | Science Instruments [extra-064]",
+    "target": "화성 | Mars Facts",
+    "anchor_label": "Phobos and Deimos",
+    "observed_href": "https://science.nasa.gov/mars/facts",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | Science [extra-066]",
+    "target": "화성 | Science Instruments [extra-067]",
+    "anchor_label": "Learn More",
+    "observed_href": "https://science.nasa.gov/mission/insight/science-instruments",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | Science [extra-066]",
+    "target": "화성 | Science Highlights [extra-068]",
+    "anchor_label": "Read More",
+    "observed_href": "https://science.nasa.gov/mission/insight/science-highlights",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | InSight Spacecraft",
+    "target": "화성 | Science Instruments [extra-067]",
+    "anchor_label": "Instrument Deployment Camera (IDC)",
+    "observed_href": "https://science.nasa.gov/mission/insight/science-instruments",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | InSight Spacecraft",
+    "target": "화성 | Mars Science Laboratory: Curiosity Rover",
+    "anchor_label": "NASA's Opportunity and Curiosity rovers",
+    "observed_href": "https://science.nasa.gov/mission/msl-curiosity",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "금성 | NASA DAVINCI Mission’s Many ‘Firsts’ to Unlock Venus’ Hidden Secrets",
+    "target": "금성 | DAVINCI",
+    "anchor_label": "DAVINCI",
+    "observed_href": "https://science.nasa.gov/mission/davinci",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "금성 | NASA DAVINCI Mission’s Many ‘Firsts’ to Unlock Venus’ Hidden Secrets",
+    "target": "금성 | VERITAS",
+    "anchor_label": "NASA’s VERITAS",
+    "observed_href": "https://science.nasa.gov/mission/veritas",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "목성 | Europa Clipper Mission Overview",
+    "target": "목성 | Europa Clipper",
+    "anchor_label": "Mission Home about Europa Clipper Mission Overview",
+    "observed_href": "https://science.nasa.gov/mission/europa-clipper",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "목성 | Meet Europa Clipper",
+    "target": "목성 | Europa Clipper Spacecraft Instruments",
+    "anchor_label": "Learn more about Europa Clipper’s science instruments",
+    "observed_href": "https://science.nasa.gov/mission/europa-clipper/spacecraft-instruments",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "목성 | Evidence for an Ocean",
+    "target": "목성 | Pioneer 10",
+    "anchor_label": "Pioneer 10",
+    "observed_href": "https://science.nasa.gov/mission/pioneer-10",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "목성 | Evidence for an Ocean",
+    "target": "목성 | Pioneer 11",
+    "anchor_label": "11",
+    "observed_href": "https://science.nasa.gov/mission/pioneer-11",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "목성 | Evidence for an Ocean",
+    "target": "목성 | Galileo",
+    "anchor_label": "Galileo mission",
+    "observed_href": "https://science.nasa.gov/mission/galileo",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "수성 | Mercury’s Strange Hollows",
+    "target": "수성 | Mariner 10",
+    "anchor_label": "Mariner 10",
+    "observed_href": "https://science.nasa.gov/mission/mariner-10",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "수성 | Mercury’s Strange Hollows",
+    "target": "수성 | MESSENGER",
+    "anchor_label": "MESSENGER",
+    "observed_href": "https://science.nasa.gov/mission/messenger",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "수성 | Mercury’s Strange Hollows",
+    "target": "화성 | Mars Reconnaissance Orbiter",
+    "anchor_label": "Mars Reconnaissance Orbiter",
+    "observed_href": "https://science.nasa.gov/mission/mars-reconnaissance-orbiter",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "수성 | Mercury’s Strange Hollows",
+    "target": "수성 | BepiColombo",
+    "anchor_label": "BepiColombo",
+    "observed_href": "https://science.nasa.gov/mission/bepicolombo",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "수성 | Journey to Mercury",
+    "target": "수성 | Mercury Planetary Orbiter",
+    "anchor_label": "Mercury Planetary Orbiter",
+    "observed_href": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/mercury-planetary-orbiter",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "수성 | Journey to Mercury",
+    "target": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+    "anchor_label": "Mercury Magnetospheric Orbiter",
+    "observed_href": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/mercury-magnetospheric-orbiter-mio",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "수성 | Journey to Mercury",
+    "target": "수성 | Mercury Transfer Module",
+    "anchor_label": "Mercury Transfer Module",
+    "observed_href": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/mercury-transfer-module",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | NASA’s Perseverance Offers Clues to Protect Crews From Mars Dust",
+    "target": "화성 | Mars 2020: Perseverance Rover",
+    "anchor_label": "https://science.nasa.gov/mission/mars-2020-perseverance",
+    "observed_href": "https://science.nasa.gov/mission/mars-2020-perseverance",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | NASA Marsquake Data Reveals Lumpy Nature of Red Planet’s Interior",
+    "target": "화성 | InSight Lander",
+    "anchor_label": "InSight",
+    "observed_href": "https://science.nasa.gov/mission/insight",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | NASA Mars Orbiter Spots Retired InSight Lander to Study Dust Movement",
+    "target": "화성 | InSight Lander",
+    "anchor_label": "InSight",
+    "observed_href": "https://science.nasa.gov/mission/insight",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "화성 | NASA Mars Orbiter Spots Retired InSight Lander to Study Dust Movement",
+    "target": "화성 | Mars Reconnaissance Orbiter",
+    "anchor_label": "MRO",
+    "observed_href": "https://science.nasa.gov/mission/mars-reconnaissance-orbiter",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  },
+  {
+    "source": "목성 | NASA’s Europa Clipper Radar Instrument Proves Itself at Mars",
+    "target": "목성 | Europa Clipper",
+    "anchor_label": "https://science.nasa.gov/mission/europa-clipper/",
+    "observed_href": "https://science.nasa.gov/mission/europa-clipper",
+    "rule": "Observed anchor in retained article container; no inferred/reverse edges"
+  }
+]

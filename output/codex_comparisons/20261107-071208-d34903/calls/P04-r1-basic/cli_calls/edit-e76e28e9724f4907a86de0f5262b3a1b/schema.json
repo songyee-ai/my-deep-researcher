@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "머리말": {
+      "type": "string"
+    },
+    "맺음말": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "머리말",
+    "맺음말"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,61 @@
+This is a supplied-text extraction task, not a coding task. Use only the source in this prompt. Do not invoke tools, read files, browse, edit, or delegate. Return exactly one JSON object matching the output schema.
+
+제공된 원문만 읽고 질문에 필요한 사실을 최대 8행의 표로 추출하라. 아직 원고를 쓰지 마라. subject는 사실의 주체, relation은 관계/특성, comparison_target은 비교 대상, value는 수치 표현, unit은 단위, basis는 비율의 기준/분모/설계목표·실제결과 구분이다. 원문에 없는 값은 추정하지 말고 빈 문자열로 둔다. 숫자가 없는 사실도 기록할 수 있다. 주체·비교대상·수치·단위는 원문 영어 표현을 그대로 쓰고 relation/basis/reason은 한국어로 쓴다. 각 행은 하나의 사실과 하나의 연속된 수치 표현만 담아라. 떨어진 두 수치를 세미콜론 등으로 합치지 말고 별도 행으로 분리하라. 선택 줄에 주체 이름이 없다면 이름이 나오는 앞뒤 문맥까지 포함하라. relation과 basis에 다른 언어 설명을 섞지 마라. subject에는 문서 제목의 임무명을 반복하기보다 선택 줄에 실제 쓰인 명사구나 대명사를 그대로 적어도 된다. 문서명은 별도로 보존된다. 수치와 그 수치의 주체를 포함하는 시작/끝 줄을 선택하라. 다른 장비의 정보로 질문 대상의 성과를 대신하지 마라. 필요한 사실이 빠지면 insufficient=true로 누락된 항목을 reason에 명시하라. 반드시 지정된 JSON Schema 객체 하나만 반환하라.
+맡은 절과 다른 연구원의 구역이 지정돼 있으면 부족 신고는 자기 절의 지시 범위로 판단하라. 다른 연구원이 맡은 자료가 자기 입력에 없다는 사실만으로 자기 절을 부족하다고 신고하지 마라.
+
+질문: 질문: 수성과 금성 탐사에서 강한 열 환경에 대응하는 설계는 어떻게 달랐으며, 그 차이가 관측에 주는 제약은 무엇인가?
+맡은 절: 금성 Venus Express의 방열·단열 설계와 관측 제약
+역할: 열·전력 설계 연구원 — 맡은 임무의 열 제어와 전력 선택을 근거에 연결한다
+지시: 열 유입 조건 → 열 제어 설계 → 관측 제약의 순서로 Venus Express의 근거를 정리하라. 방열판 면적·효율 확대와 다층 단열재의 역할을 밝히고, 자료에 명시된 자세·궤도·장비 운용 조건이 관측 방향과 시간에 주는 제약을 연결하라. 금성 표면의 고온과 궤도선의 열 환경을 구분하고, 명시되지 않은 제약은 근거의 한계로 표시하라.
+다른 연구원의 구역(중복 집필 금지): [{"절": "수성 MESSENGER의 차양·방열 설계와 관측 제약", "지시": "열 유입 조건 → 열 제어 설계 → 관측 제약의 순서로 MESSENGER의 근거를 정리하라. 세라믹 직물 차양과 방열판의 역할을 밝히고, 자료에 명시된 자세·궤도·장비 운용 조건이 관측 방향과 시간에 주는 제약을 연결하라. 명시되지 않은 제약은 추정하지 말고 근거의 한계로 표시하라.", "시작문서": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)"}]
+문서: 금성 | The spacecraft
+L1: Spacecraft facts
+L2: Spacecraft bus dimensions
+L3: 1.5 x 1.8 x 1.4 m
+L4: Spacecraft mass
+L5: 1270 kg (including 93 kg of payload and 570 kg fuel)
+L6: Thrust of main engine
+L7: 400 N
+L8: Attitude thrusters
+L9: Two sets of four, each delivering 10 Newtons each
+L10: Solar arrays
+L11: Two triple-junction Ga As;
+L12: 5.7 square metres; generating 800 Watts
+L13: near Earth and 1100 Watts at Venus
+L14: Power storage
+L15: Three lithium-ion batteries
+L16: Antennas
+L17: Two high-gain dishes, HGA1 = 1.3 m diameter,
+L18: HGA2 = 0.3 m in diameter, 2 low-gain antennas
+L19: Structure
+L20: The Venus Express spacecraft was a virtual twin of Mars Express. The spacecraft body itself, termed a ‘bus’, was a honeycomb aluminium box about one and a half metres wide. With its solar arrays extended, it measured about eight metres across.
+L21: As with Mars Express, the scientific instruments were mounted in the bus. Only minor changes from Mars Express were required to accommodate the revised instruments payload, which was concentrated on three sides of the spacecraft.
+L22: However, the environment of Venus is very different from that of Mars. This required some design changes that made Venus Express more suited to operating around Venus.
+L23: Thermal control
+L24: Flying to an inner Solar System planet like Venus, at half the distance to the Sun as compared to Mars, meant that the effect of solar illumination and ionising radiation on the spacecraft was much higher. In fact, the heating of the spacecraft was four times greater at Venus than at Mars.
+L25: To keep Venus Express within temperatures that were safe for the spacecraft, the radiators on the spacecraft surface were increased in area and efficiency. The spacecraft coating, called ‘multi-layer insulation’ or MLI, was composed of 23 layers, packaged differently from Mars Express.
+L26: Moreover, for Venus Express, the MLI was gold instead of black, which provided greater capability to reflect radiation away. In general, Mars Express was designed to keep warm while Venus Express was modified to stay cool.
+L27: Artist's impression of Venus Express orbiting Venus
+L28: Power
+L29: At Venus, the Sun appears twice as powerful as on Earth, so solar radiation to power the spacecraft was plentiful. Venus Express’s solar arrays could be made smaller (almost half size) than those of Mars Express.
+L30: The two symmetric solar arrays, measuring around six square metres, were based on a ‘triple junction’ gallium arsenide (GaAs) technology, different from the silicon-based technology used for Mars Express.
+L31: The solar cells, each composed of four layers of gallium arsenide, were more tolerant to high temperatures (up to around 120 °C), so they were more suitable for hot environments. Moreover, they were able to exploit a wider range of solar radiation. The solar cells were separated by aluminium strips that helped to reject heat. All together, these aluminium strips covered half of the overall solar array surface.
+L32: When the spacecraft was in shadow (eclipse) or when its power demand exceeded the capacity of the solar arrays, electrical power was supplied by three lithium-ion batteries that were charged by the solar-generated power.
+L33: Propulsion
+L34: The gravity of Venus, almost the same as Earth’s, is about eight times higher than that of Mars. This, plus the fact that the gravitational pull of the Sun is stronger at Venus, meant that Venus Express needed more energy to brake and be captured into orbit around Venus.
+L35: This energy was provided by part of the 570 kilograms of propellant on board (about 20% more than for Mars Express). The propellant mass was almost half of the overall spacecraft weight!
+L36: Major spacecraft manoeuvres, like the injection into orbit around Venus, were performed by firing the main engine located at the bottom floor of the spacecraft, while minor manoeuvres were made using four pairs of thrusters located at the four bottom corners of the spacecraft.
+L37: The thrusters were used for small trajectory corrections, spacecraft attitude changes, and to correct the altitude of the Venus Express orbit’s pericentre about every 50 days. In fact, due to the gravitational pull of the Sun while the spacecraft is farther away from the planet, the pericentre naturally drifted upwards at a rate of about 1.5 kilometres per day.
+L38: Communications
+L39: For a spacecraft in orbit around Venus, it is not always possible to point a single antenna dish at Earth while always keeping the cold face of the spacecraft, hosting delicate instruments, away from the Sun.
+L40: To overcome this pointing constraint, Venus Express had two high-gain antennas, mounted on different spacecraft faces. The main high-gain antenna, used for most of the communication with Earth, was a dish measuring 1.3 metres diameter.
+L41: The second and smaller high-gain antenna (30 centimetres diameter) was used to communicate with Earth when the spacecraft was in the part of the orbit closest to our planet (less than 0.78 Astronomical Units* away).
+L42: Two low-gain antennas were also mounted on board, to communicate with Earth during launch, in the first days of the cruise and, if necessary, during severe ‘safe modes’.
+L43: *One Astronomical Unit, defined as the mean distance between the Sun and Earth, is about 150 million kilometres.
+L44: Navigation and attitude control
+L45: Venus Express was a three-axis stabilised spacecraft. Through three different systems on board, the spacecraft could acquire data about its position in space, attitude (orientation) and change of velocity.
+L46: These on-board systems consisted of two star trackers, two Sun sensors and a set composed by three laser gyroscopes and three accelerometers. They provided data to re-orient the spacecraft and the solar arrays when necessary.
+L47: The actual spacecraft re-orientation manoeuvre or trajectory correction was performed by means of so-called ‘reaction wheels’ or by firing the thrusters.
+L48: Data storage
+L49: The Venus Express on-board computer was responsible for supervising and managing the overall spacecraft functioning, for handling all data acquired by instruments and sensors and for sending commands through the whole spacecraft.
+L50: Part of the computer was the Solid State Mass Memory, which had a capacity of 12 gigabits. All scientific data collected by the instruments were stored here until they could be downloaded to Earth during the appropriate orbital phase.

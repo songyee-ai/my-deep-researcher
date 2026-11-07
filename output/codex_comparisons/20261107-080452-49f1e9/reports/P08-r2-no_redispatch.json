@@ -1,0 +1,2174 @@
+{
+  "question": "Mariner 10과 MESSENGER의 관측은 수성에 어떤 질문을 남겼으며 BepiColombo의 장비·두 궤도선 역할은 그 질문에 어떻게 대응하도록 설계되었나?",
+  "plan": {
+    "제목": "선행 탐사가 남긴 수성의 질문과 BepiColombo의 관측 설계",
+    "목차": [
+      {
+        "번호": 0,
+        "절": "Mariner 10과 MESSENGER가 남긴 질문",
+        "지시": "이 문서에서 설명하는 Mariner 10과 MESSENGER의 관측 결과와 남은 의문을 연결하라. 실제로 밝혀진 사실과 아직 설명되지 않은 질문을 구분하고, 후속 관측이 필요한 이유를 정리하라.",
+        "역할": "임무 계보 연구원",
+        "시작문서": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+        "예산": 2
+      },
+      {
+        "번호": 1,
+        "절": "MPO의 장비와 수성 관측 역할",
+        "지시": "이 문서에 제시된 MPO의 관측 대상과 장비 기능을 연결하고, 각 관측이 해결하려는 수성의 질문을 설명하라. 두 궤도선 중 MPO가 맡도록 설계된 역할을 밝히고, 관측 목적과 실제 성과를 구분하라.",
+        "역할": "관측 장비 연구원",
+        "시작문서": "수성 | Mercury Planetary Orbiter",
+        "예산": 2
+      },
+      {
+        "번호": 2,
+        "절": "Mio의 장비와 자기권 관측 역할",
+        "지시": "이 문서에 제시된 Mio의 관측 대상과 장비 기능을 연결하고, 각 관측이 해결하려는 수성의 질문을 설명하라. 두 궤도선 중 Mio가 맡도록 설계된 역할과 문서에 설명된 공동 관측의 의미를 밝히고, 관측 목적과 실제 성과를 구분하라.",
+        "역할": "관측 장비 연구원",
+        "시작문서": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+        "예산": 2
+      }
+    ]
+  },
+  "pending": [],
+  "round": 1,
+  "attempts": [
+    {
+      "번호": 0,
+      "절": "Mariner 10과 MESSENGER가 남긴 질문",
+      "역할": "임무 계보 연구원",
+      "round": 0,
+      "본문": "제공 자료에서 Mariner 10에 관해 확인되는 것은 Giuseppe (Bepi) Colombo가 금성의 중력 도움을 이용해 수성을 여러 차례 근접 통과할 수 있는 궤적을 제안했다는 임무 계보상의 사실이다. 구체적인 관측 결과와 미해결 질문은 제시되지 않아, 아래의 발견을 Mariner 10의 성과로 귀속하거나 MESSENGER와 임무별로 비교할 수는 없다. «수성 | What is BepiColombo?»\n\n2011~2015년 수성 궤도를 돈 MESSENGER는 표면에서 안정적인 토륨에 비해 휘발성 칼륨이 예상보다 풍부하며, 칼륨 대 토륨 비율이 태양에서 훨씬 먼 화성과 비슷하다는 결과를 얻었다. 기존 행성 형성 모형이 이 조성을 제대로 설명하지 못하므로 수성이 어디에서 어떤 과정을 거쳐 형성되었는지가 질문으로 남았고, 수성 전체 부피의 55%를 넘는 핵과 얇은 바깥층의 형성 원인도 설명이 필요하다. 화성 정도의 거리에서 형성된 뒤 거대 충돌로 태양 가까이 이동하면서 바깥 물질을 잃었다는 설명은 이 문제들을 연결하는 가설이며, 관측으로 확정된 형성 역사는 아니다. «수성 | Top five Mercury mysteries that BepiColombo will solve»\n\nMESSENGER는 극지방 분화구에서 물 얼음의 반사광으로 보이는 빛을 관측했지만, 문서는 이를 강한 간접 증거로 설명하며 물을 직접 검출한 결과와 구분한다. 따라서 후속 관측에는 물의 존재와 양을 직접 확인하고 조성을 통해 기원의 단서를 찾는 과제가 남으며, 극지방 분화구에 햇빛이 닿지 않아 저온이 유지된다는 설명만으로 물의 유입 경로까지 밝혀지는 것은 아니다. «수성 | Top five Mercury mysteries that BepiColombo will solve»\n\nMESSENGER가 분화구 안팎에서 발견한 함몰 지형인 hollows는 관측된 사실이지만, 휘발성 물질의 증발·승화로 만들어졌다는 설명과 열 또는 태양 입자가 이를 유발한다는 설명은 추정이다. 문서에서 BepiColombo는 MESSENGER 임무 종료 10년 뒤 조사를 시작할 계획으로 제시되며, 같은 지형의 성장이나 축소를 찾아 현재 지질 활동이 지속되는지 검증하려는 것이지 이미 변화를 확인한 것은 아니다. «수성 | Top five Mercury mysteries that BepiColombo will solve»\n\n수성이 반사하는 빛은 달에서 채취한 물질의 약 3분의 2에 불과하지만, 극심한 열에 따른 물질의 변화와 표면 흑연 중 무엇이 어두운 색을 설명하는지는 미해결이므로 후속 조성 관측이 필요하다. 또한 수성에는 지구 자기장의 약 100분의 1 세기인 자기장이 있고 그 중심이 행성 중심에서 북쪽으로 400킬로미터 치우쳐 있지만, 작은 행성에서 자기장이 유지되는 내부 상태와 과정은 설명해야 할 문제로 남는다. 이 때문에 후속 관측은 내부의 부분 용융 가능성, 자기장의 시간적 변화와 공간적 차이, 태양 및 태양풍의 영향을 검증할 필요가 있으며, 이러한 질문을 특정 선행 임무의 발견으로 귀속할 근거는 제공 자료에 없다. «수성 | Top five Mercury mysteries that BepiColombo will solve»",
+      "부족": true,
+      "이유": "MESSENGER의 주요 발견과 미해결 질문, 후속 관측의 필요성은 설명할 수 있다. 그러나 Mariner 10 자료는 중력 도움을 이용한 궤적 제안만 다루므로, 맡은 절을 완성하려면 Mariner 10의 구체적인 관측 결과와 그 결과가 남긴 질문을 명시한 자료가 필요하다. 장비와 두 궤도선의 상세 역할은 다른 연구원의 집필 범위이므로 부족 판단에 포함하지 않았다.",
+      "읽은문서": [
+        "수성 | Top five Mercury mysteries that BepiColombo will solve",
+        "수성 | What is BepiColombo?"
+      ],
+      "인용": [
+        "수성 | What is BepiColombo?",
+        "수성 | Top five Mercury mysteries that BepiColombo will solve",
+        "수성 | Top five Mercury mysteries that BepiColombo will solve",
+        "수성 | Top five Mercury mysteries that BepiColombo will solve",
+        "수성 | Top five Mercury mysteries that BepiColombo will solve"
+      ],
+      "draft_format": "source_ids_v1",
+      "raw_draft": {
+        "단락": [
+          {
+            "내용": "제공 자료에서 Mariner 10에 관해 확인되는 것은 Giuseppe (Bepi) Colombo가 금성의 중력 도움을 이용해 수성을 여러 차례 근접 통과할 수 있는 궤적을 제안했다는 임무 계보상의 사실이다. 구체적인 관측 결과와 미해결 질문은 제시되지 않아, 아래의 발견을 Mariner 10의 성과로 귀속하거나 MESSENGER와 임무별로 비교할 수는 없다.",
+            "출처ID": [
+              "D2"
+            ]
+          },
+          {
+            "내용": "2011~2015년 수성 궤도를 돈 MESSENGER는 표면에서 안정적인 토륨에 비해 휘발성 칼륨이 예상보다 풍부하며, 칼륨 대 토륨 비율이 태양에서 훨씬 먼 화성과 비슷하다는 결과를 얻었다. 기존 행성 형성 모형이 이 조성을 제대로 설명하지 못하므로 수성이 어디에서 어떤 과정을 거쳐 형성되었는지가 질문으로 남았고, 수성 전체 부피의 55%를 넘는 핵과 얇은 바깥층의 형성 원인도 설명이 필요하다. 화성 정도의 거리에서 형성된 뒤 거대 충돌로 태양 가까이 이동하면서 바깥 물질을 잃었다는 설명은 이 문제들을 연결하는 가설이며, 관측으로 확정된 형성 역사는 아니다.",
+            "출처ID": [
+              "D1"
+            ]
+          },
+          {
+            "내용": "MESSENGER는 극지방 분화구에서 물 얼음의 반사광으로 보이는 빛을 관측했지만, 문서는 이를 강한 간접 증거로 설명하며 물을 직접 검출한 결과와 구분한다. 따라서 후속 관측에는 물의 존재와 양을 직접 확인하고 조성을 통해 기원의 단서를 찾는 과제가 남으며, 극지방 분화구에 햇빛이 닿지 않아 저온이 유지된다는 설명만으로 물의 유입 경로까지 밝혀지는 것은 아니다.",
+            "출처ID": [
+              "D1"
+            ]
+          },
+          {
+            "내용": "MESSENGER가 분화구 안팎에서 발견한 함몰 지형인 hollows는 관측된 사실이지만, 휘발성 물질의 증발·승화로 만들어졌다는 설명과 열 또는 태양 입자가 이를 유발한다는 설명은 추정이다. 문서에서 BepiColombo는 MESSENGER 임무 종료 10년 뒤 조사를 시작할 계획으로 제시되며, 같은 지형의 성장이나 축소를 찾아 현재 지질 활동이 지속되는지 검증하려는 것이지 이미 변화를 확인한 것은 아니다.",
+            "출처ID": [
+              "D1"
+            ]
+          },
+          {
+            "내용": "수성이 반사하는 빛은 달에서 채취한 물질의 약 3분의 2에 불과하지만, 극심한 열에 따른 물질의 변화와 표면 흑연 중 무엇이 어두운 색을 설명하는지는 미해결이므로 후속 조성 관측이 필요하다. 또한 수성에는 지구 자기장의 약 100분의 1 세기인 자기장이 있고 그 중심이 행성 중심에서 북쪽으로 400킬로미터 치우쳐 있지만, 작은 행성에서 자기장이 유지되는 내부 상태와 과정은 설명해야 할 문제로 남는다. 이 때문에 후속 관측은 내부의 부분 용융 가능성, 자기장의 시간적 변화와 공간적 차이, 태양 및 태양풍의 영향을 검증할 필요가 있으며, 이러한 질문을 특정 선행 임무의 발견으로 귀속할 근거는 제공 자료에 없다.",
+            "출처ID": [
+              "D1"
+            ]
+          }
+        ],
+        "부족": true,
+        "이유": "MESSENGER의 주요 발견과 미해결 질문, 후속 관측의 필요성은 설명할 수 있다. 그러나 Mariner 10 자료는 중력 도움을 이용한 궤적 제안만 다루므로, 맡은 절을 완성하려면 Mariner 10의 구체적인 관측 결과와 그 결과가 남긴 질문을 명시한 자료가 필요하다. 장비와 두 궤도선의 상세 역할은 다른 연구원의 집필 범위이므로 부족 판단에 포함하지 않았다."
+      },
+      "source_map": {
+        "D1": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+        "D2": "수성 | What is BepiColombo?"
+      }
+    },
+    {
+      "번호": 1,
+      "절": "MPO의 장비와 수성 관측 역할",
+      "역할": "관측 장비 연구원",
+      "round": 0,
+      "본문": "ESA의 Mercury Planetary Orbiter (MPO)는 JAXA의 Mercury Magnetospheric Orbiter (Mio)와 함께 BepiColombo를 구성하는 두 과학 궤도선 중 하나로, 제시된 장비 구성에서 맡은 역할은 수성의 표면·조성·내부 구조를 조사하고 외기권 및 자기장 관측으로 행성의 기원과 진화를 이해하는 것이다. «수성 | Mercury Planetary Orbiter»«수성 | BepiColombo factsheet»\n\nBepiColombo Laser Altimeter (BELA)는 레이저 고도계로 지형과 표면 형태를 측정해 수치 지형 모형을 만들도록 설계되어, 수성 표면이 어떤 형태인가라는 질문에 대응한다. Spectrometers and Imagers for MPO BepiColombo Integrated Observatory (SIMBIO-SYS)는 입체·컬러 영상과 분광 분석으로 표면 지질, 화산활동, 전 지구적 지각변동, 표면 나이와 조성을 조사해 표면이 어떻게 형성되고 변화했는지를 연구한다. Mercury Radiometer and Thermal Infrared Spectrometer (MERTIS)는 복사계와 열적외선 분광계로 표면의 광물 조성·온도·열관성을 상세히 조사하여, 수성의 기원과 진화 모형에 필요한 물질 및 열적 특성 정보를 얻으려는 장비다. «수성 | Mercury Planetary Orbiter»«수성 | BepiColombo factsheet»\n\nMercury Gamma-ray and Neutron Spectrometer (MGNS)는 감마선·중성자 분광계로 표면과 지하의 원소 조성을 결정하고 극지 영구 음영 지역의 휘발성 물질 분포를 파악하도록 설계되어, 어떤 물질이 어디에 존재하는지를 조사한다. Probing of Hermean Exosphere by Ultraviolet Spectroscopy (PHEBUS)는 자외선 분광으로 외기권의 조성과 역학을 조사하고 고위도 충돌구의 영구 음영 지역에서 표면 얼음층을 탐색하여, 외기권의 성질과 얼음의 존재 여부라는 질문에 대응한다. Search for Exosphere Refilling and Emitted Neutral Abundances (SERENA)는 중성·이온화 입자 분석기로 표면·외기권·자기권·태양풍·행성간 매질 사이의 기체 상호작용을 연구해 이 영역들이 어떻게 연결되는지를 살피도록 설계되었다. «수성 | Mercury Planetary Orbiter»«수성 | BepiColombo factsheet»\n\nMercury Orbiter Radio science Experiment (MORE)는 수성의 중력장과 핵의 크기·물리적 상태를 결정하는 것을 목적으로 하여, 내부 구조와 핵이 어떤 상태인가라는 질문에 대응한다. Magnetometer (MPO-MAG)는 자기장, 태양풍과의 상호작용, 자기권의 형성과 역학을 측정하여 수성 내부의 기원·진화·현재 상태를 이해하는 데 기여하도록 설계되어, MPO의 내부 연구가 자기장 관측과도 연결됨을 보여준다. 이 설명은 모두 장비의 관측 목적이며, 제공된 자료에는 지형 모형 완성, 얼음 검출, 핵의 상태 결정 같은 실제 관측 성과가 제시되어 있지 않다. «수성 | Mercury Planetary Orbiter»",
+      "부족": false,
+      "이유": "D1에 맡은 절의 핵심인 MPO의 관측 대상과 장비 기능을 연결할 근거가 있고 D2가 임무 구성과 장비 유형을 보완한다. 장비별 상세 작동 원리와 실제 관측 성과는 제시되지 않아 자료에 명시된 측정 방식과 설계 목적까지만 설명했다.",
+      "읽은문서": [
+        "수성 | Mercury Planetary Orbiter",
+        "수성 | BepiColombo factsheet"
+      ],
+      "인용": [
+        "수성 | Mercury Planetary Orbiter",
+        "수성 | BepiColombo factsheet",
+        "수성 | Mercury Planetary Orbiter",
+        "수성 | BepiColombo factsheet",
+        "수성 | Mercury Planetary Orbiter",
+        "수성 | BepiColombo factsheet",
+        "수성 | Mercury Planetary Orbiter"
+      ],
+      "draft_format": "source_ids_v1",
+      "raw_draft": {
+        "단락": [
+          {
+            "내용": "ESA의 Mercury Planetary Orbiter (MPO)는 JAXA의 Mercury Magnetospheric Orbiter (Mio)와 함께 BepiColombo를 구성하는 두 과학 궤도선 중 하나로, 제시된 장비 구성에서 맡은 역할은 수성의 표면·조성·내부 구조를 조사하고 외기권 및 자기장 관측으로 행성의 기원과 진화를 이해하는 것이다.",
+            "출처ID": [
+              "D1",
+              "D2"
+            ]
+          },
+          {
+            "내용": "BepiColombo Laser Altimeter (BELA)는 레이저 고도계로 지형과 표면 형태를 측정해 수치 지형 모형을 만들도록 설계되어, 수성 표면이 어떤 형태인가라는 질문에 대응한다. Spectrometers and Imagers for MPO BepiColombo Integrated Observatory (SIMBIO-SYS)는 입체·컬러 영상과 분광 분석으로 표면 지질, 화산활동, 전 지구적 지각변동, 표면 나이와 조성을 조사해 표면이 어떻게 형성되고 변화했는지를 연구한다. Mercury Radiometer and Thermal Infrared Spectrometer (MERTIS)는 복사계와 열적외선 분광계로 표면의 광물 조성·온도·열관성을 상세히 조사하여, 수성의 기원과 진화 모형에 필요한 물질 및 열적 특성 정보를 얻으려는 장비다.",
+            "출처ID": [
+              "D1",
+              "D2"
+            ]
+          },
+          {
+            "내용": "Mercury Gamma-ray and Neutron Spectrometer (MGNS)는 감마선·중성자 분광계로 표면과 지하의 원소 조성을 결정하고 극지 영구 음영 지역의 휘발성 물질 분포를 파악하도록 설계되어, 어떤 물질이 어디에 존재하는지를 조사한다. Probing of Hermean Exosphere by Ultraviolet Spectroscopy (PHEBUS)는 자외선 분광으로 외기권의 조성과 역학을 조사하고 고위도 충돌구의 영구 음영 지역에서 표면 얼음층을 탐색하여, 외기권의 성질과 얼음의 존재 여부라는 질문에 대응한다. Search for Exosphere Refilling and Emitted Neutral Abundances (SERENA)는 중성·이온화 입자 분석기로 표면·외기권·자기권·태양풍·행성간 매질 사이의 기체 상호작용을 연구해 이 영역들이 어떻게 연결되는지를 살피도록 설계되었다.",
+            "출처ID": [
+              "D1",
+              "D2"
+            ]
+          },
+          {
+            "내용": "Mercury Orbiter Radio science Experiment (MORE)는 수성의 중력장과 핵의 크기·물리적 상태를 결정하는 것을 목적으로 하여, 내부 구조와 핵이 어떤 상태인가라는 질문에 대응한다. Magnetometer (MPO-MAG)는 자기장, 태양풍과의 상호작용, 자기권의 형성과 역학을 측정하여 수성 내부의 기원·진화·현재 상태를 이해하는 데 기여하도록 설계되어, MPO의 내부 연구가 자기장 관측과도 연결됨을 보여준다. 이 설명은 모두 장비의 관측 목적이며, 제공된 자료에는 지형 모형 완성, 얼음 검출, 핵의 상태 결정 같은 실제 관측 성과가 제시되어 있지 않다.",
+            "출처ID": [
+              "D1"
+            ]
+          }
+        ],
+        "부족": false,
+        "이유": "D1에 맡은 절의 핵심인 MPO의 관측 대상과 장비 기능을 연결할 근거가 있고 D2가 임무 구성과 장비 유형을 보완한다. 장비별 상세 작동 원리와 실제 관측 성과는 제시되지 않아 자료에 명시된 측정 방식과 설계 목적까지만 설명했다."
+      },
+      "source_map": {
+        "D1": "수성 | Mercury Planetary Orbiter",
+        "D2": "수성 | BepiColombo factsheet"
+      }
+    },
+    {
+      "번호": 2,
+      "절": "Mio의 장비와 자기권 관측 역할",
+      "역할": "관측 장비 연구원",
+      "round": 0,
+      "본문": "JAXA의 Mercury Magnetospheric Orbiter(Mio)는 ESA의 Mercury Planetary Orbiter(MPO)와 함께 BepiColombo를 구성하는 두 우주선 중 하나이며, 제시된 장비 기능을 종합하면 자기권과 주변 입자·파동 환경을 조사하는 역할을 맡도록 설계되었다. Magnetometer(MGF)는 수성 자기권을 상세히 기술하고 행성 자기장 및 태양풍과의 상호작용을 조사하여, 수성 자기권이 이들과 어떻게 상호작용하는가라는 질문에 대응한다. Mercury Plasma Particle Experiment(MPPE)는 7개 센서로 자기권의 플라스마와 고에너지 입자를 연구하며, 입자 관측을 통해 태양풍과 수성 자기권의 상호작용을 조사하도록 설계되었다. «수성 | Mercury Magnetospheric Orbiter (Mio)»\n\nPlasma Wave Instrument(PWI)는 현장 관측과 원격 탐사로 수성 플라스마 환경의 전기장·플라스마파·전파를 분석하여, 그 환경이 어떤 전기장과 파동 특성을 보이는지 조사한다. Mercury Sodium Atmosphere Spectral Imager(MSASI)는 수성 외기권의 나트륨 함량·분포·동역학을 측정하여 나트륨의 공급원과 관련 과정이 무엇인지 밝히려는 장비다. Mercury Dust Monitor(MDM)는 수성 궤도의 행성 간 먼지를 관측 대상으로 삼아 그 분포가 어떠한지 연구하며, 이처럼 Mio의 관측 범위에는 자기권뿐 아니라 외기권의 나트륨과 주변 먼지 환경도 포함된다. «수성 | Mercury Magnetospheric Orbiter (Mio)»\n\nBepiColombo factsheet도 MGF·MPPE·PWI·MSASI·MDM을 Mio의 탑재 장비로 열거하지만, 장비 목록 자체는 작동 원리나 관측 성과를 설명하는 근거가 아니다. 제공 자료에서 확인되는 두 궤도선의 관계는 같은 임무를 구성한다는 점까지이며, 공동 관측의 구체적인 방식과 과학적 의미는 설명되지 않아 Mio와 MPO의 관측을 어떻게 결합하는지 단정할 수 없다. 따라서 위 설명은 장비별 관측 대상과 설계 목적에 한정되며, 이를 실제로 해결된 질문이나 관측 성과로 바꾸거나 Mariner 10과 MESSENGER가 남긴 특정 의문에 직접 대응한다고 확정할 근거는 없다. «수성 | Mercury Magnetospheric Orbiter (Mio)»«수성 | BepiColombo factsheet»",
+      "부족": true,
+      "이유": "Mio의 장비별 관측 대상과 목적은 설명할 수 있으나, 요청된 공동 관측의 방식과 의미를 밝힐 핵심 근거가 없다. 이를 설명하는 자료와 앞선 탐사의 특정 미해결 질문을 Mio 관측에 연결하는 자료가 필요하다. 세부 장비 작동 원리와 실제 관측 성과도 제시되지 않아 해당 내용을 추정하지 않았다.",
+      "읽은문서": [
+        "수성 | Mercury Magnetospheric Orbiter (Mio)",
+        "수성 | BepiColombo factsheet"
+      ],
+      "인용": [
+        "수성 | Mercury Magnetospheric Orbiter (Mio)",
+        "수성 | Mercury Magnetospheric Orbiter (Mio)",
+        "수성 | Mercury Magnetospheric Orbiter (Mio)",
+        "수성 | BepiColombo factsheet"
+      ],
+      "draft_format": "source_ids_v1",
+      "raw_draft": {
+        "단락": [
+          {
+            "내용": "JAXA의 Mercury Magnetospheric Orbiter(Mio)는 ESA의 Mercury Planetary Orbiter(MPO)와 함께 BepiColombo를 구성하는 두 우주선 중 하나이며, 제시된 장비 기능을 종합하면 자기권과 주변 입자·파동 환경을 조사하는 역할을 맡도록 설계되었다. Magnetometer(MGF)는 수성 자기권을 상세히 기술하고 행성 자기장 및 태양풍과의 상호작용을 조사하여, 수성 자기권이 이들과 어떻게 상호작용하는가라는 질문에 대응한다. Mercury Plasma Particle Experiment(MPPE)는 7개 센서로 자기권의 플라스마와 고에너지 입자를 연구하며, 입자 관측을 통해 태양풍과 수성 자기권의 상호작용을 조사하도록 설계되었다.",
+            "출처ID": [
+              "D1"
+            ]
+          },
+          {
+            "내용": "Plasma Wave Instrument(PWI)는 현장 관측과 원격 탐사로 수성 플라스마 환경의 전기장·플라스마파·전파를 분석하여, 그 환경이 어떤 전기장과 파동 특성을 보이는지 조사한다. Mercury Sodium Atmosphere Spectral Imager(MSASI)는 수성 외기권의 나트륨 함량·분포·동역학을 측정하여 나트륨의 공급원과 관련 과정이 무엇인지 밝히려는 장비다. Mercury Dust Monitor(MDM)는 수성 궤도의 행성 간 먼지를 관측 대상으로 삼아 그 분포가 어떠한지 연구하며, 이처럼 Mio의 관측 범위에는 자기권뿐 아니라 외기권의 나트륨과 주변 먼지 환경도 포함된다.",
+            "출처ID": [
+              "D1"
+            ]
+          },
+          {
+            "내용": "BepiColombo factsheet도 MGF·MPPE·PWI·MSASI·MDM을 Mio의 탑재 장비로 열거하지만, 장비 목록 자체는 작동 원리나 관측 성과를 설명하는 근거가 아니다. 제공 자료에서 확인되는 두 궤도선의 관계는 같은 임무를 구성한다는 점까지이며, 공동 관측의 구체적인 방식과 과학적 의미는 설명되지 않아 Mio와 MPO의 관측을 어떻게 결합하는지 단정할 수 없다. 따라서 위 설명은 장비별 관측 대상과 설계 목적에 한정되며, 이를 실제로 해결된 질문이나 관측 성과로 바꾸거나 Mariner 10과 MESSENGER가 남긴 특정 의문에 직접 대응한다고 확정할 근거는 없다.",
+            "출처ID": [
+              "D1",
+              "D2"
+            ]
+          }
+        ],
+        "부족": true,
+        "이유": "Mio의 장비별 관측 대상과 목적은 설명할 수 있으나, 요청된 공동 관측의 방식과 의미를 밝힐 핵심 근거가 없다. 이를 설명하는 자료와 앞선 탐사의 특정 미해결 질문을 Mio 관측에 연결하는 자료가 필요하다. 세부 장비 작동 원리와 실제 관측 성과도 제시되지 않아 해당 내용을 추정하지 않았다."
+      },
+      "source_map": {
+        "D1": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+        "D2": "수성 | BepiColombo factsheet"
+      }
+    }
+  ],
+  "selected": [
+    {
+      "번호": 0,
+      "절": "Mariner 10과 MESSENGER가 남긴 질문",
+      "역할": "임무 계보 연구원",
+      "round": 0,
+      "본문": "제공 자료에서 Mariner 10에 관해 확인되는 것은 Giuseppe (Bepi) Colombo가 금성의 중력 도움을 이용해 수성을 여러 차례 근접 통과할 수 있는 궤적을 제안했다는 임무 계보상의 사실이다. 구체적인 관측 결과와 미해결 질문은 제시되지 않아, 아래의 발견을 Mariner 10의 성과로 귀속하거나 MESSENGER와 임무별로 비교할 수는 없다. «수성 | What is BepiColombo?»\n\n2011~2015년 수성 궤도를 돈 MESSENGER는 표면에서 안정적인 토륨에 비해 휘발성 칼륨이 예상보다 풍부하며, 칼륨 대 토륨 비율이 태양에서 훨씬 먼 화성과 비슷하다는 결과를 얻었다. 기존 행성 형성 모형이 이 조성을 제대로 설명하지 못하므로 수성이 어디에서 어떤 과정을 거쳐 형성되었는지가 질문으로 남았고, 수성 전체 부피의 55%를 넘는 핵과 얇은 바깥층의 형성 원인도 설명이 필요하다. 화성 정도의 거리에서 형성된 뒤 거대 충돌로 태양 가까이 이동하면서 바깥 물질을 잃었다는 설명은 이 문제들을 연결하는 가설이며, 관측으로 확정된 형성 역사는 아니다. «수성 | Top five Mercury mysteries that BepiColombo will solve»\n\nMESSENGER는 극지방 분화구에서 물 얼음의 반사광으로 보이는 빛을 관측했지만, 문서는 이를 강한 간접 증거로 설명하며 물을 직접 검출한 결과와 구분한다. 따라서 후속 관측에는 물의 존재와 양을 직접 확인하고 조성을 통해 기원의 단서를 찾는 과제가 남으며, 극지방 분화구에 햇빛이 닿지 않아 저온이 유지된다는 설명만으로 물의 유입 경로까지 밝혀지는 것은 아니다. «수성 | Top five Mercury mysteries that BepiColombo will solve»\n\nMESSENGER가 분화구 안팎에서 발견한 함몰 지형인 hollows는 관측된 사실이지만, 휘발성 물질의 증발·승화로 만들어졌다는 설명과 열 또는 태양 입자가 이를 유발한다는 설명은 추정이다. 문서에서 BepiColombo는 MESSENGER 임무 종료 10년 뒤 조사를 시작할 계획으로 제시되며, 같은 지형의 성장이나 축소를 찾아 현재 지질 활동이 지속되는지 검증하려는 것이지 이미 변화를 확인한 것은 아니다. «수성 | Top five Mercury mysteries that BepiColombo will solve»\n\n수성이 반사하는 빛은 달에서 채취한 물질의 약 3분의 2에 불과하지만, 극심한 열에 따른 물질의 변화와 표면 흑연 중 무엇이 어두운 색을 설명하는지는 미해결이므로 후속 조성 관측이 필요하다. 또한 수성에는 지구 자기장의 약 100분의 1 세기인 자기장이 있고 그 중심이 행성 중심에서 북쪽으로 400킬로미터 치우쳐 있지만, 작은 행성에서 자기장이 유지되는 내부 상태와 과정은 설명해야 할 문제로 남는다. 이 때문에 후속 관측은 내부의 부분 용융 가능성, 자기장의 시간적 변화와 공간적 차이, 태양 및 태양풍의 영향을 검증할 필요가 있으며, 이러한 질문을 특정 선행 임무의 발견으로 귀속할 근거는 제공 자료에 없다. «수성 | Top five Mercury mysteries that BepiColombo will solve»",
+      "부족": true,
+      "이유": "MESSENGER의 주요 발견과 미해결 질문, 후속 관측의 필요성은 설명할 수 있다. 그러나 Mariner 10 자료는 중력 도움을 이용한 궤적 제안만 다루므로, 맡은 절을 완성하려면 Mariner 10의 구체적인 관측 결과와 그 결과가 남긴 질문을 명시한 자료가 필요하다. 장비와 두 궤도선의 상세 역할은 다른 연구원의 집필 범위이므로 부족 판단에 포함하지 않았다.",
+      "읽은문서": [
+        "수성 | Top five Mercury mysteries that BepiColombo will solve",
+        "수성 | What is BepiColombo?"
+      ],
+      "인용": [
+        "수성 | What is BepiColombo?",
+        "수성 | Top five Mercury mysteries that BepiColombo will solve",
+        "수성 | Top five Mercury mysteries that BepiColombo will solve",
+        "수성 | Top five Mercury mysteries that BepiColombo will solve",
+        "수성 | Top five Mercury mysteries that BepiColombo will solve"
+      ],
+      "draft_format": "source_ids_v1",
+      "raw_draft": {
+        "단락": [
+          {
+            "내용": "제공 자료에서 Mariner 10에 관해 확인되는 것은 Giuseppe (Bepi) Colombo가 금성의 중력 도움을 이용해 수성을 여러 차례 근접 통과할 수 있는 궤적을 제안했다는 임무 계보상의 사실이다. 구체적인 관측 결과와 미해결 질문은 제시되지 않아, 아래의 발견을 Mariner 10의 성과로 귀속하거나 MESSENGER와 임무별로 비교할 수는 없다.",
+            "출처ID": [
+              "D2"
+            ]
+          },
+          {
+            "내용": "2011~2015년 수성 궤도를 돈 MESSENGER는 표면에서 안정적인 토륨에 비해 휘발성 칼륨이 예상보다 풍부하며, 칼륨 대 토륨 비율이 태양에서 훨씬 먼 화성과 비슷하다는 결과를 얻었다. 기존 행성 형성 모형이 이 조성을 제대로 설명하지 못하므로 수성이 어디에서 어떤 과정을 거쳐 형성되었는지가 질문으로 남았고, 수성 전체 부피의 55%를 넘는 핵과 얇은 바깥층의 형성 원인도 설명이 필요하다. 화성 정도의 거리에서 형성된 뒤 거대 충돌로 태양 가까이 이동하면서 바깥 물질을 잃었다는 설명은 이 문제들을 연결하는 가설이며, 관측으로 확정된 형성 역사는 아니다.",
+            "출처ID": [
+              "D1"
+            ]
+          },
+          {
+            "내용": "MESSENGER는 극지방 분화구에서 물 얼음의 반사광으로 보이는 빛을 관측했지만, 문서는 이를 강한 간접 증거로 설명하며 물을 직접 검출한 결과와 구분한다. 따라서 후속 관측에는 물의 존재와 양을 직접 확인하고 조성을 통해 기원의 단서를 찾는 과제가 남으며, 극지방 분화구에 햇빛이 닿지 않아 저온이 유지된다는 설명만으로 물의 유입 경로까지 밝혀지는 것은 아니다.",
+            "출처ID": [
+              "D1"
+            ]
+          },
+          {
+            "내용": "MESSENGER가 분화구 안팎에서 발견한 함몰 지형인 hollows는 관측된 사실이지만, 휘발성 물질의 증발·승화로 만들어졌다는 설명과 열 또는 태양 입자가 이를 유발한다는 설명은 추정이다. 문서에서 BepiColombo는 MESSENGER 임무 종료 10년 뒤 조사를 시작할 계획으로 제시되며, 같은 지형의 성장이나 축소를 찾아 현재 지질 활동이 지속되는지 검증하려는 것이지 이미 변화를 확인한 것은 아니다.",
+            "출처ID": [
+              "D1"
+            ]
+          },
+          {
+            "내용": "수성이 반사하는 빛은 달에서 채취한 물질의 약 3분의 2에 불과하지만, 극심한 열에 따른 물질의 변화와 표면 흑연 중 무엇이 어두운 색을 설명하는지는 미해결이므로 후속 조성 관측이 필요하다. 또한 수성에는 지구 자기장의 약 100분의 1 세기인 자기장이 있고 그 중심이 행성 중심에서 북쪽으로 400킬로미터 치우쳐 있지만, 작은 행성에서 자기장이 유지되는 내부 상태와 과정은 설명해야 할 문제로 남는다. 이 때문에 후속 관측은 내부의 부분 용융 가능성, 자기장의 시간적 변화와 공간적 차이, 태양 및 태양풍의 영향을 검증할 필요가 있으며, 이러한 질문을 특정 선행 임무의 발견으로 귀속할 근거는 제공 자료에 없다.",
+            "출처ID": [
+              "D1"
+            ]
+          }
+        ],
+        "부족": true,
+        "이유": "MESSENGER의 주요 발견과 미해결 질문, 후속 관측의 필요성은 설명할 수 있다. 그러나 Mariner 10 자료는 중력 도움을 이용한 궤적 제안만 다루므로, 맡은 절을 완성하려면 Mariner 10의 구체적인 관측 결과와 그 결과가 남긴 질문을 명시한 자료가 필요하다. 장비와 두 궤도선의 상세 역할은 다른 연구원의 집필 범위이므로 부족 판단에 포함하지 않았다."
+      },
+      "source_map": {
+        "D1": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+        "D2": "수성 | What is BepiColombo?"
+      }
+    },
+    {
+      "번호": 1,
+      "절": "MPO의 장비와 수성 관측 역할",
+      "역할": "관측 장비 연구원",
+      "round": 0,
+      "본문": "ESA의 Mercury Planetary Orbiter (MPO)는 JAXA의 Mercury Magnetospheric Orbiter (Mio)와 함께 BepiColombo를 구성하는 두 과학 궤도선 중 하나로, 제시된 장비 구성에서 맡은 역할은 수성의 표면·조성·내부 구조를 조사하고 외기권 및 자기장 관측으로 행성의 기원과 진화를 이해하는 것이다. «수성 | Mercury Planetary Orbiter»«수성 | BepiColombo factsheet»\n\nBepiColombo Laser Altimeter (BELA)는 레이저 고도계로 지형과 표면 형태를 측정해 수치 지형 모형을 만들도록 설계되어, 수성 표면이 어떤 형태인가라는 질문에 대응한다. Spectrometers and Imagers for MPO BepiColombo Integrated Observatory (SIMBIO-SYS)는 입체·컬러 영상과 분광 분석으로 표면 지질, 화산활동, 전 지구적 지각변동, 표면 나이와 조성을 조사해 표면이 어떻게 형성되고 변화했는지를 연구한다. Mercury Radiometer and Thermal Infrared Spectrometer (MERTIS)는 복사계와 열적외선 분광계로 표면의 광물 조성·온도·열관성을 상세히 조사하여, 수성의 기원과 진화 모형에 필요한 물질 및 열적 특성 정보를 얻으려는 장비다. «수성 | Mercury Planetary Orbiter»«수성 | BepiColombo factsheet»\n\nMercury Gamma-ray and Neutron Spectrometer (MGNS)는 감마선·중성자 분광계로 표면과 지하의 원소 조성을 결정하고 극지 영구 음영 지역의 휘발성 물질 분포를 파악하도록 설계되어, 어떤 물질이 어디에 존재하는지를 조사한다. Probing of Hermean Exosphere by Ultraviolet Spectroscopy (PHEBUS)는 자외선 분광으로 외기권의 조성과 역학을 조사하고 고위도 충돌구의 영구 음영 지역에서 표면 얼음층을 탐색하여, 외기권의 성질과 얼음의 존재 여부라는 질문에 대응한다. Search for Exosphere Refilling and Emitted Neutral Abundances (SERENA)는 중성·이온화 입자 분석기로 표면·외기권·자기권·태양풍·행성간 매질 사이의 기체 상호작용을 연구해 이 영역들이 어떻게 연결되는지를 살피도록 설계되었다. «수성 | Mercury Planetary Orbiter»«수성 | BepiColombo factsheet»\n\nMercury Orbiter Radio science Experiment (MORE)는 수성의 중력장과 핵의 크기·물리적 상태를 결정하는 것을 목적으로 하여, 내부 구조와 핵이 어떤 상태인가라는 질문에 대응한다. Magnetometer (MPO-MAG)는 자기장, 태양풍과의 상호작용, 자기권의 형성과 역학을 측정하여 수성 내부의 기원·진화·현재 상태를 이해하는 데 기여하도록 설계되어, MPO의 내부 연구가 자기장 관측과도 연결됨을 보여준다. 이 설명은 모두 장비의 관측 목적이며, 제공된 자료에는 지형 모형 완성, 얼음 검출, 핵의 상태 결정 같은 실제 관측 성과가 제시되어 있지 않다. «수성 | Mercury Planetary Orbiter»",
+      "부족": false,
+      "이유": "D1에 맡은 절의 핵심인 MPO의 관측 대상과 장비 기능을 연결할 근거가 있고 D2가 임무 구성과 장비 유형을 보완한다. 장비별 상세 작동 원리와 실제 관측 성과는 제시되지 않아 자료에 명시된 측정 방식과 설계 목적까지만 설명했다.",
+      "읽은문서": [
+        "수성 | Mercury Planetary Orbiter",
+        "수성 | BepiColombo factsheet"
+      ],
+      "인용": [
+        "수성 | Mercury Planetary Orbiter",
+        "수성 | BepiColombo factsheet",
+        "수성 | Mercury Planetary Orbiter",
+        "수성 | BepiColombo factsheet",
+        "수성 | Mercury Planetary Orbiter",
+        "수성 | BepiColombo factsheet",
+        "수성 | Mercury Planetary Orbiter"
+      ],
+      "draft_format": "source_ids_v1",
+      "raw_draft": {
+        "단락": [
+          {
+            "내용": "ESA의 Mercury Planetary Orbiter (MPO)는 JAXA의 Mercury Magnetospheric Orbiter (Mio)와 함께 BepiColombo를 구성하는 두 과학 궤도선 중 하나로, 제시된 장비 구성에서 맡은 역할은 수성의 표면·조성·내부 구조를 조사하고 외기권 및 자기장 관측으로 행성의 기원과 진화를 이해하는 것이다.",
+            "출처ID": [
+              "D1",
+              "D2"
+            ]
+          },
+          {
+            "내용": "BepiColombo Laser Altimeter (BELA)는 레이저 고도계로 지형과 표면 형태를 측정해 수치 지형 모형을 만들도록 설계되어, 수성 표면이 어떤 형태인가라는 질문에 대응한다. Spectrometers and Imagers for MPO BepiColombo Integrated Observatory (SIMBIO-SYS)는 입체·컬러 영상과 분광 분석으로 표면 지질, 화산활동, 전 지구적 지각변동, 표면 나이와 조성을 조사해 표면이 어떻게 형성되고 변화했는지를 연구한다. Mercury Radiometer and Thermal Infrared Spectrometer (MERTIS)는 복사계와 열적외선 분광계로 표면의 광물 조성·온도·열관성을 상세히 조사하여, 수성의 기원과 진화 모형에 필요한 물질 및 열적 특성 정보를 얻으려는 장비다.",
+            "출처ID": [
+              "D1",
+              "D2"
+            ]
+          },
+          {
+            "내용": "Mercury Gamma-ray and Neutron Spectrometer (MGNS)는 감마선·중성자 분광계로 표면과 지하의 원소 조성을 결정하고 극지 영구 음영 지역의 휘발성 물질 분포를 파악하도록 설계되어, 어떤 물질이 어디에 존재하는지를 조사한다. Probing of Hermean Exosphere by Ultraviolet Spectroscopy (PHEBUS)는 자외선 분광으로 외기권의 조성과 역학을 조사하고 고위도 충돌구의 영구 음영 지역에서 표면 얼음층을 탐색하여, 외기권의 성질과 얼음의 존재 여부라는 질문에 대응한다. Search for Exosphere Refilling and Emitted Neutral Abundances (SERENA)는 중성·이온화 입자 분석기로 표면·외기권·자기권·태양풍·행성간 매질 사이의 기체 상호작용을 연구해 이 영역들이 어떻게 연결되는지를 살피도록 설계되었다.",
+            "출처ID": [
+              "D1",
+              "D2"
+            ]
+          },
+          {
+            "내용": "Mercury Orbiter Radio science Experiment (MORE)는 수성의 중력장과 핵의 크기·물리적 상태를 결정하는 것을 목적으로 하여, 내부 구조와 핵이 어떤 상태인가라는 질문에 대응한다. Magnetometer (MPO-MAG)는 자기장, 태양풍과의 상호작용, 자기권의 형성과 역학을 측정하여 수성 내부의 기원·진화·현재 상태를 이해하는 데 기여하도록 설계되어, MPO의 내부 연구가 자기장 관측과도 연결됨을 보여준다. 이 설명은 모두 장비의 관측 목적이며, 제공된 자료에는 지형 모형 완성, 얼음 검출, 핵의 상태 결정 같은 실제 관측 성과가 제시되어 있지 않다.",
+            "출처ID": [
+              "D1"
+            ]
+          }
+        ],
+        "부족": false,
+        "이유": "D1에 맡은 절의 핵심인 MPO의 관측 대상과 장비 기능을 연결할 근거가 있고 D2가 임무 구성과 장비 유형을 보완한다. 장비별 상세 작동 원리와 실제 관측 성과는 제시되지 않아 자료에 명시된 측정 방식과 설계 목적까지만 설명했다."
+      },
+      "source_map": {
+        "D1": "수성 | Mercury Planetary Orbiter",
+        "D2": "수성 | BepiColombo factsheet"
+      }
+    },
+    {
+      "번호": 2,
+      "절": "Mio의 장비와 자기권 관측 역할",
+      "역할": "관측 장비 연구원",
+      "round": 0,
+      "본문": "JAXA의 Mercury Magnetospheric Orbiter(Mio)는 ESA의 Mercury Planetary Orbiter(MPO)와 함께 BepiColombo를 구성하는 두 우주선 중 하나이며, 제시된 장비 기능을 종합하면 자기권과 주변 입자·파동 환경을 조사하는 역할을 맡도록 설계되었다. Magnetometer(MGF)는 수성 자기권을 상세히 기술하고 행성 자기장 및 태양풍과의 상호작용을 조사하여, 수성 자기권이 이들과 어떻게 상호작용하는가라는 질문에 대응한다. Mercury Plasma Particle Experiment(MPPE)는 7개 센서로 자기권의 플라스마와 고에너지 입자를 연구하며, 입자 관측을 통해 태양풍과 수성 자기권의 상호작용을 조사하도록 설계되었다. «수성 | Mercury Magnetospheric Orbiter (Mio)»\n\nPlasma Wave Instrument(PWI)는 현장 관측과 원격 탐사로 수성 플라스마 환경의 전기장·플라스마파·전파를 분석하여, 그 환경이 어떤 전기장과 파동 특성을 보이는지 조사한다. Mercury Sodium Atmosphere Spectral Imager(MSASI)는 수성 외기권의 나트륨 함량·분포·동역학을 측정하여 나트륨의 공급원과 관련 과정이 무엇인지 밝히려는 장비다. Mercury Dust Monitor(MDM)는 수성 궤도의 행성 간 먼지를 관측 대상으로 삼아 그 분포가 어떠한지 연구하며, 이처럼 Mio의 관측 범위에는 자기권뿐 아니라 외기권의 나트륨과 주변 먼지 환경도 포함된다. «수성 | Mercury Magnetospheric Orbiter (Mio)»\n\nBepiColombo factsheet도 MGF·MPPE·PWI·MSASI·MDM을 Mio의 탑재 장비로 열거하지만, 장비 목록 자체는 작동 원리나 관측 성과를 설명하는 근거가 아니다. 제공 자료에서 확인되는 두 궤도선의 관계는 같은 임무를 구성한다는 점까지이며, 공동 관측의 구체적인 방식과 과학적 의미는 설명되지 않아 Mio와 MPO의 관측을 어떻게 결합하는지 단정할 수 없다. 따라서 위 설명은 장비별 관측 대상과 설계 목적에 한정되며, 이를 실제로 해결된 질문이나 관측 성과로 바꾸거나 Mariner 10과 MESSENGER가 남긴 특정 의문에 직접 대응한다고 확정할 근거는 없다. «수성 | Mercury Magnetospheric Orbiter (Mio)»«수성 | BepiColombo factsheet»",
+      "부족": true,
+      "이유": "Mio의 장비별 관측 대상과 목적은 설명할 수 있으나, 요청된 공동 관측의 방식과 의미를 밝힐 핵심 근거가 없다. 이를 설명하는 자료와 앞선 탐사의 특정 미해결 질문을 Mio 관측에 연결하는 자료가 필요하다. 세부 장비 작동 원리와 실제 관측 성과도 제시되지 않아 해당 내용을 추정하지 않았다.",
+      "읽은문서": [
+        "수성 | Mercury Magnetospheric Orbiter (Mio)",
+        "수성 | BepiColombo factsheet"
+      ],
+      "인용": [
+        "수성 | Mercury Magnetospheric Orbiter (Mio)",
+        "수성 | Mercury Magnetospheric Orbiter (Mio)",
+        "수성 | Mercury Magnetospheric Orbiter (Mio)",
+        "수성 | BepiColombo factsheet"
+      ],
+      "draft_format": "source_ids_v1",
+      "raw_draft": {
+        "단락": [
+          {
+            "내용": "JAXA의 Mercury Magnetospheric Orbiter(Mio)는 ESA의 Mercury Planetary Orbiter(MPO)와 함께 BepiColombo를 구성하는 두 우주선 중 하나이며, 제시된 장비 기능을 종합하면 자기권과 주변 입자·파동 환경을 조사하는 역할을 맡도록 설계되었다. Magnetometer(MGF)는 수성 자기권을 상세히 기술하고 행성 자기장 및 태양풍과의 상호작용을 조사하여, 수성 자기권이 이들과 어떻게 상호작용하는가라는 질문에 대응한다. Mercury Plasma Particle Experiment(MPPE)는 7개 센서로 자기권의 플라스마와 고에너지 입자를 연구하며, 입자 관측을 통해 태양풍과 수성 자기권의 상호작용을 조사하도록 설계되었다.",
+            "출처ID": [
+              "D1"
+            ]
+          },
+          {
+            "내용": "Plasma Wave Instrument(PWI)는 현장 관측과 원격 탐사로 수성 플라스마 환경의 전기장·플라스마파·전파를 분석하여, 그 환경이 어떤 전기장과 파동 특성을 보이는지 조사한다. Mercury Sodium Atmosphere Spectral Imager(MSASI)는 수성 외기권의 나트륨 함량·분포·동역학을 측정하여 나트륨의 공급원과 관련 과정이 무엇인지 밝히려는 장비다. Mercury Dust Monitor(MDM)는 수성 궤도의 행성 간 먼지를 관측 대상으로 삼아 그 분포가 어떠한지 연구하며, 이처럼 Mio의 관측 범위에는 자기권뿐 아니라 외기권의 나트륨과 주변 먼지 환경도 포함된다.",
+            "출처ID": [
+              "D1"
+            ]
+          },
+          {
+            "내용": "BepiColombo factsheet도 MGF·MPPE·PWI·MSASI·MDM을 Mio의 탑재 장비로 열거하지만, 장비 목록 자체는 작동 원리나 관측 성과를 설명하는 근거가 아니다. 제공 자료에서 확인되는 두 궤도선의 관계는 같은 임무를 구성한다는 점까지이며, 공동 관측의 구체적인 방식과 과학적 의미는 설명되지 않아 Mio와 MPO의 관측을 어떻게 결합하는지 단정할 수 없다. 따라서 위 설명은 장비별 관측 대상과 설계 목적에 한정되며, 이를 실제로 해결된 질문이나 관측 성과로 바꾸거나 Mariner 10과 MESSENGER가 남긴 특정 의문에 직접 대응한다고 확정할 근거는 없다.",
+            "출처ID": [
+              "D1",
+              "D2"
+            ]
+          }
+        ],
+        "부족": true,
+        "이유": "Mio의 장비별 관측 대상과 목적은 설명할 수 있으나, 요청된 공동 관측의 방식과 의미를 밝힐 핵심 근거가 없다. 이를 설명하는 자료와 앞선 탐사의 특정 미해결 질문을 Mio 관측에 연결하는 자료가 필요하다. 세부 장비 작동 원리와 실제 관측 성과도 제시되지 않아 해당 내용을 추정하지 않았다."
+      },
+      "source_map": {
+        "D1": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+        "D2": "수성 | BepiColombo factsheet"
+      }
+    }
+  ],
+  "review": [
+    {
+      "section": 0,
+      "round": 0,
+      "self_reported_insufficient": true,
+      "accepted": true,
+      "valid_draft": true,
+      "redispatch": false,
+      "reason": "valid nonregressing draft"
+    },
+    {
+      "section": 1,
+      "round": 0,
+      "self_reported_insufficient": false,
+      "accepted": true,
+      "valid_draft": true,
+      "redispatch": false,
+      "reason": "valid nonregressing draft"
+    },
+    {
+      "section": 2,
+      "round": 0,
+      "self_reported_insufficient": true,
+      "accepted": true,
+      "valid_draft": true,
+      "redispatch": false,
+      "reason": "valid nonregressing draft"
+    }
+  ],
+  "report": "# 선행 탐사가 남긴 수성의 질문과 BepiColombo의 관측 설계\n\n제공 자료를 바탕으로 수성의 형성·조성·얼음·표면 변화·자기장에 남은 질문과 BepiColombo의 두 궤도선 및 장비의 설계 목적을 살펴본다. 다만 Mariner 10의 구체적인 관측 결과가 제시되지 않아 선행 임무별 성과와 미해결 질문을 온전히 비교할 수는 없다.\n\n## 1. Mariner 10과 MESSENGER가 남긴 질문\n\n제공 자료에서 Mariner 10에 관해 확인되는 것은 Giuseppe (Bepi) Colombo가 금성의 중력 도움을 이용해 수성을 여러 차례 근접 통과할 수 있는 궤적을 제안했다는 임무 계보상의 사실이다. 구체적인 관측 결과와 미해결 질문은 제시되지 않아, 아래의 발견을 Mariner 10의 성과로 귀속하거나 MESSENGER와 임무별로 비교할 수는 없다. «수성 | What is BepiColombo?»\n\n2011~2015년 수성 궤도를 돈 MESSENGER는 표면에서 안정적인 토륨에 비해 휘발성 칼륨이 예상보다 풍부하며, 칼륨 대 토륨 비율이 태양에서 훨씬 먼 화성과 비슷하다는 결과를 얻었다. 기존 행성 형성 모형이 이 조성을 제대로 설명하지 못하므로 수성이 어디에서 어떤 과정을 거쳐 형성되었는지가 질문으로 남았고, 수성 전체 부피의 55%를 넘는 핵과 얇은 바깥층의 형성 원인도 설명이 필요하다. 화성 정도의 거리에서 형성된 뒤 거대 충돌로 태양 가까이 이동하면서 바깥 물질을 잃었다는 설명은 이 문제들을 연결하는 가설이며, 관측으로 확정된 형성 역사는 아니다. «수성 | Top five Mercury mysteries that BepiColombo will solve»\n\nMESSENGER는 극지방 분화구에서 물 얼음의 반사광으로 보이는 빛을 관측했지만, 문서는 이를 강한 간접 증거로 설명하며 물을 직접 검출한 결과와 구분한다. 따라서 후속 관측에는 물의 존재와 양을 직접 확인하고 조성을 통해 기원의 단서를 찾는 과제가 남으며, 극지방 분화구에 햇빛이 닿지 않아 저온이 유지된다는 설명만으로 물의 유입 경로까지 밝혀지는 것은 아니다. «수성 | Top five Mercury mysteries that BepiColombo will solve»\n\nMESSENGER가 분화구 안팎에서 발견한 함몰 지형인 hollows는 관측된 사실이지만, 휘발성 물질의 증발·승화로 만들어졌다는 설명과 열 또는 태양 입자가 이를 유발한다는 설명은 추정이다. 문서에서 BepiColombo는 MESSENGER 임무 종료 10년 뒤 조사를 시작할 계획으로 제시되며, 같은 지형의 성장이나 축소를 찾아 현재 지질 활동이 지속되는지 검증하려는 것이지 이미 변화를 확인한 것은 아니다. «수성 | Top five Mercury mysteries that BepiColombo will solve»\n\n수성이 반사하는 빛은 달에서 채취한 물질의 약 3분의 2에 불과하지만, 극심한 열에 따른 물질의 변화와 표면 흑연 중 무엇이 어두운 색을 설명하는지는 미해결이므로 후속 조성 관측이 필요하다. 또한 수성에는 지구 자기장의 약 100분의 1 세기인 자기장이 있고 그 중심이 행성 중심에서 북쪽으로 400킬로미터 치우쳐 있지만, 작은 행성에서 자기장이 유지되는 내부 상태와 과정은 설명해야 할 문제로 남는다. 이 때문에 후속 관측은 내부의 부분 용융 가능성, 자기장의 시간적 변화와 공간적 차이, 태양 및 태양풍의 영향을 검증할 필요가 있으며, 이러한 질문을 특정 선행 임무의 발견으로 귀속할 근거는 제공 자료에 없다. «수성 | Top five Mercury mysteries that BepiColombo will solve»\n\n## 2. MPO의 장비와 수성 관측 역할\n\nESA의 Mercury Planetary Orbiter (MPO)는 JAXA의 Mercury Magnetospheric Orbiter (Mio)와 함께 BepiColombo를 구성하는 두 과학 궤도선 중 하나로, 제시된 장비 구성에서 맡은 역할은 수성의 표면·조성·내부 구조를 조사하고 외기권 및 자기장 관측으로 행성의 기원과 진화를 이해하는 것이다. «수성 | Mercury Planetary Orbiter»«수성 | BepiColombo factsheet»\n\nBepiColombo Laser Altimeter (BELA)는 레이저 고도계로 지형과 표면 형태를 측정해 수치 지형 모형을 만들도록 설계되어, 수성 표면이 어떤 형태인가라는 질문에 대응한다. Spectrometers and Imagers for MPO BepiColombo Integrated Observatory (SIMBIO-SYS)는 입체·컬러 영상과 분광 분석으로 표면 지질, 화산활동, 전 지구적 지각변동, 표면 나이와 조성을 조사해 표면이 어떻게 형성되고 변화했는지를 연구한다. Mercury Radiometer and Thermal Infrared Spectrometer (MERTIS)는 복사계와 열적외선 분광계로 표면의 광물 조성·온도·열관성을 상세히 조사하여, 수성의 기원과 진화 모형에 필요한 물질 및 열적 특성 정보를 얻으려는 장비다. «수성 | Mercury Planetary Orbiter»«수성 | BepiColombo factsheet»\n\nMercury Gamma-ray and Neutron Spectrometer (MGNS)는 감마선·중성자 분광계로 표면과 지하의 원소 조성을 결정하고 극지 영구 음영 지역의 휘발성 물질 분포를 파악하도록 설계되어, 어떤 물질이 어디에 존재하는지를 조사한다. Probing of Hermean Exosphere by Ultraviolet Spectroscopy (PHEBUS)는 자외선 분광으로 외기권의 조성과 역학을 조사하고 고위도 충돌구의 영구 음영 지역에서 표면 얼음층을 탐색하여, 외기권의 성질과 얼음의 존재 여부라는 질문에 대응한다. Search for Exosphere Refilling and Emitted Neutral Abundances (SERENA)는 중성·이온화 입자 분석기로 표면·외기권·자기권·태양풍·행성간 매질 사이의 기체 상호작용을 연구해 이 영역들이 어떻게 연결되는지를 살피도록 설계되었다. «수성 | Mercury Planetary Orbiter»«수성 | BepiColombo factsheet»\n\nMercury Orbiter Radio science Experiment (MORE)는 수성의 중력장과 핵의 크기·물리적 상태를 결정하는 것을 목적으로 하여, 내부 구조와 핵이 어떤 상태인가라는 질문에 대응한다. Magnetometer (MPO-MAG)는 자기장, 태양풍과의 상호작용, 자기권의 형성과 역학을 측정하여 수성 내부의 기원·진화·현재 상태를 이해하는 데 기여하도록 설계되어, MPO의 내부 연구가 자기장 관측과도 연결됨을 보여준다. 이 설명은 모두 장비의 관측 목적이며, 제공된 자료에는 지형 모형 완성, 얼음 검출, 핵의 상태 결정 같은 실제 관측 성과가 제시되어 있지 않다. «수성 | Mercury Planetary Orbiter»\n\n## 3. Mio의 장비와 자기권 관측 역할\n\nJAXA의 Mercury Magnetospheric Orbiter(Mio)는 ESA의 Mercury Planetary Orbiter(MPO)와 함께 BepiColombo를 구성하는 두 우주선 중 하나이며, 제시된 장비 기능을 종합하면 자기권과 주변 입자·파동 환경을 조사하는 역할을 맡도록 설계되었다. Magnetometer(MGF)는 수성 자기권을 상세히 기술하고 행성 자기장 및 태양풍과의 상호작용을 조사하여, 수성 자기권이 이들과 어떻게 상호작용하는가라는 질문에 대응한다. Mercury Plasma Particle Experiment(MPPE)는 7개 센서로 자기권의 플라스마와 고에너지 입자를 연구하며, 입자 관측을 통해 태양풍과 수성 자기권의 상호작용을 조사하도록 설계되었다. «수성 | Mercury Magnetospheric Orbiter (Mio)»\n\nPlasma Wave Instrument(PWI)는 현장 관측과 원격 탐사로 수성 플라스마 환경의 전기장·플라스마파·전파를 분석하여, 그 환경이 어떤 전기장과 파동 특성을 보이는지 조사한다. Mercury Sodium Atmosphere Spectral Imager(MSASI)는 수성 외기권의 나트륨 함량·분포·동역학을 측정하여 나트륨의 공급원과 관련 과정이 무엇인지 밝히려는 장비다. Mercury Dust Monitor(MDM)는 수성 궤도의 행성 간 먼지를 관측 대상으로 삼아 그 분포가 어떠한지 연구하며, 이처럼 Mio의 관측 범위에는 자기권뿐 아니라 외기권의 나트륨과 주변 먼지 환경도 포함된다. «수성 | Mercury Magnetospheric Orbiter (Mio)»\n\nBepiColombo factsheet도 MGF·MPPE·PWI·MSASI·MDM을 Mio의 탑재 장비로 열거하지만, 장비 목록 자체는 작동 원리나 관측 성과를 설명하는 근거가 아니다. 제공 자료에서 확인되는 두 궤도선의 관계는 같은 임무를 구성한다는 점까지이며, 공동 관측의 구체적인 방식과 과학적 의미는 설명되지 않아 Mio와 MPO의 관측을 어떻게 결합하는지 단정할 수 없다. 따라서 위 설명은 장비별 관측 대상과 설계 목적에 한정되며, 이를 실제로 해결된 질문이나 관측 성과로 바꾸거나 Mariner 10과 MESSENGER가 남긴 특정 의문에 직접 대응한다고 확정할 근거는 없다. «수성 | Mercury Magnetospheric Orbiter (Mio)»«수성 | BepiColombo factsheet»\n\n## 맺음말\n\nMPO는 표면·조성·내부 구조를 중심으로, Mio는 자기권과 주변 입자·파동 환경을 중심으로 수성의 미해결 문제를 조사하도록 설계되었다. 다만 제공 자료는 장비의 목적을 설명하는 데 그쳐, 실제 질문의 해결 여부나 두 궤도선의 구체적인 공동 관측 방식까지 확인할 수는 없다.\n\n검토 경고:\nMariner 10과 MESSENGER가 남긴 질문: 근거·분량 검토 필요\nMio의 장비와 자기권 관측 역할: 근거·분량 검토 필요",
+  "events": [
+    {
+      "kind": "context",
+      "actor": "coordinator",
+      "step": "plan",
+      "input_chars": 30374,
+      "source_chars": 0,
+      "card_chars": 29639,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "plan",
+      "plan": {
+        "제목": "선행 탐사가 남긴 수성의 질문과 BepiColombo의 관측 설계",
+        "목차": [
+          {
+            "번호": 0,
+            "절": "Mariner 10과 MESSENGER가 남긴 질문",
+            "지시": "이 문서에서 설명하는 Mariner 10과 MESSENGER의 관측 결과와 남은 의문을 연결하라. 실제로 밝혀진 사실과 아직 설명되지 않은 질문을 구분하고, 후속 관측이 필요한 이유를 정리하라.",
+            "역할": "임무 계보 연구원",
+            "시작문서": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+            "예산": 2
+          },
+          {
+            "번호": 1,
+            "절": "MPO의 장비와 수성 관측 역할",
+            "지시": "이 문서에 제시된 MPO의 관측 대상과 장비 기능을 연결하고, 각 관측이 해결하려는 수성의 질문을 설명하라. 두 궤도선 중 MPO가 맡도록 설계된 역할을 밝히고, 관측 목적과 실제 성과를 구분하라.",
+            "역할": "관측 장비 연구원",
+            "시작문서": "수성 | Mercury Planetary Orbiter",
+            "예산": 2
+          },
+          {
+            "번호": 2,
+            "절": "Mio의 장비와 자기권 관측 역할",
+            "지시": "이 문서에 제시된 Mio의 관측 대상과 장비 기능을 연결하고, 각 관측이 해결하려는 수성의 질문을 설명하라. 두 궤도선 중 Mio가 맡도록 설계된 역할과 문서에 설명된 공동 관측의 의미를 밝히고, 관측 목적과 실제 성과를 구분하라.",
+            "역할": "관측 장비 연구원",
+            "시작문서": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+            "예산": 2
+          }
+        ]
+      }
+    },
+    {
+      "kind": "assignment",
+      "agent": "researcher-0",
+      "round": 0,
+      "task": {
+        "번호": 0,
+        "절": "Mariner 10과 MESSENGER가 남긴 질문",
+        "지시": "이 문서에서 설명하는 Mariner 10과 MESSENGER의 관측 결과와 남은 의문을 연결하라. 실제로 밝혀진 사실과 아직 설명되지 않은 질문을 구분하고, 후속 관측이 필요한 이유를 정리하라.",
+        "역할": "임무 계보 연구원",
+        "시작문서": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+        "예산": 2,
+        "다른구역": [
+          {
+            "절": "MPO의 장비와 수성 관측 역할",
+            "지시": "이 문서에 제시된 MPO의 관측 대상과 장비 기능을 연결하고, 각 관측이 해결하려는 수성의 질문을 설명하라. 두 궤도선 중 MPO가 맡도록 설계된 역할을 밝히고, 관측 목적과 실제 성과를 구분하라.",
+            "시작문서": "수성 | Mercury Planetary Orbiter"
+          },
+          {
+            "절": "Mio의 장비와 자기권 관측 역할",
+            "지시": "이 문서에 제시된 Mio의 관측 대상과 장비 기능을 연결하고, 각 관측이 해결하려는 수성의 질문을 설명하라. 두 궤도선 중 Mio가 맡도록 설계된 역할과 문서에 설명된 공동 관측의 의미를 밝히고, 관측 목적과 실제 성과를 구분하라.",
+            "시작문서": "수성 | Mercury Magnetospheric Orbiter (Mio)"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-0",
+      "step": "read",
+      "input_chars": 12853,
+      "source_chars": 10972,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "assignment",
+      "agent": "researcher-1",
+      "round": 0,
+      "task": {
+        "번호": 1,
+        "절": "MPO의 장비와 수성 관측 역할",
+        "지시": "이 문서에 제시된 MPO의 관측 대상과 장비 기능을 연결하고, 각 관측이 해결하려는 수성의 질문을 설명하라. 두 궤도선 중 MPO가 맡도록 설계된 역할을 밝히고, 관측 목적과 실제 성과를 구분하라.",
+        "역할": "관측 장비 연구원",
+        "시작문서": "수성 | Mercury Planetary Orbiter",
+        "예산": 2,
+        "다른구역": [
+          {
+            "절": "Mariner 10과 MESSENGER가 남긴 질문",
+            "지시": "이 문서에서 설명하는 Mariner 10과 MESSENGER의 관측 결과와 남은 의문을 연결하라. 실제로 밝혀진 사실과 아직 설명되지 않은 질문을 구분하고, 후속 관측이 필요한 이유를 정리하라.",
+            "시작문서": "수성 | Top five Mercury mysteries that BepiColombo will solve"
+          },
+          {
+            "절": "Mio의 장비와 자기권 관측 역할",
+            "지시": "이 문서에 제시된 Mio의 관측 대상과 장비 기능을 연결하고, 각 관측이 해결하려는 수성의 질문을 설명하라. 두 궤도선 중 Mio가 맡도록 설계된 역할과 문서에 설명된 공동 관측의 의미를 밝히고, 관측 목적과 실제 성과를 구분하라.",
+            "시작문서": "수성 | Mercury Magnetospheric Orbiter (Mio)"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-1",
+      "step": "read",
+      "input_chars": 5692,
+      "source_chars": 3796,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "assignment",
+      "agent": "researcher-2",
+      "round": 0,
+      "task": {
+        "번호": 2,
+        "절": "Mio의 장비와 자기권 관측 역할",
+        "지시": "이 문서에 제시된 Mio의 관측 대상과 장비 기능을 연결하고, 각 관측이 해결하려는 수성의 질문을 설명하라. 두 궤도선 중 Mio가 맡도록 설계된 역할과 문서에 설명된 공동 관측의 의미를 밝히고, 관측 목적과 실제 성과를 구분하라.",
+        "역할": "관측 장비 연구원",
+        "시작문서": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+        "예산": 2,
+        "다른구역": [
+          {
+            "절": "Mariner 10과 MESSENGER가 남긴 질문",
+            "지시": "이 문서에서 설명하는 Mariner 10과 MESSENGER의 관측 결과와 남은 의문을 연결하라. 실제로 밝혀진 사실과 아직 설명되지 않은 질문을 구분하고, 후속 관측이 필요한 이유를 정리하라.",
+            "시작문서": "수성 | Top five Mercury mysteries that BepiColombo will solve"
+          },
+          {
+            "절": "MPO의 장비와 수성 관측 역할",
+            "지시": "이 문서에 제시된 MPO의 관측 대상과 장비 기능을 연결하고, 각 관측이 해결하려는 수성의 질문을 설명하라. 두 궤도선 중 MPO가 맡도록 설계된 역할을 밝히고, 관측 목적과 실제 성과를 구분하라.",
+            "시작문서": "수성 | Mercury Planetary Orbiter"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-2",
+      "step": "read",
+      "input_chars": 4100,
+      "source_chars": 2299,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "fact_table",
+      "agent": "researcher-2",
+      "document": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+      "table": {
+        "facts": [
+          {
+            "id": "F1",
+            "subject": "JAXA’s Mercury Magnetospheric Orbiter (also known as Mio)",
+            "relation": "수성 탐사를 구성하는 두 우주선 중 하나이며 다른 우주선은 유럽우주국의 수성 행성 궤도선이다",
+            "comparison_target": "ESA's Mercury Planetary Orbiter",
+            "value": "two",
+            "unit": "spacecraft",
+            "basis": "임무 구성으로, 공동 관측의 구체적인 방식은 제시되지 않음",
+            "start_line": 1,
+            "end_line": 5,
+            "document": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+            "quote": "JAXA’s Mercury Magnetospheric Orbiter (also known as Mio) is one of two spacecraft making up the\nBepiColombo\nmission to Mercury, the other being ESA's Mercury Planetary Orbiter (\nMPO\n)."
+          },
+          {
+            "id": "F2",
+            "subject": "Magnetometer (MGF)",
+            "relation": "수성 자기권과 행성 자기장 및 태양풍 사이의 상호작용을 상세히 기술하여 자기권이 이들과 어떻게 상호작용하는지 조사한다",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "장비의 관측 목적이며 실제 관측 성과는 제시되지 않음",
+            "start_line": 12,
+            "end_line": 13,
+            "document": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+            "quote": "Magnetometer (MGF):\nProviding a detailed description of Mercury’s magnetosphere and of its interaction with the planetary magnetic field and the solar wind."
+          },
+          {
+            "id": "F3",
+            "subject": "Mercury Plasma Particle Experiment (MPPE)",
+            "relation": "센서로 자기권의 플라스마와 고에너지 입자 및 태양풍과 수성 자기권의 상호작용을 연구한다",
+            "comparison_target": "",
+            "value": "Seven",
+            "unit": "sensors",
+            "basis": "센서 수와 관측 목적이며 실제 관측 성과는 제시되지 않음",
+            "start_line": 16,
+            "end_line": 17,
+            "document": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+            "quote": "Mercury Plasma Particle Experiment (MPPE):\nSeven sensors studying plasma and energetic particles in the magnetosphere and the interaction between the solar wind and Mercury’s magnetosphere."
+          },
+          {
+            "id": "F4",
+            "subject": "Plasma Wave Instrument (PWI)",
+            "relation": "현장 관측과 원격 탐사로 수성 플라스마 환경의 전기장과 플라스마파 및 전파를 분석하여 그 환경의 특성을 조사한다",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "관측 방식과 분석 대상에 관한 설계 목적이며 실제 관측 성과는 제시되지 않음",
+            "start_line": 20,
+            "end_line": 22,
+            "document": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+            "quote": "Plasma Wave Instrument (PWI):\nIn situ\nand remote-sensing analysis of electric fields, plasma waves and radio waves in Mercury’s plasma environment."
+          },
+          {
+            "id": "F5",
+            "subject": "Mercury Sodium Atmosphere Spectral Imager (MSASI)",
+            "relation": "수성 외기권의 나트륨 함량과 분포 및 동역학을 측정하여 나트륨의 공급원과 관련 과정이 무엇인지 조사한다",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "측정 대상과 연구 목적이며 실제 관측 성과는 제시되지 않음",
+            "start_line": 25,
+            "end_line": 26,
+            "document": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+            "quote": "Mercury Sodium Atmosphere Spectral Imager (MSASI):\nMeasuring the abundance, distribution and dynamics of sodium in Mercury’s exosphere to investigate its sources and related processes."
+          },
+          {
+            "id": "F6",
+            "subject": "Mercury Dust Monitor (MDM)",
+            "relation": "수성 궤도의 행성 간 먼지 분포를 연구하여 그곳의 먼지가 어떻게 분포하는지 조사한다",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "관측 목적이며 실제 관측 성과는 제시되지 않음",
+            "start_line": 29,
+            "end_line": 30,
+            "document": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+            "quote": "Mercury Dust Monitor (MDM):\nStudying the distribution of interplanetary dust in the orbit of Mercury."
+          }
+        ],
+        "insufficient": true,
+        "reason": "자기 절의 핵심인 장비별 관측 대상과 목적은 제시되지만, 두 궤도선의 공동 관측 방식과 그 의미는 설명되지 않는다. 장비별 관측을 앞선 탐사가 남긴 특정 의문과 직접 연결하는 설명이나 실제 관측 성과도 없어, 관측 목적을 성과로 해석할 수 없다.",
+        "semantic_review": "pending",
+        "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+      }
+    },
+    {
+      "kind": "read",
+      "agent": "researcher-2",
+      "round": 0,
+      "document": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+      "source_chars": 2299,
+      "evidence": {
+        "근거": [
+          {
+            "원문": "JAXA’s Mercury Magnetospheric Orbiter (also known as Mio) is one of two spacecraft making up the\nBepiColombo\nmission to Mercury, the other being ESA's Mercury Planetary Orbiter (\nMPO\n).",
+            "메모": "{\"subject\": \"JAXA’s Mercury Magnetospheric Orbiter (also known as Mio)\", \"relation\": \"수성 탐사를 구성하는 두 우주선 중 하나이며 다른 우주선은 유럽우주국의 수성 행성 궤도선이다\", \"comparison_target\": \"ESA's Mercury Planetary Orbiter\", \"value\": \"two\", \"unit\": \"spacecraft\", \"basis\": \"임무 구성으로, 공동 관측의 구체적인 방식은 제시되지 않음\"}"
+          },
+          {
+            "원문": "Magnetometer (MGF):\nProviding a detailed description of Mercury’s magnetosphere and of its interaction with the planetary magnetic field and the solar wind.",
+            "메모": "{\"subject\": \"Magnetometer (MGF)\", \"relation\": \"수성 자기권과 행성 자기장 및 태양풍 사이의 상호작용을 상세히 기술하여 자기권이 이들과 어떻게 상호작용하는지 조사한다\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"장비의 관측 목적이며 실제 관측 성과는 제시되지 않음\"}"
+          },
+          {
+            "원문": "Mercury Plasma Particle Experiment (MPPE):\nSeven sensors studying plasma and energetic particles in the magnetosphere and the interaction between the solar wind and Mercury’s magnetosphere.",
+            "메모": "{\"subject\": \"Mercury Plasma Particle Experiment (MPPE)\", \"relation\": \"센서로 자기권의 플라스마와 고에너지 입자 및 태양풍과 수성 자기권의 상호작용을 연구한다\", \"comparison_target\": \"\", \"value\": \"Seven\", \"unit\": \"sensors\", \"basis\": \"센서 수와 관측 목적이며 실제 관측 성과는 제시되지 않음\"}"
+          },
+          {
+            "원문": "Plasma Wave Instrument (PWI):\nIn situ\nand remote-sensing analysis of electric fields, plasma waves and radio waves in Mercury’s plasma environment.",
+            "메모": "{\"subject\": \"Plasma Wave Instrument (PWI)\", \"relation\": \"현장 관측과 원격 탐사로 수성 플라스마 환경의 전기장과 플라스마파 및 전파를 분석하여 그 환경의 특성을 조사한다\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"관측 방식과 분석 대상에 관한 설계 목적이며 실제 관측 성과는 제시되지 않음\"}"
+          },
+          {
+            "원문": "Mercury Sodium Atmosphere Spectral Imager (MSASI):\nMeasuring the abundance, distribution and dynamics of sodium in Mercury’s exosphere to investigate its sources and related processes.",
+            "메모": "{\"subject\": \"Mercury Sodium Atmosphere Spectral Imager (MSASI)\", \"relation\": \"수성 외기권의 나트륨 함량과 분포 및 동역학을 측정하여 나트륨의 공급원과 관련 과정이 무엇인지 조사한다\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"측정 대상과 연구 목적이며 실제 관측 성과는 제시되지 않음\"}"
+          },
+          {
+            "원문": "Mercury Dust Monitor (MDM):\nStudying the distribution of interplanetary dust in the orbit of Mercury.",
+            "메모": "{\"subject\": \"Mercury Dust Monitor (MDM)\", \"relation\": \"수성 궤도의 행성 간 먼지 분포를 연구하여 그곳의 먼지가 어떻게 분포하는지 조사한다\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"관측 목적이며 실제 관측 성과는 제시되지 않음\"}"
+          }
+        ],
+        "부족": true,
+        "이유": "자기 절의 핵심인 장비별 관측 대상과 목적은 제시되지만, 두 궤도선의 공동 관측 방식과 그 의미는 설명되지 않는다. 장비별 관측을 앞선 탐사가 남긴 특정 의문과 직접 연결하는 설명이나 실제 관측 성과도 없어, 관측 목적을 성과로 해석할 수 없다.",
+        "fact_table": {
+          "facts": [
+            {
+              "id": "F1",
+              "subject": "JAXA’s Mercury Magnetospheric Orbiter (also known as Mio)",
+              "relation": "수성 탐사를 구성하는 두 우주선 중 하나이며 다른 우주선은 유럽우주국의 수성 행성 궤도선이다",
+              "comparison_target": "ESA's Mercury Planetary Orbiter",
+              "value": "two",
+              "unit": "spacecraft",
+              "basis": "임무 구성으로, 공동 관측의 구체적인 방식은 제시되지 않음",
+              "start_line": 1,
+              "end_line": 5,
+              "document": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+              "quote": "JAXA’s Mercury Magnetospheric Orbiter (also known as Mio) is one of two spacecraft making up the\nBepiColombo\nmission to Mercury, the other being ESA's Mercury Planetary Orbiter (\nMPO\n)."
+            },
+            {
+              "id": "F2",
+              "subject": "Magnetometer (MGF)",
+              "relation": "수성 자기권과 행성 자기장 및 태양풍 사이의 상호작용을 상세히 기술하여 자기권이 이들과 어떻게 상호작용하는지 조사한다",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "장비의 관측 목적이며 실제 관측 성과는 제시되지 않음",
+              "start_line": 12,
+              "end_line": 13,
+              "document": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+              "quote": "Magnetometer (MGF):\nProviding a detailed description of Mercury’s magnetosphere and of its interaction with the planetary magnetic field and the solar wind."
+            },
+            {
+              "id": "F3",
+              "subject": "Mercury Plasma Particle Experiment (MPPE)",
+              "relation": "센서로 자기권의 플라스마와 고에너지 입자 및 태양풍과 수성 자기권의 상호작용을 연구한다",
+              "comparison_target": "",
+              "value": "Seven",
+              "unit": "sensors",
+              "basis": "센서 수와 관측 목적이며 실제 관측 성과는 제시되지 않음",
+              "start_line": 16,
+              "end_line": 17,
+              "document": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+              "quote": "Mercury Plasma Particle Experiment (MPPE):\nSeven sensors studying plasma and energetic particles in the magnetosphere and the interaction between the solar wind and Mercury’s magnetosphere."
+            },
+            {
+              "id": "F4",
+              "subject": "Plasma Wave Instrument (PWI)",
+              "relation": "현장 관측과 원격 탐사로 수성 플라스마 환경의 전기장과 플라스마파 및 전파를 분석하여 그 환경의 특성을 조사한다",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "관측 방식과 분석 대상에 관한 설계 목적이며 실제 관측 성과는 제시되지 않음",
+              "start_line": 20,
+              "end_line": 22,
+              "document": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+              "quote": "Plasma Wave Instrument (PWI):\nIn situ\nand remote-sensing analysis of electric fields, plasma waves and radio waves in Mercury’s plasma environment."
+            },
+            {
+              "id": "F5",
+              "subject": "Mercury Sodium Atmosphere Spectral Imager (MSASI)",
+              "relation": "수성 외기권의 나트륨 함량과 분포 및 동역학을 측정하여 나트륨의 공급원과 관련 과정이 무엇인지 조사한다",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "측정 대상과 연구 목적이며 실제 관측 성과는 제시되지 않음",
+              "start_line": 25,
+              "end_line": 26,
+              "document": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+              "quote": "Mercury Sodium Atmosphere Spectral Imager (MSASI):\nMeasuring the abundance, distribution and dynamics of sodium in Mercury’s exosphere to investigate its sources and related processes."
+            },
+            {
+              "id": "F6",
+              "subject": "Mercury Dust Monitor (MDM)",
+              "relation": "수성 궤도의 행성 간 먼지 분포를 연구하여 그곳의 먼지가 어떻게 분포하는지 조사한다",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "관측 목적이며 실제 관측 성과는 제시되지 않음",
+              "start_line": 29,
+              "end_line": 30,
+              "document": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+              "quote": "Mercury Dust Monitor (MDM):\nStudying the distribution of interplanetary dust in the orbit of Mercury."
+            }
+          ],
+          "insufficient": true,
+          "reason": "자기 절의 핵심인 장비별 관측 대상과 목적은 제시되지만, 두 궤도선의 공동 관측 방식과 그 의미는 설명되지 않는다. 장비별 관측을 앞선 탐사가 남긴 특정 의문과 직접 연결하는 설명이나 실제 관측 성과도 없어, 관측 목적을 성과로 해석할 수 없다.",
+          "semantic_review": "pending",
+          "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+        },
+        "validation": "Schema/source membership checked; semantic support pending direct review."
+      }
+    },
+    {
+      "kind": "candidates",
+      "agent": "researcher-2",
+      "round": 0,
+      "path": "all_docs_fallback",
+      "count": 94
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-2",
+      "step": "pick",
+      "input_chars": 4210,
+      "source_chars": 0,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-2",
+      "step": "read",
+      "input_chars": 5938,
+      "source_chars": 3972,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "fact_table",
+      "agent": "researcher-1",
+      "document": "수성 | Mercury Planetary Orbiter",
+      "table": {
+        "facts": [
+          {
+            "id": "F1",
+            "subject": "BepiColombo Laser Altimeter (BELA)",
+            "relation": "수성의 지형과 표면 형태를 측정해 수치 지형 모형을 만드는 장비로, 표면이 어떤 형태인가라는 질문에 대응한다.",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "두 궤도선 중 행성 관측 궤도선에 탑재된 장비의 관측 목적이며 실제 성과가 아니다.",
+            "start_line": 1,
+            "end_line": 11,
+            "document": "수성 | Mercury Planetary Orbiter",
+            "quote": "ESA’s Mercury Planetary Orbiter (MPO) is one of two spacecraft making up the\nBepiColombo\nmission to Mercury, the other being JAXA's Mercury Magnetospheric Orbiter (\nMio\n).\nMPO will operate from a 2.3-hour polar orbit at an altitude of 480 x 1500 km above the planet’s surface.\nThe main body of the spacecraft measures 2.4 x 2.2 x 1.7 m and its radiator is 3.7 m wide. The deployed solar wing spans 7.5 m.\nThe orbiter comprises a suite of 11 science experiments:\nMPO’s science instruments\nBepiColombo Laser Altimeter (BELA):\nCharacterising and measuring the topography and surface morphology of Mercury to create digital terrain models."
+          },
+          {
+            "id": "F2",
+            "subject": "Magnetometer (MPO-MAG)",
+            "relation": "자기장, 태양풍과의 상호작용, 자기권의 형성과 역학을 측정하여 수성 내부의 기원·진화·현재 상태를 이해하도록 설계되었다.",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "행성 관측 궤도선이 자기장 관측을 통해 내부 상태를 연구하려는 설계 목적이다.",
+            "start_line": 19,
+            "end_line": 20,
+            "document": "수성 | Mercury Planetary Orbiter",
+            "quote": "Magnetometer (MPO-MAG):\nMeasuring Mercury’s magnetic field, the interaction of the solar wind, and the formation and dynamics of the magnetosphere, and understanding the origin, evolution and current state of the planet’s interior."
+          },
+          {
+            "id": "F3",
+            "subject": "Mercury Radiometer and Thermal Infrared Spectrometer (MERTIS)",
+            "relation": "표면의 광물 조성·온도·열관성을 상세히 조사하여 수성의 기원과 진화 모형에 필요한 정보를 얻도록 설계되었다.",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "표면의 물질과 열적 특성을 통해 행성의 형성과 진화를 연구하려는 관측 목적이다.",
+            "start_line": 22,
+            "end_line": 23,
+            "document": "수성 | Mercury Planetary Orbiter",
+            "quote": "Mercury Radiometer and Thermal Infrared Spectrometer (MERTIS):\nDetailing the mineralogical composition of Mercury’s surface, its temperature and thermal inertia, important for models of the origin and evolution of the planet."
+          },
+          {
+            "id": "F4",
+            "subject": "Mercury Gamma-ray and Neutron Spectrometer (MGNS)",
+            "relation": "표면과 지하의 원소 조성을 결정하고 극지 영구 음영 지역의 휘발성 물질 분포를 파악하여, 어떤 물질이 어디에 존재하는가라는 질문에 대응한다.",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "원소 조성과 휘발성 물질 분포를 조사하려는 관측 목적이며 검출 성과는 제시되지 않았다.",
+            "start_line": 26,
+            "end_line": 27,
+            "document": "수성 | Mercury Planetary Orbiter",
+            "quote": "Mercury Gamma-ray and Neutron Spectrometer (MGNS):\nDetermining the elemental compositions of the surface and subsurface of Mercury, and identifying the regional distribution of volatiles in permanently shadowed polar regions."
+          },
+          {
+            "id": "F5",
+            "subject": "Mercury Orbiter Radio science Experiment (MORE)",
+            "relation": "수성의 중력장과 핵의 크기·물리적 상태를 결정하여, 내부 구조와 핵이 어떤 상태인가라는 질문에 대응하도록 설계되었다.",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "행성 관측 궤도선의 내부 구조 연구 목적이며 실제로 결정된 핵의 크기나 상태는 제시되지 않았다.",
+            "start_line": 34,
+            "end_line": 35,
+            "document": "수성 | Mercury Planetary Orbiter",
+            "quote": "Mercury Orbiter Radio science Experiment (MORE):\nDetermining the gravity field of Mercury, and the size and physical state of its core; measuring the gravitational oblateness of the Sun and testing the most advanced interplanetary tracking system ever built."
+          },
+          {
+            "id": "F6",
+            "subject": "Probing of Hermean Exosphere by Ultraviolet Spectroscopy (PHEBUS)",
+            "relation": "자외선 분광으로 외기권의 조성과 역학을 특성화하고 고위도 충돌구의 영구 음영 지역에서 표면 얼음층을 탐색하여, 외기권의 성질과 얼음의 존재 여부를 조사한다.",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "외기권 관측과 얼음 탐색이라는 설계 목적이며 얼음 발견이라는 실제 성과를 뜻하지 않는다.",
+            "start_line": 37,
+            "end_line": 38,
+            "document": "수성 | Mercury Planetary Orbiter",
+            "quote": "Probing of Hermean Exosphere by Ultraviolet Spectroscopy (PHEBUS):\nCharacterising Mercury’s exosphere composition and dynamics and searching for surface ice layers in permanently shadowed regions of high-latitude craters."
+          },
+          {
+            "id": "F7",
+            "subject": "Search for Exosphere Refilling and Emitted Neutral Abundances (SERENA)",
+            "relation": "중성·이온화 입자 분석기로 표면·외기권·자기권·태양풍·행성간 매질 사이의 기체 상호작용을 연구하여, 이 영역들이 어떻게 연결되는가라는 질문에 대응한다.",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "입자 분석을 통한 상호작용 연구가 관측 목적이며 실제 관측 결과는 제시되지 않았다.",
+            "start_line": 41,
+            "end_line": 42,
+            "document": "수성 | Mercury Planetary Orbiter",
+            "quote": "Search for Exosphere Refilling and Emitted Neutral Abundances (SERENA):\n(neutral and ionised particle analyser) Studying the gaseous interaction between Mercury’s surface, exosphere, magnetosphere, solar wind and the interplanetary medium."
+          },
+          {
+            "id": "F8",
+            "subject": "Spectrometers and Imagers for MPO BepiColombo Integrated Observatory (SIMBIO-SYS)",
+            "relation": "입체·컬러 영상과 분광 분석으로 표면 지질·화산활동·전 지구적 지각변동·표면 나이·조성을 조사하여, 수성 표면이 어떻게 형성되고 변화했는가라는 질문에 대응한다.",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "행성 관측 궤도선이 표면의 특성과 지질사를 연구하도록 설계된 역할이며 실제 성과가 아니다.",
+            "start_line": 44,
+            "end_line": 45,
+            "document": "수성 | Mercury Planetary Orbiter",
+            "quote": "Spectrometers and Imagers for MPO BepiColombo Integrated Observatory (SIMBIO-SYS):\nExamining with stereo and colour imaging, and spectroscopic analysis, Mercury’s surface geology, volcanism, global tectonics, surface age and composition."
+          }
+        ],
+        "insufficient": false,
+        "reason": "맡은 절의 핵심인 행성 관측 궤도선의 관측 대상과 장비 기능을 연결할 근거가 있다. 최대 여덟 행에 맞춰 주요 장비를 선정했다. 원문은 관측 목적을 제시하며 실제 관측 성과나 장비별 상세 작동 원리는 제시하지 않는다.",
+        "semantic_review": "pending",
+        "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+      }
+    },
+    {
+      "kind": "read",
+      "agent": "researcher-1",
+      "round": 0,
+      "document": "수성 | Mercury Planetary Orbiter",
+      "source_chars": 3796,
+      "evidence": {
+        "근거": [
+          {
+            "원문": "ESA’s Mercury Planetary Orbiter (MPO) is one of two spacecraft making up the\nBepiColombo\nmission to Mercury, the other being JAXA's Mercury Magnetospheric Orbiter (\nMio\n).\nMPO will operate from a 2.3-hour polar orbit at an altitude of 480 x 1500 km above the planet’s surface.\nThe main body of the spacecraft measures 2.4 x 2.2 x 1.7 m and its radiator is 3.7 m wide. The deployed solar wing spans 7.5 m.\nThe orbiter comprises a suite of 11 science experiments:\nMPO’s science instruments\nBepiColombo Laser Altimeter (BELA):\nCharacterising and measuring the topography and surface morphology of Mercury to create digital terrain models.",
+            "메모": "{\"subject\": \"BepiColombo Laser Altimeter (BELA)\", \"relation\": \"수성의 지형과 표면 형태를 측정해 수치 지형 모형을 만드는 장비로, 표면이 어떤 형태인가라는 질문에 대응한다.\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"두 궤도선 중 행성 관측 궤도선에 탑재된 장비의 관측 목적이며 실제 성과가 아니다.\"}"
+          },
+          {
+            "원문": "Magnetometer (MPO-MAG):\nMeasuring Mercury’s magnetic field, the interaction of the solar wind, and the formation and dynamics of the magnetosphere, and understanding the origin, evolution and current state of the planet’s interior.",
+            "메모": "{\"subject\": \"Magnetometer (MPO-MAG)\", \"relation\": \"자기장, 태양풍과의 상호작용, 자기권의 형성과 역학을 측정하여 수성 내부의 기원·진화·현재 상태를 이해하도록 설계되었다.\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"행성 관측 궤도선이 자기장 관측을 통해 내부 상태를 연구하려는 설계 목적이다.\"}"
+          },
+          {
+            "원문": "Mercury Radiometer and Thermal Infrared Spectrometer (MERTIS):\nDetailing the mineralogical composition of Mercury’s surface, its temperature and thermal inertia, important for models of the origin and evolution of the planet.",
+            "메모": "{\"subject\": \"Mercury Radiometer and Thermal Infrared Spectrometer (MERTIS)\", \"relation\": \"표면의 광물 조성·온도·열관성을 상세히 조사하여 수성의 기원과 진화 모형에 필요한 정보를 얻도록 설계되었다.\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"표면의 물질과 열적 특성을 통해 행성의 형성과 진화를 연구하려는 관측 목적이다.\"}"
+          },
+          {
+            "원문": "Mercury Gamma-ray and Neutron Spectrometer (MGNS):\nDetermining the elemental compositions of the surface and subsurface of Mercury, and identifying the regional distribution of volatiles in permanently shadowed polar regions.",
+            "메모": "{\"subject\": \"Mercury Gamma-ray and Neutron Spectrometer (MGNS)\", \"relation\": \"표면과 지하의 원소 조성을 결정하고 극지 영구 음영 지역의 휘발성 물질 분포를 파악하여, 어떤 물질이 어디에 존재하는가라는 질문에 대응한다.\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"원소 조성과 휘발성 물질 분포를 조사하려는 관측 목적이며 검출 성과는 제시되지 않았다.\"}"
+          },
+          {
+            "원문": "Mercury Orbiter Radio science Experiment (MORE):\nDetermining the gravity field of Mercury, and the size and physical state of its core; measuring the gravitational oblateness of the Sun and testing the most advanced interplanetary tracking system ever built.",
+            "메모": "{\"subject\": \"Mercury Orbiter Radio science Experiment (MORE)\", \"relation\": \"수성의 중력장과 핵의 크기·물리적 상태를 결정하여, 내부 구조와 핵이 어떤 상태인가라는 질문에 대응하도록 설계되었다.\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"행성 관측 궤도선의 내부 구조 연구 목적이며 실제로 결정된 핵의 크기나 상태는 제시되지 않았다.\"}"
+          },
+          {
+            "원문": "Probing of Hermean Exosphere by Ultraviolet Spectroscopy (PHEBUS):\nCharacterising Mercury’s exosphere composition and dynamics and searching for surface ice layers in permanently shadowed regions of high-latitude craters.",
+            "메모": "{\"subject\": \"Probing of Hermean Exosphere by Ultraviolet Spectroscopy (PHEBUS)\", \"relation\": \"자외선 분광으로 외기권의 조성과 역학을 특성화하고 고위도 충돌구의 영구 음영 지역에서 표면 얼음층을 탐색하여, 외기권의 성질과 얼음의 존재 여부를 조사한다.\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"외기권 관측과 얼음 탐색이라는 설계 목적이며 얼음 발견이라는 실제 성과를 뜻하지 않는다.\"}"
+          },
+          {
+            "원문": "Search for Exosphere Refilling and Emitted Neutral Abundances (SERENA):\n(neutral and ionised particle analyser) Studying the gaseous interaction between Mercury’s surface, exosphere, magnetosphere, solar wind and the interplanetary medium.",
+            "메모": "{\"subject\": \"Search for Exosphere Refilling and Emitted Neutral Abundances (SERENA)\", \"relation\": \"중성·이온화 입자 분석기로 표면·외기권·자기권·태양풍·행성간 매질 사이의 기체 상호작용을 연구하여, 이 영역들이 어떻게 연결되는가라는 질문에 대응한다.\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"입자 분석을 통한 상호작용 연구가 관측 목적이며 실제 관측 결과는 제시되지 않았다.\"}"
+          },
+          {
+            "원문": "Spectrometers and Imagers for MPO BepiColombo Integrated Observatory (SIMBIO-SYS):\nExamining with stereo and colour imaging, and spectroscopic analysis, Mercury’s surface geology, volcanism, global tectonics, surface age and composition.",
+            "메모": "{\"subject\": \"Spectrometers and Imagers for MPO BepiColombo Integrated Observatory (SIMBIO-SYS)\", \"relation\": \"입체·컬러 영상과 분광 분석으로 표면 지질·화산활동·전 지구적 지각변동·표면 나이·조성을 조사하여, 수성 표면이 어떻게 형성되고 변화했는가라는 질문에 대응한다.\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"행성 관측 궤도선이 표면의 특성과 지질사를 연구하도록 설계된 역할이며 실제 성과가 아니다.\"}"
+          }
+        ],
+        "부족": false,
+        "이유": "맡은 절의 핵심인 행성 관측 궤도선의 관측 대상과 장비 기능을 연결할 근거가 있다. 최대 여덟 행에 맞춰 주요 장비를 선정했다. 원문은 관측 목적을 제시하며 실제 관측 성과나 장비별 상세 작동 원리는 제시하지 않는다.",
+        "fact_table": {
+          "facts": [
+            {
+              "id": "F1",
+              "subject": "BepiColombo Laser Altimeter (BELA)",
+              "relation": "수성의 지형과 표면 형태를 측정해 수치 지형 모형을 만드는 장비로, 표면이 어떤 형태인가라는 질문에 대응한다.",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "두 궤도선 중 행성 관측 궤도선에 탑재된 장비의 관측 목적이며 실제 성과가 아니다.",
+              "start_line": 1,
+              "end_line": 11,
+              "document": "수성 | Mercury Planetary Orbiter",
+              "quote": "ESA’s Mercury Planetary Orbiter (MPO) is one of two spacecraft making up the\nBepiColombo\nmission to Mercury, the other being JAXA's Mercury Magnetospheric Orbiter (\nMio\n).\nMPO will operate from a 2.3-hour polar orbit at an altitude of 480 x 1500 km above the planet’s surface.\nThe main body of the spacecraft measures 2.4 x 2.2 x 1.7 m and its radiator is 3.7 m wide. The deployed solar wing spans 7.5 m.\nThe orbiter comprises a suite of 11 science experiments:\nMPO’s science instruments\nBepiColombo Laser Altimeter (BELA):\nCharacterising and measuring the topography and surface morphology of Mercury to create digital terrain models."
+            },
+            {
+              "id": "F2",
+              "subject": "Magnetometer (MPO-MAG)",
+              "relation": "자기장, 태양풍과의 상호작용, 자기권의 형성과 역학을 측정하여 수성 내부의 기원·진화·현재 상태를 이해하도록 설계되었다.",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "행성 관측 궤도선이 자기장 관측을 통해 내부 상태를 연구하려는 설계 목적이다.",
+              "start_line": 19,
+              "end_line": 20,
+              "document": "수성 | Mercury Planetary Orbiter",
+              "quote": "Magnetometer (MPO-MAG):\nMeasuring Mercury’s magnetic field, the interaction of the solar wind, and the formation and dynamics of the magnetosphere, and understanding the origin, evolution and current state of the planet’s interior."
+            },
+            {
+              "id": "F3",
+              "subject": "Mercury Radiometer and Thermal Infrared Spectrometer (MERTIS)",
+              "relation": "표면의 광물 조성·온도·열관성을 상세히 조사하여 수성의 기원과 진화 모형에 필요한 정보를 얻도록 설계되었다.",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "표면의 물질과 열적 특성을 통해 행성의 형성과 진화를 연구하려는 관측 목적이다.",
+              "start_line": 22,
+              "end_line": 23,
+              "document": "수성 | Mercury Planetary Orbiter",
+              "quote": "Mercury Radiometer and Thermal Infrared Spectrometer (MERTIS):\nDetailing the mineralogical composition of Mercury’s surface, its temperature and thermal inertia, important for models of the origin and evolution of the planet."
+            },
+            {
+              "id": "F4",
+              "subject": "Mercury Gamma-ray and Neutron Spectrometer (MGNS)",
+              "relation": "표면과 지하의 원소 조성을 결정하고 극지 영구 음영 지역의 휘발성 물질 분포를 파악하여, 어떤 물질이 어디에 존재하는가라는 질문에 대응한다.",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "원소 조성과 휘발성 물질 분포를 조사하려는 관측 목적이며 검출 성과는 제시되지 않았다.",
+              "start_line": 26,
+              "end_line": 27,
+              "document": "수성 | Mercury Planetary Orbiter",
+              "quote": "Mercury Gamma-ray and Neutron Spectrometer (MGNS):\nDetermining the elemental compositions of the surface and subsurface of Mercury, and identifying the regional distribution of volatiles in permanently shadowed polar regions."
+            },
+            {
+              "id": "F5",
+              "subject": "Mercury Orbiter Radio science Experiment (MORE)",
+              "relation": "수성의 중력장과 핵의 크기·물리적 상태를 결정하여, 내부 구조와 핵이 어떤 상태인가라는 질문에 대응하도록 설계되었다.",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "행성 관측 궤도선의 내부 구조 연구 목적이며 실제로 결정된 핵의 크기나 상태는 제시되지 않았다.",
+              "start_line": 34,
+              "end_line": 35,
+              "document": "수성 | Mercury Planetary Orbiter",
+              "quote": "Mercury Orbiter Radio science Experiment (MORE):\nDetermining the gravity field of Mercury, and the size and physical state of its core; measuring the gravitational oblateness of the Sun and testing the most advanced interplanetary tracking system ever built."
+            },
+            {
+              "id": "F6",
+              "subject": "Probing of Hermean Exosphere by Ultraviolet Spectroscopy (PHEBUS)",
+              "relation": "자외선 분광으로 외기권의 조성과 역학을 특성화하고 고위도 충돌구의 영구 음영 지역에서 표면 얼음층을 탐색하여, 외기권의 성질과 얼음의 존재 여부를 조사한다.",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "외기권 관측과 얼음 탐색이라는 설계 목적이며 얼음 발견이라는 실제 성과를 뜻하지 않는다.",
+              "start_line": 37,
+              "end_line": 38,
+              "document": "수성 | Mercury Planetary Orbiter",
+              "quote": "Probing of Hermean Exosphere by Ultraviolet Spectroscopy (PHEBUS):\nCharacterising Mercury’s exosphere composition and dynamics and searching for surface ice layers in permanently shadowed regions of high-latitude craters."
+            },
+            {
+              "id": "F7",
+              "subject": "Search for Exosphere Refilling and Emitted Neutral Abundances (SERENA)",
+              "relation": "중성·이온화 입자 분석기로 표면·외기권·자기권·태양풍·행성간 매질 사이의 기체 상호작용을 연구하여, 이 영역들이 어떻게 연결되는가라는 질문에 대응한다.",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "입자 분석을 통한 상호작용 연구가 관측 목적이며 실제 관측 결과는 제시되지 않았다.",
+              "start_line": 41,
+              "end_line": 42,
+              "document": "수성 | Mercury Planetary Orbiter",
+              "quote": "Search for Exosphere Refilling and Emitted Neutral Abundances (SERENA):\n(neutral and ionised particle analyser) Studying the gaseous interaction between Mercury’s surface, exosphere, magnetosphere, solar wind and the interplanetary medium."
+            },
+            {
+              "id": "F8",
+              "subject": "Spectrometers and Imagers for MPO BepiColombo Integrated Observatory (SIMBIO-SYS)",
+              "relation": "입체·컬러 영상과 분광 분석으로 표면 지질·화산활동·전 지구적 지각변동·표면 나이·조성을 조사하여, 수성 표면이 어떻게 형성되고 변화했는가라는 질문에 대응한다.",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "행성 관측 궤도선이 표면의 특성과 지질사를 연구하도록 설계된 역할이며 실제 성과가 아니다.",
+              "start_line": 44,
+              "end_line": 45,
+              "document": "수성 | Mercury Planetary Orbiter",
+              "quote": "Spectrometers and Imagers for MPO BepiColombo Integrated Observatory (SIMBIO-SYS):\nExamining with stereo and colour imaging, and spectroscopic analysis, Mercury’s surface geology, volcanism, global tectonics, surface age and composition."
+            }
+          ],
+          "insufficient": false,
+          "reason": "맡은 절의 핵심인 행성 관측 궤도선의 관측 대상과 장비 기능을 연결할 근거가 있다. 최대 여덟 행에 맞춰 주요 장비를 선정했다. 원문은 관측 목적을 제시하며 실제 관측 성과나 장비별 상세 작동 원리는 제시하지 않는다.",
+          "semantic_review": "pending",
+          "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+        },
+        "validation": "Schema/source membership checked; semantic support pending direct review."
+      }
+    },
+    {
+      "kind": "candidates",
+      "agent": "researcher-1",
+      "round": 0,
+      "path": "all_docs_fallback",
+      "count": 94
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-1",
+      "step": "pick",
+      "input_chars": 4210,
+      "source_chars": 0,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "fact_table",
+      "agent": "researcher-0",
+      "document": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+      "table": {
+        "facts": [
+          {
+            "id": "F1",
+            "subject": "NASA’s Messenger spacecraft",
+            "relation": "수성 표면에서 안정적인 토륨에 비해 휘발성 칼륨이 예상보다 풍부함을 관측하여 수성의 형성 위치에 의문을 남김",
+            "comparison_target": "thorium",
+            "value": "",
+            "unit": "",
+            "basis": "관측 결과이며, 기존 행성 형성 모형은 이 조성의 차이를 제대로 설명하지 못함. 태양에서 더 먼 곳에서 형성된 뒤 충돌로 이동했다는 설명은 가설임",
+            "start_line": 5,
+            "end_line": 7,
+            "document": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+            "quote": "Data from NASA’s Messenger spacecraft, which orbited Mercury between 2011 and 2015, revealed that there is too much of the volatile chemical element potassium, as compared to the more stable radioactive thorium, in the material on the surface of Mercury.\n“Potassium evaporates very quickly in a hot environment while thorium survives even in very high temperatures,” says Johannes Benkhoff, ESA BepiColombo Project Scientist. “Planets that formed closer to the Sun therefore usually have more thorium as compared to potassium. The ratio of these elements was measured on Earth, Mars, the Moon and Venus and it seems to be correlated with the temperature at which the bodies are believed to have formed. But on Mercury we see much more potassium than we would expect.”\nIn fact, the ratio of potassium to thorium on Mercury is comparable to that of Mars, which is much farther away from the Sun. Johannes admits that no existing planet formation model can properly explain this deviation. Scientists therefore started looking into the possibility that Mercury may have formed farther away from the Sun, about as far as Mars, and was thrust closer to the star by a collision with another large body. A powerful impact could also explain why Mercury has such an oversized internal core and a relatively thin outer mantel."
+          },
+          {
+            "id": "F2",
+            "subject": "Mercury's core",
+            "relation": "행성 부피에서 차지하는 비중이 커서 거대한 핵과 얇은 바깥층이 형성된 원인이 의문으로 남음",
+            "comparison_target": "",
+            "value": "over 55%",
+            "unit": "",
+            "basis": "수성 전체 부피 대비 핵의 부피. 과거 충돌로 지각 대부분을 잃었다는 설명은 가설임",
+            "start_line": 9,
+            "end_line": 10,
+            "document": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+            "quote": "Mercury's core, approximately 4000 km in diameter, sits inside the planet's diameter of less than 5000 km, making up over 55% of the planet’s volume. In comparison, Earth has a diameter of about 12 700 km, but its core is only 1200 km across.\n“One theory is that this big impact in the past, in addition to possibly pushing Mercury to where it is today, also stripped away most of the crust material and left behind the dense core with only a thin outer layer,” says Johannes."
+          },
+          {
+            "id": "F3",
+            "subject": "Messenger",
+            "relation": "극지방 분화구에서 물 얼음의 반사광으로 보이는 빛을 관측했으나 물의 존재는 직접 검출되지 않았고 기원도 미해결임",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "얼음의 강한 간접 증거와 직접 검출을 구분해야 함. 후속 관측으로 존재와 양을 확인하고 기원의 단서를 얻을 필요가 있음",
+            "start_line": 21,
+            "end_line": 24,
+            "document": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+            "quote": "With temperatures on its surface reaching up to 450 °C, one wouldn’t expect to find water on Mercury, let alone ice. Surprisingly, when Messenger looked into some of the craters around the planet’s poles, it saw what appeared like light reflected from a mass of water ice.\n“We have strong indications that there might be water ice in these craters, but it has not been detected directly,” says Johannes. “With the instruments that we have on MPO, we hope to be able not only to measure water content directly and confirm whether there really is water but also to attempt to find out how much of it is there.”\nThe notion of water ice on the scorched planet is not so absurd, Johannes adds. Mercury rotates around an axis that is perpendicular to its orbital plane. The planet is therefore not tilted like Earth. As a result, rays of the Sun, which appears three times larger than on Earth, never reach inside the polar craters, allowing them to remain constantly ice cold.\nJohannes hopes that with the ability of MPO’s instruments to identify the precise elemental composition of the surface of Mercury, scientists might even get an idea of where this ice actually came from. Scientists think the ice probably doesn’t come from Mercury directly. Its origin, however, is another mystery. Comets are the likeliest source of water on Earth, but not many are believed to have struck Mercury in the past."
+          },
+          {
+            "id": "F4",
+            "subject": "The mission",
+            "relation": "분화구 안팎에서 함몰 지형을 발견했으나 이를 만드는 과정은 밝혀지지 않음",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "앞 문장의 탐사선이 수행한 임무를 가리킴. 지형의 발견은 관측 결과이며, 내부 물질의 증발이나 승화 및 열이나 태양 입자가 원인이라는 설명은 추정임",
+            "start_line": 29,
+            "end_line": 33,
+            "document": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+            "quote": "Unlikely to host life, with a parched, seemingly dead surface, Mercury has always been an underdog of Solar System exploration. When the Messenger spacecraft finally took a close look at the planet’s surface, however, it found that there might be more going on on Mercury than one would expect.\nThe mission found strange geological features, unknown from other planets, dotting the areas inside and around some of Mercury’s craters. These dents in the surface, or hollows, as the scientists call them, appear to be caused by the evaporation of material from inside Mercury.\n“The interesting thing is that these hollows appear to be fairly recent,” says Johannes. “It appears that there is some volatile material coming up from the outer layer of Mercury and sublimating into the surrounding space, leaving behind these strange features.”\nSince BepiColombo will commence its survey of Mercury ten years after the end of the Messenger mission, the scientists hope that they might find evidence of the hollows changing, either growing or shrinking. That would mean that Mercury is still an active, living planet, and not a dead world like the Moon.\n“If we prove that these hollows are changing, that would be one of the most fantastic results we could get with BepiColombo,” says Johannes. “The process driving the creation of these hollows is totally unknown. It might be caused by the heat or by solar particles bombarding the surface of the planet. It’s something completely new and everyone is looking forward to getting more data.”"
+          },
+          {
+            "id": "F5",
+            "subject": "BepiColombo",
+            "relation": "이전 임무 종료 후 재관측하여 함몰 지형의 성장이나 축소를 찾고 현재 지질 활동 여부를 검증하려 함",
+            "comparison_target": "the Messenger mission",
+            "value": "ten",
+            "unit": "years",
+            "basis": "이전 임무 종료부터 후속 조사 개시까지의 예정 간격. 지형 변화와 현재 활동성은 아직 확인된 성과가 아니라 관측 목표임",
+            "start_line": 32,
+            "end_line": 33,
+            "document": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+            "quote": "Since BepiColombo will commence its survey of Mercury ten years after the end of the Messenger mission, the scientists hope that they might find evidence of the hollows changing, either growing or shrinking. That would mean that Mercury is still an active, living planet, and not a dead world like the Moon.\n“If we prove that these hollows are changing, that would be one of the most fantastic results we could get with BepiColombo,” says Johannes. “The process driving the creation of these hollows is totally unknown. It might be caused by the heat or by solar particles bombarding the surface of the planet. It’s something completely new and everyone is looking forward to getting more data.”"
+          },
+          {
+            "id": "F6",
+            "subject": "Mercury",
+            "relation": "달에서 채취한 물질보다 빛을 적게 반사하지만 표면이 어두운 이유는 설명되지 않음",
+            "comparison_target": "material collected from the Moon",
+            "value": "about two-thirds",
+            "unit": "",
+            "basis": "달에서 채취한 물질의 반사광량 대비 수성의 반사광량. 표면 조성과 어두운 색의 원인을 확인할 후속 관측이 필요함",
+            "start_line": 35,
+            "end_line": 37,
+            "document": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+            "quote": "With its crater-ridden dusty surface, Mercury might seem quite similar to the Earth’s natural satellite, the Moon. At least at first glance. At closer inspection, and for reasons that scientists don’t yet understand, Mercury appears much darker. The planet reflects only about two-thirds as much light as material collected from the Moon.\nThe MERTIS thermal infrared spectrometer aboard the MPO will create a detailed map of the distribution of minerals on Mercury’s surface. By providing better accuracy and resolution of the elemental composition compared to the Messenger data, MERTIS and other MPO instruments will help answer the question why Mercury is so dark.\n“There are various explanations as to why Mercury is as dark as it is,” says Johannes. “It’s possible that the material on its surface is similar to what we can see on other planets but the extreme heat on Mercury makes those materials appear darker. There is also a possibility that what we see on the surface is graphite, which is very dark as well. A graphite rich layer could have formed inside the planet as it was cooling down. Some of this material may have been brought to the surface during further evolution.”"
+          },
+          {
+            "id": "F7",
+            "subject": "Mercury",
+            "relation": "자기장이 존재하지만 지구보다 약하며 작은 행성에서 자기장이 유지되는 원인은 의문임",
+            "comparison_target": "the magnetic field of Earth",
+            "value": "one hundred times",
+            "unit": "",
+            "basis": "지구 자기장 대비 약한 정도. 자기장 존재는 알려진 사실이며 이를 유지하는 내부 상태와 과정은 설명이 필요한 질문임",
+            "start_line": 40,
+            "end_line": 42,
+            "document": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+            "quote": "Not too many planets have a magnetic field. Among the rocky planets of the inner Solar System, only Mercury and Earth have one. Mars used to have a magnetic field in the past and lost it. Mercury appears too small to have one. Yet, it still does, even though it’s one hundred times weaker than the magnetic field of Earth. Scientists wonder what sustains this magnetic field despite the odds stacked against it.\nEarth’s magnetic field is generated by the fast spinning of its liquid iron core. As for Mercury, scientists used to think that the core, due to the planet’s small size, must have cooled down and solidified since the planet’s formation. Is that really the case?\n“Mercury’s core must be partially molten to explain this magnetism,” says Johannes. “We can also measure tides on the surface of Mercury, suggesting there must be liquid inside the planet. As Mercury orbits around the Sun and interacts with its gravity, we expect a bulge to form and change its size while moving around the Sun.”"
+          },
+          {
+            "id": "F8",
+            "subject": "Mercury’s magnetic field",
+            "relation": "행성 중심에서 북쪽으로 치우쳐 있어 자기장 구조를 더 자세히 조사할 필요가 있음",
+            "comparison_target": "",
+            "value": "400",
+            "unit": "kilometres",
+            "basis": "행성 중심을 기준으로 한 북쪽 편위 거리. 후속 동시 관측은 자기장의 시간적 변화와 공간적 차이를 조사하려는 계획임",
+            "start_line": 44,
+            "end_line": 45,
+            "document": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+            "quote": "Mercury’s magnetic field also appears shifted 400 kilometres to the north and not centred in the middle of the planet like that of Earth.\nThe two orbiters comprising the BepiColombo mission, ESA’s MPO and the Mercury Magnetospheric Orbiter (Mio) of the Japanese Aerospace Exploration Agency (JAXA), will study Mercury’s magnetic field in greater detail than any spacecraft before and shed light on these perplexing questions. The two orbiters will travel through different areas of Mercury’s magnetosphere and on different timescales. They will measure simultaneously how the magnetic field changes over time and in space, and attempt to explain how the close proximity of the Sun and interaction with the powerful solar wind affect the magnetic field."
+          }
+        ],
+        "insufficient": true,
+        "reason": "맡은 절의 주요 미해결 질문과 후속 관측 필요성은 추출할 수 있다. 다만 원문은 도입에서 두 선행 임무를 함께 언급할 뿐, 매리너 10의 구체적인 관측 결과와 그 임무가 남긴 의문을 따로 제시하지 않아 임무별 연결 근거가 부족하다. 다른 연구원이 맡은 장비 및 두 궤도선의 상세 역할은 부족 판단에 포함하지 않았다.",
+        "semantic_review": "pending",
+        "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+      }
+    },
+    {
+      "kind": "read",
+      "agent": "researcher-0",
+      "round": 0,
+      "document": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+      "source_chars": 10972,
+      "evidence": {
+        "근거": [
+          {
+            "원문": "Data from NASA’s Messenger spacecraft, which orbited Mercury between 2011 and 2015, revealed that there is too much of the volatile chemical element potassium, as compared to the more stable radioactive thorium, in the material on the surface of Mercury.\n“Potassium evaporates very quickly in a hot environment while thorium survives even in very high temperatures,” says Johannes Benkhoff, ESA BepiColombo Project Scientist. “Planets that formed closer to the Sun therefore usually have more thorium as compared to potassium. The ratio of these elements was measured on Earth, Mars, the Moon and Venus and it seems to be correlated with the temperature at which the bodies are believed to have formed. But on Mercury we see much more potassium than we would expect.”\nIn fact, the ratio of potassium to thorium on Mercury is comparable to that of Mars, which is much farther away from the Sun. Johannes admits that no existing planet formation model can properly explain this deviation. Scientists therefore started looking into the possibility that Mercury may have formed farther away from the Sun, about as far as Mars, and was thrust closer to the star by a collision with another large body. A powerful impact could also explain why Mercury has such an oversized internal core and a relatively thin outer mantel.",
+            "메모": "{\"subject\": \"NASA’s Messenger spacecraft\", \"relation\": \"수성 표면에서 안정적인 토륨에 비해 휘발성 칼륨이 예상보다 풍부함을 관측하여 수성의 형성 위치에 의문을 남김\", \"comparison_target\": \"thorium\", \"value\": \"\", \"unit\": \"\", \"basis\": \"관측 결과이며, 기존 행성 형성 모형은 이 조성의 차이를 제대로 설명하지 못함. 태양에서 더 먼 곳에서 형성된 뒤 충돌로 이동했다는 설명은 가설임\"}"
+          },
+          {
+            "원문": "Mercury's core, approximately 4000 km in diameter, sits inside the planet's diameter of less than 5000 km, making up over 55% of the planet’s volume. In comparison, Earth has a diameter of about 12 700 km, but its core is only 1200 km across.\n“One theory is that this big impact in the past, in addition to possibly pushing Mercury to where it is today, also stripped away most of the crust material and left behind the dense core with only a thin outer layer,” says Johannes.",
+            "메모": "{\"subject\": \"Mercury's core\", \"relation\": \"행성 부피에서 차지하는 비중이 커서 거대한 핵과 얇은 바깥층이 형성된 원인이 의문으로 남음\", \"comparison_target\": \"\", \"value\": \"over 55%\", \"unit\": \"\", \"basis\": \"수성 전체 부피 대비 핵의 부피. 과거 충돌로 지각 대부분을 잃었다는 설명은 가설임\"}"
+          },
+          {
+            "원문": "With temperatures on its surface reaching up to 450 °C, one wouldn’t expect to find water on Mercury, let alone ice. Surprisingly, when Messenger looked into some of the craters around the planet’s poles, it saw what appeared like light reflected from a mass of water ice.\n“We have strong indications that there might be water ice in these craters, but it has not been detected directly,” says Johannes. “With the instruments that we have on MPO, we hope to be able not only to measure water content directly and confirm whether there really is water but also to attempt to find out how much of it is there.”\nThe notion of water ice on the scorched planet is not so absurd, Johannes adds. Mercury rotates around an axis that is perpendicular to its orbital plane. The planet is therefore not tilted like Earth. As a result, rays of the Sun, which appears three times larger than on Earth, never reach inside the polar craters, allowing them to remain constantly ice cold.\nJohannes hopes that with the ability of MPO’s instruments to identify the precise elemental composition of the surface of Mercury, scientists might even get an idea of where this ice actually came from. Scientists think the ice probably doesn’t come from Mercury directly. Its origin, however, is another mystery. Comets are the likeliest source of water on Earth, but not many are believed to have struck Mercury in the past.",
+            "메모": "{\"subject\": \"Messenger\", \"relation\": \"극지방 분화구에서 물 얼음의 반사광으로 보이는 빛을 관측했으나 물의 존재는 직접 검출되지 않았고 기원도 미해결임\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"얼음의 강한 간접 증거와 직접 검출을 구분해야 함. 후속 관측으로 존재와 양을 확인하고 기원의 단서를 얻을 필요가 있음\"}"
+          },
+          {
+            "원문": "Unlikely to host life, with a parched, seemingly dead surface, Mercury has always been an underdog of Solar System exploration. When the Messenger spacecraft finally took a close look at the planet’s surface, however, it found that there might be more going on on Mercury than one would expect.\nThe mission found strange geological features, unknown from other planets, dotting the areas inside and around some of Mercury’s craters. These dents in the surface, or hollows, as the scientists call them, appear to be caused by the evaporation of material from inside Mercury.\n“The interesting thing is that these hollows appear to be fairly recent,” says Johannes. “It appears that there is some volatile material coming up from the outer layer of Mercury and sublimating into the surrounding space, leaving behind these strange features.”\nSince BepiColombo will commence its survey of Mercury ten years after the end of the Messenger mission, the scientists hope that they might find evidence of the hollows changing, either growing or shrinking. That would mean that Mercury is still an active, living planet, and not a dead world like the Moon.\n“If we prove that these hollows are changing, that would be one of the most fantastic results we could get with BepiColombo,” says Johannes. “The process driving the creation of these hollows is totally unknown. It might be caused by the heat or by solar particles bombarding the surface of the planet. It’s something completely new and everyone is looking forward to getting more data.”",
+            "메모": "{\"subject\": \"The mission\", \"relation\": \"분화구 안팎에서 함몰 지형을 발견했으나 이를 만드는 과정은 밝혀지지 않음\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"앞 문장의 탐사선이 수행한 임무를 가리킴. 지형의 발견은 관측 결과이며, 내부 물질의 증발이나 승화 및 열이나 태양 입자가 원인이라는 설명은 추정임\"}"
+          },
+          {
+            "원문": "Since BepiColombo will commence its survey of Mercury ten years after the end of the Messenger mission, the scientists hope that they might find evidence of the hollows changing, either growing or shrinking. That would mean that Mercury is still an active, living planet, and not a dead world like the Moon.\n“If we prove that these hollows are changing, that would be one of the most fantastic results we could get with BepiColombo,” says Johannes. “The process driving the creation of these hollows is totally unknown. It might be caused by the heat or by solar particles bombarding the surface of the planet. It’s something completely new and everyone is looking forward to getting more data.”",
+            "메모": "{\"subject\": \"BepiColombo\", \"relation\": \"이전 임무 종료 후 재관측하여 함몰 지형의 성장이나 축소를 찾고 현재 지질 활동 여부를 검증하려 함\", \"comparison_target\": \"the Messenger mission\", \"value\": \"ten\", \"unit\": \"years\", \"basis\": \"이전 임무 종료부터 후속 조사 개시까지의 예정 간격. 지형 변화와 현재 활동성은 아직 확인된 성과가 아니라 관측 목표임\"}"
+          },
+          {
+            "원문": "With its crater-ridden dusty surface, Mercury might seem quite similar to the Earth’s natural satellite, the Moon. At least at first glance. At closer inspection, and for reasons that scientists don’t yet understand, Mercury appears much darker. The planet reflects only about two-thirds as much light as material collected from the Moon.\nThe MERTIS thermal infrared spectrometer aboard the MPO will create a detailed map of the distribution of minerals on Mercury’s surface. By providing better accuracy and resolution of the elemental composition compared to the Messenger data, MERTIS and other MPO instruments will help answer the question why Mercury is so dark.\n“There are various explanations as to why Mercury is as dark as it is,” says Johannes. “It’s possible that the material on its surface is similar to what we can see on other planets but the extreme heat on Mercury makes those materials appear darker. There is also a possibility that what we see on the surface is graphite, which is very dark as well. A graphite rich layer could have formed inside the planet as it was cooling down. Some of this material may have been brought to the surface during further evolution.”",
+            "메모": "{\"subject\": \"Mercury\", \"relation\": \"달에서 채취한 물질보다 빛을 적게 반사하지만 표면이 어두운 이유는 설명되지 않음\", \"comparison_target\": \"material collected from the Moon\", \"value\": \"about two-thirds\", \"unit\": \"\", \"basis\": \"달에서 채취한 물질의 반사광량 대비 수성의 반사광량. 표면 조성과 어두운 색의 원인을 확인할 후속 관측이 필요함\"}"
+          },
+          {
+            "원문": "Not too many planets have a magnetic field. Among the rocky planets of the inner Solar System, only Mercury and Earth have one. Mars used to have a magnetic field in the past and lost it. Mercury appears too small to have one. Yet, it still does, even though it’s one hundred times weaker than the magnetic field of Earth. Scientists wonder what sustains this magnetic field despite the odds stacked against it.\nEarth’s magnetic field is generated by the fast spinning of its liquid iron core. As for Mercury, scientists used to think that the core, due to the planet’s small size, must have cooled down and solidified since the planet’s formation. Is that really the case?\n“Mercury’s core must be partially molten to explain this magnetism,” says Johannes. “We can also measure tides on the surface of Mercury, suggesting there must be liquid inside the planet. As Mercury orbits around the Sun and interacts with its gravity, we expect a bulge to form and change its size while moving around the Sun.”",
+            "메모": "{\"subject\": \"Mercury\", \"relation\": \"자기장이 존재하지만 지구보다 약하며 작은 행성에서 자기장이 유지되는 원인은 의문임\", \"comparison_target\": \"the magnetic field of Earth\", \"value\": \"one hundred times\", \"unit\": \"\", \"basis\": \"지구 자기장 대비 약한 정도. 자기장 존재는 알려진 사실이며 이를 유지하는 내부 상태와 과정은 설명이 필요한 질문임\"}"
+          },
+          {
+            "원문": "Mercury’s magnetic field also appears shifted 400 kilometres to the north and not centred in the middle of the planet like that of Earth.\nThe two orbiters comprising the BepiColombo mission, ESA’s MPO and the Mercury Magnetospheric Orbiter (Mio) of the Japanese Aerospace Exploration Agency (JAXA), will study Mercury’s magnetic field in greater detail than any spacecraft before and shed light on these perplexing questions. The two orbiters will travel through different areas of Mercury’s magnetosphere and on different timescales. They will measure simultaneously how the magnetic field changes over time and in space, and attempt to explain how the close proximity of the Sun and interaction with the powerful solar wind affect the magnetic field.",
+            "메모": "{\"subject\": \"Mercury’s magnetic field\", \"relation\": \"행성 중심에서 북쪽으로 치우쳐 있어 자기장 구조를 더 자세히 조사할 필요가 있음\", \"comparison_target\": \"\", \"value\": \"400\", \"unit\": \"kilometres\", \"basis\": \"행성 중심을 기준으로 한 북쪽 편위 거리. 후속 동시 관측은 자기장의 시간적 변화와 공간적 차이를 조사하려는 계획임\"}"
+          }
+        ],
+        "부족": true,
+        "이유": "맡은 절의 주요 미해결 질문과 후속 관측 필요성은 추출할 수 있다. 다만 원문은 도입에서 두 선행 임무를 함께 언급할 뿐, 매리너 10의 구체적인 관측 결과와 그 임무가 남긴 의문을 따로 제시하지 않아 임무별 연결 근거가 부족하다. 다른 연구원이 맡은 장비 및 두 궤도선의 상세 역할은 부족 판단에 포함하지 않았다.",
+        "fact_table": {
+          "facts": [
+            {
+              "id": "F1",
+              "subject": "NASA’s Messenger spacecraft",
+              "relation": "수성 표면에서 안정적인 토륨에 비해 휘발성 칼륨이 예상보다 풍부함을 관측하여 수성의 형성 위치에 의문을 남김",
+              "comparison_target": "thorium",
+              "value": "",
+              "unit": "",
+              "basis": "관측 결과이며, 기존 행성 형성 모형은 이 조성의 차이를 제대로 설명하지 못함. 태양에서 더 먼 곳에서 형성된 뒤 충돌로 이동했다는 설명은 가설임",
+              "start_line": 5,
+              "end_line": 7,
+              "document": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+              "quote": "Data from NASA’s Messenger spacecraft, which orbited Mercury between 2011 and 2015, revealed that there is too much of the volatile chemical element potassium, as compared to the more stable radioactive thorium, in the material on the surface of Mercury.\n“Potassium evaporates very quickly in a hot environment while thorium survives even in very high temperatures,” says Johannes Benkhoff, ESA BepiColombo Project Scientist. “Planets that formed closer to the Sun therefore usually have more thorium as compared to potassium. The ratio of these elements was measured on Earth, Mars, the Moon and Venus and it seems to be correlated with the temperature at which the bodies are believed to have formed. But on Mercury we see much more potassium than we would expect.”\nIn fact, the ratio of potassium to thorium on Mercury is comparable to that of Mars, which is much farther away from the Sun. Johannes admits that no existing planet formation model can properly explain this deviation. Scientists therefore started looking into the possibility that Mercury may have formed farther away from the Sun, about as far as Mars, and was thrust closer to the star by a collision with another large body. A powerful impact could also explain why Mercury has such an oversized internal core and a relatively thin outer mantel."
+            },
+            {
+              "id": "F2",
+              "subject": "Mercury's core",
+              "relation": "행성 부피에서 차지하는 비중이 커서 거대한 핵과 얇은 바깥층이 형성된 원인이 의문으로 남음",
+              "comparison_target": "",
+              "value": "over 55%",
+              "unit": "",
+              "basis": "수성 전체 부피 대비 핵의 부피. 과거 충돌로 지각 대부분을 잃었다는 설명은 가설임",
+              "start_line": 9,
+              "end_line": 10,
+              "document": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+              "quote": "Mercury's core, approximately 4000 km in diameter, sits inside the planet's diameter of less than 5000 km, making up over 55% of the planet’s volume. In comparison, Earth has a diameter of about 12 700 km, but its core is only 1200 km across.\n“One theory is that this big impact in the past, in addition to possibly pushing Mercury to where it is today, also stripped away most of the crust material and left behind the dense core with only a thin outer layer,” says Johannes."
+            },
+            {
+              "id": "F3",
+              "subject": "Messenger",
+              "relation": "극지방 분화구에서 물 얼음의 반사광으로 보이는 빛을 관측했으나 물의 존재는 직접 검출되지 않았고 기원도 미해결임",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "얼음의 강한 간접 증거와 직접 검출을 구분해야 함. 후속 관측으로 존재와 양을 확인하고 기원의 단서를 얻을 필요가 있음",
+              "start_line": 21,
+              "end_line": 24,
+              "document": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+              "quote": "With temperatures on its surface reaching up to 450 °C, one wouldn’t expect to find water on Mercury, let alone ice. Surprisingly, when Messenger looked into some of the craters around the planet’s poles, it saw what appeared like light reflected from a mass of water ice.\n“We have strong indications that there might be water ice in these craters, but it has not been detected directly,” says Johannes. “With the instruments that we have on MPO, we hope to be able not only to measure water content directly and confirm whether there really is water but also to attempt to find out how much of it is there.”\nThe notion of water ice on the scorched planet is not so absurd, Johannes adds. Mercury rotates around an axis that is perpendicular to its orbital plane. The planet is therefore not tilted like Earth. As a result, rays of the Sun, which appears three times larger than on Earth, never reach inside the polar craters, allowing them to remain constantly ice cold.\nJohannes hopes that with the ability of MPO’s instruments to identify the precise elemental composition of the surface of Mercury, scientists might even get an idea of where this ice actually came from. Scientists think the ice probably doesn’t come from Mercury directly. Its origin, however, is another mystery. Comets are the likeliest source of water on Earth, but not many are believed to have struck Mercury in the past."
+            },
+            {
+              "id": "F4",
+              "subject": "The mission",
+              "relation": "분화구 안팎에서 함몰 지형을 발견했으나 이를 만드는 과정은 밝혀지지 않음",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "앞 문장의 탐사선이 수행한 임무를 가리킴. 지형의 발견은 관측 결과이며, 내부 물질의 증발이나 승화 및 열이나 태양 입자가 원인이라는 설명은 추정임",
+              "start_line": 29,
+              "end_line": 33,
+              "document": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+              "quote": "Unlikely to host life, with a parched, seemingly dead surface, Mercury has always been an underdog of Solar System exploration. When the Messenger spacecraft finally took a close look at the planet’s surface, however, it found that there might be more going on on Mercury than one would expect.\nThe mission found strange geological features, unknown from other planets, dotting the areas inside and around some of Mercury’s craters. These dents in the surface, or hollows, as the scientists call them, appear to be caused by the evaporation of material from inside Mercury.\n“The interesting thing is that these hollows appear to be fairly recent,” says Johannes. “It appears that there is some volatile material coming up from the outer layer of Mercury and sublimating into the surrounding space, leaving behind these strange features.”\nSince BepiColombo will commence its survey of Mercury ten years after the end of the Messenger mission, the scientists hope that they might find evidence of the hollows changing, either growing or shrinking. That would mean that Mercury is still an active, living planet, and not a dead world like the Moon.\n“If we prove that these hollows are changing, that would be one of the most fantastic results we could get with BepiColombo,” says Johannes. “The process driving the creation of these hollows is totally unknown. It might be caused by the heat or by solar particles bombarding the surface of the planet. It’s something completely new and everyone is looking forward to getting more data.”"
+            },
+            {
+              "id": "F5",
+              "subject": "BepiColombo",
+              "relation": "이전 임무 종료 후 재관측하여 함몰 지형의 성장이나 축소를 찾고 현재 지질 활동 여부를 검증하려 함",
+              "comparison_target": "the Messenger mission",
+              "value": "ten",
+              "unit": "years",
+              "basis": "이전 임무 종료부터 후속 조사 개시까지의 예정 간격. 지형 변화와 현재 활동성은 아직 확인된 성과가 아니라 관측 목표임",
+              "start_line": 32,
+              "end_line": 33,
+              "document": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+              "quote": "Since BepiColombo will commence its survey of Mercury ten years after the end of the Messenger mission, the scientists hope that they might find evidence of the hollows changing, either growing or shrinking. That would mean that Mercury is still an active, living planet, and not a dead world like the Moon.\n“If we prove that these hollows are changing, that would be one of the most fantastic results we could get with BepiColombo,” says Johannes. “The process driving the creation of these hollows is totally unknown. It might be caused by the heat or by solar particles bombarding the surface of the planet. It’s something completely new and everyone is looking forward to getting more data.”"
+            },
+            {
+              "id": "F6",
+              "subject": "Mercury",
+              "relation": "달에서 채취한 물질보다 빛을 적게 반사하지만 표면이 어두운 이유는 설명되지 않음",
+              "comparison_target": "material collected from the Moon",
+              "value": "about two-thirds",
+              "unit": "",
+              "basis": "달에서 채취한 물질의 반사광량 대비 수성의 반사광량. 표면 조성과 어두운 색의 원인을 확인할 후속 관측이 필요함",
+              "start_line": 35,
+              "end_line": 37,
+              "document": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+              "quote": "With its crater-ridden dusty surface, Mercury might seem quite similar to the Earth’s natural satellite, the Moon. At least at first glance. At closer inspection, and for reasons that scientists don’t yet understand, Mercury appears much darker. The planet reflects only about two-thirds as much light as material collected from the Moon.\nThe MERTIS thermal infrared spectrometer aboard the MPO will create a detailed map of the distribution of minerals on Mercury’s surface. By providing better accuracy and resolution of the elemental composition compared to the Messenger data, MERTIS and other MPO instruments will help answer the question why Mercury is so dark.\n“There are various explanations as to why Mercury is as dark as it is,” says Johannes. “It’s possible that the material on its surface is similar to what we can see on other planets but the extreme heat on Mercury makes those materials appear darker. There is also a possibility that what we see on the surface is graphite, which is very dark as well. A graphite rich layer could have formed inside the planet as it was cooling down. Some of this material may have been brought to the surface during further evolution.”"
+            },
+            {
+              "id": "F7",
+              "subject": "Mercury",
+              "relation": "자기장이 존재하지만 지구보다 약하며 작은 행성에서 자기장이 유지되는 원인은 의문임",
+              "comparison_target": "the magnetic field of Earth",
+              "value": "one hundred times",
+              "unit": "",
+              "basis": "지구 자기장 대비 약한 정도. 자기장 존재는 알려진 사실이며 이를 유지하는 내부 상태와 과정은 설명이 필요한 질문임",
+              "start_line": 40,
+              "end_line": 42,
+              "document": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+              "quote": "Not too many planets have a magnetic field. Among the rocky planets of the inner Solar System, only Mercury and Earth have one. Mars used to have a magnetic field in the past and lost it. Mercury appears too small to have one. Yet, it still does, even though it’s one hundred times weaker than the magnetic field of Earth. Scientists wonder what sustains this magnetic field despite the odds stacked against it.\nEarth’s magnetic field is generated by the fast spinning of its liquid iron core. As for Mercury, scientists used to think that the core, due to the planet’s small size, must have cooled down and solidified since the planet’s formation. Is that really the case?\n“Mercury’s core must be partially molten to explain this magnetism,” says Johannes. “We can also measure tides on the surface of Mercury, suggesting there must be liquid inside the planet. As Mercury orbits around the Sun and interacts with its gravity, we expect a bulge to form and change its size while moving around the Sun.”"
+            },
+            {
+              "id": "F8",
+              "subject": "Mercury’s magnetic field",
+              "relation": "행성 중심에서 북쪽으로 치우쳐 있어 자기장 구조를 더 자세히 조사할 필요가 있음",
+              "comparison_target": "",
+              "value": "400",
+              "unit": "kilometres",
+              "basis": "행성 중심을 기준으로 한 북쪽 편위 거리. 후속 동시 관측은 자기장의 시간적 변화와 공간적 차이를 조사하려는 계획임",
+              "start_line": 44,
+              "end_line": 45,
+              "document": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+              "quote": "Mercury’s magnetic field also appears shifted 400 kilometres to the north and not centred in the middle of the planet like that of Earth.\nThe two orbiters comprising the BepiColombo mission, ESA’s MPO and the Mercury Magnetospheric Orbiter (Mio) of the Japanese Aerospace Exploration Agency (JAXA), will study Mercury’s magnetic field in greater detail than any spacecraft before and shed light on these perplexing questions. The two orbiters will travel through different areas of Mercury’s magnetosphere and on different timescales. They will measure simultaneously how the magnetic field changes over time and in space, and attempt to explain how the close proximity of the Sun and interaction with the powerful solar wind affect the magnetic field."
+            }
+          ],
+          "insufficient": true,
+          "reason": "맡은 절의 주요 미해결 질문과 후속 관측 필요성은 추출할 수 있다. 다만 원문은 도입에서 두 선행 임무를 함께 언급할 뿐, 매리너 10의 구체적인 관측 결과와 그 임무가 남긴 의문을 따로 제시하지 않아 임무별 연결 근거가 부족하다. 다른 연구원이 맡은 장비 및 두 궤도선의 상세 역할은 부족 판단에 포함하지 않았다.",
+          "semantic_review": "pending",
+          "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+        },
+        "validation": "Schema/source membership checked; semantic support pending direct review."
+      }
+    },
+    {
+      "kind": "candidates",
+      "agent": "researcher-0",
+      "round": 0,
+      "path": "links",
+      "count": 1
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-0",
+      "step": "pick",
+      "input_chars": 900,
+      "source_chars": 0,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-1",
+      "step": "read",
+      "input_chars": 5949,
+      "source_chars": 3972,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-0",
+      "step": "read",
+      "input_chars": 3261,
+      "source_chars": 1584,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "fact_table",
+      "agent": "researcher-2",
+      "document": "수성 | BepiColombo factsheet",
+      "table": {
+        "facts": [
+          {
+            "id": "F1",
+            "subject": "Mio",
+            "relation": "탑재 장비로 자력계가 열거됨",
+            "comparison_target": "MGF: Magnetometer",
+            "value": "",
+            "unit": "",
+            "basis": "장비 목록이며 실제 관측 성과는 제시되지 않음",
+            "start_line": 45,
+            "end_line": 47,
+            "document": "수성 | BepiColombo factsheet",
+            "quote": "Mio instruments\n:\nMGF: Magnetometer"
+          },
+          {
+            "id": "F2",
+            "subject": "Mio",
+            "relation": "탑재 장비로 플라스마 입자 실험 장비가 열거됨",
+            "comparison_target": "MPPE: Mercury Plasma Particle Experiment",
+            "value": "",
+            "unit": "",
+            "basis": "장비 목록이며 작동 원리나 실제 관측 성과는 제시되지 않음",
+            "start_line": 45,
+            "end_line": 48,
+            "document": "수성 | BepiColombo factsheet",
+            "quote": "Mio instruments\n:\nMGF: Magnetometer\nMPPE: Mercury Plasma Particle Experiment"
+          },
+          {
+            "id": "F3",
+            "subject": "Mio",
+            "relation": "탑재 장비로 플라스마 파동 관측 장비가 열거됨",
+            "comparison_target": "PWI: Plasma Wave Instrument",
+            "value": "",
+            "unit": "",
+            "basis": "장비 목록이며 작동 원리나 실제 관측 성과는 제시되지 않음",
+            "start_line": 45,
+            "end_line": 49,
+            "document": "수성 | BepiColombo factsheet",
+            "quote": "Mio instruments\n:\nMGF: Magnetometer\nMPPE: Mercury Plasma Particle Experiment\nPWI: Plasma Wave Instrument"
+          },
+          {
+            "id": "F4",
+            "subject": "Mio",
+            "relation": "탑재 장비로 수성 나트륨 대기 분광 영상 장비가 열거됨",
+            "comparison_target": "MSASI: Mercury Sodium Atmosphere Spectral Imager",
+            "value": "",
+            "unit": "",
+            "basis": "장비 목록이며 작동 원리나 실제 관측 성과는 제시되지 않음",
+            "start_line": 45,
+            "end_line": 50,
+            "document": "수성 | BepiColombo factsheet",
+            "quote": "Mio instruments\n:\nMGF: Magnetometer\nMPPE: Mercury Plasma Particle Experiment\nPWI: Plasma Wave Instrument\nMSASI: Mercury Sodium Atmosphere Spectral Imager"
+          },
+          {
+            "id": "F5",
+            "subject": "Mio",
+            "relation": "탑재 장비로 수성 먼지 관측 장비가 열거됨",
+            "comparison_target": "MDM: Mercury Dust Monitor",
+            "value": "",
+            "unit": "",
+            "basis": "장비 목록이며 작동 원리나 실제 관측 성과는 제시되지 않음",
+            "start_line": 45,
+            "end_line": 51,
+            "document": "수성 | BepiColombo factsheet",
+            "quote": "Mio instruments\n:\nMGF: Magnetometer\nMPPE: Mercury Plasma Particle Experiment\nPWI: Plasma Wave Instrument\nMSASI: Mercury Sodium Atmosphere Spectral Imager\nMDM: Mercury Dust Monitor"
+          }
+        ],
+        "insufficient": true,
+        "reason": "맡은 절의 장비 목록은 있으나, 각 장비의 작동 원리와 관측이 해결하려는 수성의 질문, 자기권 관측에서 맡는 구체적 역할, 두 궤도선의 공동 관측 의미를 설명하는 핵심 근거가 없다. 실제 관측 성과도 제시되지 않아 장비 목록을 성과로 해석할 수 없다.",
+        "semantic_review": "pending",
+        "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+      }
+    },
+    {
+      "kind": "read",
+      "agent": "researcher-2",
+      "round": 0,
+      "document": "수성 | BepiColombo factsheet",
+      "source_chars": 3972,
+      "evidence": {
+        "근거": [
+          {
+            "원문": "Mio instruments\n:\nMGF: Magnetometer",
+            "메모": "{\"subject\": \"Mio\", \"relation\": \"탑재 장비로 자력계가 열거됨\", \"comparison_target\": \"MGF: Magnetometer\", \"value\": \"\", \"unit\": \"\", \"basis\": \"장비 목록이며 실제 관측 성과는 제시되지 않음\"}"
+          },
+          {
+            "원문": "Mio instruments\n:\nMGF: Magnetometer\nMPPE: Mercury Plasma Particle Experiment",
+            "메모": "{\"subject\": \"Mio\", \"relation\": \"탑재 장비로 플라스마 입자 실험 장비가 열거됨\", \"comparison_target\": \"MPPE: Mercury Plasma Particle Experiment\", \"value\": \"\", \"unit\": \"\", \"basis\": \"장비 목록이며 작동 원리나 실제 관측 성과는 제시되지 않음\"}"
+          },
+          {
+            "원문": "Mio instruments\n:\nMGF: Magnetometer\nMPPE: Mercury Plasma Particle Experiment\nPWI: Plasma Wave Instrument",
+            "메모": "{\"subject\": \"Mio\", \"relation\": \"탑재 장비로 플라스마 파동 관측 장비가 열거됨\", \"comparison_target\": \"PWI: Plasma Wave Instrument\", \"value\": \"\", \"unit\": \"\", \"basis\": \"장비 목록이며 작동 원리나 실제 관측 성과는 제시되지 않음\"}"
+          },
+          {
+            "원문": "Mio instruments\n:\nMGF: Magnetometer\nMPPE: Mercury Plasma Particle Experiment\nPWI: Plasma Wave Instrument\nMSASI: Mercury Sodium Atmosphere Spectral Imager",
+            "메모": "{\"subject\": \"Mio\", \"relation\": \"탑재 장비로 수성 나트륨 대기 분광 영상 장비가 열거됨\", \"comparison_target\": \"MSASI: Mercury Sodium Atmosphere Spectral Imager\", \"value\": \"\", \"unit\": \"\", \"basis\": \"장비 목록이며 작동 원리나 실제 관측 성과는 제시되지 않음\"}"
+          },
+          {
+            "원문": "Mio instruments\n:\nMGF: Magnetometer\nMPPE: Mercury Plasma Particle Experiment\nPWI: Plasma Wave Instrument\nMSASI: Mercury Sodium Atmosphere Spectral Imager\nMDM: Mercury Dust Monitor",
+            "메모": "{\"subject\": \"Mio\", \"relation\": \"탑재 장비로 수성 먼지 관측 장비가 열거됨\", \"comparison_target\": \"MDM: Mercury Dust Monitor\", \"value\": \"\", \"unit\": \"\", \"basis\": \"장비 목록이며 작동 원리나 실제 관측 성과는 제시되지 않음\"}"
+          }
+        ],
+        "부족": true,
+        "이유": "맡은 절의 장비 목록은 있으나, 각 장비의 작동 원리와 관측이 해결하려는 수성의 질문, 자기권 관측에서 맡는 구체적 역할, 두 궤도선의 공동 관측 의미를 설명하는 핵심 근거가 없다. 실제 관측 성과도 제시되지 않아 장비 목록을 성과로 해석할 수 없다.",
+        "fact_table": {
+          "facts": [
+            {
+              "id": "F1",
+              "subject": "Mio",
+              "relation": "탑재 장비로 자력계가 열거됨",
+              "comparison_target": "MGF: Magnetometer",
+              "value": "",
+              "unit": "",
+              "basis": "장비 목록이며 실제 관측 성과는 제시되지 않음",
+              "start_line": 45,
+              "end_line": 47,
+              "document": "수성 | BepiColombo factsheet",
+              "quote": "Mio instruments\n:\nMGF: Magnetometer"
+            },
+            {
+              "id": "F2",
+              "subject": "Mio",
+              "relation": "탑재 장비로 플라스마 입자 실험 장비가 열거됨",
+              "comparison_target": "MPPE: Mercury Plasma Particle Experiment",
+              "value": "",
+              "unit": "",
+              "basis": "장비 목록이며 작동 원리나 실제 관측 성과는 제시되지 않음",
+              "start_line": 45,
+              "end_line": 48,
+              "document": "수성 | BepiColombo factsheet",
+              "quote": "Mio instruments\n:\nMGF: Magnetometer\nMPPE: Mercury Plasma Particle Experiment"
+            },
+            {
+              "id": "F3",
+              "subject": "Mio",
+              "relation": "탑재 장비로 플라스마 파동 관측 장비가 열거됨",
+              "comparison_target": "PWI: Plasma Wave Instrument",
+              "value": "",
+              "unit": "",
+              "basis": "장비 목록이며 작동 원리나 실제 관측 성과는 제시되지 않음",
+              "start_line": 45,
+              "end_line": 49,
+              "document": "수성 | BepiColombo factsheet",
+              "quote": "Mio instruments\n:\nMGF: Magnetometer\nMPPE: Mercury Plasma Particle Experiment\nPWI: Plasma Wave Instrument"
+            },
+            {
+              "id": "F4",
+              "subject": "Mio",
+              "relation": "탑재 장비로 수성 나트륨 대기 분광 영상 장비가 열거됨",
+              "comparison_target": "MSASI: Mercury Sodium Atmosphere Spectral Imager",
+              "value": "",
+              "unit": "",
+              "basis": "장비 목록이며 작동 원리나 실제 관측 성과는 제시되지 않음",
+              "start_line": 45,
+              "end_line": 50,
+              "document": "수성 | BepiColombo factsheet",
+              "quote": "Mio instruments\n:\nMGF: Magnetometer\nMPPE: Mercury Plasma Particle Experiment\nPWI: Plasma Wave Instrument\nMSASI: Mercury Sodium Atmosphere Spectral Imager"
+            },
+            {
+              "id": "F5",
+              "subject": "Mio",
+              "relation": "탑재 장비로 수성 먼지 관측 장비가 열거됨",
+              "comparison_target": "MDM: Mercury Dust Monitor",
+              "value": "",
+              "unit": "",
+              "basis": "장비 목록이며 작동 원리나 실제 관측 성과는 제시되지 않음",
+              "start_line": 45,
+              "end_line": 51,
+              "document": "수성 | BepiColombo factsheet",
+              "quote": "Mio instruments\n:\nMGF: Magnetometer\nMPPE: Mercury Plasma Particle Experiment\nPWI: Plasma Wave Instrument\nMSASI: Mercury Sodium Atmosphere Spectral Imager\nMDM: Mercury Dust Monitor"
+            }
+          ],
+          "insufficient": true,
+          "reason": "맡은 절의 장비 목록은 있으나, 각 장비의 작동 원리와 관측이 해결하려는 수성의 질문, 자기권 관측에서 맡는 구체적 역할, 두 궤도선의 공동 관측 의미를 설명하는 핵심 근거가 없다. 실제 관측 성과도 제시되지 않아 장비 목록을 성과로 해석할 수 없다.",
+          "semantic_review": "pending",
+          "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+        },
+        "validation": "Schema/source membership checked; semantic support pending direct review."
+      }
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-2",
+      "step": "write",
+      "input_chars": 11713,
+      "source_chars": 0,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "fact_table",
+      "agent": "researcher-0",
+      "document": "수성 | What is BepiColombo?",
+      "table": {
+        "facts": [
+          {
+            "id": "F1",
+            "subject": "Giuseppe (Bepi) Colombo",
+            "relation": "提出利用金星引力辅助实现多次水星飞掠的星际轨迹方案",
+            "comparison_target": "Mariner 10",
+            "value": "",
+            "unit": "",
+            "basis": "此处仅说明前期轨迹设计，未提供观测结果或遗留疑问",
+            "start_line": 12,
+            "end_line": 12,
+            "document": "수성 | What is BepiColombo?",
+            "quote": "The mission is named after the Italian mathematician and engineer Giuseppe (Bepi) Colombo (1920–84). He is known for explaining Mercury’s peculiar characteristic of rotating about its own axis three times in every two orbits of the Sun. He also proposed to NASA the interplanetary trajectories that would allow Mariner 10 multiple Mercury flybys, by using gravity assists at Venus for the first time."
+          }
+        ],
+        "insufficient": true,
+        "reason": "原文未提供两项前序任务的观测结果及其留下的未解问题，也未提及后一项前序任务，因此无法区分已证实事实与尚待解释的问题，或建立后续观测需求与前序发现之间的联系。",
+        "semantic_review": "pending",
+        "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+      }
+    },
+    {
+      "kind": "read",
+      "agent": "researcher-0",
+      "round": 0,
+      "document": "수성 | What is BepiColombo?",
+      "source_chars": 1584,
+      "evidence": {
+        "근거": [
+          {
+            "원문": "The mission is named after the Italian mathematician and engineer Giuseppe (Bepi) Colombo (1920–84). He is known for explaining Mercury’s peculiar characteristic of rotating about its own axis three times in every two orbits of the Sun. He also proposed to NASA the interplanetary trajectories that would allow Mariner 10 multiple Mercury flybys, by using gravity assists at Venus for the first time.",
+            "메모": "{\"subject\": \"Giuseppe (Bepi) Colombo\", \"relation\": \"提出利用金星引力辅助实现多次水星飞掠的星际轨迹方案\", \"comparison_target\": \"Mariner 10\", \"value\": \"\", \"unit\": \"\", \"basis\": \"此处仅说明前期轨迹设计，未提供观测结果或遗留疑问\"}"
+          }
+        ],
+        "부족": true,
+        "이유": "原文未提供两项前序任务的观测结果及其留下的未解问题，也未提及后一项前序任务，因此无法区分已证实事实与尚待解释的问题，或建立后续观测需求与前序发现之间的联系。",
+        "fact_table": {
+          "facts": [
+            {
+              "id": "F1",
+              "subject": "Giuseppe (Bepi) Colombo",
+              "relation": "提出利用金星引力辅助实现多次水星飞掠的星际轨迹方案",
+              "comparison_target": "Mariner 10",
+              "value": "",
+              "unit": "",
+              "basis": "此处仅说明前期轨迹设计，未提供观测结果或遗留疑问",
+              "start_line": 12,
+              "end_line": 12,
+              "document": "수성 | What is BepiColombo?",
+              "quote": "The mission is named after the Italian mathematician and engineer Giuseppe (Bepi) Colombo (1920–84). He is known for explaining Mercury’s peculiar characteristic of rotating about its own axis three times in every two orbits of the Sun. He also proposed to NASA the interplanetary trajectories that would allow Mariner 10 multiple Mercury flybys, by using gravity assists at Venus for the first time."
+            }
+          ],
+          "insufficient": true,
+          "reason": "原文未提供两项前序任务的观测结果及其留下的未解问题，也未提及后一项前序任务，因此无法区分已证实事实与尚待解释的问题，或建立后续观测需求与前序发现之间的联系。",
+          "semantic_review": "pending",
+          "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+        },
+        "validation": "Schema/source membership checked; semantic support pending direct review."
+      }
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-0",
+      "step": "write",
+      "input_chars": 25718,
+      "source_chars": 0,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "fact_table",
+      "agent": "researcher-1",
+      "document": "수성 | BepiColombo factsheet",
+      "table": {
+        "facts": [
+          {
+            "id": "F1",
+            "subject": "Mercury Planetary Orbiter",
+            "relation": "두 과학 궤도선 중 하나로 구성됨",
+            "comparison_target": "Mercury Magnetospheric Orbiter",
+            "value": "",
+            "unit": "",
+            "basis": "임무 구성 설명이며 구체적인 관측 역할 분담이나 실제 성과는 제시되지 않음",
+            "start_line": 59,
+            "end_line": 59,
+            "document": "수성 | BepiColombo factsheet",
+            "quote": "BepiColombo comprises two science orbiters: the Mercury Planetary Orbiter and the Mercury Magnetospheric Orbiter. They will travel together to Mercury, attached to the Mercury Transfer Module."
+          },
+          {
+            "id": "F2",
+            "subject": "BELA: BepiColombo Laser Altimeter",
+            "relation": "레이저 고도계로 제시됨",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "수성 행성 궤도선의 탑재 장비 목록이며 관측 결과가 아님",
+            "start_line": 32,
+            "end_line": 34,
+            "document": "수성 | BepiColombo factsheet",
+            "quote": "MPO instruments\n:\nBELA: BepiColombo Laser Altimeter"
+          },
+          {
+            "id": "F3",
+            "subject": "MPO-MAG: Magnetometer",
+            "relation": "자력계로 제시됨",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "수성 행성 궤도선의 탑재 장비 목록이며 관측 결과가 아님",
+            "start_line": 32,
+            "end_line": 36,
+            "document": "수성 | BepiColombo factsheet",
+            "quote": "MPO instruments\n:\nBELA: BepiColombo Laser Altimeter\nISA: Italian Spring Accelerometer\nMPO-MAG: Magnetometer"
+          },
+          {
+            "id": "F4",
+            "subject": "MERTIS: Mercury Radiometer and Thermal Infrared Spectrometer",
+            "relation": "수성 복사계 및 열적외선 분광계로 제시됨",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "수성 행성 궤도선의 탑재 장비 목록이며 관측 결과가 아님",
+            "start_line": 32,
+            "end_line": 37,
+            "document": "수성 | BepiColombo factsheet",
+            "quote": "MPO instruments\n:\nBELA: BepiColombo Laser Altimeter\nISA: Italian Spring Accelerometer\nMPO-MAG: Magnetometer\nMERTIS: Mercury Radiometer and Thermal Infrared Spectrometer"
+          },
+          {
+            "id": "F5",
+            "subject": "MGNS: Mercury Gamma-ray and Neutron Spectrometer",
+            "relation": "수성 감마선 및 중성자 분광계로 제시됨",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "수성 행성 궤도선의 탑재 장비 목록이며 관측 결과가 아님",
+            "start_line": 32,
+            "end_line": 38,
+            "document": "수성 | BepiColombo factsheet",
+            "quote": "MPO instruments\n:\nBELA: BepiColombo Laser Altimeter\nISA: Italian Spring Accelerometer\nMPO-MAG: Magnetometer\nMERTIS: Mercury Radiometer and Thermal Infrared Spectrometer\nMGNS: Mercury Gamma-ray and Neutron Spectrometer"
+          },
+          {
+            "id": "F6",
+            "subject": "MIXS: Mercury Imaging X-ray Spectrometer",
+            "relation": "수성 영상 엑스선 분광계로 제시됨",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "수성 행성 궤도선의 탑재 장비 목록이며 관측 결과가 아님",
+            "start_line": 32,
+            "end_line": 39,
+            "document": "수성 | BepiColombo factsheet",
+            "quote": "MPO instruments\n:\nBELA: BepiColombo Laser Altimeter\nISA: Italian Spring Accelerometer\nMPO-MAG: Magnetometer\nMERTIS: Mercury Radiometer and Thermal Infrared Spectrometer\nMGNS: Mercury Gamma-ray and Neutron Spectrometer\nMIXS: Mercury Imaging X-ray Spectrometer"
+          },
+          {
+            "id": "F7",
+            "subject": "PHEBUS: Probing of Hermean Exosphere by Ultraviolet Spectroscopy",
+            "relation": "자외선 분광법으로 수성 외기권을 탐사하는 장비로 제시됨",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "장비 명칭에 명시된 탐사 대상과 방법이며 실제 관측 성과가 아님",
+            "start_line": 32,
+            "end_line": 41,
+            "document": "수성 | BepiColombo factsheet",
+            "quote": "MPO instruments\n:\nBELA: BepiColombo Laser Altimeter\nISA: Italian Spring Accelerometer\nMPO-MAG: Magnetometer\nMERTIS: Mercury Radiometer and Thermal Infrared Spectrometer\nMGNS: Mercury Gamma-ray and Neutron Spectrometer\nMIXS: Mercury Imaging X-ray Spectrometer\nMORE: Mercury Orbiter Radio science Experiment\nPHEBUS: Probing of Hermean Exosphere by Ultraviolet Spectroscopy"
+          },
+          {
+            "id": "F8",
+            "subject": "SERENA: Search for Exosphere Refilling and Emitted Neutral Abundances",
+            "relation": "외기권 재공급 및 방출된 중성 입자 존재량을 조사하는 장비로 제시됨",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "장비 명칭에 명시된 조사 목적이며 실제 관측 성과가 아님",
+            "start_line": 32,
+            "end_line": 42,
+            "document": "수성 | BepiColombo factsheet",
+            "quote": "MPO instruments\n:\nBELA: BepiColombo Laser Altimeter\nISA: Italian Spring Accelerometer\nMPO-MAG: Magnetometer\nMERTIS: Mercury Radiometer and Thermal Infrared Spectrometer\nMGNS: Mercury Gamma-ray and Neutron Spectrometer\nMIXS: Mercury Imaging X-ray Spectrometer\nMORE: Mercury Orbiter Radio science Experiment\nPHEBUS: Probing of Hermean Exosphere by Ultraviolet Spectroscopy\nSERENA: Search for Exosphere Refilling and Emitted Neutral Abundances"
+          }
+        ],
+        "insufficient": true,
+        "reason": "원문은 탑재 장비 명칭과 두 과학 궤도선의 구성을 제시하지만, 수성 행성 궤도선의 구체적인 역할 분담, 장비별 작동 원리와 관측 대상의 상세 연결, 각 관측이 해결하려는 수성의 질문을 설명하지 않는다. 실제 관측 성과도 제시하지 않아 장비 목록을 성과로 해석할 수 없다.",
+        "semantic_review": "pending",
+        "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+      }
+    },
+    {
+      "kind": "read",
+      "agent": "researcher-1",
+      "round": 0,
+      "document": "수성 | BepiColombo factsheet",
+      "source_chars": 3972,
+      "evidence": {
+        "근거": [
+          {
+            "원문": "BepiColombo comprises two science orbiters: the Mercury Planetary Orbiter and the Mercury Magnetospheric Orbiter. They will travel together to Mercury, attached to the Mercury Transfer Module.",
+            "메모": "{\"subject\": \"Mercury Planetary Orbiter\", \"relation\": \"두 과학 궤도선 중 하나로 구성됨\", \"comparison_target\": \"Mercury Magnetospheric Orbiter\", \"value\": \"\", \"unit\": \"\", \"basis\": \"임무 구성 설명이며 구체적인 관측 역할 분담이나 실제 성과는 제시되지 않음\"}"
+          },
+          {
+            "원문": "MPO instruments\n:\nBELA: BepiColombo Laser Altimeter",
+            "메모": "{\"subject\": \"BELA: BepiColombo Laser Altimeter\", \"relation\": \"레이저 고도계로 제시됨\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"수성 행성 궤도선의 탑재 장비 목록이며 관측 결과가 아님\"}"
+          },
+          {
+            "원문": "MPO instruments\n:\nBELA: BepiColombo Laser Altimeter\nISA: Italian Spring Accelerometer\nMPO-MAG: Magnetometer",
+            "메모": "{\"subject\": \"MPO-MAG: Magnetometer\", \"relation\": \"자력계로 제시됨\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"수성 행성 궤도선의 탑재 장비 목록이며 관측 결과가 아님\"}"
+          },
+          {
+            "원문": "MPO instruments\n:\nBELA: BepiColombo Laser Altimeter\nISA: Italian Spring Accelerometer\nMPO-MAG: Magnetometer\nMERTIS: Mercury Radiometer and Thermal Infrared Spectrometer",
+            "메모": "{\"subject\": \"MERTIS: Mercury Radiometer and Thermal Infrared Spectrometer\", \"relation\": \"수성 복사계 및 열적외선 분광계로 제시됨\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"수성 행성 궤도선의 탑재 장비 목록이며 관측 결과가 아님\"}"
+          },
+          {
+            "원문": "MPO instruments\n:\nBELA: BepiColombo Laser Altimeter\nISA: Italian Spring Accelerometer\nMPO-MAG: Magnetometer\nMERTIS: Mercury Radiometer and Thermal Infrared Spectrometer\nMGNS: Mercury Gamma-ray and Neutron Spectrometer",
+            "메모": "{\"subject\": \"MGNS: Mercury Gamma-ray and Neutron Spectrometer\", \"relation\": \"수성 감마선 및 중성자 분광계로 제시됨\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"수성 행성 궤도선의 탑재 장비 목록이며 관측 결과가 아님\"}"
+          },
+          {
+            "원문": "MPO instruments\n:\nBELA: BepiColombo Laser Altimeter\nISA: Italian Spring Accelerometer\nMPO-MAG: Magnetometer\nMERTIS: Mercury Radiometer and Thermal Infrared Spectrometer\nMGNS: Mercury Gamma-ray and Neutron Spectrometer\nMIXS: Mercury Imaging X-ray Spectrometer",
+            "메모": "{\"subject\": \"MIXS: Mercury Imaging X-ray Spectrometer\", \"relation\": \"수성 영상 엑스선 분광계로 제시됨\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"수성 행성 궤도선의 탑재 장비 목록이며 관측 결과가 아님\"}"
+          },
+          {
+            "원문": "MPO instruments\n:\nBELA: BepiColombo Laser Altimeter\nISA: Italian Spring Accelerometer\nMPO-MAG: Magnetometer\nMERTIS: Mercury Radiometer and Thermal Infrared Spectrometer\nMGNS: Mercury Gamma-ray and Neutron Spectrometer\nMIXS: Mercury Imaging X-ray Spectrometer\nMORE: Mercury Orbiter Radio science Experiment\nPHEBUS: Probing of Hermean Exosphere by Ultraviolet Spectroscopy",
+            "메모": "{\"subject\": \"PHEBUS: Probing of Hermean Exosphere by Ultraviolet Spectroscopy\", \"relation\": \"자외선 분광법으로 수성 외기권을 탐사하는 장비로 제시됨\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"장비 명칭에 명시된 탐사 대상과 방법이며 실제 관측 성과가 아님\"}"
+          },
+          {
+            "원문": "MPO instruments\n:\nBELA: BepiColombo Laser Altimeter\nISA: Italian Spring Accelerometer\nMPO-MAG: Magnetometer\nMERTIS: Mercury Radiometer and Thermal Infrared Spectrometer\nMGNS: Mercury Gamma-ray and Neutron Spectrometer\nMIXS: Mercury Imaging X-ray Spectrometer\nMORE: Mercury Orbiter Radio science Experiment\nPHEBUS: Probing of Hermean Exosphere by Ultraviolet Spectroscopy\nSERENA: Search for Exosphere Refilling and Emitted Neutral Abundances",
+            "메모": "{\"subject\": \"SERENA: Search for Exosphere Refilling and Emitted Neutral Abundances\", \"relation\": \"외기권 재공급 및 방출된 중성 입자 존재량을 조사하는 장비로 제시됨\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"장비 명칭에 명시된 조사 목적이며 실제 관측 성과가 아님\"}"
+          }
+        ],
+        "부족": true,
+        "이유": "원문은 탑재 장비 명칭과 두 과학 궤도선의 구성을 제시하지만, 수성 행성 궤도선의 구체적인 역할 분담, 장비별 작동 원리와 관측 대상의 상세 연결, 각 관측이 해결하려는 수성의 질문을 설명하지 않는다. 실제 관측 성과도 제시하지 않아 장비 목록을 성과로 해석할 수 없다.",
+        "fact_table": {
+          "facts": [
+            {
+              "id": "F1",
+              "subject": "Mercury Planetary Orbiter",
+              "relation": "두 과학 궤도선 중 하나로 구성됨",
+              "comparison_target": "Mercury Magnetospheric Orbiter",
+              "value": "",
+              "unit": "",
+              "basis": "임무 구성 설명이며 구체적인 관측 역할 분담이나 실제 성과는 제시되지 않음",
+              "start_line": 59,
+              "end_line": 59,
+              "document": "수성 | BepiColombo factsheet",
+              "quote": "BepiColombo comprises two science orbiters: the Mercury Planetary Orbiter and the Mercury Magnetospheric Orbiter. They will travel together to Mercury, attached to the Mercury Transfer Module."
+            },
+            {
+              "id": "F2",
+              "subject": "BELA: BepiColombo Laser Altimeter",
+              "relation": "레이저 고도계로 제시됨",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "수성 행성 궤도선의 탑재 장비 목록이며 관측 결과가 아님",
+              "start_line": 32,
+              "end_line": 34,
+              "document": "수성 | BepiColombo factsheet",
+              "quote": "MPO instruments\n:\nBELA: BepiColombo Laser Altimeter"
+            },
+            {
+              "id": "F3",
+              "subject": "MPO-MAG: Magnetometer",
+              "relation": "자력계로 제시됨",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "수성 행성 궤도선의 탑재 장비 목록이며 관측 결과가 아님",
+              "start_line": 32,
+              "end_line": 36,
+              "document": "수성 | BepiColombo factsheet",
+              "quote": "MPO instruments\n:\nBELA: BepiColombo Laser Altimeter\nISA: Italian Spring Accelerometer\nMPO-MAG: Magnetometer"
+            },
+            {
+              "id": "F4",
+              "subject": "MERTIS: Mercury Radiometer and Thermal Infrared Spectrometer",
+              "relation": "수성 복사계 및 열적외선 분광계로 제시됨",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "수성 행성 궤도선의 탑재 장비 목록이며 관측 결과가 아님",
+              "start_line": 32,
+              "end_line": 37,
+              "document": "수성 | BepiColombo factsheet",
+              "quote": "MPO instruments\n:\nBELA: BepiColombo Laser Altimeter\nISA: Italian Spring Accelerometer\nMPO-MAG: Magnetometer\nMERTIS: Mercury Radiometer and Thermal Infrared Spectrometer"
+            },
+            {
+              "id": "F5",
+              "subject": "MGNS: Mercury Gamma-ray and Neutron Spectrometer",
+              "relation": "수성 감마선 및 중성자 분광계로 제시됨",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "수성 행성 궤도선의 탑재 장비 목록이며 관측 결과가 아님",
+              "start_line": 32,
+              "end_line": 38,
+              "document": "수성 | BepiColombo factsheet",
+              "quote": "MPO instruments\n:\nBELA: BepiColombo Laser Altimeter\nISA: Italian Spring Accelerometer\nMPO-MAG: Magnetometer\nMERTIS: Mercury Radiometer and Thermal Infrared Spectrometer\nMGNS: Mercury Gamma-ray and Neutron Spectrometer"
+            },
+            {
+              "id": "F6",
+              "subject": "MIXS: Mercury Imaging X-ray Spectrometer",
+              "relation": "수성 영상 엑스선 분광계로 제시됨",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "수성 행성 궤도선의 탑재 장비 목록이며 관측 결과가 아님",
+              "start_line": 32,
+              "end_line": 39,
+              "document": "수성 | BepiColombo factsheet",
+              "quote": "MPO instruments\n:\nBELA: BepiColombo Laser Altimeter\nISA: Italian Spring Accelerometer\nMPO-MAG: Magnetometer\nMERTIS: Mercury Radiometer and Thermal Infrared Spectrometer\nMGNS: Mercury Gamma-ray and Neutron Spectrometer\nMIXS: Mercury Imaging X-ray Spectrometer"
+            },
+            {
+              "id": "F7",
+              "subject": "PHEBUS: Probing of Hermean Exosphere by Ultraviolet Spectroscopy",
+              "relation": "자외선 분광법으로 수성 외기권을 탐사하는 장비로 제시됨",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "장비 명칭에 명시된 탐사 대상과 방법이며 실제 관측 성과가 아님",
+              "start_line": 32,
+              "end_line": 41,
+              "document": "수성 | BepiColombo factsheet",
+              "quote": "MPO instruments\n:\nBELA: BepiColombo Laser Altimeter\nISA: Italian Spring Accelerometer\nMPO-MAG: Magnetometer\nMERTIS: Mercury Radiometer and Thermal Infrared Spectrometer\nMGNS: Mercury Gamma-ray and Neutron Spectrometer\nMIXS: Mercury Imaging X-ray Spectrometer\nMORE: Mercury Orbiter Radio science Experiment\nPHEBUS: Probing of Hermean Exosphere by Ultraviolet Spectroscopy"
+            },
+            {
+              "id": "F8",
+              "subject": "SERENA: Search for Exosphere Refilling and Emitted Neutral Abundances",
+              "relation": "외기권 재공급 및 방출된 중성 입자 존재량을 조사하는 장비로 제시됨",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "장비 명칭에 명시된 조사 목적이며 실제 관측 성과가 아님",
+              "start_line": 32,
+              "end_line": 42,
+              "document": "수성 | BepiColombo factsheet",
+              "quote": "MPO instruments\n:\nBELA: BepiColombo Laser Altimeter\nISA: Italian Spring Accelerometer\nMPO-MAG: Magnetometer\nMERTIS: Mercury Radiometer and Thermal Infrared Spectrometer\nMGNS: Mercury Gamma-ray and Neutron Spectrometer\nMIXS: Mercury Imaging X-ray Spectrometer\nMORE: Mercury Orbiter Radio science Experiment\nPHEBUS: Probing of Hermean Exosphere by Ultraviolet Spectroscopy\nSERENA: Search for Exosphere Refilling and Emitted Neutral Abundances"
+            }
+          ],
+          "insufficient": true,
+          "reason": "원문은 탑재 장비 명칭과 두 과학 궤도선의 구성을 제시하지만, 수성 행성 궤도선의 구체적인 역할 분담, 장비별 작동 원리와 관측 대상의 상세 연결, 각 관측이 해결하려는 수성의 질문을 설명하지 않는다. 실제 관측 성과도 제시하지 않아 장비 목록을 성과로 해석할 수 없다.",
+          "semantic_review": "pending",
+          "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+        },
+        "validation": "Schema/source membership checked; semantic support pending direct review."
+      }
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-1",
+      "step": "write",
+      "input_chars": 20481,
+      "source_chars": 0,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "section",
+      "agent": "researcher-2",
+      "section": {
+        "번호": 2,
+        "절": "Mio의 장비와 자기권 관측 역할",
+        "역할": "관측 장비 연구원",
+        "round": 0,
+        "본문": "JAXA의 Mercury Magnetospheric Orbiter(Mio)는 ESA의 Mercury Planetary Orbiter(MPO)와 함께 BepiColombo를 구성하는 두 우주선 중 하나이며, 제시된 장비 기능을 종합하면 자기권과 주변 입자·파동 환경을 조사하는 역할을 맡도록 설계되었다. Magnetometer(MGF)는 수성 자기권을 상세히 기술하고 행성 자기장 및 태양풍과의 상호작용을 조사하여, 수성 자기권이 이들과 어떻게 상호작용하는가라는 질문에 대응한다. Mercury Plasma Particle Experiment(MPPE)는 7개 센서로 자기권의 플라스마와 고에너지 입자를 연구하며, 입자 관측을 통해 태양풍과 수성 자기권의 상호작용을 조사하도록 설계되었다. «수성 | Mercury Magnetospheric Orbiter (Mio)»\n\nPlasma Wave Instrument(PWI)는 현장 관측과 원격 탐사로 수성 플라스마 환경의 전기장·플라스마파·전파를 분석하여, 그 환경이 어떤 전기장과 파동 특성을 보이는지 조사한다. Mercury Sodium Atmosphere Spectral Imager(MSASI)는 수성 외기권의 나트륨 함량·분포·동역학을 측정하여 나트륨의 공급원과 관련 과정이 무엇인지 밝히려는 장비다. Mercury Dust Monitor(MDM)는 수성 궤도의 행성 간 먼지를 관측 대상으로 삼아 그 분포가 어떠한지 연구하며, 이처럼 Mio의 관측 범위에는 자기권뿐 아니라 외기권의 나트륨과 주변 먼지 환경도 포함된다. «수성 | Mercury Magnetospheric Orbiter (Mio)»\n\nBepiColombo factsheet도 MGF·MPPE·PWI·MSASI·MDM을 Mio의 탑재 장비로 열거하지만, 장비 목록 자체는 작동 원리나 관측 성과를 설명하는 근거가 아니다. 제공 자료에서 확인되는 두 궤도선의 관계는 같은 임무를 구성한다는 점까지이며, 공동 관측의 구체적인 방식과 과학적 의미는 설명되지 않아 Mio와 MPO의 관측을 어떻게 결합하는지 단정할 수 없다. 따라서 위 설명은 장비별 관측 대상과 설계 목적에 한정되며, 이를 실제로 해결된 질문이나 관측 성과로 바꾸거나 Mariner 10과 MESSENGER가 남긴 특정 의문에 직접 대응한다고 확정할 근거는 없다. «수성 | Mercury Magnetospheric Orbiter (Mio)»«수성 | BepiColombo factsheet»",
+        "부족": true,
+        "이유": "Mio의 장비별 관측 대상과 목적은 설명할 수 있으나, 요청된 공동 관측의 방식과 의미를 밝힐 핵심 근거가 없다. 이를 설명하는 자료와 앞선 탐사의 특정 미해결 질문을 Mio 관측에 연결하는 자료가 필요하다. 세부 장비 작동 원리와 실제 관측 성과도 제시되지 않아 해당 내용을 추정하지 않았다.",
+        "읽은문서": [
+          "수성 | Mercury Magnetospheric Orbiter (Mio)",
+          "수성 | BepiColombo factsheet"
+        ],
+        "인용": [
+          "수성 | Mercury Magnetospheric Orbiter (Mio)",
+          "수성 | Mercury Magnetospheric Orbiter (Mio)",
+          "수성 | Mercury Magnetospheric Orbiter (Mio)",
+          "수성 | BepiColombo factsheet"
+        ],
+        "draft_format": "source_ids_v1",
+        "raw_draft": {
+          "단락": [
+            {
+              "내용": "JAXA의 Mercury Magnetospheric Orbiter(Mio)는 ESA의 Mercury Planetary Orbiter(MPO)와 함께 BepiColombo를 구성하는 두 우주선 중 하나이며, 제시된 장비 기능을 종합하면 자기권과 주변 입자·파동 환경을 조사하는 역할을 맡도록 설계되었다. Magnetometer(MGF)는 수성 자기권을 상세히 기술하고 행성 자기장 및 태양풍과의 상호작용을 조사하여, 수성 자기권이 이들과 어떻게 상호작용하는가라는 질문에 대응한다. Mercury Plasma Particle Experiment(MPPE)는 7개 센서로 자기권의 플라스마와 고에너지 입자를 연구하며, 입자 관측을 통해 태양풍과 수성 자기권의 상호작용을 조사하도록 설계되었다.",
+              "출처ID": [
+                "D1"
+              ]
+            },
+            {
+              "내용": "Plasma Wave Instrument(PWI)는 현장 관측과 원격 탐사로 수성 플라스마 환경의 전기장·플라스마파·전파를 분석하여, 그 환경이 어떤 전기장과 파동 특성을 보이는지 조사한다. Mercury Sodium Atmosphere Spectral Imager(MSASI)는 수성 외기권의 나트륨 함량·분포·동역학을 측정하여 나트륨의 공급원과 관련 과정이 무엇인지 밝히려는 장비다. Mercury Dust Monitor(MDM)는 수성 궤도의 행성 간 먼지를 관측 대상으로 삼아 그 분포가 어떠한지 연구하며, 이처럼 Mio의 관측 범위에는 자기권뿐 아니라 외기권의 나트륨과 주변 먼지 환경도 포함된다.",
+              "출처ID": [
+                "D1"
+              ]
+            },
+            {
+              "내용": "BepiColombo factsheet도 MGF·MPPE·PWI·MSASI·MDM을 Mio의 탑재 장비로 열거하지만, 장비 목록 자체는 작동 원리나 관측 성과를 설명하는 근거가 아니다. 제공 자료에서 확인되는 두 궤도선의 관계는 같은 임무를 구성한다는 점까지이며, 공동 관측의 구체적인 방식과 과학적 의미는 설명되지 않아 Mio와 MPO의 관측을 어떻게 결합하는지 단정할 수 없다. 따라서 위 설명은 장비별 관측 대상과 설계 목적에 한정되며, 이를 실제로 해결된 질문이나 관측 성과로 바꾸거나 Mariner 10과 MESSENGER가 남긴 특정 의문에 직접 대응한다고 확정할 근거는 없다.",
+              "출처ID": [
+                "D1",
+                "D2"
+              ]
+            }
+          ],
+          "부족": true,
+          "이유": "Mio의 장비별 관측 대상과 목적은 설명할 수 있으나, 요청된 공동 관측의 방식과 의미를 밝힐 핵심 근거가 없다. 이를 설명하는 자료와 앞선 탐사의 특정 미해결 질문을 Mio 관측에 연결하는 자료가 필요하다. 세부 장비 작동 원리와 실제 관측 성과도 제시되지 않아 해당 내용을 추정하지 않았다."
+        },
+        "source_map": {
+          "D1": "수성 | Mercury Magnetospheric Orbiter (Mio)",
+          "D2": "수성 | BepiColombo factsheet"
+        }
+      }
+    },
+    {
+      "kind": "section",
+      "agent": "researcher-0",
+      "section": {
+        "번호": 0,
+        "절": "Mariner 10과 MESSENGER가 남긴 질문",
+        "역할": "임무 계보 연구원",
+        "round": 0,
+        "본문": "제공 자료에서 Mariner 10에 관해 확인되는 것은 Giuseppe (Bepi) Colombo가 금성의 중력 도움을 이용해 수성을 여러 차례 근접 통과할 수 있는 궤적을 제안했다는 임무 계보상의 사실이다. 구체적인 관측 결과와 미해결 질문은 제시되지 않아, 아래의 발견을 Mariner 10의 성과로 귀속하거나 MESSENGER와 임무별로 비교할 수는 없다. «수성 | What is BepiColombo?»\n\n2011~2015년 수성 궤도를 돈 MESSENGER는 표면에서 안정적인 토륨에 비해 휘발성 칼륨이 예상보다 풍부하며, 칼륨 대 토륨 비율이 태양에서 훨씬 먼 화성과 비슷하다는 결과를 얻었다. 기존 행성 형성 모형이 이 조성을 제대로 설명하지 못하므로 수성이 어디에서 어떤 과정을 거쳐 형성되었는지가 질문으로 남았고, 수성 전체 부피의 55%를 넘는 핵과 얇은 바깥층의 형성 원인도 설명이 필요하다. 화성 정도의 거리에서 형성된 뒤 거대 충돌로 태양 가까이 이동하면서 바깥 물질을 잃었다는 설명은 이 문제들을 연결하는 가설이며, 관측으로 확정된 형성 역사는 아니다. «수성 | Top five Mercury mysteries that BepiColombo will solve»\n\nMESSENGER는 극지방 분화구에서 물 얼음의 반사광으로 보이는 빛을 관측했지만, 문서는 이를 강한 간접 증거로 설명하며 물을 직접 검출한 결과와 구분한다. 따라서 후속 관측에는 물의 존재와 양을 직접 확인하고 조성을 통해 기원의 단서를 찾는 과제가 남으며, 극지방 분화구에 햇빛이 닿지 않아 저온이 유지된다는 설명만으로 물의 유입 경로까지 밝혀지는 것은 아니다. «수성 | Top five Mercury mysteries that BepiColombo will solve»\n\nMESSENGER가 분화구 안팎에서 발견한 함몰 지형인 hollows는 관측된 사실이지만, 휘발성 물질의 증발·승화로 만들어졌다는 설명과 열 또는 태양 입자가 이를 유발한다는 설명은 추정이다. 문서에서 BepiColombo는 MESSENGER 임무 종료 10년 뒤 조사를 시작할 계획으로 제시되며, 같은 지형의 성장이나 축소를 찾아 현재 지질 활동이 지속되는지 검증하려는 것이지 이미 변화를 확인한 것은 아니다. «수성 | Top five Mercury mysteries that BepiColombo will solve»\n\n수성이 반사하는 빛은 달에서 채취한 물질의 약 3분의 2에 불과하지만, 극심한 열에 따른 물질의 변화와 표면 흑연 중 무엇이 어두운 색을 설명하는지는 미해결이므로 후속 조성 관측이 필요하다. 또한 수성에는 지구 자기장의 약 100분의 1 세기인 자기장이 있고 그 중심이 행성 중심에서 북쪽으로 400킬로미터 치우쳐 있지만, 작은 행성에서 자기장이 유지되는 내부 상태와 과정은 설명해야 할 문제로 남는다. 이 때문에 후속 관측은 내부의 부분 용융 가능성, 자기장의 시간적 변화와 공간적 차이, 태양 및 태양풍의 영향을 검증할 필요가 있으며, 이러한 질문을 특정 선행 임무의 발견으로 귀속할 근거는 제공 자료에 없다. «수성 | Top five Mercury mysteries that BepiColombo will solve»",
+        "부족": true,
+        "이유": "MESSENGER의 주요 발견과 미해결 질문, 후속 관측의 필요성은 설명할 수 있다. 그러나 Mariner 10 자료는 중력 도움을 이용한 궤적 제안만 다루므로, 맡은 절을 완성하려면 Mariner 10의 구체적인 관측 결과와 그 결과가 남긴 질문을 명시한 자료가 필요하다. 장비와 두 궤도선의 상세 역할은 다른 연구원의 집필 범위이므로 부족 판단에 포함하지 않았다.",
+        "읽은문서": [
+          "수성 | Top five Mercury mysteries that BepiColombo will solve",
+          "수성 | What is BepiColombo?"
+        ],
+        "인용": [
+          "수성 | What is BepiColombo?",
+          "수성 | Top five Mercury mysteries that BepiColombo will solve",
+          "수성 | Top five Mercury mysteries that BepiColombo will solve",
+          "수성 | Top five Mercury mysteries that BepiColombo will solve",
+          "수성 | Top five Mercury mysteries that BepiColombo will solve"
+        ],
+        "draft_format": "source_ids_v1",
+        "raw_draft": {
+          "단락": [
+            {
+              "내용": "제공 자료에서 Mariner 10에 관해 확인되는 것은 Giuseppe (Bepi) Colombo가 금성의 중력 도움을 이용해 수성을 여러 차례 근접 통과할 수 있는 궤적을 제안했다는 임무 계보상의 사실이다. 구체적인 관측 결과와 미해결 질문은 제시되지 않아, 아래의 발견을 Mariner 10의 성과로 귀속하거나 MESSENGER와 임무별로 비교할 수는 없다.",
+              "출처ID": [
+                "D2"
+              ]
+            },
+            {
+              "내용": "2011~2015년 수성 궤도를 돈 MESSENGER는 표면에서 안정적인 토륨에 비해 휘발성 칼륨이 예상보다 풍부하며, 칼륨 대 토륨 비율이 태양에서 훨씬 먼 화성과 비슷하다는 결과를 얻었다. 기존 행성 형성 모형이 이 조성을 제대로 설명하지 못하므로 수성이 어디에서 어떤 과정을 거쳐 형성되었는지가 질문으로 남았고, 수성 전체 부피의 55%를 넘는 핵과 얇은 바깥층의 형성 원인도 설명이 필요하다. 화성 정도의 거리에서 형성된 뒤 거대 충돌로 태양 가까이 이동하면서 바깥 물질을 잃었다는 설명은 이 문제들을 연결하는 가설이며, 관측으로 확정된 형성 역사는 아니다.",
+              "출처ID": [
+                "D1"
+              ]
+            },
+            {
+              "내용": "MESSENGER는 극지방 분화구에서 물 얼음의 반사광으로 보이는 빛을 관측했지만, 문서는 이를 강한 간접 증거로 설명하며 물을 직접 검출한 결과와 구분한다. 따라서 후속 관측에는 물의 존재와 양을 직접 확인하고 조성을 통해 기원의 단서를 찾는 과제가 남으며, 극지방 분화구에 햇빛이 닿지 않아 저온이 유지된다는 설명만으로 물의 유입 경로까지 밝혀지는 것은 아니다.",
+              "출처ID": [
+                "D1"
+              ]
+            },
+            {
+              "내용": "MESSENGER가 분화구 안팎에서 발견한 함몰 지형인 hollows는 관측된 사실이지만, 휘발성 물질의 증발·승화로 만들어졌다는 설명과 열 또는 태양 입자가 이를 유발한다는 설명은 추정이다. 문서에서 BepiColombo는 MESSENGER 임무 종료 10년 뒤 조사를 시작할 계획으로 제시되며, 같은 지형의 성장이나 축소를 찾아 현재 지질 활동이 지속되는지 검증하려는 것이지 이미 변화를 확인한 것은 아니다.",
+              "출처ID": [
+                "D1"
+              ]
+            },
+            {
+              "내용": "수성이 반사하는 빛은 달에서 채취한 물질의 약 3분의 2에 불과하지만, 극심한 열에 따른 물질의 변화와 표면 흑연 중 무엇이 어두운 색을 설명하는지는 미해결이므로 후속 조성 관측이 필요하다. 또한 수성에는 지구 자기장의 약 100분의 1 세기인 자기장이 있고 그 중심이 행성 중심에서 북쪽으로 400킬로미터 치우쳐 있지만, 작은 행성에서 자기장이 유지되는 내부 상태와 과정은 설명해야 할 문제로 남는다. 이 때문에 후속 관측은 내부의 부분 용융 가능성, 자기장의 시간적 변화와 공간적 차이, 태양 및 태양풍의 영향을 검증할 필요가 있으며, 이러한 질문을 특정 선행 임무의 발견으로 귀속할 근거는 제공 자료에 없다.",
+              "출처ID": [
+                "D1"
+              ]
+            }
+          ],
+          "부족": true,
+          "이유": "MESSENGER의 주요 발견과 미해결 질문, 후속 관측의 필요성은 설명할 수 있다. 그러나 Mariner 10 자료는 중력 도움을 이용한 궤적 제안만 다루므로, 맡은 절을 완성하려면 Mariner 10의 구체적인 관측 결과와 그 결과가 남긴 질문을 명시한 자료가 필요하다. 장비와 두 궤도선의 상세 역할은 다른 연구원의 집필 범위이므로 부족 판단에 포함하지 않았다."
+        },
+        "source_map": {
+          "D1": "수성 | Top five Mercury mysteries that BepiColombo will solve",
+          "D2": "수성 | What is BepiColombo?"
+        }
+      }
+    },
+    {
+      "kind": "section",
+      "agent": "researcher-1",
+      "section": {
+        "번호": 1,
+        "절": "MPO의 장비와 수성 관측 역할",
+        "역할": "관측 장비 연구원",
+        "round": 0,
+        "본문": "ESA의 Mercury Planetary Orbiter (MPO)는 JAXA의 Mercury Magnetospheric Orbiter (Mio)와 함께 BepiColombo를 구성하는 두 과학 궤도선 중 하나로, 제시된 장비 구성에서 맡은 역할은 수성의 표면·조성·내부 구조를 조사하고 외기권 및 자기장 관측으로 행성의 기원과 진화를 이해하는 것이다. «수성 | Mercury Planetary Orbiter»«수성 | BepiColombo factsheet»\n\nBepiColombo Laser Altimeter (BELA)는 레이저 고도계로 지형과 표면 형태를 측정해 수치 지형 모형을 만들도록 설계되어, 수성 표면이 어떤 형태인가라는 질문에 대응한다. Spectrometers and Imagers for MPO BepiColombo Integrated Observatory (SIMBIO-SYS)는 입체·컬러 영상과 분광 분석으로 표면 지질, 화산활동, 전 지구적 지각변동, 표면 나이와 조성을 조사해 표면이 어떻게 형성되고 변화했는지를 연구한다. Mercury Radiometer and Thermal Infrared Spectrometer (MERTIS)는 복사계와 열적외선 분광계로 표면의 광물 조성·온도·열관성을 상세히 조사하여, 수성의 기원과 진화 모형에 필요한 물질 및 열적 특성 정보를 얻으려는 장비다. «수성 | Mercury Planetary Orbiter»«수성 | BepiColombo factsheet»\n\nMercury Gamma-ray and Neutron Spectrometer (MGNS)는 감마선·중성자 분광계로 표면과 지하의 원소 조성을 결정하고 극지 영구 음영 지역의 휘발성 물질 분포를 파악하도록 설계되어, 어떤 물질이 어디에 존재하는지를 조사한다. Probing of Hermean Exosphere by Ultraviolet Spectroscopy (PHEBUS)는 자외선 분광으로 외기권의 조성과 역학을 조사하고 고위도 충돌구의 영구 음영 지역에서 표면 얼음층을 탐색하여, 외기권의 성질과 얼음의 존재 여부라는 질문에 대응한다. Search for Exosphere Refilling and Emitted Neutral Abundances (SERENA)는 중성·이온화 입자 분석기로 표면·외기권·자기권·태양풍·행성간 매질 사이의 기체 상호작용을 연구해 이 영역들이 어떻게 연결되는지를 살피도록 설계되었다. «수성 | Mercury Planetary Orbiter»«수성 | BepiColombo factsheet»\n\nMercury Orbiter Radio science Experiment (MORE)는 수성의 중력장과 핵의 크기·물리적 상태를 결정하는 것을 목적으로 하여, 내부 구조와 핵이 어떤 상태인가라는 질문에 대응한다. Magnetometer (MPO-MAG)는 자기장, 태양풍과의 상호작용, 자기권의 형성과 역학을 측정하여 수성 내부의 기원·진화·현재 상태를 이해하는 데 기여하도록 설계되어, MPO의 내부 연구가 자기장 관측과도 연결됨을 보여준다. 이 설명은 모두 장비의 관측 목적이며, 제공된 자료에는 지형 모형 완성, 얼음 검출, 핵의 상태 결정 같은 실제 관측 성과가 제시되어 있지 않다. «수성 | Mercury Planetary Orbiter»",
+        "부족": false,
+        "이유": "D1에 맡은 절의 핵심인 MPO의 관측 대상과 장비 기능을 연결할 근거가 있고 D2가 임무 구성과 장비 유형을 보완한다. 장비별 상세 작동 원리와 실제 관측 성과는 제시되지 않아 자료에 명시된 측정 방식과 설계 목적까지만 설명했다.",
+        "읽은문서": [
+          "수성 | Mercury Planetary Orbiter",
+          "수성 | BepiColombo factsheet"
+        ],
+        "인용": [
+          "수성 | Mercury Planetary Orbiter",
+          "수성 | BepiColombo factsheet",
+          "수성 | Mercury Planetary Orbiter",
+          "수성 | BepiColombo factsheet",
+          "수성 | Mercury Planetary Orbiter",
+          "수성 | BepiColombo factsheet",
+          "수성 | Mercury Planetary Orbiter"
+        ],
+        "draft_format": "source_ids_v1",
+        "raw_draft": {
+          "단락": [
+            {
+              "내용": "ESA의 Mercury Planetary Orbiter (MPO)는 JAXA의 Mercury Magnetospheric Orbiter (Mio)와 함께 BepiColombo를 구성하는 두 과학 궤도선 중 하나로, 제시된 장비 구성에서 맡은 역할은 수성의 표면·조성·내부 구조를 조사하고 외기권 및 자기장 관측으로 행성의 기원과 진화를 이해하는 것이다.",
+              "출처ID": [
+                "D1",
+                "D2"
+              ]
+            },
+            {
+              "내용": "BepiColombo Laser Altimeter (BELA)는 레이저 고도계로 지형과 표면 형태를 측정해 수치 지형 모형을 만들도록 설계되어, 수성 표면이 어떤 형태인가라는 질문에 대응한다. Spectrometers and Imagers for MPO BepiColombo Integrated Observatory (SIMBIO-SYS)는 입체·컬러 영상과 분광 분석으로 표면 지질, 화산활동, 전 지구적 지각변동, 표면 나이와 조성을 조사해 표면이 어떻게 형성되고 변화했는지를 연구한다. Mercury Radiometer and Thermal Infrared Spectrometer (MERTIS)는 복사계와 열적외선 분광계로 표면의 광물 조성·온도·열관성을 상세히 조사하여, 수성의 기원과 진화 모형에 필요한 물질 및 열적 특성 정보를 얻으려는 장비다.",
+              "출처ID": [
+                "D1",
+                "D2"
+              ]
+            },
+            {
+              "내용": "Mercury Gamma-ray and Neutron Spectrometer (MGNS)는 감마선·중성자 분광계로 표면과 지하의 원소 조성을 결정하고 극지 영구 음영 지역의 휘발성 물질 분포를 파악하도록 설계되어, 어떤 물질이 어디에 존재하는지를 조사한다. Probing of Hermean Exosphere by Ultraviolet Spectroscopy (PHEBUS)는 자외선 분광으로 외기권의 조성과 역학을 조사하고 고위도 충돌구의 영구 음영 지역에서 표면 얼음층을 탐색하여, 외기권의 성질과 얼음의 존재 여부라는 질문에 대응한다. Search for Exosphere Refilling and Emitted Neutral Abundances (SERENA)는 중성·이온화 입자 분석기로 표면·외기권·자기권·태양풍·행성간 매질 사이의 기체 상호작용을 연구해 이 영역들이 어떻게 연결되는지를 살피도록 설계되었다.",
+              "출처ID": [
+                "D1",
+                "D2"
+              ]
+            },
+            {
+              "내용": "Mercury Orbiter Radio science Experiment (MORE)는 수성의 중력장과 핵의 크기·물리적 상태를 결정하는 것을 목적으로 하여, 내부 구조와 핵이 어떤 상태인가라는 질문에 대응한다. Magnetometer (MPO-MAG)는 자기장, 태양풍과의 상호작용, 자기권의 형성과 역학을 측정하여 수성 내부의 기원·진화·현재 상태를 이해하는 데 기여하도록 설계되어, MPO의 내부 연구가 자기장 관측과도 연결됨을 보여준다. 이 설명은 모두 장비의 관측 목적이며, 제공된 자료에는 지형 모형 완성, 얼음 검출, 핵의 상태 결정 같은 실제 관측 성과가 제시되어 있지 않다.",
+              "출처ID": [
+                "D1"
+              ]
+            }
+          ],
+          "부족": false,
+          "이유": "D1에 맡은 절의 핵심인 MPO의 관측 대상과 장비 기능을 연결할 근거가 있고 D2가 임무 구성과 장비 유형을 보완한다. 장비별 상세 작동 원리와 실제 관측 성과는 제시되지 않아 자료에 명시된 측정 방식과 설계 목적까지만 설명했다."
+        },
+        "source_map": {
+          "D1": "수성 | Mercury Planetary Orbiter",
+          "D2": "수성 | BepiColombo factsheet"
+        }
+      }
+    },
+    {
+      "kind": "review",
+      "section": 0,
+      "round": 0,
+      "self_reported_insufficient": true,
+      "accepted": true,
+      "valid_draft": true,
+      "redispatch": false,
+      "reason": "valid nonregressing draft"
+    },
+    {
+      "kind": "review",
+      "section": 1,
+      "round": 0,
+      "self_reported_insufficient": false,
+      "accepted": true,
+      "valid_draft": true,
+      "redispatch": false,
+      "reason": "valid nonregressing draft"
+    },
+    {
+      "kind": "review",
+      "section": 2,
+      "round": 0,
+      "self_reported_insufficient": true,
+      "accepted": true,
+      "valid_draft": true,
+      "redispatch": false,
+      "reason": "valid nonregressing draft"
+    },
+    {
+      "kind": "context",
+      "actor": "synthesizer",
+      "step": "edit",
+      "input_chars": 4691,
+      "source_chars": 0,
+      "card_chars": 0,
+      "manuscript_chars": 4504
+    },
+    {
+      "kind": "report",
+      "report": "# 선행 탐사가 남긴 수성의 질문과 BepiColombo의 관측 설계\n\n제공 자료를 바탕으로 수성의 형성·조성·얼음·표면 변화·자기장에 남은 질문과 BepiColombo의 두 궤도선 및 장비의 설계 목적을 살펴본다. 다만 Mariner 10의 구체적인 관측 결과가 제시되지 않아 선행 임무별 성과와 미해결 질문을 온전히 비교할 수는 없다.\n\n## 1. Mariner 10과 MESSENGER가 남긴 질문\n\n제공 자료에서 Mariner 10에 관해 확인되는 것은 Giuseppe (Bepi) Colombo가 금성의 중력 도움을 이용해 수성을 여러 차례 근접 통과할 수 있는 궤적을 제안했다는 임무 계보상의 사실이다. 구체적인 관측 결과와 미해결 질문은 제시되지 않아, 아래의 발견을 Mariner 10의 성과로 귀속하거나 MESSENGER와 임무별로 비교할 수는 없다. «수성 | What is BepiColombo?»\n\n2011~2015년 수성 궤도를 돈 MESSENGER는 표면에서 안정적인 토륨에 비해 휘발성 칼륨이 예상보다 풍부하며, 칼륨 대 토륨 비율이 태양에서 훨씬 먼 화성과 비슷하다는 결과를 얻었다. 기존 행성 형성 모형이 이 조성을 제대로 설명하지 못하므로 수성이 어디에서 어떤 과정을 거쳐 형성되었는지가 질문으로 남았고, 수성 전체 부피의 55%를 넘는 핵과 얇은 바깥층의 형성 원인도 설명이 필요하다. 화성 정도의 거리에서 형성된 뒤 거대 충돌로 태양 가까이 이동하면서 바깥 물질을 잃었다는 설명은 이 문제들을 연결하는 가설이며, 관측으로 확정된 형성 역사는 아니다. «수성 | Top five Mercury mysteries that BepiColombo will solve»\n\nMESSENGER는 극지방 분화구에서 물 얼음의 반사광으로 보이는 빛을 관측했지만, 문서는 이를 강한 간접 증거로 설명하며 물을 직접 검출한 결과와 구분한다. 따라서 후속 관측에는 물의 존재와 양을 직접 확인하고 조성을 통해 기원의 단서를 찾는 과제가 남으며, 극지방 분화구에 햇빛이 닿지 않아 저온이 유지된다는 설명만으로 물의 유입 경로까지 밝혀지는 것은 아니다. «수성 | Top five Mercury mysteries that BepiColombo will solve»\n\nMESSENGER가 분화구 안팎에서 발견한 함몰 지형인 hollows는 관측된 사실이지만, 휘발성 물질의 증발·승화로 만들어졌다는 설명과 열 또는 태양 입자가 이를 유발한다는 설명은 추정이다. 문서에서 BepiColombo는 MESSENGER 임무 종료 10년 뒤 조사를 시작할 계획으로 제시되며, 같은 지형의 성장이나 축소를 찾아 현재 지질 활동이 지속되는지 검증하려는 것이지 이미 변화를 확인한 것은 아니다. «수성 | Top five Mercury mysteries that BepiColombo will solve»\n\n수성이 반사하는 빛은 달에서 채취한 물질의 약 3분의 2에 불과하지만, 극심한 열에 따른 물질의 변화와 표면 흑연 중 무엇이 어두운 색을 설명하는지는 미해결이므로 후속 조성 관측이 필요하다. 또한 수성에는 지구 자기장의 약 100분의 1 세기인 자기장이 있고 그 중심이 행성 중심에서 북쪽으로 400킬로미터 치우쳐 있지만, 작은 행성에서 자기장이 유지되는 내부 상태와 과정은 설명해야 할 문제로 남는다. 이 때문에 후속 관측은 내부의 부분 용융 가능성, 자기장의 시간적 변화와 공간적 차이, 태양 및 태양풍의 영향을 검증할 필요가 있으며, 이러한 질문을 특정 선행 임무의 발견으로 귀속할 근거는 제공 자료에 없다. «수성 | Top five Mercury mysteries that BepiColombo will solve»\n\n## 2. MPO의 장비와 수성 관측 역할\n\nESA의 Mercury Planetary Orbiter (MPO)는 JAXA의 Mercury Magnetospheric Orbiter (Mio)와 함께 BepiColombo를 구성하는 두 과학 궤도선 중 하나로, 제시된 장비 구성에서 맡은 역할은 수성의 표면·조성·내부 구조를 조사하고 외기권 및 자기장 관측으로 행성의 기원과 진화를 이해하는 것이다. «수성 | Mercury Planetary Orbiter»«수성 | BepiColombo factsheet»\n\nBepiColombo Laser Altimeter (BELA)는 레이저 고도계로 지형과 표면 형태를 측정해 수치 지형 모형을 만들도록 설계되어, 수성 표면이 어떤 형태인가라는 질문에 대응한다. Spectrometers and Imagers for MPO BepiColombo Integrated Observatory (SIMBIO-SYS)는 입체·컬러 영상과 분광 분석으로 표면 지질, 화산활동, 전 지구적 지각변동, 표면 나이와 조성을 조사해 표면이 어떻게 형성되고 변화했는지를 연구한다. Mercury Radiometer and Thermal Infrared Spectrometer (MERTIS)는 복사계와 열적외선 분광계로 표면의 광물 조성·온도·열관성을 상세히 조사하여, 수성의 기원과 진화 모형에 필요한 물질 및 열적 특성 정보를 얻으려는 장비다. «수성 | Mercury Planetary Orbiter»«수성 | BepiColombo factsheet»\n\nMercury Gamma-ray and Neutron Spectrometer (MGNS)는 감마선·중성자 분광계로 표면과 지하의 원소 조성을 결정하고 극지 영구 음영 지역의 휘발성 물질 분포를 파악하도록 설계되어, 어떤 물질이 어디에 존재하는지를 조사한다. Probing of Hermean Exosphere by Ultraviolet Spectroscopy (PHEBUS)는 자외선 분광으로 외기권의 조성과 역학을 조사하고 고위도 충돌구의 영구 음영 지역에서 표면 얼음층을 탐색하여, 외기권의 성질과 얼음의 존재 여부라는 질문에 대응한다. Search for Exosphere Refilling and Emitted Neutral Abundances (SERENA)는 중성·이온화 입자 분석기로 표면·외기권·자기권·태양풍·행성간 매질 사이의 기체 상호작용을 연구해 이 영역들이 어떻게 연결되는지를 살피도록 설계되었다. «수성 | Mercury Planetary Orbiter»«수성 | BepiColombo factsheet»\n\nMercury Orbiter Radio science Experiment (MORE)는 수성의 중력장과 핵의 크기·물리적 상태를 결정하는 것을 목적으로 하여, 내부 구조와 핵이 어떤 상태인가라는 질문에 대응한다. Magnetometer (MPO-MAG)는 자기장, 태양풍과의 상호작용, 자기권의 형성과 역학을 측정하여 수성 내부의 기원·진화·현재 상태를 이해하는 데 기여하도록 설계되어, MPO의 내부 연구가 자기장 관측과도 연결됨을 보여준다. 이 설명은 모두 장비의 관측 목적이며, 제공된 자료에는 지형 모형 완성, 얼음 검출, 핵의 상태 결정 같은 실제 관측 성과가 제시되어 있지 않다. «수성 | Mercury Planetary Orbiter»\n\n## 3. Mio의 장비와 자기권 관측 역할\n\nJAXA의 Mercury Magnetospheric Orbiter(Mio)는 ESA의 Mercury Planetary Orbiter(MPO)와 함께 BepiColombo를 구성하는 두 우주선 중 하나이며, 제시된 장비 기능을 종합하면 자기권과 주변 입자·파동 환경을 조사하는 역할을 맡도록 설계되었다. Magnetometer(MGF)는 수성 자기권을 상세히 기술하고 행성 자기장 및 태양풍과의 상호작용을 조사하여, 수성 자기권이 이들과 어떻게 상호작용하는가라는 질문에 대응한다. Mercury Plasma Particle Experiment(MPPE)는 7개 센서로 자기권의 플라스마와 고에너지 입자를 연구하며, 입자 관측을 통해 태양풍과 수성 자기권의 상호작용을 조사하도록 설계되었다. «수성 | Mercury Magnetospheric Orbiter (Mio)»\n\nPlasma Wave Instrument(PWI)는 현장 관측과 원격 탐사로 수성 플라스마 환경의 전기장·플라스마파·전파를 분석하여, 그 환경이 어떤 전기장과 파동 특성을 보이는지 조사한다. Mercury Sodium Atmosphere Spectral Imager(MSASI)는 수성 외기권의 나트륨 함량·분포·동역학을 측정하여 나트륨의 공급원과 관련 과정이 무엇인지 밝히려는 장비다. Mercury Dust Monitor(MDM)는 수성 궤도의 행성 간 먼지를 관측 대상으로 삼아 그 분포가 어떠한지 연구하며, 이처럼 Mio의 관측 범위에는 자기권뿐 아니라 외기권의 나트륨과 주변 먼지 환경도 포함된다. «수성 | Mercury Magnetospheric Orbiter (Mio)»\n\nBepiColombo factsheet도 MGF·MPPE·PWI·MSASI·MDM을 Mio의 탑재 장비로 열거하지만, 장비 목록 자체는 작동 원리나 관측 성과를 설명하는 근거가 아니다. 제공 자료에서 확인되는 두 궤도선의 관계는 같은 임무를 구성한다는 점까지이며, 공동 관측의 구체적인 방식과 과학적 의미는 설명되지 않아 Mio와 MPO의 관측을 어떻게 결합하는지 단정할 수 없다. 따라서 위 설명은 장비별 관측 대상과 설계 목적에 한정되며, 이를 실제로 해결된 질문이나 관측 성과로 바꾸거나 Mariner 10과 MESSENGER가 남긴 특정 의문에 직접 대응한다고 확정할 근거는 없다. «수성 | Mercury Magnetospheric Orbiter (Mio)»«수성 | BepiColombo factsheet»\n\n## 맺음말\n\nMPO는 표면·조성·내부 구조를 중심으로, Mio는 자기권과 주변 입자·파동 환경을 중심으로 수성의 미해결 문제를 조사하도록 설계되었다. 다만 제공 자료는 장비의 목적을 설명하는 데 그쳐, 실제 질문의 해결 여부나 두 궤도선의 구체적인 공동 관측 방식까지 확인할 수는 없다.\n\n검토 경고:\nMariner 10과 MESSENGER가 남긴 질문: 근거·분량 검토 필요\nMio의 장비와 자기권 관측 역할: 근거·분량 검토 필요",
+      "warnings": [
+        "Mariner 10과 MESSENGER가 남긴 질문: 근거·분량 검토 필요",
+        "Mio의 장비와 자기권 관측 역할: 근거·분량 검토 필요"
+      ]
+    }
+  ]
+}

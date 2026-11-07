@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"[redacted-session]"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"문서\":\"금성 | The spacecraft\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":16179,"cached_input_tokens":14592,"cache_write_input_tokens":0,"output_tokens":54,"reasoning_output_tokens":32}}

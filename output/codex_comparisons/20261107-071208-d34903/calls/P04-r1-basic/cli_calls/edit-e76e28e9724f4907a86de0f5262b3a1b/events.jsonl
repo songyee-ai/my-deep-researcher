@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"[redacted-session]"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"머리말\":\"수성 MESSENGER와 금성 Venus Express는 강한 열 환경에 대응했지만, 열 유입을 줄이고 열을 배출하는 설계와 자세 운용 방식에는 차이가 있었다. 아래에서는 두 탐사선의 열 제어 설계를 비교하고, 명시된 관측 제약과 자료만으로 확인할 수 없는 부분을 구분한다.\",\"맺음말\":\"MESSENGER는 전면 차양과 저고도 체류를 줄이는 타원 궤도에 단열·방열계를 결합했고, Venus Express는 방열기 강화와 23층 반사 단열재, 태양전지판의 내열·방열 설계를 적용했다. MESSENGER의 차양 태양 지향과 Venus Express의 저온 면 태양 회피는 자세 선택에 영향을 주지만, 구체적인 관측 가능 각도·대상·시간이나 실제 관측 손실과 열 제어 성과는 제공 자료만으로 확정할 수 없다.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":15674,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":234,"reasoning_output_tokens":0}}

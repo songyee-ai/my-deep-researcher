@@ -1,0 +1,109 @@
+[
+  {
+    "source_id": "pdf-descanso-mgs",
+    "pdf_page": 15,
+    "reviewed_terms": [
+      "Low-gain antenna (LGA) 4"
+    ],
+    "reviewer": "coding_agent",
+    "visual_render": "visual_review/pdf-descanso-mgs-p15.png",
+    "scope": "One sampled technical page; not full-text human approval",
+    "limitations": "Diagram-only facts and chart coordinates may be absent or misordered in text; verify against PDF. MSL field-code artifacts retained; MER navigation table is linearized."
+  },
+  {
+    "source_id": "pdf-descanso-galileo",
+    "pdf_page": 30,
+    "reviewed_terms": [
+      "126-s",
+      "14-s"
+    ],
+    "reviewer": "coding_agent",
+    "visual_render": "visual_review/pdf-descanso-galileo-p30.png",
+    "scope": "One sampled technical page; not full-text human approval",
+    "limitations": "Diagram-only facts and chart coordinates may be absent or misordered in text; verify against PDF. MSL field-code artifacts retained; MER navigation table is linearized."
+  },
+  {
+    "source_id": "pdf-descanso-odyssey",
+    "pdf_page": 35,
+    "reviewed_terms": [
+      "Mass 40 g",
+      "7155.377316 MHz"
+    ],
+    "reviewer": "coding_agent",
+    "visual_render": "visual_review/pdf-descanso-odyssey-p35.png",
+    "scope": "One sampled technical page; not full-text human approval",
+    "limitations": "Diagram-only facts and chart coordinates may be absent or misordered in text; verify against PDF. MSL field-code artifacts retained; MER navigation table is linearized."
+  },
+  {
+    "source_id": "pdf-descanso-mer-telecom",
+    "pdf_page": 40,
+    "reviewed_terms": [
+      "16.8 W",
+      "58 W"
+    ],
+    "reviewer": "coding_agent",
+    "visual_render": "visual_review/pdf-descanso-mer-telecom-p40.png",
+    "scope": "One sampled technical page; not full-text human approval",
+    "limitations": "Diagram-only facts and chart coordinates may be absent or misordered in text; verify against PDF. MSL field-code artifacts retained; MER navigation table is linearized."
+  },
+  {
+    "source_id": "pdf-descanso-mer-navigation",
+    "pdf_page": 20,
+    "reviewed_terms": [
+      "≥0.05",
+      "3.36 x RMS"
+    ],
+    "reviewer": "coding_agent",
+    "visual_render": "visual_review/pdf-descanso-mer-navigation-p20.png",
+    "scope": "One sampled technical page; not full-text human approval",
+    "limitations": "Diagram-only facts and chart coordinates may be absent or misordered in text; verify against PDF. MSL field-code artifacts retained; MER navigation table is linearized."
+  },
+  {
+    "source_id": "pdf-descanso-mro",
+    "pdf_page": 30,
+    "reviewed_terms": [
+      "2.08 mrad",
+      "99.7%"
+    ],
+    "reviewer": "coding_agent",
+    "visual_render": "visual_review/pdf-descanso-mro-p30.png",
+    "scope": "One sampled technical page; not full-text human approval",
+    "limitations": "Diagram-only facts and chart coordinates may be absent or misordered in text; verify against PDF. MSL field-code artifacts retained; MER navigation table is linearized."
+  },
+  {
+    "source_id": "pdf-descanso-msl-telecom",
+    "pdf_page": 40,
+    "reviewed_terms": [
+      "33BDTE",
+      "UHF"
+    ],
+    "reviewer": "coding_agent",
+    "visual_render": "visual_review/pdf-descanso-msl-telecom-p40.png",
+    "scope": "One sampled technical page; not full-text human approval",
+    "limitations": "Diagram-only facts and chart coordinates may be absent or misordered in text; verify against PDF. MSL field-code artifacts retained; MER navigation table is linearized."
+  },
+  {
+    "source_id": "pdf-descanso-phoenix",
+    "pdf_page": 40,
+    "reviewed_terms": [
+      "2.35 m (7.7 ft)"
+    ],
+    "reviewer": "coding_agent",
+    "visual_render": "visual_review/pdf-descanso-phoenix-p40.png",
+    "scope": "One sampled technical page; not full-text human approval",
+    "limitations": "Diagram-only facts and chart coordinates may be absent or misordered in text; verify against PDF. MSL field-code artifacts retained; MER navigation table is linearized."
+  },
+  {
+    "source_id": "pdf-descanso-marco",
+    "pdf_page": 40,
+    "reviewed_terms": [
+      "12 MHz",
+      "8 KB",
+      "48 MB"
+    ],
+    "reviewer": "coding_agent",
+    "visual_render": "visual_review/pdf-descanso-marco-p40.png",
+    "scope": "One sampled technical page; not full-text human approval",
+    "limitations": "Diagram-only facts and chart coordinates may be absent or misordered in text; verify against PDF. MSL field-code artifacts retained; MER navigation table is linearized."
+  }
+]

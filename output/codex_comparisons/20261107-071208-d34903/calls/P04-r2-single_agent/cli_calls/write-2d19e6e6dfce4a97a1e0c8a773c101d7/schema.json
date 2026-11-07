@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "properties": {
+    "단락": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "내용": {
+            "type": "string"
+          },
+          "출처ID": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "enum": [
+                "D1",
+                "D2",
+                "D3",
+                "D4"
+              ]
+            }
+          }
+        },
+        "required": [
+          "내용",
+          "출처ID"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "부족": {
+      "type": "boolean"
+    },
+    "이유": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "단락",
+    "부족",
+    "이유"
+  ],
+  "additionalProperties": false
+}

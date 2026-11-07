@@ -1,0 +1,1191 @@
+{
+  "scope": "ACTUAL_MODEL_EXPERIMENTS",
+  "model_identity": {
+    "transport": "codex_cli",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "medium",
+    "read_policy": "fact_table_atomic_v3",
+    "read_validation_repairs": 1,
+    "output_contract": "step_schema_v1",
+    "automatic_retries": 0,
+    "authentication": "ChatGPT login"
+  },
+  "corpus_sha256": "d36e30fead3044b518488d61d4af1452b1d7c2cfeb4d6f8740c9b711107c1b9c",
+  "repeats": 2,
+  "shared_read_budget": 4,
+  "conditions": [
+    "basic",
+    "single_agent"
+  ],
+  "records": [
+    {
+      "id": "P04-r1-basic",
+      "question_id": "P04",
+      "question": "수성과 금성 탐사에서 강한 열 환경에 대응하는 설계는 어떻게 달랐으며, 그 차이가 관측에 주는 제약은 무엇인가?",
+      "repeat": 1,
+      "condition": "basic",
+      "model_identity": {
+        "transport": "codex_cli",
+        "model": "gpt-6.1-sol",
+        "reasoning_effort": "medium",
+        "read_policy": "fact_table_atomic_v3",
+        "read_validation_repairs": 1,
+        "output_contract": "step_schema_v1",
+        "automatic_retries": 0,
+        "authentication": "ChatGPT login"
+      },
+      "corpus_sha256": "d36e30fead3044b518488d61d4af1452b1d7c2cfeb4d6f8740c9b711107c1b9c",
+      "shared_read_budget": 4,
+      "synthetic_control_flow_only": false,
+      "condition_settings": {
+        "domain": "수성·금성·화성·목성 무인 탐사의 환경 제약, 설계, 성과와 한계",
+        "corpus_dir": "data/planetary_exploration",
+        "max_sections": 2,
+        "document_budget": 1,
+        "max_redispatch_rounds": 1,
+        "minimum_section_chars": 600,
+        "switches": {
+          "roles": true,
+          "seeds": true,
+          "zones": true,
+          "redispatch": true
+        },
+        "roles": {
+          "환경 제약 연구원": "맡은 대상의 열·대기·방사선 등 제약을 자료로 밝힌다",
+          "열·전력 설계 연구원": "맡은 임무의 열 제어와 전력 선택을 근거에 연결한다",
+          "궤도·착륙 연구원": "맡은 임무의 경로·궤도·착륙 방식과 제약을 밝힌다",
+          "관측 장비 연구원": "맡은 임무의 장비 원리와 관측 대상을 연결한다",
+          "운용·위험 연구원": "맡은 임무의 운용 제약과 실패·대응을 추적한다",
+          "관측 성과 연구원": "실제로 관측한 결과를 설계 목적과 구분한다",
+          "임무 계보 연구원": "맡은 후속 임무가 이전 임무의 의문에 어떻게 대응하는지 추적한다",
+          "비교·한계 연구원": "맡은 대상들의 차이와 근거의 한계를 같은 잣대로 비교한다"
+        },
+        "model_selection": {
+          "candidate": "google/gemma-4-26b-a4b-it:free",
+          "status": "size_passed_generation_pending_http_429",
+          "live_enabled": false,
+          "note": "Gemma official tokenizer measured 347478 body tokens > 262144 native/provider context. Quality still pending. NVIDIA engineering runs finished but failed length/grounding review. App configuration unchanged."
+        },
+        "planning_term_groups": [
+          {
+            "triggers": [
+              "열",
+              "냉각",
+              "온도"
+            ],
+            "source_terms": [
+              "thermal control",
+              "heat shield",
+              "radiator",
+              "insulation",
+              "thermal",
+              "heat",
+              "temperature"
+            ]
+          },
+          {
+            "triggers": [
+              "궤도",
+              "착륙",
+              "접근"
+            ],
+            "source_terms": [
+              "orbit",
+              "landing",
+              "trajectory",
+              "aerobraking"
+            ]
+          },
+          {
+            "triggers": [
+              "장비",
+              "관측"
+            ],
+            "source_terms": [
+              "instrument",
+              "spectrometer",
+              "radar",
+              "camera"
+            ]
+          },
+          {
+            "triggers": [
+              "성과",
+              "한계",
+              "실패"
+            ],
+            "source_terms": [
+              "discovered",
+              "found",
+              "failure",
+              "limitation"
+            ]
+          }
+        ],
+        "model_transport": "codex_cli",
+        "note_format": "fact_table_v1",
+        "quotes_only": false,
+        "draft_format": "source_ids_v1",
+        "planning_cards": "topic_snippets_v1"
+      },
+      "effective_settings": {
+        "domain": "수성·금성·화성·목성 무인 탐사의 환경 제약, 설계, 성과와 한계",
+        "corpus_dir": "data/planetary_exploration",
+        "max_sections": 2,
+        "document_budget": 1,
+        "max_redispatch_rounds": 1,
+        "minimum_section_chars": 600,
+        "switches": {
+          "roles": true,
+          "seeds": true,
+          "zones": true,
+          "redispatch": true
+        },
+        "roles": {
+          "환경 제약 연구원": "맡은 대상의 열·대기·방사선 등 제약을 자료로 밝힌다",
+          "열·전력 설계 연구원": "맡은 임무의 열 제어와 전력 선택을 근거에 연결한다",
+          "궤도·착륙 연구원": "맡은 임무의 경로·궤도·착륙 방식과 제약을 밝힌다",
+          "관측 장비 연구원": "맡은 임무의 장비 원리와 관측 대상을 연결한다",
+          "운용·위험 연구원": "맡은 임무의 운용 제약과 실패·대응을 추적한다",
+          "관측 성과 연구원": "실제로 관측한 결과를 설계 목적과 구분한다",
+          "임무 계보 연구원": "맡은 후속 임무가 이전 임무의 의문에 어떻게 대응하는지 추적한다",
+          "비교·한계 연구원": "맡은 대상들의 차이와 근거의 한계를 같은 잣대로 비교한다"
+        },
+        "model_selection": {
+          "candidate": "google/gemma-4-26b-a4b-it:free",
+          "status": "size_passed_generation_pending_http_429",
+          "live_enabled": false,
+          "note": "Gemma official tokenizer measured 347478 body tokens > 262144 native/provider context. Quality still pending. NVIDIA engineering runs finished but failed length/grounding review. App configuration unchanged."
+        },
+        "planning_term_groups": [
+          {
+            "triggers": [
+              "열",
+              "냉각",
+              "온도"
+            ],
+            "source_terms": [
+              "thermal control",
+              "heat shield",
+              "radiator",
+              "insulation",
+              "thermal",
+              "heat",
+              "temperature"
+            ]
+          },
+          {
+            "triggers": [
+              "궤도",
+              "착륙",
+              "접근"
+            ],
+            "source_terms": [
+              "orbit",
+              "landing",
+              "trajectory",
+              "aerobraking"
+            ]
+          },
+          {
+            "triggers": [
+              "장비",
+              "관측"
+            ],
+            "source_terms": [
+              "instrument",
+              "spectrometer",
+              "radar",
+              "camera"
+            ]
+          },
+          {
+            "triggers": [
+              "성과",
+              "한계",
+              "실패"
+            ],
+            "source_terms": [
+              "discovered",
+              "found",
+              "failure",
+              "limitation"
+            ]
+          }
+        ],
+        "model_transport": "codex_cli",
+        "note_format": "fact_table_v1",
+        "quotes_only": false,
+        "draft_format": "source_ids_v1",
+        "planning_cards": "topic_snippets_v1"
+      },
+      "paired_basic_sections": null,
+      "basic_length_anchor_available": true,
+      "baseline_task_budget_override": null,
+      "engine_class": "CodexResearch",
+      "wiring": {
+        "plan_schema_alignment": {
+          "aligned": true,
+          "checks": {
+            "shares_engine_config": true,
+            "max_sections": true,
+            "roles": true,
+            "seeds": true
+          },
+          "max_sections": 2,
+          "roles_enabled": true,
+          "seeds_enabled": true
+        },
+        "call_folder": "output\\codex_comparisons\\20261107-071208-d34903\\calls\\P04-r1-basic",
+        "read_policy": "fact_table_atomic_v3"
+      },
+      "status": "complete",
+      "metrics": {
+        "sentence_rule_version": "punctuation_citation_aware_v1",
+        "signals": {
+          "citation_sentence_fraction": 0.34782608695652173,
+          "cited_read_source_fraction": 1.0,
+          "duplicate_read_fraction": 0.0,
+          "read_budget_utilization": 0.75,
+          "insufficiency_resolution_fraction": 0.0
+        },
+        "alarms_expected_zero": {
+          "unread_document_citations": 0,
+          "unknown_document_citations": 0,
+          "attempt_read_budget_excess": 0,
+          "total_read_budget_excess": 0,
+          "missing_planned_sections": 0,
+          "short_selected_sections": 0,
+          "synthesis_lost_section_bodies": 0
+        },
+        "counts": {
+          "read_events": 3,
+          "unique_read_documents": 3,
+          "granted_read_budget": 4,
+          "issued_attempt_budget": 3,
+          "sentence_count": 23,
+          "selected_sections": 2,
+          "report_chars": 3354,
+          "raw_read_chars": 213559
+        },
+        "context_by_actor": {
+          "coordinator": {
+            "model_calls": 1,
+            "input_chars": 27704,
+            "source_chars": 0,
+            "card_chars": 26998,
+            "manuscript_chars": 0
+          },
+          "researcher-0": {
+            "model_calls": 2,
+            "input_chars": 179839,
+            "source_chars": 151027,
+            "card_chars": 0,
+            "manuscript_chars": 0
+          },
+          "researcher-1": {
+            "model_calls": 5,
+            "input_chars": 108835,
+            "source_chars": 62532,
+            "card_chars": 0,
+            "manuscript_chars": 0
+          },
+          "synthesizer": {
+            "model_calls": 1,
+            "input_chars": 3022,
+            "source_chars": 0,
+            "card_chars": 0,
+            "manuscript_chars": 2864
+          }
+        },
+        "interpretation": "No gold labels, judge model, relevance recall, semantic support score, or automatic ranking. Zero alarms do not prove factual correctness."
+      },
+      "baseline_validation": null,
+      "mechanical_alarms_clear": true,
+      "scope_accepted": true,
+      "human_review_status": "pending",
+      "transport_stats": {
+        "cache_hits": 0,
+        "cli_invocations": 9
+      }
+    },
+    {
+      "id": "P04-r1-single_agent",
+      "question_id": "P04",
+      "question": "수성과 금성 탐사에서 강한 열 환경에 대응하는 설계는 어떻게 달랐으며, 그 차이가 관측에 주는 제약은 무엇인가?",
+      "repeat": 1,
+      "condition": "single_agent",
+      "model_identity": {
+        "transport": "codex_cli",
+        "model": "gpt-6.1-sol",
+        "reasoning_effort": "medium",
+        "read_policy": "fact_table_atomic_v3",
+        "read_validation_repairs": 1,
+        "output_contract": "step_schema_v1",
+        "automatic_retries": 0,
+        "authentication": "ChatGPT login"
+      },
+      "corpus_sha256": "d36e30fead3044b518488d61d4af1452b1d7c2cfeb4d6f8740c9b711107c1b9c",
+      "shared_read_budget": 4,
+      "synthetic_control_flow_only": false,
+      "condition_settings": {
+        "domain": "수성·금성·화성·목성 무인 탐사의 환경 제약, 설계, 성과와 한계",
+        "corpus_dir": "data/planetary_exploration",
+        "max_sections": 2,
+        "document_budget": 1,
+        "max_redispatch_rounds": 1,
+        "minimum_section_chars": 600,
+        "switches": {
+          "roles": true,
+          "seeds": true,
+          "zones": true,
+          "redispatch": true
+        },
+        "roles": {
+          "환경 제약 연구원": "맡은 대상의 열·대기·방사선 등 제약을 자료로 밝힌다",
+          "열·전력 설계 연구원": "맡은 임무의 열 제어와 전력 선택을 근거에 연결한다",
+          "궤도·착륙 연구원": "맡은 임무의 경로·궤도·착륙 방식과 제약을 밝힌다",
+          "관측 장비 연구원": "맡은 임무의 장비 원리와 관측 대상을 연결한다",
+          "운용·위험 연구원": "맡은 임무의 운용 제약과 실패·대응을 추적한다",
+          "관측 성과 연구원": "실제로 관측한 결과를 설계 목적과 구분한다",
+          "임무 계보 연구원": "맡은 후속 임무가 이전 임무의 의문에 어떻게 대응하는지 추적한다",
+          "비교·한계 연구원": "맡은 대상들의 차이와 근거의 한계를 같은 잣대로 비교한다"
+        },
+        "model_selection": {
+          "candidate": "google/gemma-4-26b-a4b-it:free",
+          "status": "size_passed_generation_pending_http_429",
+          "live_enabled": false,
+          "note": "Gemma official tokenizer measured 347478 body tokens > 262144 native/provider context. Quality still pending. NVIDIA engineering runs finished but failed length/grounding review. App configuration unchanged."
+        },
+        "planning_term_groups": [
+          {
+            "triggers": [
+              "열",
+              "냉각",
+              "온도"
+            ],
+            "source_terms": [
+              "thermal control",
+              "heat shield",
+              "radiator",
+              "insulation",
+              "thermal",
+              "heat",
+              "temperature"
+            ]
+          },
+          {
+            "triggers": [
+              "궤도",
+              "착륙",
+              "접근"
+            ],
+            "source_terms": [
+              "orbit",
+              "landing",
+              "trajectory",
+              "aerobraking"
+            ]
+          },
+          {
+            "triggers": [
+              "장비",
+              "관측"
+            ],
+            "source_terms": [
+              "instrument",
+              "spectrometer",
+              "radar",
+              "camera"
+            ]
+          },
+          {
+            "triggers": [
+              "성과",
+              "한계",
+              "실패"
+            ],
+            "source_terms": [
+              "discovered",
+              "found",
+              "failure",
+              "limitation"
+            ]
+          }
+        ],
+        "model_transport": "codex_cli",
+        "note_format": "fact_table_v1",
+        "quotes_only": false,
+        "draft_format": "source_ids_v1",
+        "planning_cards": "topic_snippets_v1"
+      },
+      "effective_settings": {
+        "domain": "수성·금성·화성·목성 무인 탐사의 환경 제약, 설계, 성과와 한계",
+        "corpus_dir": "data/planetary_exploration",
+        "max_sections": 1,
+        "document_budget": 1,
+        "max_redispatch_rounds": 0,
+        "minimum_section_chars": 1200,
+        "switches": {
+          "roles": false,
+          "seeds": true,
+          "zones": false,
+          "redispatch": false
+        },
+        "roles": {
+          "환경 제약 연구원": "맡은 대상의 열·대기·방사선 등 제약을 자료로 밝힌다",
+          "열·전력 설계 연구원": "맡은 임무의 열 제어와 전력 선택을 근거에 연결한다",
+          "궤도·착륙 연구원": "맡은 임무의 경로·궤도·착륙 방식과 제약을 밝힌다",
+          "관측 장비 연구원": "맡은 임무의 장비 원리와 관측 대상을 연결한다",
+          "운용·위험 연구원": "맡은 임무의 운용 제약과 실패·대응을 추적한다",
+          "관측 성과 연구원": "실제로 관측한 결과를 설계 목적과 구분한다",
+          "임무 계보 연구원": "맡은 후속 임무가 이전 임무의 의문에 어떻게 대응하는지 추적한다",
+          "비교·한계 연구원": "맡은 대상들의 차이와 근거의 한계를 같은 잣대로 비교한다"
+        },
+        "model_selection": {
+          "candidate": "google/gemma-4-26b-a4b-it:free",
+          "status": "size_passed_generation_pending_http_429",
+          "live_enabled": false,
+          "note": "Gemma official tokenizer measured 347478 body tokens > 262144 native/provider context. Quality still pending. NVIDIA engineering runs finished but failed length/grounding review. App configuration unchanged."
+        },
+        "planning_term_groups": [
+          {
+            "triggers": [
+              "열",
+              "냉각",
+              "온도"
+            ],
+            "source_terms": [
+              "thermal control",
+              "heat shield",
+              "radiator",
+              "insulation",
+              "thermal",
+              "heat",
+              "temperature"
+            ]
+          },
+          {
+            "triggers": [
+              "궤도",
+              "착륙",
+              "접근"
+            ],
+            "source_terms": [
+              "orbit",
+              "landing",
+              "trajectory",
+              "aerobraking"
+            ]
+          },
+          {
+            "triggers": [
+              "장비",
+              "관측"
+            ],
+            "source_terms": [
+              "instrument",
+              "spectrometer",
+              "radar",
+              "camera"
+            ]
+          },
+          {
+            "triggers": [
+              "성과",
+              "한계",
+              "실패"
+            ],
+            "source_terms": [
+              "discovered",
+              "found",
+              "failure",
+              "limitation"
+            ]
+          }
+        ],
+        "model_transport": "codex_cli",
+        "note_format": "fact_table_v1",
+        "quotes_only": false,
+        "draft_format": "source_ids_v1",
+        "planning_cards": "topic_snippets_v1"
+      },
+      "paired_basic_sections": 2,
+      "basic_length_anchor_available": true,
+      "baseline_task_budget_override": 4,
+      "engine_class": "CodexSingleAgentResearch",
+      "wiring": {
+        "plan_schema_alignment": {
+          "aligned": true,
+          "checks": {
+            "shares_engine_config": true,
+            "max_sections": true,
+            "roles": true,
+            "seeds": true
+          },
+          "max_sections": 1,
+          "roles_enabled": false,
+          "seeds_enabled": true
+        },
+        "call_folder": "output\\codex_comparisons\\20261107-071208-d34903\\calls\\P04-r1-single_agent",
+        "read_policy": "fact_table_atomic_v3"
+      },
+      "status": "complete",
+      "metrics": {
+        "sentence_rule_version": "punctuation_citation_aware_v1",
+        "signals": {
+          "citation_sentence_fraction": 0.2222222222222222,
+          "cited_read_source_fraction": 1.0,
+          "duplicate_read_fraction": 0.0,
+          "read_budget_utilization": 1.0,
+          "insufficiency_resolution_fraction": 0.0
+        },
+        "alarms_expected_zero": {
+          "unread_document_citations": 0,
+          "unknown_document_citations": 0,
+          "attempt_read_budget_excess": 0,
+          "total_read_budget_excess": 0,
+          "missing_planned_sections": 0,
+          "short_selected_sections": 0,
+          "synthesis_lost_section_bodies": 0
+        },
+        "counts": {
+          "read_events": 4,
+          "unique_read_documents": 4,
+          "granted_read_budget": 4,
+          "issued_attempt_budget": 4,
+          "sentence_count": 27,
+          "selected_sections": 1,
+          "report_chars": 3250,
+          "raw_read_chars": 224152
+        },
+        "context_by_actor": {
+          "coordinator": {
+            "model_calls": 1,
+            "input_chars": 27354,
+            "source_chars": 0,
+            "card_chars": 26998,
+            "manuscript_chars": 0
+          },
+          "researcher-0": {
+            "model_calls": 8,
+            "input_chars": 305243,
+            "source_chars": 224152,
+            "card_chars": 0,
+            "manuscript_chars": 0
+          },
+          "synthesizer": {
+            "model_calls": 1,
+            "input_chars": 3005,
+            "source_chars": 0,
+            "card_chars": 0,
+            "manuscript_chars": 2847
+          }
+        },
+        "interpretation": "No gold labels, judge model, relevance recall, semantic support score, or automatic ranking. Zero alarms do not prove factual correctness."
+      },
+      "baseline_validation": {
+        "granted_read_budget": 4,
+        "actual_reads": 4,
+        "full_budget_used": true,
+        "unused_budget": 0,
+        "status": "budget_consumed",
+        "stopping_reasons": [],
+        "note": "Uses the same read/pick/write/synthesis tools. Early stopping or corpus exhaustion is visible; an underused baseline cannot support a win claim."
+      },
+      "mechanical_alarms_clear": true,
+      "scope_accepted": true,
+      "human_review_status": "pending",
+      "transport_stats": {
+        "cache_hits": 0,
+        "cli_invocations": 10
+      }
+    },
+    {
+      "id": "P04-r2-basic",
+      "question_id": "P04",
+      "question": "수성과 금성 탐사에서 강한 열 환경에 대응하는 설계는 어떻게 달랐으며, 그 차이가 관측에 주는 제약은 무엇인가?",
+      "repeat": 2,
+      "condition": "basic",
+      "model_identity": {
+        "transport": "codex_cli",
+        "model": "gpt-6.1-sol",
+        "reasoning_effort": "medium",
+        "read_policy": "fact_table_atomic_v3",
+        "read_validation_repairs": 1,
+        "output_contract": "step_schema_v1",
+        "automatic_retries": 0,
+        "authentication": "ChatGPT login"
+      },
+      "corpus_sha256": "d36e30fead3044b518488d61d4af1452b1d7c2cfeb4d6f8740c9b711107c1b9c",
+      "shared_read_budget": 4,
+      "synthetic_control_flow_only": false,
+      "condition_settings": {
+        "domain": "수성·금성·화성·목성 무인 탐사의 환경 제약, 설계, 성과와 한계",
+        "corpus_dir": "data/planetary_exploration",
+        "max_sections": 2,
+        "document_budget": 1,
+        "max_redispatch_rounds": 1,
+        "minimum_section_chars": 600,
+        "switches": {
+          "roles": true,
+          "seeds": true,
+          "zones": true,
+          "redispatch": true
+        },
+        "roles": {
+          "환경 제약 연구원": "맡은 대상의 열·대기·방사선 등 제약을 자료로 밝힌다",
+          "열·전력 설계 연구원": "맡은 임무의 열 제어와 전력 선택을 근거에 연결한다",
+          "궤도·착륙 연구원": "맡은 임무의 경로·궤도·착륙 방식과 제약을 밝힌다",
+          "관측 장비 연구원": "맡은 임무의 장비 원리와 관측 대상을 연결한다",
+          "운용·위험 연구원": "맡은 임무의 운용 제약과 실패·대응을 추적한다",
+          "관측 성과 연구원": "실제로 관측한 결과를 설계 목적과 구분한다",
+          "임무 계보 연구원": "맡은 후속 임무가 이전 임무의 의문에 어떻게 대응하는지 추적한다",
+          "비교·한계 연구원": "맡은 대상들의 차이와 근거의 한계를 같은 잣대로 비교한다"
+        },
+        "model_selection": {
+          "candidate": "google/gemma-4-26b-a4b-it:free",
+          "status": "size_passed_generation_pending_http_429",
+          "live_enabled": false,
+          "note": "Gemma official tokenizer measured 347478 body tokens > 262144 native/provider context. Quality still pending. NVIDIA engineering runs finished but failed length/grounding review. App configuration unchanged."
+        },
+        "planning_term_groups": [
+          {
+            "triggers": [
+              "열",
+              "냉각",
+              "온도"
+            ],
+            "source_terms": [
+              "thermal control",
+              "heat shield",
+              "radiator",
+              "insulation",
+              "thermal",
+              "heat",
+              "temperature"
+            ]
+          },
+          {
+            "triggers": [
+              "궤도",
+              "착륙",
+              "접근"
+            ],
+            "source_terms": [
+              "orbit",
+              "landing",
+              "trajectory",
+              "aerobraking"
+            ]
+          },
+          {
+            "triggers": [
+              "장비",
+              "관측"
+            ],
+            "source_terms": [
+              "instrument",
+              "spectrometer",
+              "radar",
+              "camera"
+            ]
+          },
+          {
+            "triggers": [
+              "성과",
+              "한계",
+              "실패"
+            ],
+            "source_terms": [
+              "discovered",
+              "found",
+              "failure",
+              "limitation"
+            ]
+          }
+        ],
+        "model_transport": "codex_cli",
+        "note_format": "fact_table_v1",
+        "quotes_only": false,
+        "draft_format": "source_ids_v1",
+        "planning_cards": "topic_snippets_v1"
+      },
+      "effective_settings": {
+        "domain": "수성·금성·화성·목성 무인 탐사의 환경 제약, 설계, 성과와 한계",
+        "corpus_dir": "data/planetary_exploration",
+        "max_sections": 2,
+        "document_budget": 1,
+        "max_redispatch_rounds": 1,
+        "minimum_section_chars": 600,
+        "switches": {
+          "roles": true,
+          "seeds": true,
+          "zones": true,
+          "redispatch": true
+        },
+        "roles": {
+          "환경 제약 연구원": "맡은 대상의 열·대기·방사선 등 제약을 자료로 밝힌다",
+          "열·전력 설계 연구원": "맡은 임무의 열 제어와 전력 선택을 근거에 연결한다",
+          "궤도·착륙 연구원": "맡은 임무의 경로·궤도·착륙 방식과 제약을 밝힌다",
+          "관측 장비 연구원": "맡은 임무의 장비 원리와 관측 대상을 연결한다",
+          "운용·위험 연구원": "맡은 임무의 운용 제약과 실패·대응을 추적한다",
+          "관측 성과 연구원": "실제로 관측한 결과를 설계 목적과 구분한다",
+          "임무 계보 연구원": "맡은 후속 임무가 이전 임무의 의문에 어떻게 대응하는지 추적한다",
+          "비교·한계 연구원": "맡은 대상들의 차이와 근거의 한계를 같은 잣대로 비교한다"
+        },
+        "model_selection": {
+          "candidate": "google/gemma-4-26b-a4b-it:free",
+          "status": "size_passed_generation_pending_http_429",
+          "live_enabled": false,
+          "note": "Gemma official tokenizer measured 347478 body tokens > 262144 native/provider context. Quality still pending. NVIDIA engineering runs finished but failed length/grounding review. App configuration unchanged."
+        },
+        "planning_term_groups": [
+          {
+            "triggers": [
+              "열",
+              "냉각",
+              "온도"
+            ],
+            "source_terms": [
+              "thermal control",
+              "heat shield",
+              "radiator",
+              "insulation",
+              "thermal",
+              "heat",
+              "temperature"
+            ]
+          },
+          {
+            "triggers": [
+              "궤도",
+              "착륙",
+              "접근"
+            ],
+            "source_terms": [
+              "orbit",
+              "landing",
+              "trajectory",
+              "aerobraking"
+            ]
+          },
+          {
+            "triggers": [
+              "장비",
+              "관측"
+            ],
+            "source_terms": [
+              "instrument",
+              "spectrometer",
+              "radar",
+              "camera"
+            ]
+          },
+          {
+            "triggers": [
+              "성과",
+              "한계",
+              "실패"
+            ],
+            "source_terms": [
+              "discovered",
+              "found",
+              "failure",
+              "limitation"
+            ]
+          }
+        ],
+        "model_transport": "codex_cli",
+        "note_format": "fact_table_v1",
+        "quotes_only": false,
+        "draft_format": "source_ids_v1",
+        "planning_cards": "topic_snippets_v1"
+      },
+      "paired_basic_sections": null,
+      "basic_length_anchor_available": true,
+      "baseline_task_budget_override": null,
+      "engine_class": "CodexResearch",
+      "wiring": {
+        "plan_schema_alignment": {
+          "aligned": true,
+          "checks": {
+            "shares_engine_config": true,
+            "max_sections": true,
+            "roles": true,
+            "seeds": true
+          },
+          "max_sections": 2,
+          "roles_enabled": true,
+          "seeds_enabled": true
+        },
+        "call_folder": "output\\codex_comparisons\\20261107-071208-d34903\\calls\\P04-r2-basic",
+        "read_policy": "fact_table_atomic_v3"
+      },
+      "status": "complete",
+      "metrics": {
+        "sentence_rule_version": "punctuation_citation_aware_v1",
+        "signals": {
+          "citation_sentence_fraction": 0.391304347826087,
+          "cited_read_source_fraction": 1.0,
+          "duplicate_read_fraction": 0.0,
+          "read_budget_utilization": 0.75,
+          "insufficiency_resolution_fraction": 0.0
+        },
+        "alarms_expected_zero": {
+          "unread_document_citations": 0,
+          "unknown_document_citations": 0,
+          "attempt_read_budget_excess": 0,
+          "total_read_budget_excess": 0,
+          "missing_planned_sections": 0,
+          "short_selected_sections": 0,
+          "synthesis_lost_section_bodies": 0
+        },
+        "counts": {
+          "read_events": 3,
+          "unique_read_documents": 3,
+          "granted_read_budget": 4,
+          "issued_attempt_budget": 3,
+          "sentence_count": 23,
+          "selected_sections": 2,
+          "report_chars": 3579,
+          "raw_read_chars": 213559
+        },
+        "context_by_actor": {
+          "coordinator": {
+            "model_calls": 1,
+            "input_chars": 27704,
+            "source_chars": 0,
+            "card_chars": 26998,
+            "manuscript_chars": 0
+          },
+          "researcher-0": {
+            "model_calls": 2,
+            "input_chars": 180747,
+            "source_chars": 151027,
+            "card_chars": 0,
+            "manuscript_chars": 0
+          },
+          "researcher-1": {
+            "model_calls": 5,
+            "input_chars": 111660,
+            "source_chars": 62532,
+            "card_chars": 0,
+            "manuscript_chars": 0
+          },
+          "synthesizer": {
+            "model_calls": 1,
+            "input_chars": 3275,
+            "source_chars": 0,
+            "card_chars": 0,
+            "manuscript_chars": 3117
+          }
+        },
+        "interpretation": "No gold labels, judge model, relevance recall, semantic support score, or automatic ranking. Zero alarms do not prove factual correctness."
+      },
+      "baseline_validation": null,
+      "mechanical_alarms_clear": true,
+      "scope_accepted": true,
+      "human_review_status": "pending",
+      "transport_stats": {
+        "cache_hits": 0,
+        "cli_invocations": 9
+      }
+    },
+    {
+      "id": "P04-r2-single_agent",
+      "question_id": "P04",
+      "question": "수성과 금성 탐사에서 강한 열 환경에 대응하는 설계는 어떻게 달랐으며, 그 차이가 관측에 주는 제약은 무엇인가?",
+      "repeat": 2,
+      "condition": "single_agent",
+      "model_identity": {
+        "transport": "codex_cli",
+        "model": "gpt-6.1-sol",
+        "reasoning_effort": "medium",
+        "read_policy": "fact_table_atomic_v3",
+        "read_validation_repairs": 1,
+        "output_contract": "step_schema_v1",
+        "automatic_retries": 0,
+        "authentication": "ChatGPT login"
+      },
+      "corpus_sha256": "d36e30fead3044b518488d61d4af1452b1d7c2cfeb4d6f8740c9b711107c1b9c",
+      "shared_read_budget": 4,
+      "synthetic_control_flow_only": false,
+      "condition_settings": {
+        "domain": "수성·금성·화성·목성 무인 탐사의 환경 제약, 설계, 성과와 한계",
+        "corpus_dir": "data/planetary_exploration",
+        "max_sections": 2,
+        "document_budget": 1,
+        "max_redispatch_rounds": 1,
+        "minimum_section_chars": 600,
+        "switches": {
+          "roles": true,
+          "seeds": true,
+          "zones": true,
+          "redispatch": true
+        },
+        "roles": {
+          "환경 제약 연구원": "맡은 대상의 열·대기·방사선 등 제약을 자료로 밝힌다",
+          "열·전력 설계 연구원": "맡은 임무의 열 제어와 전력 선택을 근거에 연결한다",
+          "궤도·착륙 연구원": "맡은 임무의 경로·궤도·착륙 방식과 제약을 밝힌다",
+          "관측 장비 연구원": "맡은 임무의 장비 원리와 관측 대상을 연결한다",
+          "운용·위험 연구원": "맡은 임무의 운용 제약과 실패·대응을 추적한다",
+          "관측 성과 연구원": "실제로 관측한 결과를 설계 목적과 구분한다",
+          "임무 계보 연구원": "맡은 후속 임무가 이전 임무의 의문에 어떻게 대응하는지 추적한다",
+          "비교·한계 연구원": "맡은 대상들의 차이와 근거의 한계를 같은 잣대로 비교한다"
+        },
+        "model_selection": {
+          "candidate": "google/gemma-4-26b-a4b-it:free",
+          "status": "size_passed_generation_pending_http_429",
+          "live_enabled": false,
+          "note": "Gemma official tokenizer measured 347478 body tokens > 262144 native/provider context. Quality still pending. NVIDIA engineering runs finished but failed length/grounding review. App configuration unchanged."
+        },
+        "planning_term_groups": [
+          {
+            "triggers": [
+              "열",
+              "냉각",
+              "온도"
+            ],
+            "source_terms": [
+              "thermal control",
+              "heat shield",
+              "radiator",
+              "insulation",
+              "thermal",
+              "heat",
+              "temperature"
+            ]
+          },
+          {
+            "triggers": [
+              "궤도",
+              "착륙",
+              "접근"
+            ],
+            "source_terms": [
+              "orbit",
+              "landing",
+              "trajectory",
+              "aerobraking"
+            ]
+          },
+          {
+            "triggers": [
+              "장비",
+              "관측"
+            ],
+            "source_terms": [
+              "instrument",
+              "spectrometer",
+              "radar",
+              "camera"
+            ]
+          },
+          {
+            "triggers": [
+              "성과",
+              "한계",
+              "실패"
+            ],
+            "source_terms": [
+              "discovered",
+              "found",
+              "failure",
+              "limitation"
+            ]
+          }
+        ],
+        "model_transport": "codex_cli",
+        "note_format": "fact_table_v1",
+        "quotes_only": false,
+        "draft_format": "source_ids_v1",
+        "planning_cards": "topic_snippets_v1"
+      },
+      "effective_settings": {
+        "domain": "수성·금성·화성·목성 무인 탐사의 환경 제약, 설계, 성과와 한계",
+        "corpus_dir": "data/planetary_exploration",
+        "max_sections": 1,
+        "document_budget": 1,
+        "max_redispatch_rounds": 0,
+        "minimum_section_chars": 1200,
+        "switches": {
+          "roles": false,
+          "seeds": true,
+          "zones": false,
+          "redispatch": false
+        },
+        "roles": {
+          "환경 제약 연구원": "맡은 대상의 열·대기·방사선 등 제약을 자료로 밝힌다",
+          "열·전력 설계 연구원": "맡은 임무의 열 제어와 전력 선택을 근거에 연결한다",
+          "궤도·착륙 연구원": "맡은 임무의 경로·궤도·착륙 방식과 제약을 밝힌다",
+          "관측 장비 연구원": "맡은 임무의 장비 원리와 관측 대상을 연결한다",
+          "운용·위험 연구원": "맡은 임무의 운용 제약과 실패·대응을 추적한다",
+          "관측 성과 연구원": "실제로 관측한 결과를 설계 목적과 구분한다",
+          "임무 계보 연구원": "맡은 후속 임무가 이전 임무의 의문에 어떻게 대응하는지 추적한다",
+          "비교·한계 연구원": "맡은 대상들의 차이와 근거의 한계를 같은 잣대로 비교한다"
+        },
+        "model_selection": {
+          "candidate": "google/gemma-4-26b-a4b-it:free",
+          "status": "size_passed_generation_pending_http_429",
+          "live_enabled": false,
+          "note": "Gemma official tokenizer measured 347478 body tokens > 262144 native/provider context. Quality still pending. NVIDIA engineering runs finished but failed length/grounding review. App configuration unchanged."
+        },
+        "planning_term_groups": [
+          {
+            "triggers": [
+              "열",
+              "냉각",
+              "온도"
+            ],
+            "source_terms": [
+              "thermal control",
+              "heat shield",
+              "radiator",
+              "insulation",
+              "thermal",
+              "heat",
+              "temperature"
+            ]
+          },
+          {
+            "triggers": [
+              "궤도",
+              "착륙",
+              "접근"
+            ],
+            "source_terms": [
+              "orbit",
+              "landing",
+              "trajectory",
+              "aerobraking"
+            ]
+          },
+          {
+            "triggers": [
+              "장비",
+              "관측"
+            ],
+            "source_terms": [
+              "instrument",
+              "spectrometer",
+              "radar",
+              "camera"
+            ]
+          },
+          {
+            "triggers": [
+              "성과",
+              "한계",
+              "실패"
+            ],
+            "source_terms": [
+              "discovered",
+              "found",
+              "failure",
+              "limitation"
+            ]
+          }
+        ],
+        "model_transport": "codex_cli",
+        "note_format": "fact_table_v1",
+        "quotes_only": false,
+        "draft_format": "source_ids_v1",
+        "planning_cards": "topic_snippets_v1"
+      },
+      "paired_basic_sections": 2,
+      "basic_length_anchor_available": true,
+      "baseline_task_budget_override": 4,
+      "engine_class": "CodexSingleAgentResearch",
+      "wiring": {
+        "plan_schema_alignment": {
+          "aligned": true,
+          "checks": {
+            "shares_engine_config": true,
+            "max_sections": true,
+            "roles": true,
+            "seeds": true
+          },
+          "max_sections": 1,
+          "roles_enabled": false,
+          "seeds_enabled": true
+        },
+        "call_folder": "output\\codex_comparisons\\20261107-071208-d34903\\calls\\P04-r2-single_agent",
+        "read_policy": "fact_table_atomic_v3"
+      },
+      "status": "complete",
+      "metrics": {
+        "sentence_rule_version": "punctuation_citation_aware_v1",
+        "signals": {
+          "citation_sentence_fraction": 0.21428571428571427,
+          "cited_read_source_fraction": 1.0,
+          "duplicate_read_fraction": 0.0,
+          "read_budget_utilization": 1.0,
+          "insufficiency_resolution_fraction": 0.0
+        },
+        "alarms_expected_zero": {
+          "unread_document_citations": 0,
+          "unknown_document_citations": 0,
+          "attempt_read_budget_excess": 0,
+          "total_read_budget_excess": 0,
+          "missing_planned_sections": 0,
+          "short_selected_sections": 0,
+          "synthesis_lost_section_bodies": 0
+        },
+        "counts": {
+          "read_events": 4,
+          "unique_read_documents": 4,
+          "granted_read_budget": 4,
+          "issued_attempt_budget": 4,
+          "sentence_count": 28,
+          "selected_sections": 1,
+          "report_chars": 3108,
+          "raw_read_chars": 224152
+        },
+        "context_by_actor": {
+          "coordinator": {
+            "model_calls": 1,
+            "input_chars": 27354,
+            "source_chars": 0,
+            "card_chars": 26998,
+            "manuscript_chars": 0
+          },
+          "researcher-0": {
+            "model_calls": 8,
+            "input_chars": 295507,
+            "source_chars": 224152,
+            "card_chars": 0,
+            "manuscript_chars": 0
+          },
+          "synthesizer": {
+            "model_calls": 1,
+            "input_chars": 2860,
+            "source_chars": 0,
+            "card_chars": 0,
+            "manuscript_chars": 2702
+          }
+        },
+        "interpretation": "No gold labels, judge model, relevance recall, semantic support score, or automatic ranking. Zero alarms do not prove factual correctness."
+      },
+      "baseline_validation": {
+        "granted_read_budget": 4,
+        "actual_reads": 4,
+        "full_budget_used": true,
+        "unused_budget": 0,
+        "status": "budget_consumed",
+        "stopping_reasons": [],
+        "note": "Uses the same read/pick/write/synthesis tools. Early stopping or corpus exhaustion is visible; an underused baseline cannot support a win claim."
+      },
+      "mechanical_alarms_clear": true,
+      "scope_accepted": true,
+      "human_review_status": "pending",
+      "transport_stats": {
+        "cache_hits": 0,
+        "cli_invocations": 10
+      }
+    }
+  ],
+  "ranking": null,
+  "human_review_required": true,
+  "comparison_note": "Same corpus/model/tools/read ceiling. Check baseline full-budget use and actual input/output lengths before interpreting differences. Configured retry capacity remains in the common ceiling when retry is disabled."
+}

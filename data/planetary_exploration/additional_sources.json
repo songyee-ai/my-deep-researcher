@@ -1,0 +1,682 @@
+[
+  {
+    "id": "extra-001",
+    "planet": "수성",
+    "title": "Mercury Planetary Orbiter",
+    "url": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/mercury-planetary-orbiter",
+    "status": "discovered",
+    "type": "mission_design"
+  },
+  {
+    "id": "extra-002",
+    "planet": "수성",
+    "title": "Mercury Magnetospheric Orbiter",
+    "url": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/mercury-magnetospheric-orbiter-mio",
+    "status": "discovered",
+    "type": "mission_design"
+  },
+  {
+    "id": "extra-003",
+    "planet": "수성",
+    "title": "Mercury Transfer Module",
+    "url": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/mercury-transfer-module",
+    "status": "discovered",
+    "type": "mission_design"
+  },
+  {
+    "id": "extra-004",
+    "planet": "수성",
+    "title": "Read article",
+    "url": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/bepicolombo-factsheet",
+    "status": "discovered",
+    "type": "mission_design"
+  },
+  {
+    "id": "extra-005",
+    "planet": "수성",
+    "title": "Read article",
+    "url": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/top-five-mercury-mysteries-that-bepicolombo-will-solve",
+    "status": "discovered",
+    "type": "mission_design"
+  },
+  {
+    "id": "extra-006",
+    "planet": "금성",
+    "title": "Read article",
+    "url": "https://www.esa.int/articles/about-us/directorates/science/venus-express/climate-and-evolution",
+    "status": "discovered",
+    "type": "science_design_operations"
+  },
+  {
+    "id": "extra-007",
+    "planet": "금성",
+    "title": "Read article",
+    "url": "https://www.esa.int/articles/about-us/directorates/science/venus-express/venus-express-science-highlights",
+    "status": "discovered",
+    "type": "science_design_operations"
+  },
+  {
+    "id": "extra-008",
+    "planet": "금성",
+    "title": "Read article",
+    "url": "https://www.esa.int/articles/about-us/directorates/operations/venus-express-operations",
+    "status": "discovered",
+    "type": "science_design_operations"
+  },
+  {
+    "id": "extra-009",
+    "planet": "금성",
+    "title": "Read article",
+    "url": "https://www.esa.int/articles/about-us/directorates/science/venus-express/the-spacecraft",
+    "status": "discovered",
+    "type": "science_design_operations"
+  },
+  {
+    "id": "extra-010",
+    "planet": "금성",
+    "title": "Penetrating an impenetrable world",
+    "url": "https://www.esa.int/articles/about-us/directorates/science/venus-express/penetrating-an-impenetrable-world",
+    "status": "discovered",
+    "type": "science_design_operations"
+  },
+  {
+    "id": "extra-011",
+    "planet": "금성",
+    "title": "FAQ",
+    "url": "https://www.esa.int/articles/about-us/directorates/science/venus-express/venus-express-frequently-asked-questions-faqs",
+    "status": "discovered",
+    "type": "science_design_operations"
+  },
+  {
+    "id": "extra-012",
+    "planet": "금성",
+    "title": "Venusian geography",
+    "url": "https://www.esa.int/articles/about-us/directorates/science/venus-express/venusian-geography",
+    "status": "discovered",
+    "type": "science_design_operations"
+  },
+  {
+    "id": "extra-013",
+    "planet": "금성",
+    "title": "Venus's surface",
+    "url": "https://www.esa.int/articles/about-us/directorates/science/venus-express/venus-s-surface",
+    "status": "discovered",
+    "type": "science_design_operations"
+  },
+  {
+    "id": "extra-014",
+    "planet": "금성",
+    "title": "Acid clouds and lightning",
+    "url": "https://www.esa.int/articles/about-us/directorates/science/venus-express/acid-clouds-and-lightning",
+    "status": "discovered",
+    "type": "science_design_operations"
+  },
+  {
+    "id": "extra-015",
+    "planet": "금성",
+    "title": "Greenhouse effect, clouds and winds",
+    "url": "https://www.esa.int/articles/about-us/directorates/science/venus-express/greenhouse-effect-clouds-and-winds",
+    "status": "discovered",
+    "type": "science_design_operations"
+  },
+  {
+    "id": "extra-016",
+    "planet": "금성",
+    "title": "Venus compared to Earth",
+    "url": "https://www.esa.int/articles/about-us/directorates/science/venus-express/venus-compared-to-earth",
+    "status": "discovered",
+    "type": "science_design_operations"
+  },
+  {
+    "id": "extra-017",
+    "planet": "화성",
+    "title": "Rover Components",
+    "url": "https://science.nasa.gov/mission/mars-2020-perseverance/rover-components",
+    "status": "discovered",
+    "type": "science_design_operations"
+  },
+  {
+    "id": "extra-018",
+    "planet": "화성",
+    "title": "Mars Rock Samples",
+    "url": "https://science.nasa.gov/mission/mars-2020-perseverance/mars-rock-samples",
+    "status": "discovered",
+    "type": "science_design_operations"
+  },
+  {
+    "id": "extra-019",
+    "planet": "화성",
+    "title": "Ingenuity Mars Helicopter",
+    "url": "https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity-mars-helicopter",
+    "status": "discovered",
+    "type": "science_design_operations"
+  },
+  {
+    "id": "extra-020",
+    "planet": "화성",
+    "title": "Overview",
+    "url": "https://science.nasa.gov/mission/mars-2020-perseverance/science",
+    "status": "discovered",
+    "type": "science_design_operations"
+  },
+  {
+    "id": "extra-021",
+    "planet": "화성",
+    "title": "Objectives",
+    "url": "https://science.nasa.gov/mission/mars-2020-perseverance/science-objectives",
+    "status": "discovered",
+    "type": "science_design_operations"
+  },
+  {
+    "id": "extra-022",
+    "planet": "화성",
+    "title": "Instruments",
+    "url": "https://science.nasa.gov/mission/mars-2020-perseverance/science-instruments",
+    "status": "discovered",
+    "type": "science_design_operations"
+  },
+  {
+    "id": "extra-023",
+    "planet": "화성",
+    "title": "Highlights",
+    "url": "https://science.nasa.gov/mission/mars-2020-perseverance/science-highlights",
+    "status": "discovered",
+    "type": "science_design_operations"
+  },
+  {
+    "id": "extra-024",
+    "planet": "목성",
+    "title": "Juno's Orbits",
+    "url": "https://science.nasa.gov/mission/juno/juno-orbits",
+    "status": "discovered",
+    "type": "orbit_design"
+  },
+  {
+    "id": "extra-025",
+    "planet": "수성",
+    "title": "mercury",
+    "url": "https://science.nasa.gov/mercury",
+    "status": "discovered",
+    "type": "environment"
+  },
+  {
+    "id": "extra-026",
+    "planet": "수성",
+    "title": "mercury/facts/",
+    "url": "https://science.nasa.gov/mercury/facts/",
+    "status": "discovered",
+    "type": "environment"
+  },
+  {
+    "id": "extra-027",
+    "planet": "수성",
+    "title": "mercury/exploration/",
+    "url": "https://science.nasa.gov/mercury/exploration/",
+    "status": "discovered",
+    "type": "exploration_history"
+  },
+  {
+    "id": "extra-028",
+    "planet": "금성",
+    "title": "venus",
+    "url": "https://science.nasa.gov/venus",
+    "status": "discovered",
+    "type": "environment"
+  },
+  {
+    "id": "extra-029",
+    "planet": "금성",
+    "title": "venus/facts/",
+    "url": "https://science.nasa.gov/venus/facts/",
+    "status": "discovered",
+    "type": "environment"
+  },
+  {
+    "id": "extra-030",
+    "planet": "금성",
+    "title": "venus/exploration/",
+    "url": "https://science.nasa.gov/venus/exploration/",
+    "status": "discovered",
+    "type": "exploration_history"
+  },
+  {
+    "id": "extra-031",
+    "planet": "화성",
+    "title": "mars",
+    "url": "https://science.nasa.gov/mars",
+    "status": "discovered",
+    "type": "environment"
+  },
+  {
+    "id": "extra-032",
+    "planet": "화성",
+    "title": "mars/facts/",
+    "url": "https://science.nasa.gov/mars/facts/",
+    "status": "discovered",
+    "type": "environment"
+  },
+  {
+    "id": "extra-033",
+    "planet": "화성",
+    "title": "mars/exploration/",
+    "url": "https://science.nasa.gov/mars/exploration/",
+    "status": "discovered",
+    "type": "exploration_history"
+  },
+  {
+    "id": "extra-034",
+    "planet": "목성",
+    "title": "jupiter",
+    "url": "https://science.nasa.gov/jupiter",
+    "status": "discovered",
+    "type": "environment"
+  },
+  {
+    "id": "extra-035",
+    "planet": "목성",
+    "title": "jupiter/facts/",
+    "url": "https://science.nasa.gov/jupiter/facts/",
+    "status": "discovered",
+    "type": "environment"
+  },
+  {
+    "id": "extra-036",
+    "planet": "목성",
+    "title": "jupiter/exploration/",
+    "url": "https://science.nasa.gov/jupiter/exploration/",
+    "status": "discovered",
+    "type": "exploration_history"
+  },
+  {
+    "id": "extra-037",
+    "planet": "목성",
+    "title": "Juno measures Europa ice",
+    "url": "https://www.nasa.gov/missions/juno/nasas-juno-measures-thickness-of-europas-ice-shell/",
+    "status": "discovered",
+    "type": "observed_results"
+  },
+  {
+    "id": "extra-038",
+    "planet": "목성",
+    "title": "Juno Io temperature",
+    "url": "https://www.nasa.gov/missions/juno/nasas-juno-takes-temperature-of-jupiters-fiery-moon-io/",
+    "status": "discovered",
+    "type": "observed_results"
+  },
+  {
+    "id": "extra-039",
+    "planet": "목성",
+    "title": "Galileo mission",
+    "url": "https://science.nasa.gov/mission/galileo/",
+    "status": "discovered",
+    "type": "mission_overview"
+  },
+  {
+    "id": "extra-040",
+    "planet": "수성",
+    "title": "Mariner 10",
+    "url": "https://science.nasa.gov/mission/mariner-10/",
+    "status": "discovered",
+    "type": "mission_overview"
+  },
+  {
+    "id": "extra-041",
+    "planet": "화성",
+    "title": "Mars Science Laboratory Curiosity",
+    "url": "https://science.nasa.gov/mission/mars-science-laboratory/",
+    "status": "discovered",
+    "type": "mission_overview",
+    "scope_note": "Keep target-planet evidence separate from other planet flybys; planned future missions are not achieved results."
+  },
+  {
+    "id": "extra-042",
+    "planet": "화성",
+    "title": "Mars Reconnaissance Orbiter",
+    "url": "https://science.nasa.gov/mission/mars-reconnaissance-orbiter/",
+    "status": "discovered",
+    "type": "mission_overview",
+    "scope_note": "Keep target-planet evidence separate from other planet flybys; planned future missions are not achieved results."
+  },
+  {
+    "id": "extra-043",
+    "planet": "화성",
+    "title": "Mars Odyssey",
+    "url": "https://science.nasa.gov/mission/odyssey/",
+    "status": "discovered",
+    "type": "mission_overview",
+    "scope_note": "Keep target-planet evidence separate from other planet flybys; planned future missions are not achieved results."
+  },
+  {
+    "id": "extra-044",
+    "planet": "화성",
+    "title": "MAVEN",
+    "url": "https://science.nasa.gov/mission/maven/",
+    "status": "discovered",
+    "type": "mission_overview",
+    "scope_note": "Keep target-planet evidence separate from other planet flybys; planned future missions are not achieved results."
+  },
+  {
+    "id": "extra-045",
+    "planet": "화성",
+    "title": "Mars Pathfinder",
+    "url": "https://science.nasa.gov/mission/mars-pathfinder/",
+    "status": "discovered",
+    "type": "mission_overview",
+    "scope_note": "Keep target-planet evidence separate from other planet flybys; planned future missions are not achieved results."
+  },
+  {
+    "id": "extra-046",
+    "planet": "화성",
+    "title": "Viking 1",
+    "url": "https://science.nasa.gov/mission/viking-1/",
+    "status": "discovered",
+    "type": "mission_overview",
+    "scope_note": "Keep target-planet evidence separate from other planet flybys; planned future missions are not achieved results."
+  },
+  {
+    "id": "extra-047",
+    "planet": "화성",
+    "title": "Viking 2",
+    "url": "https://science.nasa.gov/mission/viking-2/",
+    "status": "discovered",
+    "type": "mission_overview",
+    "scope_note": "Keep target-planet evidence separate from other planet flybys; planned future missions are not achieved results."
+  },
+  {
+    "id": "extra-048",
+    "planet": "화성",
+    "title": "InSight",
+    "url": "https://science.nasa.gov/mission/insight/",
+    "status": "discovered",
+    "type": "mission_overview",
+    "scope_note": "Keep target-planet evidence separate from other planet flybys; planned future missions are not achieved results."
+  },
+  {
+    "id": "extra-049",
+    "planet": "화성",
+    "title": "Mars Exploration Rovers",
+    "url": "https://science.nasa.gov/mission/mars-exploration-rovers-spirit-and-opportunity/",
+    "status": "discovered",
+    "type": "mission_overview",
+    "scope_note": "Keep target-planet evidence separate from other planet flybys; planned future missions are not achieved results."
+  },
+  {
+    "id": "extra-050",
+    "planet": "금성",
+    "title": "DAVINCI",
+    "url": "https://science.nasa.gov/mission/davinci/",
+    "status": "discovered",
+    "type": "mission_overview",
+    "scope_note": "Keep target-planet evidence separate from other planet flybys; planned future missions are not achieved results."
+  },
+  {
+    "id": "extra-051",
+    "planet": "금성",
+    "title": "VERITAS",
+    "url": "https://science.nasa.gov/mission/veritas/",
+    "status": "discovered",
+    "type": "mission_overview",
+    "scope_note": "Keep target-planet evidence separate from other planet flybys; planned future missions are not achieved results."
+  },
+  {
+    "id": "extra-052",
+    "planet": "금성",
+    "title": "Pioneer Venus 1",
+    "url": "https://science.nasa.gov/mission/pioneer-venus-1/",
+    "status": "discovered",
+    "type": "mission_overview",
+    "scope_note": "Keep target-planet evidence separate from other planet flybys; planned future missions are not achieved results."
+  },
+  {
+    "id": "extra-053",
+    "planet": "금성",
+    "title": "Pioneer Venus 2",
+    "url": "https://science.nasa.gov/mission/pioneer-venus-2/",
+    "status": "discovered",
+    "type": "mission_overview",
+    "scope_note": "Keep target-planet evidence separate from other planet flybys; planned future missions are not achieved results."
+  },
+  {
+    "id": "extra-054",
+    "planet": "목성",
+    "title": "Europa Clipper",
+    "url": "https://science.nasa.gov/mission/europa-clipper/",
+    "status": "discovered",
+    "type": "mission_overview",
+    "scope_note": "Keep target-planet evidence separate from other planet flybys; planned future missions are not achieved results."
+  },
+  {
+    "id": "extra-055",
+    "planet": "목성",
+    "title": "Pioneer 10",
+    "url": "https://science.nasa.gov/mission/pioneer-10/",
+    "status": "discovered",
+    "type": "mission_overview",
+    "scope_note": "Keep target-planet evidence separate from other planet flybys; planned future missions are not achieved results."
+  },
+  {
+    "id": "extra-056",
+    "planet": "목성",
+    "title": "Pioneer 11",
+    "url": "https://science.nasa.gov/mission/pioneer-11/",
+    "status": "discovered",
+    "type": "mission_overview",
+    "scope_note": "Keep target-planet evidence separate from other planet flybys; planned future missions are not achieved results."
+  },
+  {
+    "id": "extra-057",
+    "planet": "화성",
+    "title": "Curiosity",
+    "url": "https://science.nasa.gov/mission/msl-curiosity/",
+    "status": "discovered",
+    "type": "mission_overview"
+  },
+  {
+    "id": "extra-058",
+    "planet": "화성",
+    "title": "Curiosity Instruments",
+    "url": "https://science.nasa.gov/mission/msl-curiosity/science-instruments/",
+    "status": "discovered",
+    "type": "instruments"
+  },
+  {
+    "id": "extra-059",
+    "planet": "화성",
+    "title": "Curiosity Science",
+    "url": "https://science.nasa.gov/mission/msl-curiosity/science/",
+    "status": "discovered",
+    "type": "science"
+  },
+  {
+    "id": "extra-060",
+    "planet": "화성",
+    "title": "Curiosity Components",
+    "url": "https://science.nasa.gov/mission/msl-curiosity/rover-components/",
+    "status": "discovered",
+    "type": "spacecraft"
+  },
+  {
+    "id": "extra-061",
+    "planet": "화성",
+    "title": "MER Instruments",
+    "url": "https://science.nasa.gov/mission/mars-exploration-rovers-spirit-and-opportunity/science-instruments/",
+    "status": "discovered",
+    "type": "instruments"
+  },
+  {
+    "id": "extra-062",
+    "planet": "화성",
+    "title": "Science Instruments",
+    "url": "https://www.nasa.gov/science-instruments",
+    "status": "discovered",
+    "type": "science_design_results"
+  },
+  {
+    "id": "extra-063",
+    "planet": "화성",
+    "title": "Overview",
+    "url": "https://science.nasa.gov/mission/mars-reconnaissance-orbiter/science",
+    "status": "discovered",
+    "type": "science_design_results"
+  },
+  {
+    "id": "extra-064",
+    "planet": "화성",
+    "title": "Instruments",
+    "url": "https://science.nasa.gov/mission/mars-reconnaissance-orbiter/science-instruments",
+    "status": "discovered",
+    "type": "science_design_results"
+  },
+  {
+    "id": "extra-065",
+    "planet": "화성",
+    "title": "Highlights",
+    "url": "https://science.nasa.gov/mission/mars-reconnaissance-orbiter/science-highlights",
+    "status": "discovered",
+    "type": "science_design_results"
+  },
+  {
+    "id": "extra-066",
+    "planet": "화성",
+    "title": "Overview",
+    "url": "https://science.nasa.gov/mission/insight/science",
+    "status": "discovered",
+    "type": "science_design_results"
+  },
+  {
+    "id": "extra-067",
+    "planet": "화성",
+    "title": "Instruments",
+    "url": "https://science.nasa.gov/mission/insight/science-instruments",
+    "status": "discovered",
+    "type": "science_design_results"
+  },
+  {
+    "id": "extra-068",
+    "planet": "화성",
+    "title": "Highlights",
+    "url": "https://science.nasa.gov/mission/insight/science-highlights",
+    "status": "discovered",
+    "type": "science_design_results"
+  },
+  {
+    "id": "extra-069",
+    "planet": "화성",
+    "title": "Learn More About the Spacecraft",
+    "url": "https://science.nasa.gov/mission/insight/spacecraft",
+    "status": "discovered",
+    "type": "science_design_results"
+  },
+  {
+    "id": "extra-070",
+    "planet": "금성",
+    "title": "DAVINCI Science",
+    "url": "https://science.nasa.gov/mission/davinci/davinci-science",
+    "status": "discovered",
+    "type": "science_design_results"
+  },
+  {
+    "id": "extra-071",
+    "planet": "금성",
+    "title": "5 Min Read NASA DAVINCI Mission’s Many ‘Firsts’ to Unlock Venus’ Hidden Secrets Article",
+    "url": "https://science.nasa.gov/missions/davinci/davincis-many-firsts-at-venus",
+    "status": "discovered",
+    "type": "science_design_results"
+  },
+  {
+    "id": "extra-072",
+    "planet": "목성",
+    "title": "Overview",
+    "url": "https://science.nasa.gov/mission/europa-clipper/mission-overview",
+    "status": "discovered",
+    "type": "science_design_results"
+  },
+  {
+    "id": "extra-073",
+    "planet": "목성",
+    "title": "Goals",
+    "url": "https://science.nasa.gov/mission/europa-clipper/mission-science",
+    "status": "discovered",
+    "type": "science_design_results"
+  },
+  {
+    "id": "extra-074",
+    "planet": "목성",
+    "title": "Meet Europa Clipper",
+    "url": "https://science.nasa.gov/mission/europa-clipper/spacecraft-meet-europa-clipper",
+    "status": "discovered",
+    "type": "science_design_results"
+  },
+  {
+    "id": "extra-075",
+    "planet": "목성",
+    "title": "Instruments",
+    "url": "https://science.nasa.gov/mission/europa-clipper/spacecraft-instruments",
+    "status": "discovered",
+    "type": "science_design_results"
+  },
+  {
+    "id": "extra-076",
+    "planet": "목성",
+    "title": "Evidence for an Ocean",
+    "url": "https://science.nasa.gov/mission/europa-clipper/why-europa-evidence-for-an-ocean",
+    "status": "discovered",
+    "type": "science_design_results"
+  },
+  {
+    "id": "extra-077",
+    "planet": "수성",
+    "title": "Article 6 Min Read Mercury’s Strange Hollows",
+    "url": "https://science.nasa.gov/solar-system/planets/mercury/mercurys-strange-hollows",
+    "status": "discovered",
+    "type": "science_results_or_mission_design"
+  },
+  {
+    "id": "extra-078",
+    "planet": "수성",
+    "title": "here",
+    "url": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/journey-to-mercury",
+    "status": "discovered",
+    "type": "science_results_or_mission_design"
+  },
+  {
+    "id": "extra-080",
+    "planet": "화성",
+    "title": "Curiosity Science Highlights",
+    "url": "https://science.nasa.gov/mission/msl-curiosity/science-highlights/",
+    "status": "discovered",
+    "type": "observed_results"
+  },
+  {
+    "id": "expanded-80",
+    "planet": "화성",
+    "title": "Article 6 Min Read NASA’s Perseverance Offers Clues to Protect Crews From Mars Dust",
+    "url": "https://www.nasa.gov/missions/mars-2020-perseverance/nasas-perseverance-offers-clues-to-protect-crews-from-mars-dust",
+    "status": "discovered",
+    "type": "observed_results_or_operations"
+  },
+  {
+    "id": "expanded-81",
+    "planet": "화성",
+    "title": "Read the Story",
+    "url": "https://www.nasa.gov/missions/insight/nasa-marsquake-data-reveals-lumpy-nature-of-red-planets-interior",
+    "status": "discovered",
+    "type": "observed_results_or_operations"
+  },
+  {
+    "id": "expanded-82",
+    "planet": "화성",
+    "title": "5 Min Read NASA Mars Orbiter Spots Retired InSight Lander to Study Dust Movement Article",
+    "url": "https://www.nasa.gov/missions/insight/nasa-mars-orbiter-spots-retired-insight-lander-to-study-dust-movement",
+    "status": "discovered",
+    "type": "observed_results_or_operations"
+  },
+  {
+    "id": "expanded-83",
+    "planet": "목성",
+    "title": "5 Min Read NASA’s Europa Clipper Radar Instrument Proves Itself at Mars Article",
+    "url": "https://www.nasa.gov/missions/europa-clipper/nasas-europa-clipper-radar-instrument-proves-itself-at-mars",
+    "status": "discovered",
+    "type": "observed_results_or_operations"
+  }
+]

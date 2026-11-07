@@ -1,0 +1,20 @@
+{
+  "exit_code": 0,
+  "seconds": 21.375,
+  "model_requested": "gpt-6.1-sol",
+  "authentication": "ChatGPT login",
+  "usage": [
+    {
+      "input_tokens": 17095,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 841,
+      "reasoning_output_tokens": 184
+    }
+  ],
+  "session_id": "[redacted-session]",
+  "resumed_session_id": null,
+  "session_persisted": false,
+  "unexpected_tool_items": [],
+  "billing_note": "ChatGPT subscription usage; not an OpenRouter free request."
+}

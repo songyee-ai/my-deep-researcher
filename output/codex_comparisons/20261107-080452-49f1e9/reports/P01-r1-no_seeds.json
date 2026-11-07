@@ -1,0 +1,549 @@
+{
+  "question": "MESSENGER 임무는 언제, 어떤 방식으로 종료되었나?",
+  "plan": {
+    "제목": "MESSENGER 임무의 종료 시점과 방식",
+    "목차": [
+      {
+        "번호": 0,
+        "절": "MESSENGER 임무 종료",
+        "지시": "제공된 MESSENGER 카드에 명시된 종료일인 2015년 4월 30일을 정리하고, 종료 방식은 카드에 제시되어 있지 않음을 밝혀라.",
+        "역할": "운용·위험 연구원",
+        "시작문서": "",
+        "예산": 2
+      }
+    ]
+  },
+  "pending": [],
+  "round": 2,
+  "attempts": [
+    {
+      "번호": 0,
+      "절": "MESSENGER 임무 종료",
+      "역할": "운용·위험 연구원",
+      "round": 0,
+      "본문": "MESSENGER 임무의 종료일은 제공된 수성 | MESSENGER 카드에 명시된 2015년 4월 30일이다. 이 날짜는 카드의 Mission End 항목에 제시된 값이며, 질문의 언제 종료되었는가에 대해서는 이 항목을 직접 근거로 답할 수 있다. 카드에는 Launch 항목도 별도로 있으므로, 종료일의 근거는 발사 정보가 아니라 임무 종료 항목이라는 점을 분명히 해야 한다. «수성 | MESSENGER»\n\n그러나 같은 카드에는 MESSENGER 임무가 어떤 방식으로 종료되었는지에 관한 설명이 제시되어 있지 않다. 따라서 2015년 4월 30일이라는 종료일이 확인된다는 사실만으로, 종료 당시의 우주선 상태나 종료에 이르는 운용 절차까지 확인되었다고 해석할 수는 없다. 카드의 Type 항목은 Orbiter로 기재되어 있지만, 이 분류 역시 임무 종료 방식이나 그 원인을 설명하는 근거는 아니다. 또한 Objective에 적힌 Mapping and Science Discoveries는 임무의 목적에 해당하므로, 이를 실제 관측 성과나 종료 당시의 상황을 보여 주는 기록으로 바꾸어 서술해서는 안 된다. «수성 | MESSENGER»\n\n운용·위험 관점에서 제공된 자료로 확정할 수 있는 종료 관련 정보는 날짜이며, 종료를 초래한 운용 제약이나 실패 여부, 이에 대한 대응은 이 카드에서 확인되지 않는다. 여기서 종료 방식이 제시되지 않았다는 말은 해당 정보가 제공된 카드에 없다는 뜻이며, 실제 종료 과정에 특정 사건이 있었거나 없었다는 판단을 뜻하지 않는다. 질문은 종료 시점과 방식을 함께 묻고 있으므로, 현재 자료에 근거한 답변은 MESSENGER 임무가 2015년 4월 30일 종료되었으며 종료 방식은 카드만으로 확인할 수 없다는 범위로 한정된다. «수성 | MESSENGER»",
+      "부족": true,
+      "이유": "종료일은 D1에 명시되어 있으나, 질문의 핵심인 종료 방식은 제시되어 있지 않다. 종료 당시의 사건과 운용 경위를 명시한 추가 자료가 필요하다.",
+      "읽은문서": [
+        "수성 | MESSENGER"
+      ],
+      "인용": [
+        "수성 | MESSENGER",
+        "수성 | MESSENGER",
+        "수성 | MESSENGER"
+      ],
+      "draft_format": "source_ids_v1",
+      "raw_draft": {
+        "단락": [
+          {
+            "내용": "MESSENGER 임무의 종료일은 제공된 수성 | MESSENGER 카드에 명시된 2015년 4월 30일이다. 이 날짜는 카드의 Mission End 항목에 제시된 값이며, 질문의 언제 종료되었는가에 대해서는 이 항목을 직접 근거로 답할 수 있다. 카드에는 Launch 항목도 별도로 있으므로, 종료일의 근거는 발사 정보가 아니라 임무 종료 항목이라는 점을 분명히 해야 한다.",
+            "출처ID": [
+              "D1"
+            ]
+          },
+          {
+            "내용": "그러나 같은 카드에는 MESSENGER 임무가 어떤 방식으로 종료되었는지에 관한 설명이 제시되어 있지 않다. 따라서 2015년 4월 30일이라는 종료일이 확인된다는 사실만으로, 종료 당시의 우주선 상태나 종료에 이르는 운용 절차까지 확인되었다고 해석할 수는 없다. 카드의 Type 항목은 Orbiter로 기재되어 있지만, 이 분류 역시 임무 종료 방식이나 그 원인을 설명하는 근거는 아니다. 또한 Objective에 적힌 Mapping and Science Discoveries는 임무의 목적에 해당하므로, 이를 실제 관측 성과나 종료 당시의 상황을 보여 주는 기록으로 바꾸어 서술해서는 안 된다.",
+            "출처ID": [
+              "D1"
+            ]
+          },
+          {
+            "내용": "운용·위험 관점에서 제공된 자료로 확정할 수 있는 종료 관련 정보는 날짜이며, 종료를 초래한 운용 제약이나 실패 여부, 이에 대한 대응은 이 카드에서 확인되지 않는다. 여기서 종료 방식이 제시되지 않았다는 말은 해당 정보가 제공된 카드에 없다는 뜻이며, 실제 종료 과정에 특정 사건이 있었거나 없었다는 판단을 뜻하지 않는다. 질문은 종료 시점과 방식을 함께 묻고 있으므로, 현재 자료에 근거한 답변은 MESSENGER 임무가 2015년 4월 30일 종료되었으며 종료 방식은 카드만으로 확인할 수 없다는 범위로 한정된다.",
+            "출처ID": [
+              "D1"
+            ]
+          }
+        ],
+        "부족": true,
+        "이유": "종료일은 D1에 명시되어 있으나, 질문의 핵심인 종료 방식은 제시되어 있지 않다. 종료 당시의 사건과 운용 경위를 명시한 추가 자료가 필요하다."
+      },
+      "source_map": {
+        "D1": "수성 | MESSENGER"
+      }
+    },
+    {
+      "번호": 0,
+      "절": "MESSENGER 임무 종료",
+      "역할": "운용·위험 연구원",
+      "round": 1,
+      "본문": "MESSENGER 임무의 종료일은 제공된 수성 | MESSENGER 카드에 명시된 2015년 4월 30일이다. 이 날짜는 카드의 Mission End 항목에 제시된 값이며, 질문의 언제 종료되었는가에 대해서는 이 항목을 직접 근거로 답할 수 있다. 카드에는 Launch 항목도 별도로 있으므로, 종료일의 근거는 발사 정보가 아니라 임무 종료 항목이라는 점을 분명히 해야 한다. «수성 | MESSENGER»\n\n그러나 같은 카드에는 MESSENGER 임무가 어떤 방식으로 종료되었는지에 관한 설명이 제시되어 있지 않다. 따라서 2015년 4월 30일이라는 종료일이 확인된다는 사실만으로, 종료 당시의 우주선 상태나 종료에 이르는 운용 절차까지 확인되었다고 해석할 수는 없다. 카드의 Type 항목은 Orbiter로 기재되어 있지만, 이 분류 역시 임무 종료 방식이나 그 원인을 설명하는 근거는 아니다. 또한 Objective에 적힌 Mapping and Science Discoveries는 임무의 목적에 해당하므로, 이를 실제 관측 성과나 종료 당시의 상황을 보여 주는 기록으로 바꾸어 서술해서는 안 된다. «수성 | MESSENGER»\n\n운용·위험 관점에서 제공된 자료로 확정할 수 있는 종료 관련 정보는 날짜이며, 종료를 초래한 운용 제약이나 실패 여부, 이에 대한 대응은 이 카드에서 확인되지 않는다. 여기서 종료 방식이 제시되지 않았다는 말은 해당 정보가 제공된 카드에 없다는 뜻이며, 실제 종료 과정에 특정 사건이 있었거나 없었다는 판단을 뜻하지 않는다. 질문은 종료 시점과 방식을 함께 묻고 있으므로, 현재 자료에 근거한 답변은 MESSENGER 임무가 2015년 4월 30일 종료되었으며 종료 방식은 카드만으로 확인할 수 없다는 범위로 한정된다. «수성 | MESSENGER»",
+      "부족": true,
+      "이유": "종료일은 D1에 명시되어 있으나, 질문의 핵심인 종료 방식은 제시되어 있지 않다. 종료 당시의 사건과 운용 경위를 명시한 추가 자료가 필요하다.",
+      "읽은문서": [
+        "수성 | MESSENGER"
+      ],
+      "인용": [
+        "수성 | MESSENGER",
+        "수성 | MESSENGER",
+        "수성 | MESSENGER"
+      ],
+      "draft_format": "source_ids_v1",
+      "raw_draft": {
+        "단락": [
+          {
+            "내용": "MESSENGER 임무의 종료일은 제공된 수성 | MESSENGER 카드에 명시된 2015년 4월 30일이다. 이 날짜는 카드의 Mission End 항목에 제시된 값이며, 질문의 언제 종료되었는가에 대해서는 이 항목을 직접 근거로 답할 수 있다. 카드에는 Launch 항목도 별도로 있으므로, 종료일의 근거는 발사 정보가 아니라 임무 종료 항목이라는 점을 분명히 해야 한다.",
+            "출처ID": [
+              "D1"
+            ]
+          },
+          {
+            "내용": "그러나 같은 카드에는 MESSENGER 임무가 어떤 방식으로 종료되었는지에 관한 설명이 제시되어 있지 않다. 따라서 2015년 4월 30일이라는 종료일이 확인된다는 사실만으로, 종료 당시의 우주선 상태나 종료에 이르는 운용 절차까지 확인되었다고 해석할 수는 없다. 카드의 Type 항목은 Orbiter로 기재되어 있지만, 이 분류 역시 임무 종료 방식이나 그 원인을 설명하는 근거는 아니다. 또한 Objective에 적힌 Mapping and Science Discoveries는 임무의 목적에 해당하므로, 이를 실제 관측 성과나 종료 당시의 상황을 보여 주는 기록으로 바꾸어 서술해서는 안 된다.",
+            "출처ID": [
+              "D1"
+            ]
+          },
+          {
+            "내용": "운용·위험 관점에서 제공된 자료로 확정할 수 있는 종료 관련 정보는 날짜이며, 종료를 초래한 운용 제약이나 실패 여부, 이에 대한 대응은 이 카드에서 확인되지 않는다. 여기서 종료 방식이 제시되지 않았다는 말은 해당 정보가 제공된 카드에 없다는 뜻이며, 실제 종료 과정에 특정 사건이 있었거나 없었다는 판단을 뜻하지 않는다. 질문은 종료 시점과 방식을 함께 묻고 있으므로, 현재 자료에 근거한 답변은 MESSENGER 임무가 2015년 4월 30일 종료되었으며 종료 방식은 카드만으로 확인할 수 없다는 범위로 한정된다.",
+            "출처ID": [
+              "D1"
+            ]
+          }
+        ],
+        "부족": true,
+        "이유": "종료일은 D1에 명시되어 있으나, 질문의 핵심인 종료 방식은 제시되어 있지 않다. 종료 당시의 사건과 운용 경위를 명시한 추가 자료가 필요하다."
+      },
+      "source_map": {
+        "D1": "수성 | MESSENGER"
+      }
+    }
+  ],
+  "selected": [
+    {
+      "번호": 0,
+      "절": "MESSENGER 임무 종료",
+      "역할": "운용·위험 연구원",
+      "round": 1,
+      "본문": "MESSENGER 임무의 종료일은 제공된 수성 | MESSENGER 카드에 명시된 2015년 4월 30일이다. 이 날짜는 카드의 Mission End 항목에 제시된 값이며, 질문의 언제 종료되었는가에 대해서는 이 항목을 직접 근거로 답할 수 있다. 카드에는 Launch 항목도 별도로 있으므로, 종료일의 근거는 발사 정보가 아니라 임무 종료 항목이라는 점을 분명히 해야 한다. «수성 | MESSENGER»\n\n그러나 같은 카드에는 MESSENGER 임무가 어떤 방식으로 종료되었는지에 관한 설명이 제시되어 있지 않다. 따라서 2015년 4월 30일이라는 종료일이 확인된다는 사실만으로, 종료 당시의 우주선 상태나 종료에 이르는 운용 절차까지 확인되었다고 해석할 수는 없다. 카드의 Type 항목은 Orbiter로 기재되어 있지만, 이 분류 역시 임무 종료 방식이나 그 원인을 설명하는 근거는 아니다. 또한 Objective에 적힌 Mapping and Science Discoveries는 임무의 목적에 해당하므로, 이를 실제 관측 성과나 종료 당시의 상황을 보여 주는 기록으로 바꾸어 서술해서는 안 된다. «수성 | MESSENGER»\n\n운용·위험 관점에서 제공된 자료로 확정할 수 있는 종료 관련 정보는 날짜이며, 종료를 초래한 운용 제약이나 실패 여부, 이에 대한 대응은 이 카드에서 확인되지 않는다. 여기서 종료 방식이 제시되지 않았다는 말은 해당 정보가 제공된 카드에 없다는 뜻이며, 실제 종료 과정에 특정 사건이 있었거나 없었다는 판단을 뜻하지 않는다. 질문은 종료 시점과 방식을 함께 묻고 있으므로, 현재 자료에 근거한 답변은 MESSENGER 임무가 2015년 4월 30일 종료되었으며 종료 방식은 카드만으로 확인할 수 없다는 범위로 한정된다. «수성 | MESSENGER»",
+      "부족": true,
+      "이유": "종료일은 D1에 명시되어 있으나, 질문의 핵심인 종료 방식은 제시되어 있지 않다. 종료 당시의 사건과 운용 경위를 명시한 추가 자료가 필요하다.",
+      "읽은문서": [
+        "수성 | MESSENGER"
+      ],
+      "인용": [
+        "수성 | MESSENGER",
+        "수성 | MESSENGER",
+        "수성 | MESSENGER"
+      ],
+      "draft_format": "source_ids_v1",
+      "raw_draft": {
+        "단락": [
+          {
+            "내용": "MESSENGER 임무의 종료일은 제공된 수성 | MESSENGER 카드에 명시된 2015년 4월 30일이다. 이 날짜는 카드의 Mission End 항목에 제시된 값이며, 질문의 언제 종료되었는가에 대해서는 이 항목을 직접 근거로 답할 수 있다. 카드에는 Launch 항목도 별도로 있으므로, 종료일의 근거는 발사 정보가 아니라 임무 종료 항목이라는 점을 분명히 해야 한다.",
+            "출처ID": [
+              "D1"
+            ]
+          },
+          {
+            "내용": "그러나 같은 카드에는 MESSENGER 임무가 어떤 방식으로 종료되었는지에 관한 설명이 제시되어 있지 않다. 따라서 2015년 4월 30일이라는 종료일이 확인된다는 사실만으로, 종료 당시의 우주선 상태나 종료에 이르는 운용 절차까지 확인되었다고 해석할 수는 없다. 카드의 Type 항목은 Orbiter로 기재되어 있지만, 이 분류 역시 임무 종료 방식이나 그 원인을 설명하는 근거는 아니다. 또한 Objective에 적힌 Mapping and Science Discoveries는 임무의 목적에 해당하므로, 이를 실제 관측 성과나 종료 당시의 상황을 보여 주는 기록으로 바꾸어 서술해서는 안 된다.",
+            "출처ID": [
+              "D1"
+            ]
+          },
+          {
+            "내용": "운용·위험 관점에서 제공된 자료로 확정할 수 있는 종료 관련 정보는 날짜이며, 종료를 초래한 운용 제약이나 실패 여부, 이에 대한 대응은 이 카드에서 확인되지 않는다. 여기서 종료 방식이 제시되지 않았다는 말은 해당 정보가 제공된 카드에 없다는 뜻이며, 실제 종료 과정에 특정 사건이 있었거나 없었다는 판단을 뜻하지 않는다. 질문은 종료 시점과 방식을 함께 묻고 있으므로, 현재 자료에 근거한 답변은 MESSENGER 임무가 2015년 4월 30일 종료되었으며 종료 방식은 카드만으로 확인할 수 없다는 범위로 한정된다.",
+            "출처ID": [
+              "D1"
+            ]
+          }
+        ],
+        "부족": true,
+        "이유": "종료일은 D1에 명시되어 있으나, 질문의 핵심인 종료 방식은 제시되어 있지 않다. 종료 당시의 사건과 운용 경위를 명시한 추가 자료가 필요하다."
+      },
+      "source_map": {
+        "D1": "수성 | MESSENGER"
+      }
+    }
+  ],
+  "review": [
+    {
+      "section": 0,
+      "round": 0,
+      "self_reported_insufficient": true,
+      "accepted": true,
+      "valid_draft": true,
+      "redispatch": true,
+      "reason": "valid nonregressing draft"
+    },
+    {
+      "section": 0,
+      "round": 1,
+      "self_reported_insufficient": true,
+      "accepted": true,
+      "valid_draft": true,
+      "redispatch": false,
+      "reason": "valid nonregressing draft"
+    }
+  ],
+  "report": "# MESSENGER 임무의 종료 시점과 방식\n\n제공된 카드에서 MESSENGER 임무의 종료일은 확인되지만, 종료 방식은 확인되지 않는다. 아래 본문은 확인 가능한 날짜와 자료의 한계를 구분해 설명한다.\n\n## 1. MESSENGER 임무 종료\n\nMESSENGER 임무의 종료일은 제공된 수성 | MESSENGER 카드에 명시된 2015년 4월 30일이다. 이 날짜는 카드의 Mission End 항목에 제시된 값이며, 질문의 언제 종료되었는가에 대해서는 이 항목을 직접 근거로 답할 수 있다. 카드에는 Launch 항목도 별도로 있으므로, 종료일의 근거는 발사 정보가 아니라 임무 종료 항목이라는 점을 분명히 해야 한다. «수성 | MESSENGER»\n\n그러나 같은 카드에는 MESSENGER 임무가 어떤 방식으로 종료되었는지에 관한 설명이 제시되어 있지 않다. 따라서 2015년 4월 30일이라는 종료일이 확인된다는 사실만으로, 종료 당시의 우주선 상태나 종료에 이르는 운용 절차까지 확인되었다고 해석할 수는 없다. 카드의 Type 항목은 Orbiter로 기재되어 있지만, 이 분류 역시 임무 종료 방식이나 그 원인을 설명하는 근거는 아니다. 또한 Objective에 적힌 Mapping and Science Discoveries는 임무의 목적에 해당하므로, 이를 실제 관측 성과나 종료 당시의 상황을 보여 주는 기록으로 바꾸어 서술해서는 안 된다. «수성 | MESSENGER»\n\n운용·위험 관점에서 제공된 자료로 확정할 수 있는 종료 관련 정보는 날짜이며, 종료를 초래한 운용 제약이나 실패 여부, 이에 대한 대응은 이 카드에서 확인되지 않는다. 여기서 종료 방식이 제시되지 않았다는 말은 해당 정보가 제공된 카드에 없다는 뜻이며, 실제 종료 과정에 특정 사건이 있었거나 없었다는 판단을 뜻하지 않는다. 질문은 종료 시점과 방식을 함께 묻고 있으므로, 현재 자료에 근거한 답변은 MESSENGER 임무가 2015년 4월 30일 종료되었으며 종료 방식은 카드만으로 확인할 수 없다는 범위로 한정된다. «수성 | MESSENGER»\n\n## 맺음말\n\nMESSENGER 임무는 2015년 4월 30일 종료되었다. 다만 제공된 카드에는 종료 방식이 제시되어 있지 않아, 질문의 방식에 관한 부분은 이 자료만으로 답할 수 없다.\n\n검토 경고:\nMESSENGER 임무 종료: 근거·분량 검토 필요",
+  "events": [
+    {
+      "kind": "context",
+      "actor": "coordinator",
+      "step": "plan",
+      "input_chars": 30258,
+      "source_chars": 0,
+      "card_chars": 29583,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "plan",
+      "plan": {
+        "제목": "MESSENGER 임무의 종료 시점과 방식",
+        "목차": [
+          {
+            "번호": 0,
+            "절": "MESSENGER 임무 종료",
+            "지시": "제공된 MESSENGER 카드에 명시된 종료일인 2015년 4월 30일을 정리하고, 종료 방식은 카드에 제시되어 있지 않음을 밝혀라.",
+            "역할": "운용·위험 연구원",
+            "시작문서": "",
+            "예산": 2
+          }
+        ]
+      }
+    },
+    {
+      "kind": "assignment",
+      "agent": "researcher-0",
+      "round": 0,
+      "task": {
+        "번호": 0,
+        "절": "MESSENGER 임무 종료",
+        "지시": "제공된 MESSENGER 카드에 명시된 종료일인 2015년 4월 30일을 정리하고, 종료 방식은 카드에 제시되어 있지 않음을 밝혀라.",
+        "역할": "운용·위험 연구원",
+        "시작문서": "",
+        "예산": 2,
+        "다른구역": []
+      }
+    },
+    {
+      "kind": "candidates",
+      "agent": "researcher-0",
+      "round": 0,
+      "path": "all_docs_fallback",
+      "count": 97
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-0",
+      "step": "pick",
+      "input_chars": 3776,
+      "source_chars": 0,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-0",
+      "step": "read",
+      "input_chars": 8787,
+      "source_chars": 7281,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "fact_table",
+      "agent": "researcher-0",
+      "document": "수성 | MESSENGER",
+      "table": {
+        "facts": [
+          {
+            "id": "F1",
+            "subject": "MESSENGER",
+            "relation": "임무 종료일",
+            "comparison_target": "",
+            "value": "April 30, 2015",
+            "unit": "",
+            "basis": "카드에 명시된 종료일",
+            "start_line": 1,
+            "end_line": 8,
+            "document": "수성 | MESSENGER",
+            "quote": "MESSENGER\nMErcury Surface, Space ENvironment, GEochemistry, and Ranging\nType\nOrbiter\nLaunch\nAug. 2, 2004\nMission End\nApril 30, 2015"
+          },
+          {
+            "id": "F2",
+            "subject": "MESSENGER",
+            "relation": "카드에 종료 방식이 제시되지 않음",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "카드의 임무 종료 항목",
+            "start_line": 1,
+            "end_line": 10,
+            "document": "수성 | MESSENGER",
+            "quote": "MESSENGER\nMErcury Surface, Space ENvironment, GEochemistry, and Ranging\nType\nOrbiter\nLaunch\nAug. 2, 2004\nMission End\nApril 30, 2015\nObjective\nMapping and Science Discoveries"
+          }
+        ],
+        "insufficient": true,
+        "reason": "지정된 카드에는 종료일은 명시되어 있으나 종료 방식은 제시되어 있지 않다. 카드 범위만으로는 종료 방식을 답할 수 없다.",
+        "semantic_review": "pending",
+        "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+      }
+    },
+    {
+      "kind": "read",
+      "agent": "researcher-0",
+      "round": 0,
+      "document": "수성 | MESSENGER",
+      "source_chars": 7281,
+      "evidence": {
+        "근거": [
+          {
+            "원문": "MESSENGER\nMErcury Surface, Space ENvironment, GEochemistry, and Ranging\nType\nOrbiter\nLaunch\nAug. 2, 2004\nMission End\nApril 30, 2015",
+            "메모": "{\"subject\": \"MESSENGER\", \"relation\": \"임무 종료일\", \"comparison_target\": \"\", \"value\": \"April 30, 2015\", \"unit\": \"\", \"basis\": \"카드에 명시된 종료일\"}"
+          },
+          {
+            "원문": "MESSENGER\nMErcury Surface, Space ENvironment, GEochemistry, and Ranging\nType\nOrbiter\nLaunch\nAug. 2, 2004\nMission End\nApril 30, 2015\nObjective\nMapping and Science Discoveries",
+            "메모": "{\"subject\": \"MESSENGER\", \"relation\": \"카드에 종료 방식이 제시되지 않음\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"카드의 임무 종료 항목\"}"
+          }
+        ],
+        "부족": true,
+        "이유": "지정된 카드에는 종료일은 명시되어 있으나 종료 방식은 제시되어 있지 않다. 카드 범위만으로는 종료 방식을 답할 수 없다.",
+        "fact_table": {
+          "facts": [
+            {
+              "id": "F1",
+              "subject": "MESSENGER",
+              "relation": "임무 종료일",
+              "comparison_target": "",
+              "value": "April 30, 2015",
+              "unit": "",
+              "basis": "카드에 명시된 종료일",
+              "start_line": 1,
+              "end_line": 8,
+              "document": "수성 | MESSENGER",
+              "quote": "MESSENGER\nMErcury Surface, Space ENvironment, GEochemistry, and Ranging\nType\nOrbiter\nLaunch\nAug. 2, 2004\nMission End\nApril 30, 2015"
+            },
+            {
+              "id": "F2",
+              "subject": "MESSENGER",
+              "relation": "카드에 종료 방식이 제시되지 않음",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "카드의 임무 종료 항목",
+              "start_line": 1,
+              "end_line": 10,
+              "document": "수성 | MESSENGER",
+              "quote": "MESSENGER\nMErcury Surface, Space ENvironment, GEochemistry, and Ranging\nType\nOrbiter\nLaunch\nAug. 2, 2004\nMission End\nApril 30, 2015\nObjective\nMapping and Science Discoveries"
+            }
+          ],
+          "insufficient": true,
+          "reason": "지정된 카드에는 종료일은 명시되어 있으나 종료 방식은 제시되어 있지 않다. 카드 범위만으로는 종료 방식을 답할 수 없다.",
+          "semantic_review": "pending",
+          "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+        },
+        "validation": "Schema/source membership checked; semantic support pending direct review."
+      }
+    },
+    {
+      "kind": "candidates",
+      "agent": "researcher-0",
+      "round": 0,
+      "path": "all_docs_fallback",
+      "count": 96
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-0",
+      "step": "pick",
+      "input_chars": 3774,
+      "source_chars": 0,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "stop_reading",
+      "agent": "researcher-0",
+      "round": 0,
+      "reason": "model_stop"
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-0",
+      "step": "write",
+      "input_chars": 2446,
+      "source_chars": 0,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "section",
+      "agent": "researcher-0",
+      "section": {
+        "번호": 0,
+        "절": "MESSENGER 임무 종료",
+        "역할": "운용·위험 연구원",
+        "round": 0,
+        "본문": "MESSENGER 임무의 종료일은 제공된 수성 | MESSENGER 카드에 명시된 2015년 4월 30일이다. 이 날짜는 카드의 Mission End 항목에 제시된 값이며, 질문의 언제 종료되었는가에 대해서는 이 항목을 직접 근거로 답할 수 있다. 카드에는 Launch 항목도 별도로 있으므로, 종료일의 근거는 발사 정보가 아니라 임무 종료 항목이라는 점을 분명히 해야 한다. «수성 | MESSENGER»\n\n그러나 같은 카드에는 MESSENGER 임무가 어떤 방식으로 종료되었는지에 관한 설명이 제시되어 있지 않다. 따라서 2015년 4월 30일이라는 종료일이 확인된다는 사실만으로, 종료 당시의 우주선 상태나 종료에 이르는 운용 절차까지 확인되었다고 해석할 수는 없다. 카드의 Type 항목은 Orbiter로 기재되어 있지만, 이 분류 역시 임무 종료 방식이나 그 원인을 설명하는 근거는 아니다. 또한 Objective에 적힌 Mapping and Science Discoveries는 임무의 목적에 해당하므로, 이를 실제 관측 성과나 종료 당시의 상황을 보여 주는 기록으로 바꾸어 서술해서는 안 된다. «수성 | MESSENGER»\n\n운용·위험 관점에서 제공된 자료로 확정할 수 있는 종료 관련 정보는 날짜이며, 종료를 초래한 운용 제약이나 실패 여부, 이에 대한 대응은 이 카드에서 확인되지 않는다. 여기서 종료 방식이 제시되지 않았다는 말은 해당 정보가 제공된 카드에 없다는 뜻이며, 실제 종료 과정에 특정 사건이 있었거나 없었다는 판단을 뜻하지 않는다. 질문은 종료 시점과 방식을 함께 묻고 있으므로, 현재 자료에 근거한 답변은 MESSENGER 임무가 2015년 4월 30일 종료되었으며 종료 방식은 카드만으로 확인할 수 없다는 범위로 한정된다. «수성 | MESSENGER»",
+        "부족": true,
+        "이유": "종료일은 D1에 명시되어 있으나, 질문의 핵심인 종료 방식은 제시되어 있지 않다. 종료 당시의 사건과 운용 경위를 명시한 추가 자료가 필요하다.",
+        "읽은문서": [
+          "수성 | MESSENGER"
+        ],
+        "인용": [
+          "수성 | MESSENGER",
+          "수성 | MESSENGER",
+          "수성 | MESSENGER"
+        ],
+        "draft_format": "source_ids_v1",
+        "raw_draft": {
+          "단락": [
+            {
+              "내용": "MESSENGER 임무의 종료일은 제공된 수성 | MESSENGER 카드에 명시된 2015년 4월 30일이다. 이 날짜는 카드의 Mission End 항목에 제시된 값이며, 질문의 언제 종료되었는가에 대해서는 이 항목을 직접 근거로 답할 수 있다. 카드에는 Launch 항목도 별도로 있으므로, 종료일의 근거는 발사 정보가 아니라 임무 종료 항목이라는 점을 분명히 해야 한다.",
+              "출처ID": [
+                "D1"
+              ]
+            },
+            {
+              "내용": "그러나 같은 카드에는 MESSENGER 임무가 어떤 방식으로 종료되었는지에 관한 설명이 제시되어 있지 않다. 따라서 2015년 4월 30일이라는 종료일이 확인된다는 사실만으로, 종료 당시의 우주선 상태나 종료에 이르는 운용 절차까지 확인되었다고 해석할 수는 없다. 카드의 Type 항목은 Orbiter로 기재되어 있지만, 이 분류 역시 임무 종료 방식이나 그 원인을 설명하는 근거는 아니다. 또한 Objective에 적힌 Mapping and Science Discoveries는 임무의 목적에 해당하므로, 이를 실제 관측 성과나 종료 당시의 상황을 보여 주는 기록으로 바꾸어 서술해서는 안 된다.",
+              "출처ID": [
+                "D1"
+              ]
+            },
+            {
+              "내용": "운용·위험 관점에서 제공된 자료로 확정할 수 있는 종료 관련 정보는 날짜이며, 종료를 초래한 운용 제약이나 실패 여부, 이에 대한 대응은 이 카드에서 확인되지 않는다. 여기서 종료 방식이 제시되지 않았다는 말은 해당 정보가 제공된 카드에 없다는 뜻이며, 실제 종료 과정에 특정 사건이 있었거나 없었다는 판단을 뜻하지 않는다. 질문은 종료 시점과 방식을 함께 묻고 있으므로, 현재 자료에 근거한 답변은 MESSENGER 임무가 2015년 4월 30일 종료되었으며 종료 방식은 카드만으로 확인할 수 없다는 범위로 한정된다.",
+              "출처ID": [
+                "D1"
+              ]
+            }
+          ],
+          "부족": true,
+          "이유": "종료일은 D1에 명시되어 있으나, 질문의 핵심인 종료 방식은 제시되어 있지 않다. 종료 당시의 사건과 운용 경위를 명시한 추가 자료가 필요하다."
+        },
+        "source_map": {
+          "D1": "수성 | MESSENGER"
+        }
+      }
+    },
+    {
+      "kind": "review",
+      "section": 0,
+      "round": 0,
+      "self_reported_insufficient": true,
+      "accepted": true,
+      "valid_draft": true,
+      "redispatch": true,
+      "reason": "valid nonregressing draft"
+    },
+    {
+      "kind": "assignment",
+      "agent": "researcher-0",
+      "round": 1,
+      "task": {
+        "번호": 0,
+        "절": "MESSENGER 임무 종료",
+        "지시": "제공된 MESSENGER 카드에 명시된 종료일인 2015년 4월 30일을 정리하고, 종료 방식은 카드에 제시되어 있지 않음을 밝혀라.",
+        "역할": "운용·위험 연구원",
+        "시작문서": "",
+        "예산": 2,
+        "다른구역": []
+      }
+    },
+    {
+      "kind": "candidates",
+      "agent": "researcher-0",
+      "round": 1,
+      "path": "all_docs_fallback",
+      "count": 96
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-0",
+      "step": "pick",
+      "input_chars": 3774,
+      "source_chars": 0,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "stop_reading",
+      "agent": "researcher-0",
+      "round": 1,
+      "reason": "model_stop"
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-0",
+      "step": "write",
+      "input_chars": 2446,
+      "source_chars": 0,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "section",
+      "agent": "researcher-0",
+      "section": {
+        "번호": 0,
+        "절": "MESSENGER 임무 종료",
+        "역할": "운용·위험 연구원",
+        "round": 1,
+        "본문": "MESSENGER 임무의 종료일은 제공된 수성 | MESSENGER 카드에 명시된 2015년 4월 30일이다. 이 날짜는 카드의 Mission End 항목에 제시된 값이며, 질문의 언제 종료되었는가에 대해서는 이 항목을 직접 근거로 답할 수 있다. 카드에는 Launch 항목도 별도로 있으므로, 종료일의 근거는 발사 정보가 아니라 임무 종료 항목이라는 점을 분명히 해야 한다. «수성 | MESSENGER»\n\n그러나 같은 카드에는 MESSENGER 임무가 어떤 방식으로 종료되었는지에 관한 설명이 제시되어 있지 않다. 따라서 2015년 4월 30일이라는 종료일이 확인된다는 사실만으로, 종료 당시의 우주선 상태나 종료에 이르는 운용 절차까지 확인되었다고 해석할 수는 없다. 카드의 Type 항목은 Orbiter로 기재되어 있지만, 이 분류 역시 임무 종료 방식이나 그 원인을 설명하는 근거는 아니다. 또한 Objective에 적힌 Mapping and Science Discoveries는 임무의 목적에 해당하므로, 이를 실제 관측 성과나 종료 당시의 상황을 보여 주는 기록으로 바꾸어 서술해서는 안 된다. «수성 | MESSENGER»\n\n운용·위험 관점에서 제공된 자료로 확정할 수 있는 종료 관련 정보는 날짜이며, 종료를 초래한 운용 제약이나 실패 여부, 이에 대한 대응은 이 카드에서 확인되지 않는다. 여기서 종료 방식이 제시되지 않았다는 말은 해당 정보가 제공된 카드에 없다는 뜻이며, 실제 종료 과정에 특정 사건이 있었거나 없었다는 판단을 뜻하지 않는다. 질문은 종료 시점과 방식을 함께 묻고 있으므로, 현재 자료에 근거한 답변은 MESSENGER 임무가 2015년 4월 30일 종료되었으며 종료 방식은 카드만으로 확인할 수 없다는 범위로 한정된다. «수성 | MESSENGER»",
+        "부족": true,
+        "이유": "종료일은 D1에 명시되어 있으나, 질문의 핵심인 종료 방식은 제시되어 있지 않다. 종료 당시의 사건과 운용 경위를 명시한 추가 자료가 필요하다.",
+        "읽은문서": [
+          "수성 | MESSENGER"
+        ],
+        "인용": [
+          "수성 | MESSENGER",
+          "수성 | MESSENGER",
+          "수성 | MESSENGER"
+        ],
+        "draft_format": "source_ids_v1",
+        "raw_draft": {
+          "단락": [
+            {
+              "내용": "MESSENGER 임무의 종료일은 제공된 수성 | MESSENGER 카드에 명시된 2015년 4월 30일이다. 이 날짜는 카드의 Mission End 항목에 제시된 값이며, 질문의 언제 종료되었는가에 대해서는 이 항목을 직접 근거로 답할 수 있다. 카드에는 Launch 항목도 별도로 있으므로, 종료일의 근거는 발사 정보가 아니라 임무 종료 항목이라는 점을 분명히 해야 한다.",
+              "출처ID": [
+                "D1"
+              ]
+            },
+            {
+              "내용": "그러나 같은 카드에는 MESSENGER 임무가 어떤 방식으로 종료되었는지에 관한 설명이 제시되어 있지 않다. 따라서 2015년 4월 30일이라는 종료일이 확인된다는 사실만으로, 종료 당시의 우주선 상태나 종료에 이르는 운용 절차까지 확인되었다고 해석할 수는 없다. 카드의 Type 항목은 Orbiter로 기재되어 있지만, 이 분류 역시 임무 종료 방식이나 그 원인을 설명하는 근거는 아니다. 또한 Objective에 적힌 Mapping and Science Discoveries는 임무의 목적에 해당하므로, 이를 실제 관측 성과나 종료 당시의 상황을 보여 주는 기록으로 바꾸어 서술해서는 안 된다.",
+              "출처ID": [
+                "D1"
+              ]
+            },
+            {
+              "내용": "운용·위험 관점에서 제공된 자료로 확정할 수 있는 종료 관련 정보는 날짜이며, 종료를 초래한 운용 제약이나 실패 여부, 이에 대한 대응은 이 카드에서 확인되지 않는다. 여기서 종료 방식이 제시되지 않았다는 말은 해당 정보가 제공된 카드에 없다는 뜻이며, 실제 종료 과정에 특정 사건이 있었거나 없었다는 판단을 뜻하지 않는다. 질문은 종료 시점과 방식을 함께 묻고 있으므로, 현재 자료에 근거한 답변은 MESSENGER 임무가 2015년 4월 30일 종료되었으며 종료 방식은 카드만으로 확인할 수 없다는 범위로 한정된다.",
+              "출처ID": [
+                "D1"
+              ]
+            }
+          ],
+          "부족": true,
+          "이유": "종료일은 D1에 명시되어 있으나, 질문의 핵심인 종료 방식은 제시되어 있지 않다. 종료 당시의 사건과 운용 경위를 명시한 추가 자료가 필요하다."
+        },
+        "source_map": {
+          "D1": "수성 | MESSENGER"
+        }
+      }
+    },
+    {
+      "kind": "review",
+      "section": 0,
+      "round": 1,
+      "self_reported_insufficient": true,
+      "accepted": true,
+      "valid_draft": true,
+      "redispatch": false,
+      "reason": "valid nonregressing draft"
+    },
+    {
+      "kind": "context",
+      "actor": "synthesizer",
+      "step": "edit",
+      "input_chars": 1036,
+      "source_chars": 0,
+      "card_chars": 0,
+      "manuscript_chars": 908
+    },
+    {
+      "kind": "report",
+      "report": "# MESSENGER 임무의 종료 시점과 방식\n\n제공된 카드에서 MESSENGER 임무의 종료일은 확인되지만, 종료 방식은 확인되지 않는다. 아래 본문은 확인 가능한 날짜와 자료의 한계를 구분해 설명한다.\n\n## 1. MESSENGER 임무 종료\n\nMESSENGER 임무의 종료일은 제공된 수성 | MESSENGER 카드에 명시된 2015년 4월 30일이다. 이 날짜는 카드의 Mission End 항목에 제시된 값이며, 질문의 언제 종료되었는가에 대해서는 이 항목을 직접 근거로 답할 수 있다. 카드에는 Launch 항목도 별도로 있으므로, 종료일의 근거는 발사 정보가 아니라 임무 종료 항목이라는 점을 분명히 해야 한다. «수성 | MESSENGER»\n\n그러나 같은 카드에는 MESSENGER 임무가 어떤 방식으로 종료되었는지에 관한 설명이 제시되어 있지 않다. 따라서 2015년 4월 30일이라는 종료일이 확인된다는 사실만으로, 종료 당시의 우주선 상태나 종료에 이르는 운용 절차까지 확인되었다고 해석할 수는 없다. 카드의 Type 항목은 Orbiter로 기재되어 있지만, 이 분류 역시 임무 종료 방식이나 그 원인을 설명하는 근거는 아니다. 또한 Objective에 적힌 Mapping and Science Discoveries는 임무의 목적에 해당하므로, 이를 실제 관측 성과나 종료 당시의 상황을 보여 주는 기록으로 바꾸어 서술해서는 안 된다. «수성 | MESSENGER»\n\n운용·위험 관점에서 제공된 자료로 확정할 수 있는 종료 관련 정보는 날짜이며, 종료를 초래한 운용 제약이나 실패 여부, 이에 대한 대응은 이 카드에서 확인되지 않는다. 여기서 종료 방식이 제시되지 않았다는 말은 해당 정보가 제공된 카드에 없다는 뜻이며, 실제 종료 과정에 특정 사건이 있었거나 없었다는 판단을 뜻하지 않는다. 질문은 종료 시점과 방식을 함께 묻고 있으므로, 현재 자료에 근거한 답변은 MESSENGER 임무가 2015년 4월 30일 종료되었으며 종료 방식은 카드만으로 확인할 수 없다는 범위로 한정된다. «수성 | MESSENGER»\n\n## 맺음말\n\nMESSENGER 임무는 2015년 4월 30일 종료되었다. 다만 제공된 카드에는 종료 방식이 제시되어 있지 않아, 질문의 방식에 관한 부분은 이 자료만으로 답할 수 없다.\n\n검토 경고:\nMESSENGER 임무 종료: 근거·분량 검토 필요",
+      "warnings": [
+        "MESSENGER 임무 종료: 근거·분량 검토 필요"
+      ]
+    }
+  ]
+}

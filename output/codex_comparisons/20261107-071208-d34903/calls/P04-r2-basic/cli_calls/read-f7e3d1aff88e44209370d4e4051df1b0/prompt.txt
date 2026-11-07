@@ -1,0 +1,1371 @@
+This is a supplied-text extraction task, not a coding task. Use only the source in this prompt. Do not invoke tools, read files, browse, edit, or delegate. Return exactly one JSON object matching the output schema.
+
+제공된 원문만 읽고 질문에 필요한 사실을 최대 8행의 표로 추출하라. 아직 원고를 쓰지 마라. subject는 사실의 주체, relation은 관계/특성, comparison_target은 비교 대상, value는 수치 표현, unit은 단위, basis는 비율의 기준/분모/설계목표·실제결과 구분이다. 원문에 없는 값은 추정하지 말고 빈 문자열로 둔다. 숫자가 없는 사실도 기록할 수 있다. 주체·비교대상·수치·단위는 원문 영어 표현을 그대로 쓰고 relation/basis/reason은 한국어로 쓴다. 각 행은 하나의 사실과 하나의 연속된 수치 표현만 담아라. 떨어진 두 수치를 세미콜론 등으로 합치지 말고 별도 행으로 분리하라. 선택 줄에 주체 이름이 없다면 이름이 나오는 앞뒤 문맥까지 포함하라. relation과 basis에 다른 언어 설명을 섞지 마라. subject에는 문서 제목의 임무명을 반복하기보다 선택 줄에 실제 쓰인 명사구나 대명사를 그대로 적어도 된다. 문서명은 별도로 보존된다. 수치와 그 수치의 주체를 포함하는 시작/끝 줄을 선택하라. 다른 장비의 정보로 질문 대상의 성과를 대신하지 마라. 필요한 사실이 빠지면 insufficient=true로 누락된 항목을 reason에 명시하라. 반드시 지정된 JSON Schema 객체 하나만 반환하라.
+맡은 절과 다른 연구원의 구역이 지정돼 있으면 부족 신고는 자기 절의 지시 범위로 판단하라. 다른 연구원이 맡은 자료가 자기 입력에 없다는 사실만으로 자기 절을 부족하다고 신고하지 마라.
+
+질문: 질문: 수성과 금성 탐사에서 강한 열 환경에 대응하는 설계는 어떻게 달랐으며, 그 차이가 관측에 주는 제약은 무엇인가?
+맡은 절: 금성 Venus Express의 방열·단열 설계와 관측 제약
+역할: 열·전력 설계 연구원 — 맡은 임무의 열 제어와 전력 선택을 근거에 연결한다
+지시: 열 유입 조건 → 열 제어 설계 → 관측 제약의 순서로 Venus Express의 근거를 정리하라. 방열판 면적·효율 확대와 다층 단열재의 역할을 밝히고, 자료에 명시된 자세·궤도·장비 운용 조건이 관측 방향과 시간에 주는 제약을 연결하라. 금성 표면의 고온과 궤도선의 열 환경을 구분하고, 명시되지 않은 제약은 근거의 한계로 표시하라.
+다른 연구원의 구역(중복 집필 금지): [{"절": "수성 MESSENGER의 차양·방열 설계와 관측 제약", "지시": "열 유입 조건 → 열 제어 설계 → 관측 제약의 순서로 MESSENGER의 근거를 정리하라. 세라믹 직물 차양과 방열판의 역할을 밝히고, 자료에 명시된 자세·궤도·장비 운용 조건이 관측 방향과 시간에 주는 제약을 연결하라. 명시되지 않은 제약은 추정하지 말고 근거의 한계로 표시하라.", "시작문서": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)"}]
+문서: 금성 | Venus Express ESA Mission Brochure
+L1: Welcome
+L2: to the Cryptic Planet
+L3: VENUS EXPRESS
+L4: BR-245
+L5: July 2005
+L6: Contact: ESA Publications Division
+L7: c/o ESTEC, PO Box 299, 2200 AG Noordwijk, The Netherlands
+L8: Tel. (31) 71 565 3400 - Fax (31) 71 565 5433
+L9: ■ ESA Headquarters
+L10: 8-10 rue Mario-Nikis
+L11: 75738 Paris Cedex 15
+L12: Tel. (33) 1.53.69.71.55
+L13: Fax (33) 1.53.69.76.90
+L14: ■ ESTEC Noordwijk
+L15: The Netherlands
+L16: Tel. (31) 71.565.3006
+L17: Fax (31) 71.565.6040
+L18: ■ ESOC Darmstadt
+L19: Germany
+L20: Tel. (49) 6151.90.2696
+L21: Fax (49) 6151.90.2961
+L22: ■ EAC Cologne
+L23: Germany
+L24: Tel. (49) 2203.60.010
+L25: Fax (49) 2203.60.0166
+L26: ■ ESRIN Frascati
+L27: Italy
+L28: Tel. (39) 06.941.80.260
+L29: Fax (39) 06.941.80.257
+L30: Welcome
+L31: to the Cryptic Planet
+L32: 
+L33: AA bb out ESAout ESA
+L34: The European Space Agency (ESA) was formed on 31 May 1975. It currently  has 15 Member States: Austria, Belgium, Denmark, Finland,
+L35: France, Germany, Ireland, Italy, the Netherlands, Norway, Portugal, Spain, Sweden, Switzerland and the United Kingdom.
+L36: The ESA Science Programme has launched a series of innovative and successful missions. Highlights of the programme include:
+L37: Cluster, which is a four-spacecraft mission
+L38: to investigate in unprecedented detail the
+L39: interaction between the Sun and the Earth’s
+L40: magnetosphere.
+L41: Cassini-Huygens is one of the most
+L42: ambitious planetary exploration efforts ever
+L43: attempted. After a seven-year journey, the
+L44: Cassini orbiter began studying the Saturnian
+L45: system in great detail, and the Huygens probe
+L46: descended onto Saturn’s giant moon Titan,
+L47: unveiling an amazing cold but Earth-like world.
+L48: Giotto, which took the first close-up
+L49: pictures of a comet nucleus (Halley) and
+L50: completed flybys of Comets Halley and Grigg-
+L51: Skjellerup.
+L52: Double Star, following in the footsteps of
+L53: the Cluster mission, with its two spacecraft it
+L54: studies the effects of the Sun on the Earth’s
+L55: environment.
+L56: Rosetta, Europe’s comet chaser, will be the
+L57: first mission to fly alongside and land on a
+L58: comet, probing the building blocks of the Solar
+L59: System in unprecedented detail.
+L60: Hipparcos, which fixed the positions of
+L61: the stars far more accurately than ever before
+L62: and changed astronomers' ideas about the
+L63: scale of the Universe.
+L64: Hubble Space Telescope,
+L65: a collaboration with NASA on the world's most
+L66: important and successful orbital observatory.
+L67: ISO, which studied cool gas clouds and
+L68: planetary atmospheres. Everywhere it looked,
+L69: it found water in surprising abundance.
+L70: IUE, the first space observatory ever
+L71: launched, marked the real beginning of
+L72: ultraviolet astronomy.
+L73: SOHO, which is providing new views of the
+L74: Sun's atmosphere and interior, revealing solar
+L75: tornadoes and the probable cause of the
+L76: supersonic solar wind.
+L77: Ulysses, the first spacecraft to fly over the
+L78: Sun’s poles.
+L79: XMM-Newton, with its powerful mirrors,
+L80: is helping to solve many cosmic mysteries of
+L81: the violent X-ray Universe, from enigmatic
+L82: black holes to the formation of galaxies.
+L83: For further information on the ESA Science Programme visit the ESA Science Web
+L84: Site at: http://www.esa.int/science
+L85: Integral, which is the first space
+L86: observatory that can simultaneously observe
+L87: celestial objects in gamma rays, X-rays and
+L88: visible light.
+L89: Mars Express, Europe’s first mission to
+L90: Mars, which consists of an orbiter and a lander
+L91: looking for signs of water and life on the Red
+L92: Planet.
+L93: SMART-1, Europe’s first mission to the
+L94: Moon, which will test solar-electric propulsion
+L95: in flight, a key technology for future deepspace missions.
+L96: Prepared by: ESA Science Programme Communication Service
+L97: Written by: Monica Talevi
+L98: Published by: ESA Publications Division
+L99: ESTEC, PO Box 299
+L100: 2200 AG Noordwijk, The Netherlands
+L101: Editors: Bruce Battrick  & Carl Walker
+L102: Design and layout: Jules Perel
+L103: Cover image: Christophe Carreau
+L104: Copyright: © 2005 European Space Agency
+L105: ISSN No: 0250-1589
+L106: ISBN No: 92-9092-486-1
+L107: Price: 7 Euros
+L108: 
+L109: Contents
+L110: Tribute to Venus, the cryptic planet 4
+L111: To Venus in record time 7
+L112: Rendezvous with Earth’s mysterious sister 10
+L113: Penetrating an impenetrable world 14
+L114: Planetary answers from atmospheric clues 17
+L115: Venus Express: a technological jewel 24
+L116: The launcher 26
+L117: Operating Venus Express 27
+L118: Venus Express
+L119: Welcome to the Cryptic Planet
+L120: -3
+L121: Venus Express
+L122: Welcome to the Cryptic Planet
+L123: Contents
+L124: Tribute to Venus, the cryptic planet 4
+L125: To Venus in record time 7
+L126: Rendezvous with Earth’s mysterious sister 10
+L127: Penetrating an impenetrable world 14
+L128: Planetary answers from atmospheric clues 17
+L129: Venus Express: a technological jewel 24
+L130: The launcher 26
+L131: Operating Venus Express 27
+L132: 2
+L133: C. Carreau © ESA
+L134: 
+L135: Venus, the ‘Morning Star’ , the second closest
+L136: planet to the Sun after Mercury and our
+L137: closest planetary neighbour, has fascinated
+L138: mankind from the earliest times. Named
+L139: after the Roman goddess of love and
+L140: beauty, it is the third brightest object in the
+L141: sky after the Sun and the Moon.
+L142: Since the beginning of the space era, Venus
+L143: has been an attractive subject for planetary
+L144: science and it was one of the first natural
+L145: targets to explore, due to its proximity to
+L146: Earth – half as far as Mars at closest
+L147: approach. Very similar to Earth in size and
+L148: mass, Venus was expected to be very like to
+L149: our own planet when the first Russian and
+L150: American space probes approached it in
+L151: the early 1960s and started returning the
+L152: first data about its atmosphere.
+L153: Observers soon realised that Venus is an
+L154: entirely different, exotic and inhospitable
+L155: world, hidden behind a curtain of dense
+L156: clouds of noxious gases. It has an
+L157: atmosphere composed mainly of carbon
+L158: dioxide, with a crushing surface pressure
+L159: and burning-hot temperatures. The
+L160: question then arose: Why did a planet
+L161: apparently so similar to Earth evolve in such
+L162: a radically different way over the last four
+L163: thousand million years?
+L164: By the mid-1990s, many ground
+L165: observatories and more than twenty
+L166: spacecraft had attempted to explore Venus.
+L167: A set of orbiters and descent probes - the
+L168: Soviet Venera series and the Vega balloons
+L169: and landers, the US Mariner, Pioneer Venus
+L170: and Magellan missions - tried to penetrate
+L171: this hostile world to add pieces to the big
+L172: jigsaw that Venus represented for scientists.
+L173: Many missions were lost, many landers were
+L174: destroyed by the high pressure and
+L175: temperature of the Venusian atmosphere
+L176: while trying to gather the first information
+L177: about the planet. For years, the dense
+L178: atmosphere with its thick cloud cover
+L179: prevented scientists from seeing what lay
+L180: below and from understanding the nature
+L181: of the Venusian surface. Only when modern
+L182: radar imaging systems became operational
+L183: on space probes and at ground
+L184: observatories did the first glimpses of the
+L185: real face of Venus start to emerge.
+L186: NASA’s Pioneer Venus mission (1978), the
+L187: Soviet Union’s Venera 15 and 16 missions
+L188: Tribute to Venus,
+L189: the cryptic planet
+L190: Thick cloud coverage as shown by this
+L191: Mariner 10 mosaic image, taken in
+L192: February 1974.
+L193: Venera 14 lander images of the surface of Venus taken in March 1982. The lander survived for 60 minutes.
+L194: NASA © Calvin J. Hamilton
+L195: © NASA
+L196: Tribute to Venus,
+L197: the cryptic planet
+L198: 
+L199: -54
+L200: Composite radar image obtained by the Magellan mission, displaying the whole Venusian surface. At the top, left of centre,
+L201: the bright region is Maxwell Montes, the highest mountain range on Venus. Extending along the equator to the right of
+L202: centre is Aphrodite Terra, a large highland region on Venus.
+L203: © NASA/JPL
+L204: Mariner 2 (USA, 1962) Fly-by First spacecraft at Venus. Closest distance 35 000 km. No magnetic field detected.
+L205: Venera 4 Atmospheric probe First probe to return data about atmospheric composition (90-95% carbon dioxide), surface temperature (500°C)
+L206: (USSR, 1967) and pressure (75 bar). It was crushed by the pressure before it reached the surface.
+L207: Venera 5 & 6 Atmospheric probes It detected the presence of atmospheric nitrogen (2.5%) and oxygen (~4 %).
+L208: (USSR, 1969) It was crushed by atmospheric pressure a few kilometres before reaching the surface.
+L209: Venera 7 Lander The first successful soft landing of a spacecraft on another planet. It measured a surface temperature of 475°C
+L210: (USSR, 1970) and a surface pressure of 90 bar.
+L211: Venera 8 Lander The first to measure wind speeds as it descended through the atmosphere (from 100 m/s above 48 kilometres
+L212: (USSR, 1972) to 1 m/s below 10 kilometres). Surface composition measured by gamma-ray spectrometer.
+L213: Mariner 10 Fly-by spacecraft Flew by Venus in 1974 on its way to Mercury. It was the first spacecraft to have an imaging system,
+L214: (USA, 1974) recording circulation in the Venusian atmosphere and the temperature of the cloud tops to be -23°C.
+L215: Venera 9 & 10 2 orbiters with First spacecraft in orbit around Venus. They photographed the clouds and looked at the upper atmosphere,
+L216: (USSR, 1975) 1 lander each while the landers returned the first black and white panoramic images of the surface.
+L217: Pioneer Venus 1 & 2 1 orbiter and Longest mission in orbit around Venus (14 years). First orbiter to conduct radar mapping of the surface.
+L218: (USA, 1978-1992) 4 atmospheric probes Radio bursts possibly caused by lightning were detected. No magnetic field was detected. Ov er a decade, it
+L219: recorded a 90%  decrease in sulphur dioxide, possibly indicating a large volcanic eruption just before the
+L220: orbiter’s arrival. The probes measured structure, composition and cloud properties down to 12 km altitude.
+L221: Venera 11 & 12 Fly-by, 2 landers During the descent, the landers investigated the structure and composition of the atmosphere and clouds,
+L222: (USSR, 1978) measured scattered solar radiation. Atmospheric dynamics were studied by Doppler tracking.
+L223: Venera 13 & 14 Fly-by, 2 landers The landers returned the first colour panoramic views of the surface. They conducted soil analysis and found
+L224: (USSR, 1982) leucite basalt, a rock type rare on Earth, and tholeiitic basalt similar to that found at mid-ocean ridges on Earth .
+L225: Venera 15 & 16 2 orbiters Radar mapping of the surface. Detailed study of the mesosphere and cloud tops in the morning and evening
+L226: (USSR, 1983) sectors by high-spectral-resolution thermal emission spectroscopy.
+L227: Vega 1 & 2 Fly-by spacecraft en route First balloons in the atmosphere of another planet recorded winds running at 240 km/h. Landers provid ed
+L228: (USSR, 1985) to Comet Halley, carrying precise temperature profiles down to the surface and
+L229: in situ measurements of cloud composition.
+L230: 1 lander and 1 balloon each
+L231: Magellan Orbiter First almost-global radar mapping of the surface (300 m/pixel resolution).
+L232: (USA, 1990-1994)
+L233: Galileo Fly-by en route Spectral imaging of the night-side near-infrared emissions. Detection of radio waves possibly emitted by
+L234: (USA, 1990) to Jupiter lightning.
+L235: Cassini-Huygens Fly-by en route Spectral imaging of the night-side near-infrared emissions.
+L236: (USA, ESA, I, 1998, 1999) to Saturn
+L237: Major Historical Missions to Venus
+L238: 
+L239: (1983-1984), and NASA’s Magellan radarmapping mission (1990-1994) together
+L240: provided a comprehensive picture of an
+L241: arid world, with landscapes shaped by
+L242: intense volcanic and geological activity.
+L243: There were vast plains marked by lava
+L244: flows, bordered by highlands and
+L245: mountains. The later discovery of the nightside thermal emissions from deep inside
+L246: the atmosphere of Venus provided an
+L247: effective tool with which to peek through
+L248: the dense clouds and study the lower
+L249: atmospheric layers. The Galileo and Cassini
+L250: spacecraft were the first to use this
+L251: approach during their short fly-bys en route
+L252: to Jupiter and Saturn.
+L253: Despite this past intensive exploration of
+L254: the planet, our knowledge of Venus is still
+L255: very limited. Almost all of the planet’s
+L256: peculiar features remain unexplained, and
+L257: so a new phase of exploration is long
+L258: overdue. This important scientific call has
+L259: been picked up by Europe and, after being
+L260: forsaken for a decade, the ‘Morning Star’ will
+L261: receive a new visitor in the form of Venus
+L262: Express, an orbiter mission developed by
+L263: the ESA and due for launch in October
+L264: 2005.
+L265: Thanks to a set of state-of-the-art
+L266: instruments for planetary investigations,
+L267: Venus Express will delve into the secrets of
+L268: the Venusian atmosphere. It will study its
+L269: complex dynamics and chemistry, and the
+L270: interactions between the atmosphere and
+L271: the surface, which will provide clues about
+L272: the surface’s characteristics. It will also study
+L273: the interactions between the atmosphere
+L274: and the interplanetary environment (solar
+L275: wind) to improve our understanding of the
+L276: planet’s evolution.
+L277: In the most comprehensive study ever of
+L278: the Venusian atmosphere, Venus Express
+L279: will address many unanswered questions:
+L280: • How do the complex global dynamics
+L281: of the planet work?
+L282: What causes the super-fast
+L283: atmospheric rotation and the
+L284: hurricane-force winds?
+L285: What maintains the double
+L286: atmospheric vortex at the poles?
+L287: • How does the cloud system work?
+L288: How do clouds and haze form and
+L289: evolve at different altitudes?
+L290: What is at the origin of mysterious
+L291: ultraviolet markers at the cloud tops?
+L292: • What processes govern the chemical
+L293: state of the atmosphere?
+L294: • What role does the ‘greenhouse effect’
+L295: play in the global evolution of the
+L296: Venusian climate?
+L297: • What governs the escape processes of
+L298: the atmosphere?
+L299: • Are there water, carbon-dioxide or
+L300: sulphuric-acid cycles on Venus?
+L301: • What caused the global volcanic
+L302: resurfacing of Venus 500 thousand
+L303: million years ago?
+L304: • Why are some areas on the surface so
+L305: reflective to radar?
+L306: • Is there currently volcanic or seismic
+L307: activity on the planet?
+L308: The Magellan radar mapping mission.
+L309: The Pioneer Venus mission.
+L310: The Venera 15 spacecraft.
+L311: © NASA
+L312: © NASA
+L313: 
+L314: -76
+L315: AOES Medialab/R. v. Haarlem © ESA
+L316: HST © L. Esposito (Univ. Colorado)/NASA
+L317: In the sidereal dance of the planets, Venus
+L318: reaches its closest point to Earth every
+L319: nineteen months. At the next approach, ESA
+L320: will be ready to launch Venus Express to the
+L321: star-bright planet. The launch window will
+L322: open on 26 October 2005, and close one
+L323: month later on 24 November. Everything
+L324: has been planned to exploit the planet’s
+L325: proximity to make the journey as short as
+L326: possible.
+L327: A Russian Soyuz-Fregat launcher will boost
+L328: Venus Express into space from the Baikonur
+L329: Cosmodrome in Kazakhstan. The Soyuz
+L330: rocket will lift the autonomous upper stage
+L331: ‘Fregat’ , with Venus Express mounted on
+L332: top, into a sub-orbital trajectory. Then, with
+L333: two consecutive burns, Fregat will inject the
+L334: spacecraft onto an interplanetary or ‘escape’
+L335: trajectory that, with few corrections, will
+L336: take it directly to Venus.
+L337: For about five months (162 days), Venus
+L338: Express will cruise in the peace of space.
+L339: Once at Venus, in April 2006, it will fire its
+L340: main engine to slow down and counteract
+L341: the predominant pull of the Sun and of
+L342: Venus, to be captured into orbit around the
+L343: planet. A large velocity change is required
+L344: for the initial capture manoeuvre, which will
+L345: require the engine to burn for 53 minutes.
+L346: Starting about five days later, a two-weeklong series of manoeuvres will put the
+L347: spacecraft into its final operating orbit,
+L348: circling the poles of the planet once every
+L349: 24 hours. At its closest, the spacecraft’s orbit
+L350: will drop to 250 kilometres altitude over
+L351: northern latitudes, and at its furthest it will
+L352: be 66 000 kilometres from the planet’s
+L353: surface.
+L354: To Venus in record timeTo Venus in record time
+L355: Venus Express leaves Earth
+L356: 
+L357: The orbit of Venus Express has
+L358: been specifically chosen to learn as
+L359: much as possible about the planet
+L360: and to maximise the scientific return
+L361: from the mission. It prescribes an
+L362: ellipse which is ‘locked’ in space with
+L363: respect to fixed stars, while the planet
+L364: slowly rotates below it. During the
+L365: course of the first full Venusian day
+L366: (243 Earth days), the spacecraft will
+L367: make a global observation from orbit of
+L368: the Venusian atmosphere, of the surface
+L369: characteristics and of the interaction with
+L370: the solar wind. On the second Venusian day,
+L371: Venus Express will have the opportunity to
+L372: fill possible observation gaps experienced
+L373: in the course of the first day and to study in
+L374: more detail items of particular scientific
+L375: interest selected during the first day. The
+L376: second day also allows observation of how
+L377: the phenomena seen on the first day vary
+L378: with time.
+L379: The spacecraft’s very short distance from
+L380: Venus at pericentre (250 kilometres) allows
+L381: in particular study of the northern
+L382: hemisphere at
+L383: very high
+L384: resolution. One
+L385: specially interesting
+L386: feature is ‘Ishtar Terra’ ,
+L387: a continent-sized highland
+L388: that may provide clues as to whether the
+L389: surface of Venus is actually ‘moving’ on
+L390: geological time scales. The greater distance
+L391: of Venus Express from the planet around
+L392: apocentre (66 000 kilometres) will allow
+L393: good global coverage of the atmospheric
+L394: conditions in the southern hemisphere,
+L395: including the tracking of cloud features.
+L396: Venus Express’s journey to Venus.
+L397: C.Carreau © ESA
+L398: AOES Medialab © ESA
+L399: Venus Express re-uses some of Mars Express’s and Rosetta’s instrumentation.
+L400: 
+L401: -98
+L402: ‘Fast’ is Venus Express’s watchword
+L403: Not only will Venus Express reach the planet in a very short time, but the mission has also been developed in an incredibly
+L404: short time. Actually, Venus Express is the fastest ESA mission ever developed, taking less than four years from concept to
+L405: launch.
+L406: In 2001, in consultation with the European scientific community, ESA saw a very favourable and creative opportunity for
+L407: planetary research. By reusing the Mars Express spacecraft design and the same industrial team, as well as some of the
+L408: scientific instruments developed for Rosetta (mission to study a comet) and Mars Express (the ESA mission to Mars), Europe
+L409: would be provided with an excellent chance to have an almost fully equipped mission to explore Venus.
+L410: Venus Express, along with the ESA missions to Mars and Mercury, will complete a comprehensive European study of the
+L411: terrestrial planets, resulting in a global and coherent programme of planetary research and providing Europe with a leading
+L412: role in this field.
+L413: The development of Venus Express was started in 2002, with a global investment by ESA of 220 million Euro, covering
+L414: development of the spacecraft, launch and operations. This amount also includes about 15 million Euro allocated to research
+L415: institutes for building the instruments. Together with Rosetta and Mars Express, Venus Express makes up a family of missions
+L416: in which costs are shared.
+L417: AOES Medialab © ESA
+L418: AOES Medialab © ESA
+L419: With Venus Express, Mars Express orbiting Mars and
+L420: BepiColombo to reach Mercury, ESA will complete
+L421: the study of terrestrial  planets.
+L422: Orbit Highly elliptical
+L423: Orbit inclination 90˚ over Venusian equator (polar orbit)
+L424: Pericentre (min.  distance from the planet’s surface) 250 km
+L425: Apocentre (max. distance from the planet’s surface) 66 000 km
+L426: Pericentre latitude ~80 to 90˚N
+L427: Period 24 hours
+L428: Planned mission lifetime 2 Venusian sidereal days (486 Earth days).
+L429: It is possible to extend the mission by
+L430: another two Venusian days.
+L431: 
+L432: Mariner 10, Apollo 17 and
+L433: Viking images showing
+L434: the relative dimensions of
+L435: Venus, Earth and the
+L436: terrestrial planets.
+L437: Venus, Mars and Earth, which constitute
+L438: three of the four inner or ‘rocky’ planets of
+L439: the Solar System, have a lot in common –
+L440: a solid surface you could walk on, a
+L441: comparable surface composition, an
+L442: atmosphere, and a weather system. If you
+L443: are looking for a twin sister to Earth, that
+L444: would be Venus. Or so it seems!
+L445: It is amazing to compare some of the
+L446: planetary features of Venus with those of
+L447: Earth. Their masses are basically the same,
+L448: and their densities also. Their radii seem just
+L449: to be copied from one planet to the other.
+L450: Their distances from the Sun are not so
+L451: different – Venus is about 108 million
+L452: kilometres away and Earth 150 million
+L453: kilometres. Their rocks are both largely
+L454: basaltic, the result of intense volcanism and
+L455: of a similar solidification process, initiated at
+L456: about the same time, four and a half
+L457: thousand million years ago, when the
+L458: planets of the Solar System first started to
+L459: form from the solar ‘proto-planetary nebula’ .
+L460: However, looking more closely, Venus and
+L461: Earth are truly worlds apart in many major
+L462: respects. Walking on Venus’s
+L463: surface would be difficult, like
+L464: walking under water at a
+L465: depth of 900 metres - the
+L466: atmospheric pressure on
+L467: Venus is 90 times greater than
+L468: on Earth at sea level - and as
+L469: uncomfortable as sitting in an
+L470: oven at 465ºC ! Venus’s surface
+L471: is the hottest in the Solar
+L472: System. Despite only 10% of
+L473: the solar flux reaching the surface, enough
+L474: energy is trapped by gases and particles
+L475: present in the lower atmosphere to raise
+L476: the surface temperature dramatically. A
+L477: catastrophic ‘greenhouse effect’ is taking
+L478: place.
+L479: Venus’s atmosphere is composed almost
+L480: entirely of carbon dioxide, with very little
+L481: Rendezvous with
+L482: Earth’s mysterious sister
+L483: Rendezvous with
+L484: Earth’s mysterious sister
+L485: ©Calvin J. Hamilton
+L486: © Calvin J. Hamilton
+L487: Magellan © NASA/USGS Flagstaff
+L488: Only thick cloud cover could be seen
+L489: from this image taken in February 1990
+L490: by NASA’s Galileo spacecraft.
+L491: Venus Express will orbit over Venus’s poles. It will map the North Pole in high
+L492: resolution.
+L493: 
+L494: water vapour. It contains significant
+L495: amounts of corrosive sulphur-bearing gases
+L496: and rapidly moving clouds of sulphuric-acid
+L497: droplets. The dense clouds scatter back to
+L498: space about 80% of the radiation received
+L499: from the Sun. Scientists translate this
+L500: concept by saying that Venus has a very
+L501: high albedo. This is the reason why it is so
+L502: easy to see with the naked eye and was
+L503: long considered to be a star rather than a
+L504: planet.
+L505: Venus is almost 70% covered by gently
+L506: rolling uplands, about 20% by very flat
+L507: lowlands called ‘planitia’ , and 10% by
+L508: continent-size highlands, rising above the
+L509: lowland regions, called ‘tesserae’ . On Earth,
+L510: continents are associated with the borders
+L511: of tectonic plates, which drift and collide
+L512: over time, giving birth to mountains and
+L513: causing earthquakes. On Venus there does
+L514: not seem to be any tectonic-plate activity
+L515: to move and shape the surface. On the
+L516: -1110
+L517: Venus Earth
+L518: Mass 4.87x1024 kg 5.98 x 10 24 kg
+L519: Equatorial radius 6052 kilometres 6378 kilometres
+L520: Density (mean) 5250 kilograms per cubic metre 5520 kilograms per cubic metre
+L521: Average distance from the Sun 108 million km (0.7 Astronomical Unit) 150 million km (1 Astronomical Unit)
+L522: Rotation period 243 Earth days (retrograde) 23 hours 56 minutes
+L523: Year length (orbital period) 224.7 (Earth) days 365.2 days
+L524: Surface temperature (mean) 465 ºC 15 ºC
+L525: Atmospheric pressure on the surface 90 bars 1 bar (sea level)
+L526: Visual albedo (reflectivity) 0.76 0.37
+L527: Highest point on the surface Maxwell Montes (17 kilometres) Mount Everest (8.8 kilometres)
+L528: Major atmospheric components 96% carbon dioxide, 3% nitrogen 78% nitrogen, 21% oxygen, 1% argon
+L529: Surface materials Basaltic rock and altered materials Basaltic and granitic rock and altered materials
+L530: Orbit inclination 3.4 º 0 º (per definition)
+L531: Obliquity of rotation axis 178 º 23.5 º
+L532: Surface gravity (at equator) 8.9 m/s2 9.8 m/s2
+L533: Magellan  © NASA/JPL
+L534: Magellan © Calvin J. Hamilton
+L535: Three-dimensional view of Alpha Regio, one of Venus’s
+L536: highlands. It is 1300 kilometres across and it was  the first
+L537: feature on Venus to be identified from Earth-based radar.
+L538: Rolling uplands, showing signs of lava flows.
+L539: 
+L540: contrary, it seems that there is a single plate
+L541: covering the whole planet. Whether this
+L542: crust is thick or thin, and whether it still
+L543: moves, no one yet knows.
+L544: It is sure that the surface of Venus is shaped
+L545: by deformation of the crust and by
+L546: volcanism. Lava flows extend hundreds
+L547: miles across the surface. Volcanism
+L548: indicates that, at least in the past, the crust
+L549: has been lying on a liquid mantle, like on
+L550: Earth. However, on Venus there are signs of
+L551: many different kinds of volcanism, such as
+L552: volcanic plains and volcanic rises, besides
+L553: the classic cones we find on Earth. So are
+L554: volcanoes still active on Venus?
+L555: High mountains and many impact craters
+L556: pepper the surface. Unlike other worlds,
+L557: however, it is almost impossible to find
+L558: craters less than two kilometres across. This
+L559: is possibly due to the high density of the
+L560: planet’s atmosphere, which pulverizes
+L561: smaller meteorites before they hit the
+L562: ground.
+L563: The oldest craters seem not to be older
+L564: than 500 million years, which may indicate
+L565: that the planet behaves like a volcanic
+L566: ‘pressure cooker’ . On Earth, the constant,
+L567: steady eruption of volcanoes and the
+L568: shifting of the surface ensures that the
+L569: energy released is dissipated gradually.
+L570: Instead, on Venus pressure builds up inside
+L571: the planet until the whole world is engulfed
+L572: in a global eruption, resurfacing the planet
+L573: and destroying many craters that have
+L574: formed.
+L575: Magellan images showing different kinds of volcanism at
+L576: Venus: group of four overlapping domes at the edge of
+L577: Alpha Regio, showing possible viscous eruptions (top);
+L578: Sif Mons volcano (centre); cluster of small volcanic cones
+L579: overlying a fracture network in Niobe Planitia (bottom).
+L580: © NASA
+L581: © NASA
+L582: © NASA
+L583: 
+L584: Venus rotates in the opposite direction to
+L585: Earth, so the Sun appears to rise in the west.
+L586: It also rotates very slowly, with one rotation,
+L587: or sidereal day, taking 243 Earth days. This is
+L588: longer than the Venusian year (orbital
+L589: period), which is 225 Earth days long. Its
+L590: winds, however, are so fast that they can
+L591: circumnavigate the planet in only four Earth
+L592: days: it is still not known why this happens.
+L593: Venus does not have its own planetary
+L594: magnetic field to protect it from the solar
+L595: wind. On Earth, the magnetic field is
+L596: generated by movements in the metallic
+L597: core coupled with the planet’s relatively fast
+L598: rotation. On Venus, the core may be solid
+L599: and the rotation of the planet is very slow,
+L600: which may explain the lack of a magnetic
+L601: field, but scientists are still debating the
+L602: reasons.
+L603: In studying Venus, we are trying to
+L604: understand not only how the Solar System
+L605: formed and evolved, but also the complex
+L606: set of forces and mechanisms that have
+L607: caused such dramatic differences between
+L608: the internal structures, surfaces and
+L609: atmospheres of Venus and Earth. An
+L610: understanding of Venus can therefore lead
+L611: eventually to a better understanding of our
+L612: own planet, and especially the long-term
+L613: evolution of Earth’s climate.
+L614: The Venus Express spacecraft.
+L615: Venus rotates in the opposite direction to Earth.
+L616: -1312
+L617: C. Carreau © ESA
+L618: © Calvin J. Hamilton
+L619: 
+L620: Probing the mysteries of Venus with a
+L621: precision never before achieved is the goal
+L622: of Venus Express.
+L623: Compared with previous missions, the
+L624: scientific instrumentation onboard Venus
+L625: Express is enormously improved. This will
+L626: allow us to study Venus’s atmosphere in
+L627: great detail, to understand its complex
+L628: dynamics and its close relationship with the
+L629: surface and with the planetary space
+L630: environment around it. Venus Express data
+L631: will answer many of the unresolved
+L632: questions about Venus and will allow the
+L633: definition of new objectives for future
+L634: missions to the planet. This will be achieved
+L635: using mainly instruments inherited from
+L636: the scientific packages already developed
+L637: for the Mars Express and Rosetta missions.
+L638: The ‘eyes’ of Venus Express are extremely
+L639: Penetrating an
+L640: impenetrable world
+L641: Penetrating an
+L642: impenetrable world
+L643: Instrument Purpose Heritage
+L644: ASPERA The Analyser of Space Plasma and Energetic Atoms will investigate the interaction between the solar wind Mars Express
+L645: (led by Institute of Space Physics, and the atmosphere of Venus by measuring outflowing particles from the planet’s atmosphere a nd the
+L646: Kiruna, Sweden) particles making up the solar wind. It will study how the molecules and ions escape from the planet.
+L647: MAG Venus has no detectable internal magnetic field, and the field that exists around the planet is entirely due Newly developed for
+L648: (led by IWF , Graz, Austria) to the interaction between the solar wind and the atmosphere. The MAG magnetometer will study this Ve nus Express (but
+L649: process and will help in understanding the effect this has on Venus’s atmosphere, for instance the re-using sensor design
+L650: atmospheric escape process. from the Rosetta lander)
+L651: PFS The Planetary Fourier Spectrometer will be able to measure the temperature of the atmosphere at Mars Express
+L652: (led by IFSI-INAF , Rome, Italy) altitudes of 55–100 kilometres and 0–10 kilometres at very high resolutions. It will also be abl e to
+L653: measure the surface temperature and therefore be able to search for volcanic activity. In addition to its
+L654: temperature measurements, PFS will be able to make composition measurements of the atmosphere.
+L655: SpicaV/SOIR The Ultraviolet and Infrared atmospheric spectrometer for stellar and solar occultation assists in the analysis SpicaV inherited  from
+L656: (led by Service d’Aeronomie du CNRS, of Venus’s atmosphere. In particular, it will search for the small quantities of water expe cted to exist in Mars Express, new
+L657: Verrieres, France; Institute for Space the Venusian atmosphere. It will also look for sulphur compounds and molecular oxygen in the atmosphere. development for SOIR
+L658: Aeronomy, Belgium; IKI, Russia) It will determine the density and temperature of the atmosphere at 80–180 kilometres altitude.
+L659: VeRa The Venus Radio Science experiment uses the powerful radio link between the spacecraft and Earth to Rosetta
+L660: (led by Univ. der Bunderswehr, investigate the conditions prevalent in the ionosphere of Venus. Scientists will also use it to s tudy the
+L661: Munich, Germany) density, temperature, and pressure of the atmosphere from 35–40 km up to 100 km from the
+L662: surface, and to determine roughness and electrical properties of the surface. It will also allow investigations
+L663: of the conditions of the solar wind in the inner part of the Solar System.
+L664: VIRTIS The Ultraviolet/Visible/Near-Infrared mapping spectrometer will be able to study the composition of the lower Rosetta
+L665: (led by CNR-IASF , Rome, Italy, atmosphere between 40 kilometres altitude and the surface. It will track the clouds at both ultra violet and
+L666: Observatoire de Paris, France;) infrared wavelengths and allow scientists to study atmospheric dynamics at different altitudes.
+L667: VMC The Venus Monitoring Camera is a wide-angle multi-channel camera that will be able to take images of the Newly developed for
+L668: (led by MPS, Katlenburg-Lindau, planet at near-infrared, ultraviolet and visible wavelengths. VMC will be able to make global im ages and will Venus Express (reusing
+L669: Germany) study the cloud dynamics and image the surface. In addition, it will assist in the identification of phenomena parts of Mars Express’s
+L670: seen by other instruments. High Resolution Stereo
+L671: Camera)
+L672: 
+L673: sensitive to a wide range of electromagnetic wavelengths, from the ultraviolet
+L674: to the infrared. They will be able to peer
+L675: down through the atmosphere by
+L676: exploiting for the first time the so-called
+L677: ‘spectroscopic windows’ , discovered in the
+L678: late 1980s thanks to ground observations.
+L679: The radiation leaking from the deep
+L680: atmosphere through these ‘windows’ can
+L681: be observed on Venus’s night side.
+L682: Surprisingly, infrared radiation from the
+L683: lower atmosphere and even the surface can
+L684: escape to space here, carrying precious
+L685: information that Venus Express will collect
+L686: from orbit. In this way, many phenomena
+L687: previously hidden below the thick clouds
+L688: will be seen by Venus Express.
+L689: -1514
+L690: C.Carreau © ESA
+L691: Venus Express ‘firsts’
+L692: • First global monitoring of the composition of the lower atmosphere via near-infrared transparency ‘windows’.
+L693: • First coherent study of atmospheric temperature and dynamics at different levels of the atmosphere, from the surface up to ~20 0 km.
+L694: • First measurements from orbit of global surface-temperature distribution.
+L695: • First study of middle- and upper-atmosphere dynamics from oxygen (atomic and molecular) and nitrogen-oxide emissions.
+L696: • First measurements of non-thermal atmospheric escape.
+L697: • First coherent observations of Venus in the ultraviolet to thermal-infrared spectral range.
+L698: • First application of the solar/stellar occultation* technique at Venus.
+L699: • First use of a 3D ion mass analyser, high-energy resolution electron spectrometer and energetic neutral atom imager.
+L700: • First sounding of Venusian top-side ionospheric structure.
+L701: * Occultation: looking at an object like the Sun, Earth or a star through the atmosphere from a limb perspective allows us to an alyse how the light emitted by this
+L702: object is absorbed by the atmosphere, and this tells us about the characteristics of the atmosphere itself.
+L703: 
+L704: • Atmospheric escape into space:
+L705: ASPERA, in combination with SPICAV to
+L706: assess how this process evolves over
+L707: time
+L708: • Interaction of solar wind with
+L709: atmosphere: ASPERA, MAG and VeRa.
+L710: • Surface roughness, temperature and
+L711: other properties: VeRa, together with
+L712: VIRTIS, PFS and SPICAV
+L713: • Volcanic activity: VIRTIS, PFS and VMC.
+L714: • Signs of seismic activity: VIRTIS and
+L715: PFS.
+L716: Synergy is Venus
+L717: Express’s strength
+L718: The underlying philosophy of the
+L719: Venus Express investigations is to
+L720: observe the same target with several
+L721: different instruments at the same time.
+L722: This provides a comprehensive, versatile
+L723: and complete view of the different
+L724: phenomena taking place on Venus:
+L725: • Temperatures:PFS, VIRTIS, VeRa and
+L726: SPICAV
+L727: • Chemical composition: VIRTIS, SPICAV
+L728: and PFS
+L729: • Climate, weather and global
+L730: atmospheric dynamics: VIRTIS and VMC,
+L731: complemented by temperatures
+L732: retrieved by PFS, VeRa and VIRTIS
+L733: © NIMS/NASA
+L734: © L. Esposito (Univ. of Colorado, Boulder)/ NASA
+L735: Infrared view of Venus, as imaged by the NIMS
+L736: experiment on board NASA’s Galileo mission.
+L737: Ultraviolet image of Venus from the NASA/ESA  Hubble Space
+L738: Telescope, taken in January 1995, showing  mysterious dark
+L739: atmospheric features.
+L740: 
+L741: Venus’s atmosphere is so dense and so
+L742: strictly ‘coupled’ to the planet’s surface that
+L743: studying it will provide information about
+L744: the nature of the whole planet. Not only will
+L745: the study of the atmosphere allow us to
+L746: understand the complex Venusian
+L747: environment and climate system, and the
+L748: way it evolved, but it can also provide an
+L749: enormous amount of information about the
+L750: surface, its geology and, indirectly, about
+L751: the interior of the planet. Are there gaseous
+L752: emissions from the surface that could tell us
+L753: whether there are active volcanoes? Is there
+L754: a carbon dioxide (or even water) cycle
+L755: similar to the water cycle on Earth? Or it is
+L756: completely replaced by the cycle of
+L757: sulphuric acid and other sulphur
+L758: compounds? Is there any similarity between
+L759: the ocean-atmosphere relationship on
+L760: Earth and the surface-atmosphere
+L761: relationship on Venus? Can mechanical
+L762: waves propagating through the dense
+L763: atmosphere reveal the presence of seismic
+L764: activity?
+L765: Deeper than ever before
+L766: Looking through the infrared ‘windows’ in
+L767: the atmosphere will allow Venus
+L768: Express to study its lower layers –
+L769: between the surface and 60
+L770: kilometres altitude – whose
+L771: physics is virtually unknown.
+L772: Venus Express will be able to
+L773: determine the surface
+L774: temperature as a function of
+L775: altitude at all planetary
+L776: latitudes and longitudes.
+L777: Measuring a local increase in
+L778: surface temperature may
+L779: indicate the presence of
+L780: volcanic activity. These
+L781: -1716
+L782: Planetary answers from
+L783: atmospheric clues
+L784: Planetary answers from
+L785: atmospheric clues
+L786: Cutaway view of the possible internal structure of Venus. Previous
+L787: spacecraft  data suggest that Venus is differentiated with a basaltic
+L788: crust extracted from the mantle, and that it has a single tectonic plate,
+L789: unlike the Earth.
+L790: Mariner 10/Magellan images © Calvin J. Hamilton
+L791: C.Carreau © ESA
+L792: By digging into the
+L793: atmosphere, Venus
+L794: Express will provide clues
+L795: about the whole planet.
+L796: 
+L797: measurements will also allow us to better
+L798: understand the local weather, including for
+L799: instance the mechanisms that cause
+L800: turbulences close to the surface.
+L801: Furthermore, Venus Express will be able to
+L802: gather information about the surface
+L803: topography, allowing us to understand why
+L804: some regions are particularly reflective to
+L805: radio waves: is it due to the presence of
+L806: particular materials in a specific state, like
+L807: snow or ice on Earth?
+L808: We do not know anything about the nature
+L809: of the chemistry in the lower atmospheric
+L810: layers. Indeed, from the little data available
+L811: from previous missions, we know only that
+L812: the thermal decomposition of sulphuric
+L813: acid, caused by the high surface
+L814: temperature (465ºC), is the dominant
+L815: process in these layers. Chemical cycles
+L816: involving sulphur, carbon monoxide and
+L817: water vapour are also at work. These are
+L818: gases that are especially important for
+L819: understanding the greenhouse effect on
+L820: Venus. In addition, they can also be markers
+L821: for volcanic activity and global atmospheric
+L822: dynamics. Venus Express will make an
+L823: unprecedented global map of the
+L824: composition of the planet’s lower
+L825: atmosphere, telling us exactly what gases
+L826: exist, in what quantity, and how their
+L827: concentrations may vary in space and time.
+L828: Acid clouds and lightning
+L829: At around 60 kilometres altitude is a very
+L830: thick cloud layer – a 20 kilometre-deep
+L831: Clouds moving to the west (left) at about 100 m/s at the equator
+L832: are visible in this Galileo image of Venus. The bright spot on the
+L833: right shows the local noon. The evening terminator is on the left.
+L834: © Galileo/NASA
+L835: C.Carreau © ESA
+L836: Are the radio flashes recorded at Venus due to lightning ?
+L837: 
+L838: blanket surrounding
+L839: the planet. It marks the limit
+L840: between Venus’s lower and
+L841: middle atmospheric layers. It is
+L842: this yellowish layer that for a
+L843: long time prevented Earth-based
+L844: observatories and previous orbiter missions
+L845: from seeing the surface. Today it is known
+L846: that the upper part of this layer is mostly
+L847: composed of tiny droplets of sulphuric acid,
+L848: but what is happening chemically in the
+L849: lower clouds is still unknown. For instance,
+L850: what is the origin of the large solid particles
+L851: floating in the lower clouds observed by
+L852: Pioneer-Venus? The Venus Express remotesensing instruments will be able to see how
+L853: the clouds are shaped and structured, how
+L854: they form and evolve with time, how their
+L855: opacity varies and what molecules they are
+L856: made of. Local and global weather patterns
+L857: will keep no secrets from Venus Express.
+L858: During previous ground and satellite
+L859: observations, visible flashes in the
+L860: atmosphere have been observed, and
+L861: localised emissions of radio waves have also
+L862: been reported. Are they due to lightning?
+L863: The sulphuric-acid droplets can be
+L864: electrically highly charged, and so they offer
+L865: the potential for lightning. It is
+L866: very important not only to learn
+L867: whether it is possible that
+L868: lightning has an influence on
+L869: Venus’s atmospheric chemistry,
+L870: but also to understand how the
+L871: atmospheres of all terrestrial
+L872: planets become electrified and
+L873: then discharge. Venus Express
+L874: has the ability to address these
+L875: still unanswered questions.
+L876: Greenhouse effect
+L877: On the global scale, Venus’s climate is
+L878: strongly driven by the most powerful
+L879: greenhouse effect found in the Solar
+L880: System. The agents sustaining it are water
+L881: vapour, carbon dioxide and sulphuric-acid
+L882: aerosols. About 80% of the incoming solar
+L883: radiation is reflected back to space by the
+L884: cloud layer, and only 10% manages to get
+L885: through it and heat the surface. However,
+L886: the thermal radiation emitted by the
+L887: surface gets trapped by the same
+L888: atmosphere. The result is an amazing 500ºC
+L889: difference between the surface and cloudtop temperatures. Are there other gases
+L890: sustaining such an efficient planetary
+L891: greenhouse? How is the heat transported
+L892: from the surface to the cloud layer: through
+L893: radiation or dynamic mechanisms such as
+L894: turbulence? Answering these questions is
+L895: one of the primary goals of Venus Express.
+L896: -1918
+L897: C.Carreau © ESA
+L898: C.Carreau © ESA
+L899: A dramatic greenhouse effect is in place at Venus.
+L900: 
+L901: Mysterious ultraviolet markings
+L902: on the clouds
+L903: Looking at Venus’s thick cloud layer by
+L904: optical means would not reveal much.
+L905: However, by looking at the clouds in other
+L906: wavelengths, such as the infrared and
+L907: ultraviolet, a very different world appears.
+L908: The clouds on Venus are very
+L909: inhomogeneous in all directions, due
+L910: possibly to the formation of enormous
+L911: cumulus-type clouds. Furthermore, the
+L912: upper clouds are marked by areas visible in
+L913: the ultraviolet that mysteriously absorb half
+L914: of all the solar energy received by the
+L915: planet. What is the origin of these ultraviolet
+L916: markings? What makes their absorbing
+L917: power so high? By revealing the
+L918: temperature and the chemical composition
+L919: of these regions, Venus Express will help to
+L920: provide the answers.
+L921: Hurricane-force winds and huge
+L922: atmospheric vortexes
+L923: The lower atmosphere of Venus has a
+L924: dramatic and peculiar behaviour pattern. At
+L925: the level of the cloud tops, the atmosphere
+L926: rotates at a formidable velocity, with wind
+L927: speeds of up to 360 kilometres per hour.
+L928: The speed of the winds then progressively
+L929: decreases to almost zero at the planet’s
+L930: surface, where it becomes a gentle breeze,
+L931: barely able to kick up dust. What
+L932: mechanisms cause this ‘zonal superrotation’? Furthermore, two enormous
+L933: vortices, with very complex shapes and
+L934: behaviours, rotate vertically over the poles,
+L935: recycling the atmosphere downwards. The
+L936: vortex at the north pole, the only one
+L937: previously observed in some detail, has a
+L938: peculiar ‘double-eye’ shape, surrounded by
+L939: a collar of cool air. It completes a full
+L940: rotation in only three Earth days. How are
+L941: the super-rotation and the polar vortices
+L942: linked? How does the global atmospheric
+L943: circulation on Venus work? No model is so
+L944: far able to simulate the dynamics of Venus’s
+L945: atmosphere as too few data are available.
+L946: Venus Express observations will finally fill
+L947: the gaps.
+L948: Where the sulphuric acid forms
+L949: The higher layers of the atmosphere,
+L950: between 60 and 200 kilometres altitude, are
+L951: also still relatively unknown. We know that
+L952: in the middle atmosphere (60 to 110
+L953: kilometres), above the cloud tops, carbon
+L954: monoxide is in great abundance among the
+L955: minor species. It is formed by dissociation of
+L956: carbon dioxide by ultraviolet radiation
+L957: coming from the Sun. Photo-dissociation of
+L958: sulphur dioxide leads to the formation of
+L959: sulphuric-acid molecules that eventually
+L960: form the cloud aerosols. Limited amounts of
+L961: oxygen and water vapour are also present
+L962: in the middle atmosphere. Study of the
+L963: chemical cycles of these elements is
+L964: important in order to understand the
+L965: formation of the clouds below.
+L966: C. Carreau © ESA
+L967: Looking at V
+L968: ultraviolet m
+L969: 
+L970: Higher in the atmosphere, above 110
+L971: kilometres, the mysteries continue. Why, in
+L972: the higher atmosphere of a planet as close
+L973: to the Sun as Venus, do we measure
+L974: temperatures as low as 30ºC on the day
+L975: side, and even –160ºC on the night side?
+L976: And why do such differences between the
+L977: day and night sides not cause the strong
+L978: winds we would expect? This behaviour is
+L979: unique in the Solar System.
+L980: Venus Express will study the global
+L981: circulation, chemistry, temperature and
+L982: dynamics of the upper atmospheric layers
+L983: in great detail.
+L984: A planet with no magnetic shelter
+L985: It is very likely that Venus and Earth, which
+L986: are similar in mass and density, initially
+L987: contained the same amount of ‘volatile’
+L988: substances. However, they have become
+L989: two worlds apart. The secret must lie in the
+L990: way their atmospheres evolved. How much
+L991: of the atmosphere of Venus escaped under
+L992: the bombardment of the solar wind and
+L993: how much did it combine with the surface
+L994: material?
+L995: Venus is a planet with no intrinsic magnetic
+L996: field, and so it has no shield to protect it
+L997: from the continuous attack of the
+L998: capricious and violent solar wind. The
+L999: planet is embedded only in a local
+L1000: magnetic field induced by the solar wind
+L1001: -2120
+L1002: C. Carreau © ESA
+L1003: nus’s atmosphere in different wavelengths shows very inhomogeneous clouds, and mysterious
+L1004: rks at the cloud tops.
+L1005: By observing the ionosphere, Venus  Express will make the first global study of the atmospheric escape processes at Venus.
+L1006: 
+L1007: itself
+L1008: and
+L1009: perhaps by
+L1010: local magnetism
+L1011: derived from the surface.
+L1012: This peculiar situation gives birth to
+L1013: a complex set of mechanisms through
+L1014: which atmospheric gases are lost to space,
+L1015: including water vapour. This may well have
+L1016: had effects on Venus’s climate on geological
+L1017: time scales and driven the evolution of the
+L1018: two planets’ atmospheres in different
+L1019: directions.
+L1020: Very little water vapour can presently be
+L1021: found in the Venusian atmosphere. It is
+L1022: possible that hydrogen escaped from it in
+L1023: large quantities during early epochs.
+L1024: Equally, the same may have happened with
+L1025: the oxygen, or it may have been involved in
+L1026: huge oxidation processes with surface
+L1027: materials. Maybe a primordial ocean was
+L1028: vapourised at a certain point in Venus’s
+L1029: history. Otherwise, we could conclude that
+L1030: the little water vapour present was just
+L1031: supplied by comets or volcanism. Venus
+L1032: Express will make the first global study of
+L1033: how the atmosphere’s escape processes
+L1034: work, which is fundamental to understanding its evolution and, indirectly, that of
+L1035: Earth’s atmosphere.
+L1036: Alien volcanoes and ‘Venusquakes’
+L1037: Venus, as seen by previous space missions,
+L1038: appears to be among the most geologically
+L1039: active planets in the Solar System. Its
+L1040: surface doesn’t record signs of its past
+L1041: history earlier than 500 million years ago - it
+L1042: is as if the planet was completely resurfaced
+L1043: not so long ago by some massive planetarycrust phenomenon. Moreover, it also seems
+L1044: that some of its surface features have only
+L1045: recently been formed, which suggests that
+L1046: the planet may still be active internally.
+L1047: Venus Express will address this question
+L1048: from several perspectives. First of all, it will
+L1049: analyse the gases in the lower atmosphere,
+L1050: where a certain abundance of sulphuric
+L1051: C.Carreau © ESA
+L1052: Artist’s impression of the Venusian surface,
+L1053: the hottest in the Solar System.
+L1054: 
+L1055: acid and sulphur dioxide may, for instance,
+L1056: indicate the presence of volcanic activity.
+L1057: This can also be revealed by possible
+L1058: temperature variations at corresponding
+L1059: latitudes. Venus Express is also able to
+L1060: observe local variations in the temperature
+L1061: and pressure that may indicate the
+L1062: propagation of seismic waves through the
+L1063: atmosphere. Signatures of ‘Venus-quakes’
+L1064: may be observed at the top of the planet’s
+L1065: atmosphere, which is so dense that its
+L1066: ability to transmit waves is thirty times
+L1067: greater than on Earth. Venus Express could
+L1068: identify the most active parts of the planet,
+L1069: determine the rate of this activity, and even
+L1070: the positions and magnitudes of the
+L1071: strongest quakes.
+L1072: -2322
+L1073: Magellan © Calvin J. Hamilton.
+L1074: © Calvin J. Hamilton.
+L1075: Magellan. © Calvin J. Hamilton.
+L1076: Danilova crater is an example
+L1077: of Venusian impact crater, as
+L1078: seen by the Magellan
+L1079: spacecraft.
+L1080: Smooth features may show that the planet could have been
+L1081: resurfaced by intense geological activity not long ago.
+L1082: A volcano on the plains between Artemis Chasma and
+L1083: Imdr Regio displays a sheet of broad flow lobes. This
+L1084: type of flow is called a ‘festoon’ and only three have
+L1085: been found on Venus.
+L1086: 
+L1087: Venus Express:
+L1088: a technological jewel
+L1089: Venus Express:
+L1090: a technological jewel
+L1091: The Venus
+L1092: Express spacecraft
+L1093: is a virtual twin of Mars
+L1094: Express. The spacecraft
+L1095: body itself, termed a ‘bus’ , is a
+L1096: honeycomb aluminium box about
+L1097: 1.5 metres wide. With its solar arrays
+L1098: extended, it measures about 8 metres
+L1099: across. Only minor changes from Mars
+L1100: Express were required to accommodate the
+L1101: revised instrument payload, which is
+L1102: concentrated on three sides of the
+L1103: spacecraft bus.
+L1104: However, the fact that the environment of
+L1105: Venus is very different from that of Mars
+L1106: required some design changes to make
+L1107: Venus Express more suited to operating
+L1108: around this particular planet.
+L1109: Venus: hot and harsh
+L1110: Flying to an inner Solar System planet like
+L1111: Venus, at half the distance to the Sun as
+L1112: compared to Mars, means that the effects of
+L1113: solar illumination and ionising radiation on
+L1114: the spacecraft are much higher. In fact, the
+L1115: heating of the spacecraft is four times
+L1116: greater at Venus than at Mars. To keep
+L1117: Venus Express at safe temperatures, the
+L1118: radiators on its surfaces have therefore
+L1119: been increased in both area and efficiency.
+L1120: The spacecraft’s protective jacket, known as
+L1121: ‘multi-layer insulation’ or MLI, is composed
+L1122: of 23 layers, packaged differently from
+L1123: those on Mars Express. Moreover, the MLI on
+L1124: Venus Express is gold instead of black in
+L1125: colour, which allows it to reflect more
+L1126: radiation. In general, Mars Express was
+L1127: designed to keep warm, while Venus
+L1128: Express needs to stay cool.
+L1129: Plenty of electrical power
+L1130: The Sun is twice as strong at Venus as on
+L1131: Earth, so there is plentiful solar radiation to
+L1132: power the spacecraft. Venus Express’s solar
+L1133: arrays could therefore be made smaller
+L1134: (almost half the size) than those on Mars
+L1135: Express. The two symmetric solar arrays,
+L1136: with a total area of about six square metres,
+L1137: are based on a ‘triple-junction’ gallium
+L1138: arsenide (GaAs) technology, rather than the
+L1139: silicon-based technology used for Mars
+L1140: Express. The solar cells, each composed of
+L1141: four layers of gallium arsenide, are more
+L1142: tolerant to high temperatures (up to around
+L1143: 120ºC), as well as being able to exploit a
+L1144: wider spectrum of solar radiation. The solar
+L1145: cells are separated by aluminium strips that
+L1146: help to reject heat. Altogether, these
+L1147: aluminium strips account for half of the
+L1148: solar array’s total surface area.
+L1149: When the spacecraft is in shadow (eclipse)
+L1150: or when its power demand exceeds the
+L1151: capacity of the solar arrays, electrical power
+L1152: is supplied by three lithium-ion batteries,
+L1153: which are charged by the solar generated
+L1154: power.
+L1155: More propellant to catch Venus
+L1156: The gravity of Venus, which is almost the
+L1157: same as Earth’s, is about eight times
+L1158: stronger than that of Mars. This, plus the
+L1159: fact that the gravitational pull of the Sun is
+L1160: stronger at Venus, means that Venus
+L1161: Express needs more energy to brake and be
+L1162: captured into orbit around Venus. This
+L1163: energy is provided by part of the 570
+L1164: kilograms of propellant onboard (about
+L1165: 20% more than for Mars Express), which
+L1166: constitutes almost half of the spacecraft’s
+L1167: launch weight!
+L1168: C. Carreau © ESA
+L1169: 
+L1170: Major spacecraft manoeuvres, such as its
+L1171: injection into orbit around Venus, are
+L1172: performed by firing the main engine
+L1173: located at the base of the spacecraft, while
+L1174: minor manoeuvres are effected using four
+L1175: pairs of thrusters located at its four bottom
+L1176: corners. The thrusters are used for small
+L1177: trajectory corrections, for spacecraft
+L1178: attitude changes, and to correct the altitude
+L1179: of the orbit’s pericentre approximately once
+L1180: every 50 days. In fact, due to the
+L1181: gravitational pull of the Sun while the
+L1182: spacecraft is further away from the planet,
+L1183: the pericentre naturally drifts upwards at a
+L1184: rate of about 1.5 kilometres per day.
+L1185: Two antenna dishes
+L1186: For a spacecraft in orbit around Venus, it
+L1187: is not always possible to point a single
+L1188: antenna dish at Earth while always keeping
+L1189: the cold face of the spacecraft, hosting
+L1190: delicate instruments, away from the Sun. To
+L1191: overcome this pointing constraint, Venus
+L1192: Express has two high-gain antennas
+L1193: mounted on different spacecraft faces. The
+L1194: main high-gain antenna, used for most of
+L1195: the communications with Earth, is a 1.3
+L1196: metre-diameter dish. The second, smaller
+L1197: high-gain antenna (30 centimetres
+L1198: diameter) is used when the spacecraft is in
+L1199: the part of its orbit closest to Earth (less
+L1200: than 0.78 AU* away). There are also two
+L1201: low-gain antennas onboard, which are used
+L1202: to communicate with Earth during launch,
+L1203: during the first days of the cruise phase
+L1204: and, should the need occur, during severe
+L1205: ‘safe modes’ .
+L1206: Navigation and attitude control
+L1207: Venus Express is a three-axis-stabilised
+L1208: spacecraft. Three different onboard systems
+L1209: can acquire data about its position and
+L1210: attitude (orientation) in space, and any
+L1211: change in its velocity. They include two star
+L1212: trackers, two Sun sensors, and a set of three
+L1213: laser gyroscopes and three accelerometers,
+L1214: which provide the data for re-orienting the
+L1215: spacecraft and the solar arrays when
+L1216: necessary. The actual spacecraft reorientation manoeuvre or trajectory
+L1217: correction is performed by means of socalled ‘reaction wheels’ or by firing the
+L1218: thrusters.
+L1219: Storing data on board
+L1220: Venus Express’s onboard computer is
+L1221: responsible for supervising and managing
+L1222: the overall functioning of the spacecraft, for
+L1223: handling all data acquired by its
+L1224: instruments and sensors, and for
+L1225: distributing commands throughout the
+L1226: whole spacecraft. The computer’s Solid
+L1227: State Mass Memory has a capacity of
+L1228: 12 Gigabits and it stores all scientific data
+L1229: collected by the instruments until they can
+L1230: be transmitted to Earth during the
+L1231: appropriate orbital phase.
+L1232: -2524
+L1233: Profile of Venus Express
+L1234: Spacecraft dimensions 1.5 x 1.8 x 1.4 m (excluding solar panels)
+L1235: Spacecraft mass 1270 kg (including 93 kg of payload and 570 kg of fuel)
+L1236: Main engine 400 Newton (N) thrust
+L1237: Thrusters 10 Newton (N) thrust
+L1238: Solar arrays Two triple-junction gallium arsenide; 5.7 square metres in total; generating 800 Watts in the vicinity of Earth
+L1239: and 1100 Watts at Venus
+L1240: Power storage 3 lithium-ion batteries
+L1241: Antennas 2 high-gain antenna dishes (HGA1 = 1.3 m diameter; HGA2 = 0.3 m diameter); 2 low-gain antennas
+L1242: Prime Contractor Astrium, Toulouse (France), leading an industrial consortium of several European companies
+L1243: *One Astronomical Unit (AU) is defined as the mean distance between the Sun and Earth, which is about 150 million kilometres
+L1244: 
+L1245: The launcherThe launcher
+L1246: A Soyuz-Fregat launcher will set Venus
+L1247: Express on its course to Venus from the
+L1248: Russian Baikonur Cosmodrome in
+L1249: Kazakhstan. Soyuz, first launched in 1963,
+L1250: has made more than 1600 flights, and its
+L1251: 98% success rate makes it one of the most
+L1252: reliable launchers in the World. The Soyuz-
+L1253: Fregat is being procured through the
+L1254: European-Russian company Starsem.
+L1255: The Soyuz vehicle itself has three lower
+L1256: stages, to which the Fregat upper stage and
+L1257: its fairing which houses Venus Express are
+L1258: attached via a conically shaped adapter.
+L1259: Venus Express will use an upgraded version
+L1260: of Fregat, which is both lighter and more
+L1261: powerful than the previous one.
+L1262: Fregat will be ignited twice. The first firing
+L1263: will move the Fregat - Venus Express
+L1264: composite into an almost circular ‘parking
+L1265: orbit’ from the sub-orbital trajectory into
+L1266: which it is to be delivered by the Soyuz
+L1267: third stage. The second ignition will put
+L1268: Venus Express onto its interplanetary flight
+L1269: trajectory.
+L1270: ESA/STARSEM-S.Corvaja
+L1271: Souyz-Fregat on the launch pad.
+L1272: 
+L1273: All communications to and from Venus
+L1274: Express will be controlled from a single
+L1275: centre, namely the Venus Express Mission
+L1276: Control Centre (VMOC), located at ESA’s
+L1277: European Space Operations Centre (ESOC)
+L1278: in Darmstadt, Germany. Immediately after
+L1279: launch, the antennas at ESA’s deep-space
+L1280: ground stations at Villafranca, Spain (15 m),
+L1281: New Norcia, Australia (35 m) and Kourou,
+L1282: French Guiana (15 m) will be used for
+L1283: communication and orbit determination.
+L1284: Once the spacecraft is in orbit around
+L1285: Venus, all communications will be routed
+L1286: via the 35 m antenna at the new ESA
+L1287: ground station at Cebreros near Madrid,
+L1288: Spain, and the New Norcia antenna will be
+L1289: used to support the Venus Radio Science
+L1290: experiment (VeRa).
+L1291: Once in orbit around the planet, Venus
+L1292: Express essentially follows the ‘look-storedownlink’ mission scenario already
+L1293: implemented for
+L1294: the Mars Express
+L1295: and Rosetta
+L1296: missions. The
+L1297: spacecraft will
+L1298: collect most of its
+L1299: scientific data
+L1300: during a one and a
+L1301: half hour passage
+L1302: through the orbit’s
+L1303: pericentre, when it is closest
+L1304: to the surface of the planet.
+L1305: The part of the orbit where the
+L1306: spacecraft is further from the
+L1307: planet will be shared between
+L1308: remote-sensing observations,
+L1309: in-situ observations and periods
+L1310: of data transmission. All data
+L1311: collected are to be transmitted to
+L1312: Earth for about eight hours a day (one
+L1313: orbit around Venus lasts 24 hours). Eight
+L1314: hours of transmission correspond to the
+L1315: downlinking of between 100 and 800
+L1316: Megabytes of data, depending on the
+L1317: actual distance between Earth and Venus.
+L1318: Throughout the mission, ESOC will provide
+L1319: the Venus Express Principal Investigators
+L1320: with the complete sets of raw data acquired
+L1321: from their instruments, together with any
+L1322: other spacecraft data needed, for further
+L1323: processing and analysis.
+L1324: The ESA Venus Express Science Operations
+L1325: Centre (VSOC), which is located at ESTEC,
+L1326: ESA’s Space Research and Technology
+L1327: Centre in Noordwijk, The Netherlands, is
+L1328: collecting and co-ordinating all observation
+L1329: requests from the Principal Investigators.
+L1330: It also generates and cross-checks the
+L1331: instrument command files that are then
+L1332: passed to ESOC for uploading to the
+L1333: spacecraft. The VSOC is also managing the
+L1334: Planetary Science Archive, where all data
+L1335: will be stored and made available to the
+L1336: wide scientific community once the sixmonth period during which the Principal
+L1337: Investigators have proprietary rights has
+L1338: elapsed. The data will be archived in the
+L1339: same standardised format that is now
+L1340: applied for all new ESA planetary missions,
+L1341: including Mars Express and
+L1342: Rosetta.
+L1343: ESA’s New Norcia antenna
+L1344: in Australia
+L1345: -2726
+L1346: Operating
+L1347: Venus Express
+L1348: Operating
+L1349: Venus Express
+L1350: From 23:00 hours to 01:00 hours High (spatial) resolution observations of atmosphere and
+L1351: surface in the Northern Hemisphere (near pericentre)
+L1352: From 01:00 hours to 09:00 hours Communication with Earth and transmission of the scientific data
+L1353: From 11:00 hours to 13:00 hours Global mapping and study of large-scale phenomena in the
+L1354: Southern Hemisphere (around apocentre)
+L1355: From 15:00 hours to 23:00 hours Study of the dynamics of the atmosphere and the cloud systems
+L1356: Various orbital phases High (vertical) resolution studies of the atmosphere, through
+L1357: solar, stellar and Earth occultation
+L1358: N.B. 00:00 hours corresponds to the passage over the pericentre
+L1359: © ESA
+L1360: AOES Medialab © ESA

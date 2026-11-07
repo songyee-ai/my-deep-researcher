@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"[redacted-session]"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"머리말\":\"수성의 MESSENGER와 금성의 Venus Express는 강한 열 유입에 대응했지만, 차양·궤도와 방열·단열에 둔 설계의 비중은 달랐다. 이 차이가 관측에 주는 제약은 자료에서 확인되는 조건과 인과관계가 확인되지 않는 시간 배분을 구분해 살펴봐야 한다.\",\"맺음말\":\"MESSENGER는 차양과 타원궤도로 열 노출을 줄여 저고도 관측 구간과 자세 유지 조건의 제약을 받았고, Venus Express는 확대된 방열판과 단열 설계를 적용하면서 차가운 면의 태양 회피와 지구 통신 지향을 함께 충족해야 했다. 다만 장비별 정량적 관측 제한은 제시되지 않았으며, Venus Express의 관측·전송 시간 배분이 열 제어 때문에 정해졌다고 단정할 수 없다.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":15805,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":229,"reasoning_output_tokens":0}}

@@ -1,0 +1,173 @@
+[
+  {
+    "source": {
+      "id": "pdf-descanso-mgs",
+      "planet": "화성",
+      "title": "Mars Global Surveyor Telecommunications",
+      "url": "https://descanso.jpl.nasa.gov/DPSummary/MGS_07Aug01.pdf",
+      "date_label": "See original report cover",
+      "discovered_from": "https://descanso.jpl.nasa.gov/DPSummary/summary.html",
+      "selection_reason": "Whole mission-specific design/performance report; communications or navigation constraints and engineering evidence.",
+      "type": "historical_design_press_kit_or_technical_report"
+    },
+    "requested_url": "https://descanso.jpl.nasa.gov/DPSummary/MGS_07Aug01.pdf",
+    "final_url": "https://descanso.jpl.nasa.gov/DPSummary/MGS_07Aug01.pdf",
+    "retrieved_at": "2026-11-06T14:03:43.502434+00:00",
+    "http_status": 200,
+    "bytes": 2796491,
+    "raw_path": "data\\planetary_exploration\\versions\\engineering-v2\\raw_pdf\\pdf-descanso-mgs.pdf",
+    "sha256_raw": "b88f7bae4a7ce9abc897ef4cbaf01c978d172be5129355f2bc85544d54ad52a0"
+  },
+  {
+    "source": {
+      "id": "pdf-descanso-galileo",
+      "planet": "목성",
+      "title": "Galileo Telecommunications",
+      "url": "https://descanso.jpl.nasa.gov/DPSummary/Descanso5--Galileo_new.pdf",
+      "date_label": "See original report cover",
+      "discovered_from": "https://descanso.jpl.nasa.gov/DPSummary/summary.html",
+      "selection_reason": "Whole mission-specific design/performance report; communications or navigation constraints and engineering evidence.",
+      "type": "historical_design_press_kit_or_technical_report"
+    },
+    "requested_url": "https://descanso.jpl.nasa.gov/DPSummary/Descanso5--Galileo_new.pdf",
+    "final_url": "https://descanso.jpl.nasa.gov/DPSummary/Descanso5--Galileo_new.pdf",
+    "retrieved_at": "2026-11-06T14:03:43.715525+00:00",
+    "http_status": 200,
+    "bytes": 4309495,
+    "raw_path": "data\\planetary_exploration\\versions\\engineering-v2\\raw_pdf\\pdf-descanso-galileo.pdf",
+    "sha256_raw": "104ab955bf6de3feede39d50b251216534d720765a298880f0559e8f5b0b2479"
+  },
+  {
+    "source": {
+      "id": "pdf-descanso-odyssey",
+      "planet": "화성",
+      "title": "Odyssey Telecommunications",
+      "url": "https://descanso.jpl.nasa.gov/DPSummary/odyssey_telecom.pdf",
+      "date_label": "See original report cover",
+      "discovered_from": "https://descanso.jpl.nasa.gov/DPSummary/summary.html",
+      "selection_reason": "Whole mission-specific design/performance report; communications or navigation constraints and engineering evidence.",
+      "type": "historical_design_press_kit_or_technical_report"
+    },
+    "requested_url": "https://descanso.jpl.nasa.gov/DPSummary/odyssey_telecom.pdf",
+    "final_url": "https://descanso.jpl.nasa.gov/DPSummary/odyssey_telecom.pdf",
+    "retrieved_at": "2026-11-06T14:03:43.583845+00:00",
+    "http_status": 200,
+    "bytes": 3270480,
+    "raw_path": "data\\planetary_exploration\\versions\\engineering-v2\\raw_pdf\\pdf-descanso-odyssey.pdf",
+    "sha256_raw": "e6f6e2d2f33f70de0e636dc58ca86fc02260e385600f0400b1b0a42e959c9c9c"
+  },
+  {
+    "source": {
+      "id": "pdf-descanso-mer-telecom",
+      "planet": "화성",
+      "title": "Mars Exploration Rover Telecommunications",
+      "url": "https://descanso.jpl.nasa.gov/DPSummary/MER_article_cmp20051028.pdf",
+      "date_label": "See original report cover",
+      "discovered_from": "https://descanso.jpl.nasa.gov/DPSummary/summary.html",
+      "selection_reason": "Whole mission-specific design/performance report; communications or navigation constraints and engineering evidence.",
+      "type": "historical_design_press_kit_or_technical_report"
+    },
+    "requested_url": "https://descanso.jpl.nasa.gov/DPSummary/MER_article_cmp20051028.pdf",
+    "final_url": "https://descanso.jpl.nasa.gov/DPSummary/MER_article_cmp20051028.pdf",
+    "retrieved_at": "2026-11-06T14:03:45.523808+00:00",
+    "http_status": 200,
+    "bytes": 7015620,
+    "raw_path": "data\\planetary_exploration\\versions\\engineering-v2\\raw_pdf\\pdf-descanso-mer-telecom.pdf",
+    "sha256_raw": "57d02d8b57e74f4a7f2dcc76817bb015baf64de8cae2f9b3de94f1ffbfc780c2"
+  },
+  {
+    "source": {
+      "id": "pdf-descanso-mer-navigation",
+      "planet": "화성",
+      "title": "Mars Exploration Rover Navigation",
+      "url": "https://descanso.jpl.nasa.gov/DPSummary/DESCANSO_MER_NAV_051215C_low.pdf",
+      "date_label": "See original report cover",
+      "discovered_from": "https://descanso.jpl.nasa.gov/DPSummary/summary.html",
+      "selection_reason": "Whole mission-specific design/performance report; communications or navigation constraints and engineering evidence.",
+      "type": "historical_design_press_kit_or_technical_report"
+    },
+    "requested_url": "https://descanso.jpl.nasa.gov/DPSummary/DESCANSO_MER_NAV_051215C_low.pdf",
+    "final_url": "https://descanso.jpl.nasa.gov/DPSummary/DESCANSO_MER_NAV_051215C_low.pdf",
+    "retrieved_at": "2026-11-06T14:03:45.165055+00:00",
+    "http_status": 200,
+    "bytes": 2564414,
+    "raw_path": "data\\planetary_exploration\\versions\\engineering-v2\\raw_pdf\\pdf-descanso-mer-navigation.pdf",
+    "sha256_raw": "106845426f9a370c0f3190ed6bf577af3da2af5f7915788300ad9f64a1e8ca35"
+  },
+  {
+    "source": {
+      "id": "pdf-descanso-mro",
+      "planet": "화성",
+      "title": "Mars Reconnaissance Orbiter Telecommunications",
+      "url": "https://descanso.jpl.nasa.gov/DPSummary/MRO_092106.pdf",
+      "date_label": "See original report cover",
+      "discovered_from": "https://descanso.jpl.nasa.gov/DPSummary/summary.html",
+      "selection_reason": "Whole mission-specific design/performance report; communications or navigation constraints and engineering evidence.",
+      "type": "historical_design_press_kit_or_technical_report"
+    },
+    "requested_url": "https://descanso.jpl.nasa.gov/DPSummary/MRO_092106.pdf",
+    "final_url": "https://descanso.jpl.nasa.gov/DPSummary/MRO_092106.pdf",
+    "retrieved_at": "2026-11-06T14:03:45.963494+00:00",
+    "http_status": 200,
+    "bytes": 8253208,
+    "raw_path": "data\\planetary_exploration\\versions\\engineering-v2\\raw_pdf\\pdf-descanso-mro.pdf",
+    "sha256_raw": "45c30083555ff6da7bed697c1b3498c7e81beb82c2d2ed82806211481eb65418"
+  },
+  {
+    "source": {
+      "id": "pdf-descanso-msl-telecom",
+      "planet": "화성",
+      "title": "Mars Science Laboratory Telecommunications System Design",
+      "url": "https://descanso.jpl.nasa.gov/DPSummary/Descanso14_MSL_Telecom.pdf",
+      "date_label": "See original report cover",
+      "discovered_from": "https://descanso.jpl.nasa.gov/DPSummary/summary.html",
+      "selection_reason": "Whole mission-specific design/performance report; communications or navigation constraints and engineering evidence.",
+      "type": "historical_design_press_kit_or_technical_report"
+    },
+    "requested_url": "https://descanso.jpl.nasa.gov/DPSummary/Descanso14_MSL_Telecom.pdf",
+    "final_url": "https://descanso.jpl.nasa.gov/DPSummary/Descanso14_MSL_Telecom.pdf",
+    "retrieved_at": "2026-11-06T14:03:47.582565+00:00",
+    "http_status": 200,
+    "bytes": 5726948,
+    "raw_path": "data\\planetary_exploration\\versions\\engineering-v2\\raw_pdf\\pdf-descanso-msl-telecom.pdf",
+    "sha256_raw": "652b401955e7c9c7cb6d425a970d0e7779830305cef27e8646c6dadb4eb136b4"
+  },
+  {
+    "source": {
+      "id": "pdf-descanso-phoenix",
+      "planet": "화성",
+      "title": "Phoenix Telecommunications",
+      "url": "https://descanso.jpl.nasa.gov/DPSummary/PhxArticle_--RC101013DocX_COMPRESSED_AcronFixBU.pdf",
+      "date_label": "See original report cover",
+      "discovered_from": "https://descanso.jpl.nasa.gov/DPSummary/summary.html",
+      "selection_reason": "Whole mission-specific design/performance report; communications or navigation constraints and engineering evidence.",
+      "type": "historical_design_press_kit_or_technical_report"
+    },
+    "requested_url": "https://descanso.jpl.nasa.gov/DPSummary/PhxArticle_--RC101013DocX_COMPRESSED_AcronFixBU.pdf",
+    "final_url": "https://descanso.jpl.nasa.gov/DPSummary/PhxArticle_--RC101013DocX_COMPRESSED_AcronFixBU.pdf",
+    "retrieved_at": "2026-11-06T14:03:47.536271+00:00",
+    "http_status": 200,
+    "bytes": 4144174,
+    "raw_path": "data\\planetary_exploration\\versions\\engineering-v2\\raw_pdf\\pdf-descanso-phoenix.pdf",
+    "sha256_raw": "f9d2989f60b0a2d8f02a3b7e164d327a10e7a0a31e5b45762767037eb93c7ad0"
+  },
+  {
+    "source": {
+      "id": "pdf-descanso-marco",
+      "planet": "화성",
+      "title": "Mars Cube One Telecommunications Subsystem Design",
+      "url": "https://descanso.jpl.nasa.gov/DPSummary/DESCANSO18_MarCO.pdf",
+      "date_label": "See original report cover",
+      "discovered_from": "https://descanso.jpl.nasa.gov/DPSummary/summary.html",
+      "selection_reason": "Whole mission-specific design/performance report; communications or navigation constraints and engineering evidence.",
+      "type": "historical_design_press_kit_or_technical_report"
+    },
+    "requested_url": "https://descanso.jpl.nasa.gov/DPSummary/DESCANSO18_MarCO.pdf",
+    "final_url": "https://descanso.jpl.nasa.gov/DPSummary/DESCANSO18_MarCO.pdf",
+    "retrieved_at": "2026-11-06T14:03:49.412649+00:00",
+    "http_status": 200,
+    "bytes": 19376881,
+    "raw_path": "data\\planetary_exploration\\versions\\engineering-v2\\raw_pdf\\pdf-descanso-marco.pdf",
+    "sha256_raw": "ee76fb077bae59ee44f4afd5fa8282b85de4820494ff44a7df51492b240a4222"
+  }
+]

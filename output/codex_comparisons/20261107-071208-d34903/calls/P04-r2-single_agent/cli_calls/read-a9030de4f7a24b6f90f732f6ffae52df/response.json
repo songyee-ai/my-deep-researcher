@@ -1,0 +1,1 @@
+{"facts":[{"subject":"the spacecraft","relation":"在金星处受热强度为火星处的倍数","comparison_target":"Mars","value":"four","unit":"times","basis":"以火星处航天器受热强度为比较基准","start_line":1110,"end_line":1116}],"insufficient":true,"reason":"提供资料只有金星探测内容，缺少水星探测器的热防护设计及其观测约束，无法完成两者比较。"}

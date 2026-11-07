@@ -1,0 +1,1411 @@
+{
+  "question": "수성과 금성 탐사에서 강한 열 환경에 대응하는 설계는 어떻게 달랐으며, 그 차이가 관측에 주는 제약은 무엇인가?",
+  "plan": {
+    "제목": "수성과 금성 탐사의 열 대응 설계와 관측 제약",
+    "목차": [
+      {
+        "번호": 0,
+        "절": "수성 MESSENGER의 차열·방열 설계와 관측 제약",
+        "지시": "MESSENGER의 열 환경, 세라믹 직물 차양과 방열기를 이용한 대응, 그 설계가 관측 방향과 운용에 주는 제약을 문서 근거로 정리하라. 열 환경→설계 대응→관측 제약의 순서로 설명하고, 자료에 명시된 제약과 추론을 구분하라.",
+        "역할": "열·전력 설계 연구원",
+        "시작문서": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+        "예산": 2
+      },
+      {
+        "번호": 1,
+        "절": "금성 Venus Express의 열 제어 설계와 관측 제약",
+        "지시": "Venus Express가 궤도에서 받는 열 환경, 단열과 방열기를 이용한 대응, 안전한 열 상태를 유지하기 위한 자세 조건이 관측에 주는 제약을 문서 근거로 정리하라. 열 환경→설계 대응→관측 제약의 순서로 설명하고, 금성 표면 환경과 궤도선이 겪는 환경을 구분하며 자료에 명시된 제약과 추론을 구분하라.",
+        "역할": "열·전력 설계 연구원",
+        "시작문서": "금성 | The spacecraft",
+        "예산": 2
+      }
+    ]
+  },
+  "pending": [],
+  "round": 1,
+  "attempts": [
+    {
+      "번호": 0,
+      "절": "수성 MESSENGER의 차열·방열 설계와 관측 제약",
+      "역할": "열·전력 설계 연구원",
+      "round": 0,
+      "본문": "MESSENGER가 도는 수성에서는 태양이 지구에서 보는 것보다 최대 11배 밝으며, 수성 표면이 재복사하는 열도 탐사선의 열 부담을 높인다. 고도 200 km에서는 행성의 재복사열만으로도 지구에서의 태양 복사 세기의 4배에 이르므로, 직접 들어오는 태양 복사와 표면에서 되돌아오는 열을 함께 고려해야 한다. «수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)»\n\n이에 MESSENGER는 전면의 티타늄 프레임에 내열성과 반사성이 높은 차양을 고정하고, 앞뒤의 Nextel 세라믹 직물 사이에 여러 겹의 Kapton 플라스틱 단열층을 배치했다. 문서는 수성이 태양에 가장 가까울 때 차양 전면이 370°C에 이를 수 있어도 뒤쪽 본체는 약 20°C에서 작동하도록 설명하며, 이는 실제 측정 성과가 아닌 설계상 열 대응이다. 본체 대부분을 덮는 다층 단열재와 측면의 단방향 열관에 연결된 방열기는 각각 복사열 유입·내부 열 손실을 억제하고 본체의 열을 배출하며, 차양 및 궤도 설계와 함께 고온 전용 전자장치 없이 운용하도록 한다. 태양전지 패널은 3분의 2가 거울인 optical solar reflectors, 3분의 1이 삼중접합 태양전지로 구성되고, 필요한 전력을 얻으면서 정상 표면 운용 온도 약 150°C를 유지하도록 태양에서 비껴 기울여 운용한다. «수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)»\n\n표면 재복사열에 대한 노출을 줄이기 위해 과학 궤도는 타원형으로 설계되었으며, 계획된 12시간 공전마다 뜨거운 표면을 저고도로 통과하는 시간은 약 25분이다. 관측에서는 차양이 항상 태양을 향해야 하고, 기기는 수성은 보이되 태양은 보이지 않는 위치에 장착되어 허용 온도 범위를 유지해야 한다는 조건이 문서에 명시되어 있다. 따라서 본체의 관측 자세와 기기의 관측 방향을 자유롭게 선택하기 어렵다는 설명은 이 조건에서 도출한 추론이다. 또한 저고도 관측 기회가 짧은 통과 구간에 묶인다는 해석도 궤도 설계에 근거한 추론이며, 약 25분을 모든 기기의 실제 관측 시간으로 단정할 수는 없다. 문서는 서로 다른 궤도 구간에서 여러 유형의 관측을 수행하고 수성 태양일 두 번, 즉 지구 시간 1년 안에 관측을 마쳐야 한다고 명시하지만, 이 완료 기한 자체가 열 설계 때문에 정해졌다고 설명하지는 않는다. «수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)»",
+      "부족": false,
+      "이유": "맡은 절의 핵심인 열 환경, 차양·방열기·전력 설계와 관측 자세·운용 조건은 D1에 충분히 제시되어 있다. 다만 기기별 허용 지향각과 실제 관측 시간은 제시되지 않아 정량화하지 않았으며, D2에는 이 절에 사용할 핵심 근거가 없다.",
+      "읽은문서": [
+        "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+        "수성 | MESSENGER"
+      ],
+      "인용": [
+        "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+        "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+        "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)"
+      ],
+      "draft_format": "source_ids_v1",
+      "raw_draft": {
+        "단락": [
+          {
+            "내용": "MESSENGER가 도는 수성에서는 태양이 지구에서 보는 것보다 최대 11배 밝으며, 수성 표면이 재복사하는 열도 탐사선의 열 부담을 높인다. 고도 200 km에서는 행성의 재복사열만으로도 지구에서의 태양 복사 세기의 4배에 이르므로, 직접 들어오는 태양 복사와 표면에서 되돌아오는 열을 함께 고려해야 한다.",
+            "출처ID": [
+              "D1"
+            ]
+          },
+          {
+            "내용": "이에 MESSENGER는 전면의 티타늄 프레임에 내열성과 반사성이 높은 차양을 고정하고, 앞뒤의 Nextel 세라믹 직물 사이에 여러 겹의 Kapton 플라스틱 단열층을 배치했다. 문서는 수성이 태양에 가장 가까울 때 차양 전면이 370°C에 이를 수 있어도 뒤쪽 본체는 약 20°C에서 작동하도록 설명하며, 이는 실제 측정 성과가 아닌 설계상 열 대응이다. 본체 대부분을 덮는 다층 단열재와 측면의 단방향 열관에 연결된 방열기는 각각 복사열 유입·내부 열 손실을 억제하고 본체의 열을 배출하며, 차양 및 궤도 설계와 함께 고온 전용 전자장치 없이 운용하도록 한다. 태양전지 패널은 3분의 2가 거울인 optical solar reflectors, 3분의 1이 삼중접합 태양전지로 구성되고, 필요한 전력을 얻으면서 정상 표면 운용 온도 약 150°C를 유지하도록 태양에서 비껴 기울여 운용한다.",
+            "출처ID": [
+              "D1"
+            ]
+          },
+          {
+            "내용": "표면 재복사열에 대한 노출을 줄이기 위해 과학 궤도는 타원형으로 설계되었으며, 계획된 12시간 공전마다 뜨거운 표면을 저고도로 통과하는 시간은 약 25분이다. 관측에서는 차양이 항상 태양을 향해야 하고, 기기는 수성은 보이되 태양은 보이지 않는 위치에 장착되어 허용 온도 범위를 유지해야 한다는 조건이 문서에 명시되어 있다. 따라서 본체의 관측 자세와 기기의 관측 방향을 자유롭게 선택하기 어렵다는 설명은 이 조건에서 도출한 추론이다. 또한 저고도 관측 기회가 짧은 통과 구간에 묶인다는 해석도 궤도 설계에 근거한 추론이며, 약 25분을 모든 기기의 실제 관측 시간으로 단정할 수는 없다. 문서는 서로 다른 궤도 구간에서 여러 유형의 관측을 수행하고 수성 태양일 두 번, 즉 지구 시간 1년 안에 관측을 마쳐야 한다고 명시하지만, 이 완료 기한 자체가 열 설계 때문에 정해졌다고 설명하지는 않는다.",
+            "출처ID": [
+              "D1"
+            ]
+          }
+        ],
+        "부족": false,
+        "이유": "맡은 절의 핵심인 열 환경, 차양·방열기·전력 설계와 관측 자세·운용 조건은 D1에 충분히 제시되어 있다. 다만 기기별 허용 지향각과 실제 관측 시간은 제시되지 않아 정량화하지 않았으며, D2에는 이 절에 사용할 핵심 근거가 없다."
+      },
+      "source_map": {
+        "D1": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+        "D2": "수성 | MESSENGER"
+      }
+    },
+    {
+      "번호": 1,
+      "절": "금성 Venus Express의 열 제어 설계와 관측 제약",
+      "역할": "열·전력 설계 연구원",
+      "round": 0,
+      "본문": "Venus Express가 금성 궤도에서 겪는 열 환경은 금성 표면의 465°C 환경과 구분해야 하며, 이 표면 온도를 궤도선의 온도로 적용할 수 없다. 자료는 금성에서 우주선이 받는 가열이 화성에서보다 4배 크다고 설명하며, 태양 조명과 이온화 방사선의 영향도 더 크다고 명시한다. 한편 금성에서의 태양복사 세기는 지구에서의 2배로 제시되는데, 이는 전력 공급에 이용할 태양복사의 비교이므로 화성을 기준으로 한 우주선 가열의 4배와 구별해야 한다. «금성 | The spacecraft»«금성 | Venus Express ESA Mission Brochure»\n\n이 가열에 대응하여 Venus Express는 안전한 온도 유지를 목적으로 표면 방열기의 면적과 효율을 높이고, Mars Express와 다르게 포장한 23층 다층 단열재인 MLI를 사용했다. MLI는 검정색 대신 금색을 채택하여 복사를 더 많이 반사하도록 했으며, 자료는 Mars Express의 보온 중심 설계와 Venus Express의 냉각 유지 중심 설계를 대비한다. 전력 측면에서는 풍부한 태양복사 덕분에 태양전지판을 Mars Express의 거의 절반 크기로 설계할 수 있었다. 또한 약 120°C까지의 고온을 견디는 GaAs 태양전지를 채택하고 전지 사이에 열 방출을 돕는 알루미늄 띠를 배치했는데, 이 온도는 전지의 내열 특성이지 궤도선의 실제 운용 온도나 관측 성과가 아니다. «금성 | The spacecraft»«금성 | Venus Express ESA Mission Brochure»\n\n자세와 관련하여 자료에 명시된 조건은 민감한 기기가 있는 우주선의 차가운 면을 태양으로부터 멀어지게 유지하는 것이며, 이 조건을 지키면서 단일 안테나를 항상 지구로 향하게 하는 것은 불가능할 수 있다. Venus Express는 이러한 통신 지향 제약에 대응하여 서로 다른 기체 면에 고이득 안테나 2개를 설치했다. 관측 자세를 선택할 때도 차가운 면의 태양 회피 조건을 만족해야 하므로 일부 관측 방향이나 관측과 통신의 조합이 제한될 수 있다는 해석은 이 자세 조건에서 도출한 추론이다. 자료는 구체적인 관측 금지 방향, 허용 자세각 또는 관측시간 손실을 제시하지 않으므로, 안테나 배치가 관측 제약을 모두 해소했다거나 특정 관측 성과를 보장했다고 단정할 수 없다. «금성 | The spacecraft»«금성 | Venus Express ESA Mission Brochure»",
+      "부족": false,
+      "이유": "담당 절의 핵심인 궤도 열 환경, 단열·방열 설계, 전력 선택 및 자세 조건에 관한 근거가 있다. 관측 방향과 시간에 대한 직접적인 제한이나 정량값은 제공되지 않아, 명시된 통신 지향 제약과 자세 조건에서 추론한 관측 제약을 구분했다.",
+      "읽은문서": [
+        "금성 | The spacecraft",
+        "금성 | Venus Express ESA Mission Brochure"
+      ],
+      "인용": [
+        "금성 | The spacecraft",
+        "금성 | Venus Express ESA Mission Brochure",
+        "금성 | The spacecraft",
+        "금성 | Venus Express ESA Mission Brochure",
+        "금성 | The spacecraft",
+        "금성 | Venus Express ESA Mission Brochure"
+      ],
+      "draft_format": "source_ids_v1",
+      "raw_draft": {
+        "단락": [
+          {
+            "내용": "Venus Express가 금성 궤도에서 겪는 열 환경은 금성 표면의 465°C 환경과 구분해야 하며, 이 표면 온도를 궤도선의 온도로 적용할 수 없다. 자료는 금성에서 우주선이 받는 가열이 화성에서보다 4배 크다고 설명하며, 태양 조명과 이온화 방사선의 영향도 더 크다고 명시한다. 한편 금성에서의 태양복사 세기는 지구에서의 2배로 제시되는데, 이는 전력 공급에 이용할 태양복사의 비교이므로 화성을 기준으로 한 우주선 가열의 4배와 구별해야 한다.",
+            "출처ID": [
+              "D1",
+              "D2"
+            ]
+          },
+          {
+            "내용": "이 가열에 대응하여 Venus Express는 안전한 온도 유지를 목적으로 표면 방열기의 면적과 효율을 높이고, Mars Express와 다르게 포장한 23층 다층 단열재인 MLI를 사용했다. MLI는 검정색 대신 금색을 채택하여 복사를 더 많이 반사하도록 했으며, 자료는 Mars Express의 보온 중심 설계와 Venus Express의 냉각 유지 중심 설계를 대비한다. 전력 측면에서는 풍부한 태양복사 덕분에 태양전지판을 Mars Express의 거의 절반 크기로 설계할 수 있었다. 또한 약 120°C까지의 고온을 견디는 GaAs 태양전지를 채택하고 전지 사이에 열 방출을 돕는 알루미늄 띠를 배치했는데, 이 온도는 전지의 내열 특성이지 궤도선의 실제 운용 온도나 관측 성과가 아니다.",
+            "출처ID": [
+              "D1",
+              "D2"
+            ]
+          },
+          {
+            "내용": "자세와 관련하여 자료에 명시된 조건은 민감한 기기가 있는 우주선의 차가운 면을 태양으로부터 멀어지게 유지하는 것이며, 이 조건을 지키면서 단일 안테나를 항상 지구로 향하게 하는 것은 불가능할 수 있다. Venus Express는 이러한 통신 지향 제약에 대응하여 서로 다른 기체 면에 고이득 안테나 2개를 설치했다. 관측 자세를 선택할 때도 차가운 면의 태양 회피 조건을 만족해야 하므로 일부 관측 방향이나 관측과 통신의 조합이 제한될 수 있다는 해석은 이 자세 조건에서 도출한 추론이다. 자료는 구체적인 관측 금지 방향, 허용 자세각 또는 관측시간 손실을 제시하지 않으므로, 안테나 배치가 관측 제약을 모두 해소했다거나 특정 관측 성과를 보장했다고 단정할 수 없다.",
+            "출처ID": [
+              "D1",
+              "D2"
+            ]
+          }
+        ],
+        "부족": false,
+        "이유": "담당 절의 핵심인 궤도 열 환경, 단열·방열 설계, 전력 선택 및 자세 조건에 관한 근거가 있다. 관측 방향과 시간에 대한 직접적인 제한이나 정량값은 제공되지 않아, 명시된 통신 지향 제약과 자세 조건에서 추론한 관측 제약을 구분했다."
+      },
+      "source_map": {
+        "D1": "금성 | The spacecraft",
+        "D2": "금성 | Venus Express ESA Mission Brochure"
+      }
+    }
+  ],
+  "selected": [
+    {
+      "번호": 0,
+      "절": "수성 MESSENGER의 차열·방열 설계와 관측 제약",
+      "역할": "열·전력 설계 연구원",
+      "round": 0,
+      "본문": "MESSENGER가 도는 수성에서는 태양이 지구에서 보는 것보다 최대 11배 밝으며, 수성 표면이 재복사하는 열도 탐사선의 열 부담을 높인다. 고도 200 km에서는 행성의 재복사열만으로도 지구에서의 태양 복사 세기의 4배에 이르므로, 직접 들어오는 태양 복사와 표면에서 되돌아오는 열을 함께 고려해야 한다. «수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)»\n\n이에 MESSENGER는 전면의 티타늄 프레임에 내열성과 반사성이 높은 차양을 고정하고, 앞뒤의 Nextel 세라믹 직물 사이에 여러 겹의 Kapton 플라스틱 단열층을 배치했다. 문서는 수성이 태양에 가장 가까울 때 차양 전면이 370°C에 이를 수 있어도 뒤쪽 본체는 약 20°C에서 작동하도록 설명하며, 이는 실제 측정 성과가 아닌 설계상 열 대응이다. 본체 대부분을 덮는 다층 단열재와 측면의 단방향 열관에 연결된 방열기는 각각 복사열 유입·내부 열 손실을 억제하고 본체의 열을 배출하며, 차양 및 궤도 설계와 함께 고온 전용 전자장치 없이 운용하도록 한다. 태양전지 패널은 3분의 2가 거울인 optical solar reflectors, 3분의 1이 삼중접합 태양전지로 구성되고, 필요한 전력을 얻으면서 정상 표면 운용 온도 약 150°C를 유지하도록 태양에서 비껴 기울여 운용한다. «수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)»\n\n표면 재복사열에 대한 노출을 줄이기 위해 과학 궤도는 타원형으로 설계되었으며, 계획된 12시간 공전마다 뜨거운 표면을 저고도로 통과하는 시간은 약 25분이다. 관측에서는 차양이 항상 태양을 향해야 하고, 기기는 수성은 보이되 태양은 보이지 않는 위치에 장착되어 허용 온도 범위를 유지해야 한다는 조건이 문서에 명시되어 있다. 따라서 본체의 관측 자세와 기기의 관측 방향을 자유롭게 선택하기 어렵다는 설명은 이 조건에서 도출한 추론이다. 또한 저고도 관측 기회가 짧은 통과 구간에 묶인다는 해석도 궤도 설계에 근거한 추론이며, 약 25분을 모든 기기의 실제 관측 시간으로 단정할 수는 없다. 문서는 서로 다른 궤도 구간에서 여러 유형의 관측을 수행하고 수성 태양일 두 번, 즉 지구 시간 1년 안에 관측을 마쳐야 한다고 명시하지만, 이 완료 기한 자체가 열 설계 때문에 정해졌다고 설명하지는 않는다. «수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)»",
+      "부족": false,
+      "이유": "맡은 절의 핵심인 열 환경, 차양·방열기·전력 설계와 관측 자세·운용 조건은 D1에 충분히 제시되어 있다. 다만 기기별 허용 지향각과 실제 관측 시간은 제시되지 않아 정량화하지 않았으며, D2에는 이 절에 사용할 핵심 근거가 없다.",
+      "읽은문서": [
+        "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+        "수성 | MESSENGER"
+      ],
+      "인용": [
+        "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+        "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+        "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)"
+      ],
+      "draft_format": "source_ids_v1",
+      "raw_draft": {
+        "단락": [
+          {
+            "내용": "MESSENGER가 도는 수성에서는 태양이 지구에서 보는 것보다 최대 11배 밝으며, 수성 표면이 재복사하는 열도 탐사선의 열 부담을 높인다. 고도 200 km에서는 행성의 재복사열만으로도 지구에서의 태양 복사 세기의 4배에 이르므로, 직접 들어오는 태양 복사와 표면에서 되돌아오는 열을 함께 고려해야 한다.",
+            "출처ID": [
+              "D1"
+            ]
+          },
+          {
+            "내용": "이에 MESSENGER는 전면의 티타늄 프레임에 내열성과 반사성이 높은 차양을 고정하고, 앞뒤의 Nextel 세라믹 직물 사이에 여러 겹의 Kapton 플라스틱 단열층을 배치했다. 문서는 수성이 태양에 가장 가까울 때 차양 전면이 370°C에 이를 수 있어도 뒤쪽 본체는 약 20°C에서 작동하도록 설명하며, 이는 실제 측정 성과가 아닌 설계상 열 대응이다. 본체 대부분을 덮는 다층 단열재와 측면의 단방향 열관에 연결된 방열기는 각각 복사열 유입·내부 열 손실을 억제하고 본체의 열을 배출하며, 차양 및 궤도 설계와 함께 고온 전용 전자장치 없이 운용하도록 한다. 태양전지 패널은 3분의 2가 거울인 optical solar reflectors, 3분의 1이 삼중접합 태양전지로 구성되고, 필요한 전력을 얻으면서 정상 표면 운용 온도 약 150°C를 유지하도록 태양에서 비껴 기울여 운용한다.",
+            "출처ID": [
+              "D1"
+            ]
+          },
+          {
+            "내용": "표면 재복사열에 대한 노출을 줄이기 위해 과학 궤도는 타원형으로 설계되었으며, 계획된 12시간 공전마다 뜨거운 표면을 저고도로 통과하는 시간은 약 25분이다. 관측에서는 차양이 항상 태양을 향해야 하고, 기기는 수성은 보이되 태양은 보이지 않는 위치에 장착되어 허용 온도 범위를 유지해야 한다는 조건이 문서에 명시되어 있다. 따라서 본체의 관측 자세와 기기의 관측 방향을 자유롭게 선택하기 어렵다는 설명은 이 조건에서 도출한 추론이다. 또한 저고도 관측 기회가 짧은 통과 구간에 묶인다는 해석도 궤도 설계에 근거한 추론이며, 약 25분을 모든 기기의 실제 관측 시간으로 단정할 수는 없다. 문서는 서로 다른 궤도 구간에서 여러 유형의 관측을 수행하고 수성 태양일 두 번, 즉 지구 시간 1년 안에 관측을 마쳐야 한다고 명시하지만, 이 완료 기한 자체가 열 설계 때문에 정해졌다고 설명하지는 않는다.",
+            "출처ID": [
+              "D1"
+            ]
+          }
+        ],
+        "부족": false,
+        "이유": "맡은 절의 핵심인 열 환경, 차양·방열기·전력 설계와 관측 자세·운용 조건은 D1에 충분히 제시되어 있다. 다만 기기별 허용 지향각과 실제 관측 시간은 제시되지 않아 정량화하지 않았으며, D2에는 이 절에 사용할 핵심 근거가 없다."
+      },
+      "source_map": {
+        "D1": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+        "D2": "수성 | MESSENGER"
+      }
+    },
+    {
+      "번호": 1,
+      "절": "금성 Venus Express의 열 제어 설계와 관측 제약",
+      "역할": "열·전력 설계 연구원",
+      "round": 0,
+      "본문": "Venus Express가 금성 궤도에서 겪는 열 환경은 금성 표면의 465°C 환경과 구분해야 하며, 이 표면 온도를 궤도선의 온도로 적용할 수 없다. 자료는 금성에서 우주선이 받는 가열이 화성에서보다 4배 크다고 설명하며, 태양 조명과 이온화 방사선의 영향도 더 크다고 명시한다. 한편 금성에서의 태양복사 세기는 지구에서의 2배로 제시되는데, 이는 전력 공급에 이용할 태양복사의 비교이므로 화성을 기준으로 한 우주선 가열의 4배와 구별해야 한다. «금성 | The spacecraft»«금성 | Venus Express ESA Mission Brochure»\n\n이 가열에 대응하여 Venus Express는 안전한 온도 유지를 목적으로 표면 방열기의 면적과 효율을 높이고, Mars Express와 다르게 포장한 23층 다층 단열재인 MLI를 사용했다. MLI는 검정색 대신 금색을 채택하여 복사를 더 많이 반사하도록 했으며, 자료는 Mars Express의 보온 중심 설계와 Venus Express의 냉각 유지 중심 설계를 대비한다. 전력 측면에서는 풍부한 태양복사 덕분에 태양전지판을 Mars Express의 거의 절반 크기로 설계할 수 있었다. 또한 약 120°C까지의 고온을 견디는 GaAs 태양전지를 채택하고 전지 사이에 열 방출을 돕는 알루미늄 띠를 배치했는데, 이 온도는 전지의 내열 특성이지 궤도선의 실제 운용 온도나 관측 성과가 아니다. «금성 | The spacecraft»«금성 | Venus Express ESA Mission Brochure»\n\n자세와 관련하여 자료에 명시된 조건은 민감한 기기가 있는 우주선의 차가운 면을 태양으로부터 멀어지게 유지하는 것이며, 이 조건을 지키면서 단일 안테나를 항상 지구로 향하게 하는 것은 불가능할 수 있다. Venus Express는 이러한 통신 지향 제약에 대응하여 서로 다른 기체 면에 고이득 안테나 2개를 설치했다. 관측 자세를 선택할 때도 차가운 면의 태양 회피 조건을 만족해야 하므로 일부 관측 방향이나 관측과 통신의 조합이 제한될 수 있다는 해석은 이 자세 조건에서 도출한 추론이다. 자료는 구체적인 관측 금지 방향, 허용 자세각 또는 관측시간 손실을 제시하지 않으므로, 안테나 배치가 관측 제약을 모두 해소했다거나 특정 관측 성과를 보장했다고 단정할 수 없다. «금성 | The spacecraft»«금성 | Venus Express ESA Mission Brochure»",
+      "부족": false,
+      "이유": "담당 절의 핵심인 궤도 열 환경, 단열·방열 설계, 전력 선택 및 자세 조건에 관한 근거가 있다. 관측 방향과 시간에 대한 직접적인 제한이나 정량값은 제공되지 않아, 명시된 통신 지향 제약과 자세 조건에서 추론한 관측 제약을 구분했다.",
+      "읽은문서": [
+        "금성 | The spacecraft",
+        "금성 | Venus Express ESA Mission Brochure"
+      ],
+      "인용": [
+        "금성 | The spacecraft",
+        "금성 | Venus Express ESA Mission Brochure",
+        "금성 | The spacecraft",
+        "금성 | Venus Express ESA Mission Brochure",
+        "금성 | The spacecraft",
+        "금성 | Venus Express ESA Mission Brochure"
+      ],
+      "draft_format": "source_ids_v1",
+      "raw_draft": {
+        "단락": [
+          {
+            "내용": "Venus Express가 금성 궤도에서 겪는 열 환경은 금성 표면의 465°C 환경과 구분해야 하며, 이 표면 온도를 궤도선의 온도로 적용할 수 없다. 자료는 금성에서 우주선이 받는 가열이 화성에서보다 4배 크다고 설명하며, 태양 조명과 이온화 방사선의 영향도 더 크다고 명시한다. 한편 금성에서의 태양복사 세기는 지구에서의 2배로 제시되는데, 이는 전력 공급에 이용할 태양복사의 비교이므로 화성을 기준으로 한 우주선 가열의 4배와 구별해야 한다.",
+            "출처ID": [
+              "D1",
+              "D2"
+            ]
+          },
+          {
+            "내용": "이 가열에 대응하여 Venus Express는 안전한 온도 유지를 목적으로 표면 방열기의 면적과 효율을 높이고, Mars Express와 다르게 포장한 23층 다층 단열재인 MLI를 사용했다. MLI는 검정색 대신 금색을 채택하여 복사를 더 많이 반사하도록 했으며, 자료는 Mars Express의 보온 중심 설계와 Venus Express의 냉각 유지 중심 설계를 대비한다. 전력 측면에서는 풍부한 태양복사 덕분에 태양전지판을 Mars Express의 거의 절반 크기로 설계할 수 있었다. 또한 약 120°C까지의 고온을 견디는 GaAs 태양전지를 채택하고 전지 사이에 열 방출을 돕는 알루미늄 띠를 배치했는데, 이 온도는 전지의 내열 특성이지 궤도선의 실제 운용 온도나 관측 성과가 아니다.",
+            "출처ID": [
+              "D1",
+              "D2"
+            ]
+          },
+          {
+            "내용": "자세와 관련하여 자료에 명시된 조건은 민감한 기기가 있는 우주선의 차가운 면을 태양으로부터 멀어지게 유지하는 것이며, 이 조건을 지키면서 단일 안테나를 항상 지구로 향하게 하는 것은 불가능할 수 있다. Venus Express는 이러한 통신 지향 제약에 대응하여 서로 다른 기체 면에 고이득 안테나 2개를 설치했다. 관측 자세를 선택할 때도 차가운 면의 태양 회피 조건을 만족해야 하므로 일부 관측 방향이나 관측과 통신의 조합이 제한될 수 있다는 해석은 이 자세 조건에서 도출한 추론이다. 자료는 구체적인 관측 금지 방향, 허용 자세각 또는 관측시간 손실을 제시하지 않으므로, 안테나 배치가 관측 제약을 모두 해소했다거나 특정 관측 성과를 보장했다고 단정할 수 없다.",
+            "출처ID": [
+              "D1",
+              "D2"
+            ]
+          }
+        ],
+        "부족": false,
+        "이유": "담당 절의 핵심인 궤도 열 환경, 단열·방열 설계, 전력 선택 및 자세 조건에 관한 근거가 있다. 관측 방향과 시간에 대한 직접적인 제한이나 정량값은 제공되지 않아, 명시된 통신 지향 제약과 자세 조건에서 추론한 관측 제약을 구분했다."
+      },
+      "source_map": {
+        "D1": "금성 | The spacecraft",
+        "D2": "금성 | Venus Express ESA Mission Brochure"
+      }
+    }
+  ],
+  "review": [
+    {
+      "section": 0,
+      "round": 0,
+      "self_reported_insufficient": false,
+      "accepted": true,
+      "valid_draft": true,
+      "redispatch": false,
+      "reason": "valid nonregressing draft"
+    },
+    {
+      "section": 1,
+      "round": 0,
+      "self_reported_insufficient": false,
+      "accepted": true,
+      "valid_draft": true,
+      "redispatch": false,
+      "reason": "valid nonregressing draft"
+    }
+  ],
+  "report": "# 수성과 금성 탐사의 열 대응 설계와 관측 제약\n\nMESSENGER와 Venus Express는 강한 열 환경에 대응해 각각 차양 중심의 차열·방열 설계와 방열기·다층 단열재 중심의 냉각 설계를 적용했다. 아래에서는 이 설계 차이와 자세·궤도 조건을 비교하고, 자료에 명시된 제약과 그로부터 추론한 관측상의 제한을 구분한다.\n\n## 1. 수성 MESSENGER의 차열·방열 설계와 관측 제약\n\nMESSENGER가 도는 수성에서는 태양이 지구에서 보는 것보다 최대 11배 밝으며, 수성 표면이 재복사하는 열도 탐사선의 열 부담을 높인다. 고도 200 km에서는 행성의 재복사열만으로도 지구에서의 태양 복사 세기의 4배에 이르므로, 직접 들어오는 태양 복사와 표면에서 되돌아오는 열을 함께 고려해야 한다. «수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)»\n\n이에 MESSENGER는 전면의 티타늄 프레임에 내열성과 반사성이 높은 차양을 고정하고, 앞뒤의 Nextel 세라믹 직물 사이에 여러 겹의 Kapton 플라스틱 단열층을 배치했다. 문서는 수성이 태양에 가장 가까울 때 차양 전면이 370°C에 이를 수 있어도 뒤쪽 본체는 약 20°C에서 작동하도록 설명하며, 이는 실제 측정 성과가 아닌 설계상 열 대응이다. 본체 대부분을 덮는 다층 단열재와 측면의 단방향 열관에 연결된 방열기는 각각 복사열 유입·내부 열 손실을 억제하고 본체의 열을 배출하며, 차양 및 궤도 설계와 함께 고온 전용 전자장치 없이 운용하도록 한다. 태양전지 패널은 3분의 2가 거울인 optical solar reflectors, 3분의 1이 삼중접합 태양전지로 구성되고, 필요한 전력을 얻으면서 정상 표면 운용 온도 약 150°C를 유지하도록 태양에서 비껴 기울여 운용한다. «수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)»\n\n표면 재복사열에 대한 노출을 줄이기 위해 과학 궤도는 타원형으로 설계되었으며, 계획된 12시간 공전마다 뜨거운 표면을 저고도로 통과하는 시간은 약 25분이다. 관측에서는 차양이 항상 태양을 향해야 하고, 기기는 수성은 보이되 태양은 보이지 않는 위치에 장착되어 허용 온도 범위를 유지해야 한다는 조건이 문서에 명시되어 있다. 따라서 본체의 관측 자세와 기기의 관측 방향을 자유롭게 선택하기 어렵다는 설명은 이 조건에서 도출한 추론이다. 또한 저고도 관측 기회가 짧은 통과 구간에 묶인다는 해석도 궤도 설계에 근거한 추론이며, 약 25분을 모든 기기의 실제 관측 시간으로 단정할 수는 없다. 문서는 서로 다른 궤도 구간에서 여러 유형의 관측을 수행하고 수성 태양일 두 번, 즉 지구 시간 1년 안에 관측을 마쳐야 한다고 명시하지만, 이 완료 기한 자체가 열 설계 때문에 정해졌다고 설명하지는 않는다. «수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)»\n\n## 2. 금성 Venus Express의 열 제어 설계와 관측 제약\n\nVenus Express가 금성 궤도에서 겪는 열 환경은 금성 표면의 465°C 환경과 구분해야 하며, 이 표면 온도를 궤도선의 온도로 적용할 수 없다. 자료는 금성에서 우주선이 받는 가열이 화성에서보다 4배 크다고 설명하며, 태양 조명과 이온화 방사선의 영향도 더 크다고 명시한다. 한편 금성에서의 태양복사 세기는 지구에서의 2배로 제시되는데, 이는 전력 공급에 이용할 태양복사의 비교이므로 화성을 기준으로 한 우주선 가열의 4배와 구별해야 한다. «금성 | The spacecraft»«금성 | Venus Express ESA Mission Brochure»\n\n이 가열에 대응하여 Venus Express는 안전한 온도 유지를 목적으로 표면 방열기의 면적과 효율을 높이고, Mars Express와 다르게 포장한 23층 다층 단열재인 MLI를 사용했다. MLI는 검정색 대신 금색을 채택하여 복사를 더 많이 반사하도록 했으며, 자료는 Mars Express의 보온 중심 설계와 Venus Express의 냉각 유지 중심 설계를 대비한다. 전력 측면에서는 풍부한 태양복사 덕분에 태양전지판을 Mars Express의 거의 절반 크기로 설계할 수 있었다. 또한 약 120°C까지의 고온을 견디는 GaAs 태양전지를 채택하고 전지 사이에 열 방출을 돕는 알루미늄 띠를 배치했는데, 이 온도는 전지의 내열 특성이지 궤도선의 실제 운용 온도나 관측 성과가 아니다. «금성 | The spacecraft»«금성 | Venus Express ESA Mission Brochure»\n\n자세와 관련하여 자료에 명시된 조건은 민감한 기기가 있는 우주선의 차가운 면을 태양으로부터 멀어지게 유지하는 것이며, 이 조건을 지키면서 단일 안테나를 항상 지구로 향하게 하는 것은 불가능할 수 있다. Venus Express는 이러한 통신 지향 제약에 대응하여 서로 다른 기체 면에 고이득 안테나 2개를 설치했다. 관측 자세를 선택할 때도 차가운 면의 태양 회피 조건을 만족해야 하므로 일부 관측 방향이나 관측과 통신의 조합이 제한될 수 있다는 해석은 이 자세 조건에서 도출한 추론이다. 자료는 구체적인 관측 금지 방향, 허용 자세각 또는 관측시간 손실을 제시하지 않으므로, 안테나 배치가 관측 제약을 모두 해소했다거나 특정 관측 성과를 보장했다고 단정할 수 없다. «금성 | The spacecraft»«금성 | Venus Express ESA Mission Brochure»\n\n## 맺음말\n\nMESSENGER는 차양의 태양 지향과 뜨거운 표면의 저고도 통과를 줄이는 궤도가, Venus Express는 차가운 면의 태양 회피와 통신 지향 조건이 관측 자세나 운용 조합을 제한할 수 있다. 다만 제시된 자료만으로는 두 탐사선의 실제 관측시간 손실을 정량 비교하거나, 설계상 온도와 안테나 배치를 실제 관측 성과로 단정할 수 없다.",
+  "events": [
+    {
+      "kind": "context",
+      "actor": "coordinator",
+      "step": "plan",
+      "input_chars": 30680,
+      "source_chars": 0,
+      "card_chars": 29974,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "plan",
+      "plan": {
+        "제목": "수성과 금성 탐사의 열 대응 설계와 관측 제약",
+        "목차": [
+          {
+            "번호": 0,
+            "절": "수성 MESSENGER의 차열·방열 설계와 관측 제약",
+            "지시": "MESSENGER의 열 환경, 세라믹 직물 차양과 방열기를 이용한 대응, 그 설계가 관측 방향과 운용에 주는 제약을 문서 근거로 정리하라. 열 환경→설계 대응→관측 제약의 순서로 설명하고, 자료에 명시된 제약과 추론을 구분하라.",
+            "역할": "열·전력 설계 연구원",
+            "시작문서": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+            "예산": 2
+          },
+          {
+            "번호": 1,
+            "절": "금성 Venus Express의 열 제어 설계와 관측 제약",
+            "지시": "Venus Express가 궤도에서 받는 열 환경, 단열과 방열기를 이용한 대응, 안전한 열 상태를 유지하기 위한 자세 조건이 관측에 주는 제약을 문서 근거로 정리하라. 열 환경→설계 대응→관측 제약의 순서로 설명하고, 금성 표면 환경과 궤도선이 겪는 환경을 구분하며 자료에 명시된 제약과 추론을 구분하라.",
+            "역할": "열·전력 설계 연구원",
+            "시작문서": "금성 | The spacecraft",
+            "예산": 2
+          }
+        ]
+      }
+    },
+    {
+      "kind": "assignment",
+      "agent": "researcher-0",
+      "round": 0,
+      "task": {
+        "번호": 0,
+        "절": "수성 MESSENGER의 차열·방열 설계와 관측 제약",
+        "지시": "MESSENGER의 열 환경, 세라믹 직물 차양과 방열기를 이용한 대응, 그 설계가 관측 방향과 운용에 주는 제약을 문서 근거로 정리하라. 열 환경→설계 대응→관측 제약의 순서로 설명하고, 자료에 명시된 제약과 추론을 구분하라.",
+        "역할": "열·전력 설계 연구원",
+        "시작문서": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+        "예산": 2,
+        "다른구역": [
+          {
+            "절": "금성 Venus Express의 열 제어 설계와 관측 제약",
+            "지시": "Venus Express가 궤도에서 받는 열 환경, 단열과 방열기를 이용한 대응, 안전한 열 상태를 유지하기 위한 자세 조건이 관측에 주는 제약을 문서 근거로 정리하라. 열 환경→설계 대응→관측 제약의 순서로 설명하고, 금성 표면 환경과 궤도선이 겪는 환경을 구분하며 자료에 명시된 제약과 추론을 구분하라.",
+            "시작문서": "금성 | The spacecraft"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-0",
+      "step": "read",
+      "input_chars": 166819,
+      "source_chars": 151027,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "assignment",
+      "agent": "researcher-1",
+      "round": 0,
+      "task": {
+        "번호": 1,
+        "절": "금성 Venus Express의 열 제어 설계와 관측 제약",
+        "지시": "Venus Express가 궤도에서 받는 열 환경, 단열과 방열기를 이용한 대응, 안전한 열 상태를 유지하기 위한 자세 조건이 관측에 주는 제약을 문서 근거로 정리하라. 열 환경→설계 대응→관측 제약의 순서로 설명하고, 금성 표면 환경과 궤도선이 겪는 환경을 구분하며 자료에 명시된 제약과 추론을 구분하라.",
+        "역할": "열·전력 설계 연구원",
+        "시작문서": "금성 | The spacecraft",
+        "예산": 2,
+        "다른구역": [
+          {
+            "절": "수성 MESSENGER의 차열·방열 설계와 관측 제약",
+            "지시": "MESSENGER의 열 환경, 세라믹 직물 차양과 방열기를 이용한 대응, 그 설계가 관측 방향과 운용에 주는 제약을 문서 근거로 정리하라. 열 환경→설계 대응→관측 제약의 순서로 설명하고, 자료에 명시된 제약과 추론을 구분하라.",
+            "시작문서": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-1",
+      "step": "read",
+      "input_chars": 7957,
+      "source_chars": 6230,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "fact_table",
+      "agent": "researcher-0",
+      "document": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+      "table": {
+        "facts": [
+          {
+            "id": "F1",
+            "subject": "the Sun",
+            "relation": "수성에서의 밝기",
+            "comparison_target": "our own planet",
+            "value": "up to 11",
+            "unit": "times",
+            "basis": "지구에서 보는 태양 밝기 대비 수성에서의 최대 밝기",
+            "start_line": 1597,
+            "end_line": 1599,
+            "document": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+            "quote": "While orbiting Mercury, MESSENGER will “feel” significantly hotter than spacecraft that orbit Earth. This is because\nMercury’s elongated orbit swings the planet to within 46 million km of the Sun, or about two-thirds closer to the Sun\nthan Earth. As a result, the Sun shines up to 11 times brighter at Mercury than we see from our own planet."
+          },
+          {
+            "id": "F2",
+            "subject": "the re-radiated heat from the planet alone",
+            "relation": "수성 표면에서 재복사되는 열의 세기",
+            "comparison_target": "the solar intensity at Earth",
+            "value": "4",
+            "unit": "times",
+            "basis": "고도 이백 킬로미터에서 행성의 재복사열만을 지구의 태양 복사 세기와 비교",
+            "start_line": 409,
+            "end_line": 411,
+            "document": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+            "quote": "The spacecraft’s orbit is elliptical rather than circular because the planet’s surface radiates back heat from the Sun. At\nan altitude of 200 km, the re-radiated heat from the planet alone is 4 times the solar intensity at Earth. By spending only\na short portion of each orbit flying this close to the planet, the temperature of the spacecraft can be better regulated."
+          },
+          {
+            "id": "F3",
+            "subject": "a heat-resistant and highly reflective sunshade",
+            "relation": "앞뒤 세라믹 직물층 사이에 여러 겹의 플라스틱 단열층을 둔 차양으로 태양열을 차단",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "문서에 명시된 설계 대응이며 실제 온도 측정 결과가 아님",
+            "start_line": 1600,
+            "end_line": 1604,
+            "document": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+            "quote": "MESSENGER’s first line of thermal defense is a heat-resistant and highly reflective sunshade, fixed on a titanium frame\nto the front of the spacecraft. Measuring about 2.5 m tall and 2 m across as viewed head-on, the thin shade has front\nand back layers of Nextel ceramic cloth — the same material that protects sections of the Space Shuttle — surrounding\nseveral inner layers of Kapton plastic insulation. While temperatures on the front of the shade could reach 370° C when\nMercury is closest to the Sun, behind it the spacecraft will operate at room temperature, around 20° C."
+          },
+          {
+            "id": "F4",
+            "subject": "radiators connected to diode (“one-way”) heat pipes",
+            "relation": "탐사선 측면에서 본체의 열을 외부로 배출",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "문서에 명시된 방열 설계이며 다층 단열재 및 차양과 함께 고온 전용 전자장치 없이 운용하도록 함",
+            "start_line": 1610,
+            "end_line": 1613,
+            "document": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+            "quote": "the surfaces of the spacecraft to protect against incident thermal radiation and insulate against internal heat loss, and\nradiators connected to diode (“one-way”) heat pipes are installed on the sides of the spacecraft to carry heat away from\nthe spacecraft body. The combination of the sunshade, unique orbital design, thermal blanketing, and heat-radiation\nsystem allows the spacecraft to operate without special high-temperature electronics."
+          },
+          {
+            "id": "F5",
+            "subject": "The panels",
+            "relation": "필요한 전력을 얻으면서 안전한 온도를 유지하도록 태양 반대 방향으로 기울여 운용",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "문서에 명시된 전력과 열 제어의 연계이며 작은 거울의 태양에너지 반사와 패널 회전을 이용",
+            "start_line": 1621,
+            "end_line": 1625,
+            "document": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+            "quote": "The custom-developed panels are two-thirds mirrors (called optical solar reflectors) and one-third triple-junction solar\ncells, which convert 28% of the sunlight hitting them into electricity. Each panel has two rows of mirrors for every row\nof cells; the small mirrors reflect the Sun’s energy and keep the panel cooler. The panels also rotate, so the operations\nteam tilts the panels away from the Sun, positioning them to get the required power while maintaining a normal surface\noperating temperature of about 150° C."
+          },
+          {
+            "id": "F6",
+            "subject": "MESSENGER",
+            "relation": "표면 재복사열 노출을 줄이도록 저고도에서 뜨거운 표면을 지나는 시간을 제한",
+            "comparison_target": "",
+            "value": "about 25",
+            "unit": "minutes",
+            "basis": "열두 시간 공전마다 계획된 저고도 통과 시간이며 타원궤도로 가까운 표면에 머무는 시간을 줄이는 설계 대응",
+            "start_line": 1605,
+            "end_line": 1607,
+            "document": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+            "quote": "As the second line of defense against this challenging environment, the science orbit is designed to limit\nMESSENGER’s exposure to the heat re-radiating from the surface of Mercury. (MESSENGER will only spend about 25\nminutes of each 12-hour orbit crossing Mercury’s broiling surface at low altitude.) Multilayered insulation covers most of"
+          },
+          {
+            "id": "F7",
+            "subject": "the MESSENGER spacecraft",
+            "relation": "관측 중에도 차양이 항상 태양을 향하도록 유지해야 함",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "문서에 명시된 관측 제약은 차양의 태양 지향 유지이며 이에 따라 본체의 관측 자세를 자유롭게 선택할 수 없다는 설명은 추론",
+            "start_line": 401,
+            "end_line": 403,
+            "document": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+            "quote": "To accomplish these science goals, the MESSENGER spacecraft must obtain many types of observations from different\nportions of its orbit around Mercury. Some major constraints must be met, including completing the observations within\ntwo Mercury solar days (equivalent to one Earth year) and keeping the spacecraft sunshade facing the Sun at all times."
+          },
+          {
+            "id": "F8",
+            "subject": "instruments",
+            "relation": "수성은 보이되 태양은 보이지 않는 위치에 장착하고 허용 온도 범위 안에서 유지해야 함",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "문서에 명시된 열적 장착 조건이며 관측 가능한 방향을 제한한다는 해석은 추론",
+            "start_line": 1434,
+            "end_line": 1436,
+            "document": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+            "quote": "The instrument mechanical accommodation was difficult because of the unique thermal constraints faced during the\nmission; instruments had to be mounted where Mercury would be in view but the Sun would not, and they had to be\nmaintained within an acceptable temperature range in a very harsh environment. Instrument details follow. In each case"
+          }
+        ],
+        "insufficient": false,
+        "reason": "",
+        "semantic_review": "pending",
+        "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+      }
+    },
+    {
+      "kind": "read",
+      "agent": "researcher-0",
+      "round": 0,
+      "document": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+      "source_chars": 151027,
+      "evidence": {
+        "근거": [
+          {
+            "원문": "While orbiting Mercury, MESSENGER will “feel” significantly hotter than spacecraft that orbit Earth. This is because\nMercury’s elongated orbit swings the planet to within 46 million km of the Sun, or about two-thirds closer to the Sun\nthan Earth. As a result, the Sun shines up to 11 times brighter at Mercury than we see from our own planet.",
+            "메모": "{\"subject\": \"the Sun\", \"relation\": \"수성에서의 밝기\", \"comparison_target\": \"our own planet\", \"value\": \"up to 11\", \"unit\": \"times\", \"basis\": \"지구에서 보는 태양 밝기 대비 수성에서의 최대 밝기\"}"
+          },
+          {
+            "원문": "The spacecraft’s orbit is elliptical rather than circular because the planet’s surface radiates back heat from the Sun. At\nan altitude of 200 km, the re-radiated heat from the planet alone is 4 times the solar intensity at Earth. By spending only\na short portion of each orbit flying this close to the planet, the temperature of the spacecraft can be better regulated.",
+            "메모": "{\"subject\": \"the re-radiated heat from the planet alone\", \"relation\": \"수성 표면에서 재복사되는 열의 세기\", \"comparison_target\": \"the solar intensity at Earth\", \"value\": \"4\", \"unit\": \"times\", \"basis\": \"고도 이백 킬로미터에서 행성의 재복사열만을 지구의 태양 복사 세기와 비교\"}"
+          },
+          {
+            "원문": "MESSENGER’s first line of thermal defense is a heat-resistant and highly reflective sunshade, fixed on a titanium frame\nto the front of the spacecraft. Measuring about 2.5 m tall and 2 m across as viewed head-on, the thin shade has front\nand back layers of Nextel ceramic cloth — the same material that protects sections of the Space Shuttle — surrounding\nseveral inner layers of Kapton plastic insulation. While temperatures on the front of the shade could reach 370° C when\nMercury is closest to the Sun, behind it the spacecraft will operate at room temperature, around 20° C.",
+            "메모": "{\"subject\": \"a heat-resistant and highly reflective sunshade\", \"relation\": \"앞뒤 세라믹 직물층 사이에 여러 겹의 플라스틱 단열층을 둔 차양으로 태양열을 차단\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"문서에 명시된 설계 대응이며 실제 온도 측정 결과가 아님\"}"
+          },
+          {
+            "원문": "the surfaces of the spacecraft to protect against incident thermal radiation and insulate against internal heat loss, and\nradiators connected to diode (“one-way”) heat pipes are installed on the sides of the spacecraft to carry heat away from\nthe spacecraft body. The combination of the sunshade, unique orbital design, thermal blanketing, and heat-radiation\nsystem allows the spacecraft to operate without special high-temperature electronics.",
+            "메모": "{\"subject\": \"radiators connected to diode (“one-way”) heat pipes\", \"relation\": \"탐사선 측면에서 본체의 열을 외부로 배출\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"문서에 명시된 방열 설계이며 다층 단열재 및 차양과 함께 고온 전용 전자장치 없이 운용하도록 함\"}"
+          },
+          {
+            "원문": "The custom-developed panels are two-thirds mirrors (called optical solar reflectors) and one-third triple-junction solar\ncells, which convert 28% of the sunlight hitting them into electricity. Each panel has two rows of mirrors for every row\nof cells; the small mirrors reflect the Sun’s energy and keep the panel cooler. The panels also rotate, so the operations\nteam tilts the panels away from the Sun, positioning them to get the required power while maintaining a normal surface\noperating temperature of about 150° C.",
+            "메모": "{\"subject\": \"The panels\", \"relation\": \"필요한 전력을 얻으면서 안전한 온도를 유지하도록 태양 반대 방향으로 기울여 운용\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"문서에 명시된 전력과 열 제어의 연계이며 작은 거울의 태양에너지 반사와 패널 회전을 이용\"}"
+          },
+          {
+            "원문": "As the second line of defense against this challenging environment, the science orbit is designed to limit\nMESSENGER’s exposure to the heat re-radiating from the surface of Mercury. (MESSENGER will only spend about 25\nminutes of each 12-hour orbit crossing Mercury’s broiling surface at low altitude.) Multilayered insulation covers most of",
+            "메모": "{\"subject\": \"MESSENGER\", \"relation\": \"표면 재복사열 노출을 줄이도록 저고도에서 뜨거운 표면을 지나는 시간을 제한\", \"comparison_target\": \"\", \"value\": \"about 25\", \"unit\": \"minutes\", \"basis\": \"열두 시간 공전마다 계획된 저고도 통과 시간이며 타원궤도로 가까운 표면에 머무는 시간을 줄이는 설계 대응\"}"
+          },
+          {
+            "원문": "To accomplish these science goals, the MESSENGER spacecraft must obtain many types of observations from different\nportions of its orbit around Mercury. Some major constraints must be met, including completing the observations within\ntwo Mercury solar days (equivalent to one Earth year) and keeping the spacecraft sunshade facing the Sun at all times.",
+            "메모": "{\"subject\": \"the MESSENGER spacecraft\", \"relation\": \"관측 중에도 차양이 항상 태양을 향하도록 유지해야 함\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"문서에 명시된 관측 제약은 차양의 태양 지향 유지이며 이에 따라 본체의 관측 자세를 자유롭게 선택할 수 없다는 설명은 추론\"}"
+          },
+          {
+            "원문": "The instrument mechanical accommodation was difficult because of the unique thermal constraints faced during the\nmission; instruments had to be mounted where Mercury would be in view but the Sun would not, and they had to be\nmaintained within an acceptable temperature range in a very harsh environment. Instrument details follow. In each case",
+            "메모": "{\"subject\": \"instruments\", \"relation\": \"수성은 보이되 태양은 보이지 않는 위치에 장착하고 허용 온도 범위 안에서 유지해야 함\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"문서에 명시된 열적 장착 조건이며 관측 가능한 방향을 제한한다는 해석은 추론\"}"
+          }
+        ],
+        "부족": false,
+        "이유": "",
+        "fact_table": {
+          "facts": [
+            {
+              "id": "F1",
+              "subject": "the Sun",
+              "relation": "수성에서의 밝기",
+              "comparison_target": "our own planet",
+              "value": "up to 11",
+              "unit": "times",
+              "basis": "지구에서 보는 태양 밝기 대비 수성에서의 최대 밝기",
+              "start_line": 1597,
+              "end_line": 1599,
+              "document": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+              "quote": "While orbiting Mercury, MESSENGER will “feel” significantly hotter than spacecraft that orbit Earth. This is because\nMercury’s elongated orbit swings the planet to within 46 million km of the Sun, or about two-thirds closer to the Sun\nthan Earth. As a result, the Sun shines up to 11 times brighter at Mercury than we see from our own planet."
+            },
+            {
+              "id": "F2",
+              "subject": "the re-radiated heat from the planet alone",
+              "relation": "수성 표면에서 재복사되는 열의 세기",
+              "comparison_target": "the solar intensity at Earth",
+              "value": "4",
+              "unit": "times",
+              "basis": "고도 이백 킬로미터에서 행성의 재복사열만을 지구의 태양 복사 세기와 비교",
+              "start_line": 409,
+              "end_line": 411,
+              "document": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+              "quote": "The spacecraft’s orbit is elliptical rather than circular because the planet’s surface radiates back heat from the Sun. At\nan altitude of 200 km, the re-radiated heat from the planet alone is 4 times the solar intensity at Earth. By spending only\na short portion of each orbit flying this close to the planet, the temperature of the spacecraft can be better regulated."
+            },
+            {
+              "id": "F3",
+              "subject": "a heat-resistant and highly reflective sunshade",
+              "relation": "앞뒤 세라믹 직물층 사이에 여러 겹의 플라스틱 단열층을 둔 차양으로 태양열을 차단",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "문서에 명시된 설계 대응이며 실제 온도 측정 결과가 아님",
+              "start_line": 1600,
+              "end_line": 1604,
+              "document": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+              "quote": "MESSENGER’s first line of thermal defense is a heat-resistant and highly reflective sunshade, fixed on a titanium frame\nto the front of the spacecraft. Measuring about 2.5 m tall and 2 m across as viewed head-on, the thin shade has front\nand back layers of Nextel ceramic cloth — the same material that protects sections of the Space Shuttle — surrounding\nseveral inner layers of Kapton plastic insulation. While temperatures on the front of the shade could reach 370° C when\nMercury is closest to the Sun, behind it the spacecraft will operate at room temperature, around 20° C."
+            },
+            {
+              "id": "F4",
+              "subject": "radiators connected to diode (“one-way”) heat pipes",
+              "relation": "탐사선 측면에서 본체의 열을 외부로 배출",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "문서에 명시된 방열 설계이며 다층 단열재 및 차양과 함께 고온 전용 전자장치 없이 운용하도록 함",
+              "start_line": 1610,
+              "end_line": 1613,
+              "document": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+              "quote": "the surfaces of the spacecraft to protect against incident thermal radiation and insulate against internal heat loss, and\nradiators connected to diode (“one-way”) heat pipes are installed on the sides of the spacecraft to carry heat away from\nthe spacecraft body. The combination of the sunshade, unique orbital design, thermal blanketing, and heat-radiation\nsystem allows the spacecraft to operate without special high-temperature electronics."
+            },
+            {
+              "id": "F5",
+              "subject": "The panels",
+              "relation": "필요한 전력을 얻으면서 안전한 온도를 유지하도록 태양 반대 방향으로 기울여 운용",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "문서에 명시된 전력과 열 제어의 연계이며 작은 거울의 태양에너지 반사와 패널 회전을 이용",
+              "start_line": 1621,
+              "end_line": 1625,
+              "document": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+              "quote": "The custom-developed panels are two-thirds mirrors (called optical solar reflectors) and one-third triple-junction solar\ncells, which convert 28% of the sunlight hitting them into electricity. Each panel has two rows of mirrors for every row\nof cells; the small mirrors reflect the Sun’s energy and keep the panel cooler. The panels also rotate, so the operations\nteam tilts the panels away from the Sun, positioning them to get the required power while maintaining a normal surface\noperating temperature of about 150° C."
+            },
+            {
+              "id": "F6",
+              "subject": "MESSENGER",
+              "relation": "표면 재복사열 노출을 줄이도록 저고도에서 뜨거운 표면을 지나는 시간을 제한",
+              "comparison_target": "",
+              "value": "about 25",
+              "unit": "minutes",
+              "basis": "열두 시간 공전마다 계획된 저고도 통과 시간이며 타원궤도로 가까운 표면에 머무는 시간을 줄이는 설계 대응",
+              "start_line": 1605,
+              "end_line": 1607,
+              "document": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+              "quote": "As the second line of defense against this challenging environment, the science orbit is designed to limit\nMESSENGER’s exposure to the heat re-radiating from the surface of Mercury. (MESSENGER will only spend about 25\nminutes of each 12-hour orbit crossing Mercury’s broiling surface at low altitude.) Multilayered insulation covers most of"
+            },
+            {
+              "id": "F7",
+              "subject": "the MESSENGER spacecraft",
+              "relation": "관측 중에도 차양이 항상 태양을 향하도록 유지해야 함",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "문서에 명시된 관측 제약은 차양의 태양 지향 유지이며 이에 따라 본체의 관측 자세를 자유롭게 선택할 수 없다는 설명은 추론",
+              "start_line": 401,
+              "end_line": 403,
+              "document": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+              "quote": "To accomplish these science goals, the MESSENGER spacecraft must obtain many types of observations from different\nportions of its orbit around Mercury. Some major constraints must be met, including completing the observations within\ntwo Mercury solar days (equivalent to one Earth year) and keeping the spacecraft sunshade facing the Sun at all times."
+            },
+            {
+              "id": "F8",
+              "subject": "instruments",
+              "relation": "수성은 보이되 태양은 보이지 않는 위치에 장착하고 허용 온도 범위 안에서 유지해야 함",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "문서에 명시된 열적 장착 조건이며 관측 가능한 방향을 제한한다는 해석은 추론",
+              "start_line": 1434,
+              "end_line": 1436,
+              "document": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+              "quote": "The instrument mechanical accommodation was difficult because of the unique thermal constraints faced during the\nmission; instruments had to be mounted where Mercury would be in view but the Sun would not, and they had to be\nmaintained within an acceptable temperature range in a very harsh environment. Instrument details follow. In each case"
+            }
+          ],
+          "insufficient": false,
+          "reason": "",
+          "semantic_review": "pending",
+          "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+        },
+        "validation": "Schema/source membership checked; semantic support pending direct review."
+      }
+    },
+    {
+      "kind": "candidates",
+      "agent": "researcher-0",
+      "round": 0,
+      "path": "all_docs_fallback",
+      "count": 95
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-0",
+      "step": "pick",
+      "input_chars": 4106,
+      "source_chars": 0,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "fact_table",
+      "agent": "researcher-1",
+      "document": "금성 | The spacecraft",
+      "table": {
+        "facts": [
+          {
+            "id": "F1",
+            "subject": "the spacecraft",
+            "relation": "금성에서 받는 가열이 화성보다 큼",
+            "comparison_target": "Mars",
+            "value": "four times",
+            "unit": "",
+            "basis": "금성 주변에서 운용하는 궤도선의 가열 비교이며 금성 표면 환경의 수치가 아님",
+            "start_line": 24,
+            "end_line": 24,
+            "document": "금성 | The spacecraft",
+            "quote": "Flying to an inner Solar System planet like Venus, at half the distance to the Sun as compared to Mars, meant that the effect of solar illumination and ionising radiation on the spacecraft was much higher. In fact, the heating of the spacecraft was four times greater at Venus than at Mars."
+          },
+          {
+            "id": "F2",
+            "subject": "the radiators",
+            "relation": "안전한 온도 유지를 위해 면적과 효율을 높임",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "궤도선의 열 제어 설계 대응",
+            "start_line": 25,
+            "end_line": 25,
+            "document": "금성 | The spacecraft",
+            "quote": "To keep Venus Express within temperatures that were safe for the spacecraft, the radiators on the spacecraft surface were increased in area and efficiency. The spacecraft coating, called ‘multi-layer insulation’ or MLI, was composed of 23 layers, packaged differently from Mars Express."
+          },
+          {
+            "id": "F3",
+            "subject": "multi-layer insulation",
+            "relation": "다층 단열재를 구성함",
+            "comparison_target": "",
+            "value": "23",
+            "unit": "layers",
+            "basis": "화성 탐사선과 다르게 포장한 단열재의 설계 구성",
+            "start_line": 25,
+            "end_line": 25,
+            "document": "금성 | The spacecraft",
+            "quote": "To keep Venus Express within temperatures that were safe for the spacecraft, the radiators on the spacecraft surface were increased in area and efficiency. The spacecraft coating, called ‘multi-layer insulation’ or MLI, was composed of 23 layers, packaged differently from Mars Express."
+          },
+          {
+            "id": "F4",
+            "subject": "the MLI",
+            "relation": "검정색 대신 금색을 사용하여 복사 반사 능력을 높임",
+            "comparison_target": "Mars Express",
+            "value": "",
+            "unit": "",
+            "basis": "열을 유지하는 설계에서 냉각을 유지하는 설계로 변경",
+            "start_line": 25,
+            "end_line": 26,
+            "document": "금성 | The spacecraft",
+            "quote": "To keep Venus Express within temperatures that were safe for the spacecraft, the radiators on the spacecraft surface were increased in area and efficiency. The spacecraft coating, called ‘multi-layer insulation’ or MLI, was composed of 23 layers, packaged differently from Mars Express.\nMoreover, for Venus Express, the MLI was gold instead of black, which provided greater capability to reflect radiation away. In general, Mars Express was designed to keep warm while Venus Express was modified to stay cool."
+          },
+          {
+            "id": "F5",
+            "subject": "the Sun",
+            "relation": "금성에서 지구보다 강하게 나타남",
+            "comparison_target": "Earth",
+            "value": "twice",
+            "unit": "",
+            "basis": "태양전지판에 전력을 공급하는 태양복사의 상대적 세기",
+            "start_line": 29,
+            "end_line": 29,
+            "document": "금성 | The spacecraft",
+            "quote": "At Venus, the Sun appears twice as powerful as on Earth, so solar radiation to power the spacecraft was plentiful. Venus Express’s solar arrays could be made smaller (almost half size) than those of Mars Express."
+          },
+          {
+            "id": "F6",
+            "subject": "Venus Express’s solar arrays",
+            "relation": "풍부한 태양복사 덕분에 크기를 줄일 수 있었음",
+            "comparison_target": "Mars Express",
+            "value": "almost half size",
+            "unit": "",
+            "basis": "화성 탐사선 태양전지판 크기 대비 설계 선택",
+            "start_line": 29,
+            "end_line": 29,
+            "document": "금성 | The spacecraft",
+            "quote": "At Venus, the Sun appears twice as powerful as on Earth, so solar radiation to power the spacecraft was plentiful. Venus Express’s solar arrays could be made smaller (almost half size) than those of Mars Express."
+          },
+          {
+            "id": "F7",
+            "subject": "The solar cells",
+            "relation": "고온을 견디는 특성 때문에 뜨거운 환경에 적합했음",
+            "comparison_target": "",
+            "value": "up to around 120",
+            "unit": "°C",
+            "basis": "태양전지의 내열 특성이며 궤도선의 실제 운용 온도 측정값이 아님",
+            "start_line": 30,
+            "end_line": 31,
+            "document": "금성 | The spacecraft",
+            "quote": "The two symmetric solar arrays, measuring around six square metres, were based on a ‘triple junction’ gallium arsenide (GaAs) technology, different from the silicon-based technology used for Mars Express.\nThe solar cells, each composed of four layers of gallium arsenide, were more tolerant to high temperatures (up to around 120 °C), so they were more suitable for hot environments. Moreover, they were able to exploit a wider range of solar radiation. The solar cells were separated by aluminium strips that helped to reject heat. All together, these aluminium strips covered half of the overall solar array surface."
+          },
+          {
+            "id": "F8",
+            "subject": "the cold face of the spacecraft",
+            "relation": "태양 반대쪽으로 유지해야 하므로 단일 안테나를 항상 지구로 향하게 할 수 없었고 서로 다른 면에 안테나를 배치함",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "원문에 명시된 것은 민감한 기기를 둔 면의 자세 조건과 통신 지향 제약임. 관측 방향과 자세 선택도 제한될 수 있다는 해석은 추론임",
+            "start_line": 39,
+            "end_line": 40,
+            "document": "금성 | The spacecraft",
+            "quote": "For a spacecraft in orbit around Venus, it is not always possible to point a single antenna dish at Earth while always keeping the cold face of the spacecraft, hosting delicate instruments, away from the Sun.\nTo overcome this pointing constraint, Venus Express had two high-gain antennas, mounted on different spacecraft faces. The main high-gain antenna, used for most of the communication with Earth, was a dish measuring 1.3 metres diameter."
+          }
+        ],
+        "insufficient": false,
+        "reason": "담당 절의 열 환경과 설계 대응 및 자세 제약 근거가 있다. 금성 표면 환경의 수치는 제공되지 않았다. 관측 방향·시간에 대한 직접적인 제한은 명시되지 않았으므로, 통신 지향 제약과 구분하여 자세 조건에서 도출한 추론으로만 다뤄야 한다.",
+        "semantic_review": "pending",
+        "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+      }
+    },
+    {
+      "kind": "read",
+      "agent": "researcher-1",
+      "round": 0,
+      "document": "금성 | The spacecraft",
+      "source_chars": 6230,
+      "evidence": {
+        "근거": [
+          {
+            "원문": "Flying to an inner Solar System planet like Venus, at half the distance to the Sun as compared to Mars, meant that the effect of solar illumination and ionising radiation on the spacecraft was much higher. In fact, the heating of the spacecraft was four times greater at Venus than at Mars.",
+            "메모": "{\"subject\": \"the spacecraft\", \"relation\": \"금성에서 받는 가열이 화성보다 큼\", \"comparison_target\": \"Mars\", \"value\": \"four times\", \"unit\": \"\", \"basis\": \"금성 주변에서 운용하는 궤도선의 가열 비교이며 금성 표면 환경의 수치가 아님\"}"
+          },
+          {
+            "원문": "To keep Venus Express within temperatures that were safe for the spacecraft, the radiators on the spacecraft surface were increased in area and efficiency. The spacecraft coating, called ‘multi-layer insulation’ or MLI, was composed of 23 layers, packaged differently from Mars Express.",
+            "메모": "{\"subject\": \"the radiators\", \"relation\": \"안전한 온도 유지를 위해 면적과 효율을 높임\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"궤도선의 열 제어 설계 대응\"}"
+          },
+          {
+            "원문": "To keep Venus Express within temperatures that were safe for the spacecraft, the radiators on the spacecraft surface were increased in area and efficiency. The spacecraft coating, called ‘multi-layer insulation’ or MLI, was composed of 23 layers, packaged differently from Mars Express.",
+            "메모": "{\"subject\": \"multi-layer insulation\", \"relation\": \"다층 단열재를 구성함\", \"comparison_target\": \"\", \"value\": \"23\", \"unit\": \"layers\", \"basis\": \"화성 탐사선과 다르게 포장한 단열재의 설계 구성\"}"
+          },
+          {
+            "원문": "To keep Venus Express within temperatures that were safe for the spacecraft, the radiators on the spacecraft surface were increased in area and efficiency. The spacecraft coating, called ‘multi-layer insulation’ or MLI, was composed of 23 layers, packaged differently from Mars Express.\nMoreover, for Venus Express, the MLI was gold instead of black, which provided greater capability to reflect radiation away. In general, Mars Express was designed to keep warm while Venus Express was modified to stay cool.",
+            "메모": "{\"subject\": \"the MLI\", \"relation\": \"검정색 대신 금색을 사용하여 복사 반사 능력을 높임\", \"comparison_target\": \"Mars Express\", \"value\": \"\", \"unit\": \"\", \"basis\": \"열을 유지하는 설계에서 냉각을 유지하는 설계로 변경\"}"
+          },
+          {
+            "원문": "At Venus, the Sun appears twice as powerful as on Earth, so solar radiation to power the spacecraft was plentiful. Venus Express’s solar arrays could be made smaller (almost half size) than those of Mars Express.",
+            "메모": "{\"subject\": \"the Sun\", \"relation\": \"금성에서 지구보다 강하게 나타남\", \"comparison_target\": \"Earth\", \"value\": \"twice\", \"unit\": \"\", \"basis\": \"태양전지판에 전력을 공급하는 태양복사의 상대적 세기\"}"
+          },
+          {
+            "원문": "At Venus, the Sun appears twice as powerful as on Earth, so solar radiation to power the spacecraft was plentiful. Venus Express’s solar arrays could be made smaller (almost half size) than those of Mars Express.",
+            "메모": "{\"subject\": \"Venus Express’s solar arrays\", \"relation\": \"풍부한 태양복사 덕분에 크기를 줄일 수 있었음\", \"comparison_target\": \"Mars Express\", \"value\": \"almost half size\", \"unit\": \"\", \"basis\": \"화성 탐사선 태양전지판 크기 대비 설계 선택\"}"
+          },
+          {
+            "원문": "The two symmetric solar arrays, measuring around six square metres, were based on a ‘triple junction’ gallium arsenide (GaAs) technology, different from the silicon-based technology used for Mars Express.\nThe solar cells, each composed of four layers of gallium arsenide, were more tolerant to high temperatures (up to around 120 °C), so they were more suitable for hot environments. Moreover, they were able to exploit a wider range of solar radiation. The solar cells were separated by aluminium strips that helped to reject heat. All together, these aluminium strips covered half of the overall solar array surface.",
+            "메모": "{\"subject\": \"The solar cells\", \"relation\": \"고온을 견디는 특성 때문에 뜨거운 환경에 적합했음\", \"comparison_target\": \"\", \"value\": \"up to around 120\", \"unit\": \"°C\", \"basis\": \"태양전지의 내열 특성이며 궤도선의 실제 운용 온도 측정값이 아님\"}"
+          },
+          {
+            "원문": "For a spacecraft in orbit around Venus, it is not always possible to point a single antenna dish at Earth while always keeping the cold face of the spacecraft, hosting delicate instruments, away from the Sun.\nTo overcome this pointing constraint, Venus Express had two high-gain antennas, mounted on different spacecraft faces. The main high-gain antenna, used for most of the communication with Earth, was a dish measuring 1.3 metres diameter.",
+            "메모": "{\"subject\": \"the cold face of the spacecraft\", \"relation\": \"태양 반대쪽으로 유지해야 하므로 단일 안테나를 항상 지구로 향하게 할 수 없었고 서로 다른 면에 안테나를 배치함\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"원문에 명시된 것은 민감한 기기를 둔 면의 자세 조건과 통신 지향 제약임. 관측 방향과 자세 선택도 제한될 수 있다는 해석은 추론임\"}"
+          }
+        ],
+        "부족": false,
+        "이유": "담당 절의 열 환경과 설계 대응 및 자세 제약 근거가 있다. 금성 표면 환경의 수치는 제공되지 않았다. 관측 방향·시간에 대한 직접적인 제한은 명시되지 않았으므로, 통신 지향 제약과 구분하여 자세 조건에서 도출한 추론으로만 다뤄야 한다.",
+        "fact_table": {
+          "facts": [
+            {
+              "id": "F1",
+              "subject": "the spacecraft",
+              "relation": "금성에서 받는 가열이 화성보다 큼",
+              "comparison_target": "Mars",
+              "value": "four times",
+              "unit": "",
+              "basis": "금성 주변에서 운용하는 궤도선의 가열 비교이며 금성 표면 환경의 수치가 아님",
+              "start_line": 24,
+              "end_line": 24,
+              "document": "금성 | The spacecraft",
+              "quote": "Flying to an inner Solar System planet like Venus, at half the distance to the Sun as compared to Mars, meant that the effect of solar illumination and ionising radiation on the spacecraft was much higher. In fact, the heating of the spacecraft was four times greater at Venus than at Mars."
+            },
+            {
+              "id": "F2",
+              "subject": "the radiators",
+              "relation": "안전한 온도 유지를 위해 면적과 효율을 높임",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "궤도선의 열 제어 설계 대응",
+              "start_line": 25,
+              "end_line": 25,
+              "document": "금성 | The spacecraft",
+              "quote": "To keep Venus Express within temperatures that were safe for the spacecraft, the radiators on the spacecraft surface were increased in area and efficiency. The spacecraft coating, called ‘multi-layer insulation’ or MLI, was composed of 23 layers, packaged differently from Mars Express."
+            },
+            {
+              "id": "F3",
+              "subject": "multi-layer insulation",
+              "relation": "다층 단열재를 구성함",
+              "comparison_target": "",
+              "value": "23",
+              "unit": "layers",
+              "basis": "화성 탐사선과 다르게 포장한 단열재의 설계 구성",
+              "start_line": 25,
+              "end_line": 25,
+              "document": "금성 | The spacecraft",
+              "quote": "To keep Venus Express within temperatures that were safe for the spacecraft, the radiators on the spacecraft surface were increased in area and efficiency. The spacecraft coating, called ‘multi-layer insulation’ or MLI, was composed of 23 layers, packaged differently from Mars Express."
+            },
+            {
+              "id": "F4",
+              "subject": "the MLI",
+              "relation": "검정색 대신 금색을 사용하여 복사 반사 능력을 높임",
+              "comparison_target": "Mars Express",
+              "value": "",
+              "unit": "",
+              "basis": "열을 유지하는 설계에서 냉각을 유지하는 설계로 변경",
+              "start_line": 25,
+              "end_line": 26,
+              "document": "금성 | The spacecraft",
+              "quote": "To keep Venus Express within temperatures that were safe for the spacecraft, the radiators on the spacecraft surface were increased in area and efficiency. The spacecraft coating, called ‘multi-layer insulation’ or MLI, was composed of 23 layers, packaged differently from Mars Express.\nMoreover, for Venus Express, the MLI was gold instead of black, which provided greater capability to reflect radiation away. In general, Mars Express was designed to keep warm while Venus Express was modified to stay cool."
+            },
+            {
+              "id": "F5",
+              "subject": "the Sun",
+              "relation": "금성에서 지구보다 강하게 나타남",
+              "comparison_target": "Earth",
+              "value": "twice",
+              "unit": "",
+              "basis": "태양전지판에 전력을 공급하는 태양복사의 상대적 세기",
+              "start_line": 29,
+              "end_line": 29,
+              "document": "금성 | The spacecraft",
+              "quote": "At Venus, the Sun appears twice as powerful as on Earth, so solar radiation to power the spacecraft was plentiful. Venus Express’s solar arrays could be made smaller (almost half size) than those of Mars Express."
+            },
+            {
+              "id": "F6",
+              "subject": "Venus Express’s solar arrays",
+              "relation": "풍부한 태양복사 덕분에 크기를 줄일 수 있었음",
+              "comparison_target": "Mars Express",
+              "value": "almost half size",
+              "unit": "",
+              "basis": "화성 탐사선 태양전지판 크기 대비 설계 선택",
+              "start_line": 29,
+              "end_line": 29,
+              "document": "금성 | The spacecraft",
+              "quote": "At Venus, the Sun appears twice as powerful as on Earth, so solar radiation to power the spacecraft was plentiful. Venus Express’s solar arrays could be made smaller (almost half size) than those of Mars Express."
+            },
+            {
+              "id": "F7",
+              "subject": "The solar cells",
+              "relation": "고온을 견디는 특성 때문에 뜨거운 환경에 적합했음",
+              "comparison_target": "",
+              "value": "up to around 120",
+              "unit": "°C",
+              "basis": "태양전지의 내열 특성이며 궤도선의 실제 운용 온도 측정값이 아님",
+              "start_line": 30,
+              "end_line": 31,
+              "document": "금성 | The spacecraft",
+              "quote": "The two symmetric solar arrays, measuring around six square metres, were based on a ‘triple junction’ gallium arsenide (GaAs) technology, different from the silicon-based technology used for Mars Express.\nThe solar cells, each composed of four layers of gallium arsenide, were more tolerant to high temperatures (up to around 120 °C), so they were more suitable for hot environments. Moreover, they were able to exploit a wider range of solar radiation. The solar cells were separated by aluminium strips that helped to reject heat. All together, these aluminium strips covered half of the overall solar array surface."
+            },
+            {
+              "id": "F8",
+              "subject": "the cold face of the spacecraft",
+              "relation": "태양 반대쪽으로 유지해야 하므로 단일 안테나를 항상 지구로 향하게 할 수 없었고 서로 다른 면에 안테나를 배치함",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "원문에 명시된 것은 민감한 기기를 둔 면의 자세 조건과 통신 지향 제약임. 관측 방향과 자세 선택도 제한될 수 있다는 해석은 추론임",
+              "start_line": 39,
+              "end_line": 40,
+              "document": "금성 | The spacecraft",
+              "quote": "For a spacecraft in orbit around Venus, it is not always possible to point a single antenna dish at Earth while always keeping the cold face of the spacecraft, hosting delicate instruments, away from the Sun.\nTo overcome this pointing constraint, Venus Express had two high-gain antennas, mounted on different spacecraft faces. The main high-gain antenna, used for most of the communication with Earth, was a dish measuring 1.3 metres diameter."
+            }
+          ],
+          "insufficient": false,
+          "reason": "담당 절의 열 환경과 설계 대응 및 자세 제약 근거가 있다. 금성 표면 환경의 수치는 제공되지 않았다. 관측 방향·시간에 대한 직접적인 제한은 명시되지 않았으므로, 통신 지향 제약과 구분하여 자세 조건에서 도출한 추론으로만 다뤄야 한다.",
+          "semantic_review": "pending",
+          "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+        },
+        "validation": "Schema/source membership checked; semantic support pending direct review."
+      }
+    },
+    {
+      "kind": "candidates",
+      "agent": "researcher-1",
+      "round": 0,
+      "path": "all_docs_fallback",
+      "count": 95
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-1",
+      "step": "pick",
+      "input_chars": 4106,
+      "source_chars": 0,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-0",
+      "step": "read",
+      "input_chars": 9142,
+      "source_chars": 7281,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-1",
+      "step": "read",
+      "input_chars": 66221,
+      "source_chars": 56302,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "fact_table",
+      "agent": "researcher-0",
+      "document": "수성 | MESSENGER",
+      "table": {
+        "facts": [],
+        "insufficient": true,
+        "reason": "제공된 원문에는 맡은 절의 핵심 근거인 수성 궤도에서의 열 환경, 세라믹 직물 차양과 방열기를 이용한 열 제어, 전력 선택, 열 설계에 따른 관측 방향·자세·운용 제약이 명시되어 있지 않다. 궤도와 관측 성과는 서술되어 있으나 열 설계와의 인과관계가 없어, 열 환경→설계 대응→관측 제약을 근거에 따라 정리하거나 명시된 제약과 추론을 구분할 수 없다.",
+        "semantic_review": "pending",
+        "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+      }
+    },
+    {
+      "kind": "read",
+      "agent": "researcher-0",
+      "round": 0,
+      "document": "수성 | MESSENGER",
+      "source_chars": 7281,
+      "evidence": {
+        "근거": [],
+        "부족": true,
+        "이유": "제공된 원문에는 맡은 절의 핵심 근거인 수성 궤도에서의 열 환경, 세라믹 직물 차양과 방열기를 이용한 열 제어, 전력 선택, 열 설계에 따른 관측 방향·자세·운용 제약이 명시되어 있지 않다. 궤도와 관측 성과는 서술되어 있으나 열 설계와의 인과관계가 없어, 열 환경→설계 대응→관측 제약을 근거에 따라 정리하거나 명시된 제약과 추론을 구분할 수 없다.",
+        "fact_table": {
+          "facts": [],
+          "insufficient": true,
+          "reason": "제공된 원문에는 맡은 절의 핵심 근거인 수성 궤도에서의 열 환경, 세라믹 직물 차양과 방열기를 이용한 열 제어, 전력 선택, 열 설계에 따른 관측 방향·자세·운용 제약이 명시되어 있지 않다. 궤도와 관측 성과는 서술되어 있으나 열 설계와의 인과관계가 없어, 열 환경→설계 대응→관측 제약을 근거에 따라 정리하거나 명시된 제약과 추론을 구분할 수 없다.",
+          "semantic_review": "pending",
+          "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+        },
+        "validation": "Schema/source membership checked; semantic support pending direct review."
+      }
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-0",
+      "step": "write",
+      "input_chars": 13408,
+      "source_chars": 0,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "fact_table",
+      "agent": "researcher-1",
+      "document": "금성 | Venus Express ESA Mission Brochure",
+      "table": {
+        "facts": [
+          {
+            "id": "F1",
+            "subject": "Venus’s surface",
+            "relation": "表面温度极高",
+            "comparison_target": "",
+            "value": "465",
+            "unit": "ºC",
+            "basis": "原文描述的金星表面环境，不是轨道器承受的环境",
+            "start_line": 462,
+            "end_line": 471,
+            "document": "금성 | Venus Express ESA Mission Brochure",
+            "quote": "respects. Walking on Venus’s\nsurface would be difficult, like\nwalking under water at a\ndepth of 900 metres - the\natmospheric pressure on\nVenus is 90 times greater than\non Earth at sea level - and as\nuncomfortable as sitting in an\noven at 465ºC ! Venus’s surface\nis the hottest in the Solar"
+          },
+          {
+            "id": "F2",
+            "subject": "the spacecraft",
+            "relation": "在金星处受到的加热更强",
+            "comparison_target": "Mars",
+            "value": "four",
+            "unit": "times",
+            "basis": "以火星处航天器受到的加热为比较基准；属于轨道器热环境",
+            "start_line": 1110,
+            "end_line": 1116,
+            "document": "금성 | Venus Express ESA Mission Brochure",
+            "quote": "Flying to an inner Solar System planet like\nVenus, at half the distance to the Sun as\ncompared to Mars, means that the effects of\nsolar illumination and ionising radiation on\nthe spacecraft are much higher. In fact, the\nheating of the spacecraft is four times\ngreater at Venus than at Mars. To keep"
+          },
+          {
+            "id": "F3",
+            "subject": "the radiators on its surfaces",
+            "relation": "增大面积并提高效率以维持安全温度",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "原文明示的热控制设计目标",
+            "start_line": 1117,
+            "end_line": 1119,
+            "document": "금성 | Venus Express ESA Mission Brochure",
+            "quote": "Venus Express at safe temperatures, the\nradiators on its surfaces have therefore\nbeen increased in both area and efficiency."
+          },
+          {
+            "id": "F4",
+            "subject": "the MLI on Venus Express",
+            "relation": "采用金色以反射更多辐射",
+            "comparison_target": "Mars Express",
+            "value": "",
+            "unit": "",
+            "basis": "原文明示的隔热设计；对照航天器采用黑色隔热层",
+            "start_line": 1120,
+            "end_line": 1128,
+            "document": "금성 | Venus Express ESA Mission Brochure",
+            "quote": "The spacecraft’s protective jacket, known as\n‘multi-layer insulation’ or MLI, is composed\nof 23 layers, packaged differently from\nthose on Mars Express. Moreover, the MLI on\nVenus Express is gold instead of black in\ncolour, which allows it to reflect more\nradiation. In general, Mars Express was\ndesigned to keep warm, while Venus\nExpress needs to stay cool."
+          },
+          {
+            "id": "F5",
+            "subject": "Venus Express’s solar arrays",
+            "relation": "因太阳辐射充足而可缩小尺寸",
+            "comparison_target": "those on Mars Express",
+            "value": "almost half",
+            "unit": "",
+            "basis": "以对照航天器的太阳能阵列尺寸为基准；属于设计选择",
+            "start_line": 1130,
+            "end_line": 1135,
+            "document": "금성 | Venus Express ESA Mission Brochure",
+            "quote": "The Sun is twice as strong at Venus as on\nEarth, so there is plentiful solar radiation to\npower the spacecraft. Venus Express’s solar\narrays could therefore be made smaller\n(almost half the size) than those on Mars\nExpress. The two symmetric solar arrays,"
+          },
+          {
+            "id": "F6",
+            "subject": "The solar cells",
+            "relation": "能够耐受较高温度",
+            "comparison_target": "",
+            "value": "up to around 120",
+            "unit": "ºC",
+            "basis": "原文明示的太阳电池耐温能力；采用砷化镓技术，不是实际在轨温度",
+            "start_line": 1137,
+            "end_line": 1144,
+            "document": "금성 | Venus Express ESA Mission Brochure",
+            "quote": "are based on a ‘triple-junction’ gallium\narsenide (GaAs) technology, rather than the\nsilicon-based technology used for Mars\nExpress. The solar cells, each composed of\nfour layers of gallium arsenide, are more\ntolerant to high temperatures (up to around\n120ºC), as well as being able to exploit a\nwider spectrum of solar radiation. The solar"
+          },
+          {
+            "id": "F7",
+            "subject": "the cold face of the spacecraft",
+            "relation": "装有精密仪器，必须保持背离太阳",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "原文明示冷面避日与单天线对地指向存在冲突；由此推论观测姿态选择须服从避日条件，原文未直接列出被禁止的观测方向",
+            "start_line": 1186,
+            "end_line": 1190,
+            "document": "금성 | Venus Express ESA Mission Brochure",
+            "quote": "For a spacecraft in orbit around Venus, it\nis not always possible to point a single\nantenna dish at Earth while always keeping\nthe cold face of the spacecraft, hosting\ndelicate instruments, away from the Sun. To"
+          },
+          {
+            "id": "F8",
+            "subject": "Venus Express",
+            "relation": "在不同机体表面设置高增益天线以缓解指向约束",
+            "comparison_target": "",
+            "value": "two",
+            "unit": "",
+            "basis": "原文明示的设计应对；缓解对地通信指向与冷面避日条件之间的冲突",
+            "start_line": 1186,
+            "end_line": 1193,
+            "document": "금성 | Venus Express ESA Mission Brochure",
+            "quote": "For a spacecraft in orbit around Venus, it\nis not always possible to point a single\nantenna dish at Earth while always keeping\nthe cold face of the spacecraft, hosting\ndelicate instruments, away from the Sun. To\novercome this pointing constraint, Venus\nExpress has two high-gain antennas\nmounted on different spacecraft faces. The"
+          }
+        ],
+        "insufficient": false,
+        "reason": "本节核心依据齐全。原文未给出热约束导致的具体观测禁区、姿态角度或观测时长损失；观测姿态受限属于依据冷面避日条件作出的推论，不能写成已明确量化的观测限制。",
+        "semantic_review": "pending",
+        "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+      }
+    },
+    {
+      "kind": "read",
+      "agent": "researcher-1",
+      "round": 0,
+      "document": "금성 | Venus Express ESA Mission Brochure",
+      "source_chars": 56302,
+      "evidence": {
+        "근거": [
+          {
+            "원문": "respects. Walking on Venus’s\nsurface would be difficult, like\nwalking under water at a\ndepth of 900 metres - the\natmospheric pressure on\nVenus is 90 times greater than\non Earth at sea level - and as\nuncomfortable as sitting in an\noven at 465ºC ! Venus’s surface\nis the hottest in the Solar",
+            "메모": "{\"subject\": \"Venus’s surface\", \"relation\": \"表面温度极高\", \"comparison_target\": \"\", \"value\": \"465\", \"unit\": \"ºC\", \"basis\": \"原文描述的金星表面环境，不是轨道器承受的环境\"}"
+          },
+          {
+            "원문": "Flying to an inner Solar System planet like\nVenus, at half the distance to the Sun as\ncompared to Mars, means that the effects of\nsolar illumination and ionising radiation on\nthe spacecraft are much higher. In fact, the\nheating of the spacecraft is four times\ngreater at Venus than at Mars. To keep",
+            "메모": "{\"subject\": \"the spacecraft\", \"relation\": \"在金星处受到的加热更强\", \"comparison_target\": \"Mars\", \"value\": \"four\", \"unit\": \"times\", \"basis\": \"以火星处航天器受到的加热为比较基准；属于轨道器热环境\"}"
+          },
+          {
+            "원문": "Venus Express at safe temperatures, the\nradiators on its surfaces have therefore\nbeen increased in both area and efficiency.",
+            "메모": "{\"subject\": \"the radiators on its surfaces\", \"relation\": \"增大面积并提高效率以维持安全温度\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"原文明示的热控制设计目标\"}"
+          },
+          {
+            "원문": "The spacecraft’s protective jacket, known as\n‘multi-layer insulation’ or MLI, is composed\nof 23 layers, packaged differently from\nthose on Mars Express. Moreover, the MLI on\nVenus Express is gold instead of black in\ncolour, which allows it to reflect more\nradiation. In general, Mars Express was\ndesigned to keep warm, while Venus\nExpress needs to stay cool.",
+            "메모": "{\"subject\": \"the MLI on Venus Express\", \"relation\": \"采用金色以反射更多辐射\", \"comparison_target\": \"Mars Express\", \"value\": \"\", \"unit\": \"\", \"basis\": \"原文明示的隔热设计；对照航天器采用黑色隔热层\"}"
+          },
+          {
+            "원문": "The Sun is twice as strong at Venus as on\nEarth, so there is plentiful solar radiation to\npower the spacecraft. Venus Express’s solar\narrays could therefore be made smaller\n(almost half the size) than those on Mars\nExpress. The two symmetric solar arrays,",
+            "메모": "{\"subject\": \"Venus Express’s solar arrays\", \"relation\": \"因太阳辐射充足而可缩小尺寸\", \"comparison_target\": \"those on Mars Express\", \"value\": \"almost half\", \"unit\": \"\", \"basis\": \"以对照航天器的太阳能阵列尺寸为基准；属于设计选择\"}"
+          },
+          {
+            "원문": "are based on a ‘triple-junction’ gallium\narsenide (GaAs) technology, rather than the\nsilicon-based technology used for Mars\nExpress. The solar cells, each composed of\nfour layers of gallium arsenide, are more\ntolerant to high temperatures (up to around\n120ºC), as well as being able to exploit a\nwider spectrum of solar radiation. The solar",
+            "메모": "{\"subject\": \"The solar cells\", \"relation\": \"能够耐受较高温度\", \"comparison_target\": \"\", \"value\": \"up to around 120\", \"unit\": \"ºC\", \"basis\": \"原文明示的太阳电池耐温能力；采用砷化镓技术，不是实际在轨温度\"}"
+          },
+          {
+            "원문": "For a spacecraft in orbit around Venus, it\nis not always possible to point a single\nantenna dish at Earth while always keeping\nthe cold face of the spacecraft, hosting\ndelicate instruments, away from the Sun. To",
+            "메모": "{\"subject\": \"the cold face of the spacecraft\", \"relation\": \"装有精密仪器，必须保持背离太阳\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"原文明示冷面避日与单天线对地指向存在冲突；由此推论观测姿态选择须服从避日条件，原文未直接列出被禁止的观测方向\"}"
+          },
+          {
+            "원문": "For a spacecraft in orbit around Venus, it\nis not always possible to point a single\nantenna dish at Earth while always keeping\nthe cold face of the spacecraft, hosting\ndelicate instruments, away from the Sun. To\novercome this pointing constraint, Venus\nExpress has two high-gain antennas\nmounted on different spacecraft faces. The",
+            "메모": "{\"subject\": \"Venus Express\", \"relation\": \"在不同机体表面设置高增益天线以缓解指向约束\", \"comparison_target\": \"\", \"value\": \"two\", \"unit\": \"\", \"basis\": \"原文明示的设计应对；缓解对地通信指向与冷面避日条件之间的冲突\"}"
+          }
+        ],
+        "부족": false,
+        "이유": "本节核心依据齐全。原文未给出热约束导致的具体观测禁区、姿态角度或观测时长损失；观测姿态受限属于依据冷面避日条件作出的推论，不能写成已明确量化的观测限制。",
+        "fact_table": {
+          "facts": [
+            {
+              "id": "F1",
+              "subject": "Venus’s surface",
+              "relation": "表面温度极高",
+              "comparison_target": "",
+              "value": "465",
+              "unit": "ºC",
+              "basis": "原文描述的金星表面环境，不是轨道器承受的环境",
+              "start_line": 462,
+              "end_line": 471,
+              "document": "금성 | Venus Express ESA Mission Brochure",
+              "quote": "respects. Walking on Venus’s\nsurface would be difficult, like\nwalking under water at a\ndepth of 900 metres - the\natmospheric pressure on\nVenus is 90 times greater than\non Earth at sea level - and as\nuncomfortable as sitting in an\noven at 465ºC ! Venus’s surface\nis the hottest in the Solar"
+            },
+            {
+              "id": "F2",
+              "subject": "the spacecraft",
+              "relation": "在金星处受到的加热更强",
+              "comparison_target": "Mars",
+              "value": "four",
+              "unit": "times",
+              "basis": "以火星处航天器受到的加热为比较基准；属于轨道器热环境",
+              "start_line": 1110,
+              "end_line": 1116,
+              "document": "금성 | Venus Express ESA Mission Brochure",
+              "quote": "Flying to an inner Solar System planet like\nVenus, at half the distance to the Sun as\ncompared to Mars, means that the effects of\nsolar illumination and ionising radiation on\nthe spacecraft are much higher. In fact, the\nheating of the spacecraft is four times\ngreater at Venus than at Mars. To keep"
+            },
+            {
+              "id": "F3",
+              "subject": "the radiators on its surfaces",
+              "relation": "增大面积并提高效率以维持安全温度",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "原文明示的热控制设计目标",
+              "start_line": 1117,
+              "end_line": 1119,
+              "document": "금성 | Venus Express ESA Mission Brochure",
+              "quote": "Venus Express at safe temperatures, the\nradiators on its surfaces have therefore\nbeen increased in both area and efficiency."
+            },
+            {
+              "id": "F4",
+              "subject": "the MLI on Venus Express",
+              "relation": "采用金色以反射更多辐射",
+              "comparison_target": "Mars Express",
+              "value": "",
+              "unit": "",
+              "basis": "原文明示的隔热设计；对照航天器采用黑色隔热层",
+              "start_line": 1120,
+              "end_line": 1128,
+              "document": "금성 | Venus Express ESA Mission Brochure",
+              "quote": "The spacecraft’s protective jacket, known as\n‘multi-layer insulation’ or MLI, is composed\nof 23 layers, packaged differently from\nthose on Mars Express. Moreover, the MLI on\nVenus Express is gold instead of black in\ncolour, which allows it to reflect more\nradiation. In general, Mars Express was\ndesigned to keep warm, while Venus\nExpress needs to stay cool."
+            },
+            {
+              "id": "F5",
+              "subject": "Venus Express’s solar arrays",
+              "relation": "因太阳辐射充足而可缩小尺寸",
+              "comparison_target": "those on Mars Express",
+              "value": "almost half",
+              "unit": "",
+              "basis": "以对照航天器的太阳能阵列尺寸为基准；属于设计选择",
+              "start_line": 1130,
+              "end_line": 1135,
+              "document": "금성 | Venus Express ESA Mission Brochure",
+              "quote": "The Sun is twice as strong at Venus as on\nEarth, so there is plentiful solar radiation to\npower the spacecraft. Venus Express’s solar\narrays could therefore be made smaller\n(almost half the size) than those on Mars\nExpress. The two symmetric solar arrays,"
+            },
+            {
+              "id": "F6",
+              "subject": "The solar cells",
+              "relation": "能够耐受较高温度",
+              "comparison_target": "",
+              "value": "up to around 120",
+              "unit": "ºC",
+              "basis": "原文明示的太阳电池耐温能力；采用砷化镓技术，不是实际在轨温度",
+              "start_line": 1137,
+              "end_line": 1144,
+              "document": "금성 | Venus Express ESA Mission Brochure",
+              "quote": "are based on a ‘triple-junction’ gallium\narsenide (GaAs) technology, rather than the\nsilicon-based technology used for Mars\nExpress. The solar cells, each composed of\nfour layers of gallium arsenide, are more\ntolerant to high temperatures (up to around\n120ºC), as well as being able to exploit a\nwider spectrum of solar radiation. The solar"
+            },
+            {
+              "id": "F7",
+              "subject": "the cold face of the spacecraft",
+              "relation": "装有精密仪器，必须保持背离太阳",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "原文明示冷面避日与单天线对地指向存在冲突；由此推论观测姿态选择须服从避日条件，原文未直接列出被禁止的观测方向",
+              "start_line": 1186,
+              "end_line": 1190,
+              "document": "금성 | Venus Express ESA Mission Brochure",
+              "quote": "For a spacecraft in orbit around Venus, it\nis not always possible to point a single\nantenna dish at Earth while always keeping\nthe cold face of the spacecraft, hosting\ndelicate instruments, away from the Sun. To"
+            },
+            {
+              "id": "F8",
+              "subject": "Venus Express",
+              "relation": "在不同机体表面设置高增益天线以缓解指向约束",
+              "comparison_target": "",
+              "value": "two",
+              "unit": "",
+              "basis": "原文明示的设计应对；缓解对地通信指向与冷面避日条件之间的冲突",
+              "start_line": 1186,
+              "end_line": 1193,
+              "document": "금성 | Venus Express ESA Mission Brochure",
+              "quote": "For a spacecraft in orbit around Venus, it\nis not always possible to point a single\nantenna dish at Earth while always keeping\nthe cold face of the spacecraft, hosting\ndelicate instruments, away from the Sun. To\novercome this pointing constraint, Venus\nExpress has two high-gain antennas\nmounted on different spacecraft faces. The"
+            }
+          ],
+          "insufficient": false,
+          "reason": "本节核心依据齐全。原文未给出热约束导致的具体观测禁区、姿态角度或观测时长损失；观测姿态受限属于依据冷面避日条件作出的推论，不能写成已明确量化的观测限制。",
+          "semantic_review": "pending",
+          "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+        },
+        "validation": "Schema/source membership checked; semantic support pending direct review."
+      }
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-1",
+      "step": "write",
+      "input_chars": 20341,
+      "source_chars": 0,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "section",
+      "agent": "researcher-0",
+      "section": {
+        "번호": 0,
+        "절": "수성 MESSENGER의 차열·방열 설계와 관측 제약",
+        "역할": "열·전력 설계 연구원",
+        "round": 0,
+        "본문": "MESSENGER가 도는 수성에서는 태양이 지구에서 보는 것보다 최대 11배 밝으며, 수성 표면이 재복사하는 열도 탐사선의 열 부담을 높인다. 고도 200 km에서는 행성의 재복사열만으로도 지구에서의 태양 복사 세기의 4배에 이르므로, 직접 들어오는 태양 복사와 표면에서 되돌아오는 열을 함께 고려해야 한다. «수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)»\n\n이에 MESSENGER는 전면의 티타늄 프레임에 내열성과 반사성이 높은 차양을 고정하고, 앞뒤의 Nextel 세라믹 직물 사이에 여러 겹의 Kapton 플라스틱 단열층을 배치했다. 문서는 수성이 태양에 가장 가까울 때 차양 전면이 370°C에 이를 수 있어도 뒤쪽 본체는 약 20°C에서 작동하도록 설명하며, 이는 실제 측정 성과가 아닌 설계상 열 대응이다. 본체 대부분을 덮는 다층 단열재와 측면의 단방향 열관에 연결된 방열기는 각각 복사열 유입·내부 열 손실을 억제하고 본체의 열을 배출하며, 차양 및 궤도 설계와 함께 고온 전용 전자장치 없이 운용하도록 한다. 태양전지 패널은 3분의 2가 거울인 optical solar reflectors, 3분의 1이 삼중접합 태양전지로 구성되고, 필요한 전력을 얻으면서 정상 표면 운용 온도 약 150°C를 유지하도록 태양에서 비껴 기울여 운용한다. «수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)»\n\n표면 재복사열에 대한 노출을 줄이기 위해 과학 궤도는 타원형으로 설계되었으며, 계획된 12시간 공전마다 뜨거운 표면을 저고도로 통과하는 시간은 약 25분이다. 관측에서는 차양이 항상 태양을 향해야 하고, 기기는 수성은 보이되 태양은 보이지 않는 위치에 장착되어 허용 온도 범위를 유지해야 한다는 조건이 문서에 명시되어 있다. 따라서 본체의 관측 자세와 기기의 관측 방향을 자유롭게 선택하기 어렵다는 설명은 이 조건에서 도출한 추론이다. 또한 저고도 관측 기회가 짧은 통과 구간에 묶인다는 해석도 궤도 설계에 근거한 추론이며, 약 25분을 모든 기기의 실제 관측 시간으로 단정할 수는 없다. 문서는 서로 다른 궤도 구간에서 여러 유형의 관측을 수행하고 수성 태양일 두 번, 즉 지구 시간 1년 안에 관측을 마쳐야 한다고 명시하지만, 이 완료 기한 자체가 열 설계 때문에 정해졌다고 설명하지는 않는다. «수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)»",
+        "부족": false,
+        "이유": "맡은 절의 핵심인 열 환경, 차양·방열기·전력 설계와 관측 자세·운용 조건은 D1에 충분히 제시되어 있다. 다만 기기별 허용 지향각과 실제 관측 시간은 제시되지 않아 정량화하지 않았으며, D2에는 이 절에 사용할 핵심 근거가 없다.",
+        "읽은문서": [
+          "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+          "수성 | MESSENGER"
+        ],
+        "인용": [
+          "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+          "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+          "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)"
+        ],
+        "draft_format": "source_ids_v1",
+        "raw_draft": {
+          "단락": [
+            {
+              "내용": "MESSENGER가 도는 수성에서는 태양이 지구에서 보는 것보다 최대 11배 밝으며, 수성 표면이 재복사하는 열도 탐사선의 열 부담을 높인다. 고도 200 km에서는 행성의 재복사열만으로도 지구에서의 태양 복사 세기의 4배에 이르므로, 직접 들어오는 태양 복사와 표면에서 되돌아오는 열을 함께 고려해야 한다.",
+              "출처ID": [
+                "D1"
+              ]
+            },
+            {
+              "내용": "이에 MESSENGER는 전면의 티타늄 프레임에 내열성과 반사성이 높은 차양을 고정하고, 앞뒤의 Nextel 세라믹 직물 사이에 여러 겹의 Kapton 플라스틱 단열층을 배치했다. 문서는 수성이 태양에 가장 가까울 때 차양 전면이 370°C에 이를 수 있어도 뒤쪽 본체는 약 20°C에서 작동하도록 설명하며, 이는 실제 측정 성과가 아닌 설계상 열 대응이다. 본체 대부분을 덮는 다층 단열재와 측면의 단방향 열관에 연결된 방열기는 각각 복사열 유입·내부 열 손실을 억제하고 본체의 열을 배출하며, 차양 및 궤도 설계와 함께 고온 전용 전자장치 없이 운용하도록 한다. 태양전지 패널은 3분의 2가 거울인 optical solar reflectors, 3분의 1이 삼중접합 태양전지로 구성되고, 필요한 전력을 얻으면서 정상 표면 운용 온도 약 150°C를 유지하도록 태양에서 비껴 기울여 운용한다.",
+              "출처ID": [
+                "D1"
+              ]
+            },
+            {
+              "내용": "표면 재복사열에 대한 노출을 줄이기 위해 과학 궤도는 타원형으로 설계되었으며, 계획된 12시간 공전마다 뜨거운 표면을 저고도로 통과하는 시간은 약 25분이다. 관측에서는 차양이 항상 태양을 향해야 하고, 기기는 수성은 보이되 태양은 보이지 않는 위치에 장착되어 허용 온도 범위를 유지해야 한다는 조건이 문서에 명시되어 있다. 따라서 본체의 관측 자세와 기기의 관측 방향을 자유롭게 선택하기 어렵다는 설명은 이 조건에서 도출한 추론이다. 또한 저고도 관측 기회가 짧은 통과 구간에 묶인다는 해석도 궤도 설계에 근거한 추론이며, 약 25분을 모든 기기의 실제 관측 시간으로 단정할 수는 없다. 문서는 서로 다른 궤도 구간에서 여러 유형의 관측을 수행하고 수성 태양일 두 번, 즉 지구 시간 1년 안에 관측을 마쳐야 한다고 명시하지만, 이 완료 기한 자체가 열 설계 때문에 정해졌다고 설명하지는 않는다.",
+              "출처ID": [
+                "D1"
+              ]
+            }
+          ],
+          "부족": false,
+          "이유": "맡은 절의 핵심인 열 환경, 차양·방열기·전력 설계와 관측 자세·운용 조건은 D1에 충분히 제시되어 있다. 다만 기기별 허용 지향각과 실제 관측 시간은 제시되지 않아 정량화하지 않았으며, D2에는 이 절에 사용할 핵심 근거가 없다."
+        },
+        "source_map": {
+          "D1": "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+          "D2": "수성 | MESSENGER"
+        }
+      }
+    },
+    {
+      "kind": "section",
+      "agent": "researcher-1",
+      "section": {
+        "번호": 1,
+        "절": "금성 Venus Express의 열 제어 설계와 관측 제약",
+        "역할": "열·전력 설계 연구원",
+        "round": 0,
+        "본문": "Venus Express가 금성 궤도에서 겪는 열 환경은 금성 표면의 465°C 환경과 구분해야 하며, 이 표면 온도를 궤도선의 온도로 적용할 수 없다. 자료는 금성에서 우주선이 받는 가열이 화성에서보다 4배 크다고 설명하며, 태양 조명과 이온화 방사선의 영향도 더 크다고 명시한다. 한편 금성에서의 태양복사 세기는 지구에서의 2배로 제시되는데, 이는 전력 공급에 이용할 태양복사의 비교이므로 화성을 기준으로 한 우주선 가열의 4배와 구별해야 한다. «금성 | The spacecraft»«금성 | Venus Express ESA Mission Brochure»\n\n이 가열에 대응하여 Venus Express는 안전한 온도 유지를 목적으로 표면 방열기의 면적과 효율을 높이고, Mars Express와 다르게 포장한 23층 다층 단열재인 MLI를 사용했다. MLI는 검정색 대신 금색을 채택하여 복사를 더 많이 반사하도록 했으며, 자료는 Mars Express의 보온 중심 설계와 Venus Express의 냉각 유지 중심 설계를 대비한다. 전력 측면에서는 풍부한 태양복사 덕분에 태양전지판을 Mars Express의 거의 절반 크기로 설계할 수 있었다. 또한 약 120°C까지의 고온을 견디는 GaAs 태양전지를 채택하고 전지 사이에 열 방출을 돕는 알루미늄 띠를 배치했는데, 이 온도는 전지의 내열 특성이지 궤도선의 실제 운용 온도나 관측 성과가 아니다. «금성 | The spacecraft»«금성 | Venus Express ESA Mission Brochure»\n\n자세와 관련하여 자료에 명시된 조건은 민감한 기기가 있는 우주선의 차가운 면을 태양으로부터 멀어지게 유지하는 것이며, 이 조건을 지키면서 단일 안테나를 항상 지구로 향하게 하는 것은 불가능할 수 있다. Venus Express는 이러한 통신 지향 제약에 대응하여 서로 다른 기체 면에 고이득 안테나 2개를 설치했다. 관측 자세를 선택할 때도 차가운 면의 태양 회피 조건을 만족해야 하므로 일부 관측 방향이나 관측과 통신의 조합이 제한될 수 있다는 해석은 이 자세 조건에서 도출한 추론이다. 자료는 구체적인 관측 금지 방향, 허용 자세각 또는 관측시간 손실을 제시하지 않으므로, 안테나 배치가 관측 제약을 모두 해소했다거나 특정 관측 성과를 보장했다고 단정할 수 없다. «금성 | The spacecraft»«금성 | Venus Express ESA Mission Brochure»",
+        "부족": false,
+        "이유": "담당 절의 핵심인 궤도 열 환경, 단열·방열 설계, 전력 선택 및 자세 조건에 관한 근거가 있다. 관측 방향과 시간에 대한 직접적인 제한이나 정량값은 제공되지 않아, 명시된 통신 지향 제약과 자세 조건에서 추론한 관측 제약을 구분했다.",
+        "읽은문서": [
+          "금성 | The spacecraft",
+          "금성 | Venus Express ESA Mission Brochure"
+        ],
+        "인용": [
+          "금성 | The spacecraft",
+          "금성 | Venus Express ESA Mission Brochure",
+          "금성 | The spacecraft",
+          "금성 | Venus Express ESA Mission Brochure",
+          "금성 | The spacecraft",
+          "금성 | Venus Express ESA Mission Brochure"
+        ],
+        "draft_format": "source_ids_v1",
+        "raw_draft": {
+          "단락": [
+            {
+              "내용": "Venus Express가 금성 궤도에서 겪는 열 환경은 금성 표면의 465°C 환경과 구분해야 하며, 이 표면 온도를 궤도선의 온도로 적용할 수 없다. 자료는 금성에서 우주선이 받는 가열이 화성에서보다 4배 크다고 설명하며, 태양 조명과 이온화 방사선의 영향도 더 크다고 명시한다. 한편 금성에서의 태양복사 세기는 지구에서의 2배로 제시되는데, 이는 전력 공급에 이용할 태양복사의 비교이므로 화성을 기준으로 한 우주선 가열의 4배와 구별해야 한다.",
+              "출처ID": [
+                "D1",
+                "D2"
+              ]
+            },
+            {
+              "내용": "이 가열에 대응하여 Venus Express는 안전한 온도 유지를 목적으로 표면 방열기의 면적과 효율을 높이고, Mars Express와 다르게 포장한 23층 다층 단열재인 MLI를 사용했다. MLI는 검정색 대신 금색을 채택하여 복사를 더 많이 반사하도록 했으며, 자료는 Mars Express의 보온 중심 설계와 Venus Express의 냉각 유지 중심 설계를 대비한다. 전력 측면에서는 풍부한 태양복사 덕분에 태양전지판을 Mars Express의 거의 절반 크기로 설계할 수 있었다. 또한 약 120°C까지의 고온을 견디는 GaAs 태양전지를 채택하고 전지 사이에 열 방출을 돕는 알루미늄 띠를 배치했는데, 이 온도는 전지의 내열 특성이지 궤도선의 실제 운용 온도나 관측 성과가 아니다.",
+              "출처ID": [
+                "D1",
+                "D2"
+              ]
+            },
+            {
+              "내용": "자세와 관련하여 자료에 명시된 조건은 민감한 기기가 있는 우주선의 차가운 면을 태양으로부터 멀어지게 유지하는 것이며, 이 조건을 지키면서 단일 안테나를 항상 지구로 향하게 하는 것은 불가능할 수 있다. Venus Express는 이러한 통신 지향 제약에 대응하여 서로 다른 기체 면에 고이득 안테나 2개를 설치했다. 관측 자세를 선택할 때도 차가운 면의 태양 회피 조건을 만족해야 하므로 일부 관측 방향이나 관측과 통신의 조합이 제한될 수 있다는 해석은 이 자세 조건에서 도출한 추론이다. 자료는 구체적인 관측 금지 방향, 허용 자세각 또는 관측시간 손실을 제시하지 않으므로, 안테나 배치가 관측 제약을 모두 해소했다거나 특정 관측 성과를 보장했다고 단정할 수 없다.",
+              "출처ID": [
+                "D1",
+                "D2"
+              ]
+            }
+          ],
+          "부족": false,
+          "이유": "담당 절의 핵심인 궤도 열 환경, 단열·방열 설계, 전력 선택 및 자세 조건에 관한 근거가 있다. 관측 방향과 시간에 대한 직접적인 제한이나 정량값은 제공되지 않아, 명시된 통신 지향 제약과 자세 조건에서 추론한 관측 제약을 구분했다."
+        },
+        "source_map": {
+          "D1": "금성 | The spacecraft",
+          "D2": "금성 | Venus Express ESA Mission Brochure"
+        }
+      }
+    },
+    {
+      "kind": "review",
+      "section": 0,
+      "round": 0,
+      "self_reported_insufficient": false,
+      "accepted": true,
+      "valid_draft": true,
+      "redispatch": false,
+      "reason": "valid nonregressing draft"
+    },
+    {
+      "kind": "review",
+      "section": 1,
+      "round": 0,
+      "self_reported_insufficient": false,
+      "accepted": true,
+      "valid_draft": true,
+      "redispatch": false,
+      "reason": "valid nonregressing draft"
+    },
+    {
+      "kind": "context",
+      "actor": "synthesizer",
+      "step": "edit",
+      "input_chars": 2674,
+      "source_chars": 0,
+      "card_chars": 0,
+      "manuscript_chars": 2516
+    },
+    {
+      "kind": "report",
+      "report": "# 수성과 금성 탐사의 열 대응 설계와 관측 제약\n\nMESSENGER와 Venus Express는 강한 열 환경에 대응해 각각 차양 중심의 차열·방열 설계와 방열기·다층 단열재 중심의 냉각 설계를 적용했다. 아래에서는 이 설계 차이와 자세·궤도 조건을 비교하고, 자료에 명시된 제약과 그로부터 추론한 관측상의 제한을 구분한다.\n\n## 1. 수성 MESSENGER의 차열·방열 설계와 관측 제약\n\nMESSENGER가 도는 수성에서는 태양이 지구에서 보는 것보다 최대 11배 밝으며, 수성 표면이 재복사하는 열도 탐사선의 열 부담을 높인다. 고도 200 km에서는 행성의 재복사열만으로도 지구에서의 태양 복사 세기의 4배에 이르므로, 직접 들어오는 태양 복사와 표면에서 되돌아오는 열을 함께 고려해야 한다. «수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)»\n\n이에 MESSENGER는 전면의 티타늄 프레임에 내열성과 반사성이 높은 차양을 고정하고, 앞뒤의 Nextel 세라믹 직물 사이에 여러 겹의 Kapton 플라스틱 단열층을 배치했다. 문서는 수성이 태양에 가장 가까울 때 차양 전면이 370°C에 이를 수 있어도 뒤쪽 본체는 약 20°C에서 작동하도록 설명하며, 이는 실제 측정 성과가 아닌 설계상 열 대응이다. 본체 대부분을 덮는 다층 단열재와 측면의 단방향 열관에 연결된 방열기는 각각 복사열 유입·내부 열 손실을 억제하고 본체의 열을 배출하며, 차양 및 궤도 설계와 함께 고온 전용 전자장치 없이 운용하도록 한다. 태양전지 패널은 3분의 2가 거울인 optical solar reflectors, 3분의 1이 삼중접합 태양전지로 구성되고, 필요한 전력을 얻으면서 정상 표면 운용 온도 약 150°C를 유지하도록 태양에서 비껴 기울여 운용한다. «수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)»\n\n표면 재복사열에 대한 노출을 줄이기 위해 과학 궤도는 타원형으로 설계되었으며, 계획된 12시간 공전마다 뜨거운 표면을 저고도로 통과하는 시간은 약 25분이다. 관측에서는 차양이 항상 태양을 향해야 하고, 기기는 수성은 보이되 태양은 보이지 않는 위치에 장착되어 허용 온도 범위를 유지해야 한다는 조건이 문서에 명시되어 있다. 따라서 본체의 관측 자세와 기기의 관측 방향을 자유롭게 선택하기 어렵다는 설명은 이 조건에서 도출한 추론이다. 또한 저고도 관측 기회가 짧은 통과 구간에 묶인다는 해석도 궤도 설계에 근거한 추론이며, 약 25분을 모든 기기의 실제 관측 시간으로 단정할 수는 없다. 문서는 서로 다른 궤도 구간에서 여러 유형의 관측을 수행하고 수성 태양일 두 번, 즉 지구 시간 1년 안에 관측을 마쳐야 한다고 명시하지만, 이 완료 기한 자체가 열 설계 때문에 정해졌다고 설명하지는 않는다. «수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)»\n\n## 2. 금성 Venus Express의 열 제어 설계와 관측 제약\n\nVenus Express가 금성 궤도에서 겪는 열 환경은 금성 표면의 465°C 환경과 구분해야 하며, 이 표면 온도를 궤도선의 온도로 적용할 수 없다. 자료는 금성에서 우주선이 받는 가열이 화성에서보다 4배 크다고 설명하며, 태양 조명과 이온화 방사선의 영향도 더 크다고 명시한다. 한편 금성에서의 태양복사 세기는 지구에서의 2배로 제시되는데, 이는 전력 공급에 이용할 태양복사의 비교이므로 화성을 기준으로 한 우주선 가열의 4배와 구별해야 한다. «금성 | The spacecraft»«금성 | Venus Express ESA Mission Brochure»\n\n이 가열에 대응하여 Venus Express는 안전한 온도 유지를 목적으로 표면 방열기의 면적과 효율을 높이고, Mars Express와 다르게 포장한 23층 다층 단열재인 MLI를 사용했다. MLI는 검정색 대신 금색을 채택하여 복사를 더 많이 반사하도록 했으며, 자료는 Mars Express의 보온 중심 설계와 Venus Express의 냉각 유지 중심 설계를 대비한다. 전력 측면에서는 풍부한 태양복사 덕분에 태양전지판을 Mars Express의 거의 절반 크기로 설계할 수 있었다. 또한 약 120°C까지의 고온을 견디는 GaAs 태양전지를 채택하고 전지 사이에 열 방출을 돕는 알루미늄 띠를 배치했는데, 이 온도는 전지의 내열 특성이지 궤도선의 실제 운용 온도나 관측 성과가 아니다. «금성 | The spacecraft»«금성 | Venus Express ESA Mission Brochure»\n\n자세와 관련하여 자료에 명시된 조건은 민감한 기기가 있는 우주선의 차가운 면을 태양으로부터 멀어지게 유지하는 것이며, 이 조건을 지키면서 단일 안테나를 항상 지구로 향하게 하는 것은 불가능할 수 있다. Venus Express는 이러한 통신 지향 제약에 대응하여 서로 다른 기체 면에 고이득 안테나 2개를 설치했다. 관측 자세를 선택할 때도 차가운 면의 태양 회피 조건을 만족해야 하므로 일부 관측 방향이나 관측과 통신의 조합이 제한될 수 있다는 해석은 이 자세 조건에서 도출한 추론이다. 자료는 구체적인 관측 금지 방향, 허용 자세각 또는 관측시간 손실을 제시하지 않으므로, 안테나 배치가 관측 제약을 모두 해소했다거나 특정 관측 성과를 보장했다고 단정할 수 없다. «금성 | The spacecraft»«금성 | Venus Express ESA Mission Brochure»\n\n## 맺음말\n\nMESSENGER는 차양의 태양 지향과 뜨거운 표면의 저고도 통과를 줄이는 궤도가, Venus Express는 차가운 면의 태양 회피와 통신 지향 조건이 관측 자세나 운용 조합을 제한할 수 있다. 다만 제시된 자료만으로는 두 탐사선의 실제 관측시간 손실을 정량 비교하거나, 설계상 온도와 안테나 배치를 실제 관측 성과로 단정할 수 없다.",
+      "warnings": []
+    }
+  ]
+}

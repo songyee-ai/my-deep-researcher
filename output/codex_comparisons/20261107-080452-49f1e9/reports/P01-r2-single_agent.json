@@ -1,0 +1,600 @@
+{
+  "question": "MESSENGER 임무는 언제, 어떤 방식으로 종료되었나?",
+  "plan": {
+    "제목": "MESSENGER 임무의 종료 시점과 방식",
+    "목차": [
+      {
+        "번호": 0,
+        "절": "전체 질문 조사",
+        "지시": "MESSENGER 임무는 언제, 어떤 방식으로 종료되었나? — 질문 전체를 맡아 내용별 소제목을 포함한 장문 보고서를 작성한다.",
+        "역할": "자료 조사원",
+        "시작문서": "수성 | MESSENGER",
+        "예산": 12
+      }
+    ]
+  },
+  "pending": [],
+  "round": 1,
+  "attempts": [
+    {
+      "번호": 0,
+      "절": "전체 질문 조사",
+      "역할": "자료 조사원",
+      "round": 0,
+      "본문": "종료 시점과 방식\nMESSENGER 임무는 2015년 4월 30일 19:26 UT에 탐사선이 수성 표면에 충돌하면서 종료되었다. 이 날짜와 시각은 충돌을 예상했던 일정이 아니라, 제공된 자료가 실제 충돌 사건에 대해 명시한 종료 시점이다. 종료 방식은 추진제 고갈에 뒤이어 수성 표면에 충돌하는 것이었으며, 자료는 이 충돌이 사전에 예상된 사건이었다고 설명한다. «수성 | MESSENGER»\n\n추진제 부족과 종료 전 운용\n2014년 성탄절 무렵에는 MESSENGER의 추진제가 바닥나고 있다는 점이 분명해졌으며, 당시에는 탐사선이 2015년 3월 하순에 수성에 충돌할 것으로 예상되었다. 임무 관제진은 2015년 1월 21일 탐사선의 궤도를 높이는 기동을 수행했으며, 자료는 이 기동의 목적을 이른 봄까지 과학 활동을 이어갈 수 있도록 하는 것으로 설명한다. 이후 NASA는 2015년 4월 16일, 탐사선이 추진제를 모두 소진한 뒤 2015년 4월 30일까지 수성 표면에 충돌할 것이라고 발표했다. «수성 | MESSENGER»\n\n실제 충돌과 그 결과\nMESSENGER는 실제로 2015년 4월 30일 수성 표면에 시속 약 8,750마일, 즉 시속 약 14,080킬로미터의 속도로 충돌했다. 이 충돌은 수성에 새로운 충돌구를 만들었으며, 이는 자료가 임무 종료에 따른 실제 결과로 명시한 내용이다. 따라서 종료 경위는 추진제 부족이 확인된 상황에서 궤도를 높이는 기동이 이루어지고, 이후 예고된 표면 충돌이 발생하면서 임무가 끝난 과정으로 정리할 수 있다. «수성 | MESSENGER»",
+      "부족": false,
+      "이유": "D1에 실제 종료 날짜와 시각, 추진제 고갈에 따른 종료 경위, 표면 충돌 방식과 결과가 명시되어 있어 질문의 핵심에 답할 근거가 충분하다. D2와 D3에는 해당 핵심 근거가 없어 본문 근거로 사용하지 않았다.",
+      "읽은문서": [
+        "수성 | MESSENGER",
+        "수성 | Mercury Facts",
+        "수성 | Journey to Mercury"
+      ],
+      "인용": [
+        "수성 | MESSENGER",
+        "수성 | MESSENGER",
+        "수성 | MESSENGER"
+      ],
+      "draft_format": "source_ids_v1",
+      "raw_draft": {
+        "단락": [
+          {
+            "내용": "종료 시점과 방식\nMESSENGER 임무는 2015년 4월 30일 19:26 UT에 탐사선이 수성 표면에 충돌하면서 종료되었다. 이 날짜와 시각은 충돌을 예상했던 일정이 아니라, 제공된 자료가 실제 충돌 사건에 대해 명시한 종료 시점이다. 종료 방식은 추진제 고갈에 뒤이어 수성 표면에 충돌하는 것이었으며, 자료는 이 충돌이 사전에 예상된 사건이었다고 설명한다.",
+            "출처ID": [
+              "D1"
+            ]
+          },
+          {
+            "내용": "추진제 부족과 종료 전 운용\n2014년 성탄절 무렵에는 MESSENGER의 추진제가 바닥나고 있다는 점이 분명해졌으며, 당시에는 탐사선이 2015년 3월 하순에 수성에 충돌할 것으로 예상되었다. 임무 관제진은 2015년 1월 21일 탐사선의 궤도를 높이는 기동을 수행했으며, 자료는 이 기동의 목적을 이른 봄까지 과학 활동을 이어갈 수 있도록 하는 것으로 설명한다. 이후 NASA는 2015년 4월 16일, 탐사선이 추진제를 모두 소진한 뒤 2015년 4월 30일까지 수성 표면에 충돌할 것이라고 발표했다.",
+            "출처ID": [
+              "D1"
+            ]
+          },
+          {
+            "내용": "실제 충돌과 그 결과\nMESSENGER는 실제로 2015년 4월 30일 수성 표면에 시속 약 8,750마일, 즉 시속 약 14,080킬로미터의 속도로 충돌했다. 이 충돌은 수성에 새로운 충돌구를 만들었으며, 이는 자료가 임무 종료에 따른 실제 결과로 명시한 내용이다. 따라서 종료 경위는 추진제 부족이 확인된 상황에서 궤도를 높이는 기동이 이루어지고, 이후 예고된 표면 충돌이 발생하면서 임무가 끝난 과정으로 정리할 수 있다.",
+            "출처ID": [
+              "D1"
+            ]
+          }
+        ],
+        "부족": false,
+        "이유": "D1에 실제 종료 날짜와 시각, 추진제 고갈에 따른 종료 경위, 표면 충돌 방식과 결과가 명시되어 있어 질문의 핵심에 답할 근거가 충분하다. D2와 D3에는 해당 핵심 근거가 없어 본문 근거로 사용하지 않았다."
+      },
+      "source_map": {
+        "D1": "수성 | MESSENGER",
+        "D2": "수성 | Mercury Facts",
+        "D3": "수성 | Journey to Mercury"
+      }
+    }
+  ],
+  "selected": [
+    {
+      "번호": 0,
+      "절": "전체 질문 조사",
+      "역할": "자료 조사원",
+      "round": 0,
+      "본문": "종료 시점과 방식\nMESSENGER 임무는 2015년 4월 30일 19:26 UT에 탐사선이 수성 표면에 충돌하면서 종료되었다. 이 날짜와 시각은 충돌을 예상했던 일정이 아니라, 제공된 자료가 실제 충돌 사건에 대해 명시한 종료 시점이다. 종료 방식은 추진제 고갈에 뒤이어 수성 표면에 충돌하는 것이었으며, 자료는 이 충돌이 사전에 예상된 사건이었다고 설명한다. «수성 | MESSENGER»\n\n추진제 부족과 종료 전 운용\n2014년 성탄절 무렵에는 MESSENGER의 추진제가 바닥나고 있다는 점이 분명해졌으며, 당시에는 탐사선이 2015년 3월 하순에 수성에 충돌할 것으로 예상되었다. 임무 관제진은 2015년 1월 21일 탐사선의 궤도를 높이는 기동을 수행했으며, 자료는 이 기동의 목적을 이른 봄까지 과학 활동을 이어갈 수 있도록 하는 것으로 설명한다. 이후 NASA는 2015년 4월 16일, 탐사선이 추진제를 모두 소진한 뒤 2015년 4월 30일까지 수성 표면에 충돌할 것이라고 발표했다. «수성 | MESSENGER»\n\n실제 충돌과 그 결과\nMESSENGER는 실제로 2015년 4월 30일 수성 표면에 시속 약 8,750마일, 즉 시속 약 14,080킬로미터의 속도로 충돌했다. 이 충돌은 수성에 새로운 충돌구를 만들었으며, 이는 자료가 임무 종료에 따른 실제 결과로 명시한 내용이다. 따라서 종료 경위는 추진제 부족이 확인된 상황에서 궤도를 높이는 기동이 이루어지고, 이후 예고된 표면 충돌이 발생하면서 임무가 끝난 과정으로 정리할 수 있다. «수성 | MESSENGER»",
+      "부족": false,
+      "이유": "D1에 실제 종료 날짜와 시각, 추진제 고갈에 따른 종료 경위, 표면 충돌 방식과 결과가 명시되어 있어 질문의 핵심에 답할 근거가 충분하다. D2와 D3에는 해당 핵심 근거가 없어 본문 근거로 사용하지 않았다.",
+      "읽은문서": [
+        "수성 | MESSENGER",
+        "수성 | Mercury Facts",
+        "수성 | Journey to Mercury"
+      ],
+      "인용": [
+        "수성 | MESSENGER",
+        "수성 | MESSENGER",
+        "수성 | MESSENGER"
+      ],
+      "draft_format": "source_ids_v1",
+      "raw_draft": {
+        "단락": [
+          {
+            "내용": "종료 시점과 방식\nMESSENGER 임무는 2015년 4월 30일 19:26 UT에 탐사선이 수성 표면에 충돌하면서 종료되었다. 이 날짜와 시각은 충돌을 예상했던 일정이 아니라, 제공된 자료가 실제 충돌 사건에 대해 명시한 종료 시점이다. 종료 방식은 추진제 고갈에 뒤이어 수성 표면에 충돌하는 것이었으며, 자료는 이 충돌이 사전에 예상된 사건이었다고 설명한다.",
+            "출처ID": [
+              "D1"
+            ]
+          },
+          {
+            "내용": "추진제 부족과 종료 전 운용\n2014년 성탄절 무렵에는 MESSENGER의 추진제가 바닥나고 있다는 점이 분명해졌으며, 당시에는 탐사선이 2015년 3월 하순에 수성에 충돌할 것으로 예상되었다. 임무 관제진은 2015년 1월 21일 탐사선의 궤도를 높이는 기동을 수행했으며, 자료는 이 기동의 목적을 이른 봄까지 과학 활동을 이어갈 수 있도록 하는 것으로 설명한다. 이후 NASA는 2015년 4월 16일, 탐사선이 추진제를 모두 소진한 뒤 2015년 4월 30일까지 수성 표면에 충돌할 것이라고 발표했다.",
+            "출처ID": [
+              "D1"
+            ]
+          },
+          {
+            "내용": "실제 충돌과 그 결과\nMESSENGER는 실제로 2015년 4월 30일 수성 표면에 시속 약 8,750마일, 즉 시속 약 14,080킬로미터의 속도로 충돌했다. 이 충돌은 수성에 새로운 충돌구를 만들었으며, 이는 자료가 임무 종료에 따른 실제 결과로 명시한 내용이다. 따라서 종료 경위는 추진제 부족이 확인된 상황에서 궤도를 높이는 기동이 이루어지고, 이후 예고된 표면 충돌이 발생하면서 임무가 끝난 과정으로 정리할 수 있다.",
+            "출처ID": [
+              "D1"
+            ]
+          }
+        ],
+        "부족": false,
+        "이유": "D1에 실제 종료 날짜와 시각, 추진제 고갈에 따른 종료 경위, 표면 충돌 방식과 결과가 명시되어 있어 질문의 핵심에 답할 근거가 충분하다. D2와 D3에는 해당 핵심 근거가 없어 본문 근거로 사용하지 않았다."
+      },
+      "source_map": {
+        "D1": "수성 | MESSENGER",
+        "D2": "수성 | Mercury Facts",
+        "D3": "수성 | Journey to Mercury"
+      }
+    }
+  ],
+  "review": [
+    {
+      "section": 0,
+      "round": 0,
+      "self_reported_insufficient": false,
+      "accepted": true,
+      "valid_draft": true,
+      "redispatch": false,
+      "reason": "valid nonregressing draft"
+    }
+  ],
+  "report": "# MESSENGER 임무의 종료 시점과 방식\n\nMESSENGER 임무가 언제, 어떤 방식으로 끝났는지 제공된 자료를 바탕으로 살펴본다. 종료 전 추진제 부족과 궤도 조정, 실제 충돌 시점과 결과를 차례로 정리한다.\n\n## 1. 전체 질문 조사\n\n종료 시점과 방식\nMESSENGER 임무는 2015년 4월 30일 19:26 UT에 탐사선이 수성 표면에 충돌하면서 종료되었다. 이 날짜와 시각은 충돌을 예상했던 일정이 아니라, 제공된 자료가 실제 충돌 사건에 대해 명시한 종료 시점이다. 종료 방식은 추진제 고갈에 뒤이어 수성 표면에 충돌하는 것이었으며, 자료는 이 충돌이 사전에 예상된 사건이었다고 설명한다. «수성 | MESSENGER»\n\n추진제 부족과 종료 전 운용\n2014년 성탄절 무렵에는 MESSENGER의 추진제가 바닥나고 있다는 점이 분명해졌으며, 당시에는 탐사선이 2015년 3월 하순에 수성에 충돌할 것으로 예상되었다. 임무 관제진은 2015년 1월 21일 탐사선의 궤도를 높이는 기동을 수행했으며, 자료는 이 기동의 목적을 이른 봄까지 과학 활동을 이어갈 수 있도록 하는 것으로 설명한다. 이후 NASA는 2015년 4월 16일, 탐사선이 추진제를 모두 소진한 뒤 2015년 4월 30일까지 수성 표면에 충돌할 것이라고 발표했다. «수성 | MESSENGER»\n\n실제 충돌과 그 결과\nMESSENGER는 실제로 2015년 4월 30일 수성 표면에 시속 약 8,750마일, 즉 시속 약 14,080킬로미터의 속도로 충돌했다. 이 충돌은 수성에 새로운 충돌구를 만들었으며, 이는 자료가 임무 종료에 따른 실제 결과로 명시한 내용이다. 따라서 종료 경위는 추진제 부족이 확인된 상황에서 궤도를 높이는 기동이 이루어지고, 이후 예고된 표면 충돌이 발생하면서 임무가 끝난 과정으로 정리할 수 있다. «수성 | MESSENGER»\n\n## 맺음말\n\nMESSENGER 임무는 추진제 고갈에 뒤이어 2015년 4월 30일 19:26 UT에 수성 표면에 충돌하면서 종료되었다. 다만 본문은 추진제가 완전히 소진된 정확한 시점과 마지막 기동 이후의 세부 운용 경과까지 제시하지는 않는다.",
+  "events": [
+    {
+      "kind": "context",
+      "actor": "coordinator",
+      "step": "plan",
+      "input_chars": 29909,
+      "source_chars": 0,
+      "card_chars": 29583,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "plan",
+      "plan": {
+        "제목": "MESSENGER 임무의 종료 시점과 방식",
+        "목차": [
+          {
+            "번호": 0,
+            "절": "전체 질문 조사",
+            "지시": "MESSENGER 임무는 언제, 어떤 방식으로 종료되었나? — 질문 전체를 맡아 내용별 소제목을 포함한 장문 보고서를 작성한다.",
+            "역할": "자료 조사원",
+            "시작문서": "수성 | MESSENGER",
+            "예산": 12
+          }
+        ]
+      }
+    },
+    {
+      "kind": "assignment",
+      "agent": "researcher-0",
+      "round": 0,
+      "task": {
+        "번호": 0,
+        "절": "전체 질문 조사",
+        "지시": "MESSENGER 임무는 언제, 어떤 방식으로 종료되었나? — 질문 전체를 맡아 내용별 소제목을 포함한 장문 보고서를 작성한다.",
+        "역할": "자료 조사원",
+        "시작문서": "수성 | MESSENGER",
+        "예산": 12,
+        "다른구역": []
+      }
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-0",
+      "step": "read",
+      "input_chars": 8771,
+      "source_chars": 7281,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "fact_table",
+      "agent": "researcher-0",
+      "document": "수성 | MESSENGER",
+      "table": {
+        "facts": [
+          {
+            "id": "F1",
+            "subject": "MESSENGER",
+            "relation": "임무 종료 날짜",
+            "comparison_target": "",
+            "value": "April 30, 2015",
+            "unit": "",
+            "basis": "실제 종료일",
+            "start_line": 75,
+            "end_line": 75,
+            "document": "수성 | MESSENGER",
+            "quote": "As expected, on April 30, 2015, at 19:26 UT, MESSENGER slammed into the planet’s surface at about 8,750 miles per hour (14,080 kilometers per hour), creating a new crater on Mercury."
+          },
+          {
+            "id": "F2",
+            "subject": "MESSENGER",
+            "relation": "수성 표면 충돌 시각",
+            "comparison_target": "",
+            "value": "19:26",
+            "unit": "UT",
+            "basis": "실제 충돌 시각",
+            "start_line": 75,
+            "end_line": 75,
+            "document": "수성 | MESSENGER",
+            "quote": "As expected, on April 30, 2015, at 19:26 UT, MESSENGER slammed into the planet’s surface at about 8,750 miles per hour (14,080 kilometers per hour), creating a new crater on Mercury."
+          },
+          {
+            "id": "F3",
+            "subject": "the spacecraft",
+            "relation": "추진제 고갈 후 수성 표면 충돌 예정",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "종료 원인과 예고된 종료 방식",
+            "start_line": 73,
+            "end_line": 74,
+            "document": "수성 | MESSENGER",
+            "quote": "By Christmas Day 2014, it was clear that the spacecraft’s propellants were running out and that MESSENGER would impact the planet in late March 2015. On Jan. 21, 2015, mission controllers carried out one last maneuver to raise the spacecraft’s orbit enough to continue science activities into early spring.\nOn April 16, 2015, NASA announced that the spacecraft would impact the surface of Mercury by April 30, 2015, after it ran out of propellant."
+          },
+          {
+            "id": "F4",
+            "subject": "MESSENGER",
+            "relation": "수성 표면에 충돌하여 새로운 충돌구를 만들며 종료",
+            "comparison_target": "",
+            "value": "",
+            "unit": "",
+            "basis": "실제 종료 방식과 결과",
+            "start_line": 75,
+            "end_line": 75,
+            "document": "수성 | MESSENGER",
+            "quote": "As expected, on April 30, 2015, at 19:26 UT, MESSENGER slammed into the planet’s surface at about 8,750 miles per hour (14,080 kilometers per hour), creating a new crater on Mercury."
+          },
+          {
+            "id": "F5",
+            "subject": "MESSENGER",
+            "relation": "수성 표면 충돌 속도",
+            "comparison_target": "",
+            "value": "about 8,750",
+            "unit": "miles per hour",
+            "basis": "실제 충돌 속도",
+            "start_line": 75,
+            "end_line": 75,
+            "document": "수성 | MESSENGER",
+            "quote": "As expected, on April 30, 2015, at 19:26 UT, MESSENGER slammed into the planet’s surface at about 8,750 miles per hour (14,080 kilometers per hour), creating a new crater on Mercury."
+          }
+        ],
+        "insufficient": false,
+        "reason": "",
+        "semantic_review": "pending",
+        "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+      }
+    },
+    {
+      "kind": "read",
+      "agent": "researcher-0",
+      "round": 0,
+      "document": "수성 | MESSENGER",
+      "source_chars": 7281,
+      "evidence": {
+        "근거": [
+          {
+            "원문": "As expected, on April 30, 2015, at 19:26 UT, MESSENGER slammed into the planet’s surface at about 8,750 miles per hour (14,080 kilometers per hour), creating a new crater on Mercury.",
+            "메모": "{\"subject\": \"MESSENGER\", \"relation\": \"임무 종료 날짜\", \"comparison_target\": \"\", \"value\": \"April 30, 2015\", \"unit\": \"\", \"basis\": \"실제 종료일\"}"
+          },
+          {
+            "원문": "As expected, on April 30, 2015, at 19:26 UT, MESSENGER slammed into the planet’s surface at about 8,750 miles per hour (14,080 kilometers per hour), creating a new crater on Mercury.",
+            "메모": "{\"subject\": \"MESSENGER\", \"relation\": \"수성 표면 충돌 시각\", \"comparison_target\": \"\", \"value\": \"19:26\", \"unit\": \"UT\", \"basis\": \"실제 충돌 시각\"}"
+          },
+          {
+            "원문": "By Christmas Day 2014, it was clear that the spacecraft’s propellants were running out and that MESSENGER would impact the planet in late March 2015. On Jan. 21, 2015, mission controllers carried out one last maneuver to raise the spacecraft’s orbit enough to continue science activities into early spring.\nOn April 16, 2015, NASA announced that the spacecraft would impact the surface of Mercury by April 30, 2015, after it ran out of propellant.",
+            "메모": "{\"subject\": \"the spacecraft\", \"relation\": \"추진제 고갈 후 수성 표면 충돌 예정\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"종료 원인과 예고된 종료 방식\"}"
+          },
+          {
+            "원문": "As expected, on April 30, 2015, at 19:26 UT, MESSENGER slammed into the planet’s surface at about 8,750 miles per hour (14,080 kilometers per hour), creating a new crater on Mercury.",
+            "메모": "{\"subject\": \"MESSENGER\", \"relation\": \"수성 표면에 충돌하여 새로운 충돌구를 만들며 종료\", \"comparison_target\": \"\", \"value\": \"\", \"unit\": \"\", \"basis\": \"실제 종료 방식과 결과\"}"
+          },
+          {
+            "원문": "As expected, on April 30, 2015, at 19:26 UT, MESSENGER slammed into the planet’s surface at about 8,750 miles per hour (14,080 kilometers per hour), creating a new crater on Mercury.",
+            "메모": "{\"subject\": \"MESSENGER\", \"relation\": \"수성 표면 충돌 속도\", \"comparison_target\": \"\", \"value\": \"about 8,750\", \"unit\": \"miles per hour\", \"basis\": \"실제 충돌 속도\"}"
+          }
+        ],
+        "부족": false,
+        "이유": "",
+        "fact_table": {
+          "facts": [
+            {
+              "id": "F1",
+              "subject": "MESSENGER",
+              "relation": "임무 종료 날짜",
+              "comparison_target": "",
+              "value": "April 30, 2015",
+              "unit": "",
+              "basis": "실제 종료일",
+              "start_line": 75,
+              "end_line": 75,
+              "document": "수성 | MESSENGER",
+              "quote": "As expected, on April 30, 2015, at 19:26 UT, MESSENGER slammed into the planet’s surface at about 8,750 miles per hour (14,080 kilometers per hour), creating a new crater on Mercury."
+            },
+            {
+              "id": "F2",
+              "subject": "MESSENGER",
+              "relation": "수성 표면 충돌 시각",
+              "comparison_target": "",
+              "value": "19:26",
+              "unit": "UT",
+              "basis": "실제 충돌 시각",
+              "start_line": 75,
+              "end_line": 75,
+              "document": "수성 | MESSENGER",
+              "quote": "As expected, on April 30, 2015, at 19:26 UT, MESSENGER slammed into the planet’s surface at about 8,750 miles per hour (14,080 kilometers per hour), creating a new crater on Mercury."
+            },
+            {
+              "id": "F3",
+              "subject": "the spacecraft",
+              "relation": "추진제 고갈 후 수성 표면 충돌 예정",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "종료 원인과 예고된 종료 방식",
+              "start_line": 73,
+              "end_line": 74,
+              "document": "수성 | MESSENGER",
+              "quote": "By Christmas Day 2014, it was clear that the spacecraft’s propellants were running out and that MESSENGER would impact the planet in late March 2015. On Jan. 21, 2015, mission controllers carried out one last maneuver to raise the spacecraft’s orbit enough to continue science activities into early spring.\nOn April 16, 2015, NASA announced that the spacecraft would impact the surface of Mercury by April 30, 2015, after it ran out of propellant."
+            },
+            {
+              "id": "F4",
+              "subject": "MESSENGER",
+              "relation": "수성 표면에 충돌하여 새로운 충돌구를 만들며 종료",
+              "comparison_target": "",
+              "value": "",
+              "unit": "",
+              "basis": "실제 종료 방식과 결과",
+              "start_line": 75,
+              "end_line": 75,
+              "document": "수성 | MESSENGER",
+              "quote": "As expected, on April 30, 2015, at 19:26 UT, MESSENGER slammed into the planet’s surface at about 8,750 miles per hour (14,080 kilometers per hour), creating a new crater on Mercury."
+            },
+            {
+              "id": "F5",
+              "subject": "MESSENGER",
+              "relation": "수성 표면 충돌 속도",
+              "comparison_target": "",
+              "value": "about 8,750",
+              "unit": "miles per hour",
+              "basis": "실제 충돌 속도",
+              "start_line": 75,
+              "end_line": 75,
+              "document": "수성 | MESSENGER",
+              "quote": "As expected, on April 30, 2015, at 19:26 UT, MESSENGER slammed into the planet’s surface at about 8,750 miles per hour (14,080 kilometers per hour), creating a new crater on Mercury."
+            }
+          ],
+          "insufficient": false,
+          "reason": "",
+          "semantic_review": "pending",
+          "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+        },
+        "validation": "Schema/source membership checked; semantic support pending direct review."
+      }
+    },
+    {
+      "kind": "candidates",
+      "agent": "researcher-0",
+      "round": 0,
+      "path": "all_docs_fallback",
+      "count": 96
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-0",
+      "step": "pick",
+      "input_chars": 3758,
+      "source_chars": 0,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-0",
+      "step": "read",
+      "input_chars": 7768,
+      "source_chars": 6454,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "fact_table",
+      "agent": "researcher-0",
+      "document": "수성 | Mercury Facts",
+      "table": {
+        "facts": [],
+        "insufficient": true,
+        "reason": "제공된 원문에는 메신저 탐사선이 촬영한 사진에 대한 설명만 있으며, 임무 종료 시점과 종료 방식에 관한 핵심 근거가 없다.",
+        "semantic_review": "pending",
+        "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+      }
+    },
+    {
+      "kind": "read",
+      "agent": "researcher-0",
+      "round": 0,
+      "document": "수성 | Mercury Facts",
+      "source_chars": 6454,
+      "evidence": {
+        "근거": [],
+        "부족": true,
+        "이유": "제공된 원문에는 메신저 탐사선이 촬영한 사진에 대한 설명만 있으며, 임무 종료 시점과 종료 방식에 관한 핵심 근거가 없다.",
+        "fact_table": {
+          "facts": [],
+          "insufficient": true,
+          "reason": "제공된 원문에는 메신저 탐사선이 촬영한 사진에 대한 설명만 있으며, 임무 종료 시점과 종료 방식에 관한 핵심 근거가 없다.",
+          "semantic_review": "pending",
+          "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+        },
+        "validation": "Schema/source membership checked; semantic support pending direct review."
+      }
+    },
+    {
+      "kind": "candidates",
+      "agent": "researcher-0",
+      "round": 0,
+      "path": "all_docs_fallback",
+      "count": 95
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-0",
+      "step": "pick",
+      "input_chars": 3758,
+      "source_chars": 0,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-0",
+      "step": "read",
+      "input_chars": 3474,
+      "source_chars": 2315,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "fact_table",
+      "agent": "researcher-0",
+      "document": "수성 | Journey to Mercury",
+      "table": {
+        "facts": [],
+        "insufficient": true,
+        "reason": "제공된 원문은 다른 수성 탐사 임무의 발사와 수성 도착 계획을 설명하며, 질문 대상 임무의 종료 시점과 종료 방식에 관한 근거는 포함하지 않는다.",
+        "semantic_review": "pending",
+        "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+      }
+    },
+    {
+      "kind": "read",
+      "agent": "researcher-0",
+      "round": 0,
+      "document": "수성 | Journey to Mercury",
+      "source_chars": 2315,
+      "evidence": {
+        "근거": [],
+        "부족": true,
+        "이유": "제공된 원문은 다른 수성 탐사 임무의 발사와 수성 도착 계획을 설명하며, 질문 대상 임무의 종료 시점과 종료 방식에 관한 근거는 포함하지 않는다.",
+        "fact_table": {
+          "facts": [],
+          "insufficient": true,
+          "reason": "제공된 원문은 다른 수성 탐사 임무의 발사와 수성 도착 계획을 설명하며, 질문 대상 임무의 종료 시점과 종료 방식에 관한 근거는 포함하지 않는다.",
+          "semantic_review": "pending",
+          "validation_scope": "Schema, source expressions, line bounds, numeric membership only. Attribution/basis needs direct review."
+        },
+        "validation": "Schema/source membership checked; semantic support pending direct review."
+      }
+    },
+    {
+      "kind": "candidates",
+      "agent": "researcher-0",
+      "round": 0,
+      "path": "links",
+      "count": 3
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-0",
+      "step": "pick",
+      "input_chars": 445,
+      "source_chars": 0,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "stop_reading",
+      "agent": "researcher-0",
+      "round": 0,
+      "reason": "model_stop"
+    },
+    {
+      "kind": "context",
+      "actor": "researcher-0",
+      "step": "write",
+      "input_chars": 6337,
+      "source_chars": 0,
+      "card_chars": 0,
+      "manuscript_chars": 0
+    },
+    {
+      "kind": "section",
+      "agent": "researcher-0",
+      "section": {
+        "번호": 0,
+        "절": "전체 질문 조사",
+        "역할": "자료 조사원",
+        "round": 0,
+        "본문": "종료 시점과 방식\nMESSENGER 임무는 2015년 4월 30일 19:26 UT에 탐사선이 수성 표면에 충돌하면서 종료되었다. 이 날짜와 시각은 충돌을 예상했던 일정이 아니라, 제공된 자료가 실제 충돌 사건에 대해 명시한 종료 시점이다. 종료 방식은 추진제 고갈에 뒤이어 수성 표면에 충돌하는 것이었으며, 자료는 이 충돌이 사전에 예상된 사건이었다고 설명한다. «수성 | MESSENGER»\n\n추진제 부족과 종료 전 운용\n2014년 성탄절 무렵에는 MESSENGER의 추진제가 바닥나고 있다는 점이 분명해졌으며, 당시에는 탐사선이 2015년 3월 하순에 수성에 충돌할 것으로 예상되었다. 임무 관제진은 2015년 1월 21일 탐사선의 궤도를 높이는 기동을 수행했으며, 자료는 이 기동의 목적을 이른 봄까지 과학 활동을 이어갈 수 있도록 하는 것으로 설명한다. 이후 NASA는 2015년 4월 16일, 탐사선이 추진제를 모두 소진한 뒤 2015년 4월 30일까지 수성 표면에 충돌할 것이라고 발표했다. «수성 | MESSENGER»\n\n실제 충돌과 그 결과\nMESSENGER는 실제로 2015년 4월 30일 수성 표면에 시속 약 8,750마일, 즉 시속 약 14,080킬로미터의 속도로 충돌했다. 이 충돌은 수성에 새로운 충돌구를 만들었으며, 이는 자료가 임무 종료에 따른 실제 결과로 명시한 내용이다. 따라서 종료 경위는 추진제 부족이 확인된 상황에서 궤도를 높이는 기동이 이루어지고, 이후 예고된 표면 충돌이 발생하면서 임무가 끝난 과정으로 정리할 수 있다. «수성 | MESSENGER»",
+        "부족": false,
+        "이유": "D1에 실제 종료 날짜와 시각, 추진제 고갈에 따른 종료 경위, 표면 충돌 방식과 결과가 명시되어 있어 질문의 핵심에 답할 근거가 충분하다. D2와 D3에는 해당 핵심 근거가 없어 본문 근거로 사용하지 않았다.",
+        "읽은문서": [
+          "수성 | MESSENGER",
+          "수성 | Mercury Facts",
+          "수성 | Journey to Mercury"
+        ],
+        "인용": [
+          "수성 | MESSENGER",
+          "수성 | MESSENGER",
+          "수성 | MESSENGER"
+        ],
+        "draft_format": "source_ids_v1",
+        "raw_draft": {
+          "단락": [
+            {
+              "내용": "종료 시점과 방식\nMESSENGER 임무는 2015년 4월 30일 19:26 UT에 탐사선이 수성 표면에 충돌하면서 종료되었다. 이 날짜와 시각은 충돌을 예상했던 일정이 아니라, 제공된 자료가 실제 충돌 사건에 대해 명시한 종료 시점이다. 종료 방식은 추진제 고갈에 뒤이어 수성 표면에 충돌하는 것이었으며, 자료는 이 충돌이 사전에 예상된 사건이었다고 설명한다.",
+              "출처ID": [
+                "D1"
+              ]
+            },
+            {
+              "내용": "추진제 부족과 종료 전 운용\n2014년 성탄절 무렵에는 MESSENGER의 추진제가 바닥나고 있다는 점이 분명해졌으며, 당시에는 탐사선이 2015년 3월 하순에 수성에 충돌할 것으로 예상되었다. 임무 관제진은 2015년 1월 21일 탐사선의 궤도를 높이는 기동을 수행했으며, 자료는 이 기동의 목적을 이른 봄까지 과학 활동을 이어갈 수 있도록 하는 것으로 설명한다. 이후 NASA는 2015년 4월 16일, 탐사선이 추진제를 모두 소진한 뒤 2015년 4월 30일까지 수성 표면에 충돌할 것이라고 발표했다.",
+              "출처ID": [
+                "D1"
+              ]
+            },
+            {
+              "내용": "실제 충돌과 그 결과\nMESSENGER는 실제로 2015년 4월 30일 수성 표면에 시속 약 8,750마일, 즉 시속 약 14,080킬로미터의 속도로 충돌했다. 이 충돌은 수성에 새로운 충돌구를 만들었으며, 이는 자료가 임무 종료에 따른 실제 결과로 명시한 내용이다. 따라서 종료 경위는 추진제 부족이 확인된 상황에서 궤도를 높이는 기동이 이루어지고, 이후 예고된 표면 충돌이 발생하면서 임무가 끝난 과정으로 정리할 수 있다.",
+              "출처ID": [
+                "D1"
+              ]
+            }
+          ],
+          "부족": false,
+          "이유": "D1에 실제 종료 날짜와 시각, 추진제 고갈에 따른 종료 경위, 표면 충돌 방식과 결과가 명시되어 있어 질문의 핵심에 답할 근거가 충분하다. D2와 D3에는 해당 핵심 근거가 없어 본문 근거로 사용하지 않았다."
+        },
+        "source_map": {
+          "D1": "수성 | MESSENGER",
+          "D2": "수성 | Mercury Facts",
+          "D3": "수성 | Journey to Mercury"
+        }
+      }
+    },
+    {
+      "kind": "review",
+      "section": 0,
+      "round": 0,
+      "self_reported_insufficient": false,
+      "accepted": true,
+      "valid_draft": true,
+      "redispatch": false,
+      "reason": "valid nonregressing draft"
+    },
+    {
+      "kind": "context",
+      "actor": "synthesizer",
+      "step": "edit",
+      "input_chars": 918,
+      "source_chars": 0,
+      "card_chars": 0,
+      "manuscript_chars": 790
+    },
+    {
+      "kind": "report",
+      "report": "# MESSENGER 임무의 종료 시점과 방식\n\nMESSENGER 임무가 언제, 어떤 방식으로 끝났는지 제공된 자료를 바탕으로 살펴본다. 종료 전 추진제 부족과 궤도 조정, 실제 충돌 시점과 결과를 차례로 정리한다.\n\n## 1. 전체 질문 조사\n\n종료 시점과 방식\nMESSENGER 임무는 2015년 4월 30일 19:26 UT에 탐사선이 수성 표면에 충돌하면서 종료되었다. 이 날짜와 시각은 충돌을 예상했던 일정이 아니라, 제공된 자료가 실제 충돌 사건에 대해 명시한 종료 시점이다. 종료 방식은 추진제 고갈에 뒤이어 수성 표면에 충돌하는 것이었으며, 자료는 이 충돌이 사전에 예상된 사건이었다고 설명한다. «수성 | MESSENGER»\n\n추진제 부족과 종료 전 운용\n2014년 성탄절 무렵에는 MESSENGER의 추진제가 바닥나고 있다는 점이 분명해졌으며, 당시에는 탐사선이 2015년 3월 하순에 수성에 충돌할 것으로 예상되었다. 임무 관제진은 2015년 1월 21일 탐사선의 궤도를 높이는 기동을 수행했으며, 자료는 이 기동의 목적을 이른 봄까지 과학 활동을 이어갈 수 있도록 하는 것으로 설명한다. 이후 NASA는 2015년 4월 16일, 탐사선이 추진제를 모두 소진한 뒤 2015년 4월 30일까지 수성 표면에 충돌할 것이라고 발표했다. «수성 | MESSENGER»\n\n실제 충돌과 그 결과\nMESSENGER는 실제로 2015년 4월 30일 수성 표면에 시속 약 8,750마일, 즉 시속 약 14,080킬로미터의 속도로 충돌했다. 이 충돌은 수성에 새로운 충돌구를 만들었으며, 이는 자료가 임무 종료에 따른 실제 결과로 명시한 내용이다. 따라서 종료 경위는 추진제 부족이 확인된 상황에서 궤도를 높이는 기동이 이루어지고, 이후 예고된 표면 충돌이 발생하면서 임무가 끝난 과정으로 정리할 수 있다. «수성 | MESSENGER»\n\n## 맺음말\n\nMESSENGER 임무는 추진제 고갈에 뒤이어 2015년 4월 30일 19:26 UT에 수성 표면에 충돌하면서 종료되었다. 다만 본문은 추진제가 완전히 소진된 정확한 시점과 마지막 기동 이후의 세부 운용 경과까지 제시하지는 않는다.",
+      "warnings": []
+    }
+  ],
+  "baseline_validation": {
+    "granted_read_budget": 12,
+    "actual_reads": 3,
+    "full_budget_used": false,
+    "unused_budget": 9,
+    "status": "UNDERUSED_DO_NOT_CLAIM_MULTIAGENT_WIN",
+    "stopping_reasons": [
+      "model_stop"
+    ],
+    "note": "Uses the same read/pick/write/synthesis tools. Early stopping or corpus exhaustion is visible; an underused baseline cannot support a win claim."
+  }
+}

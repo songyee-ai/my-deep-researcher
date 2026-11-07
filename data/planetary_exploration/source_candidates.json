@@ -1,0 +1,23 @@
+{
+  "created": "2026-11-06",
+  "stage": "source_discovery_not_corpus_complete",
+  "scope": "수성·금성·화성·목성 탐사의 환경 제약, 설계 선택, 성과와 한계",
+  "sources": [
+    {"id":"mercury-messenger","planet":"수성","title":"NASA MESSENGER","url":"https://science.nasa.gov/mission/messenger/","status":"opened_verified","type":"mission_overview"},
+    {"id":"mercury-bepi-nasa","planet":"수성","title":"NASA BepiColombo","url":"https://science.nasa.gov/mission/bepicolombo/","status":"discovered","type":"mission_overview"},
+    {"id":"mercury-bepi-esa","planet":"수성","title":"ESA What is BepiColombo?","url":"https://www.esa.int/Science_Exploration/Space_Science/BepiColombo/What_is_BepiColombo","status":"discovered","type":"mission_design"},
+    {"id":"venus-magellan","planet":"금성","title":"NASA Magellan","url":"https://science.nasa.gov/mission/magellan/","status":"discovered","type":"mission_overview"},
+    {"id":"venus-vex","planet":"금성","title":"ESA Venus Express","url":"https://www.esa.int/Science_Exploration/Space_Science/Venus_Express","status":"discovered","type":"mission_overview"},
+    {"id":"venus-vex-instruments","planet":"금성","title":"ESA Venus Express Orbiter instruments","url":"https://www.esa.int/Science_Exploration/Space_Science/Venus_Express/Orbiter_instruments","status":"discovered","type":"instruments"},
+    {"id":"mars-perseverance","planet":"화성","title":"NASA Mars 2020 Perseverance","url":"https://science.nasa.gov/mission/mars-2020-perseverance/","status":"discovered","type":"mission_overview"},
+    {"id":"mars-mission","planet":"화성","title":"JPL Perseverance Landing Press Kit — Mission","url":"https://www.jpl.nasa.gov/news/press_kits/mars_2020/landing/mission/","status":"opened_verified","type":"historical_design_press_kit"},
+    {"id":"mars-rover","planet":"화성","title":"JPL Perseverance Rover","url":"https://www.jpl.nasa.gov/news/press_kits/mars_2020/landing/mission/spacecraft/perseverance_rover/","status":"discovered","type":"spacecraft"},
+    {"id":"jupiter-juno","planet":"목성","title":"NASA Juno","url":"https://science.nasa.gov/mission/juno/","status":"discovered","type":"mission_overview"},
+    {"id":"jupiter-juno-science","planet":"목성","title":"JPL Juno Press Kit — Science Overview","url":"https://www.jpl.nasa.gov/news/press_kits/juno/science/","status":"opened_verified","type":"historical_design_press_kit"},
+    {"id":"jupiter-juno-spacecraft","planet":"목성","title":"JPL Juno Press Kit — Spacecraft","url":"https://www.jpl.nasa.gov/news/press_kits/juno/spacecraft/","status":"discovered","type":"spacecraft"}
+  ],
+  "rejected_candidates": [
+    {"url":"https://www.esa.int/Science_Exploration/Space_Science/Venus_Express/Venus_Express_overview3","reason":"2026-11-06 open returned HTTP 404; exclude until a working canonical source is verified"}
+  ],
+  "next": ["Fetch article bodies and record final URLs/dates", "Follow relevant source links to assemble at least 30 distinct documents", "Remove navigation/duplicates and retain original language", "Build links from observed document references rather than invented relationships", "Count characters and model-token counts, then compare with verified context capacity"]
+}

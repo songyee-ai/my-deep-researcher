@@ -1,0 +1,266 @@
+{
+  "excluded": [
+    {
+      "source_id": "venus-vex",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Venus_Express",
+      "reason": "ESA page has no prose modules; hub/empty page excluded"
+    },
+    {
+      "source_id": "mars-mission",
+      "url": "https://www.jpl.nasa.gov/news/press_kits/mars_2020/landing/mission/",
+      "reason": "403 Client Error: Forbidden for url: https://www.jpl.nasa.gov/news/press_kits/mars_2020/landing/mission/"
+    },
+    {
+      "source_id": "mars-rover",
+      "url": "https://www.jpl.nasa.gov/news/press_kits/mars_2020/landing/mission/spacecraft/perseverance_rover/",
+      "reason": "403 Client Error: Forbidden for url: https://www.jpl.nasa.gov/news/press_kits/mars_2020/landing/mission/spacecraft/perseverance_rover/"
+    },
+    {
+      "source_id": "jupiter-juno-science",
+      "url": "https://www.jpl.nasa.gov/news/press_kits/juno/science/",
+      "reason": "403 Client Error: Forbidden for url: https://www.jpl.nasa.gov/news/press_kits/juno/science/"
+    },
+    {
+      "source_id": "jupiter-juno-spacecraft",
+      "url": "https://www.jpl.nasa.gov/news/press_kits/juno/spacecraft/",
+      "reason": "403 Client Error: Forbidden for url: https://www.jpl.nasa.gov/news/press_kits/juno/spacecraft/"
+    },
+    {
+      "source_id": "extra-025",
+      "url": "https://science.nasa.gov/mercury",
+      "reason": "Topic discovery landing page excluded in favour of full Facts article"
+    },
+    {
+      "source_id": "extra-027",
+      "url": "https://science.nasa.gov/mercury/exploration/",
+      "reason": "Extracted article too short"
+    },
+    {
+      "source_id": "extra-028",
+      "url": "https://science.nasa.gov/venus",
+      "reason": "Topic discovery landing page excluded in favour of full Facts article"
+    },
+    {
+      "source_id": "extra-031",
+      "url": "https://science.nasa.gov/mars",
+      "reason": "Topic discovery landing page excluded in favour of full Facts article"
+    },
+    {
+      "source_id": "extra-033",
+      "url": "https://science.nasa.gov/mars/exploration/",
+      "reason": "404 Client Error: Not Found for url: https://science.nasa.gov/mars/exploration/"
+    },
+    {
+      "source_id": "extra-034",
+      "url": "https://science.nasa.gov/jupiter",
+      "reason": "Topic discovery landing page excluded in favour of full Facts article"
+    },
+    {
+      "source_id": "extra-041",
+      "url": "https://science.nasa.gov/mission/mars-science-laboratory/",
+      "reason": "404 Client Error: Not Found for url: https://science.nasa.gov/mission/mars-science-laboratory/"
+    },
+    {
+      "source_id": "extra-060",
+      "url": "https://science.nasa.gov/mission/msl-curiosity/rover-components/",
+      "reason": "404 Client Error: Not Found for url: https://science.nasa.gov/mission/msl-curiosity/rover-components/"
+    }
+  ],
+  "statistics": {
+    "document_count": 97,
+    "total_characters": 3060757,
+    "body_tokens_sum": 794054,
+    "tokenizer": {
+      "repository": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+      "file_sha256": "623c34567aebb18582765289fbe23d901c62704d6518d71866e0e58db892b5b7",
+      "add_special_tokens": false,
+      "note": "Exact local body tokenization, not chat prompt overhead or provider billing."
+    },
+    "by_planet": {
+      "수성": {
+        "documents": 13,
+        "characters": 211884,
+        "tokens": 49328
+      },
+      "금성": {
+        "documents": 22,
+        "characters": 162913,
+        "tokens": 38466
+      },
+      "화성": {
+        "documents": 43,
+        "characters": 2050572,
+        "tokens": 537941
+      },
+      "목성": {
+        "documents": 19,
+        "characters": 635388,
+        "tokens": 168319
+      }
+    },
+    "directed_edges": 86,
+    "zero_outgoing": [
+      "수성 | MESSENGER",
+      "금성 | Magellan",
+      "금성 | Venus Express orbiter instruments",
+      "금성 | Climate and Evolution",
+      "금성 | Venus Express operations",
+      "금성 | The spacecraft",
+      "금성 | Penetrating an impenetrable world",
+      "금성 | Venus Express Frequently Asked Questions (FAQs)",
+      "금성 | Venusian geography",
+      "금성 | Acid clouds and lightning",
+      "금성 | Greenhouse effect, clouds and winds",
+      "금성 | Venus compared to Earth",
+      "화성 | Rover Components",
+      "화성 | Ingenuity Mars Helicopter",
+      "화성 | Science Objectives",
+      "화성 | Science Instruments",
+      "화성 | Science Highlights",
+      "목성 | Juno Orbits",
+      "수성 | Mercury Facts",
+      "화성 | Mars Facts",
+      "목성 | Galileo",
+      "수성 | Mariner 10",
+      "화성 | Mars Odyssey",
+      "화성 | MAVEN",
+      "화성 | Mars Pathfinder",
+      "화성 | Viking 1",
+      "화성 | Viking 2",
+      "화성 | Mars Exploration Rovers: Spirit and Opportunity",
+      "금성 | Pioneer Venus 1",
+      "금성 | Pioneer Venus 2",
+      "목성 | Pioneer 10",
+      "목성 | Pioneer 11",
+      "화성 | Science Instruments [extra-058]",
+      "화성 | Science Instruments [extra-061]",
+      "화성 | Science Instruments [extra-062]",
+      "화성 | Science Highlights [extra-065]",
+      "화성 | Science Instruments [extra-067]",
+      "화성 | Science Highlights [extra-068]",
+      "금성 | DAVINCI Science",
+      "목성 | Europa Clipper Mission Science",
+      "목성 | Europa Clipper Spacecraft Instruments",
+      "화성 | Science Highlights [extra-080]",
+      "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+      "화성 | Mars Science Laboratory Curiosity Landing Press Kit (2012)",
+      "화성 | Mars 2020 Perseverance Landing Press Kit (2021)",
+      "목성 | Europa Clipper Press Kit (2024)",
+      "목성 | Juno Telecommunications Design and Performance Summary (2017)",
+      "금성 | Venus Express ESA Mission Brochure",
+      "화성 | Mars Global Surveyor Telecommunications",
+      "목성 | Galileo Telecommunications",
+      "화성 | Odyssey Telecommunications",
+      "화성 | Mars Exploration Rover Telecommunications",
+      "화성 | Mars Exploration Rover Navigation",
+      "화성 | Mars Reconnaissance Orbiter Telecommunications",
+      "화성 | Mars Science Laboratory Telecommunications System Design",
+      "화성 | Phoenix Telecommunications",
+      "화성 | Mars Cube One Telecommunications Subsystem Design"
+    ],
+    "zero_incoming": [
+      "수성 | BepiColombo factsheet",
+      "수성 | Top five Mercury mysteries that BepiColombo will solve",
+      "금성 | Climate and Evolution",
+      "금성 | Venus Express operations",
+      "금성 | The spacecraft",
+      "금성 | Penetrating an impenetrable world",
+      "금성 | Venus Express Frequently Asked Questions (FAQs)",
+      "금성 | Venusian geography",
+      "금성 | Venus's surface",
+      "금성 | Acid clouds and lightning",
+      "금성 | Greenhouse effect, clouds and winds",
+      "금성 | Venus compared to Earth",
+      "목성 | Juno Orbits",
+      "수성 | Mercury Facts",
+      "금성 | Venus Exploration",
+      "목성 | Jupiter Facts",
+      "목성 | NASA’s Juno Takes Temperature of Jupiter’s Fiery Moon Io",
+      "화성 | Mars Odyssey",
+      "화성 | MAVEN",
+      "화성 | Mars Pathfinder",
+      "화성 | Viking 1",
+      "화성 | Viking 2",
+      "화성 | Mars Exploration Rovers: Spirit and Opportunity",
+      "화성 | Science Instruments [extra-061]",
+      "화성 | Science Instruments [extra-062]",
+      "금성 | DAVINCI Science",
+      "금성 | NASA DAVINCI Mission’s Many ‘Firsts’ to Unlock Venus’ Hidden Secrets",
+      "목성 | Evidence for an Ocean",
+      "수성 | Mercury’s Strange Hollows",
+      "화성 | NASA’s Perseverance Offers Clues to Protect Crews From Mars Dust",
+      "화성 | NASA Mars Orbiter Spots Retired InSight Lander to Study Dust Movement",
+      "목성 | NASA’s Europa Clipper Radar Instrument Proves Itself at Mars",
+      "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+      "화성 | Mars Science Laboratory Curiosity Landing Press Kit (2012)",
+      "화성 | Mars 2020 Perseverance Landing Press Kit (2021)",
+      "목성 | Europa Clipper Press Kit (2024)",
+      "목성 | Juno Telecommunications Design and Performance Summary (2017)",
+      "금성 | Venus Express ESA Mission Brochure",
+      "화성 | Mars Global Surveyor Telecommunications",
+      "목성 | Galileo Telecommunications",
+      "화성 | Odyssey Telecommunications",
+      "화성 | Mars Exploration Rover Telecommunications",
+      "화성 | Mars Exploration Rover Navigation",
+      "화성 | Mars Reconnaissance Orbiter Telecommunications",
+      "화성 | Mars Science Laboratory Telecommunications System Design",
+      "화성 | Phoenix Telecommunications",
+      "화성 | Mars Cube One Telecommunications Subsystem Design"
+    ],
+    "fully_isolated": [
+      "금성 | Acid clouds and lightning",
+      "금성 | Climate and Evolution",
+      "금성 | DAVINCI Science",
+      "금성 | Greenhouse effect, clouds and winds",
+      "금성 | Penetrating an impenetrable world",
+      "금성 | The spacecraft",
+      "금성 | Venus Express ESA Mission Brochure",
+      "금성 | Venus Express Frequently Asked Questions (FAQs)",
+      "금성 | Venus Express operations",
+      "금성 | Venus compared to Earth",
+      "금성 | Venusian geography",
+      "목성 | Europa Clipper Press Kit (2024)",
+      "목성 | Galileo Telecommunications",
+      "목성 | Juno Orbits",
+      "목성 | Juno Telecommunications Design and Performance Summary (2017)",
+      "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+      "수성 | Mercury Facts",
+      "화성 | MAVEN",
+      "화성 | Mars 2020 Perseverance Landing Press Kit (2021)",
+      "화성 | Mars Cube One Telecommunications Subsystem Design",
+      "화성 | Mars Exploration Rover Navigation",
+      "화성 | Mars Exploration Rover Telecommunications",
+      "화성 | Mars Exploration Rovers: Spirit and Opportunity",
+      "화성 | Mars Global Surveyor Telecommunications",
+      "화성 | Mars Odyssey",
+      "화성 | Mars Pathfinder",
+      "화성 | Mars Reconnaissance Orbiter Telecommunications",
+      "화성 | Mars Science Laboratory Curiosity Landing Press Kit (2012)",
+      "화성 | Mars Science Laboratory Telecommunications System Design",
+      "화성 | Odyssey Telecommunications",
+      "화성 | Phoenix Telecommunications",
+      "화성 | Science Instruments [extra-061]",
+      "화성 | Science Instruments [extra-062]",
+      "화성 | Viking 1",
+      "화성 | Viking 2"
+    ],
+    "duplicate_hash_count": 0,
+    "similar_pairs_ge_025": [
+      {
+        "a": "목성 | Europa Clipper Mission Science",
+        "b": "목성 | Europa Clipper Spacecraft Instruments",
+        "seven_word_shingle_jaccard": 0.2553
+      }
+    ],
+    "context_gate": {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "provider_context_tokens": 1000000,
+      "body_tokens_sum": 794054,
+      "exceeds_context": false,
+      "status": "NOT_MET",
+      "note": "Do not claim assignment size condition met, or substitute an artificial input truncation limit. Expand relevant material or explicitly select and verify a suitable smaller-context model for all conditions."
+    },
+    "unresolved_links_policy": "Only collected source targets retained. No invented links. Incoming-zero documents require seed assignment or the existing all-document fallback; do not claim they are reachable by link-only traversal.",
+    "review_status": "Machine extraction checked; human full-text/citation review still required."
+  }
+}

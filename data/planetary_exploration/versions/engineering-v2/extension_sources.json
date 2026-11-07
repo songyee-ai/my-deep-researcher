@@ -1,0 +1,83 @@
+[
+  {
+    "id": "pdf-descanso-mgs",
+    "planet": "화성",
+    "title": "Mars Global Surveyor Telecommunications",
+    "url": "https://descanso.jpl.nasa.gov/DPSummary/MGS_07Aug01.pdf",
+    "date_label": "See original report cover",
+    "discovered_from": "https://descanso.jpl.nasa.gov/DPSummary/summary.html",
+    "selection_reason": "Whole mission-specific design/performance report; communications or navigation constraints and engineering evidence."
+  },
+  {
+    "id": "pdf-descanso-galileo",
+    "planet": "목성",
+    "title": "Galileo Telecommunications",
+    "url": "https://descanso.jpl.nasa.gov/DPSummary/Descanso5--Galileo_new.pdf",
+    "date_label": "See original report cover",
+    "discovered_from": "https://descanso.jpl.nasa.gov/DPSummary/summary.html",
+    "selection_reason": "Whole mission-specific design/performance report; communications or navigation constraints and engineering evidence."
+  },
+  {
+    "id": "pdf-descanso-odyssey",
+    "planet": "화성",
+    "title": "Odyssey Telecommunications",
+    "url": "https://descanso.jpl.nasa.gov/DPSummary/odyssey_telecom.pdf",
+    "date_label": "See original report cover",
+    "discovered_from": "https://descanso.jpl.nasa.gov/DPSummary/summary.html",
+    "selection_reason": "Whole mission-specific design/performance report; communications or navigation constraints and engineering evidence."
+  },
+  {
+    "id": "pdf-descanso-mer-telecom",
+    "planet": "화성",
+    "title": "Mars Exploration Rover Telecommunications",
+    "url": "https://descanso.jpl.nasa.gov/DPSummary/MER_article_cmp20051028.pdf",
+    "date_label": "See original report cover",
+    "discovered_from": "https://descanso.jpl.nasa.gov/DPSummary/summary.html",
+    "selection_reason": "Whole mission-specific design/performance report; communications or navigation constraints and engineering evidence."
+  },
+  {
+    "id": "pdf-descanso-mer-navigation",
+    "planet": "화성",
+    "title": "Mars Exploration Rover Navigation",
+    "url": "https://descanso.jpl.nasa.gov/DPSummary/DESCANSO_MER_NAV_051215C_low.pdf",
+    "date_label": "See original report cover",
+    "discovered_from": "https://descanso.jpl.nasa.gov/DPSummary/summary.html",
+    "selection_reason": "Whole mission-specific design/performance report; communications or navigation constraints and engineering evidence."
+  },
+  {
+    "id": "pdf-descanso-mro",
+    "planet": "화성",
+    "title": "Mars Reconnaissance Orbiter Telecommunications",
+    "url": "https://descanso.jpl.nasa.gov/DPSummary/MRO_092106.pdf",
+    "date_label": "See original report cover",
+    "discovered_from": "https://descanso.jpl.nasa.gov/DPSummary/summary.html",
+    "selection_reason": "Whole mission-specific design/performance report; communications or navigation constraints and engineering evidence."
+  },
+  {
+    "id": "pdf-descanso-msl-telecom",
+    "planet": "화성",
+    "title": "Mars Science Laboratory Telecommunications System Design",
+    "url": "https://descanso.jpl.nasa.gov/DPSummary/Descanso14_MSL_Telecom.pdf",
+    "date_label": "See original report cover",
+    "discovered_from": "https://descanso.jpl.nasa.gov/DPSummary/summary.html",
+    "selection_reason": "Whole mission-specific design/performance report; communications or navigation constraints and engineering evidence."
+  },
+  {
+    "id": "pdf-descanso-phoenix",
+    "planet": "화성",
+    "title": "Phoenix Telecommunications",
+    "url": "https://descanso.jpl.nasa.gov/DPSummary/PhxArticle_--RC101013DocX_COMPRESSED_AcronFixBU.pdf",
+    "date_label": "See original report cover",
+    "discovered_from": "https://descanso.jpl.nasa.gov/DPSummary/summary.html",
+    "selection_reason": "Whole mission-specific design/performance report; communications or navigation constraints and engineering evidence."
+  },
+  {
+    "id": "pdf-descanso-marco",
+    "planet": "화성",
+    "title": "Mars Cube One Telecommunications Subsystem Design",
+    "url": "https://descanso.jpl.nasa.gov/DPSummary/DESCANSO18_MarCO.pdf",
+    "date_label": "See original report cover",
+    "discovered_from": "https://descanso.jpl.nasa.gov/DPSummary/summary.html",
+    "selection_reason": "Whole mission-specific design/performance report; communications or navigation constraints and engineering evidence."
+  }
+]

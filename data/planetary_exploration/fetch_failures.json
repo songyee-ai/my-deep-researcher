@@ -1,0 +1,11 @@
+{
+  "venus-vex": "ESA page has no prose modules; hub/empty page excluded",
+  "mars-mission": "403 Client Error: Forbidden for url: https://www.jpl.nasa.gov/news/press_kits/mars_2020/landing/mission/",
+  "mars-rover": "403 Client Error: Forbidden for url: https://www.jpl.nasa.gov/news/press_kits/mars_2020/landing/mission/spacecraft/perseverance_rover/",
+  "jupiter-juno-science": "403 Client Error: Forbidden for url: https://www.jpl.nasa.gov/news/press_kits/juno/science/",
+  "jupiter-juno-spacecraft": "403 Client Error: Forbidden for url: https://www.jpl.nasa.gov/news/press_kits/juno/spacecraft/",
+  "extra-027": "Extracted article too short",
+  "extra-033": "404 Client Error: Not Found for url: https://science.nasa.gov/mars/exploration/",
+  "extra-041": "404 Client Error: Not Found for url: https://science.nasa.gov/mission/mars-science-laboratory/",
+  "extra-060": "404 Client Error: Not Found for url: https://science.nasa.gov/mission/msl-curiosity/rover-components/"
+}

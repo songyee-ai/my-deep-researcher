@@ -1,0 +1,104 @@
+[
+  {
+    "source": {
+      "id": "pdf-messenger-2011",
+      "planet": "수성",
+      "title": "MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+      "url": "https://www.nasa.gov/wp-content/uploads/2015/04/525164main_mercurymoi_pk.pdf",
+      "date_label": "2011-03",
+      "type": "historical_design_press_kit_or_technical_report"
+    },
+    "requested_url": "https://www.nasa.gov/wp-content/uploads/2015/04/525164main_mercurymoi_pk.pdf",
+    "final_url": "https://www.nasa.gov/wp-content/uploads/2015/04/525164main_mercurymoi_pk.pdf",
+    "retrieved_at": "2026-11-06T06:09:32.074970+00:00",
+    "http_status": 200,
+    "bytes": 4196570,
+    "raw_path": "data\\planetary_exploration\\raw_pdf\\pdf-messenger-2011.pdf",
+    "sha256_raw": "bb9b0aa1e9bed915de55afba8d31d617f0d17b948e4b11a10100471e63ce7a08"
+  },
+  {
+    "source": {
+      "id": "pdf-curiosity-landing-2012",
+      "planet": "화성",
+      "title": "Mars Science Laboratory Curiosity Landing Press Kit (2012)",
+      "url": "https://science.nasa.gov/wp-content/uploads/2024/03/44747_MSL-Landing.pdf",
+      "date_label": "2012-07",
+      "type": "historical_design_press_kit_or_technical_report"
+    },
+    "requested_url": "https://science.nasa.gov/wp-content/uploads/2024/03/44747_MSL-Landing.pdf",
+    "final_url": "https://science.nasa.gov/wp-content/uploads/2024/03/44747_MSL-Landing.pdf",
+    "retrieved_at": "2026-11-06T06:09:32.449159+00:00",
+    "http_status": 200,
+    "bytes": 5209940,
+    "raw_path": "data\\planetary_exploration\\raw_pdf\\pdf-curiosity-landing-2012.pdf",
+    "sha256_raw": "672093c03108c3c91b9b10e0121510dfe0c7eb66b74ade5839ff9b1be839b987"
+  },
+  {
+    "source": {
+      "id": "pdf-perseverance-landing-2021",
+      "planet": "화성",
+      "title": "Mars 2020 Perseverance Landing Press Kit (2021)",
+      "url": "https://mars.nasa.gov/system/downloadable_items/45585_mars_2020_landing_press_kit.pdf",
+      "date_label": "2021-01",
+      "type": "historical_design_press_kit_or_technical_report"
+    },
+    "requested_url": "https://mars.nasa.gov/system/downloadable_items/45585_mars_2020_landing_press_kit.pdf",
+    "final_url": "https://mars.nasa.gov/system/downloadable_items/45585_mars_2020_landing_press_kit.pdf",
+    "retrieved_at": "2026-11-06T06:09:32.175229+00:00",
+    "http_status": 200,
+    "bytes": 11239646,
+    "raw_path": "data\\planetary_exploration\\raw_pdf\\pdf-perseverance-landing-2021.pdf",
+    "sha256_raw": "ebf82bfe195b328c01a173ac27ca2c0f8e1589ad0af534fc674be14dfd4e52e2"
+  },
+  {
+    "source": {
+      "id": "pdf-europa-clipper-2024",
+      "planet": "목성",
+      "title": "Europa Clipper Press Kit (2024)",
+      "url": "https://science.nasa.gov/wp-content/uploads/2024/09/europa-clipper-press-kit.pdf",
+      "date_label": "2024-09",
+      "type": "historical_design_press_kit_or_technical_report"
+    },
+    "requested_url": "https://science.nasa.gov/wp-content/uploads/2024/09/europa-clipper-press-kit.pdf",
+    "final_url": "https://science.nasa.gov/wp-content/uploads/2024/09/europa-clipper-press-kit.pdf",
+    "retrieved_at": "2026-11-06T06:09:35.350451+00:00",
+    "http_status": 200,
+    "bytes": 27214225,
+    "raw_path": "data\\planetary_exploration\\raw_pdf\\pdf-europa-clipper-2024.pdf",
+    "sha256_raw": "9215b4dccb0d53a9225c1188d982b6813b2634116980fab0f0383ac7f3340606"
+  },
+  {
+    "source": {
+      "id": "pdf-juno-telecom-2017",
+      "planet": "목성",
+      "title": "Juno Telecommunications Design and Performance Summary (2017)",
+      "url": "https://descanso.jpl.nasa.gov/DPSummary/Descanso16_Juno_RevA.pdf",
+      "date_label": "2017; verify cover",
+      "type": "historical_design_press_kit_or_technical_report"
+    },
+    "requested_url": "https://descanso.jpl.nasa.gov/DPSummary/Descanso16_Juno_RevA.pdf",
+    "final_url": "https://descanso.jpl.nasa.gov/DPSummary/Descanso16_Juno_RevA.pdf",
+    "retrieved_at": "2026-11-06T06:09:34.490492+00:00",
+    "http_status": 200,
+    "bytes": 11477046,
+    "raw_path": "data\\planetary_exploration\\raw_pdf\\pdf-juno-telecom-2017.pdf",
+    "sha256_raw": "3784af33c4c6fbbd8ac79d36bcc9088071974b536d66e0e274a10e450ccb7c03"
+  },
+  {
+    "source": {
+      "id": "pdf-venus-express-brochure",
+      "planet": "금성",
+      "title": "Venus Express ESA Mission Brochure",
+      "url": "https://esamultimedia.esa.int/docs/VENUSEXPRESSLR.pdf",
+      "date_label": "verify cover",
+      "type": "historical_design_press_kit_or_technical_report"
+    },
+    "requested_url": "https://esamultimedia.esa.int/docs/VENUSEXPRESSLR.pdf",
+    "final_url": "https://esamultimedia.esa.int/docs/VENUSEXPRESSLR.pdf",
+    "retrieved_at": "2026-11-06T06:09:39.713364+00:00",
+    "http_status": 200,
+    "bytes": 4226036,
+    "raw_path": "data\\planetary_exploration\\raw_pdf\\pdf-venus-express-brochure.pdf",
+    "sha256_raw": "6efc9632d9b11c40b4bcb9647dffe32c4a947ee6ccae638fe1c51a13eb6e58d9"
+  }
+]

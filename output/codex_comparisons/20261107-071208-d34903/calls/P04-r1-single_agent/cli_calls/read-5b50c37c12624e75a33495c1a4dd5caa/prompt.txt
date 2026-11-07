@@ -1,0 +1,2213 @@
+This is a supplied-text extraction task, not a coding task. Use only the source in this prompt. Do not invoke tools, read files, browse, edit, or delegate. Return exactly one JSON object matching the output schema.
+
+제공된 원문만 읽고 질문에 필요한 사실을 최대 8행의 표로 추출하라. 아직 원고를 쓰지 마라. subject는 사실의 주체, relation은 관계/특성, comparison_target은 비교 대상, value는 수치 표현, unit은 단위, basis는 비율의 기준/분모/설계목표·실제결과 구분이다. 원문에 없는 값은 추정하지 말고 빈 문자열로 둔다. 숫자가 없는 사실도 기록할 수 있다. 주체·비교대상·수치·단위는 원문 영어 표현을 그대로 쓰고 relation/basis/reason은 한국어로 쓴다. 각 행은 하나의 사실과 하나의 연속된 수치 표현만 담아라. 떨어진 두 수치를 세미콜론 등으로 합치지 말고 별도 행으로 분리하라. 선택 줄에 주체 이름이 없다면 이름이 나오는 앞뒤 문맥까지 포함하라. relation과 basis에 다른 언어 설명을 섞지 마라. subject에는 문서 제목의 임무명을 반복하기보다 선택 줄에 실제 쓰인 명사구나 대명사를 그대로 적어도 된다. 문서명은 별도로 보존된다. 수치와 그 수치의 주체를 포함하는 시작/끝 줄을 선택하라. 다른 장비의 정보로 질문 대상의 성과를 대신하지 마라. 필요한 사실이 빠지면 insufficient=true로 누락된 항목을 reason에 명시하라. 반드시 지정된 JSON Schema 객체 하나만 반환하라.
+맡은 절과 다른 연구원의 구역이 지정돼 있으면 부족 신고는 자기 절의 지시 범위로 판단하라. 다른 연구원이 맡은 자료가 자기 입력에 없다는 사실만으로 자기 절을 부족하다고 신고하지 마라.
+
+질문: 질문: 수성과 금성 탐사에서 강한 열 환경에 대응하는 설계는 어떻게 달랐으며, 그 차이가 관측에 주는 제약은 무엇인가?
+맡은 절: 전체 질문 조사
+역할: 자료 조사원 — 할당된 내용 구역을 근거 자료로 조사한다
+지시: 수성과 금성 탐사에서 강한 열 환경에 대응하는 설계는 어떻게 달랐으며, 그 차이가 관측에 주는 제약은 무엇인가? — 질문 전체를 맡아 내용별 소제목을 포함한 장문 보고서를 작성한다.
+다른 연구원의 구역(중복 집필 금지): []
+문서: 수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)
+L1: A NASA Discovery Mission
+L2: Mercury Orbit Insertion
+L3: March 18, 2011 UTC
+L4: (March 17, 2011 EDT)
+L5: 
+L6: Media Contacts
+L7: NASA Headquarters
+L8: Policy/Program Management
+L9: Dwayne C. Brown
+L10: (202) 358-1726
+L11: Dwayne.C.Brown@nasa.gov
+L12: The Johns Hopkins University Applied Physics Laboratory
+L13: Mission Management, Spacecraft Operations
+L14: Paulette W. Campbell
+L15: (240) 228-6792 or (443) 778-6792
+L16: Paulette.Campbell@jhuapl.edu
+L17: Carnegie Institution of Washington
+L18: Principal Investigator Institution
+L19: Tina McDowell
+L20: (202) 939-1120
+L21: tmcdowell@ciw.edu
+L22: 
+L23: Mission Overview
+L24: MESSENGER is a scientific investigation
+L25: of the planet Mercury. Understanding
+L26: Mercury, and the forces that have shaped
+L27: it, is fundamental to understanding the
+L28: terrestrial planets and their evolution.
+L29: The MESSENGER (MErcury Surface, Space
+L30: ENvironment, GEochemistry, and Ranging)
+L31: spacecraft will orbit Mercury following three
+L32: flybys of that planet. The orbital phase will
+L33: use the flyby data as an initial guide to
+L34: perform a focused scientific investigation of
+L35: this enigmatic world.
+L36: MESSENGER will investigate key
+L37: scientific  questions regarding Mercury’s
+L38: characteristics and environment during
+L39: these two complementary mission phases.
+L40: Data are provided by an optimized set of
+L41: miniaturized space instruments and the
+L42: spacecraft tele commun ications system.
+L43: MESSENGER will enter orbit about Mercury
+L44: in March 2011 and carry out comprehensive
+L45: measurements for one Earth year. Orbital
+L46: data collection concludes in March 2012.
+L47: Key Spacecraft Characteristics
+L48:  Redundant major systems provide critical backup.
+L49:  Passive thermal design utilizing ceramic-cloth
+L50: sunshade requires no high-temperature electronics.
+L51:  Fixed phased-array antennas replace a deployable
+L52: high-gain antenna.
+L53:  Custom solar arrays produce power at safe operating
+L54: temperatures near Mercury.
+L55: MESSENGER is designed to answer six
+L56: broad scientific questions:
+L57:  Why is Mercury so dense?
+L58:  What is the geologic history of Mercury?
+L59:  What is the nature of Mercury’s magnetic field?
+L60:  What is the structure of Mercury’s core?
+L61:  What are the unusual materials at Mercury’s poles?
+L62:  What volatiles are important at Mercury?
+L63: MESSENGER provides:
+L64:  Multiple flybys for global mapping, detailed study of high-priority
+L65: targets, and probing of the atmosphere and magnetosphere.
+L66:  An orbiter for detailed characterization of the surface,
+L67: interior, atmosphere, and magnetosphere.
+L68:  An education and public outreach program to produce
+L69: exhibits,  plain-language books, educational modules, and
+L70: teacher training through partnerships.
+L71: Mission Summary
+L72: Launch: 3 August 2004
+L73: Launch vehicle: Delta II 7925H-9.5
+L74: Earth flyby: 2 August 2005
+L75: Venus flybys (2): 24 October 2006,
+L76:  5 June 2007
+L77: Mercury flybys (3): 14 January 2008,
+L78:  6 October 2008,
+L79:  29 September 2009
+L80: Mercury orbit insertion: 17 March 2011 (EDT)
+L81:  18 March 2001 (UTC)
+L82: 
+L83: MESSENGER  — Mer cury, the Last Frontier of the Terrestrial Planets
+L84: Understanding Mercury is fundamental to understanding terrestrial planet evolution.
+L85: Discoveries from MESSENGER’s Mercury Flybys:
+L86: In addition to providing key gravity assists that enable orbit insertion as well as opportunities to test scientific operations and
+L87: command sequences for all payload instruments, MESSENGER’s three flybys of Mercury yielded a number of discoveries that have
+L88: markedly changed our view of Mercury and influenced our preparations for orbital operations. These include:
+L89: Geology
+L90: •	 Volcanism	was 	widespread	on	Mercury	and	extended	from
+L91: before the end of heavy bombardment to the second half
+L92: of solar system history.
+L93: •	 Mercury	e xperienced	explosive	volcanism,	indicating	that
+L94: interior volatile contents were at least locally much higher
+L95: than thought.
+L96: •	 Contraction	spanned	much	of	M ercury’s	geologic	history.
+L97: Composition and surface-derived exosphere
+L98: •	 Mercury’s	surface	silicates, 	even	in	fresh	crater	ejecta,
+L99: contain little or no ferrous oxide.
+L100: •	 Mercury’s	ther mal	neutron	flux	matches	that	of	several
+L101: lunar maria, indicating that iron and titanium are present in
+L102: comparable collective abundances, perhaps as oxides.
+L103: •	 Magnesium	and	ioniz ed	calcium	are	present	in	Mercury’s
+L104: exosphere.
+L105: Internal structure and dynamics
+L106: •	 The	equatorial	topographic	relief	of	Mercury, 	in	agreement
+L107: with earlier radar results, is at least 5.5 km.
+L108: •	 The	c ase	for	a	liquid	outer	core	in	Mercury	is
+L109: greatly strengthened.
+L110: •	 Mercury’s	in ternal	magnetic	field	is	dominantly	dipolar
+L111: with a vector moment closely aligned with the spin axis.
+L112: Magnetospheric dynamics
+L113: •	 Mercury’s	magnetosphere	is	more	responsive	to
+L114: interplanetary magnetic field (IMF) fluctuations than those
+L115: of other planets.
+L116: •	 Under	southw ard	IMF,	rates	of	magnetic	reconnection
+L117: are ~10 times that typical at Earth.
+L118: •	 Loading of magnetic flux in Mercury’s magnetic tail can
+L119: be so intense that much of Mercury’s dayside could be
+L120: exposed to the shocked solar wind of the magnetosheath
+L121: during such episodes.
+L122: On the Web
+L123: MESSENGER mission:  http://messenger.jhuapl.edu NASA Discovery Program:  http://discovery.nasa.gov
+L124: FS2 03-11
+L125: Mission Management
+L126: Principal Investigator: Sean C. Solomon,
+L127:  Carnegie Institution of  Washington
+L128: Project Management: The Johns Hopkins University
+L129:  Applied Physics Laboratory (JHU/APL)
+L130: Spacecraft Integration
+L131: and Operation: JHU/APL
+L132: Instruments: JHU/APL,
+L133:  NASA Goddard Space Flight Center,
+L134:  University of Colorado,
+L135:  University of Michigan
+L136: Structure: Composite Optics, Inc.
+L137: Propulsion: GenCorp Aerojet
+L138: Navigation: KinetX, Inc.
+L139: Science Payload
+L140: Mercury Dual Imaging System
+L141: (MDIS) takes detailed color and
+L142: monochrome images of Mercury’s
+L143: surface.
+L144: Gamma-Ray and Neutron
+L145: Spectrometer (GRNS) measures
+L146: surface elements (including polar
+L147: materials).
+L148: X-Ray Spectrometer (XRS) maps
+L149: elements in Mercury’s crust.
+L150: Magnetometer (MAG) maps
+L151: Mercury’s magnetic field.
+L152: Mercury Atmospheric
+L153: and Surface Composition
+L154: Spectrometer (MASCS)
+L155: measures atmospheric
+L156: species and surface minerals.
+L157: Energetic Particle and
+L158: Plasma Spectrometer (EPPS)
+L159: measures charged particles in
+L160: Mercury’s magnetosphere.
+L161: Mercury Laser Altimeter (MLA)
+L162: measures topography of surface
+L163: features; determines whether
+L164: Mercury has a fluid core.
+L165: Radio Science uses Doppler
+L166: tracking to determine Mercury’s
+L167: mass distribution.
+L168: Sunshade
+L169: EPPS
+L170: GRNS
+L171: MLA
+L172: MASCS
+L173: XRS
+L174: MDIS
+L175: MAG
+L176: Antenna
+L177: 
+L178: Table of Contents
+L179: Media Services Information ............................................................................................................. 7
+L180: MESSENGER Quick Facts  ..................................................................................................................8
+L181: Mercury Orbit Insertion & Station Keeping .................................................................................... 9
+L182: Getting into Mercury orbit…. ............................................................................................................. 9
+L183: ….and staying there ......................................................................................................................... 12
+L184: Science orbit: Working at Mercury ....................................................................................................12
+L185: Observing the surface .......................................................................................................................13
+L186: Orchestrating the observations .........................................................................................................14
+L187: Mercury at a Glance ........................................................................................................................17
+L188: Why Mercury? .................................................................................................................................18
+L189: Question 1: Why is Mercury so dense? .............................................................................................18
+L190: Question 2: What is the geologic history of Mercury? ....................................................................... 19
+L191: Question 3: What is the nature of Mercury’s magnetic field?............................................................. 20
+L192: Question 4: What is the structure of Mercury’s core? ........................................................................21
+L193: Question 5: What are the unusual materials at Mercury’s poles? .......................................................21
+L194: Question 6: What volatiles are important at Mercury?....................................................................... 23
+L195: Highlights from the Mercury Flybys ..............................................................................................24
+L196: The Spacecraft .................................................................................................................................41
+L197: Science payload ................................................................................................................................42
+L198: Spacecraft systems and components .................................................................................................46
+L199: Hardware suppliers ...........................................................................................................................49
+L200: Mission Summary ............................................................................................................................50
+L201: Cruise trajectory ...............................................................................................................................50
+L202: Launch .............................................................................................................................................52
+L203: Earth flyby highlights ........................................................................................................................52
+L204: Venus gravity assists .........................................................................................................................55
+L205: Flying by Mercury .............................................................................................................................58
+L206: MESSENGER’s deep-space maneuvers ...............................................................................................60
+L207: The MESSENGER Science Team .......................................................................................................61
+L208: Program/Project Management .......................................................................................................62
+L209: NASA Discovery Program ..................................................................................................................62
+L210: Other Discovery missions ..................................................................................................................62
+L211: 
+L212: 
+L213: 
+L214: Media Services Information
+L215: News and Status Reports
+L216: NASA and the MESSENGER team will issue periodic news releases and status reports on mission activities
+L217: and make them available online at http://messenger.jhuapl.edu and http://www.nasa.gov/messenger.
+L218: When events and science results merit, the team will hold media briefings at NASA Headquarters in Washington,
+L219: D.C., or the Johns Hopkins University Applied Physics Laboratory in Laurel, Md. Briefings will be carried on NASA TV
+L220: and the NASA website.
+L221: NASA Television
+L222: NASA Television is carried on the Web and on an MPEG-2 digital signal accessed via satellite AMC-6, at 72 degrees
+L223: west longitude, transponder 17C, 4040 MHz, vertical polarization. It is available in Alaska and Hawaii on AMC-7, at
+L224: 137 degrees west longitude, transponder 18C, at 4060 MHz, horizontal polarization. A Digital Video Broadcastcompliant Integrated Receiver Decoder is required for reception. For NASA TV information and schedules on the Web,
+L225: visit http://www.nasa.gov/ntv.
+L226: MESSENGER on the Web
+L227: MESSENGER information — including an electronic copy of this press kit, press releases, fact sheets, mission
+L228: details and background, status reports, and images — is available on the Web at http://messenger.jhuapl.edu.
+L229: MESSENGER multimedia files, background information, and news are also available at http://www.nasa.gov/messenger.
+L230: 
+L231: MESSENGER Quick Facts
+L232: Spacecraft
+L233: Size: Main spacecraft body is 1.44 meters (57 inches) tall, 1.28 meters (50 inches) wide, and 1.85 meters (73 inches)
+L234: deep; a front-mounted ceramic-fabric sunshade is 2.54 meters tall and 1.82 meters across (100 inches by 72 inches);
+L235: two rotatable solar panel “wings” extend about 6.14 meters (20 feet) from end to end across the spacecraft.
+L236: Launch weight: Approximately 1,107 kilograms (2,441 pounds), including 599.4 kilograms (1,321 pounds) of
+L237: propellant and 507.6 kilograms (1,119 pounds) of “dry” spacecraft and instruments.
+L238: Power: Two body-mounted gallium arsenide solar panels and one nickel-hydrogen battery. The power system generated
+L239: about 490 watts near Earth and will generate its maximum possible output of 720 watts in Mercury orbit.
+L240: Propulsion: Dual-mode system with one bipropellant (hydrazine and nitrogen tetroxide) thruster for large maneuvers;
+L241: 4 medium-sized and 12 small hydrazine monopropellant thrusters for small trajectory adjustments and attitude control.
+L242: Science investigations: Mercury Dual Imaging System (MDIS), with wide-angle color and narrow-angle monochrome
+L243: imagers; the Gamma-Ray and Neutron Spectrometer (GRNS); the X-Ray Spectrometer (XRS); the Magnetometer (MAG);
+L244: the Mercury Laser Altimeter (MLA); the Mercury Atmospheric and Surface Composition Spectrometer (MASCS); the
+L245: Energetic Particle and Plasma Spectrometer (EPPS); and the radio science experiment.
+L246: Mission
+L247: Launch: August 3, 2004, from Pad B of Space Launch Complex 17 at Cape Canaveral Air Force Station, Fla., at 2:15:56
+L248: a.m. EDT aboard a three-stage Boeing Delta II rocket (Delta II 7925H-9.5).
+L249: Gravity assist flybys: Earth (1) August 2005; Venus (2) October 2006, June 2007; Mercury (3) January 2008, October
+L250: 2008, September 2009.
+L251: Enter Mercury orbit: March 18, 2011 UTC (March 17, 2011 EDT).
+L252: Total distance traveled from Earth to Mercury orbit: 7.9 billion kilometers (4.9 billion miles). Spacecraft circles the
+L253: Sun 15.2 times from launch to Mercury orbit insertion.
+L254: Primary mission at Mercury: Orbit for one Earth year (equivalent to just over four Mercury years, or two Mercury
+L255: solar days), collecting data on the composition and structure of Mercury’s crust, its topography and geologic history, the
+L256: nature of its thin atmosphere and active magnetosphere, and the makeup of its core and polar materials.
+L257: Program
+L258: Cost: Approximately $446 million (including spacecraft and instrument development, launch vehicle, mission operations,
+L259: and data analysis).
+L260: 
+L261: Mercury Orbit Insertion & Station Keeping
+L262: Getting into Mercury orbit….
+L263: On March 18, 2011 UTC (March 17, 2011 EDT), after almost five years in development and more than six and a
+L264: half years in cruise toward its destination, NASA’s MErcury Surface, Space ENvironment, GEochemistry, and Ranging
+L265: (MESSENGER) spacecraft will execute a 15-minute maneuver that will place it into orbit about Mercury, making it the
+L266: first craft ever to do so, and initiating a one-year science campaign to understand the innermost planet. The Mercury
+L267: Orbit Insertion maneuver and subsequent orbital activities are described in the next few pages.
+L268: Just over 33 hours before the main Mercury orbit insertion event, two antennas from the Deep Space Network —
+L269: one main antenna and one backup — will begin to track the MESSENGER spacecraft continuously. Nearly thirty-one
+L270: hours later, at 6:30 p.m. EDT on March 17, 2011, the number of antennas tracking MESSENGER will increase to five —
+L271: four of these are arrayed together in order to enhance the signal coming from the spacecraft, and a fifth will be used for
+L272: backup.
+L273: About two and a half hours later, at 8:00 p.m. EDT, the solar arrays, telecommunications, attitude control, and
+L274: autonomy systems will all be configured for the main thruster firing (known as a “burn”), and the spacecraft will be
+L275: turned into the correct orientation for MESSENGER’s Mercury orbit insertion maneuver.
+L276: In order to slow the spacecraft down sufficiently so that it can be captured into orbit around Mercury, the main
+L277: thruster will begin firing at 8:45 p.m. and will continue for 15 minutes until 9:00 p.m. About 31% of the spacecraft’s
+L278: original allotment of propellant is required for Mercury orbit insertion, and MESSENGER’s thrusters must slow the
+L279: spacecraft by just over 0.86 kilometers (0.53 miles) per second. As the spacecraft approaches Mercury, the largest
+L280: thruster must fire close to the forward velocity direction of the spacecraft. After the thruster has finished firing, the
+L281: spacecraft will be turned toward Earth and reconfigured for normal post-maneuver operations. Data will be collected by
+L282: Deep Space Network antennas and transferred to the Mission Operations Center at APL to be analyzed. It is expected
+L283: that by 10:00 p.m. EDT the Mission Operations Team will be able to confirm that MESSENGER has been successfully
+L284: captured into orbit around Mercury.
+L285: Approximately one and a half hours after the maneuver is complete, the DSN coverage will be stepped back to two
+L286: stations. At 2:47 a.m. EDT on March 18, the spacecraft will begin its first full orbit around Mercury (as measured from
+L287: the highest point in the orbit). About 10 hours later, the Deep Space Network coverage will be further reduced to
+L288: continuous coverage with only one station.
+L289: The MESSENGER spacecraft will continue to orbit Mercury once every twelve hours for the duration of its primary
+L290: mission. The first two weeks from orbit insertion will be focused on ensuring that the spacecraft systems are all working
+L291: well in the harsh thermal environment of orbit; this interval is known as the orbital commissioning phase. Starting on
+L292: March 23 the instruments will be turned on and checked out, and on April 4 the science phase of the mission will begin
+L293: and the first orbital science data from Mercury will be returned.
+L294: The table on the next page summarizes the spacecraft events surrounding Mercury orbit insertion. Note that the
+L295: times given in the first column are ground receipt times, which are approximately 9 minutes after a maneuver is
+L296: executed on the spacecraft.
+L297: 
+L298: Ground Receipt Time* Spacecraft Time
+L299: Event
+L300: Eastern Daylight Time (EDT)
+L301: Coordinated
+L302: Universal Time (UTC)
+L303: {DOY-hh:mm}
+L304: Time Relative
+L305: to Burn Start
+L306: {hh:mm}
+L307: Tuesday
+L308: March 15 8:54 p.m. 75-00:45 48:00 Start initial pre-burn propulsion system
+L309: configuration
+L310: Wednesday
+L311: March 16
+L312: 11:40 a.m. 75-15:31 33:14 Start critical Deep Space Network coverage
+L313: (two stations, one primary and one backup)
+L314: 8:54 p.m. 76-00:45 24:00 Spacecraft commanded to pre-critical burn
+L315: configuration
+L316: Thursday
+L317: March 17
+L318: 5:00 p.m. 76-20:51 03:54 Start configuration for DSN burn coverage
+L319: (four stations arrayed together)
+L320: 6:30 p.m. 76-22:21 02:24 Finish configuration for DSN burn coverage
+L321: (backup 70-m antenna)
+L322: 7:45 p.m. 76-23:37 01:09 Start final pre-burn propulsion system configuration
+L323: 8:09 p.m. 77-00:00 00:45 Start RF configuration for burn execution
+L324: 8:21 p.m. 77-00:12 00:33 Complete RF configuration for burn execution
+L325: 8:24 p.m. 77-00:15 00:30 Turn spacecraft to burn attitude and configure
+L326: attitude control for burn execution
+L327: 8:34 p.m. 77-00:25 00:20 Configure solar arrays for burn execution
+L328: 8:49 p.m. 77-00:40 00:05 Configure spacecraft fault protection for
+L329: burn execution
+L330: 8:54 p.m. 77-00:45 00:00 Mercury orbit insertion (MOI)
+L331: engine ignition
+L332: 9:09 p.m. 77-01:00 00:15 Engine shutdown
+L333: 9:21 p.m. 77-01:12 00:27 Turn spacecraft to Earth and acquire
+L334: post-maneuver data
+L335: 9:32 p.m. 77-01:23 00:38 Re-configure spacecraft systems for normal
+L336: post-maneuver operations
+L337: 10:25 p.m. 77-02:16 01:31 End DSN burn coverage
+L338: (back to critical coverage with 2 stations)
+L339: Friday
+L340: March 18
+L341: 2:56 a.m. 77-06:47 06:02 First orbital apoapse passage
+L342: (start orbit #1)
+L343: 12:40 p.m. 77-16:31 15:46 End DSN critical coverage
+L344: (back to 1 station continuous coverage)
+L345: 2:57 p.m. 77-18:48 18:03 Second orbital apoapse passage
+L346: (start orbit #2)
+L347: Monday
+L348: March 21 12:56 p.m. 80-16:48 Orbital commissioning period begins
+L349: (spacecraft checkout)
+L350: Tuesday
+L351: March 22 Start Gamma-Ray Spectrometer (GRS) cooler
+L352: Wednesday
+L353: March 23
+L354: Turn on all instruments and configure for operations
+L355: (except imagers)
+L356: Monday
+L357: March 28 3:51 p.m. 087-19:45 Continue orbital commissioning period
+L358: (Instrument checkout — imagers turned on)
+L359: Monday
+L360: April 4 4:20 p.m. 094-20:15 Mercury science observations begin
+L361: *Ground Receipt Time adjusted for one-way light time, which gradually decreases through the reporting period.
+L362: -- Events without specific execution times are initiated by direct commands from the ground.
+L363: 
+L364: Three views of MESSENGER's insertion into orbit about Mercury are shown above; they include a view from
+L365: the direction of Earth, a view from the direction of the Sun, and a view from over Mercury’s north pole
+L366: looking down toward the planet. Time is given in Coordinated Universal Time (UTC). The 15-minute orbital
+L367: insertion maneuver is shown in light blue in the figures and places the spacecraft into the primary science
+L368: orbit, which is shown in dark blue. The bright areas near the poles indicate portions of the surface not
+L369: imaged by either Mariner 10 or MESSENGER during their respective flybys.
+L370: 
+L371: ….and staying there
+L372: After MESSENGER arrives in its primary science orbit, small forces, such as solar gravity — the gravitational attraction
+L373: of the Sun — slowly change the spacecraft’s orbit. Although these small forces have little effect on MESSENGER’s
+L374: 12-hour orbit period, they can increase the spacecraft’s minimum altitude, orbit inclination, and latitude of the surface
+L375: point below MESSENGER’s minimum altitude. Left uncorrected, the increase in the spacecraft’s minimum altitude would
+L376: prevent satisfactory completion of several science goals.
+L377: To keep the spacecraft’s minimum altitude below 500 kilometers (310 miles), propulsive maneuvers must occur at
+L378: least once every Mercury year — one complete revolution around the Sun, or 88 Earth days. The first, third, and fifth
+L379: maneuvers after Mercury orbit insertion will occur at the farthest orbital distance from Mercury, where a minimum
+L380: amount of propellant will be used to slow the spacecraft just enough to lower the minimum altitude to 200 kilometers
+L381: (124 miles). The act of lowering the spacecraft’s altitude in this way has an unavoidable side effect of also lowering orbit
+L382: period by about 15 minutes.
+L383: The second and fourth maneuvers after orbit insertion will increase the orbit period back to about 12 hours by
+L384: speeding up the spacecraft around the time when it is closest to Mercury. Because the sunshade must protect the main
+L385: part of the spacecraft from direct sunlight during propulsive maneuvers, the timing of these maneuvers is limited to a
+L386: few days when Mercury is either near the same point in its orbit as it was during Mercury orbit insertion, or near the
+L387: point where Mercury is on the opposite side of the Sun from that for orbit insertion.
+L388: Science orbit: Working at Mercury
+L389: The MESSENGER mission has six specific science objectives.
+L390: •	 Provide	major-element	maps	of	Mercury	to	10%	relative	uncertainty	on	the	1000-km	scale	and	determine	local
+L391: composition and mineralogy at the ~20-km scale.
+L392: •	 Provide	a	global	map	with	>	90%	coverage	(monochrome,	or	black	and	white)	at	250-m	average	resolution	and
+L393: > 80%	of	the	planet	imaged	stereoscopically.	Also	provide	a	global	multi-spectral	(color)	map	at	2	km/pixel	average
+L394: resolution, and sample half of the northern hemisphere for topography at 1.5-m average height resolution.
+L395: •	 Provide	a	multi-pole	magnetic-field	model	resolved	through	quadrupole	terms	with	an	uncertainty	of	less	than	~20%
+L396: in the dipole magnitude and direction.
+L397: •	 Provide	a	global	gravity	field	to	degree	and	order	16	and	determine	the	ratio	of	the	solid-planet	moment	of	inertia	to
+L398: the total moment of inertia to ~20% or better.
+L399: •	 Identify	the	principal	component	of	the	radar-reflective	material	at	Mercury’ s	north	pole.
+L400: •	 Provide	altitude	profiles	at	25-km	resolution	of	the	major	neutral	exospheric	species	and	characterize	the	major	ionspecies energy distributions as functions of local time, Mercury heliocentric distance, and solar activity.
+L401: To accomplish these science goals, the MESSENGER spacecraft must obtain many types of observations from different
+L402: portions of its orbit around Mercury. Some major constraints must be met, including completing the observations within
+L403: two Mercury solar days (equivalent to one Earth year) and keeping the spacecraft sunshade facing the Sun at all times.
+L404: The observation plan must also take into account MESSENGER’s orbit around Mercury. The orbit is highly elliptical
+L405: (egg-shaped), with the spacecraft passing 200 kilometers (124 miles) above the surface at the lowest point and more
+L406: than 15,193 kilometers (9,420 miles) at the highest. At the outset of the orbital phase of the mission, the plane of the
+L407: spacecraft’s orbit is inclined 82.5° to Mercury’s equator, and the lowest point in the orbit is reached at a latitude of 60°
+L408: North.
+L409: The spacecraft’s orbit is elliptical rather than circular because the planet’s surface radiates back heat from the Sun. At
+L410: an altitude of 200 km, the re-radiated heat from the planet alone is 4 times the solar intensity at Earth. By spending only
+L411: a short portion of each orbit flying this close to the planet, the temperature of the spacecraft can be better regulated.
+L412: 
+L413: Observing the surface
+L414: MESSENGER’s 12-month orbital phase covers two Mercury solar days; one Mercury solar day, from sunrise to sunrise,
+L415: is equal to 176 Earth days. This means that the spacecraft passes over a given spot on the surface only twice during the
+L416: mission, 6 months apart, making the time available to observe the planet’s surface a precious resource. The first solar
+L417: day is focused on obtaining global map products from the different instruments, and the second focuses on specific
+L418: targets of scientific interest and completion of a global stereo map.
+L419: As Mercury moves around the Sun, the spacecraft’s orbit around the planet stays in a nearly fixed orientation that
+L420: allows MESSENGER to keep its sunshade toward the Sun. In effect, Mercury rotates beneath the spacecraft and the
+L421: surface illumination changes with respect to the spacecraft view. At some times, the spacecraft is traveling in an orbit
+L422: that follows the terminator — the line that separates day from night. These are known as “dawn-dusk” orbits and are
+L423: good for imaging surface features such as craters, as shadows are prominent and topography and texture can be clearly
+L424: seen. At other times, the spacecraft follows a path that takes it directly over a fully lit hemisphere of Mercury, then over
+L425: a completely dark hemisphere. These are called “noon-midnight” orbits and are good for taking color observations on
+L426: the dayside, because there are fewer shadows to obscure surface features.
+L427: Some instruments, such as Mercury Laser Altimeter (MLA), can operate whether the surface is lit or not, but others,
+L428: such as Mercury Dual Imaging System (MDIS), need sunlight in order to acquire data. The low-altitude segments of
+L429: the orbit over the northern hemisphere will allow MESSENGER to conduct a detailed investigation of the geology and
+L430: composition of Mercury’s giant Caloris impact basin — the planet’s largest known surface feature, among other goals.
+L431: As Mercury moves around the Sun, the MESSENGER spacecraft stays in an approximately fixed
+L432: orientation with its sunshade facing the Sun, so effectively the planet rotates beneath the spacecraft.
+L433: Different parts of the surface are illuminated depending on where Mercury is in its year, so the
+L434: spacecraft can view the surface of the planet under every possible lighting condition.
+L435: 
+L436: Orchestrating the observations
+L437: Different instruments are given priority in determining spacecraft pointing at different portions of the spacecraft orbit
+L438: and as a function of the parts of Mercury’s surface that are illuminated at any given time. For example, MLA “drives”
+L439: the spacecraft pointing whenever its laser can range to the planet’s surface (less than ~1500 km altitude), UVVS controls
+L440: the pointing when no other instruments can “see” the planet, and MAG and EPPS primarily ride along and collect
+L441: data regardless of what else is going on, since they generally don’t need to point at the planet’s surface. The two MDIS
+L442: imagers are mounted on a common pivot, and so they can often look at the surface or at other targets when the rest of
+L443: the instruments are pointed in a different direction.
+L444: MESSENGER will operate in orbit around Mercury for one Earth year, equivalent to four Mercury years or
+L445: two Mercury solar days. Different portions of the orbit are used by different instruments to acquire data.
+L446: This image shows a typical view from
+L447: MESSENGER’s science planning software
+L448: tool. The picture on the left shows the
+L449: orientation of the spacecraft with respect
+L450: to Mercury, and the table on the right
+L451: shows details of the spacecraft’s orbit at
+L452: that time. Views such as this one allow
+L453: scientists to decide how best to take data
+L454: to accomplish their science goals.
+L455: 
+L456: To meet the mission science objectives while taking into consideration the constraints associated with spacecraft
+L457: safety and orbital geometry, the MESSENGER Project has planned the entire year of observations in advance of the
+L458: orbital phase. Because of the large number of different science observations required to meet the science objectives, a
+L459: special software tool has been developed to help carry out the complicated process of maximizing the scientific return
+L460: from the mission and minimizing conflicts between instrument observations. This task is particularly challenging because
+L461: most of the instruments are fixed on the spacecraft and are pointed in the same direction, but the different instruments
+L462: may need to be pointed toward different locations at different times to meet the science goals.
+L463: Some observations also must be taken under specific observing conditions (such as taking color images when the Sun
+L464: is high overhead), and the software tool works by finding the best opportunities for each of the instruments to make
+L465: their measurements and then analyzing how those measurements contribute toward the science goals of the entire
+L466: mission. Many iterations are necessary before a solution is found that satisfies all the science goals while staying within
+L467: the limitations associated with the spacecraft’s onboard data storage and downlink capacity.
+L468: Although a baseline plan for the entire year has been formulated, commands to execute the plan will be sent up
+L469: to the spacecraft on a weekly basis. Each “command load” contains all the commands that the spacecraft will need
+L470: to execute during a given week. Because each command load is different and contains many tens of thousands of
+L471: commands, the mission operations engineers start each load three weeks ahead of time. This schedule permits the
+L472: command load to be thoroughly tested and reviewed before it is sent up to the spacecraft. Because of this process,
+L473: mission operations personnel at any given time will be working on several command loads, each of which is at a
+L474: different stage of development.
+L475: This planning-tool view shows MDIS image footprints (boxes) on Mercury’s surface
+L476: after one orbit. The footprints vary in size depending on where the spacecraft is in its
+L477: orbit and which of the two imagers are used. Here, the footprints are smallest at high
+L478: northern latitudes, when MESSENGER is closest to the planet, and are largest near
+L479: the bottom of the view because at that time the spacecraft is much farther
+L480: from Mercury.
+L481: 
+L482: The Science Team has also developed the capability to regenerate the plan at short notice in order to respond to any
+L483: anomalies that might occur in flight, such as an instrument problem, or on the ground, such as a missed Deep Space
+L484: Network track.
+L485: Under this plan, each instrument will obtain the data needed to fulfill MESSENGER’s science objectives. Once in orbit,
+L486: MDIS will build on the imaging it acquired during the three Mercury flybys to create global color and monochrome
+L487: image mosaics during the first six months of the orbital mission phase. Emphasis during the second six months will shift
+L488: to targeted, high-resolution imaging with the NAC and repeated mapping at a different viewing geometry to create a
+L489: stereo map. MLA will measure the topography of the northern hemisphere over four Mercury years. GRNS and XRS will
+L490: build up observations that will yield global maps of elemental composition. MAG will measure the vector magnetic field
+L491: under a range of solar distances and conditions. VIRS will produce global maps of surface reflectance from which surface
+L492: mineralogy can be inferred, and UVVS will produce global maps of exospheric species abundances versus altitude.
+L493: EPPS will sample the plasma and energetic particle population in the solar wind, at major magnetospheric boundaries,
+L494: and throughout the environment of Mercury at a range of solar distances and levels of solar activity. The radio science
+L495: experiment will extend topographic information to the southern hemisphere by making occultation measurements of
+L496: planet radius, and the planet’s obliquity and the amplitude of the physical libration will be determined independently
+L497: from the topography and gravity field.
+L498: Each orbit is 12 hours in duration, so MESSENGER orbits Mercury twice every Earth day. Once a day, the spacecraft
+L499: stops making measurements and turns its antenna toward Earth for 8 hours, in order to send data back to the Deep
+L500: Space Network, from which it will be sent on to the MESSENGER Mission Operations Center.
+L501: 
+L502: General
+L503: •	 One	of	five	planets	known	to	ancient	astronomers;
+L504: in Roman mythology Mercury was the fleet-footed
+L505: messenger of the gods, a fitting name for a planet that
+L506: moves quickly across the sky.
+L507: •	 The	closest	planet	to	the	Sun,	Mercury	is	also	the
+L508: smallest planet in the Solar System.
+L509: •	 Prior	to	January	2008,	Mercury	had	been	visited	by	only
+L510: one spacecraft; NASA’s Mariner 10 viewed less than half
+L511: the surface (~45%) in detail during its three flybys in
+L512: 1974 and 1975.
+L513: Physical characteristics
+L514: •	 Mercury’ s	diameter	is	4,880	kilometers	(3,032	miles),
+L515: about one-third the size of Earth and only slightly larger
+L516: than our Moon.
+L517: •	 The	densest	planet	in	the	Solar	System	(when	corrected
+L518: for compression), Mercury’s density is 5.3 times greater
+L519: than that of water.
+L520: •	 The	largest	known	feature	on	Mercury’ s	pockmarked
+L521: surface is the Caloris basin (1,550 kilometers or 960
+L522: miles in diameter — see http://messenger.jhuapl.edu/
+L523: gallery/sciencePhotos/image.php?page=&gallery_
+L524: id=2&image_id=149), likely created by an ancient
+L525: asteroid impact.
+L526: •	 Mercury’ s	surface	is	a	combination	of	craters,	smooth
+L527: plains, and long, winding cliffs.
+L528: •	 There	is	possibly	water	ice	on	the	permanently
+L529: shadowed floors of craters in Mercury’s polar regions.
+L530: •	 An	enormous	iron	core	takes	up	at	least	60%	of	the
+L531: planet’s total mass — twice as large a fraction as
+L532: Earth’s.
+L533: Environment
+L534: •	 Mercury	experiences	the	Solar	System’ s	largest	swing
+L535: in surface temperatures, from highs above 700 Kelvin
+L536: (about 800° Fahrenheit) to lows near 90 Kelvin
+L537: (about –300° Fahrenheit).
+L538: •	 Mercury’ s	extremely	thin	atmosphere	contains
+L539: hydrogen, helium, oxygen, sodium, potassium,
+L540: calcium, and magnesium.
+L541: •	 The	only	inner	planet	besides	Earth	with	a	global
+L542: magnetic field, Mercury’s field is about 100 times
+L543: weaker than Earth’s (at the surface).
+L544: Orbit
+L545: •	 Mercury’ s	average	distance	from	the	Sun	is	58	million
+L546: kilometers (36 million miles), about two-thirds closer to
+L547: the Sun than Earth is.
+L548: •	 The	highly	elliptical	(elongated)	orbit	ranges	from
+L549: 46 million kilometers (29 million miles) to 70 million
+L550: kilometers (43 million miles) from the Sun.
+L551: •	 Mercury	orbits	the	Sun	once	every	88	Earth	days,
+L552: moving at an average speed of 48 kilometers (30 miles)
+L553: per second and making it the “fastest” planet in the
+L554: Solar System.
+L555: •	 Because	of	its	slow	rotation	—	Mercury	rotates	on	its
+L556: axis once every 59 Earth days — and fast speed around
+L557: the Sun, one solar day on Mercury (from noon to noon
+L558: at the same place) lasts 176 Earth days, or two Mercury
+L559: years.
+L560: •	 Mercury’ s	distance	from	Earth	(during	MESSENGER’ s
+L561: orbit) ranges from about 87 million to 212 million
+L562: kilometers, about 54 million to 132 million miles.
+L563: Mercury at a Glance
+L564: 
+L565: Why Mercury?
+L566: Mercury, Venus, Earth, and Mars are the terrestrial (rocky) planets. Among these, Mercury is an extreme: the smallest,
+L567: the densest (after correcting for self-compression), the one with the oldest surface, the one with the largest daily
+L568: variations in surface temperature, and the least explored. Understanding this “end member” among the terrestrial
+L569: planets is crucial to developing a better understanding of how the planets in our Solar System formed and evolved. To
+L570: develop this understanding, the MESSENGER mission, spacecraft, and science instruments are focused on answering six
+L571: key questions.
+L572: Question 1: Why is Mercury so dense?
+L573: Each of the terrestrial planets consists of a dense iron-rich core surrounded by a rocky mantle, composed largely of
+L574: magnesium and iron silicates. The topmost layer of rock, the crust, formed from minerals with lower melting points than
+L575: those in the underlying mantle, either during differentiation early in the planet’s history or by later volcanic or magmatic
+L576: activity. The density of each planet provides information about the relative sizes of the iron-rich core and the rocky
+L577: mantle and crust, since the metallic core is much denser than the rocky components. Mercury’s uncompressed density
+L578: (what its density would be without compaction of its interior by the planet’s own gravity) is about 5.3 g/cm3, by far
+L579: the highest of all the terrestrial planets. In fact, Mercury’s density implies that at least 60% of the planet is a metal-rich
+L580: core, a figure twice as great as for Earth, Venus, or Mars. To account for about 60% of the planet’s mass, the radius of
+L581: Mercury’s core must be approximately 75% of the radius of the entire planet!
+L582: There are three major theories to explain why Mercury is so much denser and more metal-rich than Earth, Venus,
+L583: and Mars. Each theory predicts a different composition for the rocks on Mercury’s surface. According to one idea,
+L584: before Mercury formed, drag by solar nebular gas near the Sun mechanically sorted silicate and metal grains, with the
+L585: lighter silicate particles preferentially slowed and lost to the Sun; Mercury later formed from material in this region and
+L586: is consequently enriched in metal. This process doesn’t predict any change in the composition of the silicate minerals
+L587: making up the rocky portion of the planet, just the relative amounts of metal and rock. In another theory, tremendous
+L588: heat in the early nebula vaporized part of the outer rock layer of proto-Mercury and left the planet strongly depleted in
+L589: volatile elements. This idea predicts a rock composition poor in easily evaporated elements like sodium and potassium.
+L590: The third idea is that a giant impact, after proto-Mercury had formed and differentiated, stripped off the primordial crust
+L591: and upper mantle. This idea predicts that the present-day surface is made of rocks highly depleted in those elements
+L592: that would have been concentrated in the crust, such as aluminum and calcium.
+L593: William Hartmann’s depiction of the early solar
+L594: nebula shows the time when the terrestrial planets
+L595: were forming. Processes such as nebular gas drag,
+L596: vaporization in the hot early nebula, and giant
+L597: impacting collisions have all been suggested as
+L598: having possible effects on the bulk composition of
+L599: Mercury. (“During the Formation of the Terrestrial
+L600: Planets,” painting, copyright 1999 by William K.
+L601: Hartmann. This and additional artwork associated
+L602: with Mercury and the early solar system is available
+L603: from Dr. Hartmann at hartmann@psi.edu).
+L604: 
+L605: MESSENGER will determine which of these ideas is correct by measuring the composition of the rocky surface. X-ray,
+L606: gamma-ray, and neutron spectrometers will measure the elements present in the surface rocks and determine if volatile
+L607: elements are depleted or if elements that tend to be concentrated in planetary crusts are deficient. A visible-infrared
+L608: spectrometer will determine which minerals are present and will permit the construction of mineralogical maps of the
+L609: surface. Analysis of gravity and topography measurements will provide estimates of the thickness of Mercury’s crust. To
+L610: make these challenging measurements of Mercury’s surface composition and crustal characteristics, these instruments
+L611: will need to accumulate many observations of the surface. MESSENGER’s three Mercury flybys provided opportunities
+L612: to make preliminary observations, but numerous measurements from an orbit around Mercury are needed to determine
+L613: accurately the surface composition. Once in orbit, these measurements will enable MESSENGER to distinguish among
+L614: the different proposed origins for Mercury’s high density and, by doing so, gain insight into how the planet formed and
+L615: evolved.
+L616: Question 2: What is the geologic history of Mercury?
+L617: Prior to MESSENGER, only 45% of Mercury’s surface had been seen by spacecraft during the Mariner 10 mission.
+L618: Combining the Mariner 10 photos with the images from MESSENGER’s three Mercury flybys, about 98% of the surface
+L619: of Mercury has been seen in detail. It is now possible for the first time to begin to investigate Mercury’s geologic history
+L620: on a global basis.
+L621: Much of Mercury’s surface appears cratered and ancient, with a resemblance to the surface of Earth’s Moon.
+L622: Slightly younger, less cratered plains sit within and between the largest old craters. Many of these plains are volcanic,
+L623: on the basis of their age relative to nearby large impact features and other indicators of volcanic activity. Data from
+L624: MESSENGER’s flybys indicate that volcanism on Mercury persisted for at least the first half of the planet’s history, and
+L625: that the style of volcanism included both effusive and
+L626: explosive eruptions.
+L627: Mercury’s tectonic history is unlike that of any
+L628: other terrestrial planet. On the surface of Mercury,
+L629: the most prominent features produced by tectonic
+L630: forces are long, rounded, lobate scarps or cliffs, some
+L631: over a kilometer in height and hundreds of kilometers
+L632: in length. These giant scarps are believed to have
+L633: formed as Mercury cooled and the entire planet
+L634: contracted on a global scale. Understanding the
+L635: formation of these scarps thus provides the potential
+L636: to gain insight into the thermal history and interior
+L637: structure of Mercury.
+L638: Once in orbit, MESSENGER will bring a variety
+L639: of investigations to bear on Mercury’s geology in
+L640: order to determine the sequence of processes that
+L641: have shaped the surface. The X-ray, gamma-ray,
+L642: and visible-infrared spectrometers will determine
+L643: the elemental and mineralogical makeup of rock
+L644: units composing the surface. The cameras will image
+L645: Mercury’s surface in color and at a typical imaging
+L646: resolution that surpasses that of most Mariner 10
+L647: pictures. Nearly all of the surface will be imaged in
+L648: stereo to determine the planet’s global topographic
+L649: variations and landforms; the laser altimeter
+L650: will measure the topography of surface features
+L651: even more precisely in the northern hemisphere.
+L652: A portion of the long, lobate scarp named Beagle Rupes (right
+L653: side of this image) deforms an impact craters seen in the upper
+L654: right. This image was taken during MESSENGER’s first flyby of
+L655: Mercury, and the width of the image is about 110 km. (Courtesy
+L656: of NASA, JHU/APL, CIW.)
+L657: 
+L658: Comparing the topography with the planet’s gravity field, measured by tracking the MESSENGER spacecraft, will allow
+L659: determinations of local variations in the thickness of Mercury’s crust. This diversity of high-resolution data returned by
+L660: MESSENGER will enable the reconstruction of the geologic history of Mercury.
+L661: Question 3: What is the nature of Mercury’s magnetic field?
+L662: Mercury’s magnetic field and the resulting magnetosphere, produced by the interaction of Mercury’s magnetic field
+L663: with the solar wind, are unique in many ways. Perhaps one of the most noteworthy observations about Mercury’s
+L664: magnetic field is that the small planet possesses one at all. Mercury’s magnetic field is similar in its “dipole” shape to
+L665: Earth’s magnetic field, which resembles the field that would be produced if there was a giant bar magnet at the center
+L666: of the planet. In contrast, Venus, Mars, and the Moon do not show evidence for intrinsic dipolar magnetic fields, but the
+L667: Moon and Mars have evidence for local magnetic fields centered on different rock deposits.
+L668: Earth’s magnetosphere is very dynamic and constantly changes in response to the Sun’s activity, including both solar
+L669: storms and more modest changes in the solar wind and interplanetary magnetic field. We see the effects of these
+L670: dynamics on the ground as they affect power grids and electronics, causing blackouts and interference with radios and
+L671: telephones. Mercury’s magnetosphere was shown by Mariner 10 to experience similar dynamics; understanding those
+L672: variations will help us understand the interaction of the Sun with planetary magnetospheres in general.
+L673: Although Mercury’s magnetic field is thought to be a miniature version of Earth’s, Mariner 10 didn’t measure
+L674: Mercury’s field well enough to characterize it. There was even considerable uncertainty in the strength and source of
+L675: the magnetic field after Mariner 10. MESSENGER’s Mercury flybys confirmed that there is a global magnetic field on
+L676: Mercury, and that the field has a strong dipolar component nearly aligned with the planet’s spin axis. Mercury’s magnetic
+L677: field most likely arises from fluid motions in an outer liquid portion of Mercury’s metal core. There is debate, however,
+L678: about the molten fraction of the core as well as whether the field is driven by compositional or thermal differences.
+L679: These different ideas for the driving force behind Mercury’s magnetic field predict slightly different field geometries, so
+L680: careful measurements by spacecraft can distinguish among current theories.
+L681:  MESSENGER’s
+L682: magnetometer will characterize
+L683: Mercury’s magnetic field in
+L684: detail from orbit over four
+L685: Mercury years (each Mercury
+L686: year equals 88 Earth days) to
+L687: determine its precise strength
+L688: and how that strength varies
+L689: with position and altitude.
+L690: The effects of the Sun on
+L691: magnetospheric dynamics will
+L692: be measured by MESSENGER’s
+L693: magnetometer and by the
+L694: energetic particle and plasma
+L695: spectrometer. MESSENGER’s
+L696: highly capable instruments
+L697: and broad orbital coverage
+L698: will greatly advance our
+L699: understanding of both the
+L700: origin of Mercury’s magnetic
+L701: field and the nature of its
+L702: interaction with the solar wind.
+L703: The different components of Mercury’s magnetosphere result from the complex and
+L704: dynamic interactions between Mercury’s magnetic field and the solar wind. (Courtesy
+L705: of Jim Slavin, NASA Goddard Space Flight Center.)
+L706: 
+L707: Question 4: What is the structure of Mercury’s core?
+L708: As discussed in Questions 1 and 3, Mercury has a very large iron-rich core and a global magnetic field; this
+L709: information was first gathered by the Mariner 10 flybys. More recently, Earth-based radar observations of Mercury have
+L710: also determined that at least a portion of the large metal core is still liquid. Having at least a partially molten core means
+L711: that a very small but detectable variation in the spin rate of Mercury has a larger amplitude because of decoupling
+L712: between the solid mantle and the liquid core. Knowing that the core has not completely solidified, even as Mercury has
+L713: cooled over billions of years since its formation, places important constraints on the planet’s thermal history, evolution,
+L714: and core composition.
+L715: However, these constraints are limited because of the low precision of current information on Mercury’s gravity field
+L716: from the Mariner 10 and MESSENGER flybys. Fundamental questions about Mercury’s core remain to be explored, such
+L717: as its composition. A core of pure
+L718: iron would be completely solid
+L719: today, due to the high melting
+L720: point of iron. However, if other
+L721: elements, such as sulfur, are also
+L722: present in Mercury’s core, even
+L723: at only a level of a few percent,
+L724: the melting point is lowered
+L725: considerably, allowing Mercury’s
+L726: core to remain at least partially
+L727: molten as the planet cooled.
+L728: Constraining the composition
+L729: of the core is intimately tied to
+L730: understanding what fraction of
+L731: the core is liquid and what fraction
+L732: has solidified. Is there just a very
+L733: thin layer of liquid over a mostly
+L734: solid core, or is the core completely
+L735: molten? Addressing questions
+L736: such as these can also provide
+L737: insight into the current thermal
+L738: state of Mercury’s interior, which
+L739: is very valuable information for
+L740: determining the evolution of the
+L741: planet.
+L742: Using the laser altimeter in orbit, MESSENGER will verify the presence of a liquid outer core by measuring Mercury’s
+L743: libration. Libration is the slow, 88-day wobble of the planet about its rotational axis. The libration of the rocky outer
+L744: part of the planet will be twice as large if it is floating on a liquid outer core than if it is frozen to a solid core. By radio
+L745: tracking of the spacecraft in orbit, MESSENGER will also determine the gravity field with much better precision than can
+L746: be accomplished during flybys. The libration experiment, when combined with improved measurements of the gravity
+L747: field, will provide information on the size and structure of the core.
+L748: Question 5: What are the unusual materials at Mercury’s poles?
+L749: Mercury’s axis of rotation is oriented nearly perpendicular to the planet’s orbit, so that in polar regions sunlight strikes
+L750: the surface at a near-constant grazing angle. Some of the interiors of large craters at the poles are thus permanently
+L751: shadowed and perpetually very cold. Earth-based radar images of the polar regions show that the floors of large craters
+L752: The radius of the core of Mercury is approximately 75% of that of the entire planet,
+L753: which is a much larger fraction of the plan than for Earth. Like Earth, Mercury has a
+L754: core that is at lest partially liquid. However, unlike Earth, the size of the solid inner
+L755: core is not known. (Courtesy of NASA, JHU/APL, CIW.)
+L756: 
+L757: are highly reflective at radar wavelengths, unlike the surrounding terrain. Furthermore, the radar-bright regions are
+L758: consistent in their radar properties with the polar cap of Mars and the icy moons of Jupiter, suggesting that the material
+L759: concentrated in the shadowed craters is water ice. The idea of water ice being stable on the surface of the planet closest
+L760: to the Sun is intriguing.
+L761: The temperature inside these permanently shadowed craters is believed to be low enough to allow water ice to
+L762: be stable for the majority of the observed deposits. Ice from infalling comets and meteoroids could be cold-trapped
+L763: in Mercury’s polar deposits over millions to billions of years, or water vapor might outgas from the planet’s interior
+L764: and freeze at the poles. A few craters at latitudes as low as 72° N have also been observed to contain radar-bright
+L765: material in their interiors, and at these warmer latitudes, maintaining stable water ice for longer periods of time may
+L766: be more difficult; a recent comet impact, in the last few million years, may be required to satisfy all radar observations.
+L767: Alternatively, it has been suggested that the radar-bright deposits are not water ice but rather consist of a different
+L768: material, such as sulfur. Sulfur would be stable in the cold traps of the permanently shadowed crater interiors, and the
+L769: source of sulfur could be either meteoritic material or the surface of Mercury itself. It has also been proposed that the
+L770: naturally occurring silicates that make up the surface of Mercury could produce the observed radar reflections when
+L771: maintained at the extremely low temperatures present in the permanently shadowed craters.
+L772: MESSENGER’s three flybys of Mercury passed nearly over the equator and did not allow for viewing of the planet’s
+L773: poles. Once in orbit around Mercury, however, MESSENGER’s neutron spectrometer will search for hydrogen in any polar
+L774: deposits, the detection of which would suggest that the polar deposits are water-rich. The ultraviolet spectrometer and
+L775: energetic particle and plasma spectrometer will search for the signatures of hydroxide or sulfur in the tenuous vapor over
+L776: the deposits. The laser altimeter will provide information about the topography of the permanently shadowed craters.
+L777: Understanding the composition of Mercury’s polar deposits will clarify the inventory and availability of volatile materials
+L778: in the inner Solar System.
+L779: A radar image of the north polar region of Mercury shows radar-bright regions concentrated in circular
+L780: floors of craters with permanently shadowed interiors. The radar-bright material might be water ice, but
+L781: alternative suggestions have also been proposed. (Courtesy of John K. Harmon, Arecibo Observatory.)
+L782: 
+L783: Question 6: What volatiles are important at Mercury?
+L784: Mercury is surrounded by an extremely thin envelope of gas. It is so thin that, unlike the atmospheres of Venus, Earth,
+L785: and Mars, the molecules surrounding Mercury don’t collide with each other and instead bounce from place to place on
+L786: the surface like many rubber balls. This tenuous atmosphere is called an “exosphere.”
+L787: Seven elements are known to exist in Mercury’s exosphere: hydrogen, helium, oxygen, sodium, potassium, calcium,
+L788: and, as discovered by MESSENGER, magnesium. The observed exosphere is not stable on timescales comparable to the
+L789: age of Mercury, and so there must be sources for each of these elements. High abundances of hydrogen and helium are
+L790: present in the solar wind, the stream of hot, ionized gas emitted by the Sun. The other elements are likely from material
+L791: impacting Mercury, such as micrometeoroids or comets, or directly from Mercury’s surface rocks. Several different
+L792: processes may have put these elements into the exosphere, and each process yields a different mix of the elements:
+L793: vaporization of rocks by impacts, evaporation of elements from the rocks in sunlight, sputtering by solar wind or
+L794: magnetospheric ions, or diffusion from the planet’s interior. Strong variability in the composition of Mercury’s exosphere
+L795: has been observed, suggesting an interaction of several of these processes.
+L796: MESSENGER will determine the composition of Mercury’s exosphere using its ultraviolet spectrometer and energetic
+L797: particle and plasma spectrometer. The exosphere composition measured by these instruments will be compared with
+L798: the composition of surface rocks measured by the X-ray, gamma-ray, and neutron spectrometers. As MESSENGER orbits
+L799: Mercury, variations in the exosphere’s composition will be monitored. The combination of these measurements will
+L800: elucidate the nature of Mercury’s exosphere and the processes that contribute to it.
+L801: During MESSENGER’s first flyby of Mercury, the distribution of neutral sodium in the
+L802: “tail” of Mercury’s exosphere was measured. (Courtesy of NASA, JHU/APL, CIW.)
+L803: 
+L804: Highlights from the Mercury Flybys
+L805: MESSENGER has completed three flybys of Mercury, utilizing the planet’s gravity to alter its trajectory and bring its
+L806: orbit about the Sun closer to that of the innermost planet. All three flybys were executed flawlessly.
+L807: To make full use of this opportunity, the Science Team developed a comprehensive plan to conduct observations
+L808: throughout the encounters. The data recorded by MESSENGER during its flybys have been used to fine-tune the
+L809: observation strategy for the prime orbital phase of the mission. Even now these data are providing exciting new insights
+L810: into the history and dynamics of our Solar System’s innermost planet.
+L811: MESSENGER’s first flyby of Mercury on January 14, 2008, was a resounding success. Measurements were made that
+L812: had never been possible with Mariner 10 or from ground-based telescopes. These include plasma ion measurements,
+L813: laser altimetry, high-resolution surface spectroscopy, spacecraft elemental chemical remote sensing, high-spatialresolution observations of both known and new species in Mercury’s exosphere, and eleven-color imaging. In addition
+L814: to these observations, complementary measurements were made to those from Mariner 10 by the MESSENGER
+L815: Magnetometer, and 21% of the previously unseen hemisphere was imaged for the first time, bringing to 66% the total
+L816: surface area of the planet imaged by spacecraft.
+L817: During MESSENGER’s second flyby on October 6, 2008, MDIS images filled in a further 24% of the previously unseen
+L818: hemisphere, so that 90% of the planet had at that point been observed by spacecraft. Much of the hemisphere imaged
+L819: by Mariner 10 was viewed by MESSENGER under different lighting conditions or in color, allowing new discoveries.
+L820: MESSENGER became the first spacecraft to fly over the planet’s western hemisphere, making the first measurements of
+L821: Mercury’s internal magnetic field above that portion of the planet. All instruments took data during the flyby, and an
+L822: emerging picture of Mercury’s global environment and history continued to take shape.
+L823: On September 29, 2009, MESSENGER flew by Mercury for the third and final time prior to orbit insertion in March
+L824: 2011. An additional 6% of the surface was imaged, completing the equatorial coverage by spacecraft and leaving only
+L825: the polar regions yet to be seen by spacecraft. Shortly before closest approach to the planet, as the spacecraft passed
+L826: into eclipse, an unexpected configuration of the power system caused the fault protection system to halt the science
+L827: command sequence. Although the spacecraft was never at risk and continued through the needed gravity assist, a
+L828: number of planned science observations were not made. Despite the truncated set of measurements, new discoveries
+L829: were made about the innermost planet, including the first observations of emission from an ionized species in Mercury’s
+L830: exosphere, indications of a surprisingly complex distribution of exospheric species over the north and south poles, new
+L831: information about magnetic substorms, and evidence for younger volcanism than had been previously anticipated.
+L832: 
+L833: Mapping an old world
+L834: Initial mapping of the innermost world of the Solar System is now almost complete. MESSENGER has now seen 91%
+L835: of Mercury from its three encounters with Mercury. In the accompanying map of imaging coverage, the narrow regions
+L836: are the sunlit crescents seen as MESSENGER approached Mercury prior to each flyby, and include the area imaged during
+L837: the approach to flyby 3 (yellow outline). The larger areas are the sunlit portions of the surface seen as MESSENGER
+L838: departed the Solar System’s innermost planet on its first and second flybys. Between Mariner 10 and MESSENGER, more
+L839: than 98% of Mercury’s surface has been mapped at a resolution of 1 kilometer or better. Because of the fast encounter
+L840: velocity and Mercury’s slow rotation, the lighting angle within the global mosaic varies from high noon to just over the
+L841: horizon, resulting in a non-uniform look at the planet. After MESSENGER enters orbit about Mercury in 2011, a higherresolution (on the average of 250 meters/pixels) global mosaic will be built up with more uniform illumination.
+L842: MESSENGER has now seen 91% of Mercury from its three encounters with the planet. Combining images from MESSENGER’s
+L843: first (outlined in blue), second (red), and third (yellow) Mercury flybys with photos obtained from Mariner 10’s three flybys in
+L844: 1974-75 (outlined in green) yields nearly total coverage of Mercury’s surface with the exception of the regions poleward of
+L845: 60° N or 60° S. Along with revealing intriguing geologic features in previously unseen terrain, completion of this nearly global
+L846: map of Mercury’s surface, free of gaps, has been valuable for planning MESSENGER’s orbital operations, which begin in
+L847: March 2011.
+L848: 
+L849: Mercury — in color!
+L850: During the flybys, the Mercury Dual Imaging System (MDIS) Wide-Angle Camera (WAC) snapped images of Mercury
+L851: through 11 different narrow-band color filters, which range from violet in the visible (395 nm) to the near-infrared (1040
+L852: nm). The specific colors of the filters were selected to discriminate among common minerals, and statistical methods
+L853: that utilize all 11 filters in the visible and near-infrared are used to enhance subtle color differences and aid geologists
+L854: in mapping regions of different composition. What do the exaggerated colors tell us about Mercury? The nature of
+L855: color boundaries, color trends, and brightness values help MESSENGER geologists understand the distinct regions (or
+L856: geological “units”) on the surface. This color information has shown Mercury’s surface to be composed of a variety of
+L857: materials with different color characteristics, such as smooth volcanic plains; darker material excavated from depth by
+L858: impact craters; younger, less space-weathered material; reddish deposits near volcanic vents; and very bright material on
+L859: some crater floors. The color images are complemented by images from the MDIS Narrow-Angle Camera (NAC), which
+L860: provides higher resolution views of areas with interesting color properties.
+L861: These images are orthographic projections of Mercury created with WAC enhanced-color
+L862: images. The orthographic projection produces a view that has the perspective that one
+L863: would see from deep space. The WAC enhanced color uses a statistical analysis of images
+L864: from all 11 WAC filters to highlight subtle differences in the color of crustal rocks on
+L865: Mercury’s surface. The top view uses images from Mercury flyby 1, with the thin crescent
+L866: of Mercury imaged during approach forming the right portion of the globe and the fuller
+L867: departure view showing Caloris basin forming the left side and majority of the view. The
+L868: black strip between the approach and departure images is a portion of Mercury’s surface
+L869: not viewed by MESSENGER during the flyby. Similarly, the approach and departure
+L870: images obtained during Mercury flyby 2 yielded the bottom view. The top and bottom
+L871: projections are centered on 180° and 0° longitude, respectively.
+L872: 
+L873: From the color images alone it is not possible to determine unambiguously the minerals that comprise the rocks
+L874: of each unit. During the brief flybys, MESSENGER’s other instruments sensitive to composition lacked the time
+L875: needed to build up adequate signal or gain broad areal coverage, so only MESSENGER’s cameras were able to acquire
+L876: comprehensive measurements. Once in orbit about Mercury, MESSENGER’s full suite of instruments will be brought to
+L877: bear on the newly discovered color units, and the results will provide information about Mercury’s composition and the
+L878: processes that acted on Mercury’s surface.
+L879: First clues to mineralogy: Clear differences from Earth’s Moon
+L880: High-resolution, ultraviolet-to-infrared spectra of Mercury’s surface acquired by the Mercury Atmospheric and Surface
+L881: Composition Spectrometer (MASCS) revealed differences in color from the Earth’s Moon that, despite some general
+L882: similarities, indicate a different composition. For mineralogical identification, spectral differences of a few percent are
+L883: significant, and the differences found by MASCS are up to 20%, indicating that the surface of Mercury has a number of
+L884: important surprises in store. Identifying the classes of minerals consistent with the observed spectra will require extensive
+L885: analysis and comparison with the color imaging from MDIS and laboratory measurements of the reflectance of mineral
+L886: and rock mixtures, but it is already clear that these spectra will play a key role in sifting out the geologic history of the
+L887: range of materials evident on the surface and, ultimately, in telling the story of Mercury’s unique history.
+L888: Volcanism on Mercury
+L889: The role volcanism played in shaping the landscape of Mercury was a subject of scientific debate after the flybys of
+L890: Mariner 10. From MESSENGER’s flybys, high-resolution images combined with complementary color information have
+L891: led to the first identification of volcanic vents on Mercury. The vents are seen as irregularly shaped, rimless depressions,
+L892: which distinguish them from impact craters. Smooth, bright, diffusely distributed deposits surround the vents, similar to
+L893: material seen around explosive volcanoes on Earth and other planets. The characteristics of this bright material suggest
+L894: that it was erupted explosively from magma that contained substantial amounts of gas, or volatiles. By measuring how
+L895: far the material fell from the source vent, scientists can estimate the speed at which it was erupted, and what kinds
+L896: Close-up of the shortwavelength portion of the
+L897: spectrum comparing the
+L898: MASCS spectra from the Moon
+L899: and Mercury. Note the sharp
+L900: departure of the Mercury
+L901: spectrum from that of the Moon
+L902: at wavelengths below 300 nm.
+L903: 
+L904: of volatiles were present in Mercury’s interior at that time. This information provides insight into how Mercury was
+L905: assembled during its formation and how its interior has evolved.
+L906: High-resolution MDIS images reveal many examples of impact craters that have been flooded and embayed by
+L907: volcanic lava. By measuring the shallow depth of craters flooded by volcanic processes, lava flow thicknesses as great
+L908: as 5 km have been estimated. Further evidence for volcanic processes comes from high-resolution color images from
+L909: MDIS, which can indicate variations in composition and age of different features. Many impact basins (including Caloris)
+L910: have floors that are covered with material of a different composition and younger age, implying that they were flooded
+L911: by later volcanism. The impacts that formed some craters have punched through the surface material to excavate older
+L912: material from the subsurface. Impacts make it possible to assess how Mercury’s crust varies with depth and ultimately
+L913: how the crust evolved through time. Thus, results from MESSENGER’s flybys indicate that volcanism was an important
+L914: process in the geologic history of Mercury, and additional MESSENGER data will further elucidate the extent of volcanism
+L915: on the Solar System’s innermost planet.
+L916: Other evidence for volcanism on Mercury comes from craters that contain rimless, often irregularly shaped pits within
+L917: their floors. These pits display no associated ejecta or lava flows. They are thought to be evidence of shallow magmatic
+L918: activity and may have formed when retreating magma caused an unsupported area of the surface to collapse, creating a
+L919: pit. The discovery of multiple pit-floor craters augments a growing body of evidence that volcanic and magmatic activity
+L920: has been a widespread process in the geologic evolution of Mercury’s crust.
+L921: MESSENGER identified volcanic vents on Mercury for the first time. The irregularly shaped depression marking the vent in the
+L922: left image is about 20 km across in its longest dimension and is surrounded by a bright, smooth deposit with diffuse margins.
+L923: The bright material is believed to consist of pyroclastic deposits ejected during explosive volcanic eruptions at the vent. A
+L924: flooded impact crater (right image), about 60 km in diameter, shows further evidence that volcanism has shaped Mercury’s
+L925: surface.
+L926: 
+L927: This enhanced-color image was created by using
+L928: high-resolution images taken in all 11 WAC filters
+L929: and comparing and contrasting them to accentuate
+L930: differences on Mercury’s surface. Here, smooth
+L931: reddish plains material near Rudaki crater shows clear
+L932: boundaries with bluer, more cratered terrain, indicating
+L933: that the two units have different compositions. The rim
+L934: of and ejecta surrounding Calvino, the 68-km-diameter
+L935: crater in the center of the image, is more orange than
+L936: the surrounding plains, indicating that this crater
+L937: excavated material differing in composition from the
+L938: plains. Furthermore, its central peak is comparatively
+L939: blue, indicating that material of a third composition
+L940: was excavated from still greater depth during the
+L941: crater’s formation. Impacts make it possible to assess
+L942: how Mercury’s crust varies with depth and ultimately
+L943: how the crust evolved through time.
+L944: Lermontov crater (~150 km in diameter) was first
+L945: observed by Mariner 10 and seen more recently by
+L946: MESSENGER during its second flyby of Mercury. The
+L947: crater floor is somewhat brighter than the surrounding
+L948: surface and is smooth with several irregularly shaped
+L949: depressions. Such features may be evidence of past
+L950: explosive volcanic activity on the crater floor.
+L951: 
+L952: The duration of volcanic activity
+L953: Prior to MESSENGER, it was thought that the volcanism on Mercury had ceased relatively early in its history,
+L954: probably around 3.8 billion years ago. Images from MESSENGER’s flybys showed basins that were very sparsely cratered
+L955: compared to some other terrains on the planet, implying that they are much younger. On the inner floor of one basin,
+L956: Rachmaninoff, there is a volcanic deposit that contains even fewer craters per area than the remaining portions of the
+L957: basin floor, suggesting modification by volcanism some time after the basin had formed. By counting the craters per area
+L958: in the inner floor deposit, the MESSENGER Science Team has estimated that the volcanic deposit is probably younger
+L959: then 2 billion years. Volcanism on Mercury thus continued over a much longer time span than was previously thought,
+L960: probably at least half of the history of the Solar System. This discovery means that Mercury’s interior remained hotter for
+L961: longer than had been predicted. Once in orbit, other examples of relatively young volcanism may be discovered, and it
+L962: will be possible to reconstruct Mercury’s surface history in greater detail.
+L963: The great Caloris impact basin
+L964: It was known from Mariner 10 photos that Mercury’s Caloris basin is a large, well preserved impact basin, but
+L965: MESSENGER images showed the true extent of the feature for the first time. From Mariner 10 photos, only a portion
+L966: of the eastern half of Caloris was visible, and the diameter of Caloris was estimated at 1,300 km. MESSENGER’s
+L967: images of the entire Caloris basin show that the structure is larger than previously believed, with a diameter of about
+L968: 1,550 km.	The	density	of	superposed	smaller	craters	inside	and	outside	Caloris	basin	shows	that	the	deposits	formed	at
+L969: the same time as the basin date from fairly early in the history of the Solar System, likely around 3.8 billion years ago.
+L970: Plains interior and exterior to the basin, however, have a lower density of impact craters, indicating that they postdate
+L971: the basin and consist of volcanic deposits. Near the center of Caloris basin, a set of over 200 narrow troughs, named
+L972: Pantheon Fossae, radiate outward in a pattern unlike anything previously seen on Mercury. Structures interpreted
+L973: as volcanic vents are seen around the margins of the great basin. Craters with intriguing dark- and light-color
+L974: characteristics are found on the basin floor. Overall, understanding the formation and evolution of this giant basin will
+L975: provide insight into the early history of major impacts in the inner Solar System, with implications not just for Mercury,
+L976: but for all the rocky planets, including Earth.
+L977:  This enhanced-color image of the Rachmaninoff
+L978: basin (~290 km in diameter) highlights differences
+L979: in reflectance, color, and surface form between the
+L980: smooth plains within the basin’s inner ring and the
+L981: surrounding surface. MESSENGER team members
+L982: have documented evidence that these interior
+L983: smooth plains are products of relatively young
+L984: volcanism, the youngest documented on Mercury
+L985: to date. Whereas interpretations of Mariner 10
+L986: images prior to the MESSENGER flybys were that
+L987: volcanism on Mercury ended early in the planet’s
+L988: history, MESSENGER’s images of Rachmaninoff
+L989: reveal that some volcanism extended well beyond
+L990: that time, probably into the second half of Solar
+L991: System history.
+L992: 
+L993: High-precision topography from laser ranging
+L994: The very first laser ranging by the Mercury Laser Altimeter (MLA) to Mercury’s surface yielded topographic profiles
+L995: across multiple craters, smooth plains, and other terrain. During the first flyby, MLA was within range only over the night
+L996: side of Mercury, and the surface within view of MLA had not been imaged by Mariner 10, so the ranging results were
+L997: correlated with Earth-based, radar images of the surface. During the second flyby, topographic measurements were
+L998: made across territory that was photographed in high resolution by the MDIS NAC as well as other areas that had been
+L999: imaged during the first flyby.
+L1000: The MLA ranging provided the first definitive observations of terrain slopes and crater depths on Mercury, showing
+L1001: that the slopes are more gradual and older craters shallower than those on the Moon, presumably the result of volcanic
+L1002: infilling. The results also clearly show that there is great variation in the surface roughness of crater floors, suggesting
+L1003: differences in ages or in the geologic processes that have operated in different craters. From orbit, MESSENGER will be
+L1004: able to construct a topographic map of Mercury’s northern hemisphere, enabling a better understanding of the shape
+L1005: and depth of impact craters and how they vary on Mercury compared with other bodies.
+L1006: This mosaic of multiple MDIS images shows the Caloris basin in its entirety. The Caloris
+L1007: basin was discovered in 1974 from Mariner 10 images, but when Mariner 10 flew by
+L1008: Mercury, only the eastern half of the basin was in daylight. During MESSENGER’s first
+L1009: Mercury flyby, the spacecraft was able to acquire high-resolution images of the entire
+L1010: basin, revealing its full extent for the first time.
+L1011: 
+L1012: Rembrandt — A newly discovered impact basin
+L1013: Impact basins are formed by the impact of objects much larger than those that form craters, resulting in much
+L1014: larger structures as well as multiple rings of elevated terrain formed during the impact process. MESSENGER’s second
+L1015: flyby revealed a basin not previously known, Rembrandt, which has a diameter of 715 km (440 miles). The number
+L1016: of impact craters superposed on Rembrandt’s rim indicates that it is one of the youngest basins on Mercury. The floor
+L1017: of Rembrandt appears to be filled with volcanic material, which is overprinted with a system of wrinkle-ridges and
+L1018: troughs in radial or concentric shapes, lending the basin an unusual “wheel and spoke” appearance. The troughs bear a
+L1019: similarity to the extensional troughs of Pantheon Fossae, imaged near the center of Caloris basin. From an examination
+L1020: of relationships among the different features within Rembrandt, the relative timing of volcanism, deformation, and
+L1021: cratering within this basin is being revealed.
+L1022: This figure shows a 400-kilometer-long
+L1023: (250-mile-long) section of the MLA
+L1024: topographic profile from MESSENGER’s second
+L1025: Mercury flyby superposed on a high-resolution
+L1026: NAC departure mosaic acquired during the
+L1027: same encounter. The blue dots indicate the
+L1028: spacecraft ground track, and the yellow dots
+L1029: show the altimetry data points; the blue arrow
+L1030: shows the spacecraft’s direction of travel. Near
+L1031: the center of this profile, the MLA track crosses
+L1032: two craters of comparable sizes but different
+L1033: depths. The deeper crater in the center of the
+L1034: track is Machaut crater, and the unnamed
+L1035: crater to Machaut’s east is considerably
+L1036: shallower and has probably been filled by volcanic material. By making such measurements systematically over the surface, it
+L1037: will be possible to measure the volumes of volcanic material erupted over Mercury’s history.
+L1038: NAC mosaic of the newly discovered Rembrandt impact basin (left) with a diameter of ~715 kilometers (444 miles),
+L1039: slightly less than half the diameter of the Caloris basin. To put the size of Mercury’s Rembrandt basin into a familiar
+L1040: context, a NAC mosaic of the basin is overlaid on an Advanced Very High Resolution Radiometer image of the east
+L1041: coast of the United States (right). Such a feature, if formed at this location on Earth, would encompass the cities of
+L1042: Washington, D.C., and Boston, Massachusetts, and everything in between. The basin contains an unusual pattern
+L1043: of troughs and ridges in its center and appears to be one of the youngest impact basins on Mercury.
+L1044: 
+L1045: Mercury’s unique history — Global fault scarps
+L1046: Images from Mariner 10 showed many long and high scarps (cliffs) on Mercury’s surface, suggesting that its history
+L1047: is unlike that of any other planet in the Solar System. These giant scarps are believed to be the surface expressions
+L1048: of great faults that formed as Mercury’s interior cooled and the entire planet shrank slightly as a result. Images from
+L1049: MESSENGER’s flybys have
+L1050: revealed many new examples of
+L1051: scarps that extend for hundreds
+L1052: of kilometers. MESSENGER
+L1053: images show that scarps are
+L1054: widespread across the surface of
+L1055: the planet. The different lighting
+L1056: conditions allowed MESSENGER
+L1057: to discover scarps not previously
+L1058: identified on parts of Mercury’s
+L1059: surface seen by Mariner 10,
+L1060: meaning that the Mariner 10
+L1061: estimate for the amount of
+L1062: global contraction is too low.
+L1063: Additionally, the MESSENGER
+L1064: images show promise for
+L1065: constraining the timing of global
+L1066: contraction by using relationships
+L1067: observed between the
+L1068: embayment of surface features
+L1069: and the formation of the scarps.
+L1070: Timing information will be very
+L1071: valuable for modeling Mercury’s
+L1072: interior thermal evolution.
+L1073: Mercury’s global magnetic field
+L1074: The MESSENGER spacecraft made magnetic field measurements that provided more constraints on the internal field
+L1075: while also revealing more of the dynamics produced by its interplay with the magnetic field of the Sun. MESSENGER’s
+L1076: full suite of particle and fields instruments was used during the mission’s three flybys and has provided new science
+L1077: contributions and insights. Mercury’s magnetosphere displayed many phenomena reminiscent of Earth’s own
+L1078: magnetosphere, but with new twists owing to the small size of Mercury’s system relative to our own.
+L1079: Extending from the left edge of this image diagonally toward the lower right corner is a
+L1080: long scarp face. This scarp runs through a large ancient crater in the center of the frame
+L1081: and was seen for the first time during MESSENGER’s second Mercury flyby. Scarps such
+L1082: as this one have been identified over nearly the entire surface of the planet. These giant
+L1083: scarps are believed to be the surface expressions of great faults that formed as Mercury’s
+L1084: interior cooled and the entire planet contracted slightly as a result, causing the surface
+L1085: rocks to fracture and some blocks of crust to thrust over others.
+L1086: MESSENGER Magnetometer observations for
+L1087: January 14, 2008, and October 6, 2008. This figure
+L1088: graphs the magnetic field strength measured during
+L1089: MESSENGER’s first (blue) and second (orange) Mercury
+L1090: flybys; the maximum field strengths measured
+L1091: during the two encounters were very similar. The
+L1092: observations are displayed versus distance along the
+L1093: planet-Sun line; closest approach occurred at about
+L1094: three-fourths of a Mercury radius above the night side
+L1095: of the planet.
+L1096: 
+L1097: The probe was within Mercury’s magnetosphere, the volume of space within which the magnetic field is dominated
+L1098: by that of the planet, for about 30 minutes during each flyby. The second Mercury flyby provided the only data to date
+L1099: from the planet’s western hemisphere, and those data are therefore key to constraining the geometry of the planet’s
+L1100: internal magnetic field. Magnetic field measurements showed that the planet’s field is that of a magnetic dipole, similar
+L1101: in strength and direction to that measured by Mariner 10 over three decades earlier. The planetary magnetic moment
+L1102: is very nearly centered within the planet and is strongly aligned with the rotation axis, to within a tilt of 2°. The dipole
+L1103: nature of the field favors an active dynamo in Mercury’s molten outer core as the source of the field.
+L1104: Solar wind control of Mercury’s magnetosphere
+L1105: The Sun has been relatively quiet during and between MESSENGER’s three transits of Mercury’s magnetosphere,
+L1106: and the maximum measured strength of Mercury’s internal magnetic field was comparable during each of the flybys.
+L1107: Nonetheless, magnetospheric activity varied greatly from
+L1108: one flyby to the next as a result of small differences in
+L1109: the interplanetary magnetic field (IMF). The north-south
+L1110: component of the field outside the magnetosphere, in the
+L1111: solar wind, was northward for flyby 1, southward for flyby
+L1112: 2, and varied from northward to southward and back during
+L1113: flyby 3. The northward IMF during the first flyby produced
+L1114: a very quiet magnetosphere, and MESSENGER measured
+L1115: steady magnetic fields and registered the presence of only
+L1116: very-low-energy charged particles.
+L1117: The second flyby’s southward IMF resulted in a
+L1118: magnetosphere whose outer boundary was highly porous to
+L1119: solar wind charged particles as a consequence of magnetic
+L1120: reconnection between interplanetary and planetary
+L1121: magnetic fields. Huge bundles of twisted magnetic flux,
+L1122: somewhat resembling flux bundles ejected from the Sun
+L1123: in coronal mass ejections following solar flares, were
+L1124: observed to emanate from Mercury’s magnetosphere. This
+L1125: dynamic interaction creates magnetic linkage over the polar
+L1126: regions of the planet and provides “open windows” for
+L1127: the entry of solar wind charged particles. Once inside the
+L1128: magnetosphere, these charged particles impact the surface
+L1129: of Mercury where they give up their energy to atoms,
+L1130: such as sodium, which are ejected to resupply the planet’s
+L1131: atmosphere.
+L1132: The most extreme magnetospheric conditions were
+L1133: observed in response to the variable north–south
+L1134: component of the IMF observed during the third and
+L1135: final flyby. MESSENGER documented the rapid buildup
+L1136: of magnetic energy in Mercury’s magnetic tail followed
+L1137: by its rapid release in magnetic “substorms.” Although
+L1138: qualitatively similar to magnetospheric substorms at Earth,
+L1139: these events at Mercury were much faster, lasting only a few
+L1140: minutes rather than the few hours at Earth, and the relative
+L1141: effect on the configuration and intensity of Mercury’s
+L1142: magnetic field was at least a factor of 10 greater than seen
+L1143: at Earth.
+L1144: The top figure shows the angle that the magnetic field
+L1145: made with the northward direction for the outbound
+L1146: passes through the magnetopause and bow shock for
+L1147: the mission’s first (blue) and second (orange) Mercury
+L1148: flybys. The bottom figure illustrates the profound
+L1149: difference in magnetic connection between Mercury and
+L1150: the solar wind when the magnetic field in the solar wind
+L1151: is southward (left) as for flyby 2 versus northward (right)
+L1152: as for flyby 1. These views from the Sun show a notional
+L1153: cross section of the magnetic lines of force in the dawndusk meridian plane.
+L1154: 
+L1155: Taken together, the magnetospheric measurements from the three MESSENGER flybys indicate that Mercury’s
+L1156: magnetosphere responds more strongly to the direction of the IMF than that of any other planet with an internal
+L1157: magnetic field. MESSENGER measurements collected from orbit will be necessary to resolve the question of why
+L1158: Mercury’s magnetic fields are so dynamic.
+L1159: MESSENGER also made the first measurements of the planetary ions that interact with Mercury’s magnetosphere,
+L1160: revealing a remarkable richness in the species present and providing information about the complex interaction of
+L1161: the plasma, solar wind, and surface. In addition to the solar wind protons that make up the bulk of the solar wind,
+L1162: MESSENGER’s Fast Imaging Plasma Spectrometer discovered that Mercury’s magnetosphere is host to a wide variety
+L1163: of heavy ions. This richness of ion species links to material driven off the surface, providing another opportunity for
+L1164: deducing, albeit indirectly, Mercury’s surface composition.
+L1165: Mercury’s exosphere as never seen before…
+L1166: Mercury’s exosphere — an atmosphere so tenuous that particles are more likely to hit the surface than to collide
+L1167: with each other — was discovered during the Mariner 10 flybys. Ground-based telescopic observations over the past
+L1168: 25 years have added to our knowledge and shown that Mercury also has an extended exospheric tail, a result of solar
+L1169: radiation pressure effects (basically sunlight pushing exospheric atoms in the antisunward direction). But these groundbased observations are both difficult to make and limited by the Earth’s atmosphere. With the Mercury Atmospheric and
+L1170: Surface Composition Spectrometer (MASCS) on MESSENGER, however, Mercury’s exosphere has been observed with
+L1171: unprecedented wavelength coverage and spatial resolution.
+L1172: During the three flybys, the Ultraviolet and Visible Spectrometer (UVVS) channel of MASCS obtained the most
+L1173: detailed measurements of the exosphere and tail ever made, yielding “maps” of emission from several species present in
+L1174: the exosphere, including sodium, calcium, and magnesium. Although both sodium and calcium in Mercury’s exosphere
+L1175: had previously been observed with ground-based telescopes on Earth, the flybys were the first time that measurements
+L1176: of the two species were obtained simultaneously. Observations of magnesium were a first for MESSENGER because
+L1177: the emission from magnesium atoms occurs at ultraviolet wavelengths and is therefore blocked from ground-based
+L1178: observation by Earth’s atmosphere.
+L1179: Atoms in Mercury’s exosphere that are heavier than hydrogen and helium predominantly originate from the surface
+L1180: of Mercury. The detection of magnesium in the exosphere thus provided evidence that magnesium is an important
+L1181: component of surface material, something that had long been expected but never proven. A number of processes
+L1182: contribute to the release of exospheric species from the surface, and differences in their distributions in both time and
+L1183: space provide insight into the relative importance of the processes that generate and maintain the exosphere. The
+L1184: observed spatial distributions for all three species differ from one another, indicating that the source and loss processes
+L1185: controlling the distributions affect each species in distinct ways or that there are other, currently unknown, processes
+L1186: that play a role.
+L1187: 
+L1188: Schematic summary of the processes that generate and maintain the exosphere of Mercury.
+L1189: Processes at Work in Mercury’s Exosphere
+L1190: Atoms released with
+L1191: low energy generally
+L1192: return to the surface
+L1193: Atoms released with
+L1194: higher energy can make
+L1195: it to higher altitudes These more energetic atoms
+L1196: are airborne long enough
+L1197: to be aﬀected by solar
+L1198: radiation pressure
+L1199: Diﬀerent atoms are accelerated
+L1200: in the anti-sunward direction
+L1201: to varying degrees; those
+L1202: most strongly accelerated
+L1203: can form an extended tail
+L1204: Some atoms will be
+L1205: photoionized and be removed
+L1206: via the magnetic /f_ield
+L1207: Atom Trajectories
+L1208: Source Processes
+L1209: Photon-Stimulated
+L1210: Desorption and
+L1211: Thermal Evaporation
+L1212: Low-Energy
+L1213: Processes
+L1214: Meteoroid
+L1215: Vaporization
+L1216: Ion Sputtering
+L1217: +++
+L1218: High-Energy
+L1219: Processes
+L1220: Sun
+L1221: 
+L1222: The histograms in the upper part of this figure represent typical observations of emission in Mercury’s
+L1223: exosphere from magnesium (left), calcium (center), and sodium (right) atoms. Known as “spectral
+L1224: lines,” these emissions have been scaled to approximately the same peak level for ease of comparison;
+L1225: however, the sodium emission is much brighter than that of either magnesium or calcium. Each
+L1226: emission occurs at a characteristic wavelength. Sodium (which is actually two lines known as D1
+L1227: and D2) and calcium are in the visible portion of the spectrum, at approximately yellow and blue
+L1228: wavelengths, respectively, whereas magnesium falls in the ultraviolet portion of the spectrum that
+L1229: cannot be observed by ground-based telescopes because of blockage by Earth’s atmosphere. The three
+L1230: panels in the lower part of the figure show the spatial distributions of emission in the polar and tail
+L1231: regions of Mercury from these three elements during MESSENGER’s third flyby. In these panels, the
+L1232: rainbow color scale represents brightness rather than wavelength. Individual rectangles indicate the
+L1233: relative brightness of each measurement and the region over which the measurement was made. The
+L1234: sodium emission shows strong peaks over the polar regions with a rapid fall-off in the tail region. In
+L1235: contrast, the calcium emission shows a more gradual fall-off toward the tail but relatively more emission
+L1236: concentrated near the equatorial regions. The magnesium emission is different from either of the other
+L1237: two in that it appears to have a less rapid fall-off than sodium between the polar and tail regions but
+L1238: lacks the equatorial concentration within the tail region of calcium. These differences indicate that the
+L1239: processes controlling these exospheric distributions act on each species in distinct ways.
+L1240: ultraviolet
+L1241: Instrument Counts
+L1242: Calcium
+L1243: Wavelength
+L1244: Magnesium
+L1245: Wavelength
+L1246: Sodium
+L1247: Wavelength
+L1248: D2 D1
+L1249: Simultaneous Observations of Multiple Species
+L1250: Calcium
+L1251: ~12,000 miles
+L1252:  ~12,000 miles
+L1253: SodiumMagnesium
+L1254: ~12,000 miles
+L1255: 
+L1256: … complete with “seasonal” variations …
+L1257: The emissions observed by the UVVS are primarily solar resonance lines, so-called because the atoms in Mercury’s
+L1258: exosphere absorb sunlight at specific wavelengths and then re-radiate a fraction of that light back at the same
+L1259: wavelengths. However, the elements in Mercury’s exosphere are also present in the Sun, where they absorb light at these
+L1260: same resonance wavelengths and create dark lines in the solar spectrum known as Fraunhofer lines. When Mercury is
+L1261: farthest or closest to the Sun in its orbit (aphelion and perihelion, respectively), the planet’s radial velocity with respect
+L1262: to the Sun is zero, causing the resonance wavelengths of the atoms to match up with the Fraunhofer lines in the solar
+L1263: spectrum, and there is relatively little sunlight for the atoms to absorb and re-emit. For a similar reason, the effects of
+L1264: solar radiation pressure are also at a minimum, so there are very few atoms being accelerated into the tail region at
+L1265: these same points in Mercury’s orbit. But Mercury’s orbit is elliptical, and when Mercury — along with its surrounding
+L1266: exospheric atoms — is accelerating away from or toward the Sun, the heliocentric radial velocity is non-zero and leads
+L1267: to a small Doppler shift of sunlight that is just enough to move the atoms’ resonance wavelengths away from the center
+L1268: of the deep Fraunhofer lines, providing much more sunlight for the atoms to absorb and re-emit while at the same time
+L1269: leading to a larger solar radiation pressure that pushes an increased number of atoms into the tail region.
+L1270: Although these changes in the exosphere with Mercury’s orbital position were not unexpected, the MESSENGER
+L1271: flybys provided strong evidence for such effects. During the first and second flybys, the sodium tail was both extended
+L1272: and bright because the flybys occurred near points in Mercury’s orbit where the Doppler shift was close to the maximum
+L1273: and the radiation pressure was high. However, the third flyby occurred at a point where the Doppler shift — and
+L1274: therefore the radiation pressure — was small; thus, the tail was effectively “missing,” with the emission down by a
+L1275: factor of 10-20 at the same downtail distance compared with the first two flybys. Because radiation pressure affects
+L1276: different atoms to different degrees (e.g., sodium strongly, calcium weakly, magnesium insignificantly), the sodium
+L1277: tail shows more variation with orbital position than those for other species. The changes in the observed emission as
+L1278: Mercury orbits the Sun thus reflect “seasonal-style” variations in Mercury’s exosphere and demonstrate why Mercury’s
+L1279: exosphere is perhaps the most dynamic in the solar system. Studying the changes of the “seasons” for a range of
+L1280: species during MESSENGER’s orbital mission phase will be vital to quantifying the processes at work in Mercury’s
+L1281: exosphere and understanding the transport of volatile material within Mercury’s environment.
+L1282: This figure illustrates the “seasonal” variation in Mercury’s neutral sodium tail. The sodium tail at the time of the second
+L1283: flyby was well developed whereas the tail was effectively “missing” during the third flyby. Stretching the scale on the third
+L1284: flyby shows that there is sodium in the region, but both the brightness and the number of atoms were significantly less
+L1285: than in the second flyby (by a factor of as much as 10-20 at the same downtail distance). This strong effect on the sodium
+L1286: tail is related to variations in solar radiation pressure along Mercury’s orbit. The second flyby occurred close to the point of
+L1287: maximum radiation pressure, whereas the third flyby occurred close to the point of minimum radiation pressure.
+L1288: N
+L1289: S
+L1290: Second Flyby
+L1291: N
+L1292: S
+L1293: N
+L1294: S
+L1295: Third Flyby
+L1296: Third /f_lyby scale
+L1297: stretched 5X
+L1298: points of lowest
+L1299: radiation pressure=
+L1300: points of highest
+L1301: radiation pressure=
+L1302: “Seasonal” Variations in the Exosphere
+L1303: Same scale
+L1304: 
+L1305: … and a few surprises
+L1306: Whereas the “seasonal” changes in the exosphere observed by MESSENGER were expected, there were a number of
+L1307: discoveries during the flybys that were complete surprises.
+L1308: During each flyby, a spacecraft roll was executed as MESSENGER entered Mercury’s shadow. This roll rotated the
+L1309: look direction of the UVVS field of view about the Sun-Mercury line, carrying it from dawn through north to dusk in
+L1310: the first two flybys and from south through dawn to just past north in the third flyby. In all three flybys, an equatorial
+L1311: enhancement in the calcium distribution was seen in the dawn direction. This enhancement remains a mystery, not
+L1312: just in terms of how it originates but also in its persistence across all three flybys. Despite differences in the space
+L1313: environment among flybys that should have affected the source processes for calcium as they are currently understood,
+L1314: this feature of the calcium distribution remained relatively unchanged in both location and intensity.
+L1315: Other surprises came from the third flyby, which presented a special opportunity to observe the exosphere over the
+L1316: polar regions. Altitude profiles of sodium, calcium, and magnesium were obtained over both the north and south poles.
+L1317: Although it had been inferred from ground-based observations that sodium is released from the surface by both lowand high-energy processes, the clear two-component nature of the observed altitude profiles for sodium were the first
+L1318: direct evidence that this is indeed the case. But more surprising were the profiles for magnesium. A distinctly different
+L1319: profile was observed in the north compared to the south, and the structure in the northern profile cannot be fit with
+L1320: the normal models applied to Mercury’s exosphere. This difference is even more startling when one considers the fact
+L1321: that the calcium profiles show no such north-south difference. Both calcium and magnesium are refractory elements
+L1322: and as such are expected to derive from similar processes in approximately the same manner. This is clearly not the case
+L1323: over the north pole, and given the lack of an equatorial dawn enhancement in magnesium, the assumption that calcium
+L1324: and magnesium will behave similarly is one that must be abandoned in favor of new ideas about the effect of several
+L1325: contributory processes.
+L1326: Perhaps the biggest surprise during the flybys, though, was the distribution of emission from ionized calcium. The
+L1327: observation itself was the first observation of emission from an ionized species in Mercury’s exosphere. The ionized
+L1328: calcium was observed to be concentrated close to equatorial plane in a narrow region 1–2 planetary radii tailward of
+L1329: the planet. This distribution is inconsistent with local conversion of neutral calcium to ionized calcium, because there
+L1330: is simply too much ionized calcium. Instead, the ionized calcium must be concentrated in that region by interaction
+L1331: of the calcium ions with Mercury’s magnetosphere. The most likely explanation is that ions created on the dayside of
+L1332: the planet, where there should be an abundance of photoions (ions created by sunlight hitting the neutral calcium
+L1333: atoms), have been transported around Mercury to the tail region and concentrated by magnetospheric forces. The
+L1334: magnetosphere was particularly active during the third flyby, so it remains to be seen whether this concentration was
+L1335: specific to the conditions of the third flyby or will be observed during the orbital phase to be a regular phenomenon.
+L1336: But one thing is clear: there is a greater degree of interaction between the exosphere and the magnetosphere than
+L1337: previously suspected.
+L1338: 
+L1339: Mercury: An old world seen in new light
+L1340: The three flybys of Mercury by MESSENGER in 2008 and 2009 produced more than 3,700 images (1,213 during flyby
+L1341: 1, 1,287 during flyby 2, and 1,214 during flyby 3), more than 8,000 MLA range measurements (3,617 during flyby 1 and
+L1342: 4,388 during flyby 2) for a profile length of 6,000 km on the surface, 20,000 UVVS spectra of the exosphere, 1,100 VIRS
+L1343: spectra of the surface, and a host of other Magnetometer, GRNS, EPPS, XRS, and radio science data. With MESSENGER
+L1344: already rewriting the textbooks on the innermost planet of the Solar System, a great deal more is to come with the
+L1345: orbital phase of the mission.
+L1346: The sixth and last planetary flyby of MESSENGER (including one of Earth, two of Venus, and three of Mercury) was
+L1347: crucial for lining up the trajectory of MESSENGER for orbit insertion. Each Mercury flyby has extracted about 2 km/s
+L1348: of speed from MESSENGER as it rapidly circles the Sun to reach near-synchronicity with Mercury’s own trajectory. Only
+L1349: by matching speeds sufficiently closely by means of these flybys is MESSENGER’s own propulsion system capable of
+L1350: completing the final braking maneuver into orbit in March 2011.
+L1351: Several surprising variations in the concentrations of different species in Mercury’s exosphere
+L1352: were documented during the MESSENGER flybys. The leftmost panel compares the
+L1353: magnesium altitude profiles over the north and south poles to a model fit to the south-pole
+L1354: profile. A shifted model fails to fit the north-pole profile, and the mismatch indicates that
+L1355: a second, unknown process is at play at one of the two poles. The center panel compares
+L1356: calcium distributions observed during the spacecraft rolls when the spacecraft was in
+L1357: Mercury’s shadow, highlighting the persistent enhancement of calcium at equatorial dawn.
+L1358: The rightmost panel is an “image” generated from the observations of ionized calcium in
+L1359: Mercury’s antisunward tail. The concentration of the emission over a relatively small region
+L1360: is evidence of a high degree of interaction between the exosphere and magnetosphere.
+L1361: Radiance
+L1362: Dusk North Dawn South
+L1363: Look Direction
+L1364: Calcium
+L1365: Flyby 1
+L1366: Flyby 3
+L1367: Flyby 2
+L1368: Roll observations
+L1369: revealed a persistent
+L1370: equatorial dawn
+L1371: enhancement in the
+L1372: calcium distribution
+L1373: tailward of Mercury
+L1374: Altitude scan pro/f_iles
+L1375: showed markedly diﬀerent
+L1376: magnesium distributions
+L1377: over the polar regions
+L1378: Tail scan observations
+L1379: led to discovery of emission
+L1380: from ionized calcium and
+L1381: found a surprisingly
+L1382: concentrated distribution
+L1383: tailward of the planet
+L1384: Spacecraft
+L1385: roll about
+L1386: anti-Sun line
+L1387: Ionized Calcium
+L1388: Concentrated
+L1389: region
+L1390: Unexpected and Complex Spatial Distributions
+L1391: Altitude
+L1392: Radiance
+L1393: Magnesium
+L1394: South Pole
+L1395: North Pole
+L1396: South Pole Model
+L1397: Shifted
+L1398: Model
+L1399: 
+L1400: The Spacecraft
+L1401: After Mariner 10’s visits to Mercury, the space science and engineering communities yearned for a longer and
+L1402: more detailed look at the innermost planet — but that closer look, ideally from orbit, presented formidable technical
+L1403: obstacles. A Mercury orbiter would have to be tough, with enough protection to withstand searing sunlight and roasting
+L1404: heat bouncing back from the planet below. The spacecraft would need to be lightweight, since most of its mass would
+L1405: be fuel to fire its rockets to slow the spacecraft down enough to be captured by Mercury’s gravity. And the probe would
+L1406: have to be sufficiently compact to be launched on a conventional and cost-effective rocket.
+L1407: Designed and built by the Johns Hopkins University Applied Physics Laboratory (APL) — with contributions from
+L1408: research institutions and companies around the world — the MESSENGER spacecraft tackles each of these challenges.
+L1409: A ceramic-fabric sunshade, heat radiators, and a mission design that limits time over the planet’s hottest regions protect
+L1410: MESSENGER without expensive and impractical cooling systems. The spacecraft’s graphite composite structure — strong,
+L1411: lightweight, and heat tolerant — is integrated with a low-mass propulsion system that efficiently stores and distributes
+L1412: the approximately 600 kg of propellant that accounts for 54% of the total launch weight.
+L1413: To fit behind the 2.5-m by 2-m sunshade, the wiring, electronics, systems, and instruments are packed into a small
+L1414: frame that could fit inside a large sport utility vehicle. And the entire spacecraft is light enough to launch on a Delta II
+L1415: 7925H-9.5 (“heavy”) rocket, the largest launch vehicle allowed under NASA’s Discovery Program of lower-cost space
+L1416: science missions. MESSENGER spacecraft during integration and testing. The sunshade is visible on the left with the
+L1417: spacecraft undergoing testing in thermal-vacuum conditions at NASA’s Goddard Space Flight Center. On
+L1418: the right, the solar panels and Magnetometer boom are in their position for flight during work at APL.
+L1419: 
+L1420: Science payload
+L1421: MESSENGER carries seven scientific instruments and a radio science experiment to accomplish an ambitious objective:
+L1422: return the first data from Mercury orbit. The miniaturized payload — designed to work in the extreme environment
+L1423: near the Sun — will image the entire surface of Mercury, as well as gather data on the composition and structure of
+L1424: Mercury’s crust, its geologic history, the nature of its active magnetosphere and thin atmosphere, and the makeup of its
+L1425: core and the materials near its poles.
+L1426: The instruments include the Mercury Dual Imaging System (MDIS), the Gamma-Ray and Neutron Spectrometer
+L1427: (GRNS), the X-Ray Spectrometer (XRS), the Magnetometer (MAG), the Mercury Laser Altimeter (MLA), the Mercury
+L1428: Atmospheric and Surface Composition Spectrometer (MASCS), and the Energetic Particle and Plasma Spectrometer
+L1429: (EPPS). The instruments communicate to the spacecraft through fully redundant Data Processing Units (DPUs).
+L1430: The process of selecting the scientific instrumentation for a mission is typically a balance between answering as
+L1431: many science questions as possible and fitting within the available mission resources for mass, power, mechanical
+L1432: accommodation, schedule, and cost. In the case of MESSENGER, the mass and mechanical accommodation issues were
+L1433: very significant constraints. Payload mass was limited to 50 kg because of the propellant mass needed for orbit insertion.
+L1434: The instrument mechanical accommodation was difficult because of the unique thermal constraints faced during the
+L1435: mission; instruments had to be mounted where Mercury would be in view but the Sun would not, and they had to be
+L1436: maintained within an acceptable temperature range in a very harsh environment. Instrument details follow. In each case
+L1437: Spacecraft Instruments
+L1438: 
+L1439: the mass includes mounting hardware and thermal control components, and the power is the nominal average power
+L1440: consumption per orbit; actual values vary with instrument operational mode.
+L1441: Mercury Dual Imaging System
+L1442: Mass: 8.0 kg
+L1443: Power: 7.6 W
+L1444: Development: The Johns Hopkins University Applied Physics Laboratory
+L1445: The multi-spectral MDIS has wide- and narrow-angle cameras (the “WAC” and
+L1446: “NAC,” respectively) — both based on charge-coupled devices (CCDs) similar to those
+L1447: found in digital cameras — to map the rugged landforms and spectral variations on
+L1448: Mercury’s surface in monochrome, color, and stereo. The imager pivots, giving it the
+L1449: ability to capture images from a wide area without having to re-point the spacecraft.
+L1450: The wide-angle camera has a 10.5° by 10.5° field of view and can observe Mercury
+L1451: through 11 different filters and monochrome across the wavelength range 395 to 1,040
+L1452: nm (visible through near-infrared light). Multi-spectral imaging will help scientists investigate the diversity of rock types
+L1453: that form Mercury’s surface. The narrow-angle camera can take black-and-white images at high resolution through its
+L1454: 1.5° by 1.5° field of view, allowing extremely detailed analysis of features as small as 18 m across.
+L1455: Gamma-Ray and Neutron Spectrometer
+L1456: GRNS packages separate gamma-ray and neutron
+L1457: spectrometers to collect complementary data on
+L1458: elements that form Mercury’s crust.
+L1459: Gamma-Ray Spectrometer
+L1460: Mass: 9.2 kg
+L1461: Power: 16.5 W
+L1462: Development: The Johns Hopkins University Applied
+L1463: Physics Laboratory, Patriot Engineering, Lawrence
+L1464: Berkeley National Laboratory, Lawrence Livermore
+L1465: National Laboratory
+L1466: GRS measures gamma rays emitted by the nuclei of atoms on Mercury’s
+L1467: surface that are struck by cosmic rays. Each element has a signature emission,
+L1468: and the instrument will look for geologically important elements such as
+L1469: hydrogen, magnesium, silicon, oxygen, iron, titanium, sodium, and calcium. It
+L1470: may also detect naturally radioactive elements such as potassium, thorium, and
+L1471: uranium.
+L1472: Neutron Spectrometer
+L1473: Mass: 3.9 kg
+L1474: Power: 6.0 W
+L1475: Development: The Johns Hopkins University Applied
+L1476: Physics Laboratory, Patriot Engineering, Los Alamos
+L1477: National Laboratory
+L1478: NS maps variations in the fast, thermal, and epithermal neutrons that
+L1479: Mercury’s surface emits when struck by cosmic rays. “Fast” neutrons shoot
+L1480: directly into space; others collide with neighboring atoms in the crust before
+L1481: escaping. If a neutron collides with a light atom (like hydrogen), it will lose energy
+L1482: and be detected as a slow (or thermal) neutron. Scientists can look at the ratio of
+L1483: Hot Space, Cool
+L1484: Instrument
+L1485: To help it measure surface
+L1486: gamma rays from long
+L1487: distances, MESSENGER
+L1488: uses the most sensitive
+L1489: detector available — a
+L1490: high-purity germanium
+L1491: semiconductor crystal.
+L1492: But while MESSENGER
+L1493: moves through one of the
+L1494: Solar System’s hottest
+L1495: environments, the crystal
+L1496: must operate at cryogenic
+L1497: temperatures. Instrument
+L1498: designers addressed this
+L1499: challenge by suspending
+L1500: the detector on thin Kevlar
+L1501: strings inside a high-tech
+L1502: thermos bottle, with a small,
+L1503: powerful refrigerator (called
+L1504: a cryocooler) that keeps
+L1505: temperatures at a frosty
+L1506: —183° C, or about —300° F.
+L1507: 
+L1508: thermal to epithermal (slightly faster) neutrons across Mercury’s surface to estimate the amount of hydrogen — possibly
+L1509: locked up in water molecules — and other elements.
+L1510: X-ray Spectrometer
+L1511: Mass: 3.4 kg
+L1512: Power: 6.9 W
+L1513: Development: The Johns Hopkins University Applied Physics Laboratory
+L1514: XRS maps the elements in the top millimeter of Mercury’s crust using three gasfilled detectors (MXU) pointing at the planet, one silicon solid-state detector pointing
+L1515: at the Sun (SAX), and the associated electronics (MEX). The planet-pointing detectors
+L1516: measure fluorescence, the X-ray emissions coming from Mercury’s surface after solar
+L1517: X-rays hit the planet. The Sun-pointing detector tracks the X-rays bombarding the
+L1518: planet.
+L1519: XRS detects emissions from elements in the 1–10 keV range — specifically,
+L1520: magnesium, aluminum, silicon, sulfur, calcium, titanium, and iron. Two detectors have
+L1521: thin absorption filters that help distinguish among the lower-energy X-ray lines of
+L1522: magnesium, aluminum, and silicon.
+L1523: Beryllium-copper honeycomb collimators give XRS a 12° field of view, which is narrow enough to eliminate X-rays
+L1524: from the star background even when MESSENGER is at its farthest orbital distance from Mercury. The small, thermally
+L1525: protected, solar-flux monitor is mounted on MESSENGER’s sunshade.
+L1526: Magnetometer
+L1527: Mass (including boom): 4.4 kg
+L1528: Power: 4.2 W
+L1529: Development: NASA Goddard Space Flight Center and the Johns Hopkins University Applied Physics Laboratory
+L1530: A three-axis, ring-core fluxgate detector, MAG characterizes Mercury’s magnetic field
+L1531: in detail, helping scientists determine the field’s precise strength and how it varies with
+L1532: position and altitude. Obtaining this information is a critical step toward determining the
+L1533: source of Mercury’s magnetic field.
+L1534: The MAG sensor is mounted on a 3.6-m-long boom that keeps it away from the
+L1535: spacecraft’s own magnetic field. The sensor also has its own sunshade to protect it from
+L1536: the Sun when the spacecraft is tilted to allow for viewing by the other instruments. While
+L1537: in orbit at Mercury the instrument will collect magnetic field samples at 50-ms to 1-s
+L1538: intervals; the rapid sampling will take place near Mercury’s magnetospheric boundaries.
+L1539: 
+L1540: Mercury Laser Altimeter
+L1541: Mass: 7.4 kg
+L1542: Peak Power: 16.4 W
+L1543: Development: NASA Goddard Space Flight Center
+L1544: MLA maps Mercury’s landforms and other surface characteristics using an infrared laser
+L1545: transmitter and a receiver that measures the round-trip time of individual laser pulses. The
+L1546: data will also be used to track the planet’s slight, forced libration — a wobble about its spin
+L1547: axis — which will tell researchers about the state of Mercury’s core.
+L1548: MLA data combined with Radio Science Doppler tracking and ranging will be used to map
+L1549: the planet’s gravitational field. MLA can view the planet from up to 1,500 km away with an
+L1550: accuracy of 30 cm. The laser’s transmitter, operating at a wavelength of 1,064 nm, will deliver
+L1551: eight pulses per second. The receiver consists of four sapphire lenses mounted on beryllium
+L1552: structures, a photon-counting detector, a time-interval unit, and processing electronics.
+L1553: Mercury Atmospheric and Surface Composition Spectrometer
+L1554: Mass: 3.1 kg
+L1555: Peak Power: 6.7 W
+L1556: Development: Laboratory for Atmospheric and Space Physics, University of Colorado, Boulder
+L1557: Combining an ultraviolet spectrometer and infrared spectrograph, MASCS will measure the
+L1558: abundance of atmospheric gases around Mercury and detect minerals in its surface materials.
+L1559: The Ultraviolet and Visible Spectrometer (UVVS) will determine the composition and
+L1560: structure of Mercury’s exosphere — the extremely low-density atmosphere — and study its
+L1561: neutral gas emission lines. It will also search for and measure ionized atmospheric species.
+L1562: Together these measurements will help researchers understand the processes that generate
+L1563: and maintain the atmosphere, the connection between surface and atmospheric composition,
+L1564: the dynamics of volatile materials on and near Mercury, and the nature of the radar-reflective
+L1565: materials near the planet’s poles. The instrument has 25-km resolution at the planet’s limb.
+L1566: Perched atop the ultraviolet spectrometer, the Visible and Infrared Spectrograph (VIRS) will
+L1567: measure the reflected visible and near-infrared light at wavelengths diagnostic of iron- and
+L1568: titanium-bearing silicate materials on the surface, such as pyroxene, olivine, and ilmenite. The sensor’s best resolution of
+L1569: Mercury’ s	surface	is	3 km.
+L1570: Energetic Particle and Plasma Spectrometer
+L1571: Mass: 3.1 kg
+L1572: Peak Power: 7.8 W
+L1573: Development: The Johns Hopkins University Applied Physics Laboratory and University of Michigan, Ann Arbor
+L1574: EPPS will measure the mix and characteristics of charged particles
+L1575: in and around Mercury’s magnetosphere using an Energetic Particle
+L1576: Spectrometer (EPS) and a Fast Imaging Plasma Spectrometer (FIPS).
+L1577: The unit is equipped with time-of-flight and energy-measurement
+L1578: technology to determine simultaneously particle velocities and
+L1579: elemental species.
+L1580: From its vantage point near the top deck of the spacecraft, EPS will
+L1581: observe ions and electrons accelerated in the magnetosphere. EPS has a
+L1582: 160° by 12° field of view for measuring the energy spectra and pitch-
+L1583: EPS (left) and FIPS
+L1584: (right)
+L1585: 
+L1586: angle distribution of these ions and electrons. Mounted on the side of the spacecraft, FIPS will observe low-energy ions
+L1587: coming from Mercury’s surface and sparse atmosphere, ionized atoms picked up by the solar wind, and other solar-wind
+L1588: components. FIPS provides nearly full hemispheric coverage.
+L1589: Radio Science Experiment
+L1590: Radio Science observations — gathered by tracking the spacecraft through its communications system — will
+L1591: precisely measure MESSENGER’s speed and distance from Earth. From this information, scientists and engineers will
+L1592: watch for changes in MESSENGER’s movements at Mercury to measure the planet’s gravity field, and to support the laser
+L1593: altimeter investigation to determine the size and condition of Mercury’s core. NASA’s Goddard Space Flight Center leads
+L1594: the Radio Science investigation.
+L1595: Spacecraft systems and components
+L1596: Thermal Design
+L1597: While orbiting Mercury, MESSENGER will “feel” significantly hotter than spacecraft that orbit Earth. This is because
+L1598: Mercury’s elongated orbit swings the planet to within 46 million km of the Sun, or about two-thirds closer to the Sun
+L1599: than Earth. As a result, the Sun shines up to 11 times brighter at Mercury than we see from our own planet.
+L1600: MESSENGER’s first line of thermal defense is a heat-resistant and highly reflective sunshade, fixed on a titanium frame
+L1601: to the front of the spacecraft. Measuring about 2.5 m tall and 2 m across as viewed head-on, the thin shade has front
+L1602: and back layers of Nextel ceramic cloth — the same material that protects sections of the Space Shuttle — surrounding
+L1603: several inner layers of Kapton plastic insulation. While temperatures on the front of the shade could reach 370° C when
+L1604: Mercury is closest to the Sun, behind it the spacecraft will operate at room temperature, around 20° C.
+L1605: As the second line of defense against this challenging environment, the science orbit is designed to limit
+L1606: MESSENGER’s exposure to the heat re-radiating from the surface of Mercury. (MESSENGER will only spend about 25
+L1607: minutes of each 12-hour orbit crossing Mercury’s broiling surface at low altitude.) Multilayered insulation covers most of
+L1608: MESSENGER spacecraft in flight configuration, rear view
+L1609: 
+L1610: the surfaces of the spacecraft to protect against incident thermal radiation and insulate against internal heat loss, and
+L1611: radiators connected to diode (“one-way”) heat pipes are installed on the sides of the spacecraft to carry heat away from
+L1612: the spacecraft body. The combination of the sunshade, unique orbital design, thermal blanketing, and heat-radiation
+L1613: system allows the spacecraft to operate without special high-temperature electronics.
+L1614: Power
+L1615: Two single-sided solar panels are the spacecraft’s main source of electric power. To run MESSENGER’s systems and
+L1616: charge its 23-ampere-hour nickel-hydrogen battery, the panels, each about 1.5 m by 1.75 m in extent, will support
+L1617: between 440 and 475 W of spacecraft load power during the cruise phase and 650 W during the orbit at Mercury. The
+L1618: panels themselves produce more than 2 kW of power near Mercury, but to prevent stress on MESSENGER’s electronics
+L1619: and keep operating temperatures within acceptable limits, onboard power processors convert only what the spacecraft
+L1620: was designed to consume in orbit.
+L1621: The custom-developed panels are two-thirds mirrors (called optical solar reflectors) and one-third triple-junction solar
+L1622: cells, which convert 28% of the sunlight hitting them into electricity. Each panel has two rows of mirrors for every row
+L1623: of cells; the small mirrors reflect the Sun’s energy and keep the panel cooler. The panels also rotate, so the operations
+L1624: team tilts the panels away from the Sun, positioning them to get the required power while maintaining a normal surface
+L1625: operating temperature of about 150° C.
+L1626: Propulsion
+L1627: MESSENGER’s dual-mode propulsion system includes a 660-N bipropellant thruster for large maneuvers and 16
+L1628: hydrazine-propellant thrusters for smaller trajectory adjustments and attitude control. The Large Velocity Adjust (LVA)
+L1629: thruster requires a combination of hydrazine fuel and nitrogen tetroxide oxidizer. Fuel and oxidizer are stored in customdesigned, lightweight titanium tanks integrated into the spacecraft’s composite frame. Helium pressurizes the system
+L1630: and pushes the fuel and oxidizer through to the engines.
+L1631: At launch the spacecraft carried just under 600 kg of propellant, and it will use nearly 30% of it during the maneuver
+L1632: that inserts the spacecraft into orbit around Mercury. The hydrazine thrusters play several important roles: four 22-N
+L1633: thrusters are used for small course corrections and help steady MESSENGER during large engine burns. The dozen 4.4-N
+L1634: thrusters are also used for small course corrections and also help steady the spacecraft during all propulsive maneuvers.
+L1635: These smallest thrusters can also serve as a backup for the reaction wheels that maintain the spacecraft’s orientation
+L1636: during normal cruise and orbital operations.
+L1637: Communications
+L1638: MESSENGER’s X-band coherent communications system includes two high-gain, electronically steered, phased-array
+L1639: antennas — the first ever used on a deep-space mission; two medium-gain fanbeam antennas; and four low-gain
+L1640: antennas. The circularly polarized phased arrays — developed by APL and located with the fanbeam antennas on the
+L1641: front and back of the spacecraft — are the main link for sending science data back to Earth. For better reliability in the
+L1642: high-temperature environment the antennas are fixed; they “point” electronically across a 45° field of regard without
+L1643: moving parts.
+L1644: High-gain antennas send radio signals through a narrower, more concentrated beam than medium- or low-gain
+L1645: antennas and are used to send large amounts of data over the same distance as a lower-gain antenna. The fanbeam
+L1646: antennas, also located on MESSENGER’s front and back sides, are used for lower-rate data transmissions to the Earth
+L1647: as well as nominal command transmissions from the Earth, such as operating commands, status data, or emergency
+L1648: communications. The four low-gain antennas provide hemispheric fields of view from the top, bottom, front, and
+L1649: back of the spacecraft, providing primarily an emergency bi-directional communications link with the Earth in the
+L1650: event attitude knowledge is lost. MESSENGER’s downlink rate ranges from 9.9 bits per second to 104 kilobits per
+L1651: second; operators can send commands at 7.8 to 500 bits per second. Transmission rates vary according to onboard
+L1652: communications system configuration, spacecraft distance from the Earth, and ground-station antenna size.
+L1653: 
+L1654: Command and Data Handling
+L1655: MESSENGER’s “brain” is its Integrated Electronics Module (IEM), a space- and weight-saving device that combines
+L1656: the spacecraft’s core avionics into a single box. The spacecraft carries a pair of identical IEMs for backup purposes; both
+L1657: house a 25-MHz main processor and 10-MHz fault-protection processor. All four are radiation-hardened RAD6000
+L1658: processors, based on predecessors of the PowerPC chip found in some models of home computers. The computers,
+L1659: slow by current home-computer standards, are state of the art for the radiation tolerance required on the MESSENGER
+L1660: mission.
+L1661: Programmed to monitor the condition of MESSENGER’s key systems, both fault-protection processors are turned
+L1662: on at all times and protect the spacecraft by turning off components and/or switching to backup components when
+L1663: necessary. The main processor runs the command and data handling software for data transfer and file storage, as well
+L1664: as the guidance and control software used to navigate and point the spacecraft. Each IEM also includes a solid-state
+L1665: data recorder, power converters, and the interfaces between the processors and MESSENGER’s instruments and systems.
+L1666: Intricate flight software executes MESSENGER’s Command and Data Handling system. MESSENGER receives operating
+L1667: commands from Earth and can perform them in real time or store them for later execution. Most of the frequent,
+L1668: critical operations (such as propulsive maneuvers) are programmed into the flight computer’s memory and timed to run
+L1669: automatically.
+L1670: For data, MESSENGER carries two solid-state recorders (one backup) able to store up to 1 gigabyte each. The main
+L1671: processor collects, compresses, and stores images and other data from the subsystems and instruments onto the
+L1672: recorder; the software sorts the data into files in a manner similar to how files are stored on a PC. The main processor
+L1673: selects the files with highest priority to transmit to Earth, or mission operators can download data files in any order the
+L1674: team chooses.
+L1675: In orbit around Mercury, data downlink rates will vary predominantly with spacecraft-to-Earth distance. Thus when
+L1676: orbiting Mercury, MESSENGER will store most of its data when it’s farther from Earth, typically sending only information
+L1677: on its condition and the highest-priority images and measurements during contacts through NASA’s Deep Space
+L1678: Network. The spacecraft will send most of the recorded data when Mercury’s path around the Sun brings it closer to
+L1679: Earth.
+L1680: Guidance and Control
+L1681: MESSENGER is well protected against the heat, but it must always know its orientation relative to Mercury, Earth,
+L1682: and the Sun and be “smart” enough to keep its sunshade pointed at the Sun. Attitude determination — knowing in
+L1683: which direction MESSENGER is facing — is performed using star-tracking cameras, digital Sun sensors, and an inertial
+L1684: measurement unit (IMU), which contains gyroscopes and accelerometers). Attitude control for the three-axis stabilized
+L1685: craft is accomplished using four internal reaction wheels and, when necessary, MESSENGER’s small thrusters.
+L1686: The IMU accurately determines the spacecraft’s rotation rate, and MESSENGER tracks its own orientation by checking
+L1687: the location of stars and the Sun. Star-tracking cameras on MESSENGER’s top deck store a complete map of the
+L1688: heavens; once a second, one of the cameras takes a wide-angle picture of space, compares the locations of stars to its
+L1689: onboard map, and then calculates the spacecraft’s orientation. The guidance and control software also automatically
+L1690: rotates the solar panels to the commanded Sun-relative orientation, as the spacecraft body rotates, ensuring that the
+L1691: panels produce sufficient power while maintaining safe temperatures.
+L1692: The suite of Sun sensors backs up the star trackers, continuously measuring MESSENGER’s angle to the Sun. If the
+L1693: flight software detects that the Sun is “moving” out of a designated safe zone, it can initiate an automatic turn to
+L1694: ensure that the shade faces the Sun. Ground controllers can then analyze the situation while the spacecraft turns its
+L1695: antennas to Earth and awaits instructions — an operating condition known as “safe” mode.
+L1696: 
+L1697: Hardware suppliers
+L1698: Spacecraft Hardware Suppliers
+L1699: Antenna Waveguide:
+L1700: Continental Microwave, Exeter, N.H.
+L1701: Battery (with APL):
+L1702: EaglePicher Technologies, Joplin, Mo.
+L1703: Heat Pipes:
+L1704: ATK (formally Swales Aerospace),
+L1705: Beltsville, Md.
+L1706: Sunshade Material (with APL):
+L1707: 3M Ceramic Textiles, St. Paul, Minn.
+L1708: Inertial Measurement Unit:
+L1709: Northrop Grumman, Woodland Hills, Calif.
+L1710: Integrated Electronics Module (with APL):
+L1711: BAE Systems, Manassas, Va.
+L1712: Launch Vehicle:
+L1713: Boeing, Huntington Beach, Calif.
+L1714: Precision Oscillator:
+L1715: Datum Timing Test and Measurement,
+L1716: Beverly, Mass.
+L1717: Propulsion:
+L1718: Aerojet, Sacramento, Calif.
+L1719: Reaction Wheels:
+L1720: Teldix GmbH, Heidelberg, Germany
+L1721: Semiconductors:
+L1722: TriQuint, Dallas, Tex.
+L1723: Solar Array Drives:
+L1724: Moog, Inc., East Aurora, N.Y.
+L1725: Solar Arrays:
+L1726: Northrop Grumman Space Technology,
+L1727: Redondo Beach, Calif.
+L1728: Solid-State Power Amplifier Converters:
+L1729: EMS Technologies, Montreal, Quebec, Canada
+L1730: Star Trackers:
+L1731: Galileo Avionica, Florence, Italy
+L1732: Structure:
+L1733: ATK Composite Optics, Inc., San Diego, Calif.
+L1734: Sun Sensors:
+L1735: Adcole Corporation, Marlborough, Mass.
+L1736: Transponder:
+L1737: General Dynamics, Scottsdale, Ariz.
+L1738: Instrument Hardware Suppliers
+L1739: MDIS:
+L1740: Integrator: APL, Laurel, Md.
+L1741: SSG, Inc. (NAC telescope), Wilmington, Mass.
+L1742: Atmel (CCD), San Jose, Calif.
+L1743: CDA Intercorp (filter wheel motor for WAC), Deerfield, Fla.
+L1744: Starsys Research (pivot motor), Boulder, Colo.
+L1745: Optimax (WAC lenses), Chicago, Ill.
+L1746: Northrop Grumman Poly Scientific (twist capsule),
+L1747: Blacksburg, Va.
+L1748: Optical Coating Laboratory, Inc. (heat filters), Santa Rosa,
+L1749: Calif.
+L1750: GRNS:
+L1751: Integrator: APL, Laurel, Md.
+L1752: Ricor (cooler), En Harod Ihud, Israel
+L1753: Patriot Engineering (design, analysis, and subassembly of
+L1754: sensors), Chagrin Falls, Ohio.
+L1755: Hamamatsu Corp. (photomultipliers), Bridgewater, N.J.
+L1756: Lawrence Berkeley National Laboratory (GRS), Berkeley,
+L1757: Calif.
+L1758: Lawrence Livermore National Laboratory (GRS), Livermore,
+L1759: Calif.
+L1760: Space Science Laboratory, University of California, Berkeley,
+L1761: (GRS), Berkeley, Calif.
+L1762: XRS:
+L1763: Integrator: APL, Laurel, Md.
+L1764: Amptek (components), Bedford, Mass.
+L1765: Metorex (X-ray sensor tubes), Espoo, Finland
+L1766: MAG:
+L1767: Integrator and digital electronics: APL, Laurel, Md.
+L1768: Goddard Space Flight Center (sensor and analog
+L1769: electronics), Greenbelt, Md.
+L1770: MLA:
+L1771: Integrator: Goddard Space Flight Center, Greenbelt, Md.
+L1772: MASCS:
+L1773: Integrator: LASP, University of Colorado, Boulder, Colo.
+L1774: EPPS:
+L1775: Integrator, common electronics, and EPS subassembly: APL,
+L1776: Laurel, Md.
+L1777: University of Michigan (FIPS subassembly), Ann Arbor,
+L1778: Mich.
+L1779: Amptek (components), Bedford, Mass.
+L1780: Luxel (microchannel plate), Friday Harbor, Wash.
+L1781: Micron Semiconductor (solid-state detectors), Lancing,
+L1782: Sussex, UK
+L1783: 
+L1784: Mission Summary
+L1785: Cruise trajectory
+L1786: The MESSENGER mission takes advantage of an ingenious
+L1787: trajectory design, lightweight materials, and miniaturization
+L1788: of electronics, all developed in the three decades since
+L1789: Mariner 10 flew past Mercury in 1974 and 1975. The
+L1790: compact orbiter, fortified against the searing conditions
+L1791: near the Sun, will investigate key questions about Mercury’s
+L1792: characteristics and environment with a set of seven scientific
+L1793: instruments.
+L1794: On a 7.9-billion-km journey that included more than
+L1795: 15 loops	around	the	Sun,	the	spacecraft’ s	trajectory	included
+L1796: one pass by Earth, two by Venus, and three by Mercury,
+L1797: before a propulsive burn will ease it into orbit around its
+L1798: target planet. The Earth flyby in August 2005, along with
+L1799: the Venus flybys in October 2006 and June 2007 and the
+L1800: three Mercury flybys in January 2008, October 2008, and
+L1801: September 2009 used the pull of each planet’s gravity to
+L1802: guide MESSENGER toward Mercury’s orbit.
+L1803: The combined effect of the six gravity assists from three
+L1804: planets and five deterministic deep-space maneuvers (DSMs)
+L1805: — using the bipropellant Large Velocity Adjust (LVA) engine
+L1806: of the spacecraft and the influence of the Sun — accelerated
+L1807: the spacecraft from an average speed around the Sun of
+L1808: 30 km/s	(the	Earth’ s	average	speed	around	the	Sun)	to
+L1809: 48 km/s	(Mercury’ s	average	speed	around	the	Sun).
+L1810: The cruise phase of the mission concludes in March 2011,
+L1811: when the spacecraft will execute the Mercury orbit insertion
+L1812: (MOI) maneuver, slowing the spacecraft and allowing it to
+L1813: be captured into orbit around Mercury.
+L1814: Getting a Boost
+L1815: For a gravity assist, a spacecraft flies close to
+L1816: a planet and trades with the planet’s orbital
+L1817: momentum around the Sun. Depending on the
+L1818: relative difference in mass between the planet
+L1819: and the spacecraft, as well as the distance
+L1820: between the two, this exchange of momentum
+L1821: can impart a substantial change in spacecraft
+L1822: speed. Since the spacecraft’s mass is negligible
+L1823: compared with that of the planet, this process
+L1824: has a negligible effect on the planet’s orbit
+L1825: around the Sun. But the spacecraft receives a
+L1826: great boost on the way to its next destination.
+L1827: Gravity-assist maneuvers can be used to speed
+L1828: a spacecraft up or slow a spacecraft down.
+L1829: Closest approach distance, direction, and the
+L1830: velocity of a spacecraft relative to the planet’s
+L1831: velocity all affect the acceleration magnitude and
+L1832: direction change of the spacecraft’s trajectory.
+L1833: The greatest change in a spacecraft’s speed and
+L1834: direction occurs when a slow-moving spacecraft
+L1835: approaches just above the surface or cloud
+L1836: tops of a massive planet. The least change in a
+L1837: spacecraft’s speed and direction occurs when
+L1838: a fast-moving spacecraft approaches a small
+L1839: planet from a great distance.
+L1840: 
+L1841: Earth to Mercury
+L1842: MESSENGER cruise trajectory from the Earth to Mercury with annotation of critical flyby and maneuver events.
+L1843: View looks down from the ecliptic north pole.
+L1844: Multiple Flybys
+L1845: Mariner 10 flew past Venus to reach Mercury, but the idea of multiple Venus/Mercury flybys to help
+L1846: a spacecraft “catch” Mercury and begin orbiting the planet came years later, when Chen-wan Yen of
+L1847: NASA’s Jet Propulsion Laboratory developed the concept in the mid-1980s. MESSENGER adopted this
+L1848: mission design approach; without these flybys, MESSENGER would move so fast past Mercury that no
+L1849: existing propulsion system could slow it down sufficiently for it to be captured into orbit.
+L1850: 
+L1851: Launch
+L1852: MESSENGER launched from Pad B of Space Launch Complex 17 at Cape Canaveral Air Force Station, Fla., on a threestage Boeing Delta II expendable launch vehicle on August 3, 2004. The Delta II 7925H-9.5 (heavy lift) model was the
+L1853: largest allowed for NASA Discovery missions. It features a liquid-fueled first stage with nine strap-on solid boosters, a
+L1854: second-stage liquid-fueled engine, and a third-stage solid-fuel rocket. With MESSENGER secured in a 9.5-m fairing on
+L1855: top, the launch vehicle was about 40 m tall.
+L1856: The launch vehicle imparted an excess launch energy per mass (usually denoted by C3 and equal to the excess over
+L1857: what is required for Earth escape) of approximately 16.4 km2/s2 to the spacecraft, setting up the spacecraft for a return
+L1858: pass by the Earth approximately one year from launch.
+L1859: Earth flyby highlights
+L1860: MESSENGER swung by its home planet on August 2, 2005, for a gravity assist that propelled it deeper into the inner
+L1861: Solar System. MESSENGER’s systems performed flawlessly as the spacecraft swooped around Earth, coming to a closest
+L1862: approach point of about 2,348 km over central Mongolia at 3:13 p.m. EDT. The spacecraft used the tug of Earth’s
+L1863: gravity to change its trajectory significantly, bringing its average orbital distance nearly 29 million km closer to the Sun
+L1864: and sending it toward Venus for gravity assists in 2006 and 2007.
+L1865: Team members in the MESSENGER Mission Operations Center at APL watch the spacecraft launch from Cape
+L1866: Canaveral. The team began operating the spacecraft less than an hour later, after MESSENGER separated
+L1867: from the launch vehicle.
+L1868: 
+L1869: Earth Flyby
+L1870: View of the Earth flyby trajectory from above northern Asia. Major country borders are
+L1871: outlined in green on Earth’s nightside. The yellow line marks the position of the day/night or
+L1872: dawn/dusk terminator.
+L1873: North ecliptic pole view of the trajectory between Earth and the first Venus flyby.
+L1874: Dashed lines depict the orbits of Earth and Venus. Timeline fading helps emphasize
+L1875: primary events.
+L1876: Earth to Venus
+L1877: 
+L1878: MESSENGER’s main camera snapped several approach shots of Earth and the Moon, including a series of color images
+L1879: that science team members strung into a “movie” documenting MESSENGER’s departure. On approach, the Mercury
+L1880: Atmospheric and Surface Composition Spectrometer (MASCS) also made several scans of the Moon in conjunction with
+L1881: the camera observations, and during the flyby the particle and magnetic field instruments spent several hours making
+L1882: measurements in Earth’s magnetosphere.
+L1883: The close flyby of Earth and the Moon allowed MESSENGER to give its two Mercury Dual Imaging System (MDIS)
+L1884: cameras a thorough workout. The images helped the team understand fully how the cameras operate in flight in
+L1885: comparison with test results obtained in the laboratory before launch. Images were taken in full color and at different
+L1886: resolutions, and the cameras passed their tests.
+L1887: Not only were these pictures useful for carefully calibrating the imagers for the spacecraft’s Mercury encounters, they
+L1888: also offered a unique view of Earth. Through clear skies over much of South America, features such as the Amazon, the
+L1889: Andes, and Lake Titicaca are visible, as are huge swaths of rain forest.
+L1890: The pictures from MESSENGER’s flyby of Earth include “natural” color and infrared views of North and South
+L1891: America; a peek at the Galápagos Islands through a break in the clouds; and the movie of the rotating Earth, taken as
+L1892: MESSENGER sped away from its home planet.
+L1893: Using various combinations of filters in the optical path, MESSENGER’s camera can obtain a mix of
+L1894: red, green, and blue (RGB) light in various proportions to create a full spectrum of colors. On the left
+L1895: is a “normal” color image of the Earth. On the right, infrared images are visualized by substituting
+L1896: one of the RGB components. Continental areas are mostly red due to the high reflectance of
+L1897: vegetation in the near-infrared. Short-wavelength light (blue) is easily scattered in Earth’s atmosphere,
+L1898: producing our blue skies, but also obscuring the surface from MESSENGER’s viewpoint. Infrared light
+L1899: is not easily scattered, so images of the Earth remain sharp.
+L1900: Twins Image
+L1901: 
+L1902: Venus gravity assists
+L1903: MESSENGER has flown by Venus twice using the tug of the planet’s gravity to change its trajectory, to shrink the
+L1904: spacecraft’s orbit around the Sun, and to bring it closer to Mercury.
+L1905: During the first Venus flyby on October 24, 2006, the spacecraft came within 2,987 km of the surface of Venus.
+L1906: Shortly before the encounter, MESSENGER entered superior solar conjunction, where it was on the opposite side of the
+L1907: Sun from Earth and during which reliable communication between MESSENGER and mission operators was not possible.
+L1908: In addition, during the flyby the spacecraft experienced the mission’s first and longest eclipse of the Sun by a planet.
+L1909: During the eclipse, which lasted approximately 56 minutes, the spacecraft’s solar arrays were in the shadow of Venus
+L1910: and MESSENGER operated on battery power.
+L1911: MESSENGER swung by Venus for the second time on June 5, 2007, speeding over the planet’s cloud tops at a
+L1912: relative velocity of more than 48,000 km/hour and passing within 338 km of its surface near the boundary between the
+L1913: lowland plains of Rusalka Planitia and the rifted uplands of Aphrodite Terra. The maneuver sharpened the spacecraft’s
+L1914: aim toward the first encounter with Mercury and presented a special opportunity to calibrate several of its science
+L1915: instruments and learn something new about Earth’s nearest neighbor.
+L1916: North ecliptic pole view of the trajectory between the first Venus flyby and the first Mercury flyby. Dashed lines
+L1917: depict the orbits of Earth, Venus, and Mercury. Timeline fading helps emphasize primary events.
+L1918: Venus to Mercury
+L1919: 
+L1920: View of the second Venus flyby trajectory from above the planet’s northern pole. The yellow line marks the
+L1921: position of the day/night or dawn/dusk terminator. Closest approach time listed is in local spacecraft time, not
+L1922: accounting for the one-way light time for the signals to reach the Earth.
+L1923: Venus Flyby 2
+L1924: Venus Flyby 1
+L1925: View of the first Venus flyby trajectory from above the planet’s northern pole. The yellow line marks the
+L1926: position of the day/night or dawn/dusk terminator. Closest approach time listed is in local spacecraft time, not
+L1927: accounting for the one-way light time for the signals to reach the Earth.
+L1928: 
+L1929: All of the MESSENGER instruments operated during the flyby. The camera system imaged the nightside in nearinfrared bands and obtained color and higher-resolution monochrome mosaics of both the approaching and departing
+L1930: hemispheres. The ultraviolet and visible spectrometer on the MASCS instrument obtained profiles of atmospheric species
+L1931: on the day and night sides as well as observations of the exospheric tail on departure.
+L1932: The MASCS visible and infrared spectrometer observed the Venus dayside near closest approach to gather
+L1933: compositional information on the upper atmosphere and clouds, and the Mercury Laser Altimeter (MLA) carried out
+L1934: passive radiometry and attempted to range to the Venus upper atmosphere and clouds for several minutes near closest
+L1935: approach. The Gamma-Ray and Neutron Spectrometer (GRNS) instrument observed gamma-rays and neutrons from
+L1936: Venus’ atmosphere, providing information for planning the upcoming Mercury flybys and for calibration from a source of
+L1937: known composition.
+L1938: The European Space Agency’s Venus Express mission was operating at the time of the flyby, permitting the
+L1939: simultaneous observation of the planet from two independent spacecraft, a situation of particular value for
+L1940: characterization of the particle-and-field environment at Venus. MESSENGER’s Energetic Particle and Plasma
+L1941: Spectrometer (EPPS) observed charged particle acceleration at the Venus bow shock and elsewhere, and the
+L1942: Magnetometer (MAG) measured the upstream interplanetary magnetic field (IMF), bow shock signatures, and pick-up
+L1943: ion waves as a reference for energetic particle and plasma observations by both spacecraft. The encounter also enabled
+L1944: two-point measurements of IMF penetration into the Venus ionosphere, primary plasma boundaries, and the near-tail
+L1945: region.
+L1946: Venus 2 Approach
+L1947: Approach image taken
+L1948: through the MDIS 630-
+L1949: nm filter (stretched).
+L1950: Global circulation
+L1951: patterns in the clouds
+L1952: are clearly visible.
+L1953: 
+L1954: Flying by Mercury
+L1955: On January 14, 2008, at 19:04:39 UTC (2:04:39 p.m. EST) the MESSENGER spacecraft executed its first Mercury flyby,
+L1956: passing over the uncharted surface of the planet at an altitude of 201.4 km, an even more accurate aim than for the
+L1957: second Venus flyby. The primary purpose of this activity was to shrink the orbital period of the spacecraft around the
+L1958: Sun by 11 days, bringing MESSENGER’s orbit closer to Mercury’s orbit. On October 6, 2008, at 08:40:22 UTC (4:40:22
+L1959: EDT) the MESSENGER spacecraft executed its second Mercury flyby, passing above the surface at an altitude of 199.2
+L1960: km, within a phenomenal 760 meters of the planned flyby altitude! Although the flyby enabled direct observation of
+L1961: additional previously unobserved planetary surface features, the primary purpose of the flyby was to shrink the orbital
+L1962: period of the spacecraft around the Sun by an additional 16 days and increase the ecliptic inclination of the spacecraft
+L1963: by 0.1 degrees, further matching the orbit of Mercury around the Sun. The third and final Mercury flyby on September
+L1964: 29, 2009, at 21:54:56 UTC (5:54:56 p.m. EST) further decreased the spacecraft’s orbital period around the Sun by
+L1965: almost 13 days to 104.8 days, and increased the inclination of the spacecraft’s orbit by a tiny amount (0.001º) such that
+L1966: it now closely matches Mercury’s 7.0 degree orbit inclination. The spacecraft’s lowest altitude above the planet was
+L1967: 227.5 kilometers. These adjustments to the spacecraft’s orbit will enable it to enter orbit about Mercury on March 18,
+L1968: 2011 UTC.
+L1969: In conjunction with these flyby activities, pre-determined course-correction maneuvers — deep-space maneuvers
+L1970: (DSMs) using the main Large Velocity Adjust (LVA) engine — were scheduled approximately two months after each flyby
+L1971: to adjust further the spacecraft trajectory in preparation for the eventual capture into orbit around Mercury.
+L1972: Mercury Flybys
+L1973: North ecliptic pole view of the trajectory between the first Mercury flyby and Mercury orbit insertion. Dashed
+L1974: lines depict the orbits of Earth, Venus, and Mercury. Timeline fading helps emphasize primary events.
+L1975: 
+L1976: As a result of the three flybys of Mercury, MESSENGER has viewed nearly 91% of the entire planet in color, imaged
+L1977: most of the areas not seen by Mariner 10, and taken measurements of the composition of the surface, atmosphere, and
+L1978: magnetosphere. In contrast to the orbital phase of the mission, the closest approach points during the flybys were on
+L1979: the night side and near the planet’s equator. These approaches provide special vantages to gather high-resolution images
+L1980: of the low- to mid-latitude regions of the planet as well as low-latitude measurements of the magnetic and gravitational
+L1981: fields.
+L1982: Mercury Flybys
+L1983: View of the three Mercury flyby trajectories from above the planet’s northern pole. The yellow line marks the
+L1984: position of the day/night or dawn/dusk terminator. Closest approach time listed is in local spacecraft time, not
+L1985: accounting for the one-way light time for the signals to reach the Earth.
+L1986: 
+L1987: MESSENGER’s deep-space maneuvers
+L1988: In conjunction with the six planetary flybys, MESSENGER’s complex 6.6-year cruise trajectory has included more than
+L1989: 40 anticipated trajectory-correction maneuvers (TCMs). These TCMs included five deterministic deep-space maneuvers
+L1990: (DSMs), which used the spacecraft’s bipropellant Large Velocity Adjust (LVA) engine. In addition to imparting a combined
+L1991: spacecraft change in velocity of more than 1 km/s, the DSMs were the primary method used to target the spacecraft
+L1992: before each planetary flyby (except the second Venus flyby). Smaller velocity-adjustment maneuvers that used the
+L1993: propulsion system’s monopropellant thrusters fine-tuned the trajectory between the main DSMs and the gravity-assist
+L1994: flybys of the planets.
+L1995: On December 12, 2005, MESSENGER successfully fired its bipropellant LVA engine for the first time, completing the
+L1996: first of the five critical deep-space maneuvers (DSM-1). The maneuver, just over 8 minutes long, changed MESSENGER’s
+L1997: speed by approximately 316 m/s, placing the spacecraft on target for the first Venus flyby on October 24, 2006.
+L1998: This maneuver was the first to rely solely on the LVA, the largest and most efficient engine of the propulsion system.
+L1999: Maneuvers performed with the LVA use about 30% less total propellant mass — both fuel and oxidizer — than the
+L2000: other thrusters, which use monopropellant fuel only. Approximately 100 kg of propellant (both fuel and oxidizer), about
+L2001: 18% of the total onboard propellant, was used to complete DSM-1.
+L2002: On October 17, 2007, MESSENGER completed its second critical DSM — 250 million km from Earth — successfully
+L2003: firing the LVA again to change the spacecraft’s trajectory and target it for its historic flyby of Mercury on January 14,
+L2004: 2008. The maneuver, just over 5 minutes long, consumed approximately 70 kg of propellant (both fuel and oxidizer),
+L2005: changing the velocity of the spacecraft by approximately 226 m/s.
+L2006: On March 19, 2008, MESSENGER completed its third critical DSM, successfully firing the LVA once again to change
+L2007: the spacecraft’s trajectory and target it for the second flyby of Mercury on October 6, 2008. The shortest deterministic
+L2008: maneuver for the mission on the LVA, just over 2.5 minutes long, consumed approximately 21 kg of propellant (both
+L2009: fuel and oxidizer), changing the velocity of the spacecraft by approximately 72 m/s.
+L2010: On December 4 and 8, 2008, MESSENGER completed its fourth critical DSM, successfully firing the LVA twice to
+L2011: adjust the spacecraft’s trajectory and target it for the third flyby of Mercury on September 29, 2009. This maneuver
+L2012: was purposely split into two parts to provide engineers a practice opportunity for the cruise-ending Mercury Orbit
+L2013: Insertion maneuver. Combined, the two parts of this DSM consumed about 68 kg of propellant over a total firing time
+L2014: of	6.5 minutes,	changing	the	spacecraft	velocity	by	222	m/s	and	then	by	25	m/s,	respectively,	for	each	part	of	the
+L2015: maneuver.
+L2016: MESSENGER completed its fifth and final critical DSM on November 24, 2009. This maneuver, which lasted
+L2017: 4.6 minutes,	changed	the	spacecraft’ s	velocity	by	178	m/s	and	used	approximately	46	kg	of	propellant.
+L2018: 
+L2019: The MESSENGER Science Team
+L2020: The MESSENGER Science Team consists of experts in all fields of planetary science, brought together by their ability
+L2021: to complete the science investigations conducted by MESSENGER. The team is divided into four discipline groups:
+L2022: Geochemistry, Geology, Geophysics, and Atmosphere and Magnetosphere, with each team member given responsibility
+L2023: for implementation of a particular part of the mission’s science plan.
+L2024: Principal Investigator: Sean C. Solomon, Director of the Department of Terrestrial Magnetism at the Carnegie
+L2025: Institution of Washington
+L2026: Project Scientist: Ralph L. McNutt, Jr., Johns Hopkins University Applied Physics Laboratory (APL)
+L2027: Deputy Project Scientists: Brian J. Anderson and Louise M. Prockter, APL
+L2028: Science Team members
+L2029: Mario H. Acuña*
+L2030: NASA Goddard Space Flight Center
+L2031: Daniel N. Baker
+L2032: University of Colorado
+L2033: Mehdi Benna
+L2034: NASA Goddard Space Flight Center
+L2035: David T. Blewett
+L2036: APL
+L2037: William V. Boynton
+L2038: University of Arizona
+L2039: Clark R. Chapman
+L2040: Southwest Research Institute
+L2041: Andrew F. Cheng
+L2042: APL
+L2043: Larry G. Evans
+L2044: Computer Sciences Corporation and
+L2045: NASA Goddard Space Flight Center
+L2046: Deborah L. Domingue
+L2047: Planetary Science Institute
+L2048: William C. Feldman
+L2049: Planetary Science Institute
+L2050: Robert W. Gaskell
+L2051: Planetary Science Institute
+L2052: Jeffrey J. Gillis-Davis
+L2053: University of Hawaii
+L2054: George Gloeckler
+L2055: University of Michigan and
+L2056: University of Maryland
+L2057: Robert E. Gold
+L2058: APL
+L2059: Steven A. Hauck, II
+L2060: Case Western Reserve University
+L2061: James W. Head III
+L2062: Brown University
+L2063: Jörn Helbert
+L2064: Institute for Planetary Research, Deutsches
+L2065: Zentrum für Luft- und Raumfahrt
+L2066: Kevin Hurley
+L2067: University of California, Berkeley
+L2068: Catherine L. Johnson
+L2069: University of British Columbia and
+L2070: Planetary Science Institute
+L2071: Rosemary M. Killen
+L2072: NASA Goddard Space Flight Center
+L2073: Stamatios M. Krimigis
+L2074: APL and the Academy of Athens
+L2075: David J. Lawrence
+L2076: APL
+L2077: Jean-Luc Margot
+L2078: University of California, Los Angeles
+L2079: William E. McClintock
+L2080: University of Colorado
+L2081: Timothy J. McCoy
+L2082: Smithsonian Institution National
+L2083: Museum of Natural History
+L2084: Scott L. Murchie
+L2085: APL
+L2086: Larry R. Nittler
+L2087: Carnegie Institution of Washington
+L2088: Jürgen Oberst
+L2089: Institute for Planetary Research, Deutsches
+L2090: Zentrum für Luft- und Raumfahrt
+L2091: David A. Paige
+L2092: University of California, Los Angeles
+L2093: Stanton J. Peale
+L2094: University of California, Santa Barbara
+L2095: Roger J. Phillips
+L2096: Southwest Research Institute
+L2097: Michael E. Purucker
+L2098: Raytheon at Planetary Geodynamics Lab,
+L2099: NASA Goddard Space Flight Center
+L2100: Mark S. Robinson
+L2101: Arizona State University
+L2102: David Schriver
+L2103: University of California, Los Angeles
+L2104: James A. Slavin
+L2105: NASA Goddard Space Flight Center
+L2106: Ann L. Sprague
+L2107: University of Arizona
+L2108: David E. Smith
+L2109: Massachusetts Institute of Technology
+L2110: Richard D. Starr
+L2111: The Catholic University of America
+L2112: Robert G. Strom
+L2113: University of Arizona
+L2114: Jacob I. Trombka
+L2115: NASA Goddard Space Flight Center
+L2116: Ronald J. Vervack, Jr.
+L2117: APL
+L2118: Faith Vilas
+L2119: MMT Observatory
+L2120: Thomas R. Watters
+L2121: Smithsonian Institution National Air and
+L2122: Space Museum
+L2123: Maria T. Zuber
+L2124: Massachusetts Institute of Technology
+L2125: Thomas H. Zurbuchen
+L2126: University of Michigan
+L2127:  deceased
+L2128: 
+L2129: Program/Project Management
+L2130: Sean C. Solomon of the Carnegie Institution of Washington (CIW) leads the MESSENGER mission as the Principal
+L2131: Investigator. The Johns Hopkins University Applied Physics Laboratory (APL), Laurel, Md., manages the MESSENGER
+L2132: mission for NASA’s Science Mission Directorate, Washington, D.C.
+L2133: At NASA Headquarters, Edward J. Weiler is the Associate Administrator for NASA’s Science Mission Directorate.
+L2134: James L. Green is the Director of that directorate’s Planetary Science Division. Anthony Carro is the MESSENGER Program
+L2135: Executive, and Edwin J. Grayzeck is the MESSENGER Program Scientist. The NASA Discovery Program is managed out
+L2136: of the Marshall Space Flight Center, where Dennon J. Clardy is the Discovery Program Manager, and James E. Lee is the
+L2137: MESSENGER Mission Manager.
+L2138: At APL, Peter D. Bedini is the MESSENGER Project Manager, Ralph L. McNutt, Jr., is Project Scientist, Eric J. Finnegan is
+L2139: the Mission Systems Engineer, and Andrew B. Calloway is the Mission Operations Manager.
+L2140: NASA Discovery Program
+L2141: MESSENGER is the seventh mission in NASA’s Discovery Program of lower-cost, highly focused, planetary science
+L2142: investigations. Created in 1992, Discovery challenges teams of scientists and engineers to find innovative and
+L2143: imaginative ways to uncover the mysteries of the Solar System within limited, cost-capped budgets and schedules.
+L2144: Other Discovery missions
+L2145: NEAR (Near Earth Asteroid Rendezvous) marked the Discovery Program’s first launch, in February 1996. The NEAR
+L2146: Shoemaker spacecraft became the first to orbit an asteroid when it reached 433 Eros in February 2000. After collecting
+L2147: 10 times the data initially expected during a year around Eros, in February 2001, NEAR Shoemaker became the first
+L2148: spacecraft to land on an asteroid and collect data from its surface.
+L2149: Mars Pathfinder launched December 1996 and landed on Mars in July 1997. The mission demonstrated several
+L2150: tools and techniques for future Mars missions — such as entering, descending, and landing with airbags to deliver a
+L2151: robotic rover — while captivating the world with color pictures from the red planet.
+L2152: Lunar Prospector orbited Earth’s Moon for 18 months after launching in January 1998. The mission’s data enabled
+L2153: scientists to create detailed maps of the gravity, magnetic properties, and chemical makeup of the Moon’s entire surface.
+L2154: Stardust, launched in February 1999, collected samples of comet dust and provided the closest look yet at a comet
+L2155: nucleus when it sailed through the coma of Wild 2 in January 2004. It returned the cometary dust to Earth in January
+L2156: 2006.
+L2157: Genesis, launched in August 2001, collected solar wind particles and returned them to Earth in September 2004.
+L2158: The samples are improving our understanding of the isotopic composition of the Sun, information that will help to
+L2159: identify what the young Solar System was like.
+L2160: CONTOUR (Comet Nucleus Tour) was designed to fly past and study at least two very different comets as they visited
+L2161: the inner Solar System. The spacecraft was lost six weeks after launch, during a critical rocket-firing maneuver in August
+L2162: 2002 to boost it from Earth’s orbit onto a comet-chasing path around the Sun.
+L2163: Deep Impact, launched in January 2005, was the first experiment to probe beneath the surface of a comet,
+L2164: attempting to reveal never-before-seen materials that would provide clues to the internal composition and structure
+L2165: of a comet. In July 2005, a variety of instruments, both onboard the spacecraft and at ground-based and space-based
+L2166: observatories around the world, observed the impact with the comet and examined the resulting debris and interior
+L2167: material.
+L2168: 
+L2169: Dawn, launched in September 2007 toward Vesta and Ceres, two of the largest main-belt asteroids in our Solar
+L2170: System, will provide key data on asteroid properties by orbiting and observing these minor planets. Dawn is scheduled to
+L2171: arrive at Vesta in July 2011.
+L2172: Kepler, launched in March 2009, is monitoring 100,000 stars similar to our Sun for four years, using new technology
+L2173: to search local regions of the galaxy for Earth-size (or smaller) planets for the first time.
+L2174: The GRAIL (Gravity Recovery and Interior Laboratory) mission, scheduled to launch in September 2011, will fly twin
+L2175: spacecraft in tandem orbits around the Moon for several months to measure its gravity field in unprecedented detail.
+L2176: The mission also will answer longstanding questions about Earth’s Moon and provide scientists a better understanding of
+L2177: how Earth and other rocky planets in the Solar System formed.
+L2178: Discovery also includes Missions of Opportunity — not complete Discovery missions, but pieces of a larger NASA or
+L2179: non-NASA mission or creative reuses of spacecraft that have completed their prime missions. Those selected to date for
+L2180: flight include:
+L2181: •	 The	ASPERA-3 (Analyzer of Space Plasma and Energetic Atoms) instrument is studying the interaction between the
+L2182: solar wind and the Martian atmosphere from the European Space Agency’s Mars Express spacecraft, which began
+L2183: orbiting Mars in December 2003.
+L2184: •	 The	M3 (Moon Mineralogy Mapper), pronounced M-cubed, is one of eleven instruments that flew onboard
+L2185: Chandrayaan-1, which launched in October 2008. Chandrayaan-1, India’s first deep space mission, was a project of
+L2186: the Indian Space Research Organisation (ISRO). The goals of the mission included expanding scientific knowledge of
+L2187: the Moon, upgrading India’s technological capability, and providing challenging opportunities for planetary research
+L2188: for the younger generation.
+L2189: •	 The	EPOXI mission combines two science investigations — the Extrasolar Planet Observation and Characterization
+L2190: (EPOCh) and the Deep Impact Extended Investigation (DIXI). Both investigations are using the Deep Impact spacecraft,
+L2191: which finished its prime mission in 2005. EPOCh is using the Deep Impact spacecraft to observe several nearby bright
+L2192: stars for transits by orbiting planets, and DIXI involved the successful flyby of comet Hartley 2 in October 2010.
+L2193: •	 NExT (New Exploration of Tempel 1) reused NASA’s Stardust spacecraft to revisit comet Tempel 1, the cometary
+L2194: target of Deep Impact, in February 2011. This investigation provided the first look at the changes to a comet nucleus
+L2195: produced after its close approach to the Sun.
+L2196: •	 STROFIO (Start from a ROtating FIeld mass spectrOmeter) is a mass spectrometer that is part of the SERENA (Search
+L2197: Exospheric Refilling and Emitted Natural Abundances) instrument package selected to fly on the European Space
+L2198: Agency’s BepiColombo Mercury Planetary Orbiter spacecraft, scheduled to launch in 2014. The SERENA instrument
+L2199: has two neutral particle analyzers (STROFIO and ELENA) and two ion spectrometers (MICA and PICAM). STROFIO,
+L2200: from the Greek word “strofi” (to rotate), will determine the composition of Mercury’s exosphere.
+L2201: For more on the Discovery Program, visit http://discovery.nasa.gov.
+L2202: 

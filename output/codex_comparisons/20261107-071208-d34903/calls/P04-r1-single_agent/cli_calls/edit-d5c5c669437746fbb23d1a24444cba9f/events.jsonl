@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"[redacted-session]"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"머리말\":\"제공 자료를 바탕으로 MESSENGER와 Venus Express의 열 대응 설계가 어떻게 달랐고, 각각 어떤 자세·운용 제약과 연결되는지 비교한다. 비교 범위는 두 궤도 탐사선에 한정되며, 모든 수성·금성 탐사 방식으로 일반화할 수 없다.\",\"맺음말\":\"MESSENGER는 차양막과 저고도 열 노출시간 관리가 관측 자세·기기 시야·일정에 직접 관여한 반면, Venus Express는 방열·단열·내열 전력계 설계와 저온면 보호·지구 통신 지향의 양립이 두드러진다. 다만 제공 자료만으로는 이 차이가 금성 관측의 방향·시간·범위에 부과한 직접적인 정량 제한이나 실제 관측 손실을 평가할 수 없다.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":15645,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":212,"reasoning_output_tokens":0}}

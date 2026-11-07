@@ -1,0 +1,152 @@
+{
+  "domain": "행성 탐사",
+  "status": "draft_for_corpus_grounded_experiments",
+  "question_count": 10,
+  "questions": [
+    {
+      "id": "P01",
+      "kind": "단일 자료",
+      "question": "MESSENGER 임무는 언제, 어떤 방식으로 종료되었나?",
+      "division_expected": false,
+      "why_divide_or_not": "한 임무 개요 문서에서 확인할 수 있어 분업 비용이 이득보다 큰 대조 사례다.",
+      "source_hints": [
+        "수성 | MESSENGER"
+      ],
+      "notes": "Source hints are evaluation-design references, not an answer key or mandatory fixed agent assignment. No report generated yet."
+    },
+    {
+      "id": "P02",
+      "kind": "단일 자료",
+      "question": "Venus Express는 Mars Express의 설계를 재사용하면서 열 설계를 어떻게 바꾸었나?",
+      "division_expected": false,
+      "why_divide_or_not": "열 설계 변경이 한 우주선 설명 문서에 모여 있으므로 여러 리서처가 필요 없는 경우를 확인한다.",
+      "source_hints": [
+        "금성 | The spacecraft"
+      ],
+      "notes": "Source hints are evaluation-design references, not an answer key or mandatory fixed agent assignment. No report generated yet."
+    },
+    {
+      "id": "P03",
+      "kind": "다중 자료 비교",
+      "question": "수성·금성·화성·목성의 환경 제약은 탐사선의 관측 장비와 접근 방식에 어떤 서로 다른 선택을 만들었나?",
+      "division_expected": true,
+      "why_divide_or_not": "행성별 환경과 임무 설계 근거가 다른 문서에 분산되어 내용 영역별 비교가 필요하다.",
+      "source_hints": [
+        "수성 | Mercury Facts",
+        "금성 | Venus Facts",
+        "화성 | Mars Facts",
+        "목성 | Jupiter Facts",
+        "수성 | Mercury Planetary Orbiter",
+        "금성 | Venus Express orbiter instruments",
+        "화성 | Science Instruments",
+        "목성 | Juno"
+      ],
+      "notes": "Source hints are evaluation-design references, not an answer key or mandatory fixed agent assignment. No report generated yet."
+    },
+    {
+      "id": "P04",
+      "kind": "다중 자료 비교",
+      "question": "수성과 금성 탐사에서 강한 열 환경에 대응하는 설계는 어떻게 달랐으며, 그 차이가 관측에 주는 제약은 무엇인가?",
+      "division_expected": true,
+      "why_divide_or_not": "수성 궤도선·전이 모듈과 금성 궤도선의 서로 다른 열 대응 근거를 모아야 한다.",
+      "source_hints": [
+        "수성 | Mercury Planetary Orbiter",
+        "수성 | Mercury Transfer Module",
+        "금성 | The spacecraft",
+        "수성 | Mercury Facts",
+        "금성 | Venus Facts",
+        "수성 | MESSENGER Mercury Orbit Insertion Press Kit (2011)",
+        "금성 | Venus Express ESA Mission Brochure"
+      ],
+      "notes": "Source hints are evaluation-design references, not an answer key or mandatory fixed agent assignment. No report generated yet."
+    },
+    {
+      "id": "P05",
+      "kind": "대상 추적",
+      "question": "Perseverance가 과거 생명 흔적을 조사하는 과정에서 탐사 목표·장비·암석 시료 수집은 어떻게 연결되며 무엇을 아직 단정할 수 없는가?",
+      "division_expected": true,
+      "why_divide_or_not": "목표, 계측 장비, 시료 목록, 관측 성과가 분산되어 조사 경로를 이어야 한다. 시료 수집과 지구 회수를 구별한다.",
+      "source_hints": [
+        "화성 | Science",
+        "화성 | Science Objectives",
+        "화성 | Science Instruments",
+        "화성 | Mars Rock Samples",
+        "화성 | Science Highlights"
+      ],
+      "notes": "Source hints are evaluation-design references, not an answer key or mandatory fixed agent assignment. No report generated yet."
+    },
+    {
+      "id": "P06",
+      "kind": "임무 비교",
+      "question": "Magellan과 Venus Express는 금성의 표면·대기를 각각 어떻게 관측했으며 두 접근은 무엇을 보완하고 무엇을 남겼나?",
+      "division_expected": true,
+      "why_divide_or_not": "표면 레이더 지도와 대기 관측의 수단·성과·한계가 서로 다른 임무 문서에 있다.",
+      "source_hints": [
+        "금성 | Magellan",
+        "금성 | Venus Express orbiter instruments",
+        "금성 | Venus Express science highlights",
+        "금성 | Penetrating an impenetrable world",
+        "금성 | Venus's surface"
+      ],
+      "notes": "Source hints are evaluation-design references, not an answer key or mandatory fixed agent assignment. No report generated yet."
+    },
+    {
+      "id": "P07",
+      "kind": "대상 추적",
+      "question": "Juno의 방사선 대응·전력·궤도 설계는 과학 목표와 어떤 관계가 있으며, Galileo와 비교할 때 관측 범위는 어떻게 달랐나?",
+      "division_expected": true,
+      "why_divide_or_not": "탐사선 설계와 궤도·탐사 역사·이전 임무의 근거를 함께 읽어야 한다.",
+      "source_hints": [
+        "목성 | Juno",
+        "목성 | Juno Orbits",
+        "목성 | Jupiter Facts",
+        "목성 | Galileo"
+      ],
+      "notes": "Source hints are evaluation-design references, not an answer key or mandatory fixed agent assignment. No report generated yet."
+    },
+    {
+      "id": "P08",
+      "kind": "계보 추적",
+      "question": "Mariner 10과 MESSENGER의 관측은 수성에 어떤 질문을 남겼으며 BepiColombo의 장비·두 궤도선 역할은 그 질문에 어떻게 대응하도록 설계되었나?",
+      "division_expected": true,
+      "why_divide_or_not": "기존 임무의 성과와 후속 임무의 계획을 분리해 추적해야 하며 계획을 달성된 성과로 오인하면 안 된다.",
+      "source_hints": [
+        "수성 | Mariner 10",
+        "수성 | MESSENGER",
+        "수성 | Top five Mercury mysteries that BepiColombo will solve",
+        "수성 | Mercury Planetary Orbiter",
+        "수성 | Mercury Magnetospheric Orbiter (Mio)"
+      ],
+      "notes": "Source hints are evaluation-design references, not an answer key or mandatory fixed agent assignment. No report generated yet."
+    },
+    {
+      "id": "P09",
+      "kind": "다중 자료 비교",
+      "question": "Perseverance와 Ingenuity는 화성에서 이동·관측·운용의 어떤 한계를 다르게 다루었으며 상호 보완은 무엇이었나?",
+      "division_expected": true,
+      "why_divide_or_not": "로버 구성, 헬리콥터 운용, 임무 성과를 나눠 읽어야 하며 두 기체의 기능을 혼동하기 쉽다.",
+      "source_hints": [
+        "화성 | Rover Components",
+        "화성 | Ingenuity Mars Helicopter",
+        "화성 | Science Highlights",
+        "화성 | Mars Facts"
+      ],
+      "notes": "Source hints are evaluation-design references, not an answer key or mandatory fixed agent assignment. No report generated yet."
+    },
+    {
+      "id": "P10",
+      "kind": "다중 자료 비교",
+      "question": "금성 대기의 구름·바람·물 손실에 대한 의문은 Venus Express의 장비와 실제 관측 결과에 어떻게 연결되는가?",
+      "division_expected": true,
+      "why_divide_or_not": "물리 현상, 계측 원리, 실제 결과를 별도 문서에서 연결해야 하며 관측되지 않은 원인을 단정할 수 없다.",
+      "source_hints": [
+        "금성 | Acid clouds and lightning",
+        "금성 | Greenhouse effect, clouds and winds",
+        "금성 | Climate and Evolution",
+        "금성 | Venus Express orbiter instruments",
+        "금성 | Venus Express science highlights"
+      ],
+      "notes": "Source hints are evaluation-design references, not an answer key or mandatory fixed agent assignment. No report generated yet."
+    }
+  ]
+}

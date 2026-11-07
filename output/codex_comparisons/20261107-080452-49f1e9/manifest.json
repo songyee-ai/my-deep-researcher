@@ -1,0 +1,165 @@
+{
+  "scope": "FORMAL_COMPARISON",
+  "model_identity": {
+    "transport": "codex_cli",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "medium",
+    "read_policy": "fact_table_atomic_v3",
+    "insufficiency_policy": "question_scope_v1",
+    "read_validation_repairs": 1,
+    "output_contract": "step_schema_v1",
+    "automatic_retries": 0,
+    "authentication": "ChatGPT login"
+  },
+  "corpus_dir": "data/planetary_exploration/versions/engineering-v2",
+  "corpus_sha256": "d482c7d696655ec95c84342cb0198c62767c486b0dc1b3c06c972a9fb9fb52ed",
+  "questions": [
+    {
+      "id": "P01",
+      "question": "MESSENGER 임무는 언제, 어떤 방식으로 종료되었나?"
+    },
+    {
+      "id": "P04",
+      "question": "수성과 금성 탐사에서 강한 열 환경에 대응하는 설계는 어떻게 달랐으며, 그 차이가 관측에 주는 제약은 무엇인가?"
+    },
+    {
+      "id": "P08",
+      "question": "Mariner 10과 MESSENGER의 관측은 수성에 어떤 질문을 남겼으며 BepiColombo의 장비·두 궤도선 역할은 그 질문에 어떻게 대응하도록 설계되었나?"
+    }
+  ],
+  "conditions": [
+    "basic",
+    "no_roles",
+    "no_seeds",
+    "no_zones",
+    "no_redispatch",
+    "single_agent"
+  ],
+  "repeats": 2,
+  "base_config": {
+    "domain": "수성·금성·화성·목성 무인 탐사의 환경 제약, 설계, 성과와 한계",
+    "corpus_dir": "data/planetary_exploration/versions/engineering-v2",
+    "max_sections": 3,
+    "document_budget": 2,
+    "max_redispatch_rounds": 1,
+    "minimum_section_chars": 600,
+    "switches": {
+      "roles": true,
+      "seeds": true,
+      "zones": true,
+      "redispatch": true
+    },
+    "roles": {
+      "환경 제약 연구원": "맡은 대상의 열·대기·방사선 등 제약을 자료로 밝힌다",
+      "열·전력 설계 연구원": "맡은 임무의 열 제어와 전력 선택을 근거에 연결한다",
+      "궤도·착륙 연구원": "맡은 임무의 경로·궤도·착륙 방식과 제약을 밝힌다",
+      "관측 장비 연구원": "맡은 임무의 장비 원리와 관측 대상을 연결한다",
+      "운용·위험 연구원": "맡은 임무의 운용 제약과 실패·대응을 추적한다",
+      "관측 성과 연구원": "실제로 관측한 결과를 설계 목적과 구분한다",
+      "임무 계보 연구원": "맡은 후속 임무가 이전 임무의 의문에 어떻게 대응하는지 추적한다",
+      "비교·한계 연구원": "맡은 대상들의 차이와 근거의 한계를 같은 잣대로 비교한다"
+    },
+    "model_selection": {
+      "candidate": "google/gemma-4-26b-a4b-it:free",
+      "status": "size_passed_generation_pending_http_429",
+      "live_enabled": false,
+      "note": "Gemma official tokenizer measured 347478 body tokens > 262144 native/provider context. Quality still pending. NVIDIA engineering runs finished but failed length/grounding review. App configuration unchanged."
+    },
+    "planning_term_groups": [
+      {
+        "triggers": [
+          "열",
+          "냉각",
+          "온도"
+        ],
+        "source_terms": [
+          "thermal control",
+          "heat shield",
+          "radiator",
+          "insulation",
+          "thermal",
+          "heat",
+          "temperature"
+        ]
+      },
+      {
+        "triggers": [
+          "궤도",
+          "착륙",
+          "접근"
+        ],
+        "source_terms": [
+          "orbit",
+          "landing",
+          "trajectory",
+          "aerobraking"
+        ]
+      },
+      {
+        "triggers": [
+          "장비",
+          "관측"
+        ],
+        "source_terms": [
+          "instrument",
+          "spectrometer",
+          "radar",
+          "camera"
+        ]
+      },
+      {
+        "triggers": [
+          "성과",
+          "한계",
+          "실패"
+        ],
+        "source_terms": [
+          "discovered",
+          "found",
+          "failure",
+          "limitation"
+        ]
+      }
+    ],
+    "model_transport": "codex_cli",
+    "note_format": "fact_table_v1",
+    "quotes_only": false,
+    "draft_format": "source_ids_v1",
+    "planning_cards": "topic_snippets_v1"
+  },
+  "shared_read_budget": 12,
+  "billing": "ChatGPT subscription usage; no API key billing fallback",
+  "started_at": "2026-11-06T23:04:52.759883+00:00",
+  "status": "complete",
+  "stopped_early": null,
+  "records": 36,
+  "complete_rows": 36,
+  "expected_rows": 36,
+  "errors": 0,
+  "ended_at": "2026-11-07T11:08:02.428666+00:00",
+  "resumes": [
+    {
+      "previous_status": "stopped_usage_limit",
+      "previous_stop": {
+        "after": "P04-r1-single_agent",
+        "error_type": "UsageLimitError",
+        "message": "You’ve hit your usage limit. try again at 12:12 PM."
+      },
+      "resumed_at": "2026-11-07T07:46:18.753415+00:00"
+    },
+    {
+      "previous_status": "stopped_usage_limit",
+      "previous_stop": {
+        "after": "P08-r1-single_agent",
+        "error_type": "UsageLimitError",
+        "message": "You’ve hit your usage limit. try again at 9:46 PM."
+      },
+      "resumed_at": "2026-11-07T10:32:02.721770+00:00"
+    },
+    {
+      "previous_status": "complete",
+      "previous_stop": null,
+      "resumed_at": "2026-11-07T10:59:43.613024+00:00"
+    }
+  ]
+}
