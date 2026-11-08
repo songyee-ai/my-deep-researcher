@@ -1,5 +1,6 @@
 """Read-only public corpus and engineering records for the local demo."""
 import json
+from datetime import datetime,timezone,timedelta
 from pathlib import Path
 import re
 
@@ -11,24 +12,49 @@ ENGINEERING=ROOT/'output/engineering_runs'
 def read_json(path):return json.loads(path.read_text(encoding='utf-8'))
 
 
-def corpus_index():
-    corpus=read_json(DATA/'corpus.json')
-    stats=read_json(DATA/'statistics.json')
-    questions=read_json(DATA/'questions.json')['questions']
+CORPUS_LABELS={'base':'기본 자료','expanded':'정식 비교 자료'}
+
+
+def corpus_folder(identifier):
+    # Clients select an allowlisted name, never a filesystem path.
+    if identifier=='base':return DATA
+    if identifier=='expanded':return DATA/'versions/engineering-v2'
+    raise ValueError('허용된 자료 모음이 아닙니다.')
+
+
+def comparison_corpus(manifest):
+    path=manifest.get('corpus_dir') or (manifest.get('base_config') or {}).get('corpus_dir')
+    if not isinstance(path,str):return None
+    return {'data/planetary_exploration':'base',
+            'data/planetary_exploration/versions/engineering-v2':'expanded'}.get(path.replace('\\','/'))
+
+
+def corpus_index(identifier='base'):
+    folder=corpus_folder(identifier)
+    corpus=read_json(folder/'corpus.json')
+    stats=read_json(folder/'statistics.json')
+    questions=read_json(folder/'questions.json')['questions']
+    corpora=[]
+    for key,label in CORPUS_LABELS.items():
+        path=corpus_folder(key)
+        if not (path/'corpus.json').is_file():continue
+        measured=read_json(path/'statistics.json')
+        corpora.append({'id':key,'label':label,'document_count':measured['document_count']})
     return {'documents':[{'title':title,'planet':m['planet'],'chars':m['chars'],'pages':m.get('pdf_pages'),
                          'type':m['document_type']} for title,m in corpus['metadata'].items()],
             'questions':questions,'document_count':len(corpus['docs']),'characters':stats['total_characters'],
-            'links':stats['directed_edges'],'read_only':True}
+            'links':stats['directed_edges'],'read_only':True,
+            'corpus_id':identifier,'corpus_label':CORPUS_LABELS[identifier],'corpora':corpora}
 
 
-def document(title):
-    corpus=read_json(DATA/'corpus.json')
+def document(title,identifier='base'):
+    corpus=read_json(corpus_folder(identifier)/'corpus.json')
     if title not in corpus['docs']:raise ValueError('자료 목록에 없는 문서입니다.')
     m=corpus['metadata'][title]
     return {'title':title,'body':corpus['docs'][title],'planet':m['planet'],'source_url':m['final_url'],
             'published_at':m.get('published_at') or m.get('publication_date_label'),
             'collected_at':m['retrieved_at'],'pages':m.get('pdf_pages'),'chars':m['chars'],
-            'links':corpus['links'][title]}
+            'links':corpus['links'][title],'corpus_id':identifier,'corpus_label':CORPUS_LABELS[identifier]}
 
 
 def run_path(identifier):
@@ -102,15 +128,17 @@ def engineering_playback(identifier):
 
 
 COMPARISONS=ROOT/'output/codex_comparisons'
-CONDITION_LABELS={'basic':'분업형 기본','no_roles':'역할 없음','no_seeds':'시작 문서 배정 없음',
-                  'no_zones':'구역 회피 없음','no_redispatch':'재조사 없음','single_agent':'단일 에이전트'}
+CONDITION_LABELS={'basic':'기본형','no_roles':'역할 끔','no_seeds':'시작 자료 끔',
+                  'no_zones':'구역 공유 끔','no_redispatch':'재조사 끔','single_agent':'단일 대조군'}
+CONDITION_DESCRIPTIONS={
+    'no_zones':'다른 연구원의 담당 구역을 알려 주지 않고, 그 연구원에게 배정된 시작 자료도 다음 자료 후보에서 제외하지 않습니다.'}
 
 
 def comparison_folder(identifier):
     if not isinstance(identifier,str) or not re.fullmatch(r'\d{8}-\d{6}(-[0-9a-f]{4,12})?',identifier):
         raise ValueError('올바른 비교 기록 ID가 아닙니다.')
     path=COMPARISONS/identifier
-    if not path.is_dir():raise ValueError('비교 기록을 찾지 못했습니다.')
+    if not path.is_dir() or not path.resolve().is_relative_to(COMPARISONS.resolve()):raise ValueError('비교 기록을 찾지 못했습니다.')
     return path
 
 
@@ -148,19 +176,56 @@ def alarm_names(row):
 def comparison_row_summary(row):
     return {'id':row['id'],'question_id':row.get('question_id'),'repeat':row.get('repeat'),
             'condition':row.get('condition'),'condition_label':CONDITION_LABELS.get(row.get('condition'),row.get('condition')),
+            'condition_description':CONDITION_DESCRIPTIONS.get(row.get('condition')),
             'status':row.get('status'),'error_type':row.get('error_type'),'alarms':alarm_names(row)}
 
 
 def comparison_summary(identifier):
     folder=comparison_folder(identifier);manifest=comparison_manifest(folder);rows=comparison_rows(folder)
-    errors=sum(r.get('status')!='complete' for r in rows)
-    expected=len(manifest.get('questions') or [])*len(manifest.get('conditions') or [])*(manifest.get('repeats') or 0)
-    status=manifest.get('status') or ('running' if not manifest.get('ended_at') else 'unknown')
+    completed=sum(r.get('status')=='complete' for r in rows)
+    errors=sum(r.get('status') in {'error','aborted','failed','interrupted'} for r in rows)
+    expected=manifest.get('expected_rows')
+    if not isinstance(expected,int) or isinstance(expected,bool) or expected<=0:
+        expected=len(manifest.get('questions') or [])*len(manifest.get('conditions') or [])*(manifest.get('repeats') or 0)
+    if not isinstance(expected,int) or expected<=0:expected=None
+    process=manifest.get('status') or ('running' if not manifest.get('ended_at') else 'unknown')
+    terminal=bool(rows) and completed+errors==len(rows)
+    covered=expected is None or len(rows)>=expected
+    # The manifest can lag the final row, or say complete despite row failures.
+    # Partial rows are not the final outcome while a process is running/stopped.
+    if terminal and covered and (process!='running' or expected is not None):
+        status='failed' if errors==len(rows) else 'partial_failure' if errors else 'complete'
+    elif process=='running':status='running'
+    elif process in {'stopped_usage_limit','interrupted','stopped','error'}:status='stopped'
+    elif process in {'complete','finished_with_errors'}:status='incomplete'
+    else:status='unknown'
+    reason={'stopped_usage_limit':'사용 한도','interrupted':'사용자 중단','error':'실행 오류'}.get(process)
+    scope_label={'FORMAL_COMPARISON':'정식 비교',
+                 'SMALL_LIVE_DIAGNOSTIC_NOT_FORMAL_COMPARISON':'연결 확인 진단'}.get(manifest.get('scope'),'비교 기록')
+    corpus_id=comparison_corpus(manifest);corpus_label='자료 모음 미확인'
+    if corpus_id:
+        try:
+            count=read_json(corpus_folder(corpus_id)/'statistics.json')['document_count']
+            corpus_label=f"{'기본' if corpus_id=='base' else '확장'} {count}건"
+        except (OSError,ValueError,KeyError):pass
+    date_label=None
+    try:
+        started=datetime.fromisoformat(manifest.get('started_at') or '')
+        if started.tzinfo is not None:
+            local=started.astimezone(timezone(timedelta(hours=9)))
+            date_label=f'{local.month}월 {local.day}일'
+    except (ValueError,TypeError):pass
+    title_parts=[scope_label,corpus_label]
+    if expected is not None:title_parts.append(f'{expected}회')
+    if date_label:title_parts.append(date_label)
     return {'id':identifier,'scope':manifest.get('scope'),'status':status,
+            'corpus_id':corpus_id,'scope_label':scope_label,'display_title':' · '.join(title_parts),
+            'process_status':process,'stop_reason':reason if status=='stopped' else None,
+            'completed_rows':completed,'pending_rows':max(0,expected-completed-errors) if expected is not None else None,
             'model':(manifest.get('model_identity') or {}).get('model'),'started_at':manifest.get('started_at'),
             'ended_at':manifest.get('ended_at'),'rows':len(rows),'expected_rows':expected or None,'errors':errors,
             'conditions':manifest.get('conditions') or [],'shared_read_budget':manifest.get('shared_read_budget'),
-            'all_failed':bool(rows) and errors==len(rows)}
+            'all_failed':status=='failed' and bool(rows) and errors==len(rows)}
 
 
 def comparison_index():
@@ -172,10 +237,47 @@ def comparison_index():
     return result
 
 
+def comparison_row_statistics(folder,row):
+    """Display recorded counts without treating absent/failed output as zero."""
+    stats={key:None for key in ('sections','report_chars','read_events','unique_read_documents',
+                                'initial_insufficient_sections','duplicate_read_fraction','baseline_full_budget_used')}
+    if row.get('status')!='complete':return stats
+    metrics=row.get('metrics') or {};counts=metrics.get('counts') or {}
+    stats.update(sections=row.get('plan_sections',counts.get('selected_sections')),
+                 report_chars=counts.get('report_chars'),read_events=counts.get('read_events'),
+                 unique_read_documents=counts.get('unique_read_documents'),
+                 duplicate_read_fraction=(metrics.get('signals') or {}).get('duplicate_read_fraction'),
+                 baseline_full_budget_used=(row.get('baseline_validation') or {}).get('full_budget_used'))
+    identifier=row.get('id','')
+    if not re.fullmatch(r'[A-Za-z0-9_-]{1,80}',identifier):return stats
+    try:result=read_json(folder/'reports'/f'{identifier}.json')
+    except (OSError,ValueError):return stats
+    if not isinstance(result,dict):return stats
+    if stats['sections'] is None and isinstance((result.get('plan') or {}).get('목차'),list):
+        stats['sections']=len(result['plan']['목차'])
+    if stats['report_chars'] is None and isinstance(result.get('report'),str):
+        stats['report_chars']=len(result['report'])
+    if isinstance(result.get('attempts'),list):
+        stats['initial_insufficient_sections']=len({s['번호'] for s in result['attempts']
+            if s.get('round')==0 and s.get('부족') and s.get('번호') is not None})
+    if isinstance(result.get('events'),list):
+        reads=[e for e in result['events'] if e.get('kind')=='read']
+        if stats['read_events'] is None:stats['read_events']=len(reads)
+        if stats['unique_read_documents'] is None and all(isinstance(e.get('document'),str) for e in reads):
+            stats['unique_read_documents']=len({e['document'] for e in reads})
+    return stats
+
+
 def comparison_detail(identifier):
     folder=comparison_folder(identifier);manifest=comparison_manifest(folder)
-    rows=[comparison_row_summary(r) for r in comparison_rows(folder)]
+    rows=[{**comparison_row_summary(r),'statistics':comparison_row_statistics(folder,r)} for r in comparison_rows(folder)]
+    documents=[]
+    for name,label in [('HUMAN_REVIEW.md','직접 판단과 실패 추적'),('RUN_NOTES.md','실행 경과와 한계')]:
+        path=folder/name
+        if path.is_file() and path.resolve().is_relative_to(folder.resolve()):
+            documents.append({'name':name,'label':label,'body':path.read_text(encoding='utf-8')})
     return {**comparison_summary(identifier),'questions':manifest.get('questions') or [],'repeats':manifest.get('repeats'),
+            'review_documents':documents,
             'rows_detail':rows,'billing':manifest.get('billing'),
             'principle':'지표는 명백한 실패를 거르는 용도입니다. 점수·승자·순위는 매기지 않습니다. 보고서와 근거를 사람이 직접 읽고 판단하세요.'}
 
@@ -186,7 +288,8 @@ def comparison_run(identifier,row_id):
         raise ValueError('올바른 실행 ID가 아닙니다.')
     row=next((r for r in comparison_rows(folder) if r['id']==row_id),None)
     if row is None:raise ValueError('실행 행을 찾지 못했습니다.')
-    view={**comparison_row_summary(row),'question':row.get('question'),'engine_class':row.get('engine_class'),
+    view={**comparison_row_summary(row),'corpus_id':comparison_corpus(comparison_manifest(folder)),
+          'question':row.get('question'),'engine_class':row.get('engine_class'),
           'wiring':row.get('wiring'),'transport_stats':row.get('transport_stats'),
           'alarms_expected_zero':(row.get('metrics') or {}).get('alarms_expected_zero'),
           'signals':(row.get('metrics') or {}).get('signals'),

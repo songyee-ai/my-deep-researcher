@@ -1,6 +1,7 @@
 import {buildPlayback, indexAtTime} from './playback.mjs';
-import {transformationAt} from './transformation.mjs';
+import {transformationAt,workStatusAt} from './transformation.mjs?v=20261108-a1';
 import {AGENTS,teamSize} from './team.mjs';
+import {reportView} from './report-display.mjs';
 const $ = id => document.getElementById(id);
 let state={legacy:null,run:null,view:[],time:0,index:0,selected:'moon',tab:'activity',playing:false,docs:[],plan:null};
 let scene=null, timer=null, pollTimer=null, shownError='';
@@ -25,6 +26,7 @@ function snapshot(){
   }
   if(state.time >= (state.view.at(-1)?.displayTime||0) && (state.run?.status==='stopped'||state.run?.status==='error')){for(const a of Object.values(agents)){if(a.pending){a.pending=false;a.status=state.run.status==='stopped'?'중지됨':'오류';}}}
   for(const agent of AGENTS){
+    agents[agent.id].workStatus=['중지됨','오류'].includes(agents[agent.id].status)?agents[agent.id].status:workStatusAt(state.view,state.time,agent.id);
     if(agent.id!=='crystal')agents[agent.id].transformation=transformationAt(state.view,state.time,agent.id,state.run?.settings?.budget||3);
   }
   return {events,agents,plan,report,time:state.time,playing:state.playing,researcherCount:teamSize(state.run,$('sections').value)};
@@ -37,7 +39,7 @@ function renderDetails(snap){
   $('agent-name').textContent=agent.id==='moon'?'달의 코디네이터 · 세일러문':agent.name;
   $('agent-role').textContent=a.task?`${a.task.역할} · ${a.task.절}`:agent.role;
   $('agent-avatar').textContent=agent.symbol;$('agent-avatar').style.color=agent.color;
-  $('agent-avatar').style.background=agent.color+'18';$('agent-status').textContent=a.transformation?.phase||a.status;
+  $('agent-avatar').style.background=agent.color+'18';$('agent-status').textContent=a.workStatus;
   const call=[...agentEvents].reverse().find(e=>e.kind==='call_start');
   const end=call?agentEvents.find(e=>e.call_id===call.call_id&&e.kind==='call_end'):null;
   const error=call?agentEvents.find(e=>e.call_id===call.call_id&&e.kind==='call_error'):null;
@@ -46,7 +48,8 @@ function renderDetails(snap){
   }else if(state.tab==='response'){
     $('detail').innerHTML=error?box('호출 오류',error.error):end?box(`${end.label} · 모델 응답`,end.response):'<p class="detail-hint">이 시점에는 아직 도착한 응답이 없어요.<br>다음 단계로 이동해 보세요.</p>';
   }else{
-    let html=a.transformation?`<div class="transformation-note"><span>${agent.symbol} ${escapeHTML(a.transformation.phase)}</span><b>${Math.round(a.transformation.progress*100)}%</b><div class="transformation-meter"><i style="width:${a.transformation.progress*100}%;background:${agent.color}"></i></div></div>`:'';
+    let html=`<div class="detail-label">작업 상태</div><span class="step-pill">${escapeHTML(a.workStatus)}</span>`;
+    if(a.transformation)html+=`<div class="transformation-note"><span>${agent.symbol} ${escapeHTML(a.transformation.phase)}</span><b>${Math.round(a.transformation.progress*100)}%</b><div class="transformation-meter"><i style="width:${a.transformation.progress*100}%;background:${agent.color}"></i></div></div>`;
     const mission=a.task?.지시||(agent.id==='moon'?'질문을 읽고 목차를 나눈 다음, 각 행성 연구원에게 서로 다른 시작 자료를 배정해요.':agent.id==='crystal'?'모든 연구원이 원고를 마치면 머리말과 맺음말을 쓰고 하나의 보고서로 엮어요.':'배정받은 자료를 읽고, 다음 문서를 골라 근거가 있는 원고를 써요.');
     html+=`<div class="detail-label">지금의 작은 임무</div><div class="detail-box">${escapeHTML(mission)}</div>`;
     if(agent.id==='moon'&&snap.plan){html+='<div class="detail-label">함께 찾을 이야기</div>'+snap.plan.목차.map((item,i)=>`<div class="doc-entry">${i+1}. ${escapeHTML(item.절)}<span>${escapeHTML(item.역할)}</span></div>`).join('');}
@@ -74,8 +77,8 @@ function renderClock(){
   if(trans){
     const note=$('detail').querySelector('.transformation-note');
     if(note){note.querySelector('b').textContent=`${Math.round(trans.progress*100)}%`;note.querySelector('i').style.width=`${trans.progress*100}%`;note.querySelector('span').textContent=`${AGENTS.find(a=>a.id===state.selected).symbol} ${trans.phase}`;}
-    $('agent-status').textContent=trans.phase;
   }
+  $('agent-status').textContent=snap.agents[state.selected].workStatus;
 }
 function render(){
   const count=teamSize(state.run,$('sections').value);
@@ -123,15 +126,17 @@ async function poll(id){
     if(state.run.status==='running'){pollTimer=setTimeout(()=>poll(id),450);}else{await refreshHistory();if(state.run.error&&shownError!==id){shownError=id;toast(state.run.error);}if(state.run.save_error)toast(state.run.save_error);if(state.run.mode==='replay'&&state.run.status==='complete'){seek(0);play();}}
   }catch(e){toast(e.message);pollTimer=setTimeout(()=>poll(id),2500);}
 }
-$('run').onclick=async()=>{pause();try{const payload={question:$('question').value,mode:$('mode').value,settings:{max_sections:+$('sections').value,budget:+$('budget').value,use_roles:$('roles').checked,assign_seeds:$('seeds').checked,respect_zones:$('zones').checked,rounds:+$('rounds').value}};const result=await api('/api/run',payload);state.selected='moon';await poll(result.id);}catch(e){toast(e.message);}};
+$('run').onclick=async()=>{if($('mode').value!=='replay'&&!$('question').value.trim()){toast('연구 질문을 입력해 주세요.');$('question').focus();return;}pause();try{const payload={question:$('question').value,mode:$('mode').value,settings:{max_sections:+$('sections').value,budget:+$('budget').value,use_roles:$('roles').checked,assign_seeds:$('seeds').checked,respect_zones:$('zones').checked,rounds:+$('rounds').value}};const result=await api('/api/run',payload);state.selected='moon';await poll(result.id);}catch(e){toast(e.message);}};
 $('stop').onclick=async()=>{try{await api('/api/stop',{});toast('중지를 요청했어요. 진행 중인 API 호출이 끝나면 다음 작업 전에 멈춰요.');}catch(e){toast(e.message);}};
 $('mode').onchange=()=>{
   const replay=$('mode').value==='replay',planetary=$('mode').value==='planetary';
+  const wasReadOnly=$('question').readOnly;
   $('question').readOnly=replay;
   const legacyNote=id=>(state.legacy?.modes||[]).find(m=>m.id===id)?.note?.replace('{model}',state.apiModel||'무료 모델')||'';
-  $('mode-note').textContent=planetary?'행성 탐사 공식 자료 · 무료 Gemma 기능 진단 · 질문과 관련 원문을 OpenRouter로 전송합니다. 요청 제한 429가 발생할 수 있으며 내용 품질은 미검증입니다.':legacyNote($('mode').value);
+  $('mode-note').textContent=planetary?'새 실행은 OpenRouter 키가 필요하며, 질문과 관련 원문이 OpenRouter로 전송됩니다.':legacyNote($('mode').value);
+  $('run').innerHTML=replay?'저장 흐름 재생 <span>↗</span>':'새 연구 시작 <span>↗</span>';
   if(replay&&state.defaultQuestion)$('question').value=state.defaultQuestion;
-  else if(planetary&&(!$('question').value||$('question').value===state.defaultQuestion))$('question').value=state.planetaryQuestion;
+  else if(wasReadOnly&&$('question').value===state.defaultQuestion)$('question').value='';
 };
 window.addEventListener('planetary-playback',e=>{pause();clearTimeout(pollTimer);state.run=e.detail;state.view=buildPlayback(state.run);state.selected='moon';$('history').value='';$('mode').value='planetary';$('mode').onchange();$('question').value=state.run.question;seek(0);toast('실제 진단의 이벤트 순서를 연출합니다. 실제 처리 시간과 호출 프롬프트를 복원한 기록은 아닙니다.');});
 window.addEventListener('planetary-question',e=>{$('mode').value='planetary';$('mode').onchange();$('question').value=e.detail;$('question').focus();});
@@ -143,12 +148,12 @@ function prepareTeam(){
 }
 $('sections').onchange=prepareTeam;$('budget').onchange=prepareTeam;
 $('first').onclick=()=>{pause();seek(0);};$('prev').onclick=()=>{pause();let i=state.index;while(i>=0&&state.view[i]?.displayTime>=state.time-.000001)i--;seek(i);};$('next').onclick=()=>{pause();seek(state.index+1);};$('last').onclick=()=>{pause();seek(state.view.length-1);};$('play').onclick=()=>{if(state.playing){pause();render();}else play();};$('timeline').oninput=()=>{pause();seekTime(+$('timeline').value/1000);};
-$('history').onchange=async()=>{if(!$('history').value)return;pause();clearTimeout(pollTimer);try{state.run=await api(`/api/runs/${$('history').value}`);state.view=buildPlayback(state.run);state.selected='moon';seek(state.view.length-1);if(state.run.status==='running')poll(state.run.id);}catch(e){toast(e.message);}};
+$('history').onchange=async()=>{if(!$('history').value)return;pause();clearTimeout(pollTimer);try{state.run=await api(`/api/runs/${$('history').value}`);$('question').value=state.run.question;state.view=buildPlayback(state.run);state.selected='moon';seek(state.view.length-1);if(state.run.status==='running')poll(state.run.id);}catch(e){toast(e.message);}};
 document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{state.tab=b.dataset.tab;for(const tab of document.querySelectorAll('[data-tab]')){tab.classList.toggle('active',tab===b);tab.setAttribute('aria-selected',String(tab===b));}renderDetails(snapshot());});
 function download(content,name,type){const url=URL.createObjectURL(new Blob([content],{type}));const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
 $('export').onclick=()=>download(JSON.stringify(state.run,null,2),`moonlight-${state.run.id}.json`,'application/json;charset=utf-8');
-$('report-open').onclick=()=>{const snap=snapshot();$('report-content').textContent=snap.report;const meta=state.run.mode!=='replay'?`${state.run.domain==='planetary'?'행성 탐사 기능 진단 · 내용 미검증':'역사 자료 실제 API'} · ${state.run.question}`:(state.legacy?.report_meta_replay||'');$('report-meta').textContent=meta+(state.run.quality_warnings?.length?` · 내용 검토 필요: ${state.run.quality_warnings.join(' / ')}`:'');$('report-modal').showModal();};
+$('report-open').onclick=()=>{const snap=snapshot();$('report-content').replaceChildren(reportView(snap.report,'report-modal-body'));const meta=state.run.mode!=='replay'?`${state.run.domain==='planetary'?'행성 탐사 기능 진단 · 내용 미검증':'역사 자료 실제 API'} · ${state.run.question}`:(state.legacy?.report_meta_replay||'');$('report-meta').textContent=meta+(state.run.quality_warnings?.length?` · 내용 검토 필요: ${state.run.quality_warnings.join(' / ')}`:'');$('report-modal').showModal();};
 $('report-close').onclick=()=>$('report-modal').close();$('report-download').onclick=()=>download(snapshot().report,'달빛_연구보고서.md','text/markdown;charset=utf-8');
 $('reset-camera').onclick=()=>scene?.reset();
-try{const {createUniverse}=await import('./scene.js');scene=createUniverse($('universe'),$('labels'),AGENTS,chooseAgent);}catch(e){$('scene-error').classList.remove('hidden');console.error('3D initialization:',e);}
-try{const info=await api('/api/status');state.docs=info.docs;state.defaultQuestion=info.default_question;state.planetaryQuestion=info.planetary_question;state.apiModel=info.model;state.legacy=info.legacy;for(const m of [...(info.legacy?.modes||[])].reverse()){const o=document.createElement('option');o.value=m.id;o.textContent=m.label;$('mode').prepend(o);}if(state.legacy)$('mode').value='replay';$('settings-note').textContent=info.legacy?.settings_note||'';$('question').value=info.default_question;$('mode').onchange();$('key-state').textContent=info.api_configured?`✓ ${info.provider} 설정됨 · ${info.model}`:(info.legacy?.key_hint||'무료 API 키 미설정 · 프로젝트 폴더의 .env에 OPENROUTER_API_KEY를 넣어 주세요');const runs=await refreshHistory();if(info.active){await poll(info.active);}else if(runs.length){state.run=await api(`/api/runs/${runs[0].id}`);state.view=buildPlayback(state.run);$('history').value=state.run.id;seek(0);}render();}catch(e){toast(e.message);render();}
+try{const {createUniverse}=await import('./scene.js?v=20261108-c4');scene=createUniverse($('universe'),$('labels'),AGENTS,chooseAgent);}catch(e){$('scene-error').classList.remove('hidden');console.error('3D initialization:',e);}
+try{const info=await api('/api/status');state.docs=info.docs;state.defaultQuestion=info.default_question;state.planetaryQuestion=info.planetary_question;state.apiModel=info.model;state.legacy=info.legacy;for(const m of [...(info.legacy?.modes||[])].reverse()){const o=document.createElement('option');o.value=m.id;o.textContent=m.label;$('mode').prepend(o);}$('mode').value='planetary';$('settings-note').textContent=info.legacy?.settings_note||'';$('mode').onchange();$('key-state').textContent=info.api_configured?`✓ ${info.provider} 설정됨 · ${info.model}`:(info.legacy?.key_hint||'무료 API 키 미설정 · 프로젝트 폴더의 .env에 OPENROUTER_API_KEY를 넣어 주세요');const runs=await refreshHistory();if(info.active){await poll(info.active);}else if(runs.length){state.run=await api(`/api/runs/${runs[0].id}`);state.view=buildPlayback(state.run);$('history').value=state.run.id;seek(0);}render();}catch(e){toast(e.message);render();}

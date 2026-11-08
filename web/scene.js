@@ -9,6 +9,7 @@ export function createUniverse(canvas,labelLayer,agents,onSelect){
   const camera=new THREE.PerspectiveCamera(36,1,.1,100);
   let azimuth=0,elevation=.49,distance=19,drag=null,moved=false,selected='moon',snap=null;
   const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const mobile=matchMedia('(max-width: 680px)');
   scene.add(new THREE.HemisphereLight(0xffffff,0xc5b7df,2.3));
   const key=new THREE.DirectionalLight(0xfff4eb,2.2);key.position.set(-5,12,8);key.castShadow=true;key.shadow.mapSize.set(2048,2048);key.shadow.camera.left=-12;key.shadow.camera.right=12;key.shadow.camera.top=12;key.shadow.camera.bottom=-12;key.shadow.bias=-.001;scene.add(key);
   const pink=new THREE.PointLight(0xf9bfe1,20,25);pink.position.set(4,5,4);scene.add(pink);
@@ -134,7 +135,7 @@ export function createUniverse(canvas,labelLayer,agents,onSelect){
     }
     // An invisible, generous selection target is easier to click than a small limb.
     const hit=mesh(new THREE.SphereGeometry(1.0,16,12),new THREE.MeshBasicMaterial({visible:false}),anchor,0,.8,0);hit.userData.agent=agent.id;clickTargets.push(hit);
-    const label=document.createElement('button');label.className='node-label';label.style.setProperty('--c',agent.color);label.innerHTML=`<b>${agent.symbol} ${agent.name}</b><small>${agent.kind==='crystal'?'보고서를 엮는 곳':agent.kind==='moon'?'목차를 나누는 달':'별빛을 모으는 행성'}</small>`;label.addEventListener('pointerdown',e=>e.stopPropagation());label.onclick=()=>onSelect(agent.id);labelLayer.append(label);
+    const label=document.createElement('button');label.className='node-label';label.style.setProperty('--c',agent.color);label.innerHTML=`<b>${agent.symbol} ${agent.name}</b><small class="node-work-state">대기 중</small>`;label.addEventListener('pointerdown',e=>e.stopPropagation());label.onclick=()=>onSelect(agent.id);labelLayer.append(label);
     nodes.push({agent,anchor,figure,ring,aura,label,magic,baseY:agent.pos[1]});
   }
   // Dashed ribbons connect research stations; moving stars carry the current work.
@@ -148,14 +149,23 @@ export function createUniverse(canvas,labelLayer,agents,onSelect){
     }
   }
   let visibleCount=0;
+  let mobileArrangement=null;
   function arrange(count){
-    if(visibleCount===count)return;visibleCount=count;
+    if(visibleCount===count&&mobileArrangement===mobile.matches)return;
+    visibleCount=count;mobileArrangement=mobile.matches;
     const positions=researcherPositions(count);
+    const rows=Math.ceil(count/2);
+    if(mobile.matches){
+      for(let i=0;i<count;i++)positions[i]=[count===1?0:(i%2?3.1:-3.1),0,(Math.floor(i/2)-(rows-1)/2)*6];
+    }
     for(const node of nodes){
       const index=Number(node.agent.id.split('-')[1]),researcher=node.agent.id.startsWith('researcher-');
       node.anchor.visible=!researcher||index<count;node.label.hidden=!node.anchor.visible;
       if(researcher&&index<count){node.anchor.position.set(...positions[index]);node.figure.scale.setScalar(count>4?.85:1);}
+      if(!researcher)node.anchor.position.set(...(mobile.matches?[0,node.agent.kind==='moon'?0:.35,(node.agent.kind==='moon'?-1:1)*(rows+1)*3]:node.agent.pos));
     }
+    canvas.style.setProperty('--mobile-scene-height',`${340+rows*140}px`);
+    labelLayer.style.setProperty('--mobile-scene-height',`${340+rows*140}px`);
     for(const route of routes){
       const n=Number(route.agent.split('-')[1]);route.line.visible=n<count;
       if(n>=count){route.particle.visible=false;continue;}
@@ -176,11 +186,13 @@ export function createUniverse(canvas,labelLayer,agents,onSelect){
   const size={w:0,h:0};
   const temp=new THREE.Vector3();
   function frame(time){
+    if(mobileArrangement!==mobile.matches)arrange(visibleCount||4);
     const w=canvas.clientWidth,h=canvas.clientHeight;if(size.w!==w||size.h!==h){renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();size.w=w;size.h=h;}
     const aspect=w/h;
     const responsiveDistance=Math.max(distance*(aspect<1.1?1.22:1),12.7/(2*Math.tan(Math.PI/10)*aspect));
-    camera.position.set(Math.sin(azimuth)*responsiveDistance,Math.sin(elevation)*responsiveDistance+1,Math.cos(azimuth)*Math.cos(elevation)*responsiveDistance);
-    camera.lookAt(0,.7,1.0);
+    const viewingElevation=mobile.matches?Math.min(1.2,elevation+.4):elevation;
+    camera.position.set(Math.sin(azimuth)*responsiveDistance,Math.sin(viewingElevation)*responsiveDistance+1,Math.cos(azimuth)*Math.cos(viewingElevation)*responsiveDistance);
+    camera.lookAt(0,.7,mobile.matches?0:1.0);
     // Reserve breathing room for the title and playback controls in the composition.
     camera.setViewOffset(w,h,0,h*.035,w,h);camera.updateProjectionMatrix();
     const t=time*.001,clock=snap?.time||0;
@@ -239,6 +251,6 @@ export function createUniverse(canvas,labelLayer,agents,onSelect){
     n.label.classList.toggle('transforming',!!trans?.active);
     n.label.dataset.outfit=trans?.outfit||'crystal';n.label.dataset.phase=trans?.phase||'편집 대기';
     n.label.style.setProperty('--progress',`${(trans?.progress||0)*100}%`);
-    n.label.querySelector('small').textContent=trans?`${trans.phase} · ${a.label}`:a.label;
+    n.label.querySelector('.node-work-state').textContent=a.workStatus||a.status;
   }},reset(){azimuth=0;elevation=.49;distance=19;}};
 }

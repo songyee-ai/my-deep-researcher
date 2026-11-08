@@ -286,8 +286,10 @@ class Handler(SimpleHTTPRequestHandler):
         path = urlparse(self.path).path
         if path.startswith('/api/library'):
             try:
-                if path=='/api/library':value=library.corpus_index()
-                elif path=='/api/library/document':value=library.document(parse_qs(urlparse(self.path).query).get('title',[''])[0])
+                if path=='/api/library':value=library.corpus_index(parse_qs(urlparse(self.path).query).get('corpus',['base'])[0])
+                elif path=='/api/library/document':
+                    params=parse_qs(urlparse(self.path).query)
+                    value=library.document(params.get('title',[''])[0],params.get('corpus',['base'])[0])
                 elif path=='/api/library/runs':value=library.engineering_index()
                 elif path=='/api/library/comparisons':value=library.comparison_index()
                 elif path.startswith('/api/library/comparisons/'):
