@@ -58,6 +58,11 @@ class PlanetaryAPIModel:
         if (m.get('reasoning') or {}).get('mandatory'):
             raise ValueError('이 어댑터는 추론 비활성화가 가능한 모델만 지원합니다.')
         self._key=api_config.key;self.context_length=m['context_length']
+        # Structured output is used only when a caller supplies a schema hook
+        # (web runs) and the model's providers support it.
+        params=set(m.get('supported_parameters') or [])
+        self.supports_structured='structured_outputs' in params or 'response_format' in params
+        self.response_schema=None
         self.model_identity={'model':model_id,'temperature':0.1,'max_tokens':8192,'reasoning_enabled':False,'automatic_retries':0}
         self.tokenizer=Tokenizer.from_file(str(tokenizer_path));self.tokenizer.no_truncation();self.tokenizer.no_padding()
         self.checkpoint=Path(checkpoint) if checkpoint else None
@@ -77,7 +82,8 @@ class PlanetaryAPIModel:
         temporary.write_text(saved,encoding='utf-8');temporary.replace(self.checkpoint)
 
     def __call__(self,step,prompt):
-        fingerprint=hashlib.sha256(json.dumps([self.model_identity,step.value,prompt.system,prompt.user],ensure_ascii=False,sort_keys=True).encode()).hexdigest()
+        schema=self.response_schema(step,prompt) if (self.response_schema and self.supports_structured) else None
+        fingerprint=hashlib.sha256(json.dumps([self.model_identity,step.value,prompt.system,prompt.user,schema],ensure_ascii=False,sort_keys=True).encode()).hexdigest()
         with self.lock:
             if fingerprint in self.calls:
                 self.transport_stats['cache_hits']+=1
@@ -89,6 +95,7 @@ class PlanetaryAPIModel:
         request={'model':self.model_identity['model'],'messages':[{'role':'system','content':prompt.system},{'role':'user','content':prompt.user}],
                  'temperature':self.model_identity['temperature'],'max_tokens':self.model_identity['max_tokens'],
                  'reasoning':{'enabled':False},'provider':{'max_price':{'prompt':0,'completion':0},'require_parameters':True}}
+        if schema:request['response_format']={'type':'json_schema','json_schema':{'name':step.value,'strict':True,'schema':schema}}
         started_at=datetime.now(timezone.utc).isoformat();start=time.monotonic()
         with self.lock:self.transport_stats['http_requests']+=1
         response=requests.post(BASE_URL+'/chat/completions',headers={'Authorization':'Bearer '+self._key,'Content-Type':'application/json'},json=request,timeout=90)
@@ -97,7 +104,7 @@ class PlanetaryAPIModel:
         raw=response.json();choice=raw['choices'][0];text=choice['message'].get('content') or ''
         if not text.strip() or choice.get('finish_reason')=='length':raise ValueError('완성된 모델 응답을 받지 못했습니다.')
         if self._key in text:raise ValueError('비밀 값이 포함된 응답을 거부했습니다.')
-        record={'step':step.value,'system':prompt.system,'user':prompt.user,'response':text,
+        record={'step':step.value,'system':prompt.system,'user':prompt.user,'response':text,'response_schema':bool(schema),
                 'estimated_input_tokens_without_chat_template':estimated,'usage':raw.get('usage',{}),'finish_reason':choice.get('finish_reason'),
                 'started_at':started_at,'ended_at':datetime.now(timezone.utc).isoformat(),'seconds':round(time.monotonic()-start,3),
                 'returned_model':raw.get('model'),'provider':raw.get('provider')}

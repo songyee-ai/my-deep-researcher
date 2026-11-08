@@ -127,7 +127,7 @@ async function poll(id){
     if(state.run.status==='running'){pollTimer=setTimeout(()=>poll(id),450);}else{await refreshHistory();if(state.run.error&&shownError!==id){shownError=id;toast(state.run.error);}if(state.run.save_error)toast(state.run.save_error);if(state.run.mode==='replay'&&state.run.status==='complete'){seek(0);play();}}
   }catch(e){toast(e.message);pollTimer=setTimeout(()=>poll(id),2500);}
 }
-$('run').onclick=async()=>{if($('mode').value!=='replay'&&!$('question').value.trim()){toast('연구 질문을 입력해 주세요.');$('question').focus();return;}pause();try{const payload={question:$('question').value,mode:$('mode').value,settings:{max_sections:+$('sections').value,budget:+$('budget').value,use_roles:$('roles').checked,assign_seeds:$('seeds').checked,respect_zones:$('zones').checked,rounds:+$('rounds').value}};const result=await api('/api/run',payload);state.selected='moon';await poll(result.id);}catch(e){toast(e.message);}};
+$('run').onclick=async()=>{if($('mode').value!=='replay'&&!$('question').value.trim()){toast('연구 질문을 입력해 주세요.');$('question').focus();return;}pause();try{const payload={question:$('question').value,mode:$('mode').value,settings:{max_sections:+$('sections').value,budget:+$('budget').value,use_roles:$('roles').checked,assign_seeds:$('seeds').checked,respect_zones:$('zones').checked,rounds:+$('rounds').value,model:$('planetary-model').value}};const result=await api('/api/run',payload);state.selected='moon';await poll(result.id);}catch(e){toast(e.message);}};
 $('stop').onclick=async()=>{try{await api('/api/stop',{});toast('중지를 요청했어요. 진행 중인 API 호출이 끝나면 다음 작업 전에 멈춰요.');}catch(e){toast(e.message);}};
 $('mode').onchange=()=>{
   const replay=$('mode').value==='replay',planetary=$('mode').value==='planetary';
@@ -147,6 +147,7 @@ function prepareTeam(){
   pause();clearTimeout(pollTimer);state.run=null;state.view=[];state.time=0;state.index=-1;
   $('history').value='';render();
 }
+$('planetary-model').onchange=()=>{const o=$('mode').querySelector('option[value="planetary"]');if(o)o.textContent=`♃ 행성 탐사 · ${$('planetary-model').selectedOptions[0].textContent.replace(' (기본)','')} 진단`;};
 $('sections').onchange=prepareTeam;$('budget').onchange=prepareTeam;
 $('first').onclick=()=>{pause();seek(0);};$('prev').onclick=()=>{pause();let i=state.index;while(i>=0&&state.view[i]?.displayTime>=state.time-.000001)i--;seek(i);};$('next').onclick=()=>{pause();seek(state.index+1);};$('last').onclick=()=>{pause();seek(state.view.length-1);};$('play').onclick=()=>{if(state.playing){pause();render();}else play();};$('timeline').oninput=()=>{pause();seekTime(+$('timeline').value/1000);};
 $('history').onchange=async()=>{if(!$('history').value)return;pause();clearTimeout(pollTimer);try{state.run=await api(`/api/runs/${$('history').value}`);$('question').value=state.run.question;state.view=buildPlayback(state.run);state.selected='moon';seek(state.view.length-1);if(state.run.status==='running')poll(state.run.id);}catch(e){toast(e.message);}};

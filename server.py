@@ -33,6 +33,15 @@ RUNS: dict[str, dict] = {}
 STOPS: dict[str, threading.Event] = {}
 ACTIVE: str | None = None
 SECRET = ''
+# Free OpenRouter models a web run may choose. The first is the default.
+# Tokenizers only estimate whether a prompt fits; a model without its own file
+# in the repository falls back to the shipped Gemma tokenizer (recorded per run).
+PLANETARY_MODELS = {
+    'nvidia/nemotron-3.5-super-vl:free': {'label': '무료 Nemotron Super', 'tokenizer': 'planetary_exploration/model_checks/nvidia_nemotron_3_5_super_vl_free/tokenizer.json'},
+    'dots-studio/dots-3-note-preview:free': {'label': '무료 Dots', 'tokenizer': 'planetary_exploration/model_checks/dots_3_note_preview_free/tokenizer.json'},
+    'google/gemma-4-26b-a4b-it:free': {'label': '무료 Gemma', 'tokenizer': 'planetary_exploration/model_checks/google_gemma_4_26b_a4b_it_free/tokenizer.json'},
+}
+FALLBACK_TOKENIZER = 'planetary_exploration/model_checks/google_gemma_4_26b_a4b_it_free/tokenizer.json'
 PLANETARY_QUESTION = '수성과 금성 탐사에서 강한 열 환경에 대응하는 설계는 어떻게 달랐으며, 그 차이가 관측에 주는 제약은 무엇인가?'
 LEGACY_FILE = ROOT / 'legacy_mode.json'
 PHASE_LABELS = {'plan': '목차 짜기', 'read': '문서 읽기', 'pick': '다음 자료 고르기', 'write': '원고 쓰기', 'edit': '보고서 엮기'}
@@ -183,7 +192,7 @@ def work(run_id):
 
 def work_planetary(run_id):
     from graph import load_project
-    from planetary_web import WebResearch, display_event
+    from planetary_web import WebResearch, display_event, web_schema
     from planetary_api import PlanetaryAPIModel
     from baseline import shared_budget
     from metrics import measure
@@ -204,10 +213,16 @@ def work_planetary(run_id):
         emit(run_id, value.pop('kind'), **value)
     emit(run_id, 'start', agent='moon', label='행성 탐사 기능 진단 시작',
          summary=f'공식 원문 {len(corpus.docs)}건 · 내용 품질 미검증')
-    model = PlanetaryAPIModel(load_config(), run['model'],
-        DATA/'planetary_exploration/model_checks/google_gemma_4_26b_a4b_it_free/tokenizer.json',
+    tokenizer = DATA/PLANETARY_MODELS.get(run['model'], {}).get('tokenizer', FALLBACK_TOKENIZER)
+    if not tokenizer.is_file():
+        tokenizer = DATA/FALLBACK_TOKENIZER
+    run['context_estimate_tokenizer'] = tokenizer.relative_to(DATA).as_posix()
+    model = PlanetaryAPIModel(load_config(), run['model'], tokenizer,
         RUNS_DIR/'planetary_calls'/run_id/'calls.json')
-    result = WebResearch(corpus, model, config, emit=forward).run(run['question'])
+    engine = WebResearch(corpus, model, config, emit=forward)
+    model.response_schema = lambda step, prompt: web_schema(engine, step, prompt)
+    run['structured_output'] = bool(getattr(model, 'supports_structured', False))
+    result = engine.run(run['question'])
     # The out-of-scope branch intentionally makes no synthesis model call.
     if not any(e['kind']=='report' for e in run['events']):
         emit(run_id, 'report', agent='crystal', label='자료 범위 안내', report=result['report'])
@@ -238,6 +253,10 @@ def start_run(payload):
                    assign_seeds=bool(settings.get('assign_seeds', True)),
                    respect_zones=bool(settings.get('respect_zones', True)))
     if mode == 'planetary':
+        model_id = str(settings.get('model') or next(iter(PLANETARY_MODELS)))
+        if model_id not in PLANETARY_MODELS:
+            raise ValueError('지원하지 않는 무료 모델입니다.')
+        options['model'] = model_id
         rounds = int(settings.get('rounds', 1))
         if not 0 <= rounds <= 3:
             raise ValueError('재조사 상한은 0~3회입니다.')
@@ -253,7 +272,7 @@ def start_run(payload):
             question = p.DEFAULT_QUESTION
         run_id = uuid.uuid4().hex
         run = dict(id=run_id, created=datetime.now().astimezone().isoformat(timespec='seconds'),
-                   mode=mode, question=question, model=('google/gemma-4-26b-a4b-it:free' if mode=='planetary' else config.model) if mode != 'replay' else legacy['replay_model'],
+                   mode=mode, question=question, model=(options['model'] if mode=='planetary' else config.model) if mode != 'replay' else legacy['replay_model'],
                    domain='planetary' if mode=='planetary' else 'history',
                    scope='LIVE_ENGINEERING_ONLY_NOT_CLASS_COMPARISON' if mode=='planetary' else 'course',
                    provider=config.provider if mode!='replay' else None,free_only=mode!='replay',
@@ -313,7 +332,8 @@ class Handler(SimpleHTTPRequestHandler):
                 api_status=dict(api_configured=False,provider='OpenRouter',model=None,free_only=True)
             legacy = legacy_texts()
             self.json(dict(default_question=p.DEFAULT_QUESTION if legacy else PLANETARY_QUESTION,
-                           planetary_question=PLANETARY_QUESTION, legacy=legacy, active=ACTIVE,
+                           planetary_question=PLANETARY_QUESTION, legacy=legacy,
+                           planetary_models=[{'id': k, 'label': v['label']} for k, v in PLANETARY_MODELS.items()], active=ACTIVE,
                            docs=[dict(title=k, chars=len(v)) for k, v in corpus.docs.items()] if corpus else [],
                            **api_status))
         elif path == '/api/runs':
