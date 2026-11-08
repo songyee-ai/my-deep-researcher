@@ -1,5 +1,6 @@
 import * as THREE from './vendor/three.module.js';
 import {researcherPositions} from './team.mjs';
+import {crystalVertices} from './crystal.mjs';
 
 export function createUniverse(canvas,labelLayer,agents,onSelect){
   const scene=new THREE.Scene();
@@ -123,8 +124,21 @@ export function createUniverse(canvas,labelLayer,agents,onSelect){
     const aura=mesh(new THREE.CircleGeometry(1.10,64),new THREE.MeshBasicMaterial({color:agent.color,transparent:true,opacity:.08,depthWrite:false,side:THREE.DoubleSide}),anchor,0,-.03,0);aura.rotation.x=-Math.PI/2;
     let figure,magic;
     if(agent.kind==='crystal'){
-      figure=new THREE.Group();anchor.add(figure);const crystal=mesh(new THREE.OctahedronGeometry(.58),material('#e9bfe9',{metalness:.38,roughness:.2,transparent:true,opacity:.85}),figure,0,.8,0);crystal.scale.set(1,1.5,1);
-      const crown=torus(figure,.64,.025,MAT.gold,0,.45,0,Math.PI/2);crown.rotation.z=.2;star(figure,0,1.8,0,.12);for(let i=0;i<4;i++){const a=i*Math.PI/2;star(figure,Math.cos(a)*.6,.45,Math.sin(a)*.6,.08);}
+      figure=new THREE.Group();anchor.add(figure);
+      const gemMaterial=material('#e9bfe9',{metalness:.28,roughness:.24,flatShading:true,emissive:'#b276c6',emissiveIntensity:0});
+      const idle=mesh(new THREE.OctahedronGeometry(.58),gemMaterial,figure,0,.8,0);idle.scale.set(1,1.5,1);
+      const geometry=new THREE.BufferGeometry();geometry.setAttribute('position',new THREE.BufferAttribute(crystalVertices(0),3));geometry.computeVertexNormals();
+      const heart=mesh(geometry,gemMaterial,figure,0,.95,0);heart.visible=false;
+      const crown=torus(figure,.64,.025,material('#efcc83',{metalness:.45,transparent:true}),0,.45,0,Math.PI/2);crown.rotation.z=.2;
+      const crescentShape=new THREE.Shape();crescentShape.moveTo(-1,.45);crescentShape.quadraticCurveTo(-.86,-.72,0,-.8);crescentShape.quadraticCurveTo(.86,-.72,1,.45);crescentShape.quadraticCurveTo(.68,-.45,0,-.50);crescentShape.quadraticCurveTo(-.68,-.45,-1,.45);
+      const moon=mesh(new THREE.ExtrudeGeometry(crescentShape,{depth:.08,bevelEnabled:true,bevelSize:.025,bevelThickness:.025,bevelSegments:1,steps:1}),material('#efcc83',{metalness:.5,roughness:.3}),figure,0,.82,.15);
+      const finishStarShape=new THREE.Shape();
+      for(let i=0;i<8;i++){const a=i*Math.PI/4+Math.PI/2,r=i%2?.28:1;const x=Math.cos(a)*r,y=Math.sin(a)*r;i?finishStarShape.lineTo(x,y):finishStarShape.moveTo(x,y);}
+      finishStarShape.closePath();
+      const topStar=mesh(new THREE.ExtrudeGeometry(finishStarShape,{depth:.10,bevelEnabled:true,bevelSize:.035,bevelThickness:.025,bevelSegments:1,steps:1}),MAT.gold,figure,0,1.8,.28);topStar.scale.setScalar(.12);
+      const motes=[];for(let i=0;i<4;i++){const a=i*Math.PI/2;motes.push(star(figure,Math.cos(a)*.6,.45,Math.sin(a)*.6,.08));}
+      const foot=mesh(new THREE.OctahedronGeometry(.16),MAT.gold,figure,0,.12,.18);
+      figure.userData.crystal={idle,heart,crown,moon,topStar,motes,foot,gemMaterial,progress:-1};
     }else{
       figure=doll(anchor,agent.kind,agent.color);
       magic=magicEffects(anchor,agent.color);
@@ -200,9 +214,29 @@ export function createUniverse(canvas,labelLayer,agents,onSelect){
       const trans=a?.transformation,p=trans?.progress||0;
       node.figure.position.y=reduced?0:Math.sin((active?clock*5:t*1.3)+nodes.indexOf(node))*(active ? .07 : .025);
       if(node.agent.kind==='crystal'){
-        node.figure.rotation.y=reduced ? .35 : clock*.35;
-        const pieces=Object.values(snap?.agents||{}).filter(a=>a.section).length;
-        node.figure.scale.setScalar(snap?.report?1.18:.72+pieces*.07);
+        const state=snap?.crystal||{progress:0,complete:false,active:false},fx=node.figure.userData.crystal;
+        const p=state.progress,smooth=p*p*(3-2*p),idleAngle=reduced?.35:clock*.35;
+        node.figure.rotation.y=idleAngle+Math.atan2(Math.sin(azimuth-idleAngle),Math.cos(azimuth-idleAngle))*smooth;
+        node.figure.rotation.x=-(mobile.matches?viewingElevation*.85:.18)*smooth;
+        node.figure.scale.setScalar(.72+smooth*.25);
+        fx.idle.visible=p===0;fx.heart.visible=p>0;
+        if(fx.progress!==p){
+          const positions=fx.heart.geometry.getAttribute('position');positions.array.set(crystalVertices(smooth));positions.needsUpdate=true;
+          fx.heart.geometry.computeVertexNormals();fx.heart.geometry.computeBoundingSphere();fx.progress=p;
+        }
+        fx.gemMaterial.color.set('#e9bfe9').lerp(new THREE.Color('#e5a6db'),smooth);
+        fx.gemMaterial.emissiveIntensity=state.complete?.20:state.active?.08+.06*Math.sin(clock*2):0;
+        fx.crown.material.opacity=1-smooth;fx.crown.rotation.x=(1-smooth)*Math.PI/2;
+        fx.moon.visible=p>0;fx.moon.scale.setScalar(Math.max(.001,smooth));
+        fx.foot.visible=state.complete;
+        fx.topStar.position.y=1.8+smooth*.15;fx.topStar.scale.setScalar(.12+smooth*.09);
+        for(let i=0;i<fx.motes.length;i++){
+          const a=i*Math.PI/2+(reduced?0:clock*.45),m=fx.motes[i];
+          m.position.set(Math.cos(a)*(.6+smooth*.45),.45+smooth*(.8+(i%2)*.65),Math.sin(a)*.6);
+          m.visible=p===0||state.active||state.complete;
+          m.scale.setScalar(state.complete?.045:p===0?.08:.04+smooth*.035);
+        }
+        node.label.dataset.crystalStage=state.complete?'complete':p>0?'editing':'idle';
       }else{
         const costume=node.figure.userData.costumes;
         costume.school.visible=trans?.outfit!=='guardian';costume.guardian.visible=!costume.school.visible;

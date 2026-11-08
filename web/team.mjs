@@ -12,7 +12,7 @@ export const RESEARCHERS = [
 export const AGENTS = [
   {id:'moon',name:'세일러문',role:'코디네이터 · 목차와 조사 배치',symbol:'☾',color:'#b18ac8',kind:'moon',pos:[0,2.3,-2.5]},
   ...RESEARCHERS,
-  {id:'crystal',name:'문 크리스털',role:'편집자 · 보고서 엮기',symbol:'♢',color:'#c394c0',kind:'crystal',pos:[0,.35,1.4]}
+  {id:'crystal',name:'문 크리스탈',role:'편집자 · 보고서 엮기',symbol:'♢',color:'#c394c0',kind:'crystal',pos:[0,.35,1.4]}
 ];
 
 export function researcherPositions(count){

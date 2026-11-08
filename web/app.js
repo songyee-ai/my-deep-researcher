@@ -1,7 +1,8 @@
 import {buildPlayback, indexAtTime} from './playback.mjs';
 import {transformationAt,workStatusAt} from './transformation.mjs?v=20261108-a1';
-import {AGENTS,teamSize} from './team.mjs';
+import {AGENTS,teamSize} from './team.mjs?v=20261108-heart';
 import {reportView} from './report-display.mjs';
+import {crystalAt} from './crystal.mjs';
 const $ = id => document.getElementById(id);
 let state={legacy:null,run:null,view:[],time:0,index:0,selected:'moon',tab:'activity',playing:false,docs:[],plan:null};
 let scene=null, timer=null, pollTimer=null, shownError='';
@@ -29,7 +30,7 @@ function snapshot(){
     agents[agent.id].workStatus=['중지됨','오류'].includes(agents[agent.id].status)?agents[agent.id].status:workStatusAt(state.view,state.time,agent.id);
     if(agent.id!=='crystal')agents[agent.id].transformation=transformationAt(state.view,state.time,agent.id,state.run?.settings?.budget||3);
   }
-  return {events,agents,plan,report,time:state.time,playing:state.playing,researcherCount:teamSize(state.run,$('sections').value)};
+  return {events,agents,plan,report,crystal:crystalAt(state.view,state.time),time:state.time,playing:state.playing,researcherCount:teamSize(state.run,$('sections').value)};
 }
 function chooseAgent(id){state.selected=id;render();}
 for(const agent of AGENTS){const button=document.createElement('button');button.className='agent-chip';button.style.setProperty('--c',agent.color);button.textContent=`${agent.symbol} ${agent.name}`;button.addEventListener('click',()=>chooseAgent(agent.id));button.dataset.agent=agent.id;$('agent-picker').append(button);}
@@ -155,5 +156,5 @@ $('export').onclick=()=>download(JSON.stringify(state.run,null,2),`moonlight-${s
 $('report-open').onclick=()=>{const snap=snapshot();$('report-content').replaceChildren(reportView(snap.report,'report-modal-body'));const meta=state.run.mode!=='replay'?`${state.run.domain==='planetary'?'행성 탐사 기능 진단 · 내용 미검증':'역사 자료 실제 API'} · ${state.run.question}`:(state.legacy?.report_meta_replay||'');$('report-meta').textContent=meta+(state.run.quality_warnings?.length?` · 내용 검토 필요: ${state.run.quality_warnings.join(' / ')}`:'');$('report-modal').showModal();};
 $('report-close').onclick=()=>$('report-modal').close();$('report-download').onclick=()=>download(snapshot().report,'달빛_연구보고서.md','text/markdown;charset=utf-8');
 $('reset-camera').onclick=()=>scene?.reset();
-try{const {createUniverse}=await import('./scene.js?v=20261108-c4');scene=createUniverse($('universe'),$('labels'),AGENTS,chooseAgent);}catch(e){$('scene-error').classList.remove('hidden');console.error('3D initialization:',e);}
+try{const {createUniverse}=await import('./scene.js?v=20261108-heart3');scene=createUniverse($('universe'),$('labels'),AGENTS,chooseAgent);}catch(e){$('scene-error').classList.remove('hidden');console.error('3D initialization:',e);}
 try{const info=await api('/api/status');state.docs=info.docs;state.defaultQuestion=info.default_question;state.planetaryQuestion=info.planetary_question;state.apiModel=info.model;state.legacy=info.legacy;for(const m of [...(info.legacy?.modes||[])].reverse()){const o=document.createElement('option');o.value=m.id;o.textContent=m.label;$('mode').prepend(o);}$('mode').value='planetary';$('settings-note').textContent=info.legacy?.settings_note||'';$('mode').onchange();$('key-state').textContent=info.api_configured?`✓ ${info.provider} 설정됨 · ${info.model}`:(info.legacy?.key_hint||'무료 API 키 미설정 · 프로젝트 폴더의 .env에 OPENROUTER_API_KEY를 넣어 주세요');const runs=await refreshHistory();if(info.active){await poll(info.active);}else if(runs.length){state.run=await api(`/api/runs/${runs[0].id}`);state.view=buildPlayback(state.run);$('history').value=state.run.id;seek(0);}render();}catch(e){toast(e.message);render();}
