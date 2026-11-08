@@ -292,6 +292,13 @@ class Handler(SimpleHTTPRequestHandler):
     def log_message(self, *_args):
         pass
 
+    def end_headers(self):
+        # Static files revalidate every load (304 when unchanged), so an edited
+        # page or module never keeps showing a stale cached copy.
+        if not self.path.startswith('/api/'):
+            self.send_header('Cache-Control', 'no-cache')
+        super().end_headers()
+
     def json(self, value, status=200):
         raw = json.dumps(value, ensure_ascii=False).encode('utf-8')
         self.send_response(status)

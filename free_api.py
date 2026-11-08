@@ -77,9 +77,20 @@ def safe_api_error(exc):
     error=body.get('error',body) if isinstance(body,dict) else {}
     metadata=error.get('metadata',{}) if isinstance(error,dict) else {}
     upstream=str(metadata.get('raw','')) if isinstance(metadata,dict) else ''
-    if code==429 and 'temporarily rate-limited upstream' in upstream:
-        return '선택한 무료 모델의 공급자가 일시적으로 혼잡합니다 (HTTP 429). 잠시 후 다시 시도하거나 api-config.json에서 다른 무료 모델을 선택해 주세요.'
-    if code==429:return '무료 API의 사용량 또는 동시 요청 제한에 도달했습니다 (HTTP 429). 잠시 후 다시 실행해 주세요.'
+    category=getattr(exc,'limit_category',None)
+    if code==429 and category=='daily_quota':
+        reset=getattr(exc,'reset_ms',None)
+        when='매일 오전 9시(한국 시간)'
+        if reset:
+            from datetime import datetime,timedelta,timezone
+            when=datetime.fromtimestamp(reset/1000,timezone(timedelta(hours=9))).strftime('%m월 %d일 %H시 %M분(한국 시간)')
+        return (f'오늘 쓸 수 있는 무료 모델 요청 수를 모두 썼습니다 (HTTP 429, 하루 한도). {when}에 초기화됩니다. '
+                'OpenRouter 계정에 충전액이 없으면 하루 50회이고, 충전하면 무료 모델 하루 한도가 1,000회로 늘어납니다.')
+    if code==429 and (category=='upstream_capacity' or 'temporarily rate-limited upstream' in upstream):
+        return '선택한 무료 모델이 공급자 쪽에서 붐빕니다 (HTTP 429). 메인 화면 목록에서 다른 무료 모델을 골라 다시 실행해 주세요.'
+    if code==429 and category=='request_rate':
+        return '분당 요청 한도에 걸렸습니다 (HTTP 429). 1분쯤 뒤에 다시 실행하거나 ⚙ 설정에서 연구원 수를 줄여 주세요.'
+    if code==429:return '무료 API의 요청 제한에 도달했습니다 (HTTP 429). 잠시 후 다시 실행하거나 메인 화면 목록에서 다른 무료 모델을 골라 주세요.'
     if code in (401,403):return f'무료 API 인증 또는 접근 권한을 확인해 주세요 (HTTP {code}).'
     if code==402:return '무료 모델 제공 조건이나 계정 제한을 확인해 주세요 (HTTP 402). 유료 모델로 전환하지 않았습니다.'
     if code:return f'무료 API 호출에 실패했습니다 (HTTP {code}).'

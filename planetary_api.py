@@ -14,8 +14,9 @@ from free_api import BASE_URL
 
 
 class FreeRequestError(RuntimeError):
-    def __init__(self,status_code,retry_after=None,limit_category='unknown'):
+    def __init__(self,status_code,retry_after=None,limit_category='unknown',reset_ms=None):
         self.status_code=status_code
+        self.reset_ms=reset_ms if isinstance(reset_ms,int) and 0<reset_ms<10**14 else None
         self.retry_after=safe_retry_after(retry_after)
         self.limit_category=limit_category if limit_category in ('daily_quota','request_rate','upstream_capacity') else 'unknown'
         super().__init__(f'무료 모델 요청 실패 (HTTP {status_code})')
@@ -30,6 +31,16 @@ def safe_retry_after(value):
         if date.tzinfo is not None:return date.strftime('%a, %d %b %Y %H:%M:%S %z')
     except (ValueError,TypeError,OverflowError):pass
     return None
+
+
+def rate_reset_ms(response):
+    """Daily-quota reset time (epoch ms) from the error metadata, digits only."""
+    try:
+        headers=((response.json().get('error') or {}).get('metadata') or {}).get('headers') or {}
+        value=str(headers.get('X-RateLimit-Reset',''))
+        return int(value) if re.fullmatch(r'\d{10,14}',value) else None
+    except (ValueError,TypeError,AttributeError):
+        return None
 
 
 def limit_category(response):
@@ -100,7 +111,7 @@ class PlanetaryAPIModel:
         with self.lock:self.transport_stats['http_requests']+=1
         response=requests.post(BASE_URL+'/chat/completions',headers={'Authorization':'Bearer '+self._key,'Content-Type':'application/json'},json=request,timeout=90)
         if response.status_code!=200:
-            raise FreeRequestError(response.status_code,response.headers.get('Retry-After'),limit_category(response))
+            raise FreeRequestError(response.status_code,response.headers.get('Retry-After'),limit_category(response),rate_reset_ms(response))
         raw=response.json();choice=raw['choices'][0];text=choice['message'].get('content') or ''
         if not text.strip() or choice.get('finish_reason')=='length':raise ValueError('완성된 모델 응답을 받지 못했습니다.')
         if self._key in text:raise ValueError('비밀 값이 포함된 응답을 거부했습니다.')
