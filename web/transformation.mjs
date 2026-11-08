@@ -26,8 +26,9 @@ export function transformationAt(events, time, agent, budget=3) {
   const past = lane.filter(e => e.displayTime <= time + .000001);
   const completed = past.find(e => e.kind === (agent === 'moon' ? 'plan' : 'section'));
   const first = past.find(e => e.kind === 'call_start' || e.kind === 'assignment');
-  if (!first) return {progress:0, outfit:'school', phase:'대기 중', active:false, completedAt:null};
+  // Completion first: saved traces carry no coordinator call_start, only the plan event.
   if (completed) return {progress:1, outfit:'guardian', phase:'조사 완료', active:false, completedAt:completed.displayTime};
+  if (!first) return {progress:0, outfit:'school', phase:'대기 중', active:false, completedAt:null};
   const call = past.findLast(e => e.kind === 'call_start');
   const end = call && lane.find(e => e.call_id === call.call_id && (e.kind === 'call_end' || e.kind === 'call_error'));
   const fraction = call ? (end ? clamp((time-call.displayTime)/Math.max(.001,end.displayTime-call.displayTime)) : 1-Math.exp(-Math.max(0,time-call.displayTime)/4)) : 0;

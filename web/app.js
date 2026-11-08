@@ -1,5 +1,5 @@
 import {buildPlayback, indexAtTime} from './playback.mjs';
-import {transformationAt,workStatusAt} from './transformation.mjs?v=20261108-a1';
+import {transformationAt,workStatusAt} from './transformation.mjs?v=20261108-b1';
 import {AGENTS,teamSize} from './team.mjs?v=20261108-heart';
 import {reportView} from './report-display.mjs';
 import {crystalAt} from './crystal.mjs';
@@ -37,7 +37,7 @@ for(const agent of AGENTS){const button=document.createElement('button');button.
 function box(title,text){return `<div class="detail-label">${escapeHTML(title)}</div><pre class="detail-box">${escapeHTML(text)}</pre>`;}
 function renderDetails(snap){
   const agent=AGENTS.find(a=>a.id===state.selected),a=snap.agents[agent.id],agentEvents=snap.events.filter(e=>e.agent===agent.id);
-  $('agent-name').textContent=agent.id==='moon'?'달의 코디네이터 · 세일러문':agent.name;
+  $('agent-name').textContent=agent.name;
   $('agent-role').textContent=a.task?`${a.task.역할} · ${a.task.절}`:agent.role;
   $('agent-avatar').textContent=agent.symbol;$('agent-avatar').style.color=agent.color;
   $('agent-avatar').style.background=agent.color+'18';$('agent-status').textContent=a.workStatus;

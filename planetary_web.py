@@ -27,6 +27,8 @@ def display_event(event):
     """Keep graph events, adding viewer labels without changing their meaning."""
     value = dict(event)
     kind = value['kind']
+    if 'agent' not in value and value.get('actor'):
+        value['agent'] = {'coordinator': 'moon', 'synthesizer': 'crystal'}.get(value['actor'], value['actor'])
     value.setdefault('agent', {'report':'crystal'}.get(kind, 'moon'))
     if kind == 'review':
         value['agent'] = f"researcher-{value['section']}"
